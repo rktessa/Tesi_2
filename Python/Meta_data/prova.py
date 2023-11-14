@@ -2,7 +2,7 @@ import requests
 import json
 import pandas
 
-# request data from api
+# request data from api of covid
 response = requests.get("https://covidmap.umd.edu/api/resources?indicator=covid&type=smoothed&country=France&daterange=20201115-20201130").text
 
 #convert json data to dic data for use!
