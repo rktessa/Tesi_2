@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2023.7.18)  14 NOV 2023 09:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2023.7.18)  14 NOV 2023 14:19
 entering extended mode
 **./Note_Citazioni_Tesi.tex
 (Note_Citazioni_Tesi.tex
@@ -964,28 +964,31 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 (C:\Users\rates\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count443
-)) [1
+)) (Note_Citazioni_Tesi.toc [1
 
 
-{C:/Users/rates/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
-<images_note/three_fears.png, id=26, 502.2765pt x 368.577pt>
+{C:/Users/rates/AppData/Local/MiKTeX/pdftex/config/pdftex.map}])
+\tf@toc=\write5
+\openout5 = `Note_Citazioni_Tesi.toc'.
+
+ [2] [3] [4]
+<images_note/three_fears.png, id=77, 502.2765pt x 368.577pt>
 File: images_note/three_fears.png Graphic file (type png)
 <use images_note/three_fears.png>
-Package pdftex.def Info: images_note/three_fears.png  used on input line 107.
+Package pdftex.def Info: images_note/three_fears.png  used on input line 110.
 (pdftex.def)             Requested size: 292.7776pt x 214.8546pt.
-
-[3]
-<images_note/fonti_da_articolo.png, id=38, 928.06725pt x 469.755pt>
+ [5 <./images_note/three_fears.png>]
+<images_note/fonti_da_articolo.png, id=86, 928.06725pt x 469.755pt>
 File: images_note/fonti_da_articolo.png Graphic file (type png)
 <use images_note/fonti_da_articolo.png>
 Package pdftex.def Info: images_note/fonti_da_articolo.png  used on input line 
-134.
+137.
 (pdftex.def)             Requested size: 376.42744pt x 190.52928pt.
- [4 <./images_note/three_fears.png>] [5 <./images_note/fonti_da_articolo.png>]
+ [6 <./images_note/fonti_da_articolo.png>] [7] [8]
 ! Undefined control sequence.
 <recently read> \mathsemicolon 
                                
-l.176 ...y[heading=bibintoc, title={Bibliography}]
+l.187 ...y[heading=bibintoc, title={Bibliography}]
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -993,41 +996,36 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[6] [7] (Note_Citazioni_Tesi.aux)
-
-LaTeX Warning: There were undefined references.
-
+[9] (Note_Citazioni_Tesi.aux)
 Package rerunfilecheck Info: File `Note_Citazioni_Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'Note_Citazioni_Tesi.run.xml'.
 \openout1 = `Note_Citazioni_Tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22830 strings out of 478864
- 411061 string characters out of 2848660
- 1297567 words of memory out of 3000000
- 40448 multiletter control sequences out of 15000+600000
- 410950 words of font info for 53 fonts, out of 8000000 for 9000
+ 22862 strings out of 478864
+ 411744 string characters out of 2848660
+ 1302732 words of memory out of 3000000
+ 40470 multiletter control sequences out of 15000+600000
+ 411291 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,108p,10643b,1697s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmcsc10.pfb><C:/Users/rates/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rates/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/rates/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rates/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rates/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/U
-sers/rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on Note_Citazioni_Tesi.pdf (7 pages, 849524 bytes).
+ 108i,7n,108p,10643b,2134s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\rates\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/rates/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rates/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/rates/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/rates/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
+><C:/Users/rates/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on Note_Citazioni_Tesi.pdf (9 pages, 861989 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
