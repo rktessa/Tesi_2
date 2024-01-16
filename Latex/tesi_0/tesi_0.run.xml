@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Note_Citazioni_Tesi.bcf</file>
+      <file>tesi_0.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>Note_Citazioni_Tesi.bbl</file>
+      <file>tesi_0.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -65,19 +65,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>Note_Citazioni_Tesi</infile>
+      <infile>tesi_0</infile>
     </cmdline>
     <input>
-      <file>Note_Citazioni_Tesi.bcf</file>
+      <file>tesi_0.bcf</file>
     </input>
     <output>
-      <file>Note_Citazioni_Tesi.bbl</file>
+      <file>tesi_0.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>Note_Citazioni_Tesi.bbl</file>
+      <file>tesi_0.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Note_Citazioni_Tesi.bcf</file>
+      <file>tesi_0.bcf</file>
     </requires>
     <requires type="editable">
       <file>bibliography.bib</file>

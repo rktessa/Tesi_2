@@ -1,0 +1,22 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Multilayer Networks}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Epidemic spreading in multiplex networks influenced by opinion exchanges on vaccination}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Choices, beliefs, and infectious disease dynamics}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Evolutionary game theory and social learning can determine how vaccine scares unfold}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}A Mean-Field Analysis of a Network Behavioral–Epidemic Model}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Misinformation can prevent the suppression of epidemics}{5}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}The timing and nature of behavioural responses affect the course of epidemic}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Triple contagion: a two-fears epidemic model}{6}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Optimal shutdown strategies}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Multi-layer network approach in modelling epidemics in an urban town}{7}{subsection.1.9}%
+\contentsline {section}{\numberline {2}Network modelling}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Emergence of Soft Communities from Geometric Preferential Attachment}{8}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Opinion dynamic}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}A framework to analyze opinion formation models}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Social influence networks and opinion change}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Competing spreading processes on multiplex networks: awareness and epidemics}{9}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Other articles}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Effect of hand hygiene}{10}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Reviews}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}A review and agenda for integrated disease models including social and behavioural factors}{10}{subsection.5.1}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

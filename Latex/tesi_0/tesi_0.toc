@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Epidemiologic research historical background}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Epidemiological theory foundations}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Micro and Macro parasite}{4}{subsubsection.1.2.1}%
+\contentsline {section}{\nonumberline References}{5}{section*.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

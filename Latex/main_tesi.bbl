@@ -1,0 +1,132 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Sahagun1965}{book}{}
+      \name{author}{3}{}{%
+        {{hash=8332ac00128fc6057d8608e48b966662}{%
+           family={Sahagun},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=f98edda3666edbf8cf4991819b4cb8f1}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={A.J.O.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a2905ac86e4b5bf1ba1a9ee7cd6e7d6c}{%
+           family={Dibble},
+           familyi={D\bibinitperiod},
+           given={C.E.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Utah Press}%
+      }
+      \strng{namehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{fullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{bibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorbibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authornamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorfullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780874800968}
+      \field{series}{Florentine Codex, A General History of the Things of New Spain}
+      \field{title}{Florentine Codex: Book 12: Book 12: The Conquest of Mexico Volume 12}
+      \field{year}{1965}
+      \verb{urlraw}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+    \endentry
+    \entry{Mata2021}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=b1e0e9ce0cb2010109c6e04a73fccf2e}{%
+           family={Mata},
+           familyi={M\bibinitperiod},
+           given={Angélica\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{fullhash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{bibnamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authorbibnamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authornamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authorfullhash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{São Paulo Journal of Mathematical Sciences, https://doi.org/10.1007/s40863-021-00268-7}
+      \field{title}{Mathematical modeling applied to epidemics: an overview}
+      \field{year}{2021}
+      \verb{doi}
+      \verb .org/10.1007/s40863-021-00268-7
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/Mathematica modeling applied to epidemics an overviw.pdf:PDF
+      \endverb
+      \keyw{Epidemic,Mathematical modeling,SIR model,Disease spreading,Public health,Complex networks}
+    \endentry
+    \entry{Anderson_82}{book}{}
+      \name{author}{1}{}{%
+        {{hash=be459da52bac759d10cdedca98ba547a}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Roy\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{fullhash}{be459da52bac759d10cdedca98ba547a}
+      \strng{bibnamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authorbibnamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authornamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authorfullhash}{be459da52bac759d10cdedca98ba547a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781489929013}
+      \field{note}{Description based on publisher supplied metadata and other sources.}
+      \field{pagetotal}{1380}
+      \field{series}{Population and Community Biology Ser.}
+      \field{title}{The Population Dynamics of Infectious Diseases}
+      \field{year}{1982}
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/UNIVER~1/2021/LETTER~1/LATEXT~1/(POPUL~1.PDF:PDF
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

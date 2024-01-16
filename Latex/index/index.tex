@@ -1,0 +1,68 @@
+\documentclass[a4paper,11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+\usepackage{subfig}
+
+%opening
+\subject{Notes for Master's thesis\\
+	Academic year 2022/2023s }
+\title{Understanding the effect of opinions and behaviours on the spread of infectious diseases}
+\subtitle{ }
+\author{Riccardo Tessarin}
+\date{ Email: riccardo.tessarin@studenti.unitn.it }
+
+
+
+%% Stringhe per biblatex, compilare biber, pdflatex, biber pdflatex
+\usepackage[english]{babel}
+\usepackage[autostyle,italian=guillemets]{csquotes}                      
+%% Per il corretto funzionamento di BibLatex
+\usepackage[sorting=none,style=numeric-comp,backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%pacchetto per i link cliccabili nel testo
+\usepackage[hidelinks]{hyperref}
+\hypersetup{ %impotazioni per i colori, in caso le volessi, a me non piacciono
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	\pagebreak
+	
+	
+	
+	\section{Introduction}
+		\subsection{Historical Background}
+		\subsection{Disease model classification}
+	
+	\section{Theoretical framework}
+		\subsection{Disease model}
+			\subsubsection{Mean field models}
+			\subsubsection{Networked models}
+		\subsection{Opinion models}
+		\subsection{Multi-layer network}
+	\section{Opinion-disease model }
+	
+	\section{Observation of real data}
+	
+	\section{Results}
+	
+	\section{Conclusions}
+	
+\end{document}

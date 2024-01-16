@@ -6,4 +6,4 @@
 - opinion_0.m it implements a Careless, Compliant, Anti model for the behaviour of agent after acquiring information about the disease
 
 ## Update at 21.11.23
- Creation of a class of functions "functionsContainer.m" to call the created function from all files. It contains the function created in sir_1.m, but can be used with N = 1, instead of N = 10000. 
+ Creation of a class of functions "functionsContainer.m" to call the created function from all files. It contains the function created in sir_1.m and opinion_0.m, but can be used with N = 1, instead of N = 10000. 

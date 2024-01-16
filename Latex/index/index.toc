@@ -1,0 +1,15 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Historical Background}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Disease model classification}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Theoretical framework}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Disease model}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Mean field models}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Networked models}{2}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Opinion models}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Multi-layer network}{2}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Opinion-disease model}{2}{section.3}%
+\contentsline {section}{\numberline {4}Observation of real data}{2}{section.4}%
+\contentsline {section}{\numberline {5}Results}{2}{section.5}%
+\contentsline {section}{\numberline {6}Conclusions}{2}{section.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

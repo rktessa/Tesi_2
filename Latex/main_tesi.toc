@@ -1,0 +1,12 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Tables}{4}{section*.1}%
+\contentsline {chapter}{List of Figures}{5}{section*.2}%
+\contentsline {part}{\EnsureStandardFontEncoding {I}\hspace {1em}Introduction}{7}{part.1}%
+\contentsline {chapter}{\numberline {1}Introduction and main objectives}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1} Epidemiologic research historical background}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Epidemiological theory foundations}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Micro and Macro parasite}{11}{subsection.1.2.1}%
+\contentsline {chapter}{Bibliography}{13}{subsection.1.2.1}%
