@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  16 JAN 2024 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  1 FEB 2024 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,16 +1479,22 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main_tesi.bbl' found.
- (main_tesi.bbl)
+ (main_tesi.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Allen2017':
+(biblatex)                - Overwriting field 'month' with month value from fie
+ld 'date' for entry 'Allen2017'.
+
+)
 Package biblatex Info: Reference section=0 on input line 80.
 Package biblatex Info: Reference segment=0 on input line 80.
 Package hyperref Info: Link coloring ON on input line 80.
-
-(main_tesi.out) (main_tesi.out)
+ (main_tesi.out) (main_tesi.out)
 \@outlinefile=\write7
 \openout7 = `main_tesi.out'.
 
-<STN.png, id=37, 1027.84pt x 1027.84pt>
+<STN.png, id=77, 1027.84pt x 1027.84pt>
 File: STN.png Graphic file (type png)
 <use STN.png>
 Package pdftex.def Info: STN.png  used on input line 104.
@@ -1500,12 +1506,14 @@ Package pdftex.def Info: STN.png  used on input line 173.
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 187.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 87.
- (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
 87.
- (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
@@ -1600,8 +1608,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--187
 
 ] [8]
 Chapter 1.
-<introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=88, 77.088pt
- x 59.5023pt>
+<introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=138, 77.088p
+t x 59.5023pt>
 File: introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic fil
 e (type jpg)
 <use introduction/images_introduction/FlorentineCodex_smallpox.jpg>
@@ -1621,18 +1629,27 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 [10{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./introduction/imag
-es_introduction/FlorentineCodex_smallpox.jpg>]) [11] [12
+es_introduction/FlorentineCodex_smallpox.jpg>] [11] [12] [13{C:/Program Files/M
+iKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips
+/lm/lm-mathex.enc}] [14]) (corpo/opinion_disease_model.tex [15] [16
+
+] [17
 
 ]
+[18]
+Chapter 2.
+[19
+
+] [20] [21]) [22]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 33.
-
-(C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [13
+) [23
 
 
-] (main_tesi.aux)
+]
+[24] (main_tesi.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1643,29 +1660,32 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.19997pt have occurred.
 
 Package rerunfilecheck Info: File `main_tesi.out' has not changed.
-(rerunfilecheck)             Checksum: A17791C20799982C9DFDB6FFF5D0796B;572.
+(rerunfilecheck)             Checksum: D70C6BFB90701533BEEEE0ACCC1AE98A;1328.
 Package logreq Info: Writing requests to 'main_tesi.run.xml'.
 \openout1 = `main_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33301 strings out of 475247
- 626614 string characters out of 5767606
- 1928785 words of memory out of 5000000
- 54307 multiletter control sequences out of 15000+600000
+ 33471 strings out of 475247
+ 631856 string characters out of 5767606
+ 1931785 words of memory out of 5000000
+ 54420 multiletter control sequences out of 15000+600000
  636824 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,14n,135p,867b,2477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,14n,135p,2196b,3506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
-blic/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/
-fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/
-lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main_tesi.pdf (13 pages, 607214 bytes).
+blic/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C
+:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX
+/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm
+/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/ty
+pe1/public/lm/lmro9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.p
+fb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main_tesi.pdf (24 pages, 707856 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

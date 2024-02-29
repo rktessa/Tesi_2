@@ -69,7 +69,7 @@ a1 = 1/2; a2=1/2; p1 =1; q11 =1;
 % alpha_prime coefficients vary in an interval [0.01,1] 
 
 % d and step used for computations
-d = 40;
+d = 3;
 step = 0.005;
 [Co_max, A_max,max_gr_Co, rCo_m, rA_m] = multiple_Opinion(d,step);    
 

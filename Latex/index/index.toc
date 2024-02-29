@@ -1,15 +1,27 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Historical Background}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Disease model classification}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Theoretical framework}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Disease model}{2}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Mean field models}{2}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Networked models}{2}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Opinion models}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Multi-layer network}{2}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Opinion-disease model}{2}{section.3}%
-\contentsline {section}{\numberline {4}Observation of real data}{2}{section.4}%
-\contentsline {section}{\numberline {5}Results}{2}{section.5}%
-\contentsline {section}{\numberline {6}Conclusions}{2}{section.6}%
+\contentsline {part}{\numberline {I}Introduction}{3}{part.1}%
+\contentsline {section}{\numberline {1}Theoretical foundations}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Historical Background of epidemiology research}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Glossary}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Epidemiological models categorization}{3}{section.2}%
+\contentsline {subsubsection}{\numberline {2.0.1}Mean field models}{3}{subsubsection.2.0.1}%
+\contentsline {subsubsection}{\numberline {2.0.2}Stochastic models}{3}{subsubsection.2.0.2}%
+\contentsline {subsection}{\numberline {2.1}Agent based models}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Multi-layer network}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Analysis of epidemiological and opinion models}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Opinion models}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Disease models}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Opinion-disease models with multilayer networks}{3}{subsection.3.3}%
+\contentsline {part}{\numberline {II}Opinion-disease model}{3}{part.2}%
+\contentsline {section}{\numberline {4}My model}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Problem formulation}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Adopted models}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Implementation details}{3}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Observation of real data}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}why observing real data}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Implementation details}{4}{subsection.5.2}%
+\contentsline {part}{\numberline {III}Results}{4}{part.3}%
+\contentsline {section}{\numberline {6}My model result}{4}{section.6}%
+\contentsline {subsection}{\numberline {6.1}sensitivity and stability analysis}{4}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Conclusions}{4}{section.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

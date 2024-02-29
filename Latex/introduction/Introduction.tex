@@ -18,7 +18,7 @@ These are part of the epidemiological investigation. Other key dimensions are fo
 \begin{figure}[hbt!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{introduction/images_introduction/FlorentineCodex_smallpox}
-	\caption[smallpox on native Americans]{Representation of smallpox disease on the Mexican population in the $XIV$ century. Figure from \cite{Sahagun1965}. }
+	\caption[smallpox on native Americans]{Representation of smallpox disease on the Mexican population in the $XIV$ century. Figure from the Florentine Codex \cite{Sahagun1965}. }
 	\label{fig:florentinecodexsmallpox}
 \end{figure}
 There is a lot of interest about this topic both from a scientific perspective and also for public society regulations.
@@ -40,8 +40,10 @@ So, in a century of research, many different aspects regarding an epidemic have 
 
 % ! Ci sta inizialmente concentrarsi sulle epidemie, ma  devi intrudurre anche il secondo macro filone, quello delle opinioni. é uno spin off metodologico del primo, quindi gli stumenti matematici poi sono simili, ma va detta anche questa cosa. E poi sulle opinioni hai visto quante sfumature diverse esistono sul come considerarle e anche questo è da tenere in considerazione. 
 
+\section{Epidemiological theory foundations}
 
-\section{ Epidemiologic research historical background}
+Definition of the theoretical basis and main concepts that will be used in the present work. 
+\subsection{ Epidemiologic research historical background}
 % Se ti piace l'idea di fare un piccolo excursus storico, va bene. Le info principali sono:
 % 1- primo lavoro di Bernoulli
 % 2- lavori di Hamer (1906) mass action principle, epidemic description in discrete time 
@@ -53,17 +55,110 @@ The research field regarding the development of technique to understand how epid
 A first innovative work is the one done by John Snow, that during an epidemic of Cholera in London in 1854 successfully determined the source of the infection, even without knowing its etiological agent. Then advancing in the microbiological research is conducted by Pasteur and Koch. They found the etiological agent of disease, enabling the possibility to treat and prevent people from an infection. 
 Then, Hamer work in 1906 added a first major theoretical contribution. He formulated a theory about the correlation between the course of an epidemic and the interaction, contact ratio, between susceptible and infectious individuals. It is the so called “mass -action” principle. The number of contacts between these two groups determines the spread rate of the disease. 
 This law originally written in discrete time, is then updated in 1908 by Ross, that re-written it  in continuous time. For the first time the problem can be studied using a clearly, well defined mathematical theory. Then the contributions of Kermack and McKendrick in 1927 add another fundamental principle to the modern epidemiology. They formulated a threshold theory explaining which condition can generate the development of an epidemic. The theorem affirms that a certain value must be exceed, depending on the proportion of susceptible and infectious individual. Controlling this value permits to understand if the number of infections will increase, until a peak is reached or if the epidemic is a descendent phase \cite{Mata2021}, \cite{Anderson_82}. 
-Their contribution with the mass action principle represents the base for the mean field model theory, that will be presented and analysed in section REF. 
+Their contribution with the mass action principle represents the base for the mean field model theory, that will be presented and analysed in section \ref{subsec:SIR}. 
+
+
+
+\subsection{Epidemiological glossary}
+A list of principal concepts and terms is here presented.
+
+\subsubsection{Micro and Macro parasite}
+	A first difference when presenting infection is to distinguish between the type of origin that can cause it. In fact, we can divide organism that are the etiological responsible for a disease in two classes: microparasite and macroparasite. The former live and reproduce within the host, generating an immune response and the infections caused by them usually have two possible outcomes: death or immunity. Infections origins from them are shorter than the life span of an individual, and so have a transient nature.
+	
+\subsubsection{Epidemic disease} It occurs when there is a disease with a rapid outbreak, in less than a year there is it development and a peak is reached. 
+
+\subsubsection{Endemic disease} It is a disease that last for a longer period, in which must be considered a renewal in the population, and so in the number of susceptible.
+
+\subsubsection{Incubation, Symptoms, Infected and Infectious}   While having a contact with another infectious individual, we can or not become infected. The incubation is the period of time after being infected in which the infection increases in size or number in a person, but not produce the symptoms, that are the effect of the disease. 
+%%%%%%%%%%%%%%%%%%%%
+\section{Epidemiological models categorization }
+There are several different typologies of mathematical model developed to describe the course of an epidemic. In this section the principal categories are introduced. There is then a focus, in \ref{subsec:SIR}, on the one used for the development of the present work, useful to introduce its main mechanisms and the first important conclusion that can be derived from it. 
+
+
+ 
+\subsection{Mean field models}
+
+The mean field model, also known as compartmental models are the first and most studied typology of mathematical model used in epidemiology.  The population considered in the model is divided in several subgroups, on the basis of the dynamic that want to be described. In this class of model  the severity of infection usually is not considered. People are infected or not. The transition from one compartment to another is determined by differential equations. There are transmission rates from one class to another. 
+
+\subsubsection{SIR model}
+\label{subsec:SIR}
+The first model we present is one of the simplest use to describe an epidemic. Here the population or density of individuals is divided in three groups: Susceptible, Infectious and Recovered. 
+The sum of all three groups is N, the total number of people. Usually, the groups are normalized and in this way their sum is equal to 1. 
+
+\begin{equation}
+	\frac{S}{N} + \frac{I}{N} + \frac{R}{N} = 1 
+\end{equation}
+The symbols used to indicate the density of each group are $s$, $i$, $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
+Usually, the assumption that N remains stable is done. This is possible considering that the epidemic time span is much lower than the life duration of a person, and so the number of death and birth is neglected. Alternatively, we can consider that the number of births, which is an input in the S compartment is roughly equal to the number of deaths, which is an output. 
+The net rate at which the number of infections increase is proportional to the number of encounters between S and I individuals, $ \beta s i $, where $\beta$ is a transmission coefficient. The simplest and easier way to initially explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The value of $\beta$ is used to describe this parameter. 
+Individuals pass from the infectious state to the recovered one at a rate $\gamma$. In this initial model the immunity acquired after recovering from the illness is lifelong. It is equivalent for the model if after being sick a person recover or die, because it considers that it will not transmit the infection any more.  This assumption can be modified and there are often disease in which after a certain period individuals become again susceptible. Another initial simplification is the one of consider the coefficient $\beta$ and $\gamma$ constant. Also the network is not defined in this model, but the population is considered homogeneously mixed. 
+Most frequent alternatives groups used to expand these three initial categories are: Exposed, Asymptomatic, Vaccinated, Symptomatic. 
+Although, SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. Because of this two phases can be distinguished in the disease: a free scenario, while the contagion is almost disappeared and second situation in which there is a large number of infected.
+
+The number of infected on the next day is in a discrete time $\Delta t$ given by:
+\begin{equation}
+	I(t+\Delta t) = I(t) + [\beta S(t)I(t) - \gamma I(t)]\Delta t
+\end{equation}
+
+If the value of N is large, the variables can be considered as continuous, and with a smaller time interval we obtain:
+
+\begin{equation}
+	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
+\end{equation}
+
+Observing the dynamic development,  at $time = 0$ the population is almost composed by Susceptible, so $S(0) \approx N$, and in the first steps of contagion evolution this quantity remains stable. Considering this approximation, we have
+\begin{equation}
+		\frac{d I(t)}{dt} = (\beta S(0)-\gamma)I(t),
+\end{equation} 
+which gives,
+
+\begin{equation}
+	I(t) = I(0) \exp ^{(\beta S(0)- \gamma)t}
+	\label{eqn:sol_I}
+\end{equation}
+
+ and the final set of differential equations that  describe the dynamic of infection is the following:
+ \begin{equation}
+ 	\begin{cases}
+ 		dS / dt = -\beta S I \\
+ 		dI / dt = \beta S I - \gamma I\\
+ 		dR / dt =  \gamma I
+ 	\end{cases}
+ \end{equation}
+
+
+From the analytic solution  of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic. Furthermore, observing the exponential sign we can deduce the disease behaviour and how the situation can evolve.
+In fact if the exponential is greater than zero the number of sick grows exponentially. While, in the opposite case, infected people tend to zero. 
+
+The value $ \beta S(0)/\gamma = 1$ is defined as epidemic threshold. This quantity, normalized, is called $R_0$ index:
+\begin{equation}
+	R_0 = \beta/\gamma
+	\label{eqn:basic_rep_number}
+\end{equation}
+It measure the intensity of the contagion, or alternatively the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is met after an increasing in the number of Infected, a peak is reached. Then, the disease begins its falling phase. It is the natural behaviour of an epidemic.
+This transition happens when the value of $R = \beta S(t)/\gamma$, the effective reproduction number become less of 1.
+
+ 
+INSERIRE FIGURE DAL MATLAB FATTO DA TE!e dei commenti su quello. 
+
+Other two interesting quantities to consider when a new disease appears are, the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. In fact, there is a large difference when a population suffering for an epidemic, if this ends rapidly because a lot of people get sick or id this number can be controlled, and the infectious curve is flatter.
+
+\subsection{Stochastic models}
+In this typology of models, the transition from a state to another is determined using a function of probability. They can be conceptually derived starting from the framework represented by ODEs models. They are useful when the disease to study has a lower number of infected or if there is a connection between the epidemic outcome and changes in individual dynamics. This is called demographic variability, and it concerns changes in transmission, births, recovery, or deaths within the population. Using stochastic models with Monte Carlo simulations can be useful to investigate epidemic models on networks. 
+The two most important type of models using this approach consider the time variable as continuous, $t \in [0, \infty) $and then the state variable is either discrete (Continuous-Time Markov-Chain) or continuous (Stochastic Differential Equations).
+Referring to the SIR model to make a simple example here the S and I compartments are modelled as random variables. The probability to individuals to change group depends on infection and recovery, the possible events that can occur. It is called transition probability. 
+In a Markov chain approach the transition probability is discretised, and there is no dependence on the history of the epidemic to know how it will evolve at time $t + \Delta t$. It is necessary to know only the current state of the process at time $t$. 
+In the Stochastic differential equation, the random variables are continuous. The system of equation deriving from this method are usually simpler to solve that the ones find using the first approach\cite{Allen2017}.  
+
+\subsection{Agent-based networks}
+Another representation of the disease evolution can be done using an agent-based model. Here, using the topology of a network, composed by nodes and edges is realised the simulation. Individuals are represented with the node and their interactions with the edges. So, the connections in the graph are responsible for the contagion. Using this framework, it is possible to simulate more realistic scenarios, because permits to represent large and heterogeneous systems. It is not easy however to understand how model a complex society in this way.  
+
+\subsection{Multilayer networks}
+
+The complex dynamic of interactions existing in real word, develops in multiple patterns, with complicated relationships. This connection can change in time, and using the theory of multilayer network it can be improved the comprehension of such complexity. This is a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016}. 
+One possible way to develop models with this structure is the one done imagining that each layer represent a different type of interaction. An epidemiological example is one layer in which the physical contact between people are simulated and another representing social structure, the network of relations that every person has. This case has been presented in multiple works in the last year, for example CITA. 
+The dynamic realized in multiple networks can be single or coupled. In the first there is a top layer with its own dynamic evolution influencing another one. The coupled structure instead is the one in which the phenomena described in each layer evolve with the influence of what is happening in the other. There is a coupled connection with the presence of intra-layer connections.
 
 
 
 
-
-\section{Epidemiological theory foundations}
-
-Definition of the theoretical basis and main concepts that will be used in the present work. 
-
-\subsection{Micro and Macro parasite}
-
-
-%Since the milestone work of Kermack and Mc Kendrik a century is almost passed.

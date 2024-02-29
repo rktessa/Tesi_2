@@ -112,7 +112,7 @@ legend('S_{dif}','I_{dif}','R_{dif}')
 % The Initial condition are the same in all the case, but beta and gamma
 % coefficients vary in an interval [0,1] 
 
-d = 100;
+d = 10;
 step = 0.01;
 [I_max, T_imax,R0] = multipleSIR(d,step);    
 
@@ -163,7 +163,7 @@ function [taxis,xaxis,yaxis,zaxis,i] = SIR(a1,a2,p1,q11,N,beta,gamma,time,dt,i)
     yaxis=[]; yaxis(1) = y;
     zaxis=[]; zaxis(1) = z;
     while t < time
-        if mod(cnt,100) == 0 && cnt ~=0 %every 100 millisecond I save the result
+        if mod(cnt,1) == 0 && cnt ~=0 %every 100 millisecond I save the result
             taxis = cat(2,taxis,t);
             xaxis = cat(2,xaxis,x);
             yaxis = cat(2,yaxis,y);
