@@ -70,7 +70,7 @@ t_pol = t_vec(2:l); %time vector used for calculations
 % The model I want to fit is y = exp(ax+b), y = exp(cx^2+ax+b)
 
 
-[a_I, b_I] = LS_linear( t_pol, I1_log);
+[a_I, b_I] = LS_linear( t_pol, I1_log)
 f_inter = t_pol*a_I + b_I;
 %% Trying with matlab polinomial fitting 
 p = polyfit(t_pol, I1_log,2);
@@ -87,10 +87,7 @@ plot(t_pol, f_inter, 'b', 'linewidth',1.0 )
 title("I MODEL")
 legend('I', 'polyfit','I fitted')
 
-
-
-
-
+%% Function 
 function [a, b] = LS_linear(x, y)
     %with x and y data points 
     m_x = mean(x); % mean

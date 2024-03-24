@@ -7,17 +7,18 @@ clc;
 % matlab solve (that is a built in six-stage, fifth-order, Runge-Kutta
 % method). Comparison of the result and analysis of SIR behavior with
 % different beta and gamma values. 
-
-%%  SIRS simulation model
+%%  SIRS simulation model 
+% with beta dependent on I, simulating the effect of 
+% government policies
 
 % Simulation parameters
 N = 1;
 
-gamma=0.2679;
-beta= gamma*2*N; %Così dovrei avere R0 = 2
-delta = 1/205; 
+gamma=1/8.95;
+beta= gamma*2.38*N %Così dovrei avere R0 = 2 %initial value
+delta = 1/175; 
 Ro = beta/gamma
-time =1000;
+time =1500;
 dt=0.01; %un millesimo di secondo di dt
 
 % For plots
@@ -26,7 +27,7 @@ i = 0;
 %%  Trying different Runge Kutta coefficients
 %Heun's method
 a1 = 1/2; a2=1/2; p1 =1; q11 =1;
-[taxis,xaxis,yaxis, zaxis,i] = SIRS(a1,a2,p1,q11,N,beta,gamma, delta,time,dt,i);
+[taxis,xaxis,yaxis, zaxis,beta_vec,i] = SIRS(a1,a2,p1,q11,N,beta,gamma, delta,time,dt,i);
 
 
 %% ODE solution
@@ -40,68 +41,101 @@ plot(taxis,xaxis, 'r', 'linewidth',2.0 )
 plot(taxis,yaxis, 'b', 'linewidth',2.0 )
 plot(taxis,zaxis, 'm', 'linewidth',2.0 )
 
-plot(taxisODE,xaxisODE, 'color', [0.6350 0.0780 0.1840], 'linewidth',2.0 )
-plot(taxisODE,yaxisODE, 'color', [0 0.4470 0.7410], 'linewidth',2.0 )
-plot(taxisODE,zaxisODE, 'color', [0.4660 0.6740 0.1880], 'linewidth',2.0 )
+plot(taxisODE,xaxisODE, 'color', [0.6350 0.0780 0.1840], 'linewidth',1.0 )
+plot(taxisODE,yaxisODE, 'color', [0 0.4470 0.7410], 'linewidth',1.0 )
+plot(taxisODE,zaxisODE, 'color', [0.4660 0.6740 0.1880], 'linewidth',1.0 )
 title("SIR MODEL Runge Kutta vs ODE15s")
 legend('S_{RK}','I_{RK}','R_{RK}', 'S_{ode}','I_{ode}','R_{ode}')
 txt = {['beta: ' num2str(beta)],['gamma: ' num2str(gamma)],['delta: ' num2str(delta)]};
-    text(800,0.5, txt)
+    text(800,0.75, txt)
 
+%%
 i = i+1;
 figure(i)
 hold on
 plot(taxis,yaxis, 'b', 'linewidth',2.0 )
+plot(taxisODE, yaxisODE, 'r', LineWidth=2.0)
 title("SIRS MODEL Runge Kutta")
-legend('I_{RK}')%, 'S_{ode}','I_{ode}','R_{ode}')
+legend('I_{RK}', 'I_{ode}')
 txt = {['beta: ' num2str(beta)],['gamma: ' num2str(gamma)],['delta: ' num2str(delta)]};
     text(600,0.08,txt)    
-
-% Also in this case the solutions are very close
-% Calculate the percentage difference
-perc_diff_S = zeros(length(xaxis),1);
-perc_diff_I = zeros(length(xaxis),1);
-
-
-for h =1 :length(xaxis)
-    perc_diff_S(h) = percentage_difference(xaxis(h),xaxisODE(h));
-    perc_diff_I(h) = percentage_difference(yaxis(h),yaxisODE(h));
-    perc_diff_R(h) = percentage_difference(zaxis(h),zaxisODE(h));
-
-end
-
-%Plot of the difference of the 2 solutions
+%%
 i = i+1;
 figure(i)
 hold on
-plot(taxis,perc_diff_S, 'color', [0.6350 0.0780 0.1840], 'linewidth',1.5 )
-plot(taxis,perc_diff_I, 'color', [0.4660 0.6740 0.1880], 'linewidth',1.5 )
-plot(taxis,perc_diff_R, 'color', [0 0.4470 0.7410], 'linewidth',1.5 )
-title("Percentage Difference of SIR model between Runge Kutta 2^{nd} order and ODE15s")
-legend('S_{dif}','I_{dif}','R_{dif}')   
+plot(taxis,xaxis, 'r', 'linewidth',2.0 )
+plot(taxis,yaxis, 'b', 'linewidth',2.0 )
+plot(taxis,zaxis, 'm', 'linewidth',2.0 )
+title("SIR MODEL Runge Kutta with beta varying" )
+legend('S_{RK}','I_{RK}','R_{RK}')
+txt = {['beta: ' num2str(beta)],['gamma: ' num2str(gamma)],['delta: ' num2str(delta)]};
+    text(800,0.75, txt)
+
+%% Evoluzione di beta nel corso della pandemia
+i = i+1;
+figure(i)
+plot(taxis, beta_vec./gamma, LineWidth=1.5)
+title("Evolution of Ro during the course of the epidemic")
 
 
-%% Runge Kutta second order solution of SIRS      
-function [taxis,xaxis,yaxis, zaxis, i] = SIRS(a1,a2,p1,q11,N,beta,gamma, delta,time,dt,i)
+%% Calculate the percentage difference
+% perc_diff_S = zeros(length(xaxis),1);
+% perc_diff_I = zeros(length(xaxis),1);
+% 
+% 
+% for h =1 :length(xaxis)
+%     perc_diff_S(h) = percentage_difference(xaxis(h),xaxisODE(h));
+%     perc_diff_I(h) = percentage_difference(yaxis(h),yaxisODE(h));
+%     perc_diff_R(h) = percentage_difference(zaxis(h),zaxisODE(h));
+% 
+% end
+% 
+% %Plot of the difference of the 2 solutions
+% i = i+1;
+% figure(i)
+% hold on
+% plot(taxis,perc_diff_S, 'color', [0.6350 0.0780 0.1840], 'linewidth',1.5 )
+% plot(taxis,perc_diff_I, 'color', [0.4660 0.6740 0.1880], 'linewidth',1.5 )
+% plot(taxis,perc_diff_R, 'color', [0 0.4470 0.7410], 'linewidth',1.5 )
+% title("Percentage Difference of SIR model between Runge Kutta 2^{nd} order and ODE15s")
+% legend('S_{dif}','I_{dif}','R_{dif}')   
+
+
+%% Runge Kutta second order solution of SIRS  with beta state varying     
+function [taxis,xaxis,yaxis, zaxis,beta_vec, i] = SIRS(a1,a2,p1,q11,N,beta,gamma, delta,time,dt,i)
     
-    x = N-N/100000; % susceptible
-    y = N/100000;  % infected
+    x = N-200/60e6; % susceptible
+    y = 200/60e6;  % infected
     z = 0; % recovered
 
     t = 0;
     cnt=0;
+    cnt2=0; %contatore per cambio policy
     %Array creation and inititialization
     taxis=[]; taxis(1) =0; 
     xaxis=[]; xaxis(1) = x;
     yaxis=[]; yaxis(1) = y;
     zaxis=[]; zaxis(1) = z;
-    
+    beta_vec = []; beta_vec(1) = beta;
+    beta_0 = gamma;
     while t < time
+        % Control the I value
+        if mod(cnt2,30/dt) == 0 % ogni 30 giorni posso cambiare policy 
+            if y <= 0.0005 
+                beta= beta_0*2.38*N;
+            elseif y > 0.0005 && y < 0.0025
+                beta= beta_0*1.3*N;
+            else 
+                beta= beta_0*0.6*N;
+            end
+        end
+        cnt2 = cnt2 +1;
         if mod(cnt,100) == 0 && cnt ~=0 %every 100 millisecond I save the result
             taxis = cat(2,taxis,t);
             xaxis = cat(2,xaxis,x);
             yaxis = cat(2,yaxis,y);
             zaxis = cat(2,zaxis,z);
+            beta_vec = cat(2,beta_vec,beta);
             
         end
         % step 1
@@ -133,8 +167,8 @@ end
 %% Solve the problem with Matlab ODE functions
 function [taxis,xaxis,yaxis, zaxis,i] = SIRS_ODE(N,beta,gamma,delta, time,dt,i)
     
-    s0 = N-N/100000; % susceptible
-    i0 = N/100000;  % infected
+    s0 = N-200/60e6; % susceptible
+    i0 = 200/60e6;  % infected
     r0 = 0; 
     tspan = 0:dt:time;
     y0 = [s0,i0, r0];

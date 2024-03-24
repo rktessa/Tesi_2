@@ -8,7 +8,6 @@ clc;
 % method). Comparison of the result and analysis of SIR behavior with
 % different beta and gamma values. 
 
-
 %%  SIR simulation model
 
 
@@ -163,7 +162,7 @@ function [taxis,xaxis,yaxis,zaxis,i] = SIR(a1,a2,p1,q11,N,beta,gamma,time,dt,i)
     yaxis=[]; yaxis(1) = y;
     zaxis=[]; zaxis(1) = z;
     while t < time
-        if mod(cnt,1) == 0 && cnt ~=0 %every 100 millisecond I save the result
+        if mod(cnt,100) == 0 && cnt ~=0 %every 100 millisecond I save the result
             taxis = cat(2,taxis,t);
             xaxis = cat(2,xaxis,x);
             yaxis = cat(2,yaxis,y);
@@ -206,7 +205,7 @@ function [taxis,xaxis,yaxis,zaxis,i] = SIR_ODE(N,beta,gamma,time,dt,i)
     s0 = N-10; % susceptible
     i0 = 10;  % infected
     r0 = 0; % recovered
-    tspan = [0:dt:time];
+    tspan = 0:dt:time;
     y0 = [s0,i0,r0];
     pars = [beta, gamma];
     
