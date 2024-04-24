@@ -10,33 +10,37 @@ clear all;
 
 
 %% Function section 
-function [x_s, y_i, z_r, x_ca, y_co, z_ag, time_epi] = epi_behaviour(beta,gamma,delta,time)
+function [s_co, s_ca, s_ag, i_c, i_ag, r_c,r_ag, time_epi] = epi_behaviour(beta,gamma,delta,time)
     a1 = 1/2; a2=1/2; p1 =1; q11 =1; % Heuns method
     dt=0.01; %un centesimo di secondo per dt è ottimo con runge kutta
-    s = 1-200/60e6;  % susceptible
-    i = 200/60e6;    % infected
-    r = 0;           % recovered
-    ca = 1-200/60e6; % careless
-    co = 100/60e6;   % compliant
-    ag = 100/60e6;   % against
-    
+    s_ca = 1-200/60e6; % susceptible careless
+    s_co = 50/60e6;    % susceptible compliant
+    s_ag = 50/60e6;    % susceptible against
+    i_c  = 10/60e6;    % infected compliant and careless
+    i_ag = 10/60e6;    % infected against
+    r_c  = 0;          % recovered compliant and careless 
+    r_ag = 0;          % recovered against
     
     t = 0; % initialize the time counter
     cnt=0;
     %Array creation and inititialization
-    taxis=[]; taxis(1) =0; 
+    time_epi=[]; time_epi(1) =0; 
     x_s =[]; x_s(1) = s;
     y_i =[]; y_i(1) = i;
     z_r =[]; z_r(1) = r;
     x_ca=[]; x_ca(1)= ca;
     y_co=[]; y_co(1)= co;
-    z_ag=[]; z_ag(1)= ag;
+    z_ag=[]; z_ag(1)= ag; 
     while t < time
-        if mod(cnt,100) == 0 && cnt ~=0 %every 100 millisecond I save the result
-            taxis = cat(2,taxis,t);
-            xaxis = cat(2,xaxis,x);
-            yaxis = cat(2,yaxis,y);
-            zaxis = cat(2,zaxis,z); 
+        %every 100 millisecond I save the result
+        if mod(cnt,100) == 0 && cnt ~=0 
+            time_epi = cat(2,time_epi,t);
+            x_s = cat(2, x_s, s);
+            y_i = cat(2, y_i, i);
+            z_r = cat(2, z_r, r); 
+            x_ca= cat(2, x_ca, ca);
+            y_co= cat(2, y_co, co);
+            z_ag= cat(2, z_ag, ag);
         end
         % step 1
         kx1 = - beta*x*y + delta*z;

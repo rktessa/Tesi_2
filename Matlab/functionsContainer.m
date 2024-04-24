@@ -199,8 +199,8 @@ classdef functionsContainer
         function [taxis,xaxis,yaxis, zaxis] = SIRS(obj,beta,gamma,delta,time)
             a1 = 1/2; a2=1/2; p1 =1; q11 =1; % Heuns method
             dt=0.01; %un centesimo di secondo per dt è ottimo con runge kutta
-            x = 1-200/60e6; % susceptible
-            y = 200/60e6;  % infected
+            x = 1-19/60e6; % susceptible
+            y = 19/60e6;  % infected
             z = 0; % recovered
             t = 0;
             cnt=0;
@@ -295,6 +295,50 @@ classdef functionsContainer
             x = 1-400/60e6; % Careless
             y = 200/60e6;  % Compliant
             z = 200/60e6; % Against
+            dt = 0.01;
+            t = 0;
+            cnt=0;
+            awareness = 0;
+            %Array creation and inititialization
+            taxis=[]; taxis(1) = 0; 
+            xaxis=[]; xaxis(1) = x;
+            yaxis=[]; yaxis(1) = y;
+            zaxis=[]; zaxis(1) = z;
+            while t < time
+                if mod(cnt,100) == 0 && cnt ~=0 %every 100 iterations I save the result
+                    taxis = cat(2,taxis,t);
+                    xaxis = cat(2,xaxis,x);
+                    yaxis = cat(2,yaxis,y);
+                    zaxis = cat(2,zaxis,z);
+                end
+                % step 1
+                kx1 =  -k1*x*y - k2*x*z + lambda_1*y + lambda_2*z;
+                ky1 =   k1*x*y - lambda_1*y;
+                kz1 =   k2*x*z - lambda_2*z;
+                % step 2
+                t2 = t+p1*dt;
+                x2 = x + q11*kx1*dt;
+                y2 = y + q11*ky1*dt;
+                z2 = z + q11*kz1*dt;
+                kx2 =  -k1*x2*y2 - k2*x2*z2 + lambda_1*y2 + lambda_2*z2;
+                ky2 =   k1*x2*y2 - lambda_1*y2;
+                kz2 =   k2*x2*z2 - lambda_2*z2;
+                % update
+                x = x + (a1*kx1+a2*kx2)*dt;
+                y = y + (a1*ky1+a2*ky2)*dt;
+                z = z + (a1*kz1+a2*kz2)*dt;
+                t = t + dt;
+                cnt = cnt + 1;
+            end
+        end
+
+         function [taxis,xaxis,yaxis,zaxis,awareness] = Behaviour_RK_ic(obj,k1,k2,lambda_1,lambda_2,time,Co_zero, Ag_zero)
+    
+            a1 = 1/2; a2=1/2; p1 =1; q11 =1;
+            
+            y = Co_zero/60e6;  % Compliant
+            z = Ag_zero/60e6; % Against
+            x = 1-(y+z); % Careless
             dt = 0.01;
             t = 0;
             cnt=0;

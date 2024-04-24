@@ -91,7 +91,7 @@ risetime2 = ut-lt %days
 % alpha_prime coefficients vary in an interval [0.01,1] 
 
 
-[Co_max,Ag_max, T_comax, T_agmax, final_Ca, final_Co, final_Ag, Careless,Compliant, Against] = multipleBehaviour();
+% [Co_max,Ag_max, T_comax, T_agmax, final_Ca, final_Co, final_Ag, Careless,Compliant, Against] = multipleBehaviour();
 
 %% Plot the results
 

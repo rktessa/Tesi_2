@@ -3,7 +3,7 @@ clear all;
 close all;
 %% SIRS multiple simulations for study the system network
 %% to Load
- load("multilpiSIRS.mat")
+ load("data/multilpiSIRS.mat")
 %% To save
  % filename = "multilpiSIRS.mat";
  % save(filename)
@@ -92,8 +92,7 @@ plot(locs,pks,'*', 'Color','b')
 title("SIRS model")
 legend('Infected')
 txt = {['beta: ' num2str(beta)],['gamma: ' num2str(gamma)],['delta: ' num2str(delta)]};
-txt3 = ['final I: ' 
-(final_I)];
+txt3 = ['final I: ' (final_I)];
 text(800,final_I-final_I*0.5, txt)
 text((time-200),(final_I-0.025), txt3)
 

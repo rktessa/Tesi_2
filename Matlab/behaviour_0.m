@@ -5,12 +5,14 @@ clc;
 
 % Simulation parameters
                                                                                             
-k1 =  1.1/4.03 % from Ca to Co
-k2 = 1/3.97 % from Ca to Ag
+k1 =  1/5; % from Ca to Co
+k2 = 1/2; % from Ca to Ag
 
-lambda_1 = 1/10; %fatigue to mantain Co behaviour
+lambda_1 = 1/50; %fatigue to mantain Co behaviour
 lambda_2 = 1/10; %fatigue to mantain Ag behaviour
 time = 2000;
+R1 = k1/lambda_1
+R2 = k2/lambda_2
 % For plots
 i = 0;
 
@@ -24,9 +26,9 @@ a1 = 1/2; a2=1/2; p1 =1; q11 =1;
     i = i+1;
     figure(i)
     hold on
-    plot(taxisRK,xaxisRK, 'r', 'linewidth',1.0 )
-    plot(taxisRK,yaxisRK, 'b', 'linewidth',1.0 )
-    plot(taxisRK,zaxisRK, 'g', 'linewidth',1.0 )
+    plot(taxisRK,xaxisRK,  'linewidth',1.0 )
+    plot(taxisRK,yaxisRK,  'linewidth',1.0 )
+    plot(taxisRK,zaxisRK, 'linewidth',1.0 )
     % plot(lt,ll, 'o', 'color', [0.4940 0.1840 0.5560])
     % plot(ut,ul, 'o', 'color', [0.4940 0.1840 0.5560])
     % yline([ll ul],'--',{'low level','upper level'})

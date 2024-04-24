@@ -64,15 +64,39 @@ A list of principal concepts and terms is here presented.
 
 \subsubsection{Micro and Macro parasite}
 	A first difference when presenting infection is to distinguish between the type of origin that can cause it. In fact, we can divide organism that are the etiological responsible for a disease in two classes: microparasite and macroparasite. The former live and reproduce within the host, generating an immune response and the infections caused by them usually have two possible outcomes: death or immunity. Infections origins from them are shorter than the life span of an individual, and so have a transient nature.
+\subsubsection{Disease transmission} How it is transmitted a disease. 
 	
 \subsubsection{Epidemic disease} It occurs when there is a disease with a rapid outbreak, in less than a year there is it development and a peak is reached. 
 
 \subsubsection{Endemic disease} It is a disease that last for a longer period, in which must be considered a renewal in the population, and so in the number of susceptible.
 
+\subsubsection{Pandemic disease}
+
 \subsubsection{Incubation, Symptoms, Infected and Infectious}   While having a contact with another infectious individual, we can or not become infected. The incubation is the period of time after being infected in which the infection increases in size or number in a person, but not produce the symptoms, that are the effect of the disease. 
+
+\subsubsection{Types of infectious diseases}
+For infectious disease it is indicated an ilness resulting from the presence of a pathogenic microbial agent. It is possible to distinguish a difference between \textit{transmittable} and \textit{communicable} disease. CONTINUA
+
+\subsubsection{Outbreak}
+
+\subsubsection{Incidence and prevalence}
+
+\subsubsection{Immunity and herd immunity}
+
+\subsubsection{Virulence and Contagiousness}
+
+\subsubsection{Overdispersion and Superspreading}
+
+\subsubsection{CFR, IFR and mortality excess}
+
+\subsubsection{Reproduction number $R_0$}
+
+\subsubsection{Incubation period and serial interval}
+
 %%%%%%%%%%%%%%%%%%%%
 \section{Epidemiological models categorization }
 There are several different typologies of mathematical model developed to describe the course of an epidemic. In this section the principal categories are introduced. There is then a focus, in \ref{subsec:SIR}, on the one used for the development of the present work, useful to introduce its main mechanisms and the first important conclusion that can be derived from it. 
+
 
 
  
@@ -82,7 +106,7 @@ The mean field model, also known as compartmental models are the first and most 
 
 \subsubsection{SIR model}
 \label{subsec:SIR}
-The first model we present is one of the simplest use to describe an epidemic. Here the population or density of individuals is divided in three groups: Susceptible, Infectious and Recovered. 
+The first model we present is one of the simplest used to describe an epidemic. Here the population or density of individuals is divided in three groups: Susceptible, Infectious and Recovered. 
 The sum of all three groups is N, the total number of people. Usually, the groups are normalized and in this way their sum is equal to 1. 
 
 \begin{equation}
@@ -90,17 +114,19 @@ The sum of all three groups is N, the total number of people. Usually, the group
 \end{equation}
 The symbols used to indicate the density of each group are $s$, $i$, $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
 Usually, the assumption that N remains stable is done. This is possible considering that the epidemic time span is much lower than the life duration of a person, and so the number of death and birth is neglected. Alternatively, we can consider that the number of births, which is an input in the S compartment is roughly equal to the number of deaths, which is an output. 
-The net rate at which the number of infections increase is proportional to the number of encounters between S and I individuals, $ \beta s i $, where $\beta$ is a transmission coefficient. The simplest and easier way to initially explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The value of $\beta$ is used to describe this parameter. 
-Individuals pass from the infectious state to the recovered one at a rate $\gamma$. In this initial model the immunity acquired after recovering from the illness is lifelong. It is equivalent for the model if after being sick a person recover or die, because it considers that it will not transmit the infection any more.  This assumption can be modified and there are often disease in which after a certain period individuals become again susceptible. Another initial simplification is the one of consider the coefficient $\beta$ and $\gamma$ constant. Also the network is not defined in this model, but the population is considered homogeneously mixed. 
-Most frequent alternatives groups used to expand these three initial categories are: Exposed, Asymptomatic, Vaccinated, Symptomatic. 
-Although, SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. Because of this two phases can be distinguished in the disease: a free scenario, while the contagion is almost disappeared and second situation in which there is a large number of infected.
+The net rate at which the number of infections increase is proportional to the number of encounters between S and I individuals, expressed by $ \beta s i $, where $\beta$ is a disease transmission coefficient. The simplest and easier way to initially explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The value of $\beta$ is used to describe this parameter. 
+Individuals pass from the infectious state to the recovered one at a rate $\gamma$. So the infection duration last an average time of $1/\gamma$ days. 
+ In this initial model the immunity acquired after recovering from the illness is lifelong. It is equivalent for the model if after being sick a person recover or die, because it considers that it will not transmit the infection any more.  This assumption can be modified and there are often disease in which after a certain period individuals become again susceptible. Another initial simplification is the one of consider the coefficient $\beta$ and $\gamma$ constant. Also there is not a network structure defined in this model, but the population is considered homogeneously mixed. 
+Most frequent alternatives groups used to expand these three initial categories are: Exposed, Asymptomatic, Vaccinated, Symptomatic.These are intermediate groups, while a possible final state that can be add is the one of the "Deceased" individuals.   
+Although, SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. Because of this, two phases can be distinguished in the disease: a free-disease scenario, while the contagion is almost disappeared and a second state in which there is a large number of infected, called endemic equilibrium.
 
-The number of infected on the next day is in a discrete time $\Delta t$ given by:
+\subsubsection{Derivation of I evolution}
+The number of infected on the next day is in a discrete time $\Delta t$ given by the equation:
 \begin{equation}
 	I(t+\Delta t) = I(t) + [\beta S(t)I(t) - \gamma I(t)]\Delta t
 \end{equation}
 
-If the value of N is large, the variables can be considered as continuous, and with a smaller time interval we obtain:
+If the value of N is large, the variables can be considered as continuous, and imposing a time interval close to zero it becomes:
 
 \begin{equation}
 	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
