@@ -10,7 +10,7 @@ clear all;
 
 
 %% Function section 
-function [s_co, s_ca, s_ag, i_c, i_ag, r_c,r_ag, time_epi] = epi_behaviour(beta,gamma,delta,time)
+function [s_co, s_ca, s_ag, i_c, i_ag, r_c,r_ag, time_epi] = epi_behaviour(beta,gamma,delta,k1,k2,lambda1,lambda2,time)
     a1 = 1/2; a2=1/2; p1 =1; q11 =1; % Heuns method
     dt=0.01; %un centesimo di secondo per dt è ottimo con runge kutta
     s_ca = 1-200/60e6; % susceptible careless
@@ -25,22 +25,24 @@ function [s_co, s_ca, s_ag, i_c, i_ag, r_c,r_ag, time_epi] = epi_behaviour(beta,
     cnt=0;
     %Array creation and inititialization
     time_epi=[]; time_epi(1) =0; 
-    x_s =[]; x_s(1) = s;
-    y_i =[]; y_i(1) = i;
-    z_r =[]; z_r(1) = r;
-    x_ca=[]; x_ca(1)= ca;
-    y_co=[]; y_co(1)= co;
-    z_ag=[]; z_ag(1)= ag; 
+    x_sca   =[]; x_sca(1)    = s_ca;
+    x_sco   =[]; x_sco(1)    = s_co;
+    x_sag   =[]; x_sag_r(1)  = s_ag;
+    y_c=[];   y_c(1) = i_c;
+    y_ag=[];  y_ag(1)= i_ag;
+    z_rc = []; z_rc(1) = r_c;
+    z_rag=[];  z_rag(1)= r_ag; 
     while t < time
         %every 100 millisecond I save the result
         if mod(cnt,100) == 0 && cnt ~=0 
             time_epi = cat(2,time_epi,t);
-            x_s = cat(2, x_s, s);
-            y_i = cat(2, y_i, i);
-            z_r = cat(2, z_r, r); 
-            x_ca= cat(2, x_ca, ca);
-            y_co= cat(2, y_co, co);
-            z_ag= cat(2, z_ag, ag);
+            x_sca = cat(2, x_sca, s_ca);
+            x_sco = cat(2, x_sco, s_co);
+            x_sag = cat(2, x_sag, s_ag); 
+            y_c= cat(2, y_c, i_c);
+            y_ag= cat(2, y_ag, i_ag);
+            z_rc= cat(2, z_rc, r_c);
+            z_rag= cat(2, z_rag, r_ag);
         end
         % step 1
         kx1 = - beta*x*y + delta*z;
