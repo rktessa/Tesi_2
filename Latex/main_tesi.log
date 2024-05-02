@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  23 APR 2024 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  2 MAY 2024 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,6 +761,33 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
+(C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(C:\Program Files\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)))
 (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
@@ -899,12 +926,6 @@ Package csquotes Info: Redefining alias 'italian' -> 'italian/guillemets'.
 (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
-(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Program Files\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
 (C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count334
@@ -1172,9 +1193,6 @@ LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 
-(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
 (C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
@@ -1326,12 +1344,12 @@ Using XMP template file: pdfa.xmp
 \openout6 = `pdfa.xmpi'.
 
 <<pdfa.xmpi>>)
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 72.
-Package hyperref Info: Option `colorlinks' set `true' on input line 72.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 73.
+Package hyperref Info: Option `colorlinks' set `true' on input line 73.
 \c@osservazione=\count476
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 80
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 81
 .
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1343,33 +1361,33 @@ LaTeX Warning: Unused global option(s):
 (main_tesi.aux)
 \openout1 = `main_tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 81.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 8
-0.
+1.
  (C:\Program Files\MiKTeX\tex/latex/cbfonts-fd\lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Info: Redefining \it@ocap on input line 80.
-LaTeX Info: Redefining \it@ccap on input line 80.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Info: Redefining \it@ocap on input line 81.
+LaTeX Info: Redefining \it@ccap on input line 81.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1384,15 +1402,7 @@ LaTeX Info: Redefining \it@ccap on input line 80.
 \MPnumerator=\count481
 \makeMPintoPDFobject=\count482
 \everyMPtoPDFconversion=\toks36
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-(C:\Program Files\MiKTeX\tex/latex/toptesi\topfront.sty
+) (C:\Program Files\MiKTeX\tex/latex/toptesi\topfront.sty
 Package: topfront 2020-09-06 v.6.4.06 Title page for TOPtesi and other classes
 \TPT@logospace=\skip88
 \TPT@logobox=\box73
@@ -1408,7 +1418,7 @@ e
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 80.
+alian.trsl' found. on input line 81.
 
 (C:\Program Files\MiKTeX\tex/latex/translations/dicts\translations-basic-dictio
 nary-english.trsl
@@ -1416,9 +1426,9 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 80.
+or `english'. on input line 81.
 Package translations Info: no dictionary file `translations-basic-dictionary-gr
-eek.trsl' found. on input line 80.
+eek.trsl' found. on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1480,85 +1490,85 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main_tesi.bbl' found.
  (main_tesi.bbl)
-Package biblatex Info: Reference section=0 on input line 80.
-Package biblatex Info: Reference segment=0 on input line 80.
-Package hyperref Info: Link coloring ON on input line 80.
+Package biblatex Info: Reference section=0 on input line 81.
+Package biblatex Info: Reference segment=0 on input line 81.
+Package hyperref Info: Link coloring ON on input line 81.
 
 (main_tesi.out) (main_tesi.out)
 \@outlinefile=\write7
 \openout7 = `main_tesi.out'.
 
-<STN.png, id=82, 1027.84pt x 1027.84pt>
+<STN.png, id=94, 1027.84pt x 1027.84pt>
 File: STN.png Graphic file (type png)
 <use STN.png>
-Package pdftex.def Info: STN.png  used on input line 104.
+Package pdftex.def Info: STN.png  used on input line 105.
 (pdftex.def)             Requested size: 114.99182pt x 115.0pt.
 File: STN.png Graphic file (type png)
 <use STN.png>
-Package pdftex.def Info: STN.png  used on input line 173.
+Package pdftex.def Info: STN.png  used on input line 174.
 (pdftex.def)             Requested size: 69.9957pt x 70.00249pt.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 187.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 188.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-87.
+88.
  (C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-87.
+88.
  (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-187.
+188.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-187.
+188.
 
 (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 187.
+(Font)              <11> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 187.
+(Font)              <7.69997> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 187.
+(Font)              <5.5> on input line 188.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 18
-7.
+8.
 
 (C:\Program Files\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 187.
+(Font)              size <5> substituted on input line 188.
 
 LaTeX Font Info:    Calculating math sizes for size <13.19997> on input line 18
-7.
+8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.19997> on input line 187.
+(Font)              <13.19997> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.23993> on input line 187.
+(Font)              <9.23993> on input line 188.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.59998> on input line 187.
+(Font)              <6.59998> on input line 188.
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13.19997> not available
-(Font)              size <12> substituted on input line 187.
+(Font)              size <12> substituted on input line 188.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.59998> not available
-(Font)              size <7> substituted on input line 187.
+(Font)              size <7> substituted on input line 188.
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 187--187
+Overfull \hbox (15.0pt too wide) in paragraph at lines 188--188
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
@@ -1591,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--187
 
 
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiK
-TeX/fonts/enc/dvips/lm/lm-rm.enc}] (introduction/Introduction.tex [6
+TeX/fonts/enc/dvips/lm/lm-rm.enc}] (0_introduction/Introduction.tex [6
 
 
 
@@ -1600,14 +1610,22 @@ TeX/fonts/enc/dvips/lm/lm-rm.enc}] (introduction/Introduction.tex [6
 
 ] [8]
 Chapter 1.
-<introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=166, 77.088p
-t x 59.5023pt>
-File: introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic fil
-e (type jpg)
-<use introduction/images_introduction/FlorentineCodex_smallpox.jpg>
-Package pdftex.def Info: introduction/images_introduction/FlorentineCodex_small
-pox.jpg  used on input line 20.
-(pdftex.def)             Requested size: 168.99834pt x 130.46144pt.
+
+! LaTeX Error: File `introduction/images_introduction/FlorentineCodex_smallpox'
+ not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ges_introduction/FlorentineCodex_smallpox}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.ep
+s
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 LaTeX Warning: Citation 'Sahagun1965' on page 9 undefined on input line 21.
 
@@ -1632,241 +1650,240 @@ LaTeX Warning: Citation 'Mata2021' on page 10 undefined on input line 57.
 
 LaTeX Warning: Citation 'Anderson_82' on page 10 undefined on input line 57.
 
-[10{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./introduction/imag
-es_introduction/FlorentineCodex_smallpox.jpg>] [11] [12] [13{C:/Program Files/M
-iKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[10{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [11]
 
-LaTeX Warning: Citation 'Allen2017' on page 14 undefined on input line 177.
+LaTeX Warning: Citation 'Allen2017' on page 12 undefined on input line 114.
 
-[14{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+[12]
 
-LaTeX Warning: Citation 'DeDomenico2016' on page 15 undefined on input line 184
+LaTeX Warning: Citation 'DeDomenico2016' on page 13 undefined on input line 121
 .
 
-) (corpo/opinion_disease_model.tex [15] [16
+) (1_corpo/opinion_disease_model.tex [13{C:/Program Files/MiKTeX/fonts/enc/dvip
+s/lm/lm-mathsy.enc}] [14
 
-] [17
+] [15
 
-] [18]
+] [16]
 Chapter 2.
 
-LaTeX Warning: Citation 'Wang_2019' on page 19 undefined on input line 17.
+LaTeX Warning: Citation 'Wang_2019' on page 17 undefined on input line 17.
 
 
-LaTeX Warning: Citation 'Nunner2021' on page 19 undefined on input line 17.
+LaTeX Warning: Citation 'Nunner2021' on page 17 undefined on input line 17.
 
-[19
+[17
 
 ]
 
-LaTeX Warning: Citation 'Peng2021' on page 20 undefined on input line 21.
+LaTeX Warning: Citation 'Peng2021' on page 18 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'teslya2022' on page 20 undefined on input line 22.
+LaTeX Warning: Citation 'teslya2022' on page 18 undefined on input line 22.
 
 
-LaTeX Warning: Citation 'Alvarez_Zuzek_2017' on page 20 undefined on input line
+LaTeX Warning: Citation 'Alvarez_Zuzek_2017' on page 18 undefined on input line
  23.
 
 
-LaTeX Warning: Citation 'Epstein_2021' on page 20 undefined on input line 23.
+LaTeX Warning: Citation 'Epstein_2021' on page 18 undefined on input line 23.
 
 
-LaTeX Warning: Citation 'Auld_2003' on page 20 undefined on input line 24.
+LaTeX Warning: Citation 'Auld_2003' on page 18 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Sontag_2022' on page 20 undefined on input line 25.
+LaTeX Warning: Citation 'Sontag_2022' on page 18 undefined on input line 25.
 
 
-LaTeX Warning: Citation 'Turker_2023' on page 20 undefined on input line 26.
-
-
-Underfull \vbox (badness 2689) has occurred while \output is active []
-
- [20]
-
-LaTeX Warning: Citation 'Funk_2010' on page 21 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Frieswijk_2022' on page 21 undefined on input line 29.
-
-
-
-LaTeX Warning: Citation 'Bauch_2012' on page 21 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'Tyson_2020' on page 21 undefined on input line 31.
-
-
-LaTeX Warning: Citation 'Collinson2014' on page 21 undefined on input line 32.
-
-
-LaTeX Warning: Citation 'Granell_2014' on page 21 undefined on input line 32.
+LaTeX Warning: Citation 'Turker_2023' on page 18 undefined on input line 26.
 
 
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
- [21]
-[22]
+ [18]
+
+LaTeX Warning: Citation 'Funk_2010' on page 19 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Frieswijk_2022' on page 19 undefined on input line 29.
+
+
+
+LaTeX Warning: Citation 'Bauch_2012' on page 19 undefined on input line 30.
+
+
+LaTeX Warning: Citation 'Tyson_2020' on page 19 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Collinson2014' on page 19 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'Granell_2014' on page 19 undefined on input line 32.
+
+
+Underfull \vbox (badness 2689) has occurred while \output is active []
+
+ [19]
+[20]
 Chapter 3.
-[23
+[21
 
-] [24]
-<figure/behavioural_equilibrium/r1greater1_dyn.png, id=272, 526.96875pt x 395.2
-2656pt>
-File: figure/behavioural_equilibrium/r1greater1_dyn.png Graphic file (type png)
-
-<use figure/behavioural_equilibrium/r1greater1_dyn.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1greater1_dyn.png  use
-d on input line 116.
-(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-<figure/behavioural_equilibrium/r1greater1_nullcline.png, id=275, 526.96875pt x
- 395.22656pt>
-File: figure/behavioural_equilibrium/r1greater1_nullcline.png Graphic file (typ
-e png)
-<use figure/behavioural_equilibrium/r1greater1_nullcline.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1greater1_nullcline.pn
-g  used on input line 124.
-(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25 <./figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)>]
-<figure/behavioural_equilibrium/r2greater1_dyn.png, id=282, 526.96875pt x 395.2
-2656pt>
-File: figure/behavioural_equilibrium/r2greater1_dyn.png Graphic file (type png)
-
-<use figure/behavioural_equilibrium/r2greater1_dyn.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r2greater1_dyn.png  use
-d on input line 142.
-(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=284, 526.96875pt
+] [22{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [23]
+[24]
+<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=283, 526.96875pt
  x 395.22656pt>
-File: figure/behavioural_equilibrium/r2greater1_nullcline_1.png Graphic file (t
+File: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png Graphic file (t
 ype png)
-<use figure/behavioural_equilibrium/r2greater1_nullcline_1.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r2greater1_nullcline_1.
-png  used on input line 150.
+<use 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.
+png  used on input line 191.
+(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=286, 526.9
+6875pt x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png Graphic f
+ile (type png)
+<use 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1greater1_null
+cline.png  used on input line 199.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figure/behavioural_equilibrium/r1r2less1_dyn.png, id=285, 526.96875pt x 395.22
-656pt>
-File: figure/behavioural_equilibrium/r1r2less1_dyn.png Graphic file (type png)
-<use figure/behavioural_equilibrium/r1r2less1_dyn.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1r2less1_dyn.png  used
- on input line 162.
+[25]
+<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=294, 526.96875pt
+ x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png Graphic file (t
+ype png)
+<use 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.
+png  used on input line 217.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=287, 526.96875pt x 
-395.22656pt>
-File: figure/behavioural_equilibrium/r1r2less1_nullcline.png Graphic file (type
- png)
-<use figure/behavioural_equilibrium/r1r2less1_nullcline.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1r2less1_nullcline.png
-  used on input line 170.
+<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=296, 526
+.96875pt x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png Graphic
+ file (type png)
+<use 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r2greater1_null
+cline_1.png  used on input line 225.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
+[26 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <.
+/1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png (PNG copy)>]
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=301, 526.96875pt 
+x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png Graphic file (ty
+pe png)
+<use 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.p
+ng  used on input line 237.
+(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figure/behavioural_equilibrium/r1equalr2_dyn.png, id=290, 526.96875pt x 395.22
-656pt>
-File: figure/behavioural_equilibrium/r1equalr2_dyn.png Graphic file (type png)
-<use figure/behavioural_equilibrium/r1equalr2_dyn.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1equalr2_dyn.png  used
- on input line 181.
-(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=291, 526.96875pt x 
-395.22656pt>
-File: figure/behavioural_equilibrium/r1equalr2_nullcline.png Graphic file (type
- png)
-<use figure/behavioural_equilibrium/r1equalr2_nullcline.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/r1equalr2_nullcline.png
-  used on input line 188.
-(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[26 <./figure/behavioural_equilibrium/r1greater1_nullcline.png (PNG copy)>]
-[27 <./figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)> <./figure/
-behavioural_equilibrium/r2greater1_nullcline_1.png (PNG copy)>] [28 <./figure/b
-ehavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> <./figure/behavioural_equi
-librium/r1r2less1_nullcline.png (PNG copy)>] [29 <./figure/behavioural_equilibr
-ium/r1equalr2_dyn.png (PNG copy)> <./figure/behavioural_equilibrium/r1equalr2_n
-ullcline.png (PNG copy)>]
-<figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=311, 517.93
-5pt x 529.98pt>
-File: figure/behavioural_equilibrium/final_compliant_sensitivity.png Graphic fi
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=303, 526.96
+875pt x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png Graphic fi
 le (type png)
-<use figure/behavioural_equilibrium/final_compliant_sensitivity.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_compliant_sensiti
-vity.png  used on input line 211.
+<use 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullc
+line.png  used on input line 245.
+(pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
+[27 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)> <.
+/1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png (PNG copy)>]
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=309, 526.96875pt 
+x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png Graphic file (ty
+pe png)
+<use 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.p
+ng  used on input line 257.
+(pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=310, 526.96
+875pt x 395.22656pt>
+File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png Graphic fi
+le (type png)
+<use 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullc
+line.png  used on input line 259.
+(pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
+[28 <./1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> <./
+1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png (PNG copy)>]
+<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=317
+, 517.935pt x 529.98pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png Gr
+aphic file (type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
+_sensitivity.png  used on input line 281.
 (pdftex.def)             Requested size: 198.5766pt x 203.19785pt.
-<figure/behavioural_equilibrium/final_against_sensitivity.png, id=312, 501.5538
-pt x 531.9072pt>
-File: figure/behavioural_equilibrium/final_against_sensitivity.png Graphic file
- (type png)
-<use figure/behavioural_equilibrium/final_against_sensitivity.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_against_sensitivi
-ty.png  used on input line 213.
+<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=318, 
+501.5538pt x 531.9072pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png Grap
+hic file (type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_s
+ensitivity.png  used on input line 283.
 (pdftex.def)             Requested size: 198.5766pt x 210.59206pt.
-<figure/behavioural_equilibrium/final_careless_sensitivity.png, id=313, 453.373
-8pt x 418.6842pt>
-File: figure/behavioural_equilibrium/final_careless_sensitivity.png Graphic fil
-e (type png)
-<use figure/behavioural_equilibrium/final_careless_sensitivity.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_careless_sensitiv
-ity.png  used on input line 215.
+<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=319,
+ 453.3738pt x 418.6842pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png Gra
+phic file (type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_careless_
+sensitivity.png  used on input line 285.
 (pdftex.def)             Requested size: 198.5766pt x 183.3847pt.
-<figure/behavioural_equilibrium/final_compliant_r1.png, id=315, 476.0184pt x 53
-1.9072pt>
-File: figure/behavioural_equilibrium/final_compliant_r1.png Graphic file (type 
-png)
-<use figure/behavioural_equilibrium/final_compliant_r1.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_compliant_r1.png 
- used on input line 227.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29 <./1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png (PNG copy)> <./
+1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png (PNG copy)>]
+<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=330, 476.018
+4pt x 531.9072pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png Graphic fil
+e (type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
+_r1.png  used on input line 297.
 (pdftex.def)             Requested size: 170.14622pt x 190.12474pt.
-<figure/behavioural_equilibrium/final_against_r1.png, id=316, 553.1064pt x 529.
-4982pt>
-File: figure/behavioural_equilibrium/final_against_r1.png Graphic file (type pn
-g)
-<use figure/behavioural_equilibrium/final_against_r1.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_against_r1.png  u
-sed on input line 229.
+<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=331, 553.1064p
+t x 529.4982pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file 
+(type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_against_r1.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_r
+1.png  used on input line 299.
 (pdftex.def)             Requested size: 198.60332pt x 190.12474pt.
-<figure/behavioural_equilibrium/final_careless_r1.png, id=317, 455.301pt x 390.
-7398pt>
-File: figure/behavioural_equilibrium/final_careless_r1.png Graphic file (type p
-ng)
-<use figure/behavioural_equilibrium/final_careless_r1.png>
-Package pdftex.def Info: figure/behavioural_equilibrium/final_careless_r1.png  
-used on input line 231.
+<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=332, 455.301p
+t x 390.7398pt>
+File: 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png Graphic file
+ (type png)
+<use 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png>
+Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_careless_
+r1.png  used on input line 301.
 (pdftex.def)             Requested size: 221.53629pt x 190.12474pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./figure/behavioural_equilibrium/final_compliant_sensitivity.png> <./figur
-e/behavioural_equilibrium/final_against_sensitivity.png> <./figure/behavioural_
-equilibrium/final_careless_sensitivity.png (PNG copy)>]) [31 <./figure/behaviou
-ral_equilibrium/final_compliant_r1.png> <./figure/behavioural_equilibrium/final
-_against_r1.png> <./figure/behavioural_equilibrium/final_careless_r1.png (PNG c
-opy)>] [32
+[30 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png> 
+<./1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png> <./1_c
+orpo/figure/behavioural_equilibrium/final_careless_sensitivity.png (PNG copy)>]
+) [31 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./1_co
+rpo/figure/behavioural_equilibrium/final_against_r1.png> <./1_corpo/figure/beha
+vioural_equilibrium/final_careless_r1.png (PNG copy)>] [32
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 233.
+LaTeX Warning: Empty bibliography on input line 234.
 
 (main_tesi.aux)
  ***********
@@ -1882,7 +1899,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 958D6ABF9A4123F0BDF7FACB63FB2F26;1457.
+(rerunfilecheck)             Checksum: 1C72DABB555890A93417ECCF1584F6EF;1657.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_tesi
@@ -1893,13 +1910,13 @@ Package logreq Info: Writing requests to 'main_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33489 strings out of 475247
- 635893 string characters out of 5767606
+ 33571 strings out of 475247
+ 639833 string characters out of 5767606
  1933785 words of memory out of 5000000
- 54418 multiletter control sequences out of 15000+600000
+ 54489 multiletter control sequences out of 15000+600000
  640769 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,14n,135p,2196b,2450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,14n,135p,2198b,2444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C
@@ -1911,9 +1928,9 @@ Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type
 ><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/lm/lmsy8.pfb>
-Output written on main_tesi.pdf (32 pages, 1096474 bytes).
+Output written on main_tesi.pdf (32 pages, 882857 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 
