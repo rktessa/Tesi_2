@@ -43,7 +43,7 @@ hold off
 function [x_sca, x_sco, x_sag, y_c, y_ag, z_rc,z_rag,z_d, time_epi] = epi_behaviour(beta,gamma,delta,k1,k2,lambda1,lambda2,epsilon,omega,time)
     a1 = 1/2; a2=1/2; p1 =1; q11 =1; % Heuns method
     dt=0.01; %un centesimo di secondo per dt è ottimo con runge kutta
-    s_ca = 1-200/60e6; % susceptible careless
+    
     s_co = 50/60e6;    % susceptible compliant
     s_ag = 50/60e6;    % susceptible against
     i_c  = 10/60e6;    % infected compliant and careless
@@ -51,7 +51,7 @@ function [x_sca, x_sco, x_sag, y_c, y_ag, z_rc,z_rag,z_d, time_epi] = epi_behavi
     r_c  = 0;          % recovered compliant and careless 
     r_ag = 0;          % recovered against
     d = 0;             % deaths
-    
+    s_ca = 1- s_co - s_ag - i_c -i_ag; % susceptible careless
     t = 0; % initialize the time counter
     cnt=0;
     %Array creation and inititialization
@@ -78,15 +78,15 @@ function [x_sca, x_sco, x_sag, y_c, y_ag, z_rc,z_rag,z_d, time_epi] = epi_behavi
             z_d = cat(2,z_d, d);
         end
        
-        Aw = 0.5;  % Awareness
+        Aw = 0.5;  % Awareness / exposure / mean field forcing 
         rho = 0.7; % grado di protezione asociato all'essere compliant
-        k6 = k1;
+        k6 = k1; 
         k7 = k2;
         k11 = k1;
         k10 = k2;
         lambda3 = lambda2;
         gamma_le = gamma;
-        delta = 0.2; % mortality?
+        delta = 0.2; % mortality? !!!!
         % step 1
         im = (1-epsilon)*i_c+i_ag;  %group that participate in the infection
         
