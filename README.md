@@ -15,7 +15,7 @@ https://ourworldindata.org/covid-income-support-debt-relief
 Note incontro:
 
 - Nuova struttura di divisione della tesi, ipotesi di spostare il capitolo 2 e 3 unendoli e lasciare il 4 come "development" e non "description". Dividere la parte in cui presento teoria e lavori fatti da altri, a quella in cui è presentato quello che sto sviluppando.
-- Andare avanti con lo studio di analisi del modello doppio. una idea potrebbe essere quella di cercare di ridurre la dimensionalità del sistema, e fissare i parametri che possono considerarsi più stabili, come ad esempio la fatigue,che sembra dai dati abbastanza piccola.
+- Andare avanti con lo studio di analisi del modello doppio. una idea potrebbe essere quella di cercare di ridurre la dimensionalità del sistema, e fissare i parametri che possono considerarsi più stabili, come ad esempio la fatigue,che sembra dai dati abbastanza piccola. Il libro che consigliava Daniele, contiene delle sezioni in cui vengono affrontate queste tecniche. Leggi e copia, fai, non leggere e basta.
 - rispetto anche a lavoro simile nel modello come quello dell'articolo, si vede una certa differenza di approccio, obbiettivi e prospettiva. Si può spiegare anche quello e tenere come reference metodologica.
 - il mio lavoro ha come obbiettivo avere una attinenza a dei dati realmente osservabili, 
 - dai dati vedere come riproduco i pttern e stima dei valori dei parametri
@@ -30,3 +30,12 @@ Note incontro:
 - per lo studio del modello totale fai riferimento anche a come è stato analizzato quello della onchcerchiasis. 
 - l fatigue varia poco dallo scraping di daniele, da individuare i parametri più sensibili dei due modelli separati. e provare poi ad estendere, nel modello complessivo e sperare che le cose correspondano come effetto. 
 
+
+
+## Cose da finire il 9 maggio  
+Gli articoli che devo finire di guardare per la parte sir sono: 
+la review: per gli agent based
+appunti da daniele: per i multi layer syste/network
+articolo mata: per la spiegazione che hai già scritto a meta ce che devi correggere, vedi note a nche e ti manca la sezione tutta verde
+articolo hetcote se serve ancora
+articolo okabe per altre info utili su sir

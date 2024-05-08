@@ -14,10 +14,14 @@ clc;
 % Simulation parameters
 N = 1;
 gamma=1/8.9;
-beta=gamma*2.01/N;
+beta=gamma*1.51/N;
 R0 = beta/gamma
 time =1000;
 dt=0.01; %un millesimo di secondo di dt
+infected_zero = 1/100;
+% max number of infected
+i_max = 1 - gamma/beta - log(R0*(1-infected_zero))*gamma/beta
+s_maxx =  gamma/beta
 
 % For plots
 i = 0;
@@ -25,7 +29,7 @@ i = 0;
 %% Runge Kutta solution
 %Heun's method
 a1 = 1/2; a2=1/2; p1 =1; q11 =1;
-[taxis,xaxis,yaxis,zaxis,i] = SIR(a1,a2,p1,q11,N,beta,gamma,time,dt,i);
+[taxis,xaxis,yaxis,zaxis,infected_zero] = SIR(a1,a2,p1,q11,N,beta,gamma,time,dt,infected_zero);
 
 
 
@@ -75,8 +79,8 @@ legend('S_{dif}','I_{dif}','R_{dif}')
 %% Runge Kutta second order solution of SIR      
 function [taxis,xaxis,yaxis,zaxis,i] = SIR(a1,a2,p1,q11,N,beta,gamma,time,dt,i)
     
-    x = N-N/100000; % susceptible
-    y = N/100000; % infected
+    x = N-i; % susceptible
+    y = i; % infected
     z = 0; % recovered
     t = 0;
     cnt=0;
@@ -169,9 +173,6 @@ f(1) = -pars(1)*y(1)*y(2);
 f(2) = pars(1)*y(1)*y(2) - pars(2)*y(2);
 f(3) = pars(2) * y(2);
 end
-
-
-
 
 % Function that calculate the percentage difference between two values
 function [perc_diff] = percentage_difference(v1,v2)

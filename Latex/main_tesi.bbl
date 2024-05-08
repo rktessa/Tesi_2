@@ -1,0 +1,1012 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Sahagun1965}{book}{}
+      \name{author}{3}{}{%
+        {{hash=8332ac00128fc6057d8608e48b966662}{%
+           family={Sahagun},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=f98edda3666edbf8cf4991819b4cb8f1}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={A.J.O.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a2905ac86e4b5bf1ba1a9ee7cd6e7d6c}{%
+           family={Dibble},
+           familyi={D\bibinitperiod},
+           given={C.E.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Utah Press}%
+      }
+      \strng{namehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{fullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{bibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorbibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authornamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorfullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780874800968}
+      \field{series}{Florentine Codex, A General History of the Things of New Spain}
+      \field{title}{Florentine Codex: Book 12: Book 12: The Conquest of Mexico Volume 12}
+      \field{year}{1965}
+      \verb{urlraw}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+    \endentry
+    \entry{Mata2021}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=b1e0e9ce0cb2010109c6e04a73fccf2e}{%
+           family={Mata},
+           familyi={M\bibinitperiod},
+           given={Angélica\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{fullhash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{bibnamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authorbibnamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authornamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \strng{authorfullhash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{São Paulo Journal of Mathematical Sciences, https://doi.org/10.1007/s40863-021-00268-7}
+      \field{title}{Mathematical modeling applied to epidemics: an overview}
+      \field{year}{2021}
+      \verb{doi}
+      \verb .org/10.1007/s40863-021-00268-7
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/Mathematica modeling applied to epidemics an overviw.pdf:PDF
+      \endverb
+      \keyw{Epidemic,Mathematical modeling,SIR model,Disease spreading,Public health,Complex networks}
+    \endentry
+    \entry{Anderson_82}{book}{}
+      \name{author}{1}{}{%
+        {{hash=be459da52bac759d10cdedca98ba547a}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Roy\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{fullhash}{be459da52bac759d10cdedca98ba547a}
+      \strng{bibnamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authorbibnamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authornamehash}{be459da52bac759d10cdedca98ba547a}
+      \strng{authorfullhash}{be459da52bac759d10cdedca98ba547a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781489929013}
+      \field{note}{Description based on publisher supplied metadata and other sources.}
+      \field{pagetotal}{1380}
+      \field{series}{Population and Community Biology Ser.}
+      \field{title}{The Population Dynamics of Infectious Diseases}
+      \field{year}{1982}
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/UNIVER~1/2021/LETTER~1/LATEXT~1/(POPUL~1.PDF:PDF
+      \endverb
+    \endentry
+    \entry{Ledder_2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6a7cac31d3c402423d0235ff40a31912}{%
+           family={Ledder},
+           familyi={L\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{fullhash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{bibnamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authorbibnamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authornamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authorfullhash}{6a7cac31d3c402423d0235ff40a31912}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783031094545}
+      \field{issn}{1867-5514}
+      \field{journaltitle}{Springer Undergraduate Texts in Mathematics and Technology}
+      \field{title}{Mathematical Modeling for Epidemiology and Ecology}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/978-3-031-09454-5
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/(Springer Undergraduate Texts in Mathematics and Technology) Glenn Ledder - Mathematical Modeling for Epidemiology and Ecology-Springer (2023).pdf:PDF
+      \endverb
+    \endentry
+    \entry{Allen2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bd7b89b8a302c32e52e1b562252f769a}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Linda\bibnamedelima J.S.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{bd7b89b8a302c32e52e1b562252f769a}
+      \strng{fullhash}{bd7b89b8a302c32e52e1b562252f769a}
+      \strng{bibnamehash}{bd7b89b8a302c32e52e1b562252f769a}
+      \strng{authorbibnamehash}{bd7b89b8a302c32e52e1b562252f769a}
+      \strng{authornamehash}{bd7b89b8a302c32e52e1b562252f769a}
+      \strng{authorfullhash}{bd7b89b8a302c32e52e1b562252f769a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Some mathematical methods for formulation and numerical simulation of stochastic epidemic models are presented. Specifically, models are formulated for continuous-time Markov chains and stochastic differential equations. Some well-known examples are used for illustration such as an SIR epidemic model and a host-vector malaria model. Analytical methods for approximating the probability of a disease outbreak are also discussed.}
+      \field{day}{11}
+      \field{issn}{2468-0427}
+      \field{journaltitle}{Infectious Disease Modelling}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{A primer on stochastic epidemic models: Formulation, numerical simulation, and analysis}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{128\bibrangedash 142}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.idm.2017.03.001
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/Allen A primer on stochastic epidemic models.pdf:PDF
+      \endverb
+      \keyw{Branching process,Continuous-time Markov chain,Minor outbreak,Stochastic differential equation}
+      \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Allen2017'}
+    \endentry
+    \entry{DeDomenico2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6d536daa70fa51099e4f65e72e27f797}{%
+           family={De\bibnamedelima Domenico},
+           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Manlio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           familyi={G\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0c0f609a339310df23209cf68aba3b6e}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Mason\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{fullhash}{937605070968d142c0f0d122bda48327}
+      \strng{bibnamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authorbibnamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authornamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authorfullhash}{937605070968d142c0f0d122bda48327}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nature Physics 12, 10 (2016). doi:10.1038/nphys3865}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{month}{8}
+      \field{number}{10}
+      \field{title}{The physics of spreading processes in multilayer networks}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{901\bibrangedash 906}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys3865
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/nphys3865.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Wang_2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a05cbe84139f49990b444ee59462e6d0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Quan-Hui},
+           giveni={Q\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=c14c177b7dbdf19cb3ff49c898a3f18c}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Junhao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=69679f0c889b8d31466a07b1b12a98da}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yanqing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cb43f8d049da79757ef659dd18d8ef7a}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{2e448f2e68ab2f1cd9e54269cab56966}
+      \strng{fullhash}{f465c32ff79e5568735704cb0ba40428}
+      \strng{bibnamehash}{2e448f2e68ab2f1cd9e54269cab56966}
+      \strng{authorbibnamehash}{2e448f2e68ab2f1cd9e54269cab56966}
+      \strng{authornamehash}{2e448f2e68ab2f1cd9e54269cab56966}
+      \strng{authorfullhash}{f465c32ff79e5568735704cb0ba40428}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Physics Reports, 820 (2019) 1-51. doi:10.1016/j.physrep.2019.07.001}
+      \field{journaltitle}{Physics Reports}
+      \field{month}{8}
+      \field{title}{Coevolution spreading in complex networks}
+      \field{volume}{820}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 51}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1016/j.physrep.2019.07.001
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/Coevolution spreading in complex networks.pdf:PDF
+      \endverb
+      \keyw{thus attracted much attention in many disciplines. In this review,we introduce recent Complex networks progress in the study of coevolution spreading dynamics,emphasizing the contributions Coevolution spreading from the perspectives of statistical mechanics and network science. The theoretical Critical phenomena methods,critical phenomena,phase transitions,interacting mechanisms,and effects of Biological contagions Social contagions network topology for four representative types of coevolution spreading mechanisms,in- Resource allocation cluding the coevolution of biological contagions,social contagions,epidemic–awareness,Awareness diffusion and epidemic–resources,are presented in detail,and the challenges in this field as well}
+    \endentry
+    \entry{Nunner2021}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
+           family={Nunner},
+           familyi={N\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{fullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{bibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authorbibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authornamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authorfullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Computational Social Networks, https://doi.org/10.1186/s40649-021-00098-9}
+      \field{title}{A model for the co-evolution of dynamic social networks and infectious disease dynamics}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1186/s40649‑021‑00098‑9
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/A model for the coevolution of dynamic social networks and infectious disease dynamics.pdf:PDF
+      \endverb
+      \keyw{Network formation,Complex networks,Network dynamics,Epidemics,Infectious diseases,Health behavior,Risk perception,Agent-based simulation}
+    \endentry
+    \entry{Peng2021}{article}{}
+      \name{author}{8}{}{%
+        {{hash=db57e1ed1810ad3d01de7f7f8952ae03}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Kaiyan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1d4dc27b0f47fd5e8d4455b981096a13}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=198a4a508db28a518818a8aaa5325f96}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Vanessa},
+           giveni={V\bibinitperiod}}}%
+        {{hash=8a1a7ba2def328da19e2a191e5b5dbf3}{%
+           family={Lindstrom},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=27370347ef04e27ecfc001032601d603}{%
+           family={Parkinson},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=601d740175f4dcb922f0e42d2b46c9e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chuntian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=401b6f15b3d34e4f5dbabbaf4e460eb0}{%
+           family={Bertozzi},
+           familyi={B\bibinitperiod},
+           given={Andrea\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0c0f609a339310df23209cf68aba3b6e}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Mason\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific Pub Co Pte Ltd}%
+      }
+      \strng{namehash}{7069b3cbeb66c0a44c6954f50543b32e}
+      \strng{fullhash}{58eb3f4a2de7915822e67c5191b14e63}
+      \strng{bibnamehash}{7069b3cbeb66c0a44c6954f50543b32e}
+      \strng{authorbibnamehash}{7069b3cbeb66c0a44c6954f50543b32e}
+      \strng{authornamehash}{7069b3cbeb66c0a44c6954f50543b32e}
+      \strng{authorfullhash}{58eb3f4a2de7915822e67c5191b14e63}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Models and Methods in Applied Sciences}
+      \field{month}{11}
+      \field{number}{12}
+      \field{title}{A multilayer network model of the coevolution of the spread of a disease and competing opinions}
+      \field{volume}{31}
+      \field{year}{2021}
+      \field{pages}{2455\bibrangedash 2494}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1142/s0218202521500536
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Multilayer_Bertozzi_2021.pdf:PDF
+      \endverb
+    \endentry
+    \entry{teslya2022}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=702ed7b3713cf2d11ccdd4802f09867b}{%
+           family={Teslya},
+           familyi={T\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
+           family={Nunner},
+           familyi={N\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba8975270a2920ece46a34ae7d7bf0f3}{%
+           family={Buskens},
+           familyi={B\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=aa8edd1b623e5e77a57159775185c7d3}{%
+           family={Kretzschmar},
+           familyi={K\bibinitperiod},
+           given={Mirjam\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=3e74e28774ffb3065e8ed4921a6c23d5}{%
+           family={Gavrilets},
+           familyi={G\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press ({OUP})}%
+      }
+      \strng{namehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{fullhash}{a0498981081256351d0877afb9116afe}
+      \strng{bibnamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authorbibnamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authornamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authorfullhash}{a0498981081256351d0877afb9116afe}
+      \strng{editorbibnamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \strng{editornamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \strng{editorfullhash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{PNAS} Nexus}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{The effect of competition between health opinions onepidemic dynamics}
+      \field{volume}{1}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.1093/pnasnexus/pgac260
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/Effect of competition between health opinions o epidemic.pdf:PDF
+      \endverb
+      \keyw{health behavior,socio-epidemiological model,behavioral response,opinion dynamics,prophylactic behavior}
+    \endentry
+    \entry{Alvarez_Zuzek_2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d3e00968d11f9129a3e717387a6838cb}{%
+           family={Alvarez-Zuzek},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Lucila\bibnamedelima G.},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=fbb8495ae240388fcad555b6ec83fd98}{%
+           family={Rocca},
+           familyi={R\bibinitperiod},
+           given={Cristian\bibnamedelimb E.\bibnamedelimi La},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2fcd8714556d0fbf8e5d3f5039f5f7e7}{%
+           family={Iglesias},
+           familyi={I\bibinitperiod},
+           given={José\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=f666a781e51c0da0a97fa895449b00f2}{%
+           family={Braunstein},
+           familyi={B\bibinitperiod},
+           given={Lidia\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=fd7704b9919bacabcce647fd178fd1e6}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Yamir},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science ({PLoS})}%
+      }
+      \strng{namehash}{f836dae6d76082a875f6c515492e2cec}
+      \strng{fullhash}{16ddbf7c43613e872532c08dfa4331ea}
+      \strng{bibnamehash}{f836dae6d76082a875f6c515492e2cec}
+      \strng{authorbibnamehash}{f836dae6d76082a875f6c515492e2cec}
+      \strng{authornamehash}{f836dae6d76082a875f6c515492e2cec}
+      \strng{authorfullhash}{16ddbf7c43613e872532c08dfa4331ea}
+      \strng{editorbibnamehash}{fd7704b9919bacabcce647fd178fd1e6}
+      \strng{editornamehash}{fd7704b9919bacabcce647fd178fd1e6}
+      \strng{editorfullhash}{fd7704b9919bacabcce647fd178fd1e6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{PLOS} {ONE}}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Epidemic spreading in multiplex networks influenced by opinion exchanges on vaccination}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{e0186492}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0186492
+      \endverb
+      \verb{file}
+      \verb :Alvarez_Zuzek_2017 - Epidemic Spreading in Multiplex Networks Influenced by Opinion Exchanges on Vaccination.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Epstein_2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ac29b1adefc5d4d182dabb3ee146a662}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Joshua\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d628b8d06062c8aa685dfe36e1709d2b}{%
+           family={Hatna},
+           familyi={H\bibinitperiod},
+           given={Erez},
+           giveni={E\bibinitperiod}}}%
+        {{hash=30703b9cc19fef4d69fb1a1fc842f9ee}{%
+           family={Crodelle},
+           familyi={C\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{fullhash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{bibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authorbibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authornamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authorfullhash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{month}{8}
+      \field{number}{181}
+      \field{title}{Triple contagion: a two-fears epidemic model}
+      \field{volume}{18}
+      \field{year}{2021}
+      \field{pages}{20210186}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsif.2021.0186
+      \endverb
+      \verb{file}
+      \verb :Epstein_2021 - Triple Contagion_ a Two Fears Epidemic Model.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Auld_2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bbd92bd9190519d834ca656250f448b6}{%
+           family={Auld},
+           familyi={A\bibinitperiod},
+           given={M.Christopher},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{fullhash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{bibnamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authorbibnamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authornamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authorfullhash}{bbd92bd9190519d834ca656250f448b6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Choices, beliefs, and infectious disease dynamics}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{361\bibrangedash 377}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/s0167-6296(02)00103-0
+      \endverb
+      \verb{file}
+      \verb :Auld_2003 - Choices, Beliefs, and Infectious Disease Dynamics.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Sontag_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=488551e3226efd1394f8e084fe95d3ae}{%
+           family={Sontag},
+           familyi={S\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ac6e4d73f4a32b3f7e82c4cb9b5f8f83}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=577d24768e0c0d6a1e6ada9e80d08f44}{%
+           family={Yates},
+           familyi={Y\bibinitperiod},
+           given={Christian\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{925c2667c0ddd722630c6c3adfd57514}
+      \strng{fullhash}{925c2667c0ddd722630c6c3adfd57514}
+      \strng{bibnamehash}{925c2667c0ddd722630c6c3adfd57514}
+      \strng{authorbibnamehash}{925c2667c0ddd722630c6c3adfd57514}
+      \strng{authornamehash}{925c2667c0ddd722630c6c3adfd57514}
+      \strng{authorfullhash}{925c2667c0ddd722630c6c3adfd57514}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{month}{3}
+      \field{number}{188}
+      \field{title}{Misinformation can prevent the suppression of epidemics}
+      \field{volume}{19}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1098/rsif.2021.0668
+      \endverb
+      \verb{file}
+      \verb :Sontag2022 - Misinformation Can Prevent the Suppression of Epidemics.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Turker_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=383baec21b90da37c4585000a95ee2a1}{%
+           family={Turker},
+           familyi={T\bibinitperiod},
+           given={Meliksah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b7cd0eb01da34ce324163c0a2fc0fcd5}{%
+           family={Bingol},
+           familyi={B\bibinitperiod},
+           given={Haluk\bibnamedelima O.},
+           giveni={H\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{221c56f095d1df8928d27ab71c5dc21f}
+      \strng{fullhash}{221c56f095d1df8928d27ab71c5dc21f}
+      \strng{bibnamehash}{221c56f095d1df8928d27ab71c5dc21f}
+      \strng{authorbibnamehash}{221c56f095d1df8928d27ab71c5dc21f}
+      \strng{authornamehash}{221c56f095d1df8928d27ab71c5dc21f}
+      \strng{authorfullhash}{221c56f095d1df8928d27ab71c5dc21f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The last two years have been an extraordinary time with the Covid-19 pandemic killing millions, affecting and distressing billions of people worldwide. Authorities took various measures such as turning school and work to remote and prohibiting social relations via curfews. In order to mitigate the negative impact of the epidemics, researchers tried to estimate the future of the pandemic for different scenarios, using forecasting techniques and epidemics simulations on networks. Networks used in these research are either synthetic networks or real networks with limited size and domain specific interactions. Hence, their ability to represent the world is limited. Intending to represent real-life in an urban town in high resolution, we propose a parametric multi-layer undirected weighted network model, where vertices are the individuals of a town that tend to interact locally, and edges represent transmission probability. Each layer corresponds to a different interaction that occurs daily, such as "household", "work" or "school", with their own transmission probability. Our simulations indicate that locking down "friendship" layer has the highest impact in slowing down epidemics. Hence, our contributions are twofold, first we propose a parametric network generator model; second, we run SIR simulations on it and show the impact of layers.}
+      \field{eprintclass}{cs.CY}
+      \field{eprinttype}{arXiv}
+      \field{issn}{1434-6036}
+      \field{journaltitle}{The European Physical Journal B}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Multi-layer network approach in modeling epidemics in an urban town}
+      \field{volume}{96}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1140/epjb/s10051-023-00484-4
+      \endverb
+      \verb{eprint}
+      \verb 2109.02272
+      \endverb
+      \verb{file}
+      \verb :http\://arxiv.org/pdf/2109.02272v3:PDF;:Turker_2023 - Multi Layer Network Approach in Modeling Epidemics in an Urban Town.pdf:PDF
+      \endverb
+      \keyw{cs.CY,physics.soc-ph,J.3; J.4; K.4.1}
+    \endentry
+    \entry{Funk_2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6f56905c4bb6a626e0691218ac3c3fc}{%
+           family={Funk},
+           familyi={F\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=932172cbce9830fa1763c426c7088452}{%
+           family={Salathé},
+           familyi={S\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=07653d0cf969ecc13f4bf7e53d7d8fdc}{%
+           family={Jansen},
+           familyi={J\bibinitperiod},
+           given={Vincent\bibnamedelimb A.\bibnamedelimi A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \strng{fullhash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \strng{bibnamehash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \strng{authorbibnamehash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \strng{authornamehash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \strng{authorfullhash}{0894aa9c81812730a5cca5b0aff88d7b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{month}{5}
+      \field{number}{50}
+      \field{title}{Modelling the influence of human behaviour on the spread of infectious diseases: a review}
+      \field{volume}{7}
+      \field{year}{2010}
+      \field{pages}{1247\bibrangedash 1256}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1098/rsif.2010.0142
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/funk-et-al-2010-modelling-the-influence-of-human-behaviour-on-the-spread-of-infectious-diseases-a-review.pdf:PDF
+      \endverb
+      \keyw{epidemiology; infectious diseases; behaviour; vaccination 1. INTRODUCTION}
+    \endentry
+    \entry{Frieswijk_2022}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0f4287acced806f66fa99eda4e4ba8b4}{%
+           family={Frieswijk},
+           familyi={F\bibinitperiod},
+           given={Kathinka},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38d08d5531c5008acdd5d93232d0059b}{%
+           family={Zino},
+           familyi={Z\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fdd309e27948d942046d633747cc419b}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Mengbin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b420cdd284fce534ac179e987a208563}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{fullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \strng{bibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authorbibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authornamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authorfullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2475-1456}
+      \field{journaltitle}{IEEE Control Systems Letters}
+      \field{title}{A Mean-Field Analysis of a Network Behavioral–Epidemic Model}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{pages}{2533\bibrangedash 2538}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/lcsys.2022.3168260
+      \endverb
+      \verb{file}
+      \verb :Frieswijk_2022 - A Mean Field Analysis of a Network Behavioral_Epidemic Model.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Bauch_2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=aaeaf01943de2213dfead115b7943525}{%
+           family={Bauch},
+           familyi={B\bibinitperiod},
+           given={Chris\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=a84b54a2ec4f04ffad165215f1c4d5e9}{%
+           family={Bhattacharyya},
+           familyi={B\bibinitperiod},
+           given={Samit},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=932172cbce9830fa1763c426c7088452}{%
+           family={Salathé},
+           familyi={S\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science (PLoS)}%
+      }
+      \strng{namehash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{fullhash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{bibnamehash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{authorbibnamehash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{authornamehash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{authorfullhash}{45ce067a1798ebf71eaaf8b80f070bc6}
+      \strng{editorbibnamehash}{932172cbce9830fa1763c426c7088452}
+      \strng{editornamehash}{932172cbce9830fa1763c426c7088452}
+      \strng{editorfullhash}{932172cbce9830fa1763c426c7088452}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1553-7358}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Evolutionary Game Theory and Social Learning Can Determine How Vaccine Scares Unfold}
+      \field{volume}{8}
+      \field{year}{2012}
+      \field{pages}{e1002452}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1002452
+      \endverb
+      \verb{file}
+      \verb :Bauch_2012 - Evolutionary Game Theory and Social Learning Can Determine How Vaccine Scares Unfold.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Tyson_2020}{article}{}
+      \name{author}{5}{}{%
+        {{hash=4d007762858ec2a1bcfd7b9e5813ca15}{%
+           family={Tyson},
+           familyi={T\bibinitperiod},
+           given={Rebecca\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b71a375b908bb93489a7931817cc46d4}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Stephanie\bibnamedelima D.},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=282e13ae8f43657365690818195ee718}{%
+           family={Lo},
+           familyi={L\bibinitperiod},
+           given={Aboubakr\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c43f6e275ec3a0a3c16f54a7bd268964}{%
+           family={Baumgaertner},
+           familyi={B\bibinitperiod},
+           given={Bert\bibnamedelima O.},
+           giveni={B\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=9b4748733a8ab5063f86e1cd25c3921c}{%
+           family={Krone},
+           familyi={K\bibinitperiod},
+           given={Stephen\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{1fa55900a3bc6645426554e0007a9e94}
+      \strng{fullhash}{450b5def2db20d99fb8db0d3ffc650c8}
+      \strng{bibnamehash}{1fa55900a3bc6645426554e0007a9e94}
+      \strng{authorbibnamehash}{1fa55900a3bc6645426554e0007a9e94}
+      \strng{authornamehash}{1fa55900a3bc6645426554e0007a9e94}
+      \strng{authorfullhash}{450b5def2db20d99fb8db0d3ffc650c8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bulletin of Mathematical Biology}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{The Timing and Nature of Behavioural Responses Affect the Course of an Epidemic}
+      \field{volume}{82}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/s11538-019-00684-z
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/BMB2020.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Collinson2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7b02e97421f71d1081eb3d72b26b1677}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={Collinson},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a4f60dbd317b092de0126a0b928a338d}{%
+           family={Jane},
+           familyi={J\bibinitperiod},
+           given={Heffernan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \strng{fullhash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \strng{bibnamehash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \strng{authorbibnamehash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \strng{authornamehash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \strng{authorfullhash}{b9fe1d66cf437dd0aa612ef646bf052d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1471-2458}
+      \field{journaltitle}{BMC Public Health}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{Modelling the effects of media during an influenza epidemic}
+      \field{volume}{14}
+      \field{year}{2014}
+      \verb{doi}
+      \verb 10.1186/1471-2458-14-376
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/november_23/1471-2458-14-376.pdf:PDF
+      \endverb
+      \keyw{Mass media,Epidemic,Influenza,Agent-based Monte Carlo simulation}
+    \endentry
+    \entry{Granell_2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           familyi={G\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{bibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorbibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Competing spreading processes on multiplex networks: Awareness and epidemics}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{012808}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/physreve.90.012808
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/GLOBAL_EFFECT_Competing_spreading_processes_on_multiplex_networks.pdf:PDF
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

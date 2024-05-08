@@ -39,73 +39,17 @@ The model developed for the thesis work is a behavioural disease multilayer syst
 
 \section{Epidemiological model}
 
-\subsection{SIR model}
-\label{subsec:SIR}
-The first model we present is one of the simplest used to describe an epidemic. Here the population or density of individuals is divided in three groups: Susceptible, Infectious and Recovered. 
-The sum of all three groups is N, the total number of people. Usually, the groups are normalized and in this way their sum is equal to 1. 
-
-\begin{equation}
-	\frac{S}{N} + \frac{I}{N} + \frac{R}{N} = 1 
-\end{equation}
-The symbols used to indicate the density of each group are $s$, $i$, $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
-Usually, the assumption that N remains stable is done. This is possible considering that the epidemic time span is much lower than the life duration of a person, and so the number of death and birth is neglected. Alternatively, we can consider that the number of births, which is an input in the S compartment is roughly equal to the number of deaths, which is an output. 
-The net rate at which the number of infections increase is proportional to the number of encounters between S and I individuals, expressed by $ \beta s i $, where $\beta$ is a disease transmission coefficient. The simplest and easier way to initially explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The value of $\beta$ is used to describe this parameter. 
-Individuals pass from the infectious state to the recovered one at a rate $\gamma$. So the infection duration last an average time of $1/\gamma$ days. 
- In this initial model the immunity acquired after recovering from the illness is lifelong. It is equivalent for the model if after being sick a person recover or die, because it considers that it will not transmit the infection any more.  This assumption can be modified and there are often disease in which after a certain period individuals become again susceptible. Another initial simplification is the one of consider the coefficient $\beta$ and $\gamma$ constant. Also there is not a network structure defined in this model, but the population is considered homogeneously mixed. 
-Most frequent alternatives groups used to expand these three initial categories are: Exposed, Asymptomatic, Vaccinated, Symptomatic.These are intermediate groups, while a possible final state that can be add is the one of the "Deceased" individuals.   
-Although, SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. Because of this, two phases can be distinguished in the disease: a free-disease scenario, while the contagion is almost disappeared and a second state in which there is a large number of infected, called endemic equilibrium.
-
-\subsubsection{Derivation of I evolution}
-The number of infected on the next day is in a discrete time $\Delta t$ given by the equation:
-\begin{equation}
-	I(t+\Delta t) = I(t) + [\beta S(t)I(t) - \gamma I(t)]\Delta t
-\end{equation}
-
-If the value of N is large, the variables can be considered as continuous, and imposing a time interval close to zero it becomes:
-
-\begin{equation}
-	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
-\end{equation}
-
-Observing the dynamic development,  at $time = 0$ the population is almost composed by Susceptible, so $S(0) \approx N$, and in the first steps of contagion evolution this quantity remains stable. Considering this approximation, we have
-\begin{equation}
-		\frac{d I(t)}{dt} = (\beta S(0)-\gamma)I(t),
-\end{equation} 
-which gives,
-
-\begin{equation}
-	I(t) = I(0) \exp ^{(\beta S(0)- \gamma)t}
-	\label{eqn:sol_I}
-\end{equation}
-
- and the final set of differential equations that  describe the dynamic of infection is the following:
- \begin{equation}
- 	\begin{cases}
- 		dS / dt = -\beta S I \\
- 		dI / dt = \beta S I - \gamma I\\
- 		dR / dt =  \gamma I
- 	\end{cases}
- \end{equation}
 
 
-From the analytic solution  of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic. Furthermore, observing the exponential sign we can deduce the disease behaviour and how the situation can evolve.
-In fact if the exponential is greater than zero the number of sick grows exponentially. While, in the opposite case, infected people tend to zero. 
-
-The value $ \beta S(0)/\gamma = 1$ is defined as epidemic threshold. This quantity, normalized, is called $R_0$ index:
-\begin{equation}
-	R_0 = \beta/\gamma
-	\label{eqn:basic_rep_number}
-\end{equation}
-It measure the intensity of the contagion, or alternatively the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is met after an increasing in the number of Infected, a peak is reached. Then, the disease begins its falling phase. It is the natural behaviour of an epidemic.
-This transition happens when the value of $R = \beta S(t)/\gamma$, the effective reproduction number become less of 1.
-
- 
-INSERIRE FIGURE DAL MATLAB FATTO DA TE!e dei commenti su quello. 
-
-Other two interesting quantities to consider when a new disease appears are, the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. In fact, there is a large difference when a population suffering for an epidemic, if this ends rapidly because a lot of people get sick or id this number can be controlled, and the infectious curve is flatter.
 
 \subsection{SIRS model}
 \label{subsec:SIRS}
+
+$\beta$ is the transmission rate parameter for person-to-person
+contact, $\gamma$ is the recovery rate, $\delta$ is the rate at which
+immunity recedes following recovery, and $R(t)$ is the recovered
+fraction of the population
+
 To describe the epidemic evolution a  SIRS model is implemented. It is an extension of the most famous SIR. Its main addition is the possibility for individuals to become again susceptible after a certain period of time beyond the end of the infection. The choice of a SIR-like model is done because they are well-known as capable to describe disease like the COVID-19 CITA. From an epidemiological point of view, an "Exposed" compartment will be very suitable, to describe better the evolution of the disease. In fact, in this class of infections, after the contact with an infectious there is a certain period of incubation before the development of symptoms and contagiousness. Nevertheless this compartment was not insert in the model, because it was demonstred CITA, that also a more simple SIR can be able to model correctly the disease. In this case for realise a better fit of the real data a delay in the time scale of the system can be added in the model. This delay can be considered as an extra time to ... CITA E VEDI ARTICOLO.
 
 The possibility of become again susceptibles is added in the model, because it is considered an interesting feature in the study of a long range time scenario. 

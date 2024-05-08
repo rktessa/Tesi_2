@@ -98,21 +98,117 @@ Infectious disease is indicated as an illness resulting from the presence of a p
 \subsubsection{CFR, IFR and mortality excess} The case fatality rate is the ratio between the number of deaths due to a specific disease and the total number of confirmed positive cases. It is the likelihood for an infected person to die because of the infection. The infection fatality rate is instead the percentage of people infected with the disease that are expected to die. The two quantities can have a similar value: if every person who contracts the disease and every death attributable to the disease is known and recorded, then the CFR will equal the IFR.
 The excess in mortality can be calculated by observing the difference between the total death rate (due to any reason) a month per month in a comparison between a year with an epidemic and one without. 
 
-\subsubsection{Reproduction number $R_0$}
+\subsubsection{Reproduction number $R_0$} It is the fundamental measure of the infectiousness of a disease. It is the average number of secondary infections caused by one infected person in a fully susceptible population. If it is recalculated during the epidemic progression is called $R(t)$, a time-varying reproduction number. Finally exist also the effective reproduction number, describes the average number of secondary infected people during the epidemic (rescaling the value with the true number of susceptible). 
 
-\subsubsection{Incubation period and serial interval} The incubation is the time after exposure in which the disease develop and end when the infect starts show symptoms. 
+
+\subsubsection{Incubation period and serial interval} The incubation is the time after exposure in which the disease develops and ends when the infected start to show symptoms. The serial interval is instead the time that exists between two transmissions in a chain of infections. 
 
 %%%%%%%%%%%%%%%%%%%%
-\section{Epidemiological models categorization }
-There are several different typologies of mathematical model developed to describe the course of an epidemic. In this section the principal categories are introduced. There is then a focus, in \ref{subsec:SIR}, on the one used for the development of the present work, useful to introduce its main mechanisms and the first important conclusion that can be derived from it. 
+\section{Opinion/behaviour glossary}
+Dato l'approccio multidisciplinare sarebbe interessante inserire anche qualche termine per fare vedere che ho approondito anche questo aspetto. 
+
+\section{Epidemiological models categorization}
+Starting from the observation of the real world, the desire to understand better a certain phenomenon is the fundament of mathematical model development. A perfect model does not exist, because it is based on data or on assumptions that are incomplete w.r.t reality. However, a useful model guarantees the possibility of realizing general predictions and can be a powerful instrument for policymakers.  For example, an application is the estimation of certain policies' effects on the population during an epidemic. So, the aim is to have meaningful results, under a given set of real-world circumstances.
+When working on a model the importance of the uncertainty related to claims realized with this instrument must always remembered. This concept is remarked also on the definition of mathematical model present in \cite{Ledder_2023}. 
+\begin{displayquote}
+	"A Mathematical model is a self-contained collection of one or more variables together with a set of rules (usually formulas and equations) that prescribe the values of those variables. Models serve as an approximate quantitative description of some actual or hypothetical real-world scenario. They are created in the hope that the behavior they predict will capture enough of the features of that scenario to be useful."
+\end{displayquote}
+
+There are several different typologies of mathematical models developed.
+A first classification can be done considering the method used to obtain them: mechanistic, empirical, or conceptual models.
+The mechanistic model is based on assumptions about reality, or theoretical principles, modeled using a collection of one or more variables together with a self-contained set of rules. These models have an explanatory value on the reality they represent.
+Empirical models are realized by fitting a set of data. It is a powerful instrument, because data can be modeled quite well, but they lack the explanatory value of the mechanistic model.  Finally, with conceptual model, it is meant a verbal description of a real-world scenario. 
+
+For the present work, the mechanistic model is the strategy used.  This is because, in the epidemiology field, the scopes that conduce to the realization of a model go beyond just fitting data. Examples of possible scopes are:
+\begin{itemize}
+	\item following the epidemic evolution
+	\item collect and realize a structure to understand the information related to the disease 
+	\item obtaining general insight about control strategies
+	\item realize predictions
+\end{itemize}
+Considering the mechanistic category several different types of models have been developed or are adapted to be used in epidemiology modeling. In this section, the principal typologies are now introduced. 
+
+ There is then a focus, in \ref{subsec:SIR}, because it represents the mathematical base model of the multi-layer system implemented in the present work. It is important to introduce the logic underlying its structure, its main mechanisms, and the first important conclusion that can be derived from it because it is a useful introduction to the approach that will later be employed in the rest of the thesis.
 
 \subsection{Mean field models}
 
-The mean field model, also known as compartmental models are the first and most studied typology of mathematical model used in epidemiology.  The population considered in the model is divided in several subgroups, on the basis of the dynamic that want to be described. In this class of model  the severity of infection usually is not considered. People are infected or not. The transition from one compartment to another is determined by differential equations. There are transmission rates from one class to another. 
+The mean field model, also known as compartmental model is the first developed and most studied type of mathematical model used in epidemiology.  This model assumes that the well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected, exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine is base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one. 
+In this class of model, the severity of infection usually is not considered: people are infected or not. The transition from one compartment to another is determined by differential equations. There are parameters ruling the transition between groups that are coefficients whose meaning depends on the model's underlying assumptions. The most important metric in this class of models is the so-called "basic reproduction number". It expresses the seriousness of a disease and it is considered the fundamental threshold in epidemiology \cite{Hernandez_Vargas_2022}. 
 
 \subsubsection{SIR model}
+\label{subsec:SIR}
+The model that represents the base for epidemic mathematical studying is the SIR.  Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
+The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
+Usually, the assumption that N remains stable is made. This is possible considering that the term epidemic identifies a disease with a duration much lower than the life of a person. Considering this assumption the number of deaths and births can be neglected. Alternatively, we can consider that the number of births, which is an influx in the S compartment is roughly equal to the number of deaths, which is an outflux. These statements imply $s(t) + i(t) + r(t)= 1$ and $\dot{s}+ \dot{i} + \dot{r}= 0$.
+The disease reproduces horizontal incidence within the population. So, it is the connection with others that causes the infection diffusion. 
+$\beta$ is a coefficient that expresses the number of adequate contacts on average of a person per unit of time. The simplest way to explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The formula  $\beta \frac{I}{N} = \beta i$ is then the average number of contacts with infectives per unit time of one susceptible. Finally, the number of new cases per unit of time due to the $S = N s$  susceptibles is $\beta \frac{I}{N} S = \beta N i s$. This form of horizontal incidence is called the standard
+incidence. In this incidence, there is no dependence on population size \cite{Hethcote_2000}. This is because the contact of individuals daily is independent of the country dimension in which they live. 
 
-\subsection{Stochastic models}
+The second transition process in the model is that individuals move from the infectious state to the recovered one at a rate $\gamma$. So the infection duration lasts an average time of $1/\gamma$ days. The $\gamma$ parameter represents the healing or recovery rate of the population. A mathematical interpretation of this term is that  
+corresponds to exponentially distributed waiting times in the $I$ compartments. The transfer rate $\gamma I$ corresponds to $P(t) = e^{\gamma t}$. It is the fraction of infected that are still in their class after time $t$ of entering it and with a mean waiting time of $\frac{1}{\gamma}$.
+
+
+%%
+In this initial model, the immunity acquired after recovering from the illness is lifelong. It is equivalent if after being sick a person recovers or dies because it is considered that it will not transmit the infection anymore.  This assumption can be modified and there are often diseases in which after a certain period individuals become again susceptible. Another initial simplification is the one of considers the coefficient $\beta$ and $\gamma$ constant. 
+
+Although the SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. This effect was the main novelty studied in the pioneering work of Kermack and McKendrick \cite{kermack1927}. They found that in a fully susceptible population if and only if R0 > 1 an infection can start diffusing. Thus the origin of the term "threshold value" in epidemiology. 
+
+The dynamic of this system has been extensively studied and analyzed during the years CITA. The threshold effect distinguishes between two scenarios. The first is when $R_0 <1 $. It is called "free disease equilibrium. 
+In a fully susceptible population, a disease with a $R_0$ less than one does not spread. The initial small number of infected tends to zero and at equilibrium the whole population has remained in the $S$ group. This state, as proved in \cite{Hernandez_Vargas_2022}, is globally asymptotically stable. The second case is when the threshold is larger than one. Here, the number of infected grows until a peak and then decreases to zero. Both this max value of infected and the final number of susceptible can be calculated knowing the system's initial condition ($s_0$ and $i_0$) and the value of $\beta$ and $\gamma$, as explained in \cite{Hethcote_2000}. 
+This second scenario analyzed with a simple SIR model permits us to immediately understand how a very aggressive infection can spread across a large part of a population. In this situation, if no countermeasures are taken in time, there can be severe consequences on the society, with social and economic damages. 
+
+\subsubsection{Derivation of I evolution and SIR differential equations presentation}
+After having theoretically presented the model, it is now explained one method to derive the mathematical form of the infection compartment evolution. 
+The set of differential equations that  describe the dynamic of infection is the following:
+\begin{equation}
+	\begin{cases}
+		dS / dt = -\beta S I/N \\
+		dI / dt = \beta S I/N - \gamma I\\
+		dR / dt =  \gamma I
+	\end{cases}
+\end{equation}
+
+The equations in the system are written in continuous time. But a possible way to arrive at this form involves to begin from a discrete-time form. The number of infected rewritten in this form, with an interval  $\Delta t$ is given by the equation:
+\begin{equation}
+	I(t+\Delta t) = I(t) + [\beta S(t)I(t)/N - \gamma I(t)]\Delta t
+\end{equation}
+
+If the value of N is large, the variables can be considered as continuous, and imposing a time interval close to zero it becomes:
+
+\begin{equation}
+	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
+\end{equation}
+
+Consider now the initial condition. Knowing that the assumption of conservation of population size is done, the relation $S(t)+I(t)+R(t) = N$ holds. At the beginning of the disease, considering that there are few infected, the majority of the population is in the susceptible groups, so $S(0) \approx N$. Furthermore, during the initial days of contagion diffusion, this quantity remains stable. Considering this approximation, we have 
+\begin{equation}
+	\frac{d I(t)}{dt} = (\beta S(0)-\gamma)I(t),
+\end{equation} 
+which gives,
+
+\begin{equation}
+	I(t) = I(0) \exp ^{(\beta S(0)- \gamma)t}
+	\label{eqn:sol_I}
+\end{equation}
+
+
+
+From the analytic solution  of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic. Furthermore, observing the exponential sign we can deduce the disease behaviour and how the situation can evolve.
+In fact if the exponential is greater than zero the number of sick grows exponentially. While, in the opposite case, infected people tend to zero. 
+
+The value $ \beta S(0)/\gamma = 1$ is defined as epidemic threshold. This quantity, normalized, is called $R_0$ index:
+\begin{equation}
+	R_0 = \beta/\gamma
+	\label{eqn:basic_rep_number}
+\end{equation}
+It measure the intensity of the contagion, or alternatively the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is met after an increasing in the number of Infected, a peak is reached. Then, the disease begins its falling phase. It is the natural behaviour of an epidemic.
+This transition happens when the value of $R = \beta S(t)/\gamma$, the effective reproduction number become less of 1.
+
+
+INSERIRE FIGURE DAL MATLAB FATTO DA TE!e dei commenti su quello. 
+
+Other two interesting quantities to consider when a new disease appears are, the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. In fact, there is a large difference when a population suffering for an epidemic, if this ends rapidly because a lot of people get sick or id this number can be controlled, and the infectious curve is flatter.
+
+\subsection{Stochastic models} 	questa è una sottoclasse dei mean filed mi sa
 In this typology of models, the transition from a state to another is determined using a function of probability. They can be conceptually derived starting from the framework represented by ODEs models. They are useful when the disease to study has a lower number of infected or if there is a connection between the epidemic outcome and changes in individual dynamics. This is called demographic variability, and it concerns changes in transmission, births, recovery, or deaths within the population. Using stochastic models with Monte Carlo simulations can be useful to investigate epidemic models on networks. 
 The two most important type of models using this approach consider the time variable as continuous, $t \in [0, \infty) $and then the state variable is either discrete (Continuous-Time Markov-Chain) or continuous (Stochastic Differential Equations).
 Referring to the SIR model to make a simple example here the S and I compartments are modelled as random variables. The probability to individuals to change group depends on infection and recovery, the possible events that can occur. It is called transition probability. 
@@ -122,7 +218,7 @@ In the Stochastic differential equation, the random variables are continuous. Th
 \subsection{Agent-based networks}
 Another representation of the disease evolution can be done using an agent-based model. Here, using the topology of a network, composed by nodes and edges is realised the simulation. Individuals are represented with the node and their interactions with the edges. So, the connections in the graph are responsible for the contagion. Using this framework, it is possible to simulate more realistic scenarios, because permits to represent large and heterogeneous systems. It is not easy however to understand how model a complex society in this way.  
 
-\subsection{Multilayer systems}
+\subsection{Multilayer systems} da dividere in due se system or network based. 
 
 The complex dynamic of interactions existing in real word, develops in multiple patterns, with complicated relationships. This connection can change in time, and using the theory of multilayer network it can be improved the comprehension of such complexity. This is a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016}. 
 One possible way to develop models with this structure is the one done imagining that each layer represent a different type of interaction. An epidemiological example is one layer in which the physical contact between people are simulated and another representing social structure, the network of relations that every person has. This case has been presented in multiple works in the last year, for example CITA. 
