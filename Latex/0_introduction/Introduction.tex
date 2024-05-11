@@ -162,13 +162,14 @@ After having theoretically presented the model, it is now explained one method t
 The set of differential equations that  describe the dynamic of infection is the following:
 \begin{equation}
 	\begin{cases}
-		dS / dt = -\beta S I/N \\
-		dI / dt = \beta S I/N - \gamma I\\
-		dR / dt =  \gamma I
+		dS(t) / dt = -\beta S(t) I(t)\\
+		dI(t) / dt = \beta S(t) I(t) - \gamma I(t)\\
+		dR(t) / dt =  \gamma I(t)
 	\end{cases}
 \end{equation}
+Here $X(t)$ is indicated as the population at time $t$ in the X compartment. Remember that the assumption of constant population size is also done, so $S(t)+I(t)+R(t) = N$ holds.
 
-The equations in the system are written in continuous time. But a possible way to arrive at this form involves to begin from a discrete-time form. The number of infected rewritten in this form, with an interval  $\Delta t$ is given by the equation:
+The number of infected, with an interval  $\Delta t$, that in a base case can coincide with one day, is given by the equation:
 \begin{equation}
 	I(t+\Delta t) = I(t) + [\beta S(t)I(t)/N - \gamma I(t)]\Delta t
 \end{equation}
@@ -179,11 +180,11 @@ If the value of N is large, the variables can be considered as continuous, and i
 	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
 \end{equation}
 
-Consider now the initial condition. Knowing that the assumption of conservation of population size is done, the relation $S(t)+I(t)+R(t) = N$ holds. At the beginning of the disease, considering that there are few infected, the majority of the population is in the susceptible groups, so $S(0) \approx N$. Furthermore, during the initial days of contagion diffusion, this quantity remains stable. Considering this approximation, we have 
+Consider now the initial state of the system. At the beginning of the disease, considering that there are few infected, the majority of the population is in the susceptible groups, so $S(0) \approx N$. Furthermore, during the initial days of contagion diffusion, this quantity remains stable. Considering this approximation, we have 
 \begin{equation}
 	\frac{d I(t)}{dt} = (\beta S(0)-\gamma)I(t),
 \end{equation} 
-which gives,
+which gives now a differential equation with only a variable, $I(t)$, that has a well-known solution:
 
 \begin{equation}
 	I(t) = I(0) \exp ^{(\beta S(0)- \gamma)t}
@@ -192,28 +193,30 @@ which gives,
 
 
 
-From the analytic solution  of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic. Furthermore, observing the exponential sign we can deduce the disease behaviour and how the situation can evolve.
-In fact if the exponential is greater than zero the number of sick grows exponentially. While, in the opposite case, infected people tend to zero. 
+From the analytic solution of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic.  If the exponential argument has a positive sign it is observed an exponential increase in the number of infected. While, in the opposite case, infected people tend to zero. 
+The value $\frac{ \beta}{\gamma} S(0) = 1$ is defined as the epidemic threshold. In the initial phase of the epidemic the relation $\frac{ \beta}{\gamma} S(0) = \frac{ \beta}{\gamma} N $  holds. 
+This quantity, normalized, is called the basic reproductive rate, and indicated with the symbol $R_0$.
 
-The value $ \beta S(0)/\gamma = 1$ is defined as epidemic threshold. This quantity, normalized, is called $R_0$ index:
-\begin{equation}
-	R_0 = \beta/\gamma
-	\label{eqn:basic_rep_number}
-\end{equation}
-It measure the intensity of the contagion, or alternatively the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is met after an increasing in the number of Infected, a peak is reached. Then, the disease begins its falling phase. It is the natural behaviour of an epidemic.
-This transition happens when the value of $R = \beta S(t)/\gamma$, the effective reproduction number become less of 1.
+It measures the intensity of the contagion or the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is satisfied after an increase in the number of Infected, there is a point at which $\frac { \beta}{\gamma} S(0)$ becomes less than one. It is when this happens that the peak of the $I(t)$ curve is reached. Then, the disease begins its falling phase. It is the natural behavior of an epidemic.
 
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_con_rt}} \quad
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_multipli_beta}} \\
+	\caption[SIR dynamic example]{SIR system numerical solutions. Figure a) shows the evolution of compartments in the case of an epidemic. The violet dotted line represents the time-dependent $R_0(t)$. It can be seen that when this parameter is equal to $1$, the number of infected reaches its maximum value. In b) are presented different evolutions of the disease varying only the $\beta$ coefficient. The smaller its value the flattened and the more delayed the infectious curve is.}
+	\label{fig:sir_example}
+\end{figure}
+Other two interesting quantities to consider when a new disease appears are the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. There is a large difference when a population suffers from an epidemic if this ends rapidly because a lot of people get sick or if this number can be controlled, and the infectious curve is flatter. A strategy to flatten the curve can reduce the contact between susceptibles, actuating social distancing or avoiding contact with infected, implementing quarantine measures. These are two simple examples of actions that reduce the value of $\beta$. Another countermeasure is represented by vaccination. Its immediate effect on the epidemic is to remove susceptibles people, so the disease can afflict only a small group and be quickly extinguished. 
 
-INSERIRE FIGURE DAL MATLAB FATTO DA TE!e dei commenti su quello. 
-
-Other two interesting quantities to consider when a new disease appears are, the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. In fact, there is a large difference when a population suffering for an epidemic, if this ends rapidly because a lot of people get sick or id this number can be controlled, and the infectious curve is flatter.
-
-\subsection{Stochastic models} 	questa è una sottoclasse dei mean filed mi sa
-In this typology of models, the transition from a state to another is determined using a function of probability. They can be conceptually derived starting from the framework represented by ODEs models. They are useful when the disease to study has a lower number of infected or if there is a connection between the epidemic outcome and changes in individual dynamics. This is called demographic variability, and it concerns changes in transmission, births, recovery, or deaths within the population. Using stochastic models with Monte Carlo simulations can be useful to investigate epidemic models on networks. 
-The two most important type of models using this approach consider the time variable as continuous, $t \in [0, \infty) $and then the state variable is either discrete (Continuous-Time Markov-Chain) or continuous (Stochastic Differential Equations).
-Referring to the SIR model to make a simple example here the S and I compartments are modelled as random variables. The probability to individuals to change group depends on infection and recovery, the possible events that can occur. It is called transition probability. 
-In a Markov chain approach the transition probability is discretised, and there is no dependence on the history of the epidemic to know how it will evolve at time $t + \Delta t$. It is necessary to know only the current state of the process at time $t$. 
-In the Stochastic differential equation, the random variables are continuous. The system of equation deriving from this method are usually simpler to solve that the ones find using the first approach\cite{Allen2017}.  
+\subsubsection{Stochastic models} 	
+This is a group of models deriving by the mean-field, but using a different mathematical approach.
+In this typology, the transition from one state to another is determined using a function of probability.  Conceptually are derived using the same framework used with ODE models. They are useful when the disease to study has a lower number of infected or if there is a connection between the epidemic outcome and changes in individual dynamics. This is called demographic variability, and it concerns changes in transmission, births, recovery, or deaths within the population. Using stochastic models with Monte Carlo simulations can be useful to investigate epidemic models on networks \cite{Allen2017}. 
+The two most important types of models using this approach consider the time variable as continuous, $t \in [0, \infty) $and then the state variable is either discrete (Continuous-Time Markov-Chain) or continuous (Stochastic Differential Equations).
+Referring to the SIR model to make a simple example here the S and I compartments are modeled as random variables. The probability of individuals changing groups depends on infection and recovery, the possible events that can occur. It is called transition probability. 
+In a Markov chain approach the transition probability is discretized, and there is no dependence on the history of the epidemic to know how it will evolve at time $t + \Delta t$. It is necessary to know only the current state of the process at time $t$. 
+In the Stochastic differential equation, the random variables are continuous. 
 
 \subsection{Agent-based networks}
 Another representation of the disease evolution can be done using an agent-based model. Here, using the topology of a network, composed by nodes and edges is realised the simulation. Individuals are represented with the node and their interactions with the edges. So, the connections in the graph are responsible for the contagion. Using this framework, it is possible to simulate more realistic scenarios, because permits to represent large and heterogeneous systems. It is not easy however to understand how model a complex society in this way.  

@@ -36,6 +36,6 @@ Note incontro:
 Gli articoli che devo finire di guardare per la parte sir sono: 
 la review: per gli agent based
 appunti da daniele: per i multi layer syste/network
-articolo mata: per la spiegazione che hai già scritto a meta ce che devi correggere, vedi note a nche e ti manca la sezione tutta verde
+
 articolo hetcote se serve ancora
 articolo okabe per altre info utili su sir
