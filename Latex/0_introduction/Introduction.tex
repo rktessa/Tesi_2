@@ -27,7 +27,7 @@ A first simple example, that can help to understand the beneficial effect of stu
 
 \begin{itemize}
 	\item is this disease so infective that can cause a pandemic?
-	\item what are the threshold conditions that can cause and outbreak? 
+	\item what are the threshold conditions that can cause an outbreak? 
 \end{itemize}
 
 
@@ -219,14 +219,22 @@ In a Markov chain approach the transition probability is discretized, and there 
 In the Stochastic differential equation, the random variables are continuous. 
 
 \subsection{Agent-based networks}
-Another representation of the disease evolution can be done using an agent-based model. Here, using the topology of a network, composed by nodes and edges is realised the simulation. Individuals are represented with the node and their interactions with the edges. So, the connections in the graph are responsible for the contagion. Using this framework, it is possible to simulate more realistic scenarios, because permits to represent large and heterogeneous systems. It is not easy however to understand how model a complex society in this way.  
 
-\subsection{Multilayer systems} da dividere in due se system or network based. 
+Agent-based models are an alternative technique used to represent disease evolution. This approach is implemented based on the observation of spontaneous connections made by individuals. The evolution of a disease is considered over complex and realistic networks. The focus of this type of model is to understand how the network structure influences the epidemic by observing parameters such as the rate of spread.
 
-The complex dynamic of interactions existing in real word, develops in multiple patterns, with complicated relationships. This connection can change in time, and using the theory of multilayer network it can be improved the comprehension of such complexity. This is a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016}. 
-One possible way to develop models with this structure is the one done imagining that each layer represent a different type of interaction. An epidemiological example is one layer in which the physical contact between people are simulated and another representing social structure, the network of relations that every person has. This case has been presented in multiple works in the last year, for example CITA. 
-The dynamic realized in multiple networks can be single or coupled. In the first there is a top layer with its own dynamic evolution influencing another one. The coupled structure instead is the one in which the phenomena described in each layer evolve with the influence of what is happening in the other. There is a coupled connection with the presence of intra-layer connections.
+In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
+
+An advantage of this type of model is that it offers a very intuitive approach to epidemic modeling. Using an individual perspective guarantees an immediate interpretation of the model. A precise agent-based model can provide a greater understanding of the illness under consideration and direct information about countermeasures to implement to stop or mitigate its spread. However, to be powerful and capable of performing good analyses and predictions, a lot of information must be integrated into the model. Only if the agent-based model is highly capable of realistically reconstructing a real network can it be a reliable instrument, and achieving this requires very complex work.
+
+%%
+
+An example of a possible mathematical implementation of this class of models is now briefly presented. One possible technique to describe peer-to-peer contact in a graph structure is realized through a probabilistic framework. Here, assuming a total of $n$ agents in the model, spread processes can be described as a function of probability. Using Markov processes, each agent has a certain probability of transitioning from one state of the disease to another. To calculate the value of these probabilities, both the information derived from the network structure and parameters related to the disease, such as infectivity and recovery rates, are used. In this way, a stochastic evolution model of the processes is developed.
+
+Considering an SIS model described with a Markov process: it has a dimension of $2^n$, while implementing an SIRS model requires a dimension of $3^n$. Because the size of models developed in this manner becomes rapidly enormous, a mean-field approximation is employed. It is based on the assumptions of a network composed of a sufficiently large number of agents and on the independence of these nodes. With this technique, by taking expectations, the transition rates of individuals are approximated. Using these approximations, the boundary values of the agent's probability of infection can be determined at each time step \cite{Hernandez_Vargas_2022}.
+
+\subsection{Multilayer systems} 
 
 
 
+\subsection{Multilayer networks}
 

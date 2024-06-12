@@ -35,15 +35,13 @@ The influence of media has also been analysed. This is interesting, because it�
 
 
 \chapter{Models description and analysis}
-The model developed for the thesis work is a behavioural disease multilayer system. Before present in its entirety, a discussion about its two standalone component, a SIRS and a behavioural model is presented.
+To develop a multi-layer network combining an epidemiological layer with a behavioral one, we first study the dynamics of each layer separately, as presented here. 
 
-\section{Epidemiological model}
-
-
+In this section, we describe the developed SIRS epidemiological model, followed by the Careless, Compliant, Against behavioral model. A sensitivity analysis is also conducted. Understanding the underlying dynamics of each graph is crucial for better comprehending the dynamics emerging from the multi-layer structure.
 
 
-\subsection{SIRS model}
-\label{subsec:SIRS}
+\section{SIRS model}
+\label{sec:SIRS}
 
 $\beta$ is the transmission rate parameter for person-to-person
 contact, $\gamma$ is the recovery rate, $\delta$ is the rate at which
@@ -248,5 +246,47 @@ The plots show how, for a fixed values of $\lambda_1$ and $k_2$, change the size
 
 The threshold effect is clearly visible also here. Looking at the Compliant and Against final values it can also be seen that after the $R_1$ reproductive coefficient is became dominant, the  increase is the final size observed in the Compliant plot is due to the decrease in the Careless compartment. 
 
-Provo a scrivere, ma si va tutto molto bene
-L'inglese, come disse Daniele è da sistemare, però sono su una buona strada...
+%Provo a scrivere, ma si va tutto molto bene
+%L'inglese, come disse Daniele è da sistemare, però sono su una buona strada...
+
+
+
+
+\section{Behavioral epidemic model}
+The model is composed of two layer coupled together. A disease one describing the evolution of an epidemic and a behaviour one in which there are different behaviour during the epidemic development.
+The behavioral layer has three possible compartments: 
+
+\begin{itemize}
+	\item Heedless, people careless of the risk associated to the infection;
+	\item Compliant, composed by person that want avoid to become infected or infect others
+	\item Against, who not consider a new infection developing as a risk for its safety and not use protection or change its behaviour during the epidemic. 
+\end{itemize}
+The symbols used to represent these compartments are $H$, $C$, $A$.
+This behaviour structure is coupled with a SIRS epidemic model.
+
+The resulting system is described by the following set of differential equations \ref{eq:epi_behavioural_eq}: 
+\begin{equation}
+	\begin{cases}
+		\dot{SH} = - \phi k_1 SH \cdot C - k_2 SH \cdot A + \lambda_1 SC + \lambda_2 SA + \delta(1-\phi_n)RC - \beta SH \cdot I\\
+		\dot{SC} = \phi k_1 SH \cdot C + \delta \phi_n RC - \lambda_1 SC - \beta \rho SC \cdot I  \\
+		\dot{SA} = k_2 SH \cdot A - \lambda_2 SA - \beta SA \cdot I + \delta RA \\
+		\dot{IC} = \beta \rho SC \cdot I + \beta SH \cdot I + \phi k_3 IA \cdot C - \lambda_3 IC -  k_4 IC \cdot A + \lambda_4 IA - \gamma IC\\
+		 \dot{IA} = \beta SA \cdot I - \phi k_3 IA \cdot C + \lambda_3 IC + k_4 IC \cdot A - \lambda_4 IA - \gamma IA\\
+		 \dot{RC} = \gamma IC - k_6 RC \cdot A + \lambda_6 RA + \phi k_5 RA \cdot C - \lambda_5 RC - \delta RC\\
+		 \dot{RA} = \gamma IA + k_6 RC \cdot A - \lambda_6 RA - \phi k_5 RA \cdot C + \lambda_5 RC - \delta RA\\
+	\end{cases}
+	\label{eq:epi_behavioural_eq}
+\end{equation}
+
+Some specifications:
+\begin{itemize}
+	\item $A = SA + IA + RA$ the totality of Against group.
+	\item $C = SC + IC + RC$ the totality of Compliant group.
+	\item $I = IA + IC$ the total number of infected.
+	\item $\phi$ is awareness a parameter that account for the current state of epidemic and influence the behaviour persuasion between groups. It can be modelled in different ways. 
+	\item $\phi_n$ it is the awareness normalized, used to split the population while re entering in the susceptible class in the Heedless or Compliant group. 
+	\item $\rho$ is the protection factor that Compliant people have and reduce their possibility of become infected.
+	\item $\beta$ is the infectivity rate associated with the disease.
+	\item $\gamma$ is the rate of infection duration.
+	\item $\delta$ is the recovery rate from the state $R$ to return in the $S$ one. 
+\end{itemize}

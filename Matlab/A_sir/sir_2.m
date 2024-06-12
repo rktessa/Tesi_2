@@ -89,21 +89,21 @@ hold on
 plot(taxis,xaxis3, 'linewidth',1.1 )
 plot(taxis,yaxis3, 'linewidth',1.1)
 plot(taxis,zaxis3, 'linewidth',1.1)
-xlabel("Day(t)");
-ylabel("S(t), I(t), R(t)");
+xlabel("t[days]");
+ylabel("S[t], I[t], R[t]");
 yyaxis right
 plot(taxis,(beta/gamma).*xaxis3./N, 'linewidth',1.1)
 yline(1, "--")
 ylim([0 7])
-ylabel("R_0(t)");
+ylabel("R_0[t]");
 title("SIR MODEL")
-legend('S','I','R', 'R_0(t)')
+legend('S','I','R', 'R_0[t]', Orientation='horizontal', Location='southoutside')
 txt = {['\beta = ' num2str(beta)],['\gamma = ' num2str(gamma)]};
     text(220,2.9,txt)
 fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 20 12]);
-set(gcf, 'PaperSize', [20 12]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 24 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
 print(gcf,'-dpdf', ['sir_con_rt.pdf'])
 
 
@@ -131,15 +131,15 @@ plot(taxis,xaxis5,'.','Color', [0.6350 0.0780 0.1840],'HandleVisibility','off')
 plot(taxis,yaxis5, 'linewidth',1.1,'Color', [0.6350 0.0780 0.1840],'DisplayName','\beta = 0.19')
 plot(taxis,zaxis5, 'LineStyle', "--",'Color',[0.6350 0.0780 0.1840],'HandleVisibility','off')
 title("SIR MODEL")
-legend("AutoUpdate","off")
+legend("AutoUpdate","off",  Orientation='horizontal', Location='southoutside')
 txt = {['\gamma = ' num2str(gamma)],['1/\gamma = ' num2str(1/gamma)]};
 text(230,0.25,txt)
-xlabel("Day(t)");
-ylabel("S(t), I(t), R(t)");
+xlabel("t[days]");
+ylabel("S[t], I[t], R[t]");
 fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 20 12]);
-set(gcf, 'PaperSize', [20 12]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 24 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
  print(gcf,'-dpdf', ['sir_multipli_beta.pdf'])
 
 %% Runge Kutta second order solution of SIR      

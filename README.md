@@ -18,7 +18,7 @@ Note incontro:
 - Andare avanti con lo studio di analisi del modello doppio. una idea potrebbe essere quella di cercare di ridurre la dimensionalità del sistema, e fissare i parametri che possono considerarsi più stabili, come ad esempio la fatigue,che sembra dai dati abbastanza piccola. Il libro che consigliava Daniele, contiene delle sezioni in cui vengono affrontate queste tecniche. Leggi e copia, fai, non leggere e basta.
 - rispetto anche a lavoro simile nel modello come quello dell'articolo, si vede una certa differenza di approccio, obbiettivi e prospettiva. Si può spiegare anche quello e tenere come reference metodologica.
 - il mio lavoro ha come obbiettivo avere una attinenza a dei dati realmente osservabili, 
-- dai dati vedere come riproduco i pttern e stima dei valori dei parametri
+- dai dati vedere come riproduco i pattern e stima dei valori dei parametri
 - analisi di sensitività serve per trovare delle stime in cui hanno un effetto i vari parametri e poi quelli saranno i boundaries da cui eseguire analisi di fitting.
 - io sto descrivendo due modelli piccoli e poi li unisco
 - sempre per come ci si pone con la letteratura capire che se anche c'è già qualcosa di fatto, ma il mio approccio è nuovo è quello che conta. ed è quello che sto facendo ora.  
@@ -39,3 +39,30 @@ appunti da daniele: per i multi layer syste/network
 
 articolo hetcote se serve ancora
 articolo okabe per altre info utili su sir
+
+## Significato del modello
+Dividere la popolazione in 
+-Compliant/Carefull
+-Heedless/Careless
+- Against rules/Risky
+
+A un tempo zero la popolazione è SH nella quasi totalità. Andando avanti si dividerà in SC e SA e poi questi tratti rimangono negli strati sottostanti, perchè a quel punto più il tempo va avanti più le persone hanno una memoria storica e ha senso che rimangano i due gruppi pro e contro. Quindi il modello tiene conto a questo livello di S dell'esistenza di una zona grigia in cui stanno le persone senza una opinione forte. A livello di una situazione in cui la pandemia è appena iniziata mi aspetto siano tutti qui e anche che sia un comparto che si riempie abbastanza quando il disease c'è  da più tempo, continua a girare ma la tipo è meno mortale. 
+
+COme diceva la prof le person IC sono più a casa e quindi partecipano meno all'infezione (anche sensibilmente meno forse, poi questi coefficienti vanno tarati).
+
+
+Nella accezione di behaviour avevo una idea rispetto al senso... 
+- i compliant stanno a casa e non partecipano all'nfezione mentre gli against non rispettano queste regole.
+
+- i compliant si proteggono, gli against no.
+ - Decidere che modello usare per awareness della popolazione. 
+
+ In epi_behaviour01.m ho tolto la mortalità natalità come effetto, mentre ho cambiato i nomi delle variabili e corretto il codice per adeguarlo alle decisione nuove prese.
+
+
+12 Giugno:
+
+- Scrittura del codice corretto per fare simulazioni del modello
+- Codice con le matrici per il calcolo di R0
+- Vedere dove eri arrivato a scrivere prima per concludere beneddetto primo capitolo. 
+- Sempre nel primo capitolo hai trovato un po' di materiale da inserire per la parte di glossario di Opinion e Behavior. 

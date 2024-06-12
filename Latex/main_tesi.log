@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  11 MAY 2024 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  31 MAY 2024 09:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1521,7 +1521,7 @@ Package hyperref Info: Link coloring ON on input line 81.
 \@outlinefile=\write7
 \openout7 = `main_tesi.out'.
 
-<STN.png, id=94, 1027.84pt x 1027.84pt>
+<STN.png, id=98, 1027.84pt x 1027.84pt>
 File: STN.png Graphic file (type png)
 <use STN.png>
 Package pdftex.def Info: STN.png  used on input line 105.
@@ -1635,7 +1635,7 @@ TeX/fonts/enc/dvips/lm/lm-rm.enc}] (0_introduction/Introduction.tex [6
 
 ] [8]
 Chapter 1.
-<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=178, 77.08
+<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=184, 77.08
 8pt x 59.5023pt>
 File: 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic f
 ile (type jpg)
@@ -1678,29 +1678,33 @@ LaTeX Warning: Citation 'Hethcote_2000' on page 16 undefined on input line 157.
 
 [16{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
 MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<0_introduction/images_introduction/sir_con_rt.pdf, id=249, 569.12625pt x 341.2
-75pt>
+<0_introduction/images_introduction/sir_con_rt.pdf, id=255, 682.55pt x 426.5937
+5pt>
 File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
 <use 0_introduction/images_introduction/sir_con_rt.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
 d on input line 205.
-(pdftex.def)             Requested size: 202.7993pt x 121.60912pt.
-<0_introduction/images_introduction/sir_multipli_beta.pdf, id=250, 569.12625pt 
-x 341.275pt>
+(pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
+<0_introduction/images_introduction/sir_multipli_beta.pdf, id=256, 682.55pt x 4
+26.59375pt>
 File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
 <use 0_introduction/images_introduction/sir_multipli_beta.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_multipli_beta.p
 df  used on input line 207.
-(pdftex.def)             Requested size: 202.7993pt x 121.60912pt.
+(pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17] [18 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introductio
-n/images_introduction/sir_multipli_beta.pdf>])
-(1_corpo/opinion_disease_model.tex [19] [20
+n/images_introduction/sir_multipli_beta.pdf>]
+
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 19 undefined on input l
+ine 233.
+
+) (1_corpo/opinion_disease_model.tex [19] [20
 
 ] [21
 
@@ -1713,46 +1717,46 @@ Chapter 3.
 [27
 
 ] [28]
-<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=353, 526.96875pt
+<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=357, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png Graphic file (t
 ype png)
 <use 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.
-png  used on input line 135.
+png  used on input line 133.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=356, 526.9
+<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=360, 526.9
 6875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png Graphic f
 ile (type png)
 <use 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1greater1_null
-cline.png  used on input line 143.
+cline.png  used on input line 141.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
 [29]
 Underfull \vbox (badness 3291) has occurred while \output is active []
 
  [30 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <
 ./1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png (PNG copy)>]
-<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=368, 526.96875pt
+<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=372, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png Graphic file (t
 ype png)
 <use 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.
-png  used on input line 161.
+png  used on input line 159.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=370, 526
+<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=374, 526
 .96875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png Graphic
  file (type png)
 <use 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r2greater1_null
-cline_1.png  used on input line 169.
+cline_1.png  used on input line 167.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
 
 
@@ -1760,42 +1764,42 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Reference `fig:r1r2less1nullcline' on page 31 undefined on input
- line 179.
+ line 177.
 
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=371, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=375, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png Graphic file (ty
 pe png)
 <use 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.p
-ng  used on input line 184.
+ng  used on input line 182.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=372, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=376, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png Graphic fi
 le (type png)
 <use 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullc
-line.png  used on input line 186.
+line.png  used on input line 184.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=374, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=378, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png Graphic file (ty
 pe png)
 <use 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.p
-ng  used on input line 199.
+ng  used on input line 197.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=375, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=379, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png Graphic fi
 le (type png)
 <use 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullc
-line.png  used on input line 201.
+line.png  used on input line 199.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
 [31 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)>]
 
@@ -1807,71 +1811,71 @@ Underfull \vbox (badness 3612) has occurred while \output is active []
  [32 <./1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png (PNG 
 copy)> <./1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> 
 <./1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png (PNG copy)>]
-<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=390
+<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=394
 , 517.935pt x 529.98pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png Gr
 aphic file (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
-_sensitivity.png  used on input line 223.
+_sensitivity.png  used on input line 221.
 (pdftex.def)             Requested size: 198.5766pt x 203.19785pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=391, 
+<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=395, 
 501.5538pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png Grap
 hic file (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_s
-ensitivity.png  used on input line 225.
+ensitivity.png  used on input line 223.
 (pdftex.def)             Requested size: 198.5766pt x 210.59206pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=392,
+<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=396,
  453.3738pt x 418.6842pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png Gra
 phic file (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_careless_
-sensitivity.png  used on input line 227.
+sensitivity.png  used on input line 225.
 (pdftex.def)             Requested size: 198.5766pt x 183.3847pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=394, 476.018
+<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=398, 476.018
 4pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png Graphic fil
 e (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
-_r1.png  used on input line 239.
+_r1.png  used on input line 237.
 (pdftex.def)             Requested size: 170.14622pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=395, 553.1064p
+<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=399, 553.1064p
 t x 529.4982pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file 
 (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_against_r1.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_r
-1.png  used on input line 241.
+1.png  used on input line 239.
 (pdftex.def)             Requested size: 198.60332pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=396, 455.301p
+<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=400, 455.301p
 t x 390.7398pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png Graphic file
  (type png)
 <use 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_careless_
-r1.png  used on input line 243.
+r1.png  used on input line 241.
 (pdftex.def)             Requested size: 221.53629pt x 190.12474pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33 <./1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png (PNG copy)> <./
-1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png (PNG copy)>])
-[34 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png> 
-<./1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png> <./1_c
-orpo/figure/behavioural_equilibrium/final_careless_sensitivity.png (PNG copy)>]
-[35 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./1_corp
-o/figure/behavioural_equilibrium/final_against_r1.png> <./1_corpo/figure/behavi
-oural_equilibrium/final_careless_r1.png (PNG copy)>] [36
+1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [34 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png>
+ <./1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png> <./1_
+corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png (PNG copy)>
+] [35 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./1_co
+rpo/figure/behavioural_equilibrium/final_against_r1.png> <./1_corpo/figure/beha
+vioural_equilibrium/final_careless_r1.png (PNG copy)>]) [36]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 34.
 
@@ -1894,7 +1898,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_tesi.out' has not changed.
-(rerunfilecheck)             Checksum: E551E301BBD0D05F496706C1AF2A4DC2;1651.
+(rerunfilecheck)             Checksum: B34ADA5A8250081931D50B41643C95CC;1723.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_tesi
@@ -1905,10 +1909,10 @@ Package logreq Info: Writing requests to 'main_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33783 strings out of 475247
- 646175 string characters out of 5767606
+ 33787 strings out of 475247
+ 646230 string characters out of 5767606
  1933785 words of memory out of 5000000
- 54668 multiletter control sequences out of 15000+600000
+ 54670 multiletter control sequences out of 15000+600000
  641087 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  138i,14n,135p,2198b,3508s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1923,9 +1927,9 @@ Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type
 ><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/Program Files/MiK
 TeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
 c/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main_tesi.pdf (38 pages, 1240047 bytes).
+Output written on main_tesi.pdf (38 pages, 1248639 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 131 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
 
