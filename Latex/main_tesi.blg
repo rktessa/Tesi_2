@@ -1,27 +1,29 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main_tesi.blg'
-[161] biber-MSWIN64:340> INFO - === 
-[204] Biber.pm:419> INFO - Reading 'main_tesi.bcf'
-[335] Biber.pm:979> INFO - Found 21 citekeys in bib section 0
-[352] Biber.pm:4419> INFO - Processing section 0
-[365] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[435] bibtex.pm:1713> INFO - LaTeX decoding ...
-[593] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[770] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[770] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[770] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
-[771] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[792] bbl.pm:660> INFO - Writing 'main_tesi.bbl' with encoding 'UTF-8'
-[806] bbl.pm:763> INFO - Output to main_tesi.bbl
-[807] Biber.pm:131> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Allen2017'
-[807] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Wang_2019' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'nov' in entry 'teslya2022' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'nov' in entry 'Alvarez_Zuzek_2017' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Epstein_2021' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'may' in entry 'Auld_2003' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'mar' in entry 'Sontag_2022' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'may' in entry 'Funk_2010' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'jan' in entry 'Tyson_2020' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - legacy month field 'jul' in entry 'Granell_2014' is not an integer - this will probably not sort properly.
-[807] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\rates\AppData\Local\Temp\biber_tmp_wUPK\f4d088b3f9f145b5c3058da33afd57d4_27704.utf8, line 1026, warning: 548 characters of junk seen at toplevel
-[807] Biber.pm:133> INFO - WARNINGS: 11
+[164] biber-MSWIN64:340> INFO - === 
+[202] Biber.pm:419> INFO - Reading 'main_tesi.bcf'
+[324] Biber.pm:979> INFO - Found 24 citekeys in bib section 0
+[340] Biber.pm:4419> INFO - Processing section 0
+[353] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[404] bibtex.pm:1713> INFO - LaTeX decoding ...
+[576] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[765] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[765] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[765] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[765] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[787] bbl.pm:660> INFO - Writing 'main_tesi.bbl' with encoding 'UTF-8'
+[802] bbl.pm:763> INFO - Output to main_tesi.bbl
+[803] Biber.pm:131> WARN - Duplicate entry key: 'Bauch_2012' in file 'bibliography.bib', skipping ...
+[803] Biber.pm:131> WARN - Duplicate entry key: 'Wang_2015' in file 'bibliography.bib', skipping ...
+[803] Biber.pm:131> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Allen2017'
+[803] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Wang_2019' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'nov' in entry 'teslya2022' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'nov' in entry 'Alvarez_Zuzek_2017' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Epstein_2021' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'may' in entry 'Auld_2003' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'mar' in entry 'Sontag_2022' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'may' in entry 'Funk_2010' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'jan' in entry 'Tyson_2020' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - legacy month field 'jul' in entry 'Granell_2014' is not an integer - this will probably not sort properly.
+[803] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\rates\AppData\Local\Temp\biber_tmp_QqWI\f4d088b3f9f145b5c3058da33afd57d4_14988.utf8, line 1028, warning: 548 characters of junk seen at toplevel
+[804] Biber.pm:133> INFO - WARNINGS: 13

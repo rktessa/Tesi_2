@@ -1,7 +1,7 @@
 clc;
 clear all;
 close all;
-addpath('../Matlab')
+addpath(genpath('../Matlab'))
 %% NULLCLINE PLOT OF BEHAVIOURAL MODEL
 obj = functionsContainer;
 x = linspace(0,1,1000);

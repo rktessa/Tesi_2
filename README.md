@@ -23,7 +23,6 @@ Note incontro:
 - io sto descrivendo due modelli piccoli e poi li unisco
 - sempre per come ci si pone con la letteratura capire che se anche c'è già qualcosa di fatto, ma il mio approccio è nuovo è quello che conta. ed è quello che sto facendo ora.  
 - bisogna rivedere codice del modello misto e poi correggere il delta con quello che è corretto e cambiare il nome di uno dei due
-- un mese per finire questa parte e averla tutta ben scritta, compresa la literature review. 
 - all'inizio, inquadrare la situazione, cioè le epidemie esistono, poi alllora esprimere il desiderio di studiare questo fenomeno e come venga fatto bene da tempo. che il modelling che volgio fare aggiunge anche degli altri obiettivi multidisciplinari, volendo integrare l'effetto del comportamento delle persone. e l'awareness  che è un filone molto attivo e promettende nowadays. e può essere utile per modelli che permettenao di capire meglio le epidemie e pe queloso la tesi si vuole inserire in questo filone di ricerca. 
 
 - dopo la parte di descrizione dei vari modelli inserire un capitolo di objectives e di summary dei contenuti. nella prima parte ripeterai un pochino quello che hai detto nella introduction e poi descirvi i vari capitoli. 
@@ -46,7 +45,7 @@ Dividere la popolazione in
 -Heedless/Careless
 - Against rules/Risky
 
-A un tempo zero la popolazione è SH nella quasi totalità. Andando avanti si dividerà in SC e SA e poi questi tratti rimangono negli strati sottostanti, perchè a quel punto più il tempo va avanti più le persone hanno una memoria storica e ha senso che rimangano i due gruppi pro e contro. Quindi il modello tiene conto a questo livello di S dell'esistenza di una zona grigia in cui stanno le persone senza una opinione forte. A livello di una situazione in cui la pandemia è appena iniziata mi aspetto siano tutti qui e anche che sia un comparto che si riempie abbastanza quando il disease c'è  da più tempo, continua a girare ma la tipo è meno mortale. 
+A un tempo zero la popolazione è SH nella quasi totalità. Andando avanti si dividerà in SC e SA e poi questi tratti rimangono negli strati sottostanti, perchè a quel punto più il tempo va avanti più le persone hanno una memoria storica e ha senso che rimangano i due gruppi pro e contro. Quindi il modello tiene conto a questo livello di S dell'esistenza di una zona grigia in cui stanno le persone senza una opinione forte. A livello di una situazione in cui la pandemia è appena iniziata mi aspetto siano tutti qui e anche che sia un comparto che si riempie abbastanza quando il disease c'è  da più tempo, continua a girare ma la tipo è meno mortale. All'inizio non c'è timore, poi si diffonde una ‘‘concerned awareness,’’!
 
 COme diceva la prof le person IC sono più a casa e quindi partecipano meno all'infezione (anche sensibilmente meno forse, poi questi coefficienti vanno tarati).
 
@@ -60,9 +59,7 @@ Nella accezione di behaviour avevo una idea rispetto al senso...
  In epi_behaviour01.m ho tolto la mortalità natalità come effetto, mentre ho cambiato i nomi delle variabili e corretto il codice per adeguarlo alle decisione nuove prese.
 
 
-12 Giugno:
+21 Giugno:
 
-- Scrittura del codice corretto per fare simulazioni del modello
-- Codice con le matrici per il calcolo di R0
 - Vedere dove eri arrivato a scrivere prima per concludere beneddetto primo capitolo. 
 - Sempre nel primo capitolo hai trovato un po' di materiale da inserire per la parte di glossario di Opinion e Behavior. 

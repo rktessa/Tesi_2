@@ -1,15 +1,16 @@
 clc;
 close all;
 % clear all;
-addpath('..\')
+addpath(genpath('..\'))
+
 %% Visualization of the multiple behaviour data
-  % load("data/multilpiAgainst.mat")
+   % load("data/multilpiAgainst.mat")
 % load("data/multilpiBehaviour.mat")
-   % load("data/multilpiCareless.mat")
+    % load("data/multilpiCareless.mat")
  % load("data/multilpiCompliant.mat")
 %% 
 % Against = Compliant;
- Against = Careless;
+% Against = Careless;
 %% Against plot
 % plot Against wrt the variation of the lambda2 coefficient
 i = 0;

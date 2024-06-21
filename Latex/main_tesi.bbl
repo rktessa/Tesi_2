@@ -159,6 +159,146 @@
       \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/(Springer Undergraduate Texts in Mathematics and Technology) Glenn Ledder - Mathematical Modeling for Epidemiology and Ecology-Springer (2023).pdf:PDF
       \endverb
     \endentry
+    \entry{Hernandez_Vargas_2022}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=d7ec63687cee4a77769195ccdfa60786}{%
+           family={Hernandez-Vargas},
+           familyi={H\bibinithyphendelim V\bibinitperiod},
+           given={Esteban\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=da5c759a4f3c2d197a34625e2d73178a}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Alejandro\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=dc1dff3fdb5030103fe1b5e49e0c6bc6}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Carolyn\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b10c749613158966a3f0f3d2ec99519c}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Xiaoqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d9b2c49d4125d388e8fc58e8cee85477}{%
+           family={Campana},
+           familyi={C\bibinitperiod},
+           given={Francesca\bibnamedelima Cala},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d32e38544884606b540a524e97669c9b}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{fullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \strng{bibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authorbibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authornamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authorfullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{2022 IEEE 61st Conference on Decision and Control (CDC), December 6-9, 2022, Cancun, Mexico}
+      \field{booktitle}{2022 IEEE 61st Conference on Decision and Control (CDC)}
+      \field{month}{12}
+      \field{title}{Modelling and Control of Epidemics Across Scales}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1109/cdc51059.2022.9992380
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/CP043_2022_CDC_epidemic_tutorial.pdf:PDF
+      \endverb
+      \keyw{Biological systems; Network analysis and control; Systems biology}
+    \endentry
+    \entry{Hethcote_2000}{article}{}
+      \name{author}{1}{}{%
+        {{hash=de20e3250faecdf1713262a01fe902a4}{%
+           family={Hethcote},
+           familyi={H\bibinitperiod},
+           given={Herbert\bibnamedelima W.},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Society for Industrial & Applied Mathematics (SIAM)}%
+      }
+      \strng{namehash}{de20e3250faecdf1713262a01fe902a4}
+      \strng{fullhash}{de20e3250faecdf1713262a01fe902a4}
+      \strng{bibnamehash}{de20e3250faecdf1713262a01fe902a4}
+      \strng{authorbibnamehash}{de20e3250faecdf1713262a01fe902a4}
+      \strng{authornamehash}{de20e3250faecdf1713262a01fe902a4}
+      \strng{authorfullhash}{de20e3250faecdf1713262a01fe902a4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SIAM Rev. 2000.42:599-653}
+      \field{issn}{1095-7200}
+      \field{journaltitle}{SIAM Review}
+      \field{month}{1}
+      \field{number}{4}
+      \field{title}{The Mathematics of Infectious Diseases}
+      \field{volume}{42}
+      \field{year}{2000}
+      \field{pages}{599\bibrangedash 653}
+      \range{pages}{55}
+      \verb{doi}
+      \verb 10.1137/s0036144500371907
+      \endverb
+      \verb{file}
+      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/The Mathematics of Infectious.pdf:PDF
+      \endverb
+      \keyw{92D30,34C23,34C60,35B32,35F25,thresholds,basic reproduction number,contact number,epidemiology,infectious diseases}
+    \endentry
+    \entry{kermack1927}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a59aa6e9308e1e3bba57fdedf5dc8c7b}{%
+           family={Kermack},
+           familyi={K\bibinitperiod},
+           given={William\bibnamedelima Ogilvy},
+           giveni={W\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=249d98aae1ad3deaeb51e4cf716bd1f7}{%
+           family={McKendrick},
+           familyi={M\bibinitperiod},
+           given={Anderson\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{438ba327e51494468ee4a8d771e29321}
+      \strng{fullhash}{438ba327e51494468ee4a8d771e29321}
+      \strng{bibnamehash}{438ba327e51494468ee4a8d771e29321}
+      \strng{authorbibnamehash}{438ba327e51494468ee4a8d771e29321}
+      \strng{authornamehash}{438ba327e51494468ee4a8d771e29321}
+      \strng{authorfullhash}{438ba327e51494468ee4a8d771e29321}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2053-9150}
+      \field{journaltitle}{Proceedings of the Royal Society of London. Series A, Containing Papers of a Mathematical and Physical Character}
+      \field{month}{8}
+      \field{number}{772}
+      \field{title}{A contribution to the mathematical theory of epidemics}
+      \field{volume}{115}
+      \field{year}{1927}
+      \field{pages}{700\bibrangedash 721}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1098/rspa.1927.0118
+      \endverb
+      \verb{file}
+      \verb :1927 - A Contribution to the Mathematical Theory of Epidemics.pdf:PDF
+      \endverb
+    \endentry
     \entry{Allen2017}{article}{}
       \name{author}{1}{}{%
         {{hash=bd7b89b8a302c32e52e1b562252f769a}{%
@@ -176,8 +316,8 @@
       \strng{authorbibnamehash}{bd7b89b8a302c32e52e1b562252f769a}
       \strng{authornamehash}{bd7b89b8a302c32e52e1b562252f769a}
       \strng{authorfullhash}{bd7b89b8a302c32e52e1b562252f769a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Some mathematical methods for formulation and numerical simulation of stochastic epidemic models are presented. Specifically, models are formulated for continuous-time Markov chains and stochastic differential equations. Some well-known examples are used for illustration such as an SIR epidemic model and a host-vector malaria model. Analytical methods for approximating the probability of a disease outbreak are also discussed.}
@@ -200,61 +340,6 @@
       \endverb
       \keyw{Branching process,Continuous-time Markov chain,Minor outbreak,Stochastic differential equation}
       \warn{\item Overwriting field 'month' with month value from field 'date' for entry 'Allen2017'}
-    \endentry
-    \entry{DeDomenico2016}{article}{}
-      \name{author}{4}{}{%
-        {{hash=6d536daa70fa51099e4f65e72e27f797}{%
-           family={De\bibnamedelima Domenico},
-           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Manlio},
-           giveni={M\bibinitperiod}}}%
-        {{hash=327371d583df9de17b66667a7ea91f61}{%
-           family={Granell},
-           familyi={G\bibinitperiod},
-           given={Clara},
-           giveni={C\bibinitperiod}}}%
-        {{hash=0c0f609a339310df23209cf68aba3b6e}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Mason\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
-           family={Arenas},
-           familyi={A\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{fullhash}{937605070968d142c0f0d122bda48327}
-      \strng{bibnamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authorbibnamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authornamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authorfullhash}{937605070968d142c0f0d122bda48327}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Nature Physics 12, 10 (2016). doi:10.1038/nphys3865}
-      \field{issn}{1745-2481}
-      \field{journaltitle}{Nature Physics}
-      \field{month}{8}
-      \field{number}{10}
-      \field{title}{The physics of spreading processes in multilayer networks}
-      \field{volume}{12}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{pages}{901\bibrangedash 906}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1038/nphys3865
-      \endverb
-      \verb{file}
-      \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Latex Tesi/nphys3865.pdf:PDF
-      \endverb
     \endentry
     \entry{Wang_2019}{article}{}
       \name{author}{5}{}{%
@@ -293,8 +378,8 @@
       \strng{authorbibnamehash}{2e448f2e68ab2f1cd9e54269cab56966}
       \strng{authornamehash}{2e448f2e68ab2f1cd9e54269cab56966}
       \strng{authorfullhash}{f465c32ff79e5568735704cb0ba40428}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Physics Reports, 820 (2019) 1-51. doi:10.1016/j.physrep.2019.07.001}
@@ -327,8 +412,8 @@
       \strng{authorbibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
       \strng{authornamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
       \strng{authorfullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Computational Social Networks, https://doi.org/10.1186/s40649-021-00098-9}
@@ -643,8 +728,8 @@
       \strng{authorbibnamehash}{925c2667c0ddd722630c6c3adfd57514}
       \strng{authornamehash}{925c2667c0ddd722630c6c3adfd57514}
       \strng{authorfullhash}{925c2667c0ddd722630c6c3adfd57514}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of The Royal Society Interface}
@@ -683,8 +768,8 @@
       \strng{authorbibnamehash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authornamehash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authorfullhash}{221c56f095d1df8928d27ab71c5dc21f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The last two years have been an extraordinary time with the Covid-19 pandemic killing millions, affecting and distressing billions of people worldwide. Authorities took various measures such as turning school and work to remote and prohibiting social relations via curfews. In order to mitigate the negative impact of the epidemics, researchers tried to estimate the future of the pandemic for different scenarios, using forecasting techniques and epidemics simulations on networks. Networks used in these research are either synthetic networks or real networks with limited size and domain specific interactions. Hence, their ability to represent the world is limited. Intending to represent real-life in an urban town in high resolution, we propose a parametric multi-layer undirected weighted network model, where vertices are the individuals of a town that tend to interact locally, and edges represent transmission probability. Each layer corresponds to a different interaction that occurs daily, such as "household", "work" or "school", with their own transmission probability. Our simulations indicate that locking down "friendship" layer has the highest impact in slowing down epidemics. Hence, our contributions are twofold, first we propose a parametric network generator model; second, we run SIR simulations on it and show the impact of layers.}
@@ -735,8 +820,8 @@
       \strng{authorbibnamehash}{0894aa9c81812730a5cca5b0aff88d7b}
       \strng{authornamehash}{0894aa9c81812730a5cca5b0aff88d7b}
       \strng{authorfullhash}{0894aa9c81812730a5cca5b0aff88d7b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of The Royal Society Interface}
@@ -793,8 +878,8 @@
       \strng{authorbibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
       \strng{authornamehash}{6cff3e813d14a2767e401b0b8feea01d}
       \strng{authorfullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2475-1456}
@@ -843,8 +928,8 @@
       \strng{editorbibnamehash}{932172cbce9830fa1763c426c7088452}
       \strng{editornamehash}{932172cbce9830fa1763c426c7088452}
       \strng{editorfullhash}{932172cbce9830fa1763c426c7088452}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1553-7358}
@@ -1004,6 +1089,64 @@
       \endverb
       \verb{file}
       \verb :C\:/Volume_D/Riccardo/University/2021/Letteratura per Tesi Network dynamics/Articoli opinion/GLOBAL_EFFECT_Competing_spreading_processes_on_multiplex_networks.pdf:PDF
+      \endverb
+    \endentry
+    \entry{arino2007}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3a3363b2e871745db048758aa5edf0ab}{%
+           family={Arino},
+           familyi={A\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cce7419708114ddcc3d5832a90fd28b5}{%
+           family={Brauer},
+           familyi={B\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=62a4fc5c2bcc9cf939ae2a91891deb0f}{%
+           family={Driessche},
+           familyi={D\bibinitperiod},
+           given={Pauline},
+           giveni={P\bibinitperiod},
+           prefix={van\bibnamedelima den},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=fdbe068ea8f86281e3ec99ec31db1a69}{%
+           family={Watmough},
+           familyi={W\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0c9c093ad6ee18072092692d81b554e7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jianhong},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Mathematical Sciences (AIMS)}%
+      }
+      \strng{namehash}{1a31b4b1a4c6cd41f9ba3a285cbab33e}
+      \strng{fullhash}{9f987cddbc6e3a124008c6f6133fc4c5}
+      \strng{bibnamehash}{1a31b4b1a4c6cd41f9ba3a285cbab33e}
+      \strng{authorbibnamehash}{1a31b4b1a4c6cd41f9ba3a285cbab33e}
+      \strng{authornamehash}{1a31b4b1a4c6cd41f9ba3a285cbab33e}
+      \strng{authorfullhash}{9f987cddbc6e3a124008c6f6133fc4c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1551-0018}
+      \field{journaltitle}{Mathematical Biosciences and Engineering}
+      \field{number}{2}
+      \field{title}{A final size relation for epidemic models}
+      \field{volume}{4}
+      \field{year}{2007}
+      \field{pages}{159\bibrangedash 175}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.3934/mbe.2007.4.159
+      \endverb
+      \verb{file}
+      \verb :arino2007final - A Final Size Relation for Epidemic Models.pdf:PDF
       \endverb
     \endentry
   \enddatalist
