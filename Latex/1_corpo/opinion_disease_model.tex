@@ -180,7 +180,7 @@ The range of variation of each parameter is the following:
 	\item $k_1$ between $1/5$ and $1/30$ $d^{-1}$
 \end{itemize}
 We observe the evolution of the dynamics of all the states, and to present a summary of the effects we collect for each simulation data such as the final value of the compartment, the max peak value and the corresponding time in which the peak occur. 
-Also here, for the sensitivity plots realization, the reproduction rates deriving from the combination of coefficients, equation \ref{eq:behave_rate}, are used. 
+Also here, for the sensitivity plots realization, the reproduction rates deriving from the combination of coefficients, equation \eqref{eq:behave_rate}, are used. 
 
 The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $R_1$ and $R_2$.
 
@@ -224,18 +224,28 @@ The threshold effect is clearly visible also here. Looking at the Compliant and 
 \chapter{Models description and analysis}
 \section{Behavioral epidemic model}
 
-The model is composed of two layer coupled together. A disease one describing the evolution of an epidemic and a behaviour one in which there are different behaviour during the epidemic development.
+The model is composed of two layers coupled together: a disease layer, describing the evolution of an epidemic, and a behaviour layer describing the transition among different behaviours during the epidemic development.
 The behavioral layer has three possible compartments: 
 
 \begin{itemize}
-	\item Heedless, people careless of the risk associated to the infection;
-	\item Compliant, composed by person that want avoid to become infected or infect others
-	\item Against, who not consider a new infection developing as a risk for its safety and not use protection or change its behaviour during the epidemic. 
+	\item[$H$:] Heedless, people careless of the risk associated to the infection;
+	\item[$C$:] Compliant, composed by person that want avoid to become infected or infect others
+	\item[$A$:] Against, who not consider a new infection developing as a risk for its safety and not use protection or change its behaviour during the epidemic. 
 \end{itemize}
-The symbols used to represent these compartments are $H$, $C$, $A$.
-This behaviour structure is coupled with a SIRS epidemic model.
 
-The resulting system is described by the following set of differential equations \ref{eq:epi_behavioural_eq}: 
+This behaviour structure is coupled with a SIRS epidemic model, giving rise to the mutually exclusive compartments.
+
+\begin{itemize}
+	\item[$SH$:] Susceptible Heedless, the group where there is the majority of the population at the beginning of an epidemic. There is not much information about disease-associated risk and the people in this compartment have no fear of becoming infected and do not modify their behaviors.
+	\item[$SC$:] Susceptible Compliant, is a group composed of those who want to avoid of becomes infected. People who use non-pharmaceutical interventions to limit the possibility of getting sick.
+	\item[$SA$:] Susceptible Against, the people that refuse the information spread by media or authority. They do not consider the threat represented by the disease and do not respect the safety rules or recommended behavior to avoid getting sick or infecting others. 
+	\item[$IC$:] Infected Compliant, people infected by the virus. In this group go both the $SC$ and $SH$ compartments because it is considered that even those who have a "neutral" opinion about the risk associated with the infection, change their minds when become infected. The principal behavior associated with this group is that it is respected the quarantine and so a certain part of the infected avoid contact while they are sick.
+	\item[$IA$:] Infected Against, compartment composed by the against became sick. They do not respect self-isolation, and diffuse the disease. 
+	\item[$RC$:] Recovered Compliant, people that are healed from the infection. They cannot be infected, but contribute to raising awareness about the risk associated with the disease. 
+	\item[$RA$:] Recovered Against, the part of the recovered formed by against healed from the infection. The most radicalized can be in this group. They are protected by immunity from a disease in which they don't believe. 
+\end{itemize}
+
+The resulting system is described by the following system of differential equations: 
 \begin{equation}
 	\begin{cases}
 		\dot{SH} = - \phi k_1 SH \cdot C - k_2 SH \cdot A + \lambda_1 SC + \lambda_2 SA + \delta(1-\phi_n)RC - \beta SH \cdot I\\
@@ -249,32 +259,38 @@ The resulting system is described by the following set of differential equations
 	\label{eq:epi_behavioural_eq}
 \end{equation}
 
-Some specifications:
+where
 \begin{itemize}
-	\item $A = SA + IA + RA$ the totality of Against group.
-	\item $C = SC + IC + RC$ the totality of Compliant group.
-	\item $I = \epsilon \cdot IC + IA$ the part of infected people participating into the infection process.
-	\item $\phi$ is awareness a parameter that account for the current state of epidemic and influence the behaviour persuasion between groups. It can be modelled in different ways. 
+	\item $A = SA + IA + RA$ is the total fraction of Against individuals.
+	\item $C = SC + IC + RC$  is the total fraction of Compliant individuals.
+	\item $I = \epsilon \cdot IC + IA$ is the fraction of infected people participating into the infection process.
+	\item $\phi$ is awareness, a parameter that accounts for the current state of the epidemic and influences the behavior persuasion between groups. It can be modeled in different ways. 
 	\item $\phi_n$ it is the awareness normalized, used to split the population while re entering in the susceptible class in the Heedless or Compliant group. 
-	\item $\rho$ is the protection factor that Compliant people have and reduce their possibility of become infected.
+	\item $\rho$ is the protection factor of Compliant people that reduces their risk of becoming infected.
 	\item $\beta$ is the infectivity rate associated with the disease.
-	\item $\gamma$ is the rate of infection duration.
-	\item $\delta$ is the recovery rate from the state $R$ to return in the $S$ one. 
-	\item $\epsilon$ specify the part of compliant infected that participate to the infection process.
+	\item $\gamma$ is the recovery rate.
+	\item $\delta$ is the rate at which immunity waves (so that recovered people become susceptible again).
+	\item $\epsilon$ specifies the fraction of compliant infected that participate to the infection process.
 \end{itemize}
 
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.5\linewidth]{1_corpo/figure/epi_behaviour_model_figure}
+	\caption[Epidemic behavior model]{Figure of the epidemic behavior model with its compartment and influxes and out-fluxes.}
+	\label{fig:epibehaviourmodelfigure}
+\end{figure}
 
 \subsection{Basic reproduction number calculation}
 The first analysis that can be performed on the behavioral disease model is to estimate its basic reproduction number. It is defined as the spectral radius of the next-generation matrix. Using the method outlined in \cite{arino2007} and now briefly described this quantity is calculated. 
-Consider a simple disease model in which $x \in R^n$ represents the set of infected compartments, $y \in R^n$ the set of susceptibles compartments, and $z \in R^k$ the set of compartments removed to the infection due to recovery. 
+Consider a simple disease model in which $i \in R^n$ represents the set of infected compartments, $s \in R^n$ the set of susceptibles compartments, and $r \in R^k$ the set of compartments removed to the infection due to recovery. 
 
 To describe the evolution of the system the following notation using matrices is adopted: 
 \begin{itemize}
-	\item D is a $m \times m$ diagonal matrix; the diagonal elements are the relative susceptibilities of the corresponding susceptible class.
-	\item $\Pi$ is a $n \times m$ matrix in which the $(i,j)$ element is the fraction of susceptible in the $j^{th}$ compartment that goes into the $i^{th}$ infective compartment.
+	\item $D$ is a $m \times m$ diagonal matrix; the diagonal elements are the relative susceptibilities of the corresponding susceptible class.
+	\item $\Pi$ is a $n \times m$ matrix in which the $(k,j)$ element is the fraction of susceptible in the $j^{th}$ compartment that goes into the $k^{th}$ infective compartment.
 	\item $b$ is an n-dimensional row vector of relative
 	horizontal transmissions.
-	\item $\beta$ multiplies the $b$ vector and is a scalar factor representing infectivity. It can be constant or a function of other parameters, such as incidence for example. 
+	\item $\beta'(s, i,r)$ multiplies the $b$ vector and is a scalar factor representing infectivity. It can be constant or a function of other parameters, such as incidence for example. 
 	
 	\item $V$ is a $n \times n$ matrix describing the transition between the infected state through death and recovery. 
 	\item $g(s, i,r)$ is a continuous function representing the inlet of uninfected through birth or immigration. 
@@ -285,22 +301,22 @@ The resulting disease model is represented by the system:
 
 \begin{equation}
 	\begin{cases}
-		s' = g(s,i,r) - D s \beta(s,i,r) b i\\
-		i' = \Pi D s \beta(s,i,r) b i - V i\\
+		s' = g(s,i,r) - D s \beta'(s,i,r) b i\\
+		i' = \Pi D s \beta'(s,i,r) b i - V i\\
 		r' = h(s,i,r) + W i \\		
 	\end{cases}
 	\label{eq:epi_ro_eq}
 \end{equation}
 
-Using the defined matrices, according to \cite{arino2007} the basic reproduction number $R_0$ for the model \ref{eq:epi_ro_eq} at a disease free equilibrium $(s_0, 0, r_0)$ is given by:
+Using the defined matrices, according to \cite{arino2007} the basic reproduction number $R_0$ for the model \eqref{eq:epi_ro_eq} at a disease free equilibrium $(s_0, 0, r_0)$ is given by:
 \begin{equation}
-R_0 = \beta b V^{-1} \Pi D s_0
+R_0 = \beta'(s,i,r) b V^{-1} \Pi D s_0
 \label{eq:R_0_eqn}
 \end{equation}
 
 The disease-free equilibrium is defined as a locally stable equilibrium of the system in which there is no disease and in the sense that a solution starting close to $(s_0, 0, r_0)$ remains close to this state. 
 
-Considering the system dynamic presented in \ref{eq:epi_behavioural_eq}, it can be rewritten in the matrix form expressed in  \ref{eq:epi_ro_eq} as: 
+Considering the system dynamic presented in \eqref{eq:epi_behavioural_eq}, it can be rewritten in the matrix form expressed in  \eqref{eq:epi_ro_eq} as: 
 
 \begin{align*}
 \Pi & = 
@@ -350,7 +366,7 @@ The resulting $R_0$ find with this method is:
 
 \subsubsection{$I$ case: $R_0$ first evaluation}
 
-A first evaluation of the $R_0$ is done using equation \ref{eq:R_0_eqn} and assuming that at the beginning of an epidemic, the majority of the population is in the $SH$ compartment, while SC, SA, and also the A and C groups are close to zero. 
+A first evaluation of the $R_0$ is done using equation \eqref{eq:R_0_eqn} and assuming that at the beginning of an epidemic, the majority of the population is in the $SH$ compartment, while SC, SA, and also the A and C groups are close to zero. 
 An initial tentative calculation for the value is done using a set of values assigned to the rest of the coefficients in the matrices.
 For reference, the following values are used:
 
@@ -404,4 +420,4 @@ A second test performed on the find $R_0^{epi-behav}$ wants to understand what a
 \end{figure}
 
 
-The case shown in figure \ref{fig:r0_epi_behav_coef} is an example of how changes the reproductive rate value. The most interesting observation is that the value of awareness practically does not modify the $R_0$. Instead, it can be observed a threshold in the number of initial susceptible compliant for which the reproductive rate becomes smaller, depending on the efficacy of the protective behavior. If there are less than $5\%$ of the population in the compliant group, for any value of $\rho$ the reproductive rate does not change. 
+The case shown in figure \ref{fig:r0_epi_behav_coef} is an example of how changes the reproductive rate value. The most interesting observation is that the value of awareness practically does not modify the $R_0^{epi-behav}$. Instead, it can be observed a threshold in the number of initial susceptible compliant for which the reproductive rate becomes smaller, depending on the efficacy of the protective behavior. If there are less than $5\%$ of the population in the compliant group, for any value of $\rho$ the reproductive rate does not change. 

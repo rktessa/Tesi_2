@@ -102,7 +102,7 @@ fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
 set(gcf, 'PaperPosition', [0 0 24 15]);
 set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', ['r0_epi_behav_SC_SA.pdf'])
+print(gcf,'-dsvg', ['r0_epi_behav_SC_SA.svg'])
 
 
 

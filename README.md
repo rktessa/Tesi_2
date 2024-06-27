@@ -41,8 +41,8 @@ articolo okabe per altre info utili su sir
 
 ## Significato del modello
 Dividere la popolazione in 
--Compliant/Carefull
--Heedless/Careless
+- Compliant/Carefull
+- Heedless/Careless
 - Against rules/Risky
 
 A un tempo zero la popolazione è SH nella quasi totalità. Andando avanti si dividerà in SC e SA e poi questi tratti rimangono negli strati sottostanti, perchè a quel punto più il tempo va avanti più le persone hanno una memoria storica e ha senso che rimangano i due gruppi pro e contro. Quindi il modello tiene conto a questo livello di S dell'esistenza di una zona grigia in cui stanno le persone senza una opinione forte. A livello di una situazione in cui la pandemia è appena iniziata mi aspetto siano tutti qui e anche che sia un comparto che si riempie abbastanza quando il disease c'è  da più tempo, continua a girare ma la tipo è meno mortale. All'inizio non c'è timore, poi si diffonde una ‘‘concerned awareness,’’!
@@ -63,3 +63,19 @@ Nella accezione di behaviour avevo una idea rispetto al senso...
 
 - Vedere dove eri arrivato a scrivere prima per concludere beneddetto primo capitolo. 
 - Sempre nel primo capitolo hai trovato un po' di materiale da inserire per la parte di glossario di Opinion e Behavior. 
+
+### Feedback Daniele 
+
+ Ho alcune domande e suggerimenti. Inizio a scriverteli qui, poi magari ci si può sentire a inizio settimana prossima per approfondire:
+
+    1. Phi è di fatto un parametro moltiplicativo, che tu interpreti come awareness (ma che forse è più direttamente legato alla "forza" di attrazione di un gruppo, è una sorta di parametro moltiplicativo di mixing). Inoltre, che questa "awareness" o "attrattività" sia uguale a prescindere dallo stato lo vedo un'ipotesi audace: potrebbe benissimo essere state-dependent (es: un infetto può "pentirsi" e diventare compliant più facilmente). Purtroppo non ci sono studi psicologici sul campo - o non sono riuscito a trovarne...
+    2. In buona sostanza: forse attenuerei interpretazioni così forti e riassorbirei Phi in k_3, che rimane così un parametro di contatto tra categorie che la "pensano" diversamente e si influenzano a vicenda. Di fatto, i tuoi risultati non cambiano di una virgola (si tratta solo di cambiare lettera), ma non si rischia di scivolare su interpretazioni ardite. Viceversa, i k_i saranno interessanti per valutare la forza e l'impatto della peer pressure (magari vs un "controllo mean field" di cui avevamo parlato).
+    3. Nei layer I e R ci sono flussi orizzontali dovuti sia a "fatigue" che a peer pressure. Una buona idea: aumenta i parametri, ma consente di fare studi sul ruolo della peer pressure stessa :)
+    4. A proposito di interpretazioni, non sono convintissimo di come hai spiegato Phi_n: così com'è ora è una sorta di probabilità, ma pensiamo bene a come chiamarlo
+    5. In (3.5), non dovresti usare x,y,z definiti prima, per i compartimenti? Oppure ridefinisci le variabili (oppure c'è un passaggio che manca)
+    6. \beta nelle equazioni per la next gen matrix: usa un altro simbolo (anche solo \beta') per non confonderti con quello del modello
+    7. (3.6): é il risultato esatto o dovresti anche invocare il leading eigenvalue del prodotto matriciale? Dipende da come ha definito le equazioni; non ho guardato in dettaglio, prova a ridare un'occhiata e sii il più generico possibile (o spiega perchè va bene così nel caso specifico)
+    R0: scrivilo come formula e non come immagine. Non si riesce a compattare meglio? Magari già usando le considerazioni sui valori di A0 e C0 che usi nel paragrafo sotto?
+    8. Case I: deriva la formula generica prima di sostituire valori specifici. Puoi anche fare considerazioni di scala e sostituire alcuni valori -> 0 (nella parte analitica). Riesci a tirare fuori dei range di valori di determinati parametri, tali per cui R0 < 1 sempre? E a calcolare analiticamente la sensibilità ad alcuni parametri, usando misure di sensitivity analysis quali |\partial R0 / \partial p_i| (dove p_i è ogni parametro)?
+    9. Ci sono poi alcune cose da sistemare nel testo e nella spiegazione per evitare di lasciare punti aperti o consecutio non chiarissime, ma in generale direi che il discorso fila bene! Per quando ci sentiamo, prova a buttare giù una lista di investigazioni che ti piacerebbe fare per proseguire, e ne parliamo.
+    Riesci a fare un disegno schematico del modello? Aiuterebbe a capirlo meglio 🙂
