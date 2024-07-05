@@ -1,4 +1,4 @@
-%% R_0 estimation I version
+%% R_0 estimation II version
 % In this code is find and calculated the value of the R_0 index. 
 % The method used to estimate is the one describe in Arino_2007 work. 
 clc;
@@ -22,13 +22,13 @@ fig = 0;
 R_0(Aw, rho, epsilon, k3, k4, lambda3, lambda4, beta, gamma, A, C, SC0, SA0, SH0) = beta .* b * inv(V) * Pi * D * y0;
 
 % Diamo dei valori ai parametri
-rho1 = 0.65; % protezione da infezione
-epsilon1 = 0.15; % gli IC che vanno a infettare in giro
-k41 = 0.243; k31 = 0.48;
-lambda41 = 0.143; lambda31 = 0.143;
-gamma1 = 0.35; beta1 = 0.40;
-A1 = 50/60e6; C1 = A1;
-SC01 = 50/60e6; SA01 = 50/60e6; SH01 = 1-100/60e6;
+% rho1 = 0.65; % protezione da infezione
+% epsilon1 = 0.15; % gli IC che vanno a infettare in giro
+% k41 = 0.243; k31 = 0.48;
+% lambda41 = 0.143; lambda31 = 0.143;
+% gamma1 = 0.35; beta1 = 0.40;
+% A1 = 50/60e6; C1 = A1;
+% SC01 = 50/60e6; SA01 = 50/60e6; SH01 = 1-100/60e6;
 
  
 %% Figura della relazione livello di awareness - R0

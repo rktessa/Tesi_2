@@ -79,3 +79,13 @@ Nella accezione di behaviour avevo una idea rispetto al senso...
     8. Case I: deriva la formula generica prima di sostituire valori specifici. Puoi anche fare considerazioni di scala e sostituire alcuni valori -> 0 (nella parte analitica). Riesci a tirare fuori dei range di valori di determinati parametri, tali per cui R0 < 1 sempre? E a calcolare analiticamente la sensibilità ad alcuni parametri, usando misure di sensitivity analysis quali |\partial R0 / \partial p_i| (dove p_i è ogni parametro)?
     9. Ci sono poi alcune cose da sistemare nel testo e nella spiegazione per evitare di lasciare punti aperti o consecutio non chiarissime, ma in generale direi che il discorso fila bene! Per quando ci sentiamo, prova a buttare giù una lista di investigazioni che ti piacerebbe fare per proseguire, e ne parliamo.
     Riesci a fare un disegno schematico del modello? Aiuterebbe a capirlo meglio 🙂
+
+
+Conti:
+- cercato di fare uno scaling e arrivato a qualcosa. Capire come andare oltre. tolto una equzione e riscritto in fuzione di meno parametri per ora. 
+
+- voglio riscrivere in bella i conti per R-0-epi-beha e trovare una forma che toglie beta/gamma così plotto in funzione dei parametri di comportamento (e di gamma) e osservo cosa è più importante lì.
+
+
+
+

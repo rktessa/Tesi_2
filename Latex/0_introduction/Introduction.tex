@@ -68,7 +68,7 @@ To permit a better comprehension of the subject analyzed in the present work a l
 \subsubsection{Types of infectious diseases}
 Infectious disease is indicated as an illness resulting from the presence of a pathogenic microbial agent. It is possible to distinguish a difference between \textit{transmittable} and \textit{communicable} disease. A transmittable disease can transmitted between persons through unnatural forces. A disease is communicable when the transmission happens directly or indirectly.
 
-\subsubsection{Disease transmission} A disease can transmit in different ways: 
+\subsubsection{Disease transmission} A disease can spread in different ways: 
 	\begin{itemize}
 		\item person to person, for example sexual transmission, involving direct or indirect contact.
 		\item airborne, through inhalation of infected air.
@@ -107,35 +107,28 @@ The excess in mortality can be calculated by observing the difference between th
 %%%%%%%%%%%%%%%%%%%%
 \section{Opinion/behaviour glossary}
 To establish a framework suitable for developing and understanding behavioral models, the following key concepts from social science are outlined.
+\subsubsection{Awareness} It is the knowledge that an individual has on a certain subject or situation. It changes with time and it is developed with information or experience.  
+\subsubsection{Information} The term "information" is often understood as "knowledge communicated." However, due to its central role in contemporary society, there is extensive debate regarding its multiple meanings \cite{Capurro_2003}. Our society can be characterized as an "information society," where the development of information technology has influenced all aspects of life. Currently, the word "information" is associated with two principal meanings. The first, more universal definition, is that information is anything important in answering a question. The second relates to Information Science, the discipline focused on managing this object called information in any form.
+\subsubsection{Belief} It is the conviction of the truth of a statement or the reality of a being or phenomenon, especially when based on the examination of evidence, but also on matters for which there is no proof.
 
-\subsubsection{Awareness} knowledge that something exists, or understanding of a situation or subject at the present time based on information or experience. 
+Studying beliefs change over time and on social networks is an interesting research field. It has the aim to understand why in certain societies new beliefs - such as opinions on climate change or anti-vaccinism spread more quickly than in others. These dynamics can lead to polarization or consensus and occasionally cause backlash effects.
 
-\subsubsection{Belief}
+\subsubsection{Behaviour} It is how one acts or conducts oneself. It can depend on the response of external stimuli and have effects, especially on others.
+\subsubsection{Trust} It is the sentiment of confidence associated with the ability, strength, and truth of someone or something. 
 
-\subsubsection{Behaviour}
+\subsubsection{Perception} It is the mechanism for which something is regarded, understood, or interpreted.
 
-\subsubsection{Trust}
-
-\subsubsection{Perception}
-
-\subsubsection{Individual and Collective behaviors}
-
-\subsubsection{Memory}
-
+\subsubsection{Group decision-making} It is a phenomenon at the intersection of psychology, management, biology, and applied mathematics studying how people in groups interact, exchange information, and realize decisions. The decision made by the group is no longer attributable to any single individual but to the whole group. 
+ 
 \subsubsection{Threshold theory}
 
-\subsubsection{Consensus}
+It is a theory formulated by Granovetter in \cite{Granovetter_1978} regarding collective behavior. The theory posits that in a society where individuals face two possible alternatives, and their choices involve certain costs and benefits depending on how many others choose each alternative, an individual will decide based on the number of others who have already chosen a particular option when this number exceeds a certain threshold.
 
-\subsubsection{Polarization}
+\subsubsection{Polarization and Consensus}
 
-\subsubsection{Willingness}
+It refers to the variation in beliefs within a population. One way to describe it is by measuring the distance between the most extreme beliefs. Alternatively, it can refer to community fracturing, where the population is divided into subgroups\cite{Bramson_2017}. This contrasts with the term "consensus," which describes a situation where the exchange of opinions, information, or property among individuals leads to general agreement. Both scenarios are studied and modeled using network theory.
 
 \subsubsection{Homophily} The tendency to bond and associate with similar others. 
-
-\subsubsection{Assertion}
-
-
- 
 
 \section{Epidemiological models categorization}
 Starting from the observation of the real world, the desire to understand better a certain phenomenon is the fundament of mathematical model development. A perfect model does not exist, because it is based on data or on assumptions that are incomplete w.r.t reality. However, a useful model guarantees the possibility of realizing general predictions and can be a powerful instrument for policymakers.  For example, an application is the estimation of certain policies' effects on the population during an epidemic. So, the aim is to have meaningful results, under a given set of real-world circumstances.
@@ -164,8 +157,7 @@ Considering the mechanistic category several different types of models have been
 \label{subsec:mean_field}
 The mean field model, also known as compartmental model is the first developed and most studied type of mathematical model used in epidemiology.  This model assumes that the well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected, exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine is base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one. 
 In this class of model, the severity of infection usually is not considered: people are infected or not. The transition from one compartment to another is determined by differential equations. There are parameters ruling the transition between groups that are coefficients whose meaning depends on the model's underlying assumptions. The most important metric in this class of models is the so-called "basic reproduction number". It expresses the seriousness of a disease and it is considered the fundamental threshold in epidemiology \cite{Hernandez_Vargas_2022}. 
-
-\begin{figure}[tbph]
+\begin{figure}[]
 	\centering
 	\includegraphics[width=0.65\linewidth]{0_introduction/images_introduction/SIRS_figure_compartmental}
 	\caption[SIRS example]{An example of the graph structure of a mean field SIRS model. There are three compartments and the flow rate between them is ruled by the coefficients $\beta$, $\gamma$ and $\delta$.}
@@ -263,6 +255,12 @@ Agent-based models are an alternative technique used to represent disease evolut
 In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
 
 An advantage of this type of model is that it offers a very intuitive approach to epidemic modeling. Using an individual perspective guarantees an immediate interpretation of the model. A precise agent-based model can provide a greater understanding of the illness under consideration and direct information about countermeasures to implement to stop or mitigate its spread. However, to be powerful and capable of performing good analyses and predictions, a lot of information must be integrated into the model. Only if the agent-based model is highly capable of realistically reconstructing a real network can it be a reliable instrument, and achieving this requires very complex work.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/agent_based}
+	\caption[Agent based network representation]{Agent based network representation}
+	\label{fig:agentbased}
+\end{figure}
 
 %%
 
@@ -278,6 +276,12 @@ One possible way to develop models with this structure is to imagine that each l
 The dynamic realized in multiple systems can be single or coupled. In the first, there is a top layer with its dynamic evolution running on top of a multilayer network. The coupled structure instead is the one in which the phenomena described in each layer evolve with the influence of what is happening in the other. 
 Multilayer networks have multiple dimensions of connectivity, called "aspects" and they have to be considered simultaneously. 
 They can also be considered with two different mathematical structures. 
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.6\linewidth]{0_introduction/images_introduction/multi_layer}
+	\caption[Multi-layer network]{Representation of a multiplex structure. The figure is taken by the work of \cite{Granell2013} and shows the network implemented in their model. There is an awareness and an epidemic layer. In this case, the node connected with the interlayer connection represents the same individual.}
+	\label{fig:multilayer}
+\end{figure}
 
 The first uses the same set of compartmental structure and mean-field models presented in the section before \ref{subsec:mean_field}. Here, from a mathematical point of view, there is no such difference in the manipulation and analysis of the system. The distinction relies on the meaning of the compartments and parameters created and on the dependence of the coefficients, which can be time and state-dependent.
 

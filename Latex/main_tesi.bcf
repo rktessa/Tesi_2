@@ -2368,34 +2368,39 @@
     <bcf:citekey order="2" intorder="1">Sahagun1965</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Mata2021</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Anderson_82</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">Ledder_2023</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">Hethcote_2000</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">kermack1927</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Capurro_2003</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Granovetter_1978</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Bramson_2017</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Ledder_2023</bcf:citekey>
     <bcf:citekey order="9" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
     <bcf:citekey order="10" intorder="1">Hethcote_2000</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">Allen2017</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">kermack1927</bcf:citekey>
     <bcf:citekey order="12" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">DeDomenico2016</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">DeDomenico2016</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Wang_2019</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Nunner2021</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Peng2021</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">teslya2022</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Alvarez_Zuzek_2017</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Epstein_2021</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Auld_2003</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Sontag_2022</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Turker_2023</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Funk_2010</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Frieswijk_2022</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Bauch_2012</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">Tyson_2020</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Collinson2014</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Granell_2014</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">arino2007</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">arino2007</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Hethcote_2000</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Allen2017</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">DeDomenico2016</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">DeDomenico2016</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Granell2013</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Granell2013</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Wang_2019</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Nunner2021</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Peng2021</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">teslya2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Alvarez_Zuzek_2017</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Epstein_2021</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Auld_2003</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Sontag_2022</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">Turker_2023</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Funk_2010</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Frieswijk_2022</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Bauch_2012</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Tyson_2020</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Collinson2014</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Granell_2014</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">arino2007</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
