@@ -5,56 +5,56 @@
 \contentsline {chapter}{List of Tables}{4}{section*.1}%
 \contentsline {chapter}{List of Figures}{5}{section*.2}%
 \contentsline {part}{\EnsureStandardFontEncoding {I}\hspace {1em}Introduction}{7}{part.1}%
-\contentsline {chapter}{\numberline {1}Epidemiology and its network or system description presentation}{9}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Epidemiological theory foundations}{10}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1} Epidemiologic research historical background}{10}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Epidemiological glossary}{11}{subsection.1.1.2}%
-\contentsline {subsubsection}{Micro and Macro parasite}{11}{section*.4}%
-\contentsline {subsubsection}{Types of infectious diseases}{11}{section*.5}%
-\contentsline {subsubsection}{Disease transmission}{11}{section*.6}%
-\contentsline {subsubsection}{Epidemic disease}{11}{section*.7}%
-\contentsline {subsubsection}{Endemic disease}{12}{section*.8}%
-\contentsline {subsubsection}{Pandemic disease}{12}{section*.9}%
-\contentsline {subsubsection}{Incubation, Symptoms, Infected and Infectious}{12}{section*.10}%
-\contentsline {subsubsection}{Outbreak}{12}{section*.11}%
-\contentsline {subsubsection}{Incidence and prevalence}{12}{section*.12}%
-\contentsline {subsubsection}{Immunity and herd immunity}{12}{section*.13}%
-\contentsline {subsubsection}{Virulence and Contagiousness}{12}{section*.14}%
-\contentsline {subsubsection}{Overdispersion and Superspreading}{12}{section*.15}%
-\contentsline {subsubsection}{CFR, IFR and mortality excess}{12}{section*.16}%
-\contentsline {subsubsection}{Reproduction number $R_0$}{13}{section*.17}%
-\contentsline {subsubsection}{Incubation period and serial interval}{13}{section*.18}%
-\contentsline {section}{\numberline {1.2}Opinion/behaviour glossary}{13}{section.1.2}%
-\contentsline {subsubsection}{Awareness}{13}{section*.19}%
-\contentsline {subsubsection}{Information}{13}{section*.20}%
-\contentsline {subsubsection}{Belief}{13}{section*.21}%
-\contentsline {subsubsection}{Behaviour}{13}{section*.22}%
-\contentsline {subsubsection}{Trust}{14}{section*.23}%
-\contentsline {subsubsection}{Perception}{14}{section*.24}%
-\contentsline {subsubsection}{Group decision-making}{14}{section*.25}%
-\contentsline {subsubsection}{Threshold theory}{14}{section*.26}%
-\contentsline {subsubsection}{Polarization and Consensus}{14}{section*.27}%
-\contentsline {subsubsection}{Homophily}{14}{section*.28}%
-\contentsline {section}{\numberline {1.3}Epidemiological models categorization}{14}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Mean field models}{15}{subsection.1.3.1}%
-\contentsline {subsubsection}{SIR model}{16}{section*.30}%
-\contentsline {subsubsection}{Derivation of I evolution and SIR differential equations presentation}{17}{section*.31}%
-\contentsline {subsubsection}{Stochastic models}{18}{section*.33}%
-\contentsline {subsection}{\numberline {1.3.2}Agent-based networks}{19}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Multilayer systems and networks}{20}{subsection.1.3.3}%
-\contentsline {chapter}{\numberline {2}Main objectives and summary of the contents}{23}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Review of epidemiological behavioural and opinion models in literature}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Opinion models}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Multilayer network}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Opinion-disease model}{27}{section.3.3}%
-\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral Disease Model}{29}{part.2}%
-\contentsline {chapter}{\numberline {4}Epidemic and Behavioral model alone: a presentation}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}SIRS model}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Behavioural model}{32}{section.4.2}%
-\contentsline {subsubsection}{Equilibrium and stability analysis}{33}{section*.36}%
-\contentsline {subsubsection}{Behavioural model experiment}{36}{section*.43}%
-\contentsline {chapter}{\numberline {5}Models description and analysis}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Behavioral epidemic model}{41}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Basic reproduction number calculation}{42}{subsection.5.1.1}%
-\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{45}{section*.48}%
-\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{45}{section*.50}%
+\contentsline {chapter}{\numberline {1}Introduction and theoretical background}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Epidemiological theory foundations}{12}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1} Epidemiologic research historical background}{12}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Epidemiological glossary}{12}{subsection.1.1.2}%
+\contentsline {subsubsection}{Micro and Macro parasite}{13}{section*.5}%
+\contentsline {subsubsection}{Types of infectious diseases}{13}{section*.6}%
+\contentsline {subsubsection}{Disease transmission}{13}{section*.7}%
+\contentsline {subsubsection}{Epidemic disease}{13}{section*.8}%
+\contentsline {subsubsection}{Endemic disease}{13}{section*.9}%
+\contentsline {subsubsection}{Pandemic disease}{13}{section*.10}%
+\contentsline {subsubsection}{Incubation, Symptoms, Infected and Infectious}{13}{section*.11}%
+\contentsline {subsubsection}{Outbreak}{14}{section*.12}%
+\contentsline {subsubsection}{Incidence and prevalence}{14}{section*.13}%
+\contentsline {subsubsection}{Immunity and herd immunity}{14}{section*.14}%
+\contentsline {subsubsection}{Virulence and Contagiousness}{14}{section*.15}%
+\contentsline {subsubsection}{Overdispersion and Superspreading}{14}{section*.16}%
+\contentsline {subsubsection}{CFR, IFR and mortality excess}{14}{section*.17}%
+\contentsline {subsubsection}{Reproduction number $R_0$}{14}{section*.18}%
+\contentsline {subsubsection}{Incubation period and serial interval}{15}{section*.19}%
+\contentsline {section}{\numberline {1.2}Opinion/behaviour glossary}{15}{section.1.2}%
+\contentsline {subsubsection}{Awareness}{15}{section*.20}%
+\contentsline {subsubsection}{Information}{15}{section*.21}%
+\contentsline {subsubsection}{Belief}{15}{section*.22}%
+\contentsline {subsubsection}{Behaviour}{15}{section*.23}%
+\contentsline {subsubsection}{Trust}{15}{section*.24}%
+\contentsline {subsubsection}{Perception}{15}{section*.25}%
+\contentsline {subsubsection}{Group decision-making}{16}{section*.26}%
+\contentsline {subsubsection}{Threshold theory}{16}{section*.27}%
+\contentsline {subsubsection}{Polarization and Consensus}{16}{section*.28}%
+\contentsline {subsubsection}{Homophily}{16}{section*.29}%
+\contentsline {section}{\numberline {1.3}Epidemiological models categorization}{16}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Mean field models}{17}{subsection.1.3.1}%
+\contentsline {subsubsection}{SIR model}{17}{section*.31}%
+\contentsline {subsubsection}{Derivation of I evolution and SIR differential equations presentation}{19}{section*.32}%
+\contentsline {subsubsection}{Stochastic models}{20}{section*.34}%
+\contentsline {subsection}{\numberline {1.3.2}Agent-based networks}{21}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Multilayer systems and networks}{22}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Main objectives and summary of the contents}{25}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Review of epidemiological behavioural and opinion models in literature}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Opinion models}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Multilayer network}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Opinion-disease model}{29}{section.3.3}%
+\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral Disease Model}{31}{part.2}%
+\contentsline {chapter}{\numberline {4}Epidemic and Behavioral model alone: a presentation}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}SIRS model}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Behavioural model}{34}{section.4.2}%
+\contentsline {subsubsection}{Equilibrium and stability analysis}{35}{section*.37}%
+\contentsline {subsubsection}{Behavioural model experiment}{38}{section*.44}%
+\contentsline {chapter}{\numberline {5}Models description and analysis}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Behavioral epidemic model}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Basic reproduction number calculation}{44}{subsection.5.1.1}%
+\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{47}{section*.49}%
+\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{47}{section*.51}%

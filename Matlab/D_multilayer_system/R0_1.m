@@ -27,9 +27,11 @@ epsilon1 = 0.15; % gli IC che vanno a infettare in giro
 k41 = 0.243; k31 = 0.48;
 lambda41 = 0.143; lambda31 = 0.143;
 gamma1 = 0.35; beta1 = 0.40;
-A1 = 50/60e6; C1 = A1;
-SC01 = 50/60e6; SA01 = 50/60e6; SH01 = 1-100/60e6;
-
+% Population division
+    SC01 = 50/60e6; SA01 = 50/60e6; SH01 = 1-SC01 - SA01;
+    IC01 = 10/60e6; IA01 = 10/60e6;
+    RC01 = 0;  RA01 = 0;
+    C1 = SC01 + IC01+RC01; A1 = SA01 +IA01 +RA01;
  
 %% Figura della relazione livello di awareness - R0
 awareness = linspace(0,10); 

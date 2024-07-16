@@ -5,152 +5,178 @@ clc;
 clear;
 close all;
 %% Initialization
-syms Aw SC SA SH IC IA rho epsilon k3 k4 lambda3 lambda4 beta gamma A C SC0 SA0 SH0 
 fig = 0;
-% To calculate the R0 the following matrices are defined:
-    Pi = [ rho, 1 0; 0, 0, 1];
-    D =  [ 1, 0, 0; 0, 1, 0; 0, 0, 1];
-    y =  [ SC; SH; SA];
-    b =  [ epsilon, 1];
-    x =  [ IC; IA];  
-    V = [  k4*A + lambda3 + gamma, -Aw*k3*C - lambda4; 
-          -k4*A - lambda3, Aw * k3*C + gamma + lambda4 ];
-    y0= [SC0; SH0; SA0];
 
-
-%% Definizione del R0
-R_0(Aw, rho, epsilon, k3, k4, lambda3, lambda4, beta, gamma, A, C, SC0, SA0, SH0) = beta .* b * inv(V) * Pi * D * y0;
-
+%% Esempio 1          
 % Diamo dei valori ai parametri
-% rho1 = 0.65; % protezione da infezione
-% epsilon1 = 0.15; % gli IC che vanno a infettare in giro
-% k41 = 0.243; k31 = 0.48;
-% lambda41 = 0.143; lambda31 = 0.143;
-% gamma1 = 0.35; beta1 = 0.40;
-% A1 = 50/60e6; C1 = A1;
-% SC01 = 50/60e6; SA01 = 50/60e6; SH01 = 1-100/60e6;
+rho1 = 0.65; % protezione da infezione
+epsilon1 = 0.15; % gli IC che vanno a infettare in giro
+k41 = 0.243; k31 = 0.48;
+lambda41 = 0.143; lambda31 = 0.143;
+gamma1 = 0.35;  
+beta1 = 0.40;
+% Population division
+    SC01 = 50/60e6; SA01 = 50/60e6; 
+    IC01 = 10/60e6; IA01 = 10/60e6;
+    RC01 = 0;  RA01 = 0;
+    phi1 = 0.9091;
+    % Calculation of the resulting R_0_epi_behav value
+    R_0_alt = Reproductive_rate(SC01, SA01,IC01, IA01, RC01, RA01, gamma1, lambda31, lambda41,k31, k41, phi1, epsilon1, rho1 )
+    % Total R_0_behav_epi
+    R_0_alt_tot = R_0_alt*beta1/gamma1
 
- 
-%% Figura della relazione livello di awareness - R0
-awareness = linspace(0,10); 
-R0_val = R_0(awareness(10), rho1, epsilon1, k31, k41, lambda31, lambda41, beta1, gamma1, A1, C1, SC01, SA01, SH01);
-double(R0_val) % To print the resulting value
+    
+%% Varying initial conditions plot with different SC0 and SA0
+%% Population change rapidly behavior, small lambdas
+% Caso E3 > E4 >1 and population change rapidly behavior
+E3 = 3; E4 = 1.4;
+lambda3 = 1/7; lambda4 = 1/7;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
+% Caso E3 < E4 >1 and population change rapidly behavior
+E3 = 2; E4 = 20;
+lambda3 = 1/7; lambda4 = 1/7;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
+% Caso E3 = E4 >1 and population change rapidly behavior
+E3 = 2.4; E4 = 2.4;
+lambda3 = 1/7; lambda4 = 1/7;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
 
-fig = fig+1;
-figure(fig)
-box on
-plot(awareness, R_0(awareness, rho1, epsilon1, k31, k41, lambda31, lambda41, beta1, gamma1, A1, C1, SC01, SA01, SH01),'linewidth',1.1)
-fontsize(20,"points")
-legend('R_0 epidemic behaviour', Orientation='horizontal', Location='southoutside')
-xlabel('awareness \phi')
-ylabel('R_0')
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 24 15]);
-set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', ['r0_epi_behav.pdf'])
-% Si osserva che (vedi anche note su quaderno) che essendo awareness moltiplicato per la popolazione di compliant e against all'inizio, se questi due gruppi sono molto piccoli trovo che R0 è identico a quello dovuto alla sola malattia.  Ovvio ma dimostrato ?
+%% Population stubborn
+% Caso E3 > E4 >1 and population change rapidly behavior in Compliant but
+% is stubborn in Against group
+E3 = 3; E4 = 1.4;
+lambda3 = 1/7; lambda4 = 1/40;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
+% Caso E3 < E4 >1 and population change rapidly behavior
+E3 = 2; E4 = 20;
+lambda3 = 1/7; lambda4 = 1/40;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
+% Caso E3 = E4 >1 and population change rapidly behavior
+E3 = 2.4; E4 = 2.4;
+lambda3 = 1/7; lambda4 = 1/40
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Varying initial conditions plot with different rho and epsilon
+%% Population change rapidly behavior, small lambdas
+% Caso E3 > E4 >1 and population change rapidly behavior
+E3 = 3; E4 = 100.4;
+lambda3 = 1/7; lambda4 = 1/7;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_rho_and_epsilon, fig] = varying_epsilon_rho(fig,k3,lambda3,k4,lambda4);
 
-%% Varying initial conditions
+% Caso E3 >> E4 >1 and population change rapidly behavior
+E3 = 30; E4 = 1.4;
+lambda3 = 1/7; lambda4 = 1/7;
+k3 = E3*lambda3; k4 = E4*lambda4;
+[R0_initial_rho_and_epsilon, fig] = varying_epsilon_rho(fig,k3,lambda3,k4,lambda4);
 
-% Multiple plots varying initial number of Compliant and Against, respectively the SC0 and SA0 variables. This change affect also the A and C groups. Several heatmaps are plotted using different awareness value.
-SC0i = linspace(50/60e6,30e6/60e6,10); %interval from 50 to 10 milion 
-rhoj = linspace(50/60e6,30e6/60e6,10); 
+%% Funzioni
+%% Definizione del R0 epi_behav senza R0_epi = beta/gamma
+% Forma alternativa del R_0 raccogliendo e portando fuori un beta/gamma per
+% poter fare analisi di sensitività escludendo quel valore epidemiologico.
+% Così ottengo una analisi più generica, meno basata sulla malattia.
+% Comunque non riesco a togliere un gamma che rimane a combnarsi con
+% qualche parametro. 
 
-awk = linspace(0.5,10,10);
-R0_initial_SC_and_SA = zeros(length(SC01),length(SA01), length(awk));
-for i = 1:length(SC0i)
-    for j = 1:length(rhoj)
-        for k = 1: length(awk)
-            SH01 = 1-SC0i(i)-rhoj(j);
-            A1 = rhoj(j)+ 50/60e6 + 0;
-            C1 = SC0i(i) + 50/60e6 + 0;
+function R_0_alt = Reproductive_rate(SC0, SA0,IC0, IA0, RC0, RA0, gamma, lambda3, lambda4,k3, k4, phi, epsilon, rho )
+    
+    SH0 = 1- SC0 - SA0 - IA0 - IC0 - RC0 - RA0; %semplifico il modello eliminando una variabile
+    C = SC0+IC0+RC0;
+    A = SA0+IA0+RA0;
+    x1 = lambda3+ A*k4;
+    x2 = lambda4+phi*C*k3;
+   
+    R_0_alt = SA0*((gamma+x1+epsilon*x2)/(x1+x2+gamma)) + (SH0+ rho*SC0)*((x1+epsilon*(x2+gamma))/(x1+x2+gamma));
 
-            % x1 = lambda31 + A1*k41;
-            % x2 = lambda41 + awk(k) *C1*k31;
-            % ratio1 = (gamma1+x1+epsilon1*x2)/(x1+x2+gamma1);
-            % ratio2 = (x1+epsilon1*(x2+gamma1))/(x1+x2+gamma1);
-            % somma = SA0j(j)*ratio1 + (SH01 + rho1*SC0i(i))*ratio2;
-            R0_initial_SC_and_SA(i,j,k) = R_0(awk(k), rho1, epsilon1, k31, k41, lambda31, lambda41, beta1, gamma1, A1, C1, SC0i(i), rhoj(j), SH01);
-        end
-     end 
-end
-% filename = "R0_variandoSC_SA,.mat";
-% save(filename, "R0_initial_SC_and_SA", '-v7.3');
-% load("R0_variandoSC_SA,.mat")
-% Prossimi casi, plot funzione di awareness SC e C, SC,SA C e A  più egli altri coeeficienit, anche se solo roh e epsilon hannno un valore compartamentale. 
-% Varying SC0 and SA0
-
-% SC0i = linspace(50/60e6,10e6/60e6); %interval from 50 to 10 milion 
-% SA0j = linspace(50/60e6,10e6/60e6); 
-% awk = linspace(0.1,100,10);
-%% Equilibrium plot of R1 and R2
-
-%1,1
-d1 = 1;
-fig = fig+1;
-figure(fig)
-box on
-[xx, yy] = meshgrid(SC0i,rhoj);
-aga = reshape(R0_initial_SC_and_SA(:,:,d1),10,10,[]);
-zz = aga; zz = transpose(zz);
-surface(xx,yy,zz, 'edgecolor','none')
-colorbar;
-colormap default;
-txt3 = "R_0 function of initial SC and SA";
-title(txt3)
-xlabel('initial susceptible compliant') 
-ylabel('initial susceptible against') 
-fontsize(20,"points")
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 24 15]);
-set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
-print(gcf,'-dsvg', ['r0_epi_behav_SC_SA.svg'])
-
-
-
-%% Varying SC0 e rho
-% Multiple plots varying initial number of Compliant and Against, respectively the SC0 and SA0 variables. This change affect also the A and C groups. Several heatmaps are plotted using different awareness value.
-SC0i = linspace(50/60e6,30e6/60e6,10); %interval from 50 to 10 milion 
-rhoj = linspace(0,1,10); 
-SA01 = 50/60e6;
-awk = linspace(0.5,10,10);
-R0_initial_SC_and_SA = zeros(length(SC01),length(SA01), length(awk));
-for i = 1:length(SC0i)
-    for j = 1:length(rhoj)
-        for k = 1: length(awk)
-            SH01 = 1-SC0i(i)-SA01;
-            A1 = SA01+ 50/60e6 + 0;
-            C1 = SC0i(i) + 50/60e6 + 0;
-
-            % x1 = lambda31 + A1*k41;
-            % x2 = lambda41 + awk(k) *C1*k31;
-            % ratio1 = (gamma1+x1+epsilon1*x2)/(x1+x2+gamma1);
-            % ratio2 = (x1+epsilon1*(x2+gamma1))/(x1+x2+gamma1);
-            % somma = SA0j(j)*ratio1 + (SH01 + rho1*SC0i(i))*ratio2;
-            R0_initial_SC_and_SA(i,j,k) = R_0(awk(k), rhoj(j), epsilon1, k31, k41, lambda31, lambda41, beta1, gamma1, A1, C1, SC0i(i), SA01, SH01);
-        end
-     end 
 end
 
+function [R0_initial_SC_and_SA, fig] = varying_SC0_SA0(fig,k3,lambda3,k4,lambda4)
+    % Multiple plots varying initial number of Compliant and Against,
+    % respectively the SC0 and SA0 variables. 
+    % This change affect also the A and C groups. Several heatmaps are plotted using different awareness value.
+    SC0i = linspace(50/60e6,29.9e6/60e6,100); %interval from 50 to 30 milion 
+    SA0j = linspace(50/60e6,29.9e6/60e6,100); 
+    IC_0 = 10/60e6; IA_0 = 10/60e6;
+    RC_0 = 0;  RA_0 = 0;
+    gamma_0 = 1/8.5; 
+    R0_initial_SC_and_SA = zeros(length(SC0i),length(SA0j));
+    epsilon_0 = 0.3; % rate of I_c NOT staying at home
+    rho_0 = 0.35; % rate of protection to infection
+    phi_1 = 1; %in this sensitivity The Awareness is not considered initially in the study
+    for i = 1:length(SC0i)
+        for j = 1:length(SA0j)
+            R0_initial_SC_and_SA(i,j) = Reproductive_rate(SC0i(i), SA0j(j),IC_0, IA_0, RC_0, RA_0, gamma_0, lambda3, lambda4,k3, k4, phi_1, epsilon_0, rho_0 );
+        end
+    end 
+    %Plot
+    d1 = 1;
+    fig = fig+1;
+    figure(fig)
+    box on
+    [xx, yy] = meshgrid(SC0i,SA0j);
+    %aga = reshape(R0_initial_SC_and_SA(:,:,d1),10,10,[]);
+    zz = R0_initial_SC_and_SA; zz = transpose(zz);
+    surface(xx,yy,zz, 'edgecolor','none')
+    colorbar;
+    colormap default;
+    txt3 = "Epi-behav R_0 with: "+ 'E_3 = '+ num2str(k3/lambda3) +', E_4 = '+ num2str(k4/lambda4)+', \lambda_3 = '+ num2str(lambda3)+', \lambda_4 = '+ num2str(lambda4);
+    title(txt3)
+    xlabel('S_C_0') 
+    ylabel('S_A_0') 
+    fontsize(20,"points")
+    set(gcf, 'PaperUnits', 'centimeters');
+    set(gcf, 'PaperPosition', [0 0 24 15]);
+    set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+    text1 = "ro_epi-behav_SC_SA_num_"+ num2str(fig); 
+    print(gcf,'-dpdf', [text1])
+end
 
 
-%1,1
-d1 = 1;
-fig = fig+1;
-figure(fig)
-box on
-[xx, yy] = meshgrid(SC0i,rhoj);
-aga = reshape(R0_initial_SC_and_SA(:,:,d1),10,10,[]);
-zz = aga; zz = transpose(zz);
-surface(xx,yy,zz, 'edgecolor','none')
-colorbar;
-colormap default;
-txt3 = "R_0 function of initial SC and efficacy of NPIs";
-title(txt3)
-xlabel('initial susceptible compliant') 
-ylabel('\rho ') 
-fontsize(20,"points")
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 24 15]);
-set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', ['r0_epi_behav_SC_rho.pdf'])
+function [R0_initial_rho_and_epsilon, fig] = varying_epsilon_rho(fig,k3,lambda3,k4,lambda4)
+    % Multiple plots varying initial number of Compliant and Against,
+    % respectively the SC0 and SA0 variables. 
+    % This change affect also the A and C groups. Several heatmaps are plotted using different awareness value.
+    rho_i = linspace(0,1,100);  % rate of protection to infection
+    epsilon_j = linspace(0,1,100); % rate of I_c NOT staying at home
+    SC0 = 50/60e6;
+    SA0 = 50/60e6;
+    IC_0 = 10/60e6; IA_0 = 10/60e6;
+    RC_0 = 0;  RA_0 = 0;
+    gamma_0 = 1/8.5; 
+    R0_initial_rho_and_epsilon = zeros(length(rho_i),length(epsilon_j));
+    
+    phi_1 = 1; %in this sensitivity The Awareness is not considered initially in the study
+    for i = 1:length(rho_i)
+        for j = 1:length(epsilon_j)
+            R0_initial_rho_and_epsilon(i,j) = Reproductive_rate(SC0, SA0,IC_0, IA_0, RC_0, RA_0, gamma_0, lambda3, lambda4,k3, k4, phi_1, epsilon_j(j), rho_i(i) );
+        end
+    end 
+    %Plot
+    d1 = 1;
+    fig = fig+1;
+    figure(fig)
+    box on
+    [xx, yy] = meshgrid(rho_i,epsilon_j);
+    %aga = reshape(R0_initial_SC_and_SA(:,:,d1),10,10,[]);
+    zz = R0_initial_rho_and_epsilon; zz = transpose(zz);
+    surface(xx,yy,zz, 'edgecolor','none')
+    colorbar;
+    colormap default;
+    txt3 = "Epi-behav R_0 with: "+ 'E_3 = '+ num2str(k3/lambda3) +', E_4 = '+ num2str(k4/lambda4)+', \lambda_3 = '+ num2str(lambda3)+', \lambda_4 = '+ num2str(lambda4);
+    title(txt3)
+    xlabel('\rho') 
+    ylabel('\epsilon') 
+    fontsize(20,"points")
+    set(gcf, 'PaperUnits', 'centimeters');
+    set(gcf, 'PaperPosition', [0 0 24 15]);
+    set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+    text1 = "ro_epi-behav_rho_epsilon_num_"+ num2str(fig); 
+    print(gcf,'-dpdf', [text1])
+end
