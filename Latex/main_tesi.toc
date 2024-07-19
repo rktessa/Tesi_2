@@ -8,14 +8,14 @@
 \contentsline {chapter}{\numberline {1}Introduction and theoretical background}{9}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Epidemiological theory foundations}{12}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1} Epidemiologic research historical background}{12}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Epidemiological glossary}{12}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}Epidemiological glossary}{13}{subsection.1.1.2}%
 \contentsline {subsubsection}{Micro and Macro parasite}{13}{section*.5}%
 \contentsline {subsubsection}{Types of infectious diseases}{13}{section*.6}%
 \contentsline {subsubsection}{Disease transmission}{13}{section*.7}%
 \contentsline {subsubsection}{Epidemic disease}{13}{section*.8}%
 \contentsline {subsubsection}{Endemic disease}{13}{section*.9}%
 \contentsline {subsubsection}{Pandemic disease}{13}{section*.10}%
-\contentsline {subsubsection}{Incubation, Symptoms, Infected and Infectious}{13}{section*.11}%
+\contentsline {subsubsection}{Incubation, Symptoms, Infected and Infectious}{14}{section*.11}%
 \contentsline {subsubsection}{Outbreak}{14}{section*.12}%
 \contentsline {subsubsection}{Incidence and prevalence}{14}{section*.13}%
 \contentsline {subsubsection}{Immunity and herd immunity}{14}{section*.14}%
