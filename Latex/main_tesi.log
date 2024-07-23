@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  17 JUL 2024 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  23 JUL 2024 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,19 +1646,33 @@ LaTeX Warning: Citation 'Granovetter_1978' on page 16 undefined on input line 1
 50.
 
 
-LaTeX Warning: Citation 'Bramson_2017' on page 16 undefined on input line 154.
+LaTeX Warning: Citation 'Bramson_2017' on page 16 undefined on input line 157.
 
 
-LaTeX Warning: Citation 'Ledder_2023' on page 16 undefined on input line 160.
+LaTeX Warning: Citation 'Ledder_2023' on page 16 undefined on input line 165.
 
 [16]
 
+LaTeX Warning: Citation 'kermack1927' on page 17 undefined on input line 188.
+
+
+LaTeX Warning: Citation 'brauer2012mathematical' on page 17 undefined on input 
+line 188.
+
+
+LaTeX Warning: Citation 'Anderson_82' on page 17 undefined on input line 188.
+
+
+LaTeX Warning: Citation 'anderson1991infectious' on page 17 undefined on input 
+line 188.
+
+
 LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 17 undefined on input l
-ine 184.
+ine 189.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 185.
+               Default added (so using `htb') on input line 190.
 
 
 
@@ -1671,25 +1685,58 @@ File: 0_introduction/images_introduction/SIRS_figure_compartmental.pdf Graphic
 file (type pdf)
 <use 0_introduction/images_introduction/SIRS_figure_compartmental.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/SIRS_figure_compart
-mental.pdf  used on input line 187.
+mental.pdf  used on input line 192.
 (pdftex.def)             Requested size: 274.62392pt x 190.12512pt.
 
-LaTeX Warning: Citation 'Hethcote_2000' on page 17 undefined on input line 200.
+LaTeX Warning: Citation 'Hethcote_2000' on page 17 undefined on input line 205.
 
 
 [17]
 
-LaTeX Warning: Citation 'kermack1927' on page 18 undefined on input line 209.
-
-
-LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 18 undefined on input l
-ine 212.
-
-
-LaTeX Warning: Citation 'Hethcote_2000' on page 18 undefined on input line 212.
-
+LaTeX Warning: Citation 'kermack1927' on page 18 undefined on input line 214.
 
 [18 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
+
+LaTeX Warning: Citation 'Breda_2012' on page 19 undefined on input line 216.
+
+
+LaTeX Warning: Citation 'akinboro2014numerical' on page 19 undefined on input l
+ine 216.
+
+
+LaTeX Warning: Citation 'Jard_n_Kojakhmetov_2021' on page 19 undefined on input
+ line 216.
+
+
+LaTeX Warning: Citation 'Ledder_2023' on page 19 undefined on input line 216.
+
+
+LaTeX Warning: Citation 'Okabe_2020' on page 19 undefined on input line 216.
+
+
+LaTeX Warning: Citation 'Prodanov_2022' on page 19 undefined on input line 216.
+
+
+
+LaTeX Warning: Citation 'Xu_2014' on page 19 undefined on input line 216.
+
+
+LaTeX Warning: Citation 'Turkyilmazoglu_2021' on page 19 undefined on input lin
+e 216.
+
+
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 19 undefined on input l
+ine 217.
+
+
+LaTeX Warning: Citation 'Hethcote_2000' on page 19 undefined on input line 217.
+
+
+
+Overfull \hbox (7.98082pt too wide) in paragraph at lines 216--219
+\T1/lmr/m/n/10 [[]], [[]], [[]], [[]],
+ []
+
 [19{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
 MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 <0_introduction/images_introduction/sir_con_rt.pdf, id=317, 682.55pt x 426.5937
@@ -1698,7 +1745,7 @@ File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
 <use 0_introduction/images_introduction/sir_con_rt.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
-d on input line 260.
+d on input line 265.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 <0_introduction/images_introduction/sir_multipli_beta.pdf, id=318, 682.55pt x 4
 26.59375pt>
@@ -1706,11 +1753,11 @@ File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
 <use 0_introduction/images_introduction/sir_multipli_beta.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_multipli_beta.p
-df  used on input line 262.
+df  used on input line 267.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 
 
-LaTeX Warning: Citation 'Allen2017' on page 20 undefined on input line 270.
+LaTeX Warning: Citation 'Allen2017' on page 20 undefined on input line 275.
 
 [20 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
 ges_introduction/sir_multipli_beta.pdf>]
@@ -1720,41 +1767,41 @@ File: 0_introduction/images_introduction/agent_based.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/agent_based.png>
 Package pdftex.def Info: 0_introduction/images_introduction/agent_based.png  us
-ed on input line 285.
+ed on input line 290.
 (pdftex.def)             Requested size: 211.25116pt x 99.02419pt.
 
 
 LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 21 undefined on input l
-ine 294.
+ine 299.
 
+[21 <./0_introduction/images_introduction/agent_based.png>]
 
-LaTeX Warning: Citation 'DeDomenico2016' on page 21 undefined on input line 299
+LaTeX Warning: Citation 'DeDomenico2016' on page 22 undefined on input line 304
 .
 
 
-LaTeX Warning: Citation 'DeDomenico2016' on page 21 undefined on input line 299
+LaTeX Warning: Citation 'DeDomenico2016' on page 22 undefined on input line 304
 .
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 304.
+               Default added (so using `htb') on input line 309.
 
-<0_introduction/images_introduction/multi_layer.png, id=335, 470.35725pt x 393.
+<0_introduction/images_introduction/multi_layer.png, id=339, 470.35725pt x 393.
 8715pt>
 File: 0_introduction/images_introduction/multi_layer.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/multi_layer.png>
 Package pdftex.def Info: 0_introduction/images_introduction/multi_layer.png  us
-ed on input line 306.
+ed on input line 311.
 (pdftex.def)             Requested size: 253.50397pt x 212.28476pt.
 
-LaTeX Warning: Citation 'Granell2013' on page 21 undefined on input line 307.
+LaTeX Warning: Citation 'Granell2013' on page 22 undefined on input line 312.
 
 
-LaTeX Warning: Citation 'Granell2013' on page 21 undefined on input line 307.
+LaTeX Warning: Citation 'Granell2013' on page 22 undefined on input line 312.
 
-[21 <./0_introduction/images_introduction/agent_based.png>] [22 <./0_introducti
-on/images_introduction/multi_layer.png>] [23] [24
+[22] [23 <./0_introduction/images_introduction/multi_layer.png>] [24
 
 ]
 Chapter 2.
@@ -1763,56 +1810,56 @@ Chapter 2.
 ] [26]
 Chapter 3.
 
-LaTeX Warning: Citation 'Wang_2019' on page 27 undefined on input line 363.
+LaTeX Warning: Citation 'Wang_2019' on page 27 undefined on input line 368.
 
 
-LaTeX Warning: Citation 'Nunner2021' on page 27 undefined on input line 363.
+LaTeX Warning: Citation 'Nunner2021' on page 27 undefined on input line 368.
 
 [27
 
 ]
 
-LaTeX Warning: Citation 'Peng2021' on page 28 undefined on input line 367.
+LaTeX Warning: Citation 'Peng2021' on page 28 undefined on input line 372.
 
 
-LaTeX Warning: Citation 'teslya2022' on page 28 undefined on input line 368.
+LaTeX Warning: Citation 'teslya2022' on page 28 undefined on input line 373.
 
 
 LaTeX Warning: Citation 'Alvarez_Zuzek_2017' on page 28 undefined on input line
- 369.
+ 374.
 
 
-LaTeX Warning: Citation 'Epstein_2021' on page 28 undefined on input line 369.
+LaTeX Warning: Citation 'Epstein_2021' on page 28 undefined on input line 374.
 
 
-LaTeX Warning: Citation 'Auld_2003' on page 28 undefined on input line 370.
+LaTeX Warning: Citation 'Auld_2003' on page 28 undefined on input line 375.
 
 
-LaTeX Warning: Citation 'Sontag_2022' on page 28 undefined on input line 371.
+LaTeX Warning: Citation 'Sontag_2022' on page 28 undefined on input line 376.
 
 
-LaTeX Warning: Citation 'Turker_2023' on page 28 undefined on input line 372.
+LaTeX Warning: Citation 'Turker_2023' on page 28 undefined on input line 377.
 
 [28]
 
-LaTeX Warning: Citation 'Funk_2010' on page 29 undefined on input line 375.
+LaTeX Warning: Citation 'Funk_2010' on page 29 undefined on input line 380.
 
 
-LaTeX Warning: Citation 'Frieswijk_2022' on page 29 undefined on input line 375
+LaTeX Warning: Citation 'Frieswijk_2022' on page 29 undefined on input line 380
 .
 
 
-LaTeX Warning: Citation 'Bauch_2012' on page 29 undefined on input line 376.
+LaTeX Warning: Citation 'Bauch_2012' on page 29 undefined on input line 381.
 
 
-LaTeX Warning: Citation 'Tyson_2020' on page 29 undefined on input line 377.
+LaTeX Warning: Citation 'Tyson_2020' on page 29 undefined on input line 382.
 
 
-LaTeX Warning: Citation 'Collinson2014' on page 29 undefined on input line 378.
+LaTeX Warning: Citation 'Collinson2014' on page 29 undefined on input line 383.
 
 
 
-LaTeX Warning: Citation 'Granell_2014' on page 29 undefined on input line 378.
+LaTeX Warning: Citation 'Granell_2014' on page 29 undefined on input line 383.
 
 ) (1_corpo/opinion_disease_model.tex [29] [30
 
@@ -2106,7 +2153,7 @@ lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/lm/lmro8.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy
 7.pfb>
-Output written on main_tesi.pdf (50 pages, 2720320 bytes).
+Output written on main_tesi.pdf (50 pages, 2721572 bytes).
 PDF statistics:
  705 PDF objects out of 1000 (max. 8388607)
  154 named destinations out of 1000 (max. 500000)
