@@ -5,23 +5,25 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Epidemic distribution in time}}{10}{figure.caption.3}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces smallpox on native Americans}}{11}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces SIRS example}}{18}{figure.caption.30}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces SIR dynamic example}}{20}{figure.caption.33}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Agent based network representation}}{21}{figure.caption.35}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Multi-layer network}}{23}{figure.caption.36}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces SIRS example}}{21}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces SIR dynamic example}}{23}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Agent based network representation}}{24}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Multi-layer network}}{26}{figure.caption.36}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Behavioural dynamic first case}}{36}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Behavioural nullcline first case}}{36}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Behavioural dynamic second case}}{37}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Behavioural nullcline second case}}{37}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Behavioural model third case}}{38}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Behavioural model fourth case}}{38}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Final Behavioural compartments}}{40}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Final Behavioural compartments varying $R_1$}}{41}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Behavioural dynamic first case}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Behavioural nullcline first case}}{38}{figure.caption.39}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Behavioural dynamic second case}}{39}{figure.caption.40}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Behavioural nullcline second case}}{39}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Behavioural model third case}}{40}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Behavioural model fourth case}}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Final Behavioural compartments}}{42}{figure.caption.45}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Final Behavioural compartments varying $R_1$}}{43}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Epidemic behavior model}}{45}{figure.caption.47}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces reproduction number of epidemic behaviour model.}}{46}{figure.caption.48}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Epidemic behavioral model $R_0$}}{48}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Epidemic behavioral $R_0$ coefficients }}{49}{figure.caption.52}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Epidemic behavior model}}{47}{figure.caption.47}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces reproduction number of epidemic behaviour model.}}{48}{figure.caption.48}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Epidemic behavioral model $R_0$}}{50}{figure.caption.50}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Epidemic behavioral $R_0$ coefficients }}{51}{figure.caption.52}%

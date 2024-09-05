@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  23 JUL 2024 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.12.17)  5 SEP 2024 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,7 +1494,7 @@ Package hyperref Info: Link coloring ON on input line 81.
 \@outlinefile=\write7
 \openout7 = `main_tesi.out'.
 
-<STN.png, id=102, 1027.84pt x 1027.84pt>
+<STN.png, id=114, 1027.84pt x 1027.84pt>
 File: STN.png Graphic file (type png)
 <use STN.png>
 Package pdftex.def Info: STN.png  used on input line 105.
@@ -1591,13 +1591,19 @@ TeX/fonts/enc/dvips/lm/lm-rm.enc}] (0_introduction/Introduction.tex [6
 
 ] [8]
 Chapter 1.
-<0_introduction/images_introduction/worst_epidemic.pdf, id=207, 682.55pt x 426.
+
+LaTeX Warning: Citation 'Anderson_82' on page 9 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'Vollset_2024' on page 9 undefined on input line 14.
+
+<0_introduction/images_introduction/worst_epidemic.pdf, id=222, 682.55pt x 426.
 59375pt>
 File: 0_introduction/images_introduction/worst_epidemic.pdf Graphic file (type 
 pdf)
 <use 0_introduction/images_introduction/worst_epidemic.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/worst_epidemic.pdf 
- used on input line 15.
+ used on input line 25.
 (pdftex.def)             Requested size: 359.12955pt x 224.45976pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1605,276 +1611,337 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [9
 
 ]
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+ [10 <./0_introduction/images_introduction/worst_epidemic.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 33.
+               Default added (so using `htb') on input line 43.
 
-<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=215, 77.08
+<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=237, 77.08
 8pt x 59.5023pt>
 File: 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic f
 ile (type jpg)
 <use 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg>
 Package pdftex.def Info: 0_introduction/images_introduction/FlorentineCodex_sma
-llpox.jpg  used on input line 35.
+llpox.jpg  used on input line 45.
 (pdftex.def)             Requested size: 168.99834pt x 130.46144pt.
 
-LaTeX Warning: Citation 'Sahagun1965' on page 10 undefined on input line 36.
+LaTeX Warning: Citation 'Sahagun1965' on page 11 undefined on input line 46.
 
 
-LaTeX Warning: Citation 'Sahagun1965' on page 10 undefined on input line 36.
+LaTeX Warning: Citation 'Sahagun1965' on page 11 undefined on input line 46.
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 1.
 (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [10{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./0_introduction/
-images_introduction/worst_epidemic.pdf>] [11 <./0_introduction/images_introduct
-ion/FlorentineCodex_smallpox.jpg>]
+) [11{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./0_introduction/
+images_introduction/FlorentineCodex_smallpox.jpg>] [12]
+Chapter 2.
+[13
 
-LaTeX Warning: Citation 'Mata2021' on page 12 undefined on input line 83.
+] [14]
+Chapter 3.
 
-
-LaTeX Warning: Citation 'Anderson_82' on page 12 undefined on input line 83.
-
-[12] [13] [14]
-
-LaTeX Warning: Citation 'Capurro_2003' on page 15 undefined on input line 136.
-
-[15]
-
-LaTeX Warning: Citation 'Granovetter_1978' on page 16 undefined on input line 1
-50.
+LaTeX Warning: Citation 'Mata2021' on page 15 undefined on input line 120.
 
 
-LaTeX Warning: Citation 'Bramson_2017' on page 16 undefined on input line 157.
+LaTeX Warning: Citation 'Anderson_82' on page 15 undefined on input line 120.
 
 
-LaTeX Warning: Citation 'Ledder_2023' on page 16 undefined on input line 165.
+Underfull \vbox (badness 5637) has occurred while \output is active []
 
-[16]
+ [15
 
-LaTeX Warning: Citation 'kermack1927' on page 17 undefined on input line 188.
+]
+[16] [17]
 
+LaTeX Warning: Citation 'Capurro_2003' on page 18 undefined on input line 173.
 
-LaTeX Warning: Citation 'brauer2012mathematical' on page 17 undefined on input 
-line 188.
+[18]
 
-
-LaTeX Warning: Citation 'Anderson_82' on page 17 undefined on input line 188.
-
-
-LaTeX Warning: Citation 'anderson1991infectious' on page 17 undefined on input 
-line 188.
+LaTeX Warning: Citation 'Granovetter_1978' on page 19 undefined on input line 1
+87.
 
 
-LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 17 undefined on input l
-ine 189.
+LaTeX Warning: Citation 'Bramson_2017' on page 19 undefined on input line 194.
+
+
+LaTeX Warning: Citation 'Ledder_2023' on page 19 undefined on input line 202.
+
+[19]
+
+LaTeX Warning: Citation 'kermack1927' on page 20 undefined on input line 225.
+
+
+LaTeX Warning: Citation 'brauer2012mathematical' on page 20 undefined on input 
+line 225.
+
+
+LaTeX Warning: Citation 'Anderson_82' on page 20 undefined on input line 225.
+
+
+LaTeX Warning: Citation 'anderson1991infectious' on page 20 undefined on input 
+line 225.
+
+
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 20 undefined on input l
+ine 226.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 190.
+               Default added (so using `htb') on input line 227.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./0_introduction/images_introduction/SIRS_fi
 gure_compartmental.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
-<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=278, 782.
+<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=306, 782.
 925pt x 542.025pt>
 File: 0_introduction/images_introduction/SIRS_figure_compartmental.pdf Graphic 
 file (type pdf)
 <use 0_introduction/images_introduction/SIRS_figure_compartmental.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/SIRS_figure_compart
-mental.pdf  used on input line 192.
+mental.pdf  used on input line 229.
 (pdftex.def)             Requested size: 274.62392pt x 190.12512pt.
 
-LaTeX Warning: Citation 'Hethcote_2000' on page 17 undefined on input line 205.
+LaTeX Warning: Citation 'Hethcote_2000' on page 20 undefined on input line 242.
 
 
-[17]
+[20]
 
-LaTeX Warning: Citation 'kermack1927' on page 18 undefined on input line 214.
+LaTeX Warning: Citation 'kermack1927' on page 21 undefined on input line 251.
 
-[18 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
+[21 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
 
-LaTeX Warning: Citation 'Breda_2012' on page 19 undefined on input line 216.
-
-
-LaTeX Warning: Citation 'akinboro2014numerical' on page 19 undefined on input l
-ine 216.
+LaTeX Warning: Citation 'Breda_2012' on page 22 undefined on input line 253.
 
 
-LaTeX Warning: Citation 'Jard_n_Kojakhmetov_2021' on page 19 undefined on input
- line 216.
+LaTeX Warning: Citation 'akinboro2014numerical' on page 22 undefined on input l
+ine 253.
 
 
-LaTeX Warning: Citation 'Ledder_2023' on page 19 undefined on input line 216.
+LaTeX Warning: Citation 'Jard_n_Kojakhmetov_2021' on page 22 undefined on input
+ line 253.
 
 
-LaTeX Warning: Citation 'Okabe_2020' on page 19 undefined on input line 216.
+LaTeX Warning: Citation 'Ledder_2023' on page 22 undefined on input line 253.
 
 
-LaTeX Warning: Citation 'Prodanov_2022' on page 19 undefined on input line 216.
+LaTeX Warning: Citation 'Okabe_2020' on page 22 undefined on input line 253.
 
 
-
-LaTeX Warning: Citation 'Xu_2014' on page 19 undefined on input line 216.
-
-
-LaTeX Warning: Citation 'Turkyilmazoglu_2021' on page 19 undefined on input lin
-e 216.
-
-
-LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 19 undefined on input l
-ine 217.
-
-
-LaTeX Warning: Citation 'Hethcote_2000' on page 19 undefined on input line 217.
+LaTeX Warning: Citation 'Prodanov_2022' on page 22 undefined on input line 253.
 
 
 
-Overfull \hbox (7.98082pt too wide) in paragraph at lines 216--219
+LaTeX Warning: Citation 'Xu_2014' on page 22 undefined on input line 253.
+
+
+LaTeX Warning: Citation 'Turkyilmazoglu_2021' on page 22 undefined on input lin
+e 253.
+
+
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 22 undefined on input l
+ine 254.
+
+
+LaTeX Warning: Citation 'Hethcote_2000' on page 22 undefined on input line 254.
+
+
+
+Overfull \hbox (7.98082pt too wide) in paragraph at lines 253--256
 \T1/lmr/m/n/10 [[]], [[]], [[]], [[]],
  []
 
-[19{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
+[22{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
 MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<0_introduction/images_introduction/sir_con_rt.pdf, id=317, 682.55pt x 426.5937
+<0_introduction/images_introduction/sir_con_rt.pdf, id=344, 682.55pt x 426.5937
 5pt>
 File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
 <use 0_introduction/images_introduction/sir_con_rt.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
-d on input line 265.
+d on input line 302.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
-<0_introduction/images_introduction/sir_multipli_beta.pdf, id=318, 682.55pt x 4
+<0_introduction/images_introduction/sir_multipli_beta.pdf, id=345, 682.55pt x 4
 26.59375pt>
 File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
 <use 0_introduction/images_introduction/sir_multipli_beta.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_multipli_beta.p
-df  used on input line 267.
+df  used on input line 304.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 
 
-LaTeX Warning: Citation 'Allen2017' on page 20 undefined on input line 275.
+LaTeX Warning: Citation 'Allen2017' on page 23 undefined on input line 312.
 
-[20 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
+[23 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
 ges_introduction/sir_multipli_beta.pdf>]
-<0_introduction/images_introduction/agent_based.png, id=334, 1156.32pt x 542.02
+
+LaTeX Warning: Citation 'Newman2002' on page 24 undefined on input line 319.
+
+
+LaTeX Warning: Citation 'VanMieghem2009' on page 24 undefined on input line 319
+.
+
+
+LaTeX Warning: Citation 'Tizzoni2014' on page 24 undefined on input line 324.
+
+<0_introduction/images_introduction/agent_based.png, id=361, 1156.32pt x 542.02
 5pt>
 File: 0_introduction/images_introduction/agent_based.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/agent_based.png>
 Package pdftex.def Info: 0_introduction/images_introduction/agent_based.png  us
-ed on input line 290.
+ed on input line 333.
 (pdftex.def)             Requested size: 211.25116pt x 99.02419pt.
+[24 <./0_introduction/images_introduction/agent_based.png>]
+
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 25 undefined on input l
+ine 342.
 
 
-LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 21 undefined on input l
-ine 299.
+LaTeX Warning: Citation 'Wang_2019' on page 25 undefined on input line 346.
 
-[21 <./0_introduction/images_introduction/agent_based.png>]
 
-LaTeX Warning: Citation 'DeDomenico2016' on page 22 undefined on input line 304
+LaTeX Warning: Citation 'DeDomenico2016' on page 25 undefined on input line 349
 .
 
 
-LaTeX Warning: Citation 'DeDomenico2016' on page 22 undefined on input line 304
+LaTeX Warning: Citation 'DeDomenico2016' on page 25 undefined on input line 349
 .
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 309.
+               Default added (so using `htb') on input line 354.
 
-<0_introduction/images_introduction/multi_layer.png, id=339, 470.35725pt x 393.
+<0_introduction/images_introduction/multi_layer.png, id=366, 470.35725pt x 393.
 8715pt>
 File: 0_introduction/images_introduction/multi_layer.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/multi_layer.png>
 Package pdftex.def Info: 0_introduction/images_introduction/multi_layer.png  us
-ed on input line 311.
+ed on input line 356.
 (pdftex.def)             Requested size: 253.50397pt x 212.28476pt.
 
-LaTeX Warning: Citation 'Granell2013' on page 22 undefined on input line 312.
+LaTeX Warning: Citation 'Granell2013' on page 25 undefined on input line 357.
 
 
-LaTeX Warning: Citation 'Granell2013' on page 22 undefined on input line 312.
+LaTeX Warning: Citation 'Granell2013' on page 25 undefined on input line 357.
 
-[22] [23 <./0_introduction/images_introduction/multi_layer.png>] [24
+[25] [26 <./0_introduction/images_introduction/multi_layer.png>]
+Chapter 4.
 
-]
-Chapter 2.
-[25
-
-] [26]
-Chapter 3.
-
-LaTeX Warning: Citation 'Wang_2019' on page 27 undefined on input line 368.
+LaTeX Warning: Citation 'Bauch_2012_overview' on page 27 undefined on input lin
+e 376.
 
 
-LaTeX Warning: Citation 'Nunner2021' on page 27 undefined on input line 368.
-
-[27
-
-]
-
-LaTeX Warning: Citation 'Peng2021' on page 28 undefined on input line 372.
+LaTeX Warning: Citation 'kermack1927' on page 27 undefined on input line 378.
 
 
-LaTeX Warning: Citation 'teslya2022' on page 28 undefined on input line 373.
+LaTeX Warning: Citation 'Hernandez_Vargas_2022' on page 27 undefined on input l
+ine 378.
 
 
-LaTeX Warning: Citation 'Alvarez_Zuzek_2017' on page 28 undefined on input line
- 374.
+LaTeX Warning: Citation 'Mata2021' on page 27 undefined on input line 378.
 
 
-LaTeX Warning: Citation 'Epstein_2021' on page 28 undefined on input line 374.
+LaTeX Warning: Citation 'Bauch_2012_overview' on page 27 undefined on input lin
+e 379.
 
 
-LaTeX Warning: Citation 'Auld_2003' on page 28 undefined on input line 375.
+LaTeX Warning: Citation 'brauer2012mathematical' on page 27 undefined on input 
+line 381.
 
 
-LaTeX Warning: Citation 'Sontag_2022' on page 28 undefined on input line 376.
+LaTeX Warning: Citation 'Giordano_2020' on page 27 undefined on input line 385.
 
 
-LaTeX Warning: Citation 'Turker_2023' on page 28 undefined on input line 377.
 
-[28]
-
-LaTeX Warning: Citation 'Funk_2010' on page 29 undefined on input line 380.
+LaTeX Warning: Citation 'Dehning_2020' on page 27 undefined on input line 385.
 
 
-LaTeX Warning: Citation 'Frieswijk_2022' on page 29 undefined on input line 380
+LaTeX Warning: Citation 'Proverbio_2021' on page 27 undefined on input line 385
 .
 
 
-LaTeX Warning: Citation 'Bauch_2012' on page 29 undefined on input line 381.
+LaTeX Warning: Citation 'Funk_2010' on page 27 undefined on input line 389.
+
+[27
+
+]) (0_introduction/old_review.tex [28]
+Chapter 5.
+
+LaTeX Warning: Citation 'Wang_2019' on page 29 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'Tyson_2020' on page 29 undefined on input line 382.
+LaTeX Warning: Citation 'Nunner2021' on page 29 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'Collinson2014' on page 29 undefined on input line 383.
+LaTeX Warning: Citation 'Peng2021' on page 29 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'teslya2022' on page 29 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Alvarez_Zuzek_2017' on page 29 undefined on input line
+ 22.
+
+
+LaTeX Warning: Citation 'Epstein_2021' on page 29 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'Auld_2003' on page 29 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Sontag_2022' on page 29 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'Turker_2023' on page 29 undefined on input line 25.
+
+[29
+
+]
+
+LaTeX Warning: Citation 'Funk_2010' on page 30 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'Frieswijk_2022' on page 30 undefined on input line 28.
 
 
 
-LaTeX Warning: Citation 'Granell_2014' on page 29 undefined on input line 383.
+LaTeX Warning: Citation 'Bauch_2012' on page 30 undefined on input line 29.
 
-) (1_corpo/opinion_disease_model.tex [29] [30
 
-] [31
+LaTeX Warning: Citation 'Tyson_2020' on page 30 undefined on input line 30.
 
-] [32]
-Chapter 4.
+
+LaTeX Warning: Citation 'Collinson2014' on page 30 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'Granell_2014' on page 30 undefined on input line 31.
+
+) (1_corpo/opinion_disease_model.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+[31] [32
+
+] [33
+
+] [34]
+Chapter 6.
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
- [33
+ [35
 
 ]
-[34]
-<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=398, 526.96875pt
+[36]
+<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=421, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png Graphic file (t
 ype png)
@@ -1886,7 +1953,7 @@ png  used on input line 102.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=401, 526.9
+<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=424, 526.9
 6875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png Graphic f
 ile (type png)
@@ -1897,7 +1964,7 @@ cline.png  used on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=402, 526.96875pt
+<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=425, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png Graphic file (t
 ype png)
@@ -1908,7 +1975,7 @@ png  used on input line 128.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=404, 526
+<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=427, 526
 .96875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png Graphic
  file (type png)
@@ -1919,12 +1986,12 @@ cline_1.png  used on input line 136.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35]
+[37]
 
-LaTeX Warning: Reference `fig:r1r2less1nullcline' on page 36 undefined on input
+LaTeX Warning: Reference `fig:r1r2less1nullcline' on page 38 undefined on input
  line 146.
 
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=411, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=435, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png Graphic file (ty
 pe png)
@@ -1932,7 +1999,7 @@ pe png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.p
 ng  used on input line 151.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=412, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=436, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png Graphic fi
 le (type png)
@@ -1943,7 +2010,7 @@ line.png  used on input line 153.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=414, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=438, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png Graphic file (ty
 pe png)
@@ -1951,7 +2018,7 @@ pe png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.p
 ng  used on input line 166.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=415, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=439, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png Graphic fi
 le (type png)
@@ -1959,15 +2026,15 @@ le (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullc
 line.png  used on input line 168.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-[36 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <.
+[38 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <.
 /1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png (PNG copy)>]
-[37 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)> <.
+[39 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)> <.
 /1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png (PNG copy)>]
-[38 <./1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> <./
+[40 <./1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> <./
 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png (PNG copy)> <./1
 _corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png (PNG copy)> <./1_corpo/
 figure/behavioural_equilibrium/r1equalr2_nullcline.png (PNG copy)>]
-<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=437
+<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=460
 , 517.935pt x 529.98pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png Gr
 aphic file (type png)
@@ -1975,7 +2042,7 @@ aphic file (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
 _sensitivity.png  used on input line 190.
 (pdftex.def)             Requested size: 198.5766pt x 203.19785pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=438, 
+<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=461, 
 501.5538pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png Grap
 hic file (type png)
@@ -1983,7 +2050,7 @@ hic file (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_s
 ensitivity.png  used on input line 192.
 (pdftex.def)             Requested size: 198.5766pt x 210.59206pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=439,
+<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=462,
  453.3738pt x 418.6842pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png Gra
 phic file (type png)
@@ -1995,7 +2062,7 @@ sensitivity.png  used on input line 194.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=441, 476.018
+<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=464, 476.018
 4pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png Graphic fil
 e (type png)
@@ -2003,7 +2070,7 @@ e (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
 _r1.png  used on input line 206.
 (pdftex.def)             Requested size: 170.14622pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=442, 553.1064p
+<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=465, 553.1064p
 t x 529.4982pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file 
 (type png)
@@ -2011,7 +2078,7 @@ File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_r
 1.png  used on input line 208.
 (pdftex.def)             Requested size: 198.60332pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=443, 455.301p
+<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=466, 455.301p
 t x 390.7398pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png Graphic file
  (type png)
@@ -2022,19 +2089,19 @@ r1.png  used on input line 210.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39] [40 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.
+[41] [42 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.
 png> <./1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png> <
 ./1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png (PNG co
-py)>] [41 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./
+py)>] [43 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./
 1_corpo/figure/behavioural_equilibrium/final_against_r1.png> <./1_corpo/figure/
-behavioural_equilibrium/final_careless_r1.png (PNG copy)>] [42
+behavioural_equilibrium/final_careless_r1.png (PNG copy)>] [44
 
 ]
-Chapter 5.
-[43
+Chapter 7.
+[45
 
 ]
-<1_corpo/figure/epi_behaviour_model_figure.png, id=475, 298.11375pt x 370.986pt
+<1_corpo/figure/epi_behaviour_model_figure.png, id=498, 298.11375pt x 370.986pt
 >
 File: 1_corpo/figure/epi_behaviour_model_figure.png Graphic file (type png)
 <use 1_corpo/figure/epi_behaviour_model_figure.png>
@@ -2043,36 +2110,36 @@ Package pdftex.def Info: 1_corpo/figure/epi_behaviour_model_figure.png  used on
 (pdftex.def)             Requested size: 211.25116pt x 262.89241pt.
 
 
-LaTeX Warning: Citation 'arino2007' on page 44 undefined on input line 284.
+LaTeX Warning: Citation 'arino2007' on page 46 undefined on input line 284.
 
-[44] [45 <./1_corpo/figure/epi_behaviour_model_figure.png>]
+[46] [47 <./1_corpo/figure/epi_behaviour_model_figure.png>]
 
-LaTeX Warning: Citation 'arino2007' on page 46 undefined on input line 311.
+LaTeX Warning: Citation 'arino2007' on page 48 undefined on input line 311.
 
-<1_corpo/figure/r0/ro_epidemic_behavioural.png, id=488, 593.8185pt x 98.769pt>
+<1_corpo/figure/r0/ro_epidemic_behavioural.png, id=511, 593.8185pt x 98.769pt>
 File: 1_corpo/figure/r0/ro_epidemic_behavioural.png Graphic file (type png)
 <use 1_corpo/figure/r0/ro_epidemic_behavioural.png>
 Package pdftex.def Info: 1_corpo/figure/r0/ro_epidemic_behavioural.png  used on
  input line 360.
 (pdftex.def)             Requested size: 418.2796pt x 69.57185pt.
-[46 <./1_corpo/figure/r0/ro_epidemic_behavioural.png>]
+[48 <./1_corpo/figure/r0/ro_epidemic_behavioural.png>]
 
-LaTeX Warning: Citation 'arino2007' on page 47 undefined on input line 392.
+LaTeX Warning: Citation 'arino2007' on page 49 undefined on input line 392.
 
-<1_corpo/figure/r0/susceptible00_epi_behav.pdf, id=497, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/susceptible00_epi_behav.pdf, id=520, 682.55pt x 426.59375pt>
 
 File: 1_corpo/figure/r0/susceptible00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/susceptible00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/susceptible00_epi_behav.pdf  used on
  input line 397.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/infected00_epi_behav.pdf, id=498, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/infected00_epi_behav.pdf, id=521, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/infected00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/infected00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/infected00_epi_behav.pdf  used on in
 put line 399.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/recovered00_epi_behav.pdf, id=499, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/recovered00_epi_behav.pdf, id=522, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/recovered00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/recovered00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/recovered00_epi_behav.pdf  used on i
@@ -2081,19 +2148,19 @@ nput line 401.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf, id=501, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf, id=524, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf  used on inpu
 t line 413.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf, id=502, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf, id=525, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf  used on inp
 ut line 415.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/r0_epi_behav.pdf, id=503, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav.pdf, id=526, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav.pdf  used on input line
@@ -2102,14 +2169,14 @@ Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav.pdf  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [47] [48 <./1_corpo/figure/r0/susceptible00_epi_behav.pdf> <./1_corpo/figure/
+) [49] [50 <./1_corpo/figure/r0/susceptible00_epi_behav.pdf> <./1_corpo/figure/
 r0/infected00_epi_behav.pdf> <./1_corpo/figure/r0/recovered00_epi_behav.pdf>]
-[49 <./1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf> <./1_corpo/figure/r0/r0_epi_be
-hav_SC_rho.pdf> <./1_corpo/figure/r0/r0_epi_behav.pdf>] [50
+[51 <./1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf> <./1_corpo/figure/r0/r0_epi_be
+hav_SC_rho.pdf> <./1_corpo/figure/r0/r0_epi_behav.pdf>] [52
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 234.
+LaTeX Warning: Empty bibliography on input line 235.
 
 (main_tesi.aux)
  ***********
@@ -2121,7 +2188,7 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main_tesi.out' has not changed.
-(rerunfilecheck)             Checksum: D00B3AD81B98AE93434E243B00EF8661;1926.
+(rerunfilecheck)             Checksum: 9A5935FF51151E8928AC8BA139601C50;2080.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main_tesi
@@ -2132,13 +2199,13 @@ Package logreq Info: Writing requests to 'main_tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33752 strings out of 475247
- 646722 string characters out of 5767606
+ 33766 strings out of 475247
+ 647038 string characters out of 5767606
  1939785 words of memory out of 5000000
- 54614 multiletter control sequences out of 15000+600000
+ 54620 multiletter control sequences out of 15000+600000
  640392 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,14n,135p,2199b,2450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,14n,135p,2197b,2450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
 lic/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C
@@ -2153,9 +2220,9 @@ lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/lm/lmro8.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy
 7.pfb>
-Output written on main_tesi.pdf (50 pages, 2721572 bytes).
+Output written on main_tesi.pdf (52 pages, 2730200 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 729 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 379 words of extra memory for PDF output out of 10000 (max. 10000000)
 
