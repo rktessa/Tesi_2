@@ -323,6 +323,8 @@ In the Stochastic differential equation, the random variables are continuous.
 
 VEDI E AGGIUNGI ANCHE \cite{Tizzoni2014}
 
+DA WIKI INTEGRA: "An agent-based model (ABM) is a computational model for simulating the actions and interactions of autonomous agents (both individual or collective entities such as organizations or groups) in order to understand the behavior of a system and what governs its outcomes."
+
 Agent-based models are an alternative technique used to represent disease evolution. This approach is implemented based on the observation of spontaneous connections made by individuals. The evolution of a disease is considered over complex and realistic networks. The focus of this type of model is to understand how the network structure influences the epidemic by observing parameters such as the rate of spread.
 
 In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
@@ -392,14 +394,31 @@ But how can behavior be integrated into pre-existing epidemiological theory? To 
 	\item The type of information used to make decisions;
 	\item The effect of behavioral change on the dynamic described by  the model. 
 \end{itemize}
-When analyzing the source of information, there is a clear distinction between works that assume governments and populations base their decisions on precise data, such as the number of infected individuals (prevalence), and those that consider more informal sources, such as conversations between people, public opinion, or media representations of the situation \cite{Bulai2023}. These media sources include both traditional outlets like television and newspapers, as well as newer platforms like social networks.
+
+\section{Information's sources}
+When analyzing the source of information, there is a clear distinction between works \cite{Vogiatzis2010} that assume governments and populations base their decisions on precise data, such as the number of infected individuals (prevalence) \cite{Collinson2014, Tyson_2020}, and those that consider more informal sources, such as conversations between people, public opinion, or media representations of the situation \cite{Bulai2023, Sontag2022}. These media sources include both traditional outlets like television and newspapers, as well as newer platforms like social networks.
 This distinction highlights the diversity in how behavioral factors are integrated into models, reflecting the varying degrees of reliability and influence these sources have on decision-making processes during an epidemic.
 
 
 Regarding information quality and the negative effect of misinformation spreading within the population, an example is the fear of vaccination \cite{Kahan_2013}. Several works analyze the effect that fear of vaccination has had on the spread of infection \cite{Bauch_2012_game, Epstein_2021}.
 An example of how this phenomenon can arise is the story of an article originally published by a prestigious source. Even though the thesis presented in this work was later proven wrong by the scientific community \cite{wakefield1998retracted}, the negative impact in terms of spreading fear about vaccines has persisted and, in many cases, has become deeply ingrained. In this specific case, it caused a decrease in herd immunity and a resurgence of measles \cite{Bauch_2012_overview}.
 
-
+\section{Classification of different types of information}
 After introducing the impact that information quality may have, another interesting aspect is related to the different types of information used in model development. Some articles focus on the effect of media on behavior \cite{Collinson2014, Misra_2011}, while others consider peer-to-peer conversations, information exchange, and beliefs among individuals \cite{Tyson_2020}. These are completely different approaches, even though they aim to achieve the same effect: simulating the evolution of people's opinions and behavior. Using media involves hypothesizing that the population is influenced by a few "central" information nodes, so the same news, data, or future predictions are shared with everyone. In contrast, models that use personal information exchanges can depict a scenario where many different ideas about the disease situation circulate simultaneously.
-Another concept used in models that simulate a sort of "collective consciousness" is referred to as "awareness" \cite{Funk2009}. To model how awareness spreads in the population, it is often treated like a disease \cite{Silva2019, Granell_2013, Granell2014, Kabir_2019, Zuo_2021, Wang_2019}. Although there are differences, the main idea is that theories and concepts about a certain topic can spread among people, which can be considered at a higher level as a unified opinion. For example, there may be many different personal positions on how to respond to a health emergency like COVID-19, but it is possible to abstract the various opinions and reconstruct what the majority of people, or macro-groups, ultimately feel. They may either be more cooperative and in favor of following guidelines issued by authorities or more focused on their well-being and inclined to act independently.
+Another concept used in models that simulate a sort of "collective consciousness" is referred to as "awareness" \cite{Funk2009}. To model how awareness spreads in the population, it is often treated like a disease \cite{Silva2019, Granell_2013, Granell2014, Kabir_2019, Zuo_2021, Wang_2019}. Although there are many differences between these two, the main idea is that theories and concepts about a certain topic can spread among people, which can be considered at a higher level as a unified opinion. For example, there may be many different personal positions on how to respond to a health emergency like COVID-19, but it is possible to abstract the various opinions and reconstruct what the majority of people, or macro-groups, ultimately feel. They may either be more cooperative and in favor of following guidelines issued by authorities, or more focused on their well-being and inclined to act independently.
 This process can be related to opinion formation studies, which aim to understand how people form their ideas \cite{Devia_2023, Devia2022} and also analyze the possible formation of opinion distributions, such as perfect consensus, consensus, polarization, clustering, or dissensus.
+
+\section{How integrate behavior in epidemiology}
+While the type and source of information are crucial for understanding the basic framework and synthesizing key concepts of models that consider population behavior, the final criterion used to categorize works related to epidemiological behavior is how the influence of people's behavior on the model is integrated. This aspect is one of the most interesting and was a key focus of the literature reviewed for this thesis, as it plays a significant role in comparing and selecting relevant works for this research.
+
+There are various ways to describe behavior in response to an epidemic and integrate this aspect into epidemic models \cite{Wang_2019, Bedson2021, Wang_2015_review}.
+
+The first approach involves observing and simulating how connected individuals' states are linked to specific behaviors and how this influences the epidemic. This category includes agent-based models. Additionally, the reverse relationship, where disease spread alters individual behavior, has also been considered, as seen in \cite{Granell_2014}.
+
+There is also a broad class of mean-field models that explicitly consider the effects of behavior. In these models, time-varying or state-varying parameters are used, resulting in a non-linear system of equations where the parameters are not constant but change based on information such as disease prevalence \cite{CITA}.
+
+Another possibility involves modifying the structure or connections in the network used to simulate disease evolution \cite{CITA}. In network-based models, data extracted from social network structures \cite{CITA} or small-world models \cite{CITA} are often used to simulate connections between people more realistically.
+
+In the following paragraphs, several articles are presented using this classification to simplify their categorization. Each article is then discussed in more detail, highlighting its original contribution.
+
+\subsection{Models in which change the individual' state}
