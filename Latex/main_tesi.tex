@@ -6,7 +6,7 @@
 %% OPINION DISEASE MODELLING
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Esempio con molte opzioni
 \documentclass[%
-%corpo=11 pt,
+corpo=11 pt,
 twoside,
 %    stile=classica,
 oldstyle,
@@ -14,7 +14,7 @@ autoretitolo,
 greek,
 evenboxes,
 %    tipotesi,
-]{toptesi}
+]{toptesi}\errorcontextlines=100% debugging
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[utf8]{inputenc}                                               %% si può scegliere anche latin1, ma lo si sconsiglia 
@@ -32,7 +32,7 @@ evenboxes,
 %\usepackage{csquotes} % per fare citazioni centrate
 
 \usepackage{graphicx}
-\usepackage{epstopdf}
+%\usepackage{epstopdf}
 \usepackage{caption}
 \usepackage{subfig}
 \usepackage{pdfpages}
@@ -74,16 +74,17 @@ evenboxes,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%% Definizioni locali
-\newtheorem{osservazione}{Osservazione}% Standard LaTeX
+
 \addbibresource{bibliography.bib}
 
 
 \begin{document}
+
 	\english
 	
 	
 	
-	
+
 	\ateneo{\textsc{University of Trento}}
 	%	\nomeateneo{Sede di Torre Elettra}
 	\nomeateneo{Industrial Engineering Department}
@@ -172,19 +173,9 @@ evenboxes,
 		% \sommario{Abstract}
 		\logosede{STN}% or comma separated list of logos
 	}{}
+
 	
-	
-	\ifbool{classica}%
-	{\tomo
-		\paginavuota
-		\begin{dedica}
-			A mio padre
-			
-			\textdagger\ A mio nonno Pino
-		\end{dedica}
-	}{%
-		\frontespizio % sarebbe meglio usare l'ambiente
-	}
+
 	
 	\sommario
 	La tesi si propone di presentare una delle tecnologie sviluppate per compiere ricerca sul funzionamento del cervello. Partendo da una presentazione e analisi dei principali sensori e MEMS prodotti per questo scopo, viene poi descritto in dettaglio un dispositivo realizzato basandosi su un array ad alta densità di microelettrodi, costruito con tecnologia CMOS.

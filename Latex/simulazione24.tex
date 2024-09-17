@@ -1,0 +1,257 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = pdflatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TESI DI LAUREA MARTINA GHEDIN 
+%% TOPIC MODA SOSTENIBILE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Esempio con molte opzioni
+\documentclass[%
+    corpo=11pt,
+    twoside, % impostazione per margini in libro
+    %stile=classica,
+    oldstyle,
+    autoretitolo,
+    greek,
+    evenboxes,
+%    tipotesi,
+]{toptesi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}   %% si può scegliere anche latin1, ma lo si sconsiglia 
+
+\usepackage{comment}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}  
+\usepackage{amsmath}            %% per la matematica estesa
+\usepackage{lipsum}             %% Per scrivere testo fasullo in "latinorum"
+
+%%\usepackage{natbib}
+\usepackage{booktabs}           %% del Sistema Internazionale
+\usepackage{latexsym}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{wrapfig}
+%\usepackage{longtable}
+%\usepackage{setspace}
+%\usepackage[margin=3cm]{geometry}
+                                               
+\usepackage{sidecap}   %% Didascalie a fianco della figura
+\usepackage[autostyle,italian=guillemets]{csquotes}   %% Per il corretto funzionamento di BibLatex
+\usepackage[sorting=none,style=numeric-comp,backend=biber]{biblatex}
+
+
+% Vedere la documentazione italiana o inglese di TOPtesi
+% per le attenzioni che bisogna usare al fine di ottenere
+% un file veramente conforme alle norme per l'archiviabilità.
+
+
+% Lasciare questo per ultimo dopo aver caricato tutti gli altri pacchetti
+%
+% Se si è già caricato hyperref anche indirettamente (tramite altri
+% pacchetti) questo statement evita di ricaricarlo
+\usepackage[a-1b]{pdfx} % è utile, tienilo
+\unless\ifcsname ver@hyperref.sty\endcsname\usepackage{hyperref}\fi
+
+\hypersetup{%
+	pdfpagemode={UseOutlines},
+	bookmarksopen,
+	pdfstartview={FitH},
+	colorlinks,
+	linkcolor={black}, %pink
+	citecolor={black}, %pink
+	urlcolor={black}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Definizioni locali
+\newtheorem{osservazione}{Osservazione}% Standard LaTeX
+\addbibresource{bibi2.bib}
+
+\begin{document}
+\english
+%\onehalfspacing % Set line spacing to 1.5
+
+
+
+\ateneo{\textsc{University of Trento}}
+%\nomeateneo{Sede di Torre Elettra}
+	\nomeateneo{Industrial engineering department}
+	
+	\titolo{Understanding the effect of opinions and behaviours on the spread of infectious diseases}
+	%\sottotitolo{pensare ad un sottotilo}     
+	\CorsoDiLaureaIn{Mechatronics Engineer}
+
+\renewcommand*\IDlabel{\\\quad Student Id: }
+	
+ \candidato{Riccardo Tessarin}[222819]
+
+	\relatore{Prof.~Giulia Giordano}
+	
+	\secondorelatore{Doct.~Daniele Proverbio}
+
+
+	\sedutadilaurea{\textsc{Academic year} 2023-2024}
+	\logosede[95 pt]{STN} %immagine del logo 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Per mettere 4 relatori con classica
+%\AdvisorName{Supervisors}% esempio per l'inglese
+%\direttore{prof. Albert Einstein}% per il dottorato
+%\coordinatore{prof. Albert Einstein}% per il dottorato
+%    \relatore{prof.~Albert Einstein}% per la laurea e/o il dottorato
+%    \secondorelatore{dipl.~ing.~Werner von Braun}
+%    \terzorelatore{\tabular[t]{@{}l}
+%    Mario Rossi\\[0.5ex]
+%    Piero Negri
+%    \endtabular}% per la laurea magistrale
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa senza opzione classica
+%    \AdvisorName{Relatore}
+%    \relatore{prof.~Giovanni Bianchi}
+%    \secondorelatore{\tabular{@{}l}%
+%    \bfseries Correlatori\\[0.5ex]
+%    ing.~Lucio Verdi\\[0.5ex]
+%    dott.~Mario Rossi\\[0.5ex]
+%    dott.~Piero Neri
+%    \endtabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa con 4 relatori senza
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% indicazione dei correlatori e senza
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% opzione classica
+%    \relatore{prof.~Giovanni Bianchi}
+%    \secondorelatore{ing.~Lucio Verdi}
+%    \terzorelatore{\tabular{@{}l}
+%    dott.~Mario Rossi\\[0.5ex]
+%    dott.~Piero Neri
+%    \endtabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Altro trucco per mettere il correlatore
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% senza usare l'opzione classica
+%\relatore{\tabular{@{}l@{}}
+%prof.\ Albert Enstein\\[1.5ex]
+%\textbf{Correlatore:}\\
+%dipl.~ing.~Werner von Braun
+%\endtabular}
+%%%%%%%%%%
+%
+%%%%%%%%%% Trucco per scrivere anche un quarto relatore
+%\terzorelatore{{\tabular{@{}l}dott.\ Neil Armstrong\\prof. Maria Rossi\endtabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Change the strings if you want a title page and a
+%%%%%%% copyright page in another language
+%%%%%%% Comment just the \iflanguage statement and the
+%%%%%%% closing line of the language test if you want to
+%%%%%%% make a global change instead of a conditional one.
+%%%%%%% Comment the following indented lines if you don't
+%%%%%%% care about the title page in English
+\iflanguage{english}{%
+	\retrofrontespizio{This work is subject to the Creative Commons Licence}
+	\DottoratoIn{PhD Course in\space}
+	\CorsoDiLaureaIn{Master degree course in\space}
+	\NomeMonografia{Bachelor Degree Final Work}
+	\TesiDiLaurea{Master Degree Thesis}
+	\NomeDissertazione{PhD Dissertation}
+	\InName{in}
+	\CandidateName{Candidates}% or Candidate
+	\AdvisorName{Supervisors}% or Supervisor
+	\TutorName{Tutor}
+	\NomeTutoreAziendale{Internship Tutor}
+	\CycleName{cycle}
+	\NomePrimoTomo{First volume}
+	\NomeSecondoTomo{Second Volume}
+	\NomeTerzoTomo{Third Volume}
+	\NomeQuartoTomo{Fourth Volume}
+	\logosede{STN}% or comma separated list of logos
+}{}
+
+
+%\ifbool{classica}%
+
+  
+
+\frontespizio % sarebbe meglio usare l'ambiente
+
+
+\begin{dedica}
+	To my old friend Gojira
+	
+\end{dedica}
+\paginavuota
+\sommario 
+
+Slow fashion is a movement born recently to contrast the fast fashion trend. It consists in implementing a better and more sustainable supply chain with a positive environmental and social impact. Nevertheless, there is a common bias where people perceive ethical products to be too expensive. This is due partially to the actual high prices of some brands but it is also a consequence of greenwashing. In order to investigate this aspect, an empirical research has been conducted with Atotus.
+It is both an e-commerce and a physical shop in Trento that sells ethical articles of clothing as a core business and it has built a circular economy network. 
+
+A choice based conjoint analysis is performed. The first step is to build two different surveys, which have been submitted to individuals through two channels. Both questionnaires present three product profiles and individuals choose the one they would buy. Each profile is composed by one level of each attribute. These attributes are design, material and price.
+
+Respondents are actual and potential Atotus customers reached through its social networks. Next, the collected data are given as input to the multinomial logit model to identify respondents preferences across attributes. It is the standard model, where only the individual-specific variables are taken into account. The advanced or mixed multinomial logit model includes more detailed aspects, such as heteroscedasticity and random parameters. Moreover, the willingness to pay (WTP) and the market shares of sustainable products are investigated. 
+
+The analysis shows that all attributes are equally significant for respondents. This is the case both for the standard model and the mixed one. Moreover, the WTP shows that respondents would pay €38 more in order to buy a t-shirt made of recycled cotton and €34 for a t-shirt made of certified organic cotton. Additionally, the design, p1 and p2 are the preferred ones. As regard the shares prediction, almost 50\% of individuals would buy a product made of a  sustainable material of design p1 or p2 with a price of 50€. 
+
+There is not much literature regarding this specific topic. Indeed, conjoint analysis is performed in many fields, but slow fashion has not been one of them. These results show a starting point of applied data analysis in this specific field. Additionally, it is possible to notice that there is a strong interest among potential and actual customers toward Atotus products and individuals' purchase behavior is coherent with Atotus pricing strategy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \paginavuota 
+
+
+  \tablespagetrue     %% Lista delle Tabelle
+  \figurespagetrue   %% Lista delle Figure
+  \indici	             %% Produce l'indice
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Qui Inizia il corpo dell'elaborato vero e proprio
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\mainmatter]
+
+
+\input{./0_introduction/Introduction.tex}
+\input{./0_introduction/old_review.tex}
+\input{./1_corpo/opinion_disease_model.tex}
+%\input{./6Acknowledgements/acknowledgements.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\backmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+
+%% BIBLIOGRAFIA
+
+%%\cleardoublepage                    
+%% per la stampa su due lati,chiude tutti gli elementi flottanti e aggiunge
+%% non serve più usando biblatex
+
+\printbibliography[heading=bibintoc]
+
+\chapter*{Acknowledgements}
+\thispagestyle{empty}
+
+My gratitude goes to my primary supervisor Prof. Diego Giuliani who assisted me in this project, and also to my second supervisor Prof. Alessandro Giuseppe Veltri for supporting this research.
+
+My heartfelt thanks goes to Atotus entrepreneurs, Silvia and Nicola, for helping me constantly in the first phase of the analysis and whom I consider two great human beings for their constant hard work and passion that they put in their project. I do really believe it is a unique and precious innovation in this territory. I wish them all the best.
+
+First, I would like to thank my parents for supporting every decision and for helping me during moments of difficulties. Mum, you are such a great inspiration and your good heart is always a light in the dark. Dad, you are a great supporter with always an unstoppable humor.
+I want to thank all my friends who are my greatest joy. 
+
+I would like to thank my dearest and oldest friends Valentina and Paola with whom I have the opportunity to share a great piece of my life. Thank you for being always present and always on my side, you are my rocks.
+
+Thank you Maria, Anna and Vale for being such an amazing sparkle and for always bringing me happiness. 
+
+Thank you Anna, Jack and Ale, sharing these last years with you has made everything better and even the bad days were still full of beauty because of you.
+
+At last, I would like to thank you, Riccardo, for your constant and unconditional love. I have no words to express the gratitude and the love I feel for you. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

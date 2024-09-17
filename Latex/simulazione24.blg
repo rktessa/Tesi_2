@@ -1,0 +1,28 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'simulazione24.blg'
+[122] biber-MSWIN64:340> INFO - === 
+[168] Biber.pm:420> INFO - Reading 'simulazione24.bcf'
+[311] Biber.pm:994> INFO - Found 64 citekeys in bib section 0
+[327] Biber.pm:4463> INFO - Processing section 0
+[340] Biber.pm:4654> INFO - Looking for bibtex file 'bibi2.bib' for section 0
+[407] bibtex.pm:1713> INFO - LaTeX decoding ...
+[584] bibtex.pm:1519> INFO - Found BibTeX data source 'bibi2.bib'
+[2403] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2403] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2403] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[2403] Biber.pm:4289> INFO - No sort tailoring available for locale 'it-IT'
+[2502] bbl.pm:676> INFO - Writing 'simulazione24.bbl' with encoding 'UTF-8'
+[9115] bbl.pm:779> INFO - Output to simulazione24.bbl
+[9116] Biber.pm:131> WARN - Duplicate entry key: 'diekmann2000mathematical' in file 'bibi2.bib', skipping ...
+[9116] Biber.pm:131> WARN - legacy month field 'jul' in entry 'Okabe_2020' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Xu_2014' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Turkyilmazoglu_2021' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - legacy month field 'apr' in entry 'Giordano_2020' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Kabir_2019' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - legacy month field 'jun' in entry 'Bedson2021' is not an integer - this will probably not sort properly.
+[9116] Biber.pm:131> WARN - I didn't find a database entry for 'Granell_2013' (section 0)
+[9116] Biber.pm:131> WARN - I didn't find a database entry for 'Granell2014' (section 0)
+[9116] Biber.pm:131> WARN - I didn't find a database entry for 'CITA' (section 0)
+[9116] Biber.pm:131> WARN - I didn't find a database entry for 'Sontag_2022' (section 0)
+[9116] Biber.pm:131> WARN - I didn't find a database entry for 'Bauch_2012' (section 0)
+[9116] Biber.pm:133> INFO - WARNINGS: 12
