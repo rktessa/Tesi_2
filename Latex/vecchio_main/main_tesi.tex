@@ -1,0 +1,227 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = pdflatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TESI DI LAUREA RICCARDO TESSARIN 222819
+%% OPINION DISEASE MODELLING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Esempio con molte opzioni
+\documentclass[%
+corpo=11 pt,
+twoside,
+%    stile=classica,
+oldstyle,
+autoretitolo,
+greek,
+evenboxes,
+%    tipotesi,
+]{toptesi}\errorcontextlines=100% debugging
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}                                               %% si può scegliere anche latin1, ma lo si sconsiglia 
+
+\usepackage{comment}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+%\usepackage{mhchem}                                                       %% Per scrivere formule di chimica	  
+\usepackage{amsmath}                                                      %% per la matematica estesa
+\usepackage{lipsum}                                                       %% Per scrivere testo fasullo in "latinorum"
+%%\usepackage{natbib}
+\usepackage[output-decimal-marker={,}]{siunitx}                                                      %% Per scrivere con le unità di misura
+\usepackage{booktabs}                                                                          %% del Sistema Internazionale
+\usepackage{latexsym}
+%\usepackage{csquotes} % per fare citazioni centrate
+
+\usepackage{graphicx}
+%\usepackage{epstopdf}
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{wrapfig}
+
+
+
+\usepackage{sidecap}                                                      %% Didascalie a fianco della figura
+\usepackage[autostyle,italian=guillemets]{csquotes}                       %% Per il corretto funzionamento di BibLatex
+\usepackage[sorting=none,style=numeric-comp,backend=biber]{biblatex}
+%\usepackage[backend=biber]{biblatex}
+
+% Vedere la documentazione italiana o inglese di TOPtesi
+% per le attenzioni che bisogna usare al fine di ottenere
+% un file veramente conforme alle norme per l'archiviabilità.
+
+
+
+
+
+
+
+% Lasciare questo per ultimo dopo aver caricato tutti gli altri pacchetti
+%
+% Se si è già caricato hyperref anche indirettamente (tramite altri
+% pacchetti) questo statement evita di ricaricarlo
+\usepackage[a-1b]{pdfx}
+\unless\ifcsname ver@hyperref.sty\endcsname\usepackage{hyperref}\fi
+
+\hypersetup{%
+	pdfpagemode={UseOutlines},
+	bookmarksopen,
+	pdfstartview={FitH},
+	colorlinks,
+	linkcolor={black},
+	citecolor={black},
+	urlcolor={black}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% Definizioni locali
+
+\addbibresource{bibliography.bib}
+
+
+\begin{document}
+
+	\english
+	
+	
+	
+
+	\ateneo{\textsc{University of Trento}}
+	%	\nomeateneo{Sede di Torre Elettra}
+	\nomeateneo{Industrial Engineering Department}
+	
+	\titolo{Understanding the effect of opinions and behaviours on the spread of infectious diseases}
+	%\sottotitolo{Studio sulle principali tecnologie impiegate per l'analisi della attività elettrica del cervello}     
+	\CorsoDiLaureaIn{Mechatronics Engineering}
+	
+	\renewcommand*\IDlabel{\\\quad matricola: }
+	
+	\candidato{Riccardo \textsc{Tessarin}}[222819]
+	
+	\relatore{prof.~Giulia Giordano}
+	
+	\secondorelatore{doct.~Daniele Proverbio}
+	
+	
+	\sedutadilaurea{\textsc{Academic~Year} 2023-2024}
+	\logosede[115 pt]{STN}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Per mettere 4 relatori con classica
+	%\AdvisorName{Supervisors}% esempio per l'inglese
+	%\direttore{prof. Albert Einstein}% per il dottorato
+	%\coordinatore{prof. Albert Einstein}% per il dottorato
+	%    \relatore{prof.~Albert Einstein}% per la laurea e/o il dottorato
+	%    \secondorelatore{dipl.~ing.~Werner von Braun}
+	%    \terzorelatore{\tabular[t]{@{}l}
+		%    Mario Rossi\\[0.5ex]
+		%    Piero Negri
+		%    \endtabular}% per la laurea magistrale
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa senza opzione classica
+	%    \AdvisorName{Relatore}
+	%    \relatore{prof.~Giovanni Bianchi}
+	%    \secondorelatore{\tabular{@{}l}%
+		%    \bfseries Correlatori\\[0.5ex]
+		%    ing.~Lucio Verdi\\[0.5ex]
+		%    dott.~Mario Rossi\\[0.5ex]
+		%    dott.~Piero Neri
+		%    \endtabular}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa con 4 relatori senza
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% indicazione dei correlatori e senza
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% opzione classica
+	%    \relatore{prof.~Giovanni Bianchi}
+	%    \secondorelatore{ing.~Lucio Verdi}
+	%    \terzorelatore{\tabular{@{}l}
+		%    dott.~Mario Rossi\\[0.5ex]
+		%    dott.~Piero Neri
+		%    \endtabular}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Altro trucco per mettere il correlatore
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% senza usare l'opzione classica
+	%\relatore{\tabular{@{}l@{}}
+		%prof.\ Albert Enstein\\[1.5ex]
+		%\textbf{Correlatore:}\\
+		%dipl.~ing.~Werner von Braun
+		%\endtabular}
+	%%%%%%%%%%
+	%
+	%%%%%%%%%% Trucco per scrivere anche un quarto relatore
+	%\terzorelatore{{\tabular{@{}l}dott.\ Neil Armstrong\\prof. Maria Rossi\endtabular}}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%% Change the strings if you want a title page and a
+	%%%%%%% copyright page in another language
+	%%%%%%% Comment just the \iflanguage statement and the
+	%%%%%%% closing line of the language test if you want to
+	%%%%%%% make a global change instead of a conditional one.
+	%%%%%%% Comment the following indented lines if you don't
+	%%%%%%% care about the title page in English
+	\iflanguage{english}{%
+		%\retrofrontespizio{This work is subject to the Creative Commons Licence}
+		\DottoratoIn{PhD Course in\space}
+		\CorsoDiLaureaIn{Master degree course in\space}
+		\NomeMonografia{Bachelor Degree Final Work}
+		\TesiDiLaurea{Master Degree Thesis}
+		\NomeDissertazione{PhD Dissertation}
+		\InName{in}
+		\CandidateName{Candidates}% or Candidate
+		\AdvisorName{Supervisors}% or Supervisor
+		\TutorName{Tutor}
+		\NomeTutoreAziendale{Internship Tutor}
+		\CycleName{cycle}
+		\NomePrimoTomo{First volume}
+		\NomeSecondoTomo{Second Volume}
+		\NomeTerzoTomo{Third Volume}
+		\NomeQuartoTomo{Fourth Volume}
+		% \sommario{Abstract}
+		\logosede{STN}% or comma separated list of logos
+	}{}
+
+	
+
+	
+	\sommario
+	La tesi si propone di presentare una delle tecnologie sviluppate per compiere ricerca sul funzionamento del cervello. Partendo da una presentazione e analisi dei principali sensori e MEMS prodotti per questo scopo, viene poi descritto in dettaglio un dispositivo realizzato basandosi su un array ad alta densità di microelettrodi, costruito con tecnologia CMOS.
+	
+	L’elaborato è strutturato nelle seguenti parti:
+	L’introduzione, dove è presentata la biologia del tessuto cerebrale, focalizzandosi sul neurone, l’unità cellulare principale che lo compone. Segue una parte in cui sono esposte e analizzate le tecnologie sviluppatesi negli anni, con lo scopo di illustrare quali siano le principali motivazioni che portino allo sviluppo di sensori molto differenti fra loro. Viene inoltre descritta la caratterizzazione elettrica della giunzione che si crea fra la cellula e il sensore.  
+	La parte centrale dell’elaborato presenta un sensore basato su tecnologia CMOS, indagando sulla logica alla base del suo funzionamento e su come esso sia costruito ed implementato nell’interezza del suo apparato strumentale. Viene inoltre confrontato con sensori simili e si evidenziano qui le sue peculiarità positive e negative al confronto con dispositivi che implementano architetture differenti.
+	In conclusione si discute dei principali risultati raggiunti finora con l’uso di queste tecniche e di quali siano i filoni più attivi e di maggior interesse futuro per il mondo scientifico. 
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	% \paginavuota 
+	
+	
+	\tablespagetrue                 %% Lista delle Tabelle
+	\figurespagetrue                %% Lista delle Figure
+	\indici	                        %% Produce l'indice
+	
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%% Qui Inizia il corpo dell'elaborato vero e proprio
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\mainmatter
+	
+	
+    \input{./0_introduction/Introduction.tex}
+    %\input{./0_introduction/old_review.tex}
+	%\input{./1_corpo/opinion_disease_model.tex}
+	%\input{./2realizzazione/GiunzioneNeuroneSilicio.tex}
+	%\input{./2realizzazione/CmosArrayDescrizione.tex}
+	%\input{./3conclusione/conclusione.tex}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	
+	\backmatter
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%% 
+	%% BIBLIOGRAFIA
+	
+	
+	
+	%%\cleardoublepage                    %% per la stampa su due lati,chiude tutti gli elementi flottanti e aggiunge
+	%% non serve più usando biblatex
+	\printbibliography	
+\end{document}

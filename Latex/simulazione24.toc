@@ -49,20 +49,22 @@
 \contentsline {section}{\numberline {4.1}Information's sources}{34}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Classification of different types of information}{34}{section.4.2}%
 \contentsline {section}{\numberline {4.3}How integrate behavior in epidemiology}{35}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Models in which change the individual' state}{35}{subsection.4.3.1}%
-\contentsline {chapter}{\numberline {5}Old review}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Opinion models}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Multilayer network}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Opinion-disease model}{39}{section.5.3}%
-\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral Disease Model}{41}{part.2}%
-\contentsline {chapter}{\numberline {6}Epidemic and Behavioral model alone: a presentation}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}SIRS model}{43}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Behavioural model}{44}{section.6.2}%
-\contentsline {subsubsection}{Equilibrium and stability analysis}{45}{section*.37}%
-\contentsline {subsubsection}{Behavioural model experiment}{49}{section*.44}%
-\contentsline {chapter}{\numberline {7}Models description and analysis}{53}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Behavioral epidemic model}{53}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Basic reproduction number calculation}{56}{subsection.7.1.1}%
-\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{57}{section*.49}%
-\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{58}{section*.51}%
-\contentsline {chapter}{Bibliography}{61}{figure.caption.52}%
+\contentsline {subsection}{\numberline {4.3.1}Models in which change the individual' state}{36}{subsection.4.3.1}%
+\contentsline {subsubsection}{Multiple network simulated with Markovian process}{36}{section*.37}%
+\contentsline {subsubsection}{Game theoretical models}{38}{section*.41}%
+\contentsline {chapter}{\numberline {5}Old review}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Opinion models}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Multilayer network}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Opinion-disease model}{41}{section.5.3}%
+\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral Disease Model}{43}{part.2}%
+\contentsline {chapter}{\numberline {6}Epidemic and Behavioral model alone: a presentation}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}SIRS model}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Behavioural model}{46}{section.6.2}%
+\contentsline {subsubsection}{Equilibrium and stability analysis}{47}{section*.42}%
+\contentsline {subsubsection}{Behavioural model experiment}{51}{section*.49}%
+\contentsline {chapter}{\numberline {7}Models description and analysis}{55}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Behavioral epidemic model}{55}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Basic reproduction number calculation}{58}{subsection.7.1.1}%
+\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{59}{section*.54}%
+\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{60}{section*.56}%
+\contentsline {chapter}{Bibliography}{63}{figure.caption.57}%

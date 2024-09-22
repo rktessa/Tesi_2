@@ -8213,6 +8213,54 @@
       \endverb
       \keyw{thus attracted much attention in many disciplines. In this review,we introduce recent Complex networks progress in the study of coevolution spreading dynamics,emphasizing the contributions Coevolution spreading from the perspectives of statistical mechanics and network science. The theoretical Critical phenomena methods,critical phenomena,phase transitions,interacting mechanisms,and effects of Biological contagions Social contagions network topology for four representative types of coevolution spreading mechanisms,in- Resource allocation cluding the coevolution of biological contagions,social contagions,epidemic–awareness,Awareness diffusion and epidemic–resources,are presented in detail,and the challenges in this field as well}
     \endentry
+    \entry{Krickel_2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ec7e62f30010fef5803a79102376c84f}{%
+           family={Krickel},
+           familyi={K\bibinitperiod},
+           given={Beate},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fb37a48d2d83d25316c097880134fae2}{%
+           family={Bruin},
+           familyi={B\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=14c08d2c7ed2cbe06f41024ed662a2a3}{%
+           family={Douw},
+           familyi={D\bibinitperiod},
+           given={Linda},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{fullhash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{fullhashraw}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{bibnamehash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{authorbibnamehash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{authornamehash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{authorfullhash}{fcc9993c9db6c860f89106caa6e530b0}
+      \strng{authorfullhashraw}{fcc9993c9db6c860f89106caa6e530b0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Synthese, https://doi.org/10.1007/s11229-023-04241-z}
+      \field{issn}{1573-0964}
+      \field{journaltitle}{Synthese}
+      \field{number}{1}
+      \field{title}{How and when are topological explanations complete mechanistic explanations? The case of multilayer network models}
+      \field{volume}{202}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/s11229-023-04241-z
+      \endverb
+      \keyw{Network models; Multilayer models; Topological explanation; Mechanistic explanation; Mechanistic completeness; Neuroscientific explanation}
+    \endentry
     \entry{DeDomenico2016}{article}{}{}
       \name{author}{4}{}{%
         {{hash=6d536daa70fa51099e4f65e72e27f797}{%
@@ -8897,8 +8945,8 @@
       \strng{editornamehash}{932172cbce9830fa1763c426c7088452}
       \strng{editorfullhash}{932172cbce9830fa1763c426c7088452}
       \strng{editorfullhashraw}{932172cbce9830fa1763c426c7088452}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1553-7358}
@@ -8942,8 +8990,8 @@
       \strng{authornamehash}{b217f7cfd02934cbb5b3dea007b6309a}
       \strng{authorfullhash}{b217f7cfd02934cbb5b3dea007b6309a}
       \strng{authorfullhashraw}{b217f7cfd02934cbb5b3dea007b6309a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of The Royal Society Interface}
@@ -9195,6 +9243,50 @@
       \verb 10.1103/physreve.100.032313
       \endverb
       \keyw{doi:10.1103/PhysRevE.100.032313 url:https://doi.org/10.1103/PhysRevE.100.032313}
+    \endentry
+    \entry{Granell_2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           familyi={G\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{bibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorbibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorfullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review E}
+      \field{number}{1}
+      \field{title}{Competing spreading processes on multiplex networks: Awareness and epidemics}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{pages}{012808}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/physreve.90.012808
+      \endverb
     \endentry
     \entry{Kabir_2019}{article}{}{}
       \name{author}{3}{}{%
@@ -9567,77 +9659,106 @@
       \endverb
       \keyw{Disease behavior dynamics,Decision-making,Vaccination,Networks,Social distancing}
     \endentry
-    \entry{Granell_2014}{article}{}{}
+    \entry{Sahneh2013}{article}{}{}
       \name{author}{3}{}{%
-        {{hash=327371d583df9de17b66667a7ea91f61}{%
-           family={Granell},
-           familyi={G\bibinitperiod},
-           given={Clara},
+        {{hash=652132f1abe00972efd38edd49c4ac20}{%
+           family={Sahneh},
+           familyi={S\bibinitperiod},
+           given={Faryad\bibnamedelima Darabi},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=ae3dc8cfdb4429a561f958a84a279f3c}{%
+           family={Scoglio},
+           familyi={S\bibinitperiod},
+           given={Caterina},
            giveni={C\bibinitperiod}}}%
-        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
-           family={Gómez},
-           familyi={G\bibinitperiod},
-           given={Sergio},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
-           family={Arenas},
-           familyi={A\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
+        {{hash=f2b9b0108b324a808b7dc09b3c88bd9b}{%
+           family={Mieghem},
+           familyi={M\bibinitperiod},
+           given={Piet\bibnamedelima Van},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society ({APS})}%
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers ({IEEE})}%
       }
-      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{fullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{bibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorbibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorfullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review E}
-      \field{number}{1}
-      \field{title}{Competing spreading processes on multiplex networks: Awareness and epidemics}
-      \field{volume}{90}
-      \field{year}{2014}
-      \field{pages}{012808}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/physreve.90.012808
-      \endverb
-    \endentry
-    \entry{Nunner2021}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
-           family={Nunner},
-           familyi={N\bibinitperiod},
-           given={Hendrik},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{fullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{fullhashraw}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{bibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{authorbibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{authornamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{authorfullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \strng{authorfullhashraw}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{namehash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{fullhash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{fullhashraw}{cf6fa3007eb29b234dbe617151410258}
+      \strng{bibnamehash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{authorbibnamehash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{authornamehash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{authorfullhash}{cf6fa3007eb29b234dbe617151410258}
+      \strng{authorfullhashraw}{cf6fa3007eb29b234dbe617151410258}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Computational Social Networks, https://doi.org/10.1186/s40649-021-00098-9}
-      \field{title}{A model for the co-evolution of dynamic social networks and infectious disease dynamics}
-      \field{year}{2021}
+      \field{journaltitle}{{IEEE}/{ACM} Transactions on Networking}
+      \field{note}{Matematicamente mi sembra complesso, ma molto interessante come lavoro}
+      \field{number}{5}
+      \field{title}{Generalized Epidemic Mean-Field Model for Spreading Processes Over Multilayer Complex Networks}
+      \field{volume}{21}
+      \field{year}{2013}
+      \field{pages}{1609\bibrangedash 1620}
+      \range{pages}{12}
       \verb{doi}
-      \verb 10.1186/s40649-021-00098-9
+      \verb 10.1109/tnet.2013.2239658
       \endverb
-      \keyw{Network formation,Complex networks,Network dynamics,Epidemics,Infectious diseases,Health behavior,Risk perception,Agent-based simulation}
+    \endentry
+    \entry{Frieswijk_2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=0f4287acced806f66fa99eda4e4ba8b4}{%
+           family={Frieswijk},
+           familyi={F\bibinitperiod},
+           given={Kathinka},
+           giveni={K\bibinitperiod}}}%
+        {{hash=38d08d5531c5008acdd5d93232d0059b}{%
+           family={Zino},
+           familyi={Z\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fdd309e27948d942046d633747cc419b}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Mengbin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2eb264a947e6b4be945ee0d7691eff5f}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b420cdd284fce534ac179e987a208563}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{fullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \strng{fullhashraw}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \strng{bibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authorbibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authornamehash}{6cff3e813d14a2767e401b0b8feea01d}
+      \strng{authorfullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \strng{authorfullhashraw}{39442a1e3e372a1c5cd7abfc9e32ffa2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2475-1456}
+      \field{journaltitle}{IEEE Control Systems Letters}
+      \field{title}{A Mean-Field Analysis of a Network Behavioral–Epidemic Model}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{pages}{2533\bibrangedash 2538}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/lcsys.2022.3168260
+      \endverb
     \endentry
     \entry{Peng2021}{article}{}{}
       \name{author}{8}{}{%
@@ -9708,6 +9829,68 @@
       \verb 10.1142/s0218202521500536
       \endverb
     \endentry
+    \entry{Auld_2003}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=bbd92bd9190519d834ca656250f448b6}{%
+           family={Auld},
+           familyi={A\bibinitperiod},
+           given={M.Christopher},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{fullhash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{fullhashraw}{bbd92bd9190519d834ca656250f448b6}
+      \strng{bibnamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authorbibnamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authornamehash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authorfullhash}{bbd92bd9190519d834ca656250f448b6}
+      \strng{authorfullhashraw}{bbd92bd9190519d834ca656250f448b6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Health Economics}
+      \field{number}{3}
+      \field{title}{Choices, beliefs, and infectious disease dynamics}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{361\bibrangedash 377}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/s0167-6296(02)00103-0
+      \endverb
+    \endentry
+    \entry{Nunner2021}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
+           family={Nunner},
+           familyi={N\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{fullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{fullhashraw}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{bibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authorbibnamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authornamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authorfullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \strng{authorfullhashraw}{bdff9c8fd9e11e21a13c60308f48d70f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Computational Social Networks, https://doi.org/10.1186/s40649-021-00098-9}
+      \field{title}{A model for the co-evolution of dynamic social networks and infectious disease dynamics}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1186/s40649-021-00098-9
+      \endverb
+      \keyw{Network formation,Complex networks,Network dynamics,Epidemics,Infectious diseases,Health behavior,Risk perception,Agent-based simulation}
+    \endentry
     \entry{teslya2022}{inproceedings}{}{}
       \name{author}{4}{}{%
         {{hash=702ed7b3713cf2d11ccdd4802f09867b}{%
@@ -9753,8 +9936,8 @@
       \strng{editornamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
       \strng{editorfullhash}{3e74e28774ffb3065e8ed4921a6c23d5}
       \strng{editorfullhashraw}{3e74e28774ffb3065e8ed4921a6c23d5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{{PNAS} Nexus}
@@ -9812,8 +9995,8 @@
       \strng{editornamehash}{fd7704b9919bacabcce647fd178fd1e6}
       \strng{editorfullhash}{fd7704b9919bacabcce647fd178fd1e6}
       \strng{editorfullhashraw}{fd7704b9919bacabcce647fd178fd1e6}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{{PLOS} {ONE}}
@@ -9825,40 +10008,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1371/journal.pone.0186492
-      \endverb
-    \endentry
-    \entry{Auld_2003}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=bbd92bd9190519d834ca656250f448b6}{%
-           family={Auld},
-           familyi={A\bibinitperiod},
-           given={M.Christopher},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier {BV}}%
-      }
-      \strng{namehash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{fullhash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{fullhashraw}{bbd92bd9190519d834ca656250f448b6}
-      \strng{bibnamehash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{authorbibnamehash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{authornamehash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{authorfullhash}{bbd92bd9190519d834ca656250f448b6}
-      \strng{authorfullhashraw}{bbd92bd9190519d834ca656250f448b6}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Health Economics}
-      \field{number}{3}
-      \field{title}{Choices, beliefs, and infectious disease dynamics}
-      \field{volume}{22}
-      \field{year}{2003}
-      \field{pages}{361\bibrangedash 377}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1016/s0167-6296(02)00103-0
       \endverb
     \endentry
     \entry{Turker_2023}{article}{}{}
@@ -9886,8 +10035,8 @@
       \strng{authornamehash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authorfullhash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authorfullhashraw}{221c56f095d1df8928d27ab71c5dc21f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The last two years have been an extraordinary time with the Covid-19 pandemic killing millions, affecting and distressing billions of people worldwide. Authorities took various measures such as turning school and work to remote and prohibiting social relations via curfews. In order to mitigate the negative impact of the epidemics, researchers tried to estimate the future of the pandemic for different scenarios, using forecasting techniques and epidemics simulations on networks. Networks used in these research are either synthetic networks or real networks with limited size and domain specific interactions. Hence, their ability to represent the world is limited. Intending to represent real-life in an urban town in high resolution, we propose a parametric multi-layer undirected weighted network model, where vertices are the individuals of a town that tend to interact locally, and edges represent transmission probability. Each layer corresponds to a different interaction that occurs daily, such as "household", "work" or "school", with their own transmission probability. Our simulations indicate that locking down "friendship" layer has the highest impact in slowing down epidemics. Hence, our contributions are twofold, first we propose a parametric network generator model; second, we run SIR simulations on it and show the impact of layers.}
@@ -9906,61 +10055,6 @@
       \verb 2109.02272
       \endverb
       \keyw{cs.CY,physics.soc-ph,J.3; J.4; K.4.1}
-    \endentry
-    \entry{Frieswijk_2022}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=0f4287acced806f66fa99eda4e4ba8b4}{%
-           family={Frieswijk},
-           familyi={F\bibinitperiod},
-           given={Kathinka},
-           giveni={K\bibinitperiod}}}%
-        {{hash=38d08d5531c5008acdd5d93232d0059b}{%
-           family={Zino},
-           familyi={Z\bibinitperiod},
-           given={Lorenzo},
-           giveni={L\bibinitperiod}}}%
-        {{hash=fdd309e27948d942046d633747cc419b}{%
-           family={Ye},
-           familyi={Y\bibinitperiod},
-           given={Mengbin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=2eb264a947e6b4be945ee0d7691eff5f}{%
-           family={Rizzo},
-           familyi={R\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b420cdd284fce534ac179e987a208563}{%
-           family={Cao},
-           familyi={C\bibinitperiod},
-           given={Ming},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers (IEEE)}%
-      }
-      \strng{namehash}{6cff3e813d14a2767e401b0b8feea01d}
-      \strng{fullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \strng{fullhashraw}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \strng{bibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
-      \strng{authorbibnamehash}{6cff3e813d14a2767e401b0b8feea01d}
-      \strng{authornamehash}{6cff3e813d14a2767e401b0b8feea01d}
-      \strng{authorfullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \strng{authorfullhashraw}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2475-1456}
-      \field{journaltitle}{IEEE Control Systems Letters}
-      \field{title}{A Mean-Field Analysis of a Network Behavioral–Epidemic Model}
-      \field{volume}{6}
-      \field{year}{2022}
-      \field{pages}{2533\bibrangedash 2538}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/lcsys.2022.3168260
-      \endverb
     \endentry
     \entry{arino2007}{article}{}{}
       \name{author}{5}{}{%
@@ -10003,8 +10097,8 @@
       \strng{authornamehash}{1a31b4b1a4c6cd41f9ba3a285cbab33e}
       \strng{authorfullhash}{9f987cddbc6e3a124008c6f6133fc4c5}
       \strng{authorfullhashraw}{9f987cddbc6e3a124008c6f6133fc4c5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1551-0018}
@@ -10020,11 +10114,7 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Bauch_2012}
   \missing{CITA}
-  \missing{Granell2014}
-  \missing{Granell_2013}
-  \missing{Sontag_2022}
 \endrefsection
 \endinput
 

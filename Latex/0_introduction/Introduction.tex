@@ -345,7 +345,7 @@ Considering an SIS model described with a Markov process: it has a dimension of 
 
 \subsection{Multilayer systems and networks} 
 
-AGGIUNGI ANCHE \cite{Wang_2019}
+AGGIUNGI ANCHE \cite{Wang_2019} \cite{Krickel_2023}
 
 The complex dynamic of interactions existing in the real world, develops in multiple patterns, with complicated relationships. This connection can change over time, and using the theory of multilayer systems it can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships. 
 It is a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016} and can be helpful to manipulate complex systems like human relationships. Some interesting results obtained are the possibility that the onset of one disease can depend on the onset of the other one. There can be regimes in which the criticality of the two dynamics is interdependent and others in which the critical effect is only one-directional \cite{DeDomenico2016}. 
@@ -405,7 +405,7 @@ An example of how this phenomenon can arise is the story of an article originall
 
 \section{Classification of different types of information}
 After introducing the impact that information quality may have, another interesting aspect is related to the different types of information used in model development. Some articles focus on the effect of media on behavior \cite{Collinson2014, Misra_2011}, while others consider peer-to-peer conversations, information exchange, and beliefs among individuals \cite{Tyson_2020}. These are completely different approaches, even though they aim to achieve the same effect: simulating the evolution of people's opinions and behavior. Using media involves hypothesizing that the population is influenced by a few "central" information nodes, so the same news, data, or future predictions are shared with everyone. In contrast, models that use personal information exchanges can depict a scenario where many different ideas about the disease situation circulate simultaneously.
-Another concept used in models that simulate a sort of "collective consciousness" is referred to as "awareness" \cite{Funk2009}. To model how awareness spreads in the population, it is often treated like a disease \cite{Silva2019, Granell_2013, Granell2014, Kabir_2019, Zuo_2021, Wang_2019}. Although there are many differences between these two, the main idea is that theories and concepts about a certain topic can spread among people, which can be considered at a higher level as a unified opinion. For example, there may be many different personal positions on how to respond to a health emergency like COVID-19, but it is possible to abstract the various opinions and reconstruct what the majority of people, or macro-groups, ultimately feel. They may either be more cooperative and in favor of following guidelines issued by authorities, or more focused on their well-being and inclined to act independently.
+Another concept used in models that simulate a sort of "collective consciousness" is referred to as "awareness" \cite{Funk2009}. To model how awareness spreads in the population, it is often treated like a disease \cite{Silva2019, Granell2013, Granell_2014, Kabir_2019, Zuo_2021, Wang_2019}. Although there are many differences between these two, the main idea is that theories and concepts about a certain topic can spread among people, which can be considered at a higher level as a unified opinion. For example, there may be many different personal positions on how to respond to a health emergency like COVID-19, but it is possible to abstract the various opinions and reconstruct what the majority of people, or macro-groups, ultimately feel. They may either be more cooperative and in favor of following guidelines issued by authorities, or more focused on their well-being and inclined to act independently.
 This process can be related to opinion formation studies, which aim to understand how people form their ideas \cite{Devia_2023, Devia2022} and also analyze the possible formation of opinion distributions, such as perfect consensus, consensus, polarization, clustering, or dissensus.
 
 \section{How integrate behavior in epidemiology}
@@ -422,3 +422,58 @@ Another possibility involves modifying the structure or connections in the netwo
 In the following paragraphs, several articles are presented using this classification to simplify their categorization. Each article is then discussed in more detail, highlighting its original contribution.
 
 \subsection{Models in which change the individual' state}
+
+\subsubsection{Multiple network simulated with Markovian process}
+The first presented work is done in \cite{Granell_2014}. Here, a multiplex model is implemented, with two layers: they have different connectivity, corresponding to the physical layer, in which spread the disease, and the virtual contacts layer, where awareness diffuses. The article then uses the Microscopic Markov Chain approach to simulate the interaction resulting from the coupling of the two layers. Interestingly, they observe the existence of a metacritical point for the onset of the epidemic, which depends on awareness dynamic and topology of the virtual network. There is, in fact, a parameter related to the ability to influence through communication, and it is observed that it impacts the onset of the epidemic only when it exceeds a certain threshold.
+A subsequent work of the same authors \cite{Granell2013}, considers also the effect of a global communication agent. In this case, the metacritical point disappears. 
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.47\linewidth]{0_introduction/images_review/metacritical_point_granell_2013}} \quad
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.49\linewidth]{0_introduction/images_review/metacritical_point_granell_2014}} \\
+	\caption[Metacritical effect]{Effect of awarennes communication impact on the onset of the epidemic Pictures taken from \cite{Granell2013, Granell_2014}. DA FINIRE DI SCRIVERE.}
+	\label{fig:sir_example2}
+\end{figure}
+
+
+In the article by \cite{Sahneh2013}, there is a complete description of the stochastic process at the agent level, which is useful for understanding how agent interactions are modeled across different layers using a Markovian approach. Other works using this method include \cite{Silva2019, Frieswijk_2022, Peng2021, Zuo_2021}. Except for \cite{Frieswijk_2022}, a similar double-layer structure, composed of an SIR model coupled with a UAU process, is presented in the other articles. To simulate the evolution of the complex structure resulting from the coupling of the two models, they build transition trees for all possible state changes and their respective transition probabilities. An example of both can be seen in figure \ref{fig:sir_example3}.  
+
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.63\linewidth]{0_introduction/images_review/peng_2021_bertozzi_coupled_structure}} \quad
+	\subfloat[][\emph{}]
+	{\includegraphics[width=0.6\linewidth]{0_introduction/images_review/silva2019_transition_trees}} \\
+	\caption[Multiplex networks]{a) An example of a multiplex network structure resulting from the coupling of a SIR and a U-P/A-R model. b) The transition trees realized to describe the system of a SIR coupled  with a UAU model using a Markovian process. Pictures taken from articles \cite{Peng2021, Silva2019}.}
+	\label{fig:sir_example3}
+\end{figure}
+
+In \cite{Peng2021}, a slightly more complex situation is described, where two possible opinions—pro-physical distancing (P) and anti-physical distancing (A)—are considered. In contrast, \cite{Frieswijk_2022} studies a simpler structure, where a SIS model is coupled with either adopting or not adopting self-protective measures.
+
+Interesting results derived from these works include: 
+\begin{itemize} 
+	\item The observation of the influence of opinions on transmission speed and the final epidemic size \cite{Peng2021}. 
+	\item The effect of authoritative information, publicizing epidemic prevention processes, and encouraging reasonable behavior, such as isolating when infected \cite{Zuo_2021}. 
+	\item The importance of self-awareness as a mechanism to reduce disease prevalence \cite{Silva2019}. 
+\end{itemize}
+
+Finally, the experiments conducted in \cite{Frieswijk_2022} provide a stability analysis of the equilibria and explicitly calculate the epidemic threshold. Figure \ref{fig:stability_friesjiw} shows their simulations, which vary a parameter modeled as risk perception. They observe its role in the occurrence of periodic oscillations and identify a set of conditions that lead to global convergence to such a periodic solution. This is an important result, demonstrating that during an epidemic outbreak, there is a collective behavioral response, and it specifies under which conditions the situation evolves into a stable dynamic or not.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\linewidth]{0_introduction/images_review/stable_unstable_equilibria_friejs}
+	\caption[Stability analysis of epi-behavior model]{Simulations taken from the article \cite{Frieswijk_2022} That show of their model evolve for different values of the risk perception parameter. Stable equilibria, saddle points and unstable equilibria are marked with a black, black-white and white asterisk, respectively.}
+	\label{fig:stability_friesjiw}
+\end{figure}
+
+\subsubsection{Game theoretical models}
+In the probabilistic framework, another area involves the use of game-theory principles. These are used to explore strategic interactions between individuals, where participants act to maximize their utility, potentially influencing the actions of others. The concept of Nash Equilibrium is also important in this context. It is defened as " a set of strategies such that no player has an incentive to unilaterally deviate from the present strategy" \cite{Wang_2015_review}. That is, the Nash Equilibrium leads individuals to adopt strategies consistent with their goal of maximizing their own benefit or utility in a perfectly rational way, forming best responses to one another.
+%% vecchio sotto
+
+
+
+In the probabilistic framework, another area included involves the use of game-theory principles. The same "rational agent" assumption found in threshold models is used here, requiring each agent to have its own cost or utility function, with individual actions based on maximizing personal payoff \cite{Auld_2003}. Many articles use this idea to model how populations vary their behavior during an epidemic. One such example is \cite{Nunner2021}, where different utility functions are defined to model the trade-off between social well-being gained from maintaining connections, the fatigue of maintaining them, and the physical harm those connections may cause.
+
+The observed results show that when people's behavior is based on maximizing their net benefit, individual risk perception plays a significant role in shaping the cost function. Models derived using this so-called co-evolutionary approach exhibit a highly correlated dynamic between the two layers. There is a feedback loop between infection spread and behavioral adaptation, and structural modifications in the network also occur in the simulated scenarios.
+
