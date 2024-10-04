@@ -19,6 +19,52 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{Sahagun1965}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=8332ac00128fc6057d8608e48b966662}{%
+           family={Sahagun},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=f98edda3666edbf8cf4991819b4cb8f1}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={A.J.O.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a2905ac86e4b5bf1ba1a9ee7cd6e7d6c}{%
+           family={Dibble},
+           familyi={D\bibinitperiod},
+           given={C.E.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Utah Press}%
+      }
+      \strng{namehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{fullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{fullhashraw}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{bibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorbibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authornamehash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorfullhash}{89ead4dd7f86aacaca4fd0fbad289963}
+      \strng{authorfullhashraw}{89ead4dd7f86aacaca4fd0fbad289963}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780874800968}
+      \field{series}{Florentine Codex, A General History of the Things of New Spain}
+      \field{title}{Florentine Codex: Book 12: Book 12: The Conquest of Mexico Volume 12}
+      \field{year}{1965}
+      \verb{urlraw}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \endverb
+    \endentry
     \entry{Anderson_82}{book}{}{}
       \name{author}{1}{}{%
         {{hash=be459da52bac759d10cdedca98ba547a}{%
@@ -41,8 +87,8 @@
       \strng{authornamehash}{be459da52bac759d10cdedca98ba547a}
       \strng{authorfullhash}{be459da52bac759d10cdedca98ba547a}
       \strng{authorfullhashraw}{be459da52bac759d10cdedca98ba547a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781489929013}
@@ -7168,8 +7214,8 @@
       \strng{authornamehash}{3beb21a1d66e3552919d6cde1275fb3e}
       \strng{authorfullhash}{ff2b8c223e5bdf3ffa068a6596b73e7e}
       \strng{authorfullhashraw}{ff2b8c223e5bdf3ffa068a6596b73e7e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Lancet, 403 (2024) 2204-2256. doi:10.1016/S0140-6736(24)00685-8}
@@ -7185,50 +7231,267 @@
       \verb 10.1016/s0140-6736(24)00685-8
       \endverb
     \endentry
-    \entry{Sahagun1965}{book}{}{}
+    \entry{Yang_2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=777a394a188d28de8c61cd7c16525a48}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Haiyang},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1c470c37082d6f5d61c3716c8475a80b}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jingjing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{fullhash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{fullhashraw}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{bibnamehash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{authorbibnamehash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{authornamehash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{authorfullhash}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \strng{authorfullhashraw}{5639e2306f6b1ff5e9e75ee97f9342c5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0165-1781}
+      \field{journaltitle}{Psychiatry Research}
+      \field{month}{7}
+      \field{title}{How an Epidemic Outbreak Impacts Happiness: Factors that Worsen (vs. Protect) Emotional Well-being during the Coronavirus Pandemic}
+      \field{volume}{289}
+      \field{year}{2020}
+      \field{pages}{113045}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.psychres.2020.113045
+      \endverb
+    \endentry
+    \entry{esteban_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d628f02a81e173ec138360fd17e59cbf}{%
+           family={Ortiz-Ospina},
+           familyi={O\bibinithyphendelim O\bibinitperiod},
+           given={Esteban},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c0e5ce1b546c571edc443f6a4f166170}{%
+           family={Roser},
+           familyi={R\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{fullhash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{fullhashraw}{815fd1101dd6bf1917e905879fd00851}
+      \strng{bibnamehash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{authorbibnamehash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{authornamehash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{authorfullhash}{815fd1101dd6bf1917e905879fd00851}
+      \strng{authorfullhashraw}{815fd1101dd6bf1917e905879fd00851}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Our World in Data}
+      \field{note}{https://ourworldindata.org/financing-healthcare}
+      \field{title}{Healthcare Spending}
+      \field{year}{2017}
+    \endentry
+    \entry{Barlow2021}{article}{}{}
       \name{author}{3}{}{%
-        {{hash=8332ac00128fc6057d8608e48b966662}{%
-           family={Sahagun},
-           familyi={S\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
-        {{hash=f98edda3666edbf8cf4991819b4cb8f1}{%
-           family={Anderson},
-           familyi={A\bibinitperiod},
-           given={A.J.O.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a2905ac86e4b5bf1ba1a9ee7cd6e7d6c}{%
-           family={Dibble},
+        {{hash=065654e6bfe13ee6abcc604cdeec9fa8}{%
+           family={Barlow},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=06c2383cceb857c95efffbd001bd8d9b}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c11e30041c1c8be0cc8fb56325f82af5}{%
+           family={Tyson},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{fullhash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{fullhashraw}{a95a058914ba99afb66d331804d1e54f}
+      \strng{bibnamehash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{authorbibnamehash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{authornamehash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{authorfullhash}{a95a058914ba99afb66d331804d1e54f}
+      \strng{authorfullhashraw}{a95a058914ba99afb66d331804d1e54f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Royal Society Open Science}
+      \field{number}{9}
+      \field{title}{Optimal shutdown strategies for {COVID}-19 with economic and mortality costs: British Columbia as a case study}
+      \field{volume}{8}
+      \field{year}{2021}
+      \field{pages}{202255}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsos.202255
+      \endverb
+    \endentry
+    \entry{diekmann2000mathematical}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c565f25d9a9f5bd6e3b77cd1fe248366}{%
+           family={Diekmann},
            familyi={D\bibinitperiod},
-           given={C.E.},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=e9625ee68b30df5c14da866e64bfa6aa}{%
+           family={Heesterbeek},
+           familyi={H\bibinitperiod},
+           given={Hans\bibnamedelima Jap},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{fullhash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{fullhashraw}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{bibnamehash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{authorbibnamehash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{authornamehash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{authorfullhash}{43648b7e82614f8e3cd17bb9dea24227}
+      \strng{authorfullhashraw}{43648b7e82614f8e3cd17bb9dea24227}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0471492418}
+      \field{note}{Originally published: 1999}
+      \field{pagetotal}{320}
+      \field{subtitle}{Model buildign, analysis and interpretation}
+      \field{title}{Mathematical epidemiology of infectious diseases}
+      \field{volume}{5}
+      \field{year}{2000}
+    \endentry
+    \entry{brauer2012mathematical}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=cce7419708114ddcc3d5832a90fd28b5}{%
+           family={Brauer},
+           familyi={B\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+        {{hash=21767f5711474b994ee01f850a87202b}{%
+           family={Castillo-Chavez},
+           familyi={C\bibinithyphendelim C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=21767f5711474b994ee01f850a87202b}{%
+           family={Castillo-Chavez},
+           familyi={C\bibinithyphendelim C\bibinitperiod},
+           given={Carlos},
            giveni={C\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {University of Utah Press}%
+        {Springer}%
       }
-      \strng{namehash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{fullhash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{fullhashraw}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{bibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{authorbibnamehash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{authornamehash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{authorfullhash}{89ead4dd7f86aacaca4fd0fbad289963}
-      \strng{authorfullhashraw}{89ead4dd7f86aacaca4fd0fbad289963}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \strng{namehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{fullhash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{fullhashraw}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{bibnamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{authorbibnamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{authornamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{authorfullhash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \strng{authorfullhashraw}{07d1ded2b3fd9c8f7bcba8b7534778a0}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{9780874800968}
-      \field{series}{Florentine Codex, A General History of the Things of New Spain}
-      \field{title}{Florentine Codex: Book 12: Book 12: The Conquest of Mexico Volume 12}
-      \field{year}{1965}
-      \verb{urlraw}
-      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+      \field{number}{40}
+      \field{title}{Mathematical models in population biology and epidemiology}
+      \field{volume}{2}
+      \field{year}{2012}
+    \endentry
+    \entry{Ledder_2023}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6a7cac31d3c402423d0235ff40a31912}{%
+           family={Ledder},
+           familyi={L\bibinitperiod},
+           given={Glenn},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{fullhash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{fullhashraw}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{bibnamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authorbibnamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authornamehash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authorfullhash}{6a7cac31d3c402423d0235ff40a31912}
+      \strng{authorfullhashraw}{6a7cac31d3c402423d0235ff40a31912}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783031094545}
+      \field{issn}{1867-5514}
+      \field{journaltitle}{Springer Undergraduate Texts in Mathematics and Technology}
+      \field{title}{Mathematical Modeling for Epidemiology and Ecology}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1007/978-3-031-09454-5
       \endverb
-      \verb{url}
-      \verb https://books.google.it/books?id=R_qAMgAACAAJ
+    \endentry
+    \entry{Bjoernstad2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5105fb13338b8d5a29b0a35cec540afa}{%
+           family={Bjørnstad},
+           familyi={B\bibinitperiod},
+           given={Ottar\bibnamedelima N.},
+           giveni={O\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=78c2ddba09340ae7f7f2da66e8204dcb}{%
+           family={Viboud},
+           familyi={V\bibinitperiod},
+           given={Cecile},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{fullhash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{fullhashraw}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{bibnamehash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{authorbibnamehash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{authornamehash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{authorfullhash}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \strng{authorfullhashraw}{d8c78b3950a10cdfc78d999df75dc3d3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{number}{46}
+      \field{title}{Timing and periodicity of influenza epidemics}
+      \field{volume}{113}
+      \field{year}{2016}
+      \field{pages}{12899\bibrangedash 12901}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1073/pnas.1616052113
       \endverb
     \endentry
     \entry{Mata2021}{inproceedings}{}{}
@@ -7247,8 +7510,8 @@
       \strng{authornamehash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
       \strng{authorfullhash}{b1e0e9ce0cb2010109c6e04a73fccf2e}
       \strng{authorfullhashraw}{b1e0e9ce0cb2010109c6e04a73fccf2e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{São Paulo Journal of Mathematical Sciences, https://doi.org/10.1007/s40863-021-00268-7}
@@ -7283,8 +7546,8 @@
       \strng{authornamehash}{9f153fcf28757151a4ae20ac2e890c1f}
       \strng{authorfullhash}{9f153fcf28757151a4ae20ac2e890c1f}
       \strng{authorfullhashraw}{9f153fcf28757151a4ae20ac2e890c1f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1550-8382}
@@ -7318,8 +7581,8 @@
       \strng{authornamehash}{ada77985624667c8c96635b52dadb4fd}
       \strng{authorfullhash}{ada77985624667c8c96635b52dadb4fd}
       \strng{authorfullhashraw}{ada77985624667c8c96635b52dadb4fd}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1537-5390}
@@ -7388,8 +7651,8 @@
       \strng{authornamehash}{6470b755ec57254fd5891c1781a2aa05}
       \strng{authorfullhash}{51a8067eed975d74167db345745213b3}
       \strng{authorfullhashraw}{51a8067eed975d74167db345745213b3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Polarization is a topic of intense interest among social scientists, but there is significant disagreement regarding the character of the phenomenon and little understanding of underlying mechanics. A first problem, we argue, is that polarization appears in the literature as not one concept but many. In the first part of the article, we distinguish nine phenomena that may be considered polarization, with suggestions of appropriate measures for each. In the second part of the article, we apply this analysis to evaluate the types of polarization generated by the three major families of computational models proposing specific mechanisms of opinion polarization.}
@@ -7403,38 +7666,6 @@
       \range{pages}{45}
       \verb{doi}
       \verb 10.1086/688938
-      \endverb
-    \endentry
-    \entry{Ledder_2023}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=6a7cac31d3c402423d0235ff40a31912}{%
-           family={Ledder},
-           familyi={L\bibinitperiod},
-           given={Glenn},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{fullhash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{fullhashraw}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{bibnamehash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{authorbibnamehash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{authornamehash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{authorfullhash}{6a7cac31d3c402423d0235ff40a31912}
-      \strng{authorfullhashraw}{6a7cac31d3c402423d0235ff40a31912}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9783031094545}
-      \field{issn}{1867-5514}
-      \field{journaltitle}{Springer Undergraduate Texts in Mathematics and Technology}
-      \field{title}{Mathematical Modeling for Epidemiology and Ecology}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.1007/978-3-031-09454-5
       \endverb
     \endentry
     \entry{kermack1927}{article}{}{}
@@ -7476,44 +7707,6 @@
       \verb{doi}
       \verb 10.1098/rspa.1927.0118
       \endverb
-    \endentry
-    \entry{brauer2012mathematical}{book}{}{}
-      \name{author}{3}{}{%
-        {{hash=cce7419708114ddcc3d5832a90fd28b5}{%
-           family={Brauer},
-           familyi={B\bibinitperiod},
-           given={Fred},
-           giveni={F\bibinitperiod}}}%
-        {{hash=21767f5711474b994ee01f850a87202b}{%
-           family={Castillo-Chavez},
-           familyi={C\bibinithyphendelim C\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod}}}%
-        {{hash=21767f5711474b994ee01f850a87202b}{%
-           family={Castillo-Chavez},
-           familyi={C\bibinithyphendelim C\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{fullhash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{fullhashraw}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{bibnamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{authorbibnamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{authornamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{authorfullhash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \strng{authorfullhashraw}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{number}{40}
-      \field{title}{Mathematical models in population biology and epidemiology}
-      \field{volume}{2}
-      \field{year}{2012}
     \endentry
     \entry{anderson1991infectious}{book}{}{}
       \name{author}{2}{}{%
@@ -7604,8 +7797,8 @@
       \strng{authornamehash}{b06f45b7aeeba8ce61a51545eb509452}
       \strng{authorfullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
       \strng{authorfullhashraw}{a034daabd0774b4c1b4ff5c679d5fe49}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{2022 IEEE 61st Conference on Decision and Control (CDC), December 6-9, 2022, Cancun, Mexico}
@@ -7636,8 +7829,8 @@
       \strng{authornamehash}{de20e3250faecdf1713262a01fe902a4}
       \strng{authorfullhash}{de20e3250faecdf1713262a01fe902a4}
       \strng{authorfullhashraw}{de20e3250faecdf1713262a01fe902a4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{SIAM Rev. 2000.42:599-653}
@@ -7695,8 +7888,8 @@
       \strng{authornamehash}{c39c9aa80de8857db1c08a511f5c8a1a}
       \strng{authorfullhash}{00ec3651332e08063127a2043ad7606b}
       \strng{authorfullhashraw}{00ec3651332e08063127a2043ad7606b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{TeX output 2012.09.20:2127}
@@ -7738,8 +7931,8 @@
       \strng{authornamehash}{e30f9f742e1aa8fc632996b31b6c8cf8}
       \strng{authorfullhash}{e30f9f742e1aa8fc632996b31b6c8cf8}
       \strng{authorfullhashraw}{e30f9f742e1aa8fc632996b31b6c8cf8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{General Mathematics Notes}
@@ -7930,8 +8123,8 @@
       \strng{authornamehash}{e46c5067e6b151fa69aad47192871717}
       \strng{authorfullhash}{e46c5067e6b151fa69aad47192871717}
       \strng{authorfullhashraw}{e46c5067e6b151fa69aad47192871717}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Physica D, 422 (2021) 132902. doi:10.1016/j.physd.2021.132902}
@@ -7965,8 +8158,8 @@
       \strng{authornamehash}{bd7b89b8a302c32e52e1b562252f769a}
       \strng{authorfullhash}{bd7b89b8a302c32e52e1b562252f769a}
       \strng{authorfullhashraw}{bd7b89b8a302c32e52e1b562252f769a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Some mathematical methods for formulation and numerical simulation of stochastic epidemic models are presented. Specifically, models are formulated for continuous-time Markov chains and stochastic differential equations. Some well-known examples are used for illustration such as an SIR epidemic model and a host-vector malaria model. Analytical methods for approximating the probability of a disease outbreak are also discussed.}
@@ -8005,8 +8198,8 @@
       \strng{authornamehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
       \strng{authorfullhash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
       \strng{authorfullhashraw}{4bf3b98e94373b42e6f6e6dfddaf4daa}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1095-3787}
@@ -8296,8 +8489,8 @@
       \strng{authornamehash}{017027c2e9b71155a5365cb9584cff73}
       \strng{authorfullhash}{937605070968d142c0f0d122bda48327}
       \strng{authorfullhashraw}{937605070968d142c0f0d122bda48327}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nature Physics 12, 10 (2016). doi:10.1038/nphys3865}
@@ -8340,8 +8533,8 @@
       \strng{authornamehash}{6602c0a9adf6f32e07150e11d15029a4}
       \strng{authorfullhash}{6602c0a9adf6f32e07150e11d15029a4}
       \strng{authorfullhashraw}{6602c0a9adf6f32e07150e11d15029a4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{On the dynamical interplay between awareness and epidemic spreading in multiplex networks}
@@ -8382,8 +8575,8 @@
       \strng{authornamehash}{1fb11de6a6440622054bb232e440301f}
       \strng{authorfullhash}{1fb11de6a6440622054bb232e440301f}
       \strng{authorfullhashraw}{1fb11de6a6440622054bb232e440301f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Modeling the Interplay Between Human Behavior and the Spread of Infectious Diseases}
@@ -8647,8 +8840,8 @@
       \strng{authornamehash}{0894aa9c81812730a5cca5b0aff88d7b}
       \strng{authorfullhash}{0894aa9c81812730a5cca5b0aff88d7b}
       \strng{authorfullhashraw}{0894aa9c81812730a5cca5b0aff88d7b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of The Royal Society Interface}
@@ -8689,8 +8882,8 @@
       \strng{authornamehash}{d18f31575a0ae0fbae0764105400f834}
       \strng{authorfullhash}{d18f31575a0ae0fbae0764105400f834}
       \strng{authorfullhashraw}{d18f31575a0ae0fbae0764105400f834}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Probabilistic Model for Trust and Reputation}
@@ -8725,8 +8918,8 @@
       \strng{authornamehash}{b9fe1d66cf437dd0aa612ef646bf052d}
       \strng{authorfullhash}{b9fe1d66cf437dd0aa612ef646bf052d}
       \strng{authorfullhashraw}{b9fe1d66cf437dd0aa612ef646bf052d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1471-2458}
@@ -8780,8 +8973,8 @@
       \strng{authornamehash}{1fa55900a3bc6645426554e0007a9e94}
       \strng{authorfullhash}{450b5def2db20d99fb8db0d3ffc650c8}
       \strng{authorfullhashraw}{450b5def2db20d99fb8db0d3ffc650c8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bulletin of Mathematical Biology}
@@ -8819,8 +9012,8 @@
       \strng{authornamehash}{e036ba59f5eab6d21df86c239e4f174f}
       \strng{authorfullhash}{e036ba59f5eab6d21df86c239e4f174f}
       \strng{authorfullhashraw}{e036ba59f5eab6d21df86c239e4f174f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose an SIRS compartmental model with demography and fast information and misinformation spreading in the population. The analysis of the complete 6-dimensional system shows the existence of seven equilibrium points. Since under our assumptions the system evolves on two time scales, we completely characterize the possible asymptotic behaviours with techniques of Geometric Singular Perturbation Theory (GSPT). During our analysis of the fast dynamics, we identify three branches of the critical manifold, which exist under determined conditions. We perform a theoretical bifurcation analysis of the fast system to understand the relation between these three equilibria when varying specific parameters of the fast system. We then observed a delayed loss of stability on the various branches of the critical manifold, as the slow dynamics may cause the branches to lose their hyperbolicity. We emphasise how the inclusion of (mis)information spreading, even in low dimensional compartmental models, can radically alter the asymptotic behaviour of the epidemic. We conclude with numerical simulations of various remarkable scenarios.}
@@ -8859,8 +9052,8 @@
       \strng{authornamehash}{925c2667c0ddd722630c6c3adfd57514}
       \strng{authorfullhash}{925c2667c0ddd722630c6c3adfd57514}
       \strng{authorfullhashraw}{925c2667c0ddd722630c6c3adfd57514}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1742-5662}
@@ -8893,8 +9086,8 @@
       \strng{authornamehash}{91e4b4a982f102db3d281b4d5eee7db8}
       \strng{authorfullhash}{91e4b4a982f102db3d281b4d5eee7db8}
       \strng{authorfullhashraw}{91e4b4a982f102db3d281b4d5eee7db8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Science 2013.342:47-49}
@@ -9164,8 +9357,8 @@
       \strng{authornamehash}{15696b0c72333de2c82df93584b2207f}
       \strng{authorfullhash}{bc23b3b2a3933f495a9bbe432b696372}
       \strng{authorfullhashraw}{bc23b3b2a3933f495a9bbe432b696372}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1091-6490}
@@ -9226,8 +9419,8 @@
       \strng{authornamehash}{029c64a27ba449e566f439493e028e95}
       \strng{authorfullhash}{88b807dcdfc132c7b3a7c9db4fe64eb7}
       \strng{authorfullhashraw}{88b807dcdfc132c7b3a7c9db4fe64eb7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Phys. Rev. E 100, 032313 (2019). doi:10.1103/PhysRevE.100.032313}
@@ -9273,8 +9466,8 @@
       \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
       \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
       \strng{authorfullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review E}
@@ -9317,8 +9510,8 @@
       \strng{authornamehash}{7b8fac63153a95b99876401455df5c02}
       \strng{authorfullhash}{7b8fac63153a95b99876401455df5c02}
       \strng{authorfullhashraw}{7b8fac63153a95b99876401455df5c02}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chaos, Solitons Fractals}
@@ -9382,8 +9575,8 @@
       \strng{editornamehash}{e3b5846cf5c69335997ed8824d8e79e2}
       \strng{editorfullhash}{e3b5846cf5c69335997ed8824d8e79e2}
       \strng{editorfullhashraw}{e3b5846cf5c69335997ed8824d8e79e2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1076-2787}
@@ -9423,8 +9616,8 @@
       \strng{authorfullhash}{73b01da1069abdd724c84bb081c88145}
       \strng{authorfullhashraw}{73b01da1069abdd724c84bb081c88145}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose an agent-based opinion formation model characterised by a two-fold novelty. First, we realistically assume that each agent cannot measure the opinion of its neighbours about a given statement with infinite resolution and accuracy, and hence it can only perceive the opinion of others as agreeing much more, or more, or comparably, or less, or much less (than itself) with that given statement. This leads to a classification- based rule for opinion update. Second, we consider three complementary agent traits suggested by significant sociological and psychological research: conformism, radicalism and stubbornness. We rely on World Values Survey data to show that the proposed model has the potential to predict the evolution of opinions in real life: the classification-based approach and complementary agent traits produce rich collective behaviours, such as polarisation, consensus, and clustering, which can yield predicted opinions similar to survey results.}
@@ -9464,8 +9657,8 @@
       \strng{authorfullhash}{73b01da1069abdd724c84bb081c88145}
       \strng{authorfullhashraw}{73b01da1069abdd724c84bb081c88145}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Scientific Reports}
@@ -9584,8 +9777,8 @@
       \strng{authornamehash}{c3628aeac251008772a96b43e9f8b104}
       \strng{authorfullhash}{56a4ae6d7e4b6cde0e0de85fc168a6b6}
       \strng{authorfullhashraw}{56a4ae6d7e4b6cde0e0de85fc168a6b6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nature Human Behaviour, doi:10.1038/s41562-021-01136-2}
@@ -9641,8 +9834,8 @@
       \strng{authorfullhash}{8e97b687d1ca39a947f1ac7401361ef1}
       \strng{authorfullhashraw}{8e97b687d1ca39a947f1ac7401361ef1}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Physics of Life Reviews, 15 (2015) 1â•ﬁ29. 10.1016/j.plrev.2015.07.006}
@@ -9849,8 +10042,8 @@
       \strng{authornamehash}{cf6fa3007eb29b234dbe617151410258}
       \strng{authorfullhash}{cf6fa3007eb29b234dbe617151410258}
       \strng{authorfullhashraw}{cf6fa3007eb29b234dbe617151410258}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{{IEEE}/{ACM} Transactions on Networking}
@@ -9905,8 +10098,8 @@
       \strng{authornamehash}{6cff3e813d14a2767e401b0b8feea01d}
       \strng{authorfullhash}{39442a1e3e372a1c5cd7abfc9e32ffa2}
       \strng{authorfullhashraw}{39442a1e3e372a1c5cd7abfc9e32ffa2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2475-1456}
@@ -10046,8 +10239,8 @@
       \strng{authorfullhash}{c9390d49aea9559fb8ee8edaa310beee}
       \strng{authorfullhashraw}{c9390d49aea9559fb8ee8edaa310beee}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Scientific Reports, https://doi.org/10.1038/s41598-021-82770-8}
@@ -10077,8 +10270,8 @@
       \strng{authornamehash}{bdff9c8fd9e11e21a13c60308f48d70f}
       \strng{authorfullhash}{bdff9c8fd9e11e21a13c60308f48d70f}
       \strng{authorfullhashraw}{bdff9c8fd9e11e21a13c60308f48d70f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Computational Social Networks, https://doi.org/10.1186/s40649-021-00098-9}
@@ -10108,8 +10301,8 @@
       \strng{authornamehash}{b4559b82b67835fc4364af684680c7bb}
       \strng{authorfullhash}{b4559b82b67835fc4364af684680c7bb}
       \strng{authorfullhashraw}{b4559b82b67835fc4364af684680c7bb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper describes the results of computer simulations of behavioral contagion in the realm of public opinion. Using threshold models to describe how and why some people assert opinions and others do not, the paper argues that to better describe the dynamics of opinion assertion and quiescence the model must be able to account for the fact that different individuals differ in the importance they place on the actions of others, and in the networks in which they are embedded. The paper reports on simulations incorporating these aspects into the model, yielding an improved representation of public opinion dynamics. Further, the incorporation of networks and weighting systems in the model alleviates one of the problematic features of the simple threshold models described by Granovetter, namely that certain individuals play unrealistically key roles in the contagion process. When networks are accounted for, the threshold formulation is less likely to make the group dynamic so dependent upon the behaviors of specific individuals.}
@@ -10144,8 +10337,8 @@
       \strng{authornamehash}{8749174d8ea73cb9cc7eda222618b353}
       \strng{authorfullhash}{8749174d8ea73cb9cc7eda222618b353}
       \strng{authorfullhashraw}{8749174d8ea73cb9cc7eda222618b353}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1091-6490}
@@ -10205,8 +10398,8 @@
       \strng{editornamehash}{fd7704b9919bacabcce647fd178fd1e6}
       \strng{editorfullhash}{fd7704b9919bacabcce647fd178fd1e6}
       \strng{editorfullhashraw}{fd7704b9919bacabcce647fd178fd1e6}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{{PLOS} {ONE}}
@@ -10546,6 +10739,45 @@
       \verb{doi}
       \verb 10.1088/1367-2630/abf459
       \endverb
+    \endentry
+    \entry{Smaldino_2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=982570dca44484d6a603f9bc3a14cd45}{%
+           family={Smaldino},
+           familyi={S\bibinitperiod},
+           given={Paul\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=2c92cffa8cf96d29aaaaa3d565938a68}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={James\bibnamedelima Holland},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press (CUP)}%
+      }
+      \strng{namehash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{fullhash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{fullhashraw}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{bibnamehash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{authorbibnamehash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{authornamehash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{authorfullhash}{a7d688d66ec12734db8fcf7af6c20021}
+      \strng{authorfullhashraw}{a7d688d66ec12734db8fcf7af6c20021}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Disease transmission and behaviour change are both fundamentally social phenomena. Behaviour change can have profound consequences for disease transmission, and epidemic conditions can favour the more rapid adoption of behavioural innovations. We analyse a simple model of coupled behaviour change and infection in a structured population characterised by homophily and outgroup aversion. Outgroup aversion slows the rate of adoption and can lead to lower rates of adoption in the later-adopting group or even behavioural divergence between groups when outgroup aversion exceeds positive ingroup influence. When disease dynamics are coupled to the behaviour-adoption model, a wide variety of outcomes are possible. Homophily can either increase or decrease the final size of the epidemic depending on its relative strength in the two groups and on R 0 for the infection. For example, if the first group is homophilous and the second is not, the second group will have a larger epidemic. Homophily and outgroup aversion can also produce dynamics suggestive of a 'second wave' in the first group that follows the peak of the epidemic in the second group. Our simple model reveals dynamics that are suggestive of the processes currently observed under pandemic conditions in culturally and/or politically polarised populations such as the USA.}
+      \field{issn}{2513-843X}
+      \field{journaltitle}{Evolutionary Human Sciences}
+      \field{title}{Coupled dynamics of behaviour and disease contagion among antagonistic groups}
+      \field{volume}{3}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1017/ehs.2021.22
+      \endverb
+      \keyw{Transmission dynamics,coupled contagion,homophily,outgroup aversion,social distancing}
     \endentry
     \entry{arino2007}{article}{}{}
       \name{author}{5}{}{%

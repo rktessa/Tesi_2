@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  2 OCT 2024 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  4 OCT 2024 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2234,7 +2234,7 @@ Package hyperref Info: Link coloring ON on input line 75.
 \@outlinefile=\write7
 \openout7 = `simulazione24.out'.
 
-<STN.png, id=130, 1027.84pt x 1027.84pt>
+<STN.png, id=138, 1027.84pt x 1027.84pt>
 File: STN.png Graphic file (type png)
 <use STN.png>
 Package pdftex.def Info: STN.png  used on input line 99.
@@ -2379,52 +2379,66 @@ TeX/fonts/enc/dvips/lm/lm-rm.enc}] (0_introduction/Introduction.tex
 
 [12]
 Chapter 1.
-<0_introduction/images_introduction/worst_epidemic.pdf, id=272, 682.55pt x 426.
-59375pt>
-File: 0_introduction/images_introduction/worst_epidemic.pdf Graphic file (type 
-pdf)
-<use 0_introduction/images_introduction/worst_epidemic.pdf>
-Package pdftex.def Info: 0_introduction/images_introduction/worst_epidemic.pdf 
- used on input line 25.
-(pdftex.def)             Requested size: 359.12955pt x 224.45976pt.
-
-
-[13
-
-]
-
-[14 <./0_introduction/images_introduction/worst_epidemic.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 43.
+               Default added (so using `htb') on input line 9.
 
-<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=290, 77.08
+<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=280, 77.08
 8pt x 59.5023pt>
 File: 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic f
 ile (type jpg)
 <use 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg>
 Package pdftex.def Info: 0_introduction/images_introduction/FlorentineCodex_sma
-llpox.jpg  used on input line 45.
+llpox.jpg  used on input line 11.
 (pdftex.def)             Requested size: 168.99834pt x 130.46144pt.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
-1.
+
+
+[13
+
+ <./0_introduction/images_introduction/FlorentineCodex_smallpox.jpg>]
+<0_introduction/images_introduction/worst_epidemic.pdf, id=292, 682.55pt x 426.
+59375pt>
+File: 0_introduction/images_introduction/worst_epidemic.pdf Graphic file (type 
+pdf)
+<use 0_introduction/images_introduction/worst_epidemic.pdf>
+Package pdftex.def Info: 0_introduction/images_introduction/worst_epidemic.pdf 
+ used on input line 28.
+(pdftex.def)             Requested size: 359.12955pt x 224.45976pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--46
+
+ []
+
+
+
+[14 <./0_introduction/images_introduction/worst_epidemic.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
+7.
+
 (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[15{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc} <./0_introduction/im
-ages_introduction/FlorentineCodex_smallpox.jpg>]
+[15{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 69.
+
+
 
 [16]
-Chapter 2.
 
+[17]
 
-[17
+[18
 
 ]
-
-[18]
-Chapter 3.
+Chapter 2.
 
 
 [19
@@ -2432,14 +2446,22 @@ Chapter 3.
 ]
 
 [20]
+Chapter 3.
 
-[21]
+
+[21
+
+]
 
 [22]
 
 [23]
 
 [24]
+
+[25]
+
+[26]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htb') on input line 227.
@@ -2449,7 +2471,7 @@ LaTeX Warning: No positions in optional float specifier.
 pdfTeX warning: pdflatex.exe (file ./0_introduction/images_introduction/SIRS_fi
 gure_compartmental.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
-<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=380, 782.
+<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=418, 782.
 925pt x 542.025pt>
 File: 0_introduction/images_introduction/SIRS_figure_compartmental.pdf Graphic 
 file (type pdf)
@@ -2459,13 +2481,13 @@ mental.pdf  used on input line 229.
 (pdftex.def)             Requested size: 274.62392pt x 190.12512pt.
 
 
-[25]
+[27]
 
-[26 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
+[28 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
 
-[27{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
+[29{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/
 MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<0_introduction/images_introduction/sir_con_rt.pdf, id=443, 682.55pt x 426.5937
+<0_introduction/images_introduction/sir_con_rt.pdf, id=481, 682.55pt x 426.5937
 5pt>
 File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
@@ -2473,7 +2495,7 @@ File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
 d on input line 302.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
-<0_introduction/images_introduction/sir_multipli_beta.pdf, id=444, 682.55pt x 4
+<0_introduction/images_introduction/sir_multipli_beta.pdf, id=482, 682.55pt x 4
 26.59375pt>
 File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
@@ -2486,9 +2508,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[28 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
+[30 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
 ges_introduction/sir_multipli_beta.pdf>]
-<0_introduction/images_introduction/agent_based.png, id=461, 1156.32pt x 542.02
+<0_introduction/images_introduction/agent_based.png, id=499, 1156.32pt x 542.02
 5pt>
 File: 0_introduction/images_introduction/agent_based.png Graphic file (type png
 )
@@ -2498,12 +2520,12 @@ ed on input line 335.
 (pdftex.def)             Requested size: 211.25116pt x 99.02419pt.
 
 
-[29]
+[31]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htb') on input line 356.
 
-<0_introduction/images_introduction/multi_layer.png, id=476, 470.35725pt x 393.
+<0_introduction/images_introduction/multi_layer.png, id=515, 470.35725pt x 393.
 8715pt>
 File: 0_introduction/images_introduction/multi_layer.png Graphic file (type png
 )
@@ -2513,20 +2535,20 @@ ed on input line 358.
 (pdftex.def)             Requested size: 253.50397pt x 212.28476pt.
 
 
-[30 <./0_introduction/images_introduction/agent_based.png>]
+[32 <./0_introduction/images_introduction/agent_based.png>]
 
-[31 <./0_introduction/images_introduction/multi_layer.png>]
+[33 <./0_introduction/images_introduction/multi_layer.png>]
 
-[32]
+[34]
 Chapter 4.
 
 
-[33
+[35
 
 ]
 
-[34]
-<0_introduction/images_review/metacritical_point_granell_2013.png, id=558, 404.
+[36]
+<0_introduction/images_review/metacritical_point_granell_2013.png, id=594, 404.
 712pt x 291.489pt>
 File: 0_introduction/images_review/metacritical_point_granell_2013.png Graphic 
 file (type png)
@@ -2534,7 +2556,7 @@ file (type png)
 Package pdftex.def Info: 0_introduction/images_review/metacritical_point_granel
 l_2013.png  used on input line 432.
 (pdftex.def)             Requested size: 198.5766pt x 143.02211pt.
-<0_introduction/images_review/metacritical_point_granell_2014.png, id=559, 770.
+<0_introduction/images_review/metacritical_point_granell_2014.png, id=595, 770.
 27776pt x 552.26324pt>
 File: 0_introduction/images_review/metacritical_point_granell_2014.png Graphic 
 file (type png)
@@ -2543,12 +2565,9 @@ Package pdftex.def Info: 0_introduction/images_review/metacritical_point_granel
 l_2014.png  used on input line 434.
 (pdftex.def)             Requested size: 207.02844pt x 148.43048pt.
 
-Underfull \vbox (badness 5908) has occurred while \output is active []
 
-
-
-[35]
-<0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png, id=586,
+[37]
+<0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png, id=623,
  744.98325pt x 510.708pt>
 File: 0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png Gra
 phic file (type png)
@@ -2556,7 +2575,7 @@ phic file (type png)
 Package pdftex.def Info: 0_introduction/images_review/peng_2021_bertozzi_couple
 d_structure.png  used on input line 445.
 (pdftex.def)             Requested size: 266.17851pt x 182.47542pt.
-<0_introduction/images_review/silva2019_transition_trees.png, id=587, 738.3585p
+<0_introduction/images_review/silva2019_transition_trees.png, id=624, 738.3585p
 t x 482.40225pt>
 File: 0_introduction/images_review/silva2019_transition_trees.png Graphic file 
 (type png)
@@ -2570,12 +2589,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[36 <./0_introduction/images_review/metacritical_point_granell_2013.png> <./0_i
+[38 <./0_introduction/images_review/metacritical_point_granell_2013.png> <./0_i
 ntroduction/images_review/metacritical_point_granell_2014.png>]
-
-[37 <./0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png> <
-./0_introduction/images_review/silva2019_transition_trees.png>]
-<0_introduction/images_review/stable_unstable_equilibria_friejs.png, id=611, 12
+<0_introduction/images_review/stable_unstable_equilibria_friejs.png, id=642, 12
 26.78325pt x 334.851pt>
 File: 0_introduction/images_review/stable_unstable_equilibria_friejs.png Graphi
 c file (type png)
@@ -2583,7 +2599,11 @@ c file (type png)
 Package pdftex.def Info: 0_introduction/images_review/stable_unstable_equilibri
 a_friejs.png  used on input line 465.
 (pdftex.def)             Requested size: 401.3759pt x 109.55592pt.
-<0_introduction/images_review/disease_behavior_interaction_wang2015.png, id=616
+
+
+[39 <./0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png> <
+./0_introduction/images_review/silva2019_transition_trees.png>]
+<0_introduction/images_review/disease_behavior_interaction_wang2015.png, id=651
 , 487.8225pt x 298.716pt>
 File: 0_introduction/images_review/disease_behavior_interaction_wang2015.png Gr
 aphic file (type png)
@@ -2591,7 +2611,7 @@ aphic file (type png)
 Package pdftex.def Info: 0_introduction/images_review/disease_behavior_interact
 ion_wang2015.png  used on input line 478.
 (pdftex.def)             Requested size: 160.55293pt x 98.31221pt.
-<0_introduction/images_review/risk_forecast_auld.png, id=617, 815.4465pt x 499.
+<0_introduction/images_review/risk_forecast_auld.png, id=652, 815.4465pt x 499.
 8675pt>
 File: 0_introduction/images_review/risk_forecast_auld.png Graphic file (type pn
 g)
@@ -2605,11 +2625,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[38 <./0_introduction/images_review/stable_unstable_equilibria_friejs.png>]
-
-[39 <./0_introduction/images_review/disease_behavior_interaction_wang2015.png> 
-<./0_introduction/images_review/risk_forecast_auld.png>]
-<0_introduction/images_review/turker_city_recreated.png, id=643, 1108.74225pt x
+[40 <./0_introduction/images_review/stable_unstable_equilibria_friejs.png>]
+<0_introduction/images_review/turker_city_recreated.png, id=673, 1108.74225pt x
  369.7815pt>
 File: 0_introduction/images_review/turker_city_recreated.png Graphic file (type
  png)
@@ -2622,8 +2639,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[40 <./0_introduction/images_review/turker_city_recreated.png>]
-<0_introduction/images_review/alvarez_opi_vac.png, id=657, 914.2155pt x 415.552
+[41 <./0_introduction/images_review/disease_behavior_interaction_wang2015.png> 
+<./0_introduction/images_review/risk_forecast_auld.png>]
+
+[42 <./0_introduction/images_review/turker_city_recreated.png>]
+<0_introduction/images_review/alvarez_opi_vac.png, id=695, 914.2155pt x 415.552
 5pt>
 File: 0_introduction/images_review/alvarez_opi_vac.png Graphic file (type png)
 <use 0_introduction/images_review/alvarez_opi_vac.png>
@@ -2632,17 +2652,17 @@ Package pdftex.def Info: 0_introduction/images_review/alvarez_opi_vac.png  used
 (pdftex.def)             Requested size: 338.00314pt x 153.63788pt.
 
 
-[41 <./0_introduction/images_review/alvarez_opi_vac.png>]
+[43 <./0_introduction/images_review/alvarez_opi_vac.png>]
 
-[42]
-<0_introduction/images_review/Tanaka_model.png, id=683, 511.9125pt x 449.2785pt
+[44]
+<0_introduction/images_review/Tanaka_model.png, id=719, 511.9125pt x 449.2785pt
 >
 File: 0_introduction/images_review/Tanaka_model.png Graphic file (type png)
 <use 0_introduction/images_review/Tanaka_model.png>
 Package pdftex.def Info: 0_introduction/images_review/Tanaka_model.png  used on
  input line 549.
 (pdftex.def)             Requested size: 147.87839pt x 129.78012pt.
-<0_introduction/images_review/zou_2022_SEIRVM.png, id=684, 1088.26575pt x 493.8
+<0_introduction/images_review/zou_2022_SEIRVM.png, id=720, 1088.26575pt x 493.8
 45pt>
 File: 0_introduction/images_review/zou_2022_SEIRVM.png Graphic file (type png)
 <use 0_introduction/images_review/zou_2022_SEIRVM.png>
@@ -2650,29 +2670,32 @@ Package pdftex.def Info: 0_introduction/images_review/zou_2022_SEIRVM.png  used
  on input line 551.
 (pdftex.def)             Requested size: 253.50397pt x 115.0363pt.
 
-Underfull \vbox (badness 1960) has occurred while \output is active []
 
+[45 <./0_introduction/images_review/Tanaka_model.png> <./0_introduction/images_
+review/zou_2022_SEIRVM.png>]
 
+[46]) (1_corpo/opinion_disease_model.tex
 
-[43 <./0_introduction/images_review/Tanaka_model.png> <./0_introduction/images_
-review/zou_2022_SEIRVM.png>]) (1_corpo/opinion_disease_model.tex
+[47]
 
-[44]
-
-[45
+[48
 
 ]
 
-[46]
+[49
+
+]
+
+[50]
 Chapter 5.
 
 
-[47
+[51
 
 ]
 
-[48]
-<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=728, 526.96875pt
+[52]
+<1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png, id=789, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png Graphic file (t
 ype png)
@@ -2684,7 +2707,7 @@ png  used on input line 102.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=731, 526.9
+<1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png, id=792, 526.9
 6875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png Graphic f
 ile (type png)
@@ -2694,14 +2717,14 @@ cline.png  used on input line 110.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
 
 
-[49]
+[53]
 Underfull \vbox (badness 3291) has occurred while \output is active []
 
 
 
-[50 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <.
+[54 <./1_corpo/figure/behavioural_equilibrium/r1greater1_dyn.png (PNG copy)> <.
 /1_corpo/figure/behavioural_equilibrium/r1greater1_nullcline.png (PNG copy)>]
-<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=744, 526.96875pt
+<1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png, id=804, 526.96875pt
  x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png Graphic file (t
 ype png)
@@ -2709,7 +2732,7 @@ ype png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.
 png  used on input line 128.
 (pdftex.def)             Requested size: 295.75032pt x 221.81987pt.
-<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=746, 526
+<1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png, id=806, 526
 .96875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png Graphic
  file (type png)
@@ -2722,10 +2745,10 @@ cline_1.png  used on input line 136.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig:r1r2less1nullcline' on page 51 undefined on input
+LaTeX Warning: Reference `fig:r1r2less1nullcline' on page 55 undefined on input
  line 146.
 
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=747, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png, id=807, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png Graphic file (ty
 pe png)
@@ -2733,7 +2756,7 @@ pe png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.p
 ng  used on input line 151.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=748, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png, id=808, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png Graphic fi
 le (type png)
@@ -2744,7 +2767,7 @@ line.png  used on input line 153.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=750, 526.96875pt 
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png, id=810, 526.96875pt 
 x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png Graphic file (ty
 pe png)
@@ -2752,7 +2775,7 @@ pe png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.p
 ng  used on input line 166.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
-<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=751, 526.96
+<1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png, id=811, 526.96
 875pt x 395.22656pt>
 File: 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png Graphic fi
 le (type png)
@@ -2762,7 +2785,7 @@ line.png  used on input line 168.
 (pdftex.def)             Requested size: 198.5766pt x 148.93327pt.
 
 
-[51 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)>]
+[55 <./1_corpo/figure/behavioural_equilibrium/r2greater1_dyn.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2771,10 +2794,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52 <./1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png (PNG c
+[56 <./1_corpo/figure/behavioural_equilibrium/r2greater1_nullcline_1.png (PNG c
 opy)> <./1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn.png (PNG copy)> <
 ./1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline.png (PNG copy)>]
-<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=763
+<1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png, id=824
 , 517.935pt x 529.98pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png Gr
 aphic file (type png)
@@ -2782,7 +2805,7 @@ aphic file (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
 _sensitivity.png  used on input line 190.
 (pdftex.def)             Requested size: 198.5766pt x 203.19785pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=764, 
+<1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png, id=825, 
 501.5538pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png Grap
 hic file (type png)
@@ -2790,7 +2813,7 @@ hic file (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_s
 ensitivity.png  used on input line 192.
 (pdftex.def)             Requested size: 198.5766pt x 210.59206pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=765,
+<1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png, id=826,
  453.3738pt x 418.6842pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity.png Gra
 phic file (type png)
@@ -2802,7 +2825,7 @@ sensitivity.png  used on input line 194.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=767, 476.018
+<1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png, id=828, 476.018
 4pt x 531.9072pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png Graphic fil
 e (type png)
@@ -2810,7 +2833,7 @@ e (type png)
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
 _r1.png  used on input line 206.
 (pdftex.def)             Requested size: 170.14622pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=768, 553.1064p
+<1_corpo/figure/behavioural_equilibrium/final_against_r1.png, id=829, 553.1064p
 t x 529.4982pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file 
 (type png)
@@ -2818,7 +2841,7 @@ File: 1_corpo/figure/behavioural_equilibrium/final_against_r1.png Graphic file
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_r
 1.png  used on input line 208.
 (pdftex.def)             Requested size: 198.60332pt x 190.12474pt.
-<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=769, 455.301p
+<1_corpo/figure/behavioural_equilibrium/final_careless_r1.png, id=830, 455.301p
 t x 390.7398pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_careless_r1.png Graphic file
  (type png)
@@ -2831,28 +2854,28 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[53 <./1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png (PNG copy)> <./
+[57 <./1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn.png (PNG copy)> <./
 1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline.png (PNG copy)>]
 
-[54 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png> 
+[58 <./1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity.png> 
 <./1_corpo/figure/behavioural_equilibrium/final_against_sensitivity.png> <./1_c
 orpo/figure/behavioural_equilibrium/final_careless_sensitivity.png (PNG copy)>]
 
 
-[55 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./1_corp
+[59 <./1_corpo/figure/behavioural_equilibrium/final_compliant_r1.png> <./1_corp
 o/figure/behavioural_equilibrium/final_against_r1.png> <./1_corpo/figure/behavi
 oural_equilibrium/final_careless_r1.png (PNG copy)>]
 
-[56
+[60
 
 ]
 Chapter 6.
 
 
-[57
+[61
 
 ]
-<1_corpo/figure/epi_behaviour_model_figure.png, id=796, 298.11375pt x 370.986pt
+<1_corpo/figure/epi_behaviour_model_figure.png, id=857, 298.11375pt x 370.986pt
 >
 File: 1_corpo/figure/epi_behaviour_model_figure.png Graphic file (type png)
 <use 1_corpo/figure/epi_behaviour_model_figure.png>
@@ -2861,12 +2884,12 @@ Package pdftex.def Info: 1_corpo/figure/epi_behaviour_model_figure.png  used on
 (pdftex.def)             Requested size: 211.25116pt x 262.89241pt.
 
 
-[58]
+[62]
 
-[59 <./1_corpo/figure/epi_behaviour_model_figure.png>]
+[63 <./1_corpo/figure/epi_behaviour_model_figure.png>]
 
-[60]
-<1_corpo/figure/r0/ro_epidemic_behavioural.png, id=818, 593.8185pt x 98.769pt>
+[64]
+<1_corpo/figure/r0/ro_epidemic_behavioural.png, id=879, 593.8185pt x 98.769pt>
 File: 1_corpo/figure/r0/ro_epidemic_behavioural.png Graphic file (type png)
 <use 1_corpo/figure/r0/ro_epidemic_behavioural.png>
 Package pdftex.def Info: 1_corpo/figure/r0/ro_epidemic_behavioural.png  used on
@@ -2874,21 +2897,21 @@ Package pdftex.def Info: 1_corpo/figure/r0/ro_epidemic_behavioural.png  used on
 (pdftex.def)             Requested size: 418.2796pt x 69.57185pt.
 
 
-[61 <./1_corpo/figure/r0/ro_epidemic_behavioural.png>]
-<1_corpo/figure/r0/susceptible00_epi_behav.pdf, id=828, 682.55pt x 426.59375pt>
+[65 <./1_corpo/figure/r0/ro_epidemic_behavioural.png>]
+<1_corpo/figure/r0/susceptible00_epi_behav.pdf, id=888, 682.55pt x 426.59375pt>
 
 File: 1_corpo/figure/r0/susceptible00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/susceptible00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/susceptible00_epi_behav.pdf  used on
  input line 397.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/infected00_epi_behav.pdf, id=829, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/infected00_epi_behav.pdf, id=889, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/infected00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/infected00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/infected00_epi_behav.pdf  used on in
 put line 399.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/recovered00_epi_behav.pdf, id=830, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/recovered00_epi_behav.pdf, id=890, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/recovered00_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/recovered00_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/recovered00_epi_behav.pdf  used on i
@@ -2896,9 +2919,9 @@ nput line 401.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
 
 
-[62 <./1_corpo/figure/r0/susceptible00_epi_behav.pdf> <./1_corpo/figure/r0/infe
+[66 <./1_corpo/figure/r0/susceptible00_epi_behav.pdf> <./1_corpo/figure/r0/infe
 cted00_epi_behav.pdf> <./1_corpo/figure/r0/recovered00_epi_behav.pdf>]
-<1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf, id=846, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf, id=906, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf  used on inpu
@@ -2917,13 +2940,13 @@ Underfull \hbox (badness 2285) in paragraph at lines 413--413
 \T1/lmr/m/it/10.03757 in sus-cep-ti-ble com-pli-ant and sus-cep-ti-ble
  []
 
-<1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf, id=847, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf, id=907, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav_SC_rho.pdf  used on inp
 ut line 415.
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
-<1_corpo/figure/r0/r0_epi_behav.pdf, id=848, 682.55pt x 426.59375pt>
+<1_corpo/figure/r0/r0_epi_behav.pdf, id=908, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/r0/r0_epi_behav.pdf Graphic file (type pdf)
 <use 1_corpo/figure/r0/r0_epi_behav.pdf>
 Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav.pdf  used on input line
@@ -2931,10 +2954,10 @@ Package pdftex.def Info: 1_corpo/figure/r0/r0_epi_behav.pdf  used on input line
 (pdftex.def)             Requested size: 190.12474pt x 118.82704pt.
 )
 
-[63 <./1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf> <./1_corpo/figure/r0/r0_epi_be
+[67 <./1_corpo/figure/r0/r0_epi_behav_SC_SA.pdf> <./1_corpo/figure/r0/r0_epi_be
 hav_SC_rho.pdf> <./1_corpo/figure/r0/r0_epi_behav.pdf>]
 
-[64
+[68
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
@@ -2942,8 +2965,14 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+Overfull \hbox (4.672pt too wide) in paragraph at lines 240--240
+\T1/lmr/m/n/11 demics^^Q. In: \T1/lmr/m/it/11 Pro-ceed-ings of the Na-tional Ac
+ademy of Sci-ences \T1/lmr/m/n/11 113.46 (2016), pp. 12899^^U
+ []
 
-[65
+
+
+[69
 
 
 ]
@@ -2954,7 +2983,7 @@ of In-fec-tious Dis-eases\T1/lmr/m/n/11 . El-se-vier, 2022, pp. 163^^U
 
 
 
-[66]
+[70]
 Overfull \hbox (3.2536pt too wide) in paragraph at lines 240--240
 \T1/lmr/m/n/11 population-wide in-ter-ven-tions in Italy^^Q. In: \T1/lmr/m/it/1
 1 Na-ture Medicine \T1/lmr/m/n/11 26.6 (Apr. 2020), pp. 855^^U
@@ -2962,9 +2991,11 @@ Overfull \hbox (3.2536pt too wide) in paragraph at lines 240--240
 
 
 
-[67]
+[71]
 
-[68]
+[72]
+
+[73]
 Overfull \hbox (1.83386pt too wide) in paragraph at lines 240--240
 []\T1/lmr/m/n/11 Mark M. Tanaka, Jochen Kumm, and Mar-cus W. Feld-man. ^^P  Co-
 evo-lu-tion of Pathogens
@@ -2972,11 +3003,9 @@ evo-lu-tion of Pathogens
 
 
 
-[69]
+[74]
 
-[70]
-
-[71
+[75
 
 ] (simulazione24.aux)
  ***********
@@ -2991,26 +3020,25 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+Package rerunfilecheck Info: File `simulazione24.out' has not changed.
+(rerunfilecheck)             Checksum: E0FD713DC82BA3DEEA847880B4161874;6707.
 
-Package rerunfilecheck Warning: File `simulazione24.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                simulazione24
+(biblatex)                and rerun LaTeX afterwards.
 
-Package rerunfilecheck Info: Checksums for `simulazione24.out':
-(rerunfilecheck)             Before: 0C3408D09DAD1641B44B3958178BDED6;6284
-(rerunfilecheck)             After:  623BC09866C9C76509F3CF0EC1B675A1;6491.
 Package logreq Info: Writing requests to 'simulazione24.run.xml'.
 \openout1 = `simulazione24.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31177 strings out of 473898
- 562356 string characters out of 5736294
- 1926807 words of memory out of 5000000
- 53314 multiletter control sequences out of 15000+600000
+ 31213 strings out of 473898
+ 563572 string characters out of 5736294
+ 1934828 words of memory out of 5000000
+ 53339 multiletter control sequences out of 15000+600000
  656436 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,14n,135p,1476b,3714s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,14n,135p,1476b,3757s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C
@@ -3024,9 +3052,9 @@ KTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/lm/lmro9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/lm/lmtt12.pfb>
-Output written on simulazione24.pdf (71 pages, 5009632 bytes).
+Output written on simulazione24.pdf (75 pages, 5024650 bytes).
 PDF statistics:
- 1154 PDF objects out of 1200 (max. 8388607)
- 247 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1222 PDF objects out of 1440 (max. 8388607)
+ 258 named destinations out of 1000 (max. 500000)
+ 482 words of extra memory for PDF output out of 10000 (max. 10000000)
 
