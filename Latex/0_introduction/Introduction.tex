@@ -68,11 +68,19 @@ Furthermore, by using multilayer networks or systems, more complex analyses can 
 
 \subsection{Presentation of the work realized}
 The work presented in this thesis is part of this type of research. Its focus is on understanding the mutual influence between people's behavior and an epidemic. On one hand, it examines how the presence of an epidemic affects individuals' behavior; on the other hand, it explores how these behavioral changes impact the progression and dynamics of the epidemic itself. 
-For this reason a new model has been developed based on a study of existing multi-system models that integrate epidemic and behavioral or opinion components. Specifically, it is considered interesting to simulate a scenario in which the population is divided into three groups: those who have a positive opinion about the use of safety procedures and follow rules to avoid the transmission of the disease; a second group that opposes following procedures or recommendations, refusing to modify their behavior; and a third group that lacks information about the epidemic situation. This third condition represents the majority of the population when a new disease emerges, as there is limited information available and not yet widely disseminated.
-In the model, the main mechanism used to change behavior among different social groups is peer pressure. The fatigue from belonging to a certain behavioral spectrum (either being compliant with the rules or against them) is also considered. An epidemiological model capable of tracking both the initial phase of an epidemic and successive waves of contagion is developed, including the possibility of reinfection.
-A last feature of the work is the verification of its prediction with the use of real data. It is important for a novel multi-system model like the one implemented to have a comparison with reality. When two separate models are coupled together the result is not simply the sum of their previous characteristics, but other different phenomena can arise. Having a study, like the one performed by Meta during the Covid-19 pandemic about people's behavior is an incredible source of data that can permit us to interpret correctly the results given by the model. 
-For this reason, the model's ability to reproduce what happened during the pandemic was initially tested. Then it was verified whether the peer pressure effect alone was sufficient to obtain the observed trends in population behavior or whether the addition of an external, global control factor, such as that represented by special laws implemented by governments, was necessary.
+For this reason a new model has been developed based on a study of existing multi-system models that integrate epidemic and behavioral or opinion components.
 
+A framework is developed where a SIR-like disease model is coupled with a new behavioral model consisting of three compartments: Heedless, Against, and Compliant individuals. These distinctions are designed to represent different courses of action taken during a disease epidemic.
+"Heedless" individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or simply indifferent to the risks. These individuals continue with their regular routines, unaware of which actions might increase their likelihood of infection.
+The "Compliant" group consists of those who actively seek to avoid infection by adhering to health policies and precautions. On the other hand, the "Against" group includes skeptics who reject precautionary measures and refuse to follow established guidelines.
+
+In the model, the main mechanism used to change behavior among different social groups is peer pressure, but also the intervention of a central global actor is considered. The fatigue from belonging to a certain behavioral spectrum (either being compliant with the rules or against them) is also considered. An epidemiological model capable of tracking both the initial phase of an epidemic and successive waves of contagion is developed, including the possibility of reinfection.
+
+A key aspect of this work is the validation of its predictions using empirical data. For a novel multi-system model like the one implemented, it is essential to compare its results with real-world data to understand if it can accurately capture and reconstruct dynamic patterns, thereby testing its validity.
+
+Moreover, a powerful feature of multi-system models is their ability to reveal phenomena that would not be apparent when examining the individual components in isolation. This approach allows for a more comprehensive understanding of complex interactions and dynamics. Additionally, it emphasizes the importance of being able to compare the developed model with empirical data, that can help to understand better the appearing dynamics. Empirical data for this analysis was sourced from a research study conducted by Meta during the COVID-19 pandemic, focusing on people's opinions and behaviors.
+From the aspect that have been investigated there are the model's ability to reproduce what happened during the pandemic. Then it was verified whether the peer pressure effect alone was sufficient to obtain the observed trends in population behavior, or whether the addition of an external, global control factor, such as that represented by special laws implemented by governments, was necessary.
+%%% i risultati a lavoro finito
 The main result achieved is that the model is functional and demonstrates reliability when compared with COVID-19 data. The study highlights the crucial importance of respecting quarantine measures and avoiding contact when infected, as these actions can significantly reduce the model's reproduction number, thereby limiting the spread of the disease. Altri risultati arriveranno concludendo la tesi.
 
 \chapter{Main objectives and summary of the contents}
@@ -81,17 +89,17 @@ In this chapter, the main objectives pursued with the current work are presented
 Starting from an analysis of the theoretical contributions already developed for epidemiology, and in particular focusing on multilayer systems and mean-field models, the following questions are studied:
 
 \begin{itemize}
-	\item how can be modeled in an effective way population behavior? What are the characteristics that must be considered?
+	\item how can population behaviors be effectively included in epidemiological models? What are the characteristics that must be considered?
 	\item Can people's behavior influence the development of an epidemic?
 	\item Is it sufficient to stop an outbreak by relying on the natural subdivision of the population into compliant and non-compliant groups regarding safety measures, or is the intervention of a central "controller" necessary to set new behavior rules?
-	\item What is the most efficient way to model population collective consciousness about the epidemic's development? 
+	\item Is it useful for the model to create a quantity that express awareness of the society about the disease state? 
 \end{itemize}
 About the last question, consciousness or awareness is a parameter considered useful to gain insight into society's reaction to the disease. Furthermore, there can be differences in behavior when the same conditions occur at different times, such as at the beginning of an outbreak versus several months later. The quantity and quality of information available to the population can make a difference in how deal with difficult situations.
 
 Starting from these questions, the following objectives have been identified:
 \begin{itemize}
 	\item Create an original epidemic-behavioral multi-system model capable of tracking the development of a disease and representing behavior modification using a peer pressure mechanism within the same population.
-	\item Add a second control agent to the model, represented by government rules that can modify people's behavior in a centralized way.
+	\item Add a second control mechanism to the model, represented by government rules that can modify people's behavior in a centralized way.
 	\item Develop a comprehensive analysis of the epidemiological and behavioral model to understand its mechanisms and correctly interpret the mutual effects arising from the coupling of the social and health systems.
 	\item Conduct a study using available data on population behavior during the COVID-19 pandemic to verify if the developed model can accurately reconstruct events and how people reacted to them.
 \end{itemize}
@@ -106,8 +114,11 @@ In Chapter Six, the data analysis is presented. The data available from the Meta
 
 \section{Epidemiological theory foundations}
 
-Having a clear description of the main concepts in social science and epidemiology is essential for understanding the rest of the work developed. In the first section of the introduction, the theoretical basis and main concepts that will be used in the present work are defined. First, a brief historical review of the milestones in the field of epidemiology is provided, followed by a glossary of the main terms used in this thesis. Finally, the most commonly used mathematical tools are presented.
-\subsection{ Epidemiologic research historical background}
+Having a clear description of the main concepts in social science and epidemiology is essential for understanding the rest of the work. In the first section of the introduction, the theoretical basis and main concepts that will be used in the present work are defined. 
+First, a brief historical review of the emergence of the epidemiology field is provided, tracing its origins to the key findings that laid the foundation for modern epidemiology. It focuses solely on the initial phases of the research to explain how this field of study originated.
+ 
+In the following question is presented a glossary of the main terms used in this thesis. Finally, the most commonly used mathematical tools are presented.
+\subsection{Epidemiological research historical background}
 % Se ti piace l'idea di fare un piccolo excursus storico, va bene. Le info principali sono:
 % 1- primo lavoro di Bernoulli
 % 2- lavori di Hamer (1906) mass action principle, epidemic description in discrete time 
@@ -115,10 +126,10 @@ Having a clear description of the main concepts in social science and epidemiolo
 % 4- Kermack and Mc Kendrick (1927) che danno risultato bello perchè introducono "legge" del thresold di una epidemia
 % Dopo aver scritto quest'ultimo evento hai il LA per parlare di come funziona un mean field model. 
 
-The research field regarding the development of technique to understand how epidemics can evolve during time has a history starting back in the 20th century. The first important discovery in this field must be attributed to the scientists that find the mechanism used by disease to spread. 
+The research field regarding the development of techniques to understand how epidemics can evolve during time has a history starting back in the 20th century. The first important discovery in this field must be attributed to the scientists that found the mechanism used by disease to spread. 
 A first innovative work is the one done by John Snow, that during an epidemic of Cholera in London in 1854 successfully determined the source of the infection, even without knowing its etiological agent. Then advancing in the microbiological research is conducted by Pasteur and Koch. They found the etiological agent of disease, enabling the possibility to treat and prevent people from an infection. 
 Then, Hamer work in 1906 added a first major theoretical contribution. He formulated a theory about the correlation between the course of an epidemic and the interaction, contact ratio, between susceptible and infectious individuals. It is the so called “mass -action” principle. The number of contacts between these two groups determines the spread rate of the disease. 
-This law originally written in discrete time, is then updated in 1908 by Ross, that re-written it  in continuous time. For the first time the problem can be studied using a clearly, well defined mathematical theory. Then the contributions of Kermack and McKendrick in 1927 add another fundamental principle to the modern epidemiology. They formulated a threshold theory explaining which condition can generate the development of an epidemic. The theorem affirms that a certain value must be exceed, depending on the proportion of susceptible and infectious individual. Controlling this value permits to understand if the number of infections will increase, until a peak is reached or if the epidemic is a descendent phase \cite{Mata2021}, \cite{Anderson_82}. 
+This law originally wrote in discrete time, is then updated in 1908 by Ross, that re-written it  in continuous time. For the first time the problem can be studied using a clearly, well defined mathematical theory. Then the contributions of Kermack and McKendrick in 1927 added another fundamental principle to the modern epidemiology. They formulated a threshold theory explaining which condition can generate the development of an epidemic. The theorem affirms that a certain value -called reproduction number- must be exceed, depending on the proportion of susceptible and infectious individual. Controlling this value permits to understand if the number of infections will increase, until a peak is reached or if the epidemic is a descendent phase \cite{Mata2021}, \cite{Anderson_82}. 
 Their contribution with the mass action principle represents the base for the mean field model theory, that will be presented and analysed in section \ref{subsec:SIR}. 
 
 
