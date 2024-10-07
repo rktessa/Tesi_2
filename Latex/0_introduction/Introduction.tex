@@ -117,7 +117,9 @@ In Chapter Six, the data analysis is presented. The data available from the Meta
 Having a clear description of the main concepts in social science and epidemiology is essential for understanding the rest of the work. In the first section of the introduction, the theoretical basis and main concepts that will be used in the present work are defined. 
 
 First, a brief historical review of the emergence of the epidemiology field is provided, focusing on the explanation of its genesis. Indeed, these key findings laid the foundation of modern  epidemiology. 
-In the following section is presented a glossary of the main terms used in this thesis. Finally, the most commonly used mathematical tools are introduced.
+The following section presents a glossary of the key terms used throughout this thesis. This glossary ensures clear communication of the core concepts that will be referenced later. Initially, terms related to epidemiology are explained, followed by definitions of behavior-related concepts.
+
+Subsequently, the most commonly used mathematical tools are introduced, including an overview of various modeling techniques. Special attention is given to the theoretical background of the mean-field model.
 
 \subsection{Epidemiological research historical background}
 % Se ti piace l'idea di fare un piccolo excursus storico, va bene. Le info principali sono:
@@ -136,42 +138,56 @@ Their contribution with the mass action principle represents the base for the me
 
 
 \subsection{Epidemiological glossary}
-To permit a better comprehension of the subject analyzed in the present work a list of principal concepts and terms is presented.
+To permit a better comprehension of the subject analyzed in the present work a list of principal concepts and terms is presented. 
 
 \subsubsection{Micro and Macro parasite}
-	The first difference when presenting infection is distinguishing the type of origin that can cause it. An etiological organism responsible for a disease can be divided into microparasite and macroparasite. The former live and reproduce within the host, generating an immune response and the infections caused by them usually have two possible outcomes: death or immunity. Infections origins from them are shorter than the life span of an individual, and so have a transient nature.
+	The first difference when presenting infection is distinguishing the type of origin that can cause it. An etiological organism responsible for a disease can be divided into microparasite and macroparasite. The former lives and reproduces within the host, generating an immune response and the infections caused by them usually have two possible outcomes: death or immunity. Infections origins from them are shorter than the life span of an individual, and so have a transient nature.Most viral and bacterial parasite, are into the microparasitic category.
+	
+	Instead, macroparasite may be described by those having no direct reproduction within their host. Arthropods and helmints are in this category. They are larger and have a much longer generation times than microparasites, with a life span that can be a considerable fraction of host life span.
+	
 \subsubsection{Types of infectious diseases}
-Infectious disease is indicated as an illness resulting from the presence of a pathogenic microbial agent. It is possible to distinguish a difference between \textit{transmittable} and \textit{communicable} disease. A transmittable disease can transmitted between persons through unnatural forces. A disease is communicable when the transmission happens directly or indirectly.
+Infectious disease is indicated as an illness resulting from the presence of a pathogenic microbial agent such as bacteria, viruses, parasites or other microorganism.
+
+ It is possible to distinguish a difference between \textit{transmittable} and \textit{communicable} disease. A transmittable disease can transmitted between persons through unnatural routes. A communicable disease is one is one that spreads from one person or animal to another or from a surface to a person.  
 
 \subsubsection{Disease transmission} A disease can spread in different ways: 
 	\begin{itemize}
-		\item person to person, for example sexual transmission, involving direct or indirect contact.
-		\item airborne, through inhalation of infected air.
-		\item food or water borne, ingesting contaminated food. 
-		\item vector born, the contagion is caused by infected animals.
+		\item Person to person: for example sexual transmission, involving direct or indirect contact.
+		\item Airborne: through inhalation of infected air.
+		\item Food or water borne: ingesting contaminated food. 
+		\item Vector born: the contagion is caused by infected animals.
 	\end{itemize}
 	Furthermore when the diffusion is among the same generations is called horizontal transmission, while vertical transmission is the one developing between different generations, from parents to children. 
-	Zoonosis is the phenomenon in which a disease that starts in an animal species mutates and attacks humans. The opposite can also happen and it is called inverse-zoonosis. 
+	Zoonosis is the phenomenon in which a disease that starts in an animal species mutates and infects humans. The opposite can also happen and it is called inverse-zoonosis. 
 	
-\subsubsection{Epidemic disease} It occurs when there is a disease with a rapid outbreak, in less than a year there is its development and a peak is reached. The illness is confined to a limited region
+\subsubsection{Epidemic disease} An increase in disease prevalence typically manifests as a rapid outbreak, usually lasting less than a year. This type of illness is confined to a limited geographical region, unlike a pandemic which affects a much larger area.
 
 \subsubsection{Endemic disease} It is a disease that lasts for a long time and requires consideration of its impact on population renewal and in the number of susceptible individuals.
 
 \subsubsection{Pandemic disease} It is an epidemic that diffuses across multiple regions, on a global scale. The severity of the disease also makes a distinction in calling a disease a pandemic. For example, a common cold is diffused in the whole world but is not defined as a pandemic by the WHO (World Health Organization). 
 
-\subsubsection{Incubation, Symptoms, Infected and Infectious}   A person having contact with another infectious individual, can or not become infected. The incubation is the period after being infected in which the infection increases in size or number in the host but does not produce the symptoms, that are the effect of the disease. 
+\subsubsection{Incubation, Symptoms, Infected and Infectious}  When a person comes into contact with an infectious individual, they may or may not become infected. The incubation period refers to the time after infection when the disease grows within the host without producing symptoms.
+
+Symptoms refer to the physical signs of illness caused by a disease in the affected individual.
+
+A person is described as infectious when they carry the disease and can transmit it to others, while infected refers to someone who has been exposed to the infection and has become ill.
+
 
 \subsubsection{Outbreak} Is the rapid raise in the number of infected during an epidemic.
 
-\subsubsection{Incidence and prevalence} The first term refers to the number of new cases after a certain period (daily or weekly for example), while prevalence is the proportion of the population affected by a disease in a specific time.
+\subsubsection{Incidence and prevalence} The first term refers to the number of new cases within a certain period (daily or weekly for example), while prevalence is the proportion of the population affected by a disease in a specific time.
 
-\subsubsection{Immunity and herd immunity} Immunity is protection from a disease gained after having contracted it. It can last forever or vanish after a certain time. New exposure to the virus does not lead to infection. Herd immunity is instead an important phenomenon in which the defense against a disease is due to the majority of the population being immune, thanks to vaccines or surviving it. This majority protects the rest of the population because slows down the diffusion or stops the spread of the illness.
+\subsubsection{Immunity and herd immunity}
+Immunity refers to the protection from a disease gained after contracting it. This immunity can be lifelong or diminish over time. When a person is immune, re-exposure to the virus does not result in infection, or there is only a reduced chance of being infected, known as partial immunity.
+
+Herd immunity is a phenomenon where a large portion of the population becomes immune, either through vaccination or surviving the disease. This majority limits the spread of the illness, indirectly protecting those who are not immune by slowing or halting disease transmission.
 
 \subsubsection{Virulence and Contagiousness}  Virulence is used to describe how aggressive, harmful, and pathogenic is a biological agent in attacking cells. Contagiousness is referred to an individual and it is used to represent the capability to transmit a disease. 
 
 \subsubsection{Overdispersion and Superspreading} Overdispersion is a term that refers to observing a larger variance than expected from a normal distribution. It is used in statistics to measure superspreading, a circumstance in which there is an anomaly (higher) number of secondary infections.
 
-\subsubsection{CFR, IFR and mortality excess} The case fatality rate is the ratio between the number of deaths due to a specific disease and the total number of confirmed positive cases. It is the likelihood for an infected person to die because of the infection. The infection fatality rate is instead the percentage of people infected with the disease that are expected to die. The two quantities can have a similar value: if every person who contracts the disease and every death attributable to the disease is known and recorded, then the CFR will equal the IFR.
+\subsubsection{CFR, IFR and mortality excess} The case fatality rate, CFR, is the ratio between the number of deaths due to a specific disease and the total number of confirmed positive cases detected by testing. 
+The infection fatality rate, IFR, is instead the percentage of people infected with the disease that are expected to die. The two quantities can have a similar value: if every person who contracts the disease and every death attributable to the disease is known and recorded, then the CFR will equal the IFR.
 The excess in mortality can be calculated by observing the difference between the total death rate (due to any reason) a month per month in a comparison between a year with an epidemic and one without. 
 
 \subsubsection{Reproduction number $R_0$} It is the fundamental measure of the infectiousness of a disease. It is the average number of secondary infections caused by one infected person in a fully susceptible population. If it is recalculated during the epidemic progression is called $R(t)$, a time-varying reproduction number. Finally exist also the effective reproduction number, describes the average number of secondary infected people during the epidemic (rescaling the value with the true number of susceptible). 
@@ -183,7 +199,9 @@ The excess in mortality can be calculated by observing the difference between th
 \section{Opinion/behaviour glossary}
 To establish a framework suitable for developing and understanding behavioral models, the following key concepts from social science are outlined.
 \subsubsection{Awareness} It is the knowledge that an individual has on a certain subject or situation. It changes with time and it is developed with information or experience.  
-\subsubsection{Information} The term "information" is often understood as "knowledge communicated." However, due to its central role in contemporary society, there is extensive debate regarding its multiple meanings \cite{Capurro_2003}. Our society can be characterized as an "information society," where the development of information technology has influenced all aspects of life. Currently, the word "information" is associated with two principal meanings. The first, more universal definition, is that information is anything important in answering a question. The second relates to Information Science, the discipline focused on managing this object called information in any form.
+\subsubsection{Information} The term "information" is commonly understood as "knowledge communicated." However, given its crucial role in modern society, there is considerable debate about its various meanings \cite{Capurro_2003}. Today’s world is often described as an "information society," where the advancement of information technology has impacted nearly every aspect of life.
+
+Currently, the term "information" carries two key meanings. The first, more general, definition refers to anything that is valuable in answering a question. The second definition pertains to Information Science, the discipline that manages information in all its forms. In this context, information is something with the capacity to inform. On a fundamental level, anything that is not entirely random can be considered to convey some degree of information. 
 \subsubsection{Belief} It is the conviction of the truth of a statement or the reality of a being or phenomenon, especially when based on the examination of evidence, but also on matters for which there is no proof.
 
 Studying beliefs change over time and on social networks is an interesting research field. It has the aim to understand why in certain societies new beliefs - such as opinions on climate change or anti-vaccinism spread more quickly than in others. These dynamics can lead to polarization or consensus and occasionally cause backlash effects.
@@ -201,12 +219,9 @@ It is a theory formulated by Granovetter in \cite{Granovetter_1978} regarding co
 
 \subsubsection{Polarization and Consensus}
 
-Polarization refers to the variation in beliefs within a population.There are multiple meanings that can be associated to this term. One way to describe it is by measuring the distance between the most extreme beliefs, their spread or at the distribution of opinions in a certain interval. 
+Polarization refers to the divergence of beliefs within a population. There are several mathematical methods available to measure the degree of polarization. For instance, one can collect data on opinions, beliefs, or behaviors within a group and then measure the distance between the most extreme views, or analyze their distribution across a defined range.
 
- The use of groups, identifying different concentration can be useful to explain the polarization phenomenon. Groups can be "exogenously" defined where are identified by characterstic like regionality, ethnicity, sex, education level, or other cathegories. To describe correctly the polarization a clear definition of the groups in consideration is necessary. 
- A first polarization group based is community fracturing, where the population is divided into subgroups\cite{Bramson_2017} .
- 
- This contrasts with the term "consensus," which describes a situation where the exchange of opinions, information, or property among individuals leads to general agreement. Both scenarios are studied and modeled using network theory.
+This contrasts with the concept of "consensus," where the exchange of opinions, information, or resources among individuals leads to widespread agreement. Both polarization and consensus can be studied and modeled using network theory.
 
 \subsubsection{Homophily} The tendency to bond and associate with similar others. 
 
@@ -218,11 +233,13 @@ When working on a model the importance of the uncertainty related to claims real
 \end{displayquote}
 
 There are several different typologies of mathematical models developed.
-A first classification can be done considering the method used to obtain them: mechanistic, empirical, or conceptual models.
+A first classification can be done considering the method used to obtain them: mechanistic, empirical, phenomenological or conceptual models.
 The mechanistic model is based on assumptions about reality, or theoretical principles, modeled using a collection of one or more variables together with a self-contained set of rules. These models have an explanatory value on the reality they represent.
-Empirical models are realized by fitting a set of data. It is a powerful instrument, because data can be modeled quite well, but they lack the explanatory value of the mechanistic model.  Finally, with conceptual model, it is meant a verbal description of a real-world scenario. 
+Empirical models are realized by fitting a set of data. It is a powerful instrument, because data can be modeled quite well, but they lack the explanatory value of the mechanistic model.
+A phenomenological model describes the empirical relationships between phenomena in a way that aligns with fundamental theory, but it is not directly derived from first principles. These models define the relationships between variables and provide insights into the phenomenon under study. They are particularly useful in cases where no exact analytical solution exists to explain a certain scientific phenomenon.
+Finally, with conceptual model, it is meant a verbal description of a real-world scenario. 
 
-For the present work, the mechanistic model is the strategy used.  This is because, in the epidemiology field, the scopes that conduce to the realization of a model go beyond just fitting data. Examples of possible scopes are:
+For the present work, a mechanistic/phenomenological model is the strategy used.  This is because, in the epidemiology field, the scopes that conduce to the realization of a model go beyond just fitting data. Examples of possible scopes are:
 \begin{itemize}
 	\item following the epidemic evolution
 	\item collect and realize a structure to understand the information related to the disease 
@@ -235,8 +252,15 @@ Considering the mechanistic category several different types of models have been
 
 \subsection{Mean field models}
 \label{subsec:mean_field}
-The mean field model, also known as compartmental model is the first developed and most studied type of mathematical model used in epidemiology \cite{kermack1927}, \cite{brauer2012mathematical}, \cite{Anderson_82}, and \cite{anderson1991infectious}.  This model assumes that the well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected, exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine is base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one. 
-In this class of model, the severity of infection usually is not considered: people are infected or not. The transition from one compartment to another is determined by differential equations. There are parameters ruling the transition between groups that are coefficients whose meaning depends on the model's underlying assumptions. The most important metric in this class of models is the so-called "basic reproduction number". It expresses the seriousness of a disease and it is considered the fundamental threshold in epidemiology \cite{Hernandez_Vargas_2022}. 
+ Mean field models, also known as compartmental models are the first developed and most studied type of mathematical model used in epidemiology \cite{kermack1927, brauer2012mathematical, Anderson_82, anderson1991infectious}.  This model assumes that the well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected (if in the model no distinction between symptomatic or asymptomatic is done), exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine its base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one.
+ 
+For example, both a SIR \cite{Dehning_2020} and a SPQEIR \cite{Proverbio_2021} can be used to model COVID-19, but the second model considers explicitly quarantine, exposed and use of protections to avoid infection. Elements that cannot be observed or considered with a simpler model like a SIR.
+  
+In this class of models, the severity of infection is typically not considered; individuals are either infected or not. The primary focus is on describing the spread of the disease rather than its biological impact on health states. The transitions between compartments (such as Susceptible, Infected, and Recovered) are governed by differential equations.
+
+The parameters that control these transitions are coefficients whose interpretation depends on the underlying assumptions of the model. Mathematically, these parameters determine the rate of flow between compartments.
+
+The most critical metric in these models is the "basic reproduction number" (often denoted as $R_0$), which represents the average number of secondary infections caused by one infected individual in a fully susceptible population. It is considered a fundamental threshold in epidemiology, indicating the potential severity of an outbreak \cite{Hernandez_Vargas_2022}. 
 \begin{figure}[]
 	\centering
 	\includegraphics[width=0.65\linewidth]{0_introduction/images_introduction/SIRS_figure_compartmental}
@@ -247,8 +271,12 @@ In this class of model, the severity of infection usually is not considered: peo
 
 \subsubsection{SIR model}
 \label{subsec:SIR}
-The model that represents the base for epidemic mathematical studying is the SIR.  Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
-The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
+The foundational model for studying epidemics mathematically is the SI model. In this model, the population is divided into two compartments: Susceptible $(S)$ and Infected $(I)$. Individuals transition from being susceptible to infected, but there is no recovery, meaning once infected, individuals remain infectious indefinitely.
+
+An extension of this is the SIR model, which adds a third compartment, Recovered $(R)$. This additional compartment represents individuals who have either gained immunity or have died, removing them from the cycle of infection. After spending a certain period in the infected state, individuals transition to the recovered state, making them no longer susceptible to the disease.
+
+  Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
+The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. The total population size used in which the three comportments are divided is 
 Usually, the assumption that N remains stable is made. This is possible considering that the term epidemic identifies a disease with a duration much lower than the life of a person. Considering this assumption the number of deaths and births can be neglected. Alternatively, we can consider that the number of births, which is an influx in the S compartment is roughly equal to the number of deaths, which is an outflux. These statements imply $s(t) + i(t) + r(t)= 1$ and $\dot{s}+ \dot{i} + \dot{r}= 0$.
 The disease reproduces horizontal incidence within the population. So, it is the connection with others that causes the infection diffusion. 
 $\beta$ is a coefficient that expresses the number of adequate contacts on average of a person per unit of time. The simplest way to explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The formula  $\beta \frac{I}{N} = \beta i$ is then the average number of contacts with infectives per unit time of one susceptible. Finally, the number of new cases per unit of time due to the $S = N s$  susceptibles is $\beta \frac{I}{N} S = \beta N i s$. This form of horizontal incidence is called the standard
@@ -330,19 +358,19 @@ In the Stochastic differential equation, the random variables are continuous.
 
 \subsection{Networked models}
 \cite{Newman2002}, \cite{VanMieghem2009}, 
+The evolution of a disease is considered over complex and realistic networks. The focus of this type of model is to understand how the network structure influences the epidemic by observing parameters such as the rate of spread.
 
+In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
 
+Only if this class of model is highly capable of realistically reconstructing a real network can it be a reliable instrument, and achieving this requires very complex work.
 \subsection{Agent-based models}
 
 VEDI E AGGIUNGI ANCHE \cite{Tizzoni2014}
 
 DA WIKI INTEGRA: "An agent-based model (ABM) is a computational model for simulating the actions and interactions of autonomous agents (both individual or collective entities such as organizations or groups) in order to understand the behavior of a system and what governs its outcomes."
 
-Agent-based models are an alternative technique used to represent disease evolution. This approach is implemented based on the observation of spontaneous connections made by individuals. The evolution of a disease is considered over complex and realistic networks. The focus of this type of model is to understand how the network structure influences the epidemic by observing parameters such as the rate of spread.
-
-In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
-
-An advantage of this type of model is that it offers a very intuitive approach to epidemic modeling. Using an individual perspective guarantees an immediate interpretation of the model. A precise agent-based model can provide a greater understanding of the illness under consideration and direct information about countermeasures to implement to stop or mitigate its spread. However, to be powerful and capable of performing good analyses and predictions, a lot of information must be integrated into the model. Only if the agent-based model is highly capable of realistically reconstructing a real network can it be a reliable instrument, and achieving this requires very complex work.
+Agent-based models are an alternative technique used to represent disease evolution. This approach is implemented based on the observation of spontaneous connections made by individuals. 
+An advantage of this type of model is that it offers a very intuitive approach to epidemic modeling. Using an individual perspective guarantees an immediate interpretation of the model. A precise agent-based model can provide a greater understanding of the illness under consideration and direct information about countermeasures to implement to stop or mitigate its spread. However, to be powerful and capable of performing good analyses and predictions, a lot of information must be integrated into the model. 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/agent_based}
@@ -381,8 +409,6 @@ The second option considers an agent-based structure. Here, considering a graph 
 	\item inter-layer edges, the connection between a replica of the same node, but lying on a different layer of the structure;
 	\item inter-layer edges, but coupling nodes representing distinct entities. 
 \end{itemize}
-
-A possible representation is done using a $4^{th}$ order tensor or coupling a set of adjacency matrices, called "supra-adjacency matrices". The feature that can be studied is the structural properties of the network, depending on how the various layers are coupled together. The presence of clusters or most central nodes is also important.
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

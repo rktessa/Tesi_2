@@ -15,37 +15,37 @@
 \contentsline {subsubsection}{Micro and Macro parasite}{22}{section*.5}%
 \contentsline {subsubsection}{Types of infectious diseases}{22}{section*.6}%
 \contentsline {subsubsection}{Disease transmission}{22}{section*.7}%
-\contentsline {subsubsection}{Epidemic disease}{22}{section*.8}%
+\contentsline {subsubsection}{Epidemic disease}{23}{section*.8}%
 \contentsline {subsubsection}{Endemic disease}{23}{section*.9}%
 \contentsline {subsubsection}{Pandemic disease}{23}{section*.10}%
 \contentsline {subsubsection}{Incubation, Symptoms, Infected and Infectious}{23}{section*.11}%
 \contentsline {subsubsection}{Outbreak}{23}{section*.12}%
 \contentsline {subsubsection}{Incidence and prevalence}{23}{section*.13}%
-\contentsline {subsubsection}{Immunity and herd immunity}{23}{section*.14}%
-\contentsline {subsubsection}{Virulence and Contagiousness}{23}{section*.15}%
-\contentsline {subsubsection}{Overdispersion and Superspreading}{23}{section*.16}%
+\contentsline {subsubsection}{Immunity and herd immunity}{24}{section*.14}%
+\contentsline {subsubsection}{Virulence and Contagiousness}{24}{section*.15}%
+\contentsline {subsubsection}{Overdispersion and Superspreading}{24}{section*.16}%
 \contentsline {subsubsection}{CFR, IFR and mortality excess}{24}{section*.17}%
 \contentsline {subsubsection}{Reproduction number $R_0$}{24}{section*.18}%
 \contentsline {subsubsection}{Incubation period and serial interval}{24}{section*.19}%
-\contentsline {section}{\numberline {3.2}Opinion/behaviour glossary}{24}{section.3.2}%
-\contentsline {subsubsection}{Awareness}{24}{section*.20}%
-\contentsline {subsubsection}{Information}{24}{section*.21}%
+\contentsline {section}{\numberline {3.2}Opinion/behaviour glossary}{25}{section.3.2}%
+\contentsline {subsubsection}{Awareness}{25}{section*.20}%
+\contentsline {subsubsection}{Information}{25}{section*.21}%
 \contentsline {subsubsection}{Belief}{25}{section*.22}%
 \contentsline {subsubsection}{Behaviour}{25}{section*.23}%
 \contentsline {subsubsection}{Trust}{25}{section*.24}%
 \contentsline {subsubsection}{Perception}{25}{section*.25}%
-\contentsline {subsubsection}{Group decision-making}{25}{section*.26}%
-\contentsline {subsubsection}{Threshold theory}{25}{section*.27}%
-\contentsline {subsubsection}{Polarization and Consensus}{25}{section*.28}%
+\contentsline {subsubsection}{Group decision-making}{26}{section*.26}%
+\contentsline {subsubsection}{Threshold theory}{26}{section*.27}%
+\contentsline {subsubsection}{Polarization and Consensus}{26}{section*.28}%
 \contentsline {subsubsection}{Homophily}{26}{section*.29}%
 \contentsline {section}{\numberline {3.3}Epidemiological models categorization}{26}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Mean field models}{27}{subsection.3.3.1}%
-\contentsline {subsubsection}{SIR model}{27}{section*.31}%
-\contentsline {subsubsection}{Derivation of I evolution and SIR differential equations presentation}{29}{section*.32}%
+\contentsline {subsubsection}{SIR model}{28}{section*.31}%
+\contentsline {subsubsection}{Derivation of I evolution and SIR differential equations presentation}{30}{section*.32}%
 \contentsline {subsubsection}{Stochastic models}{31}{section*.34}%
-\contentsline {subsection}{\numberline {3.3.2}Networked models}{31}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Agent-based models}{31}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Multilayer systems and networks}{32}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.2}Networked models}{32}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Agent-based models}{32}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Multilayer systems and networks}{33}{subsection.3.3.4}%
 \contentsline {chapter}{\numberline {4}Review of epidemiological behavioural and opinion models in literature}{35}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Information's sources}{36}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Classification of different types of information}{36}{section.4.2}%
@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Models in which change the individual' state}{37}{subsection.4.3.1}%
 \contentsline {subsubsection}{Multiple network simulated with Markovian process}{37}{section*.37}%
 \contentsline {subsubsection}{Game theoretical models}{40}{section*.41}%
-\contentsline {subsubsection}{Network based models}{42}{section*.43}%
+\contentsline {subsubsection}{Network based models}{41}{section*.43}%
 \contentsline {subsubsection}{Threshold models}{42}{section*.45}%
 \contentsline {subsubsection}{Ad-hoc rule-based models}{43}{section*.46}%
 \contentsline {subsection}{\numberline {4.3.2}Homogeneous population models}{44}{subsection.4.3.2}%

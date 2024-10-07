@@ -7494,6 +7494,220 @@
       \verb 10.1073/pnas.1616052113
       \endverb
     \endentry
+    \entry{Wang_2015_review}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d23f8780b31a9738eb2ec5f9c954bcb4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=edcf90b40707bb5cd30ca87716ff6a80}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1773e4a48eed2ca15a4eb383a2801e8a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhi-Xi},
+           giveni={Z\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=90363e7455b37d0f07cd7e927b294868}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=aaeaf01943de2213dfead115b7943525}{%
+           family={Bauch},
+           familyi={B\bibinitperiod},
+           given={Chris\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{fullhash}{8e97b687d1ca39a947f1ac7401361ef1}
+      \strng{fullhashraw}{8e97b687d1ca39a947f1ac7401361ef1}
+      \strng{bibnamehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{authorbibnamehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{authornamehash}{bcc0ee0115ca53333821bd83b79eadf2}
+      \strng{authorfullhash}{8e97b687d1ca39a947f1ac7401361ef1}
+      \strng{authorfullhashraw}{8e97b687d1ca39a947f1ac7401361ef1}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Physics of Life Reviews, 15 (2015) 1â•ﬁ29. 10.1016/j.plrev.2015.07.006}
+      \field{issn}{1571-0645}
+      \field{journaltitle}{Physics of Life Reviews}
+      \field{number}{China.}
+      \field{title}{Coupled disease–behavior dynamics on complex networks: A review}
+      \field{volume}{15}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/j.plrev.2015.07.006
+      \endverb
+      \keyw{Disease behavior dynamics,Decision-making,Vaccination,Networks,Social distancing}
+    \endentry
+    \entry{DeDomenico2016}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6d536daa70fa51099e4f65e72e27f797}{%
+           family={De\bibnamedelima Domenico},
+           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Manlio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           familyi={G\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0c0f609a339310df23209cf68aba3b6e}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Mason\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{fullhash}{937605070968d142c0f0d122bda48327}
+      \strng{fullhashraw}{937605070968d142c0f0d122bda48327}
+      \strng{bibnamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authorbibnamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authornamehash}{017027c2e9b71155a5365cb9584cff73}
+      \strng{authorfullhash}{937605070968d142c0f0d122bda48327}
+      \strng{authorfullhashraw}{937605070968d142c0f0d122bda48327}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nature Physics 12, 10 (2016). doi:10.1038/nphys3865}
+      \field{issn}{1745-2481}
+      \field{journaltitle}{Nature Physics}
+      \field{number}{10}
+      \field{title}{The physics of spreading processes in multilayer networks}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{901\bibrangedash 906}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphys3865
+      \endverb
+    \endentry
+    \entry{teslya2022}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=702ed7b3713cf2d11ccdd4802f09867b}{%
+           family={Teslya},
+           familyi={T\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
+           family={Nunner},
+           familyi={N\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba8975270a2920ece46a34ae7d7bf0f3}{%
+           family={Buskens},
+           familyi={B\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=aa8edd1b623e5e77a57159775185c7d3}{%
+           family={Kretzschmar},
+           familyi={K\bibinitperiod},
+           given={Mirjam\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=3e74e28774ffb3065e8ed4921a6c23d5}{%
+           family={Gavrilets},
+           familyi={G\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press ({OUP})}%
+      }
+      \strng{namehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{fullhash}{a0498981081256351d0877afb9116afe}
+      \strng{fullhashraw}{a0498981081256351d0877afb9116afe}
+      \strng{bibnamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authorbibnamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authornamehash}{0b5bc8936a992195677ebe621d59cae2}
+      \strng{authorfullhash}{a0498981081256351d0877afb9116afe}
+      \strng{authorfullhashraw}{a0498981081256351d0877afb9116afe}
+      \strng{editorbibnamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \strng{editornamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \strng{editorfullhash}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \strng{editorfullhashraw}{3e74e28774ffb3065e8ed4921a6c23d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{PNAS} Nexus}
+      \field{number}{5}
+      \field{title}{The effect of competition between health opinions on epidemic dynamics}
+      \field{volume}{1}
+      \field{year}{2022}
+      \verb{doi}
+      \verb https://doi.org/10.1093/pnasnexus/pgac260
+      \endverb
+      \keyw{health behavior,socio-epidemiological model,behavioral response,opinion dynamics,prophylactic behavior}
+    \endentry
+    \entry{Epstein_2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ac29b1adefc5d4d182dabb3ee146a662}{%
+           family={Epstein},
+           familyi={E\bibinitperiod},
+           given={Joshua\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d628b8d06062c8aa685dfe36e1709d2b}{%
+           family={Hatna},
+           familyi={H\bibinitperiod},
+           given={Erez},
+           giveni={E\bibinitperiod}}}%
+        {{hash=30703b9cc19fef4d69fb1a1fc842f9ee}{%
+           family={Crodelle},
+           familyi={C\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{fullhash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{fullhashraw}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{bibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authorbibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authornamehash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authorfullhash}{b217f7cfd02934cbb5b3dea007b6309a}
+      \strng{authorfullhashraw}{b217f7cfd02934cbb5b3dea007b6309a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{number}{181}
+      \field{title}{Triple contagion: a two-fears epidemic model}
+      \field{volume}{18}
+      \field{year}{2021}
+      \field{pages}{20210186}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsif.2021.0186
+      \endverb
+    \endentry
     \entry{Mata2021}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{hash=b1e0e9ce0cb2010109c6e04a73fccf2e}{%
@@ -7692,8 +7906,8 @@
       \strng{authornamehash}{438ba327e51494468ee4a8d771e29321}
       \strng{authorfullhash}{438ba327e51494468ee4a8d771e29321}
       \strng{authorfullhashraw}{438ba327e51494468ee4a8d771e29321}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2053-9150}
@@ -7735,8 +7949,8 @@
       \strng{authornamehash}{7d5c51b6218e72ec0876084733441fdb}
       \strng{authorfullhash}{7d5c51b6218e72ec0876084733441fdb}
       \strng{authorfullhashraw}{7d5c51b6218e72ec0876084733441fdb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{Reprinted}
@@ -8018,8 +8232,8 @@
       \strng{authornamehash}{08c3df63be22c58f1fdf968c9a7100e7}
       \strng{authorfullhash}{08c3df63be22c58f1fdf968c9a7100e7}
       \strng{authorfullhashraw}{08c3df63be22c58f1fdf968c9a7100e7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This is a tutorial for the mathematical model of the spread of epidemic diseases. Beginning with the basic mathematics, we introduce the susceptible-infected-recovered (SIR) model. Subsequently, we present the numerical and exact analytical solutions of the SIR model. The analytical solution is emphasized. Additionally, we treat the generalization of the SIR model including births and natural deaths.}
@@ -8055,8 +8269,8 @@
       \strng{authornamehash}{34cbea2aa6d041f42325c9b7a473eebe}
       \strng{authorfullhash}{34cbea2aa6d041f42325c9b7a473eebe}
       \strng{authorfullhashraw}{34cbea2aa6d041f42325c9b7a473eebe}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Mathematical Analysis of Infectious Diseases}
@@ -8087,8 +8301,8 @@
       \strng{authornamehash}{c5a06a841867aa48877ac47e8aabf3bc}
       \strng{authorfullhash}{c5a06a841867aa48877ac47e8aabf3bc}
       \strng{authorfullhashraw}{c5a06a841867aa48877ac47e8aabf3bc}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nonlinear Analysis, 111 (2014) 66-81. doi:10.1016/j.na.2014.08.012}
@@ -8331,8 +8545,8 @@
       \strng{editornamehash}{c9882c8d17ee9213b85d019ad2595f59}
       \strng{editorfullhash}{c9882c8d17ee9213b85d019ad2595f59}
       \strng{editorfullhashraw}{c9882c8d17ee9213b85d019ad2595f59}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{10}
@@ -8389,9 +8603,9 @@
       \strng{authornamehash}{2e448f2e68ab2f1cd9e54269cab56966}
       \strng{authorfullhash}{f465c32ff79e5568735704cb0ba40428}
       \strng{authorfullhashraw}{f465c32ff79e5568735704cb0ba40428}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Physics Reports, 820 (2019) 1-51. doi:10.1016/j.physrep.2019.07.001}
@@ -8438,8 +8652,8 @@
       \strng{authornamehash}{fcc9993c9db6c860f89106caa6e530b0}
       \strng{authorfullhash}{fcc9993c9db6c860f89106caa6e530b0}
       \strng{authorfullhashraw}{fcc9993c9db6c860f89106caa6e530b0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Synthese, https://doi.org/10.1007/s11229-023-04241-z}
@@ -8453,59 +8667,6 @@
       \verb 10.1007/s11229-023-04241-z
       \endverb
       \keyw{Network models; Multilayer models; Topological explanation; Mechanistic explanation; Mechanistic completeness; Neuroscientific explanation}
-    \endentry
-    \entry{DeDomenico2016}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=6d536daa70fa51099e4f65e72e27f797}{%
-           family={De\bibnamedelima Domenico},
-           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Manlio},
-           giveni={M\bibinitperiod}}}%
-        {{hash=327371d583df9de17b66667a7ea91f61}{%
-           family={Granell},
-           familyi={G\bibinitperiod},
-           given={Clara},
-           giveni={C\bibinitperiod}}}%
-        {{hash=0c0f609a339310df23209cf68aba3b6e}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Mason\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
-           family={Arenas},
-           familyi={A\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{fullhash}{937605070968d142c0f0d122bda48327}
-      \strng{fullhashraw}{937605070968d142c0f0d122bda48327}
-      \strng{bibnamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authorbibnamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authornamehash}{017027c2e9b71155a5365cb9584cff73}
-      \strng{authorfullhash}{937605070968d142c0f0d122bda48327}
-      \strng{authorfullhashraw}{937605070968d142c0f0d122bda48327}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Nature Physics 12, 10 (2016). doi:10.1038/nphys3865}
-      \field{issn}{1745-2481}
-      \field{journaltitle}{Nature Physics}
-      \field{number}{10}
-      \field{title}{The physics of spreading processes in multilayer networks}
-      \field{volume}{12}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{pages}{901\bibrangedash 906}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1038/nphys3865
-      \endverb
     \endentry
     \entry{Granell2013}{inproceedings}{}{}
       \name{author}{3}{}{%
@@ -8639,8 +8800,8 @@
       \strng{authornamehash}{34d0d7ce5de6dfd9dc8ff64d3122aeda}
       \strng{authorfullhash}{74dcad26fb615539436bb58c24065547}
       \strng{authorfullhashraw}{74dcad26fb615539436bb58c24065547}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nature Medicine, doi:10.1038/s41591-020-0883-7}
@@ -8705,8 +8866,8 @@
       \strng{authornamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
       \strng{authorfullhash}{5f5fc66e1711d96b623b9fd9b90b0866}
       \strng{authorfullhashraw}{5f5fc66e1711d96b623b9fd9b90b0866}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Science 2020.369:eabb9789}
@@ -8795,8 +8956,8 @@
       \strng{editornamehash}{44327750232563d8a7f59b2d00248c85}
       \strng{editorfullhash}{44327750232563d8a7f59b2d00248c85}
       \strng{editorfullhashraw}{44327750232563d8a7f59b2d00248c85}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1932-6203}
@@ -9154,50 +9315,6 @@
       \verb 10.1371/journal.pcbi.1002452
       \endverb
     \endentry
-    \entry{Epstein_2021}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=ac29b1adefc5d4d182dabb3ee146a662}{%
-           family={Epstein},
-           familyi={E\bibinitperiod},
-           given={Joshua\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d628b8d06062c8aa685dfe36e1709d2b}{%
-           family={Hatna},
-           familyi={H\bibinitperiod},
-           given={Erez},
-           giveni={E\bibinitperiod}}}%
-        {{hash=30703b9cc19fef4d69fb1a1fc842f9ee}{%
-           family={Crodelle},
-           familyi={C\bibinitperiod},
-           given={Jennifer},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The Royal Society}%
-      }
-      \strng{namehash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{fullhash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{fullhashraw}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{bibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{authorbibnamehash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{authornamehash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{authorfullhash}{b217f7cfd02934cbb5b3dea007b6309a}
-      \strng{authorfullhashraw}{b217f7cfd02934cbb5b3dea007b6309a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of The Royal Society Interface}
-      \field{number}{181}
-      \field{title}{Triple contagion: a two-fears epidemic model}
-      \field{volume}{18}
-      \field{year}{2021}
-      \field{pages}{20210186}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1098/rsif.2021.0186
-      \endverb
-    \endentry
     \entry{wakefield1998retracted}{article}{}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -9264,8 +9381,8 @@
       \strng{authornamehash}{1d9ebe77271a88238033449708275af4}
       \strng{authorfullhash}{8a8736e517a4d46ef27c1ad15390f248}
       \strng{authorfullhashraw}{8a8736e517a4d46ef27c1ad15390f248}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The lancet}
@@ -9305,8 +9422,8 @@
       \strng{authornamehash}{ff1c03a739440c9b4d3323c9f615dd53}
       \strng{authorfullhash}{ff1c03a739440c9b4d3323c9f615dd53}
       \strng{authorfullhashraw}{ff1c03a739440c9b4d3323c9f615dd53}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, a non-linear mathematical model for the effects of awareness programs on the spread of infectious diseases such as flu has been proposed and analyzed. In the modeling process it is assumed that disease spreads due to the contact between susceptibles and infectives only. The growth rate of awareness programs impacting the population is assumed to be proportional to the number of infective individuals. It is further assumed that due to the effect of media, susceptible individuals form a separate class and avoid contact with the infectives. The model is analyzed by using stability theory of differential equations. The model analysis shows that the spread of an infectious disease can be controlled by using awareness programs but the disease remains endemic due to immigration. The simulation analysis of the model confirms the analytical results.}
@@ -9794,64 +9911,6 @@
       \verb 10.1038/s41562-021-01136-2
       \endverb
     \endentry
-    \entry{Wang_2015_review}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=d23f8780b31a9738eb2ec5f9c954bcb4}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Zhen},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=edcf90b40707bb5cd30ca87716ff6a80}{%
-           family={Andrews},
-           familyi={A\bibinitperiod},
-           given={Michael\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=1773e4a48eed2ca15a4eb383a2801e8a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Zhi-Xi},
-           giveni={Z\bibinithyphendelim X\bibinitperiod}}}%
-        {{hash=90363e7455b37d0f07cd7e927b294868}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Lin},
-           giveni={L\bibinitperiod}}}%
-        {{hash=aaeaf01943de2213dfead115b7943525}{%
-           family={Bauch},
-           familyi={B\bibinitperiod},
-           given={Chris\bibnamedelima T.},
-           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier BV}%
-      }
-      \strng{namehash}{bcc0ee0115ca53333821bd83b79eadf2}
-      \strng{fullhash}{8e97b687d1ca39a947f1ac7401361ef1}
-      \strng{fullhashraw}{8e97b687d1ca39a947f1ac7401361ef1}
-      \strng{bibnamehash}{bcc0ee0115ca53333821bd83b79eadf2}
-      \strng{authorbibnamehash}{bcc0ee0115ca53333821bd83b79eadf2}
-      \strng{authornamehash}{bcc0ee0115ca53333821bd83b79eadf2}
-      \strng{authorfullhash}{8e97b687d1ca39a947f1ac7401361ef1}
-      \strng{authorfullhashraw}{8e97b687d1ca39a947f1ac7401361ef1}
-      \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Physics of Life Reviews, 15 (2015) 1â•ﬁ29. 10.1016/j.plrev.2015.07.006}
-      \field{issn}{1571-0645}
-      \field{journaltitle}{Physics of Life Reviews}
-      \field{number}{China.}
-      \field{title}{Coupled disease–behavior dynamics on complex networks: A review}
-      \field{volume}{15}
-      \field{year}{2015}
-      \field{pages}{1\bibrangedash 29}
-      \range{pages}{29}
-      \verb{doi}
-      \verb 10.1016/j.plrev.2015.07.006
-      \endverb
-      \keyw{Disease behavior dynamics,Decision-making,Vaccination,Networks,Social distancing}
-    \endentry
     \entry{Peng2021}{article}{}{}
       \name{author}{8}{}{%
         {{hash=db57e1ed1810ad3d01de7f7f8952ae03}{%
@@ -9951,8 +10010,8 @@
       \strng{authornamehash}{02bd60434185e4ffa62bb83d8e203a34}
       \strng{authorfullhash}{02bd60434185e4ffa62bb83d8e203a34}
       \strng{authorfullhashraw}{02bd60434185e4ffa62bb83d8e203a34}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Scientific Reports, https://doi.org/10.1038/s41598-021-81149-z}
@@ -9991,8 +10050,8 @@
       \strng{authornamehash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authorfullhash}{221c56f095d1df8928d27ab71c5dc21f}
       \strng{authorfullhashraw}{221c56f095d1df8928d27ab71c5dc21f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The last two years have been an extraordinary time with the Covid-19 pandemic killing millions, affecting and distressing billions of people worldwide. Authorities took various measures such as turning school and work to remote and prohibiting social relations via curfews. In order to mitigate the negative impact of the epidemics, researchers tried to estimate the future of the pandemic for different scenarios, using forecasting techniques and epidemics simulations on networks. Networks used in these research are either synthetic networks or real networks with limited size and domain specific interactions. Hence, their ability to represent the world is limited. Intending to represent real-life in an urban town in high resolution, we propose a parametric multi-layer undirected weighted network model, where vertices are the individuals of a town that tend to interact locally, and edges represent transmission probability. Each layer corresponds to a different interaction that occurs daily, such as "household", "work" or "school", with their own transmission probability. Our simulations indicate that locking down "friendship" layer has the highest impact in slowing down epidemics. Hence, our contributions are twofold, first we propose a parametric network generator model; second, we run SIR simulations on it and show the impact of layers.}
@@ -10132,8 +10191,8 @@
       \strng{authornamehash}{bbd92bd9190519d834ca656250f448b6}
       \strng{authorfullhash}{bbd92bd9190519d834ca656250f448b6}
       \strng{authorfullhashraw}{bbd92bd9190519d834ca656250f448b6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Health Economics}
@@ -10182,8 +10241,8 @@
       \strng{authorfullhash}{38467f0a4cd2a0d327f83bcbf6808150}
       \strng{authorfullhashraw}{38467f0a4cd2a0d327f83bcbf6808150}
       \field{extraname}{3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1550-2376}
@@ -10412,65 +10471,6 @@
       \verb{doi}
       \verb 10.1371/journal.pone.0186492
       \endverb
-    \endentry
-    \entry{teslya2022}{inproceedings}{}{}
-      \name{author}{4}{}{%
-        {{hash=702ed7b3713cf2d11ccdd4802f09867b}{%
-           family={Teslya},
-           familyi={T\bibinitperiod},
-           given={Alexandra},
-           giveni={A\bibinitperiod}}}%
-        {{hash=bdff9c8fd9e11e21a13c60308f48d70f}{%
-           family={Nunner},
-           familyi={N\bibinitperiod},
-           given={Hendrik},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ba8975270a2920ece46a34ae7d7bf0f3}{%
-           family={Buskens},
-           familyi={B\bibinitperiod},
-           given={Vincent},
-           giveni={V\bibinitperiod}}}%
-        {{hash=aa8edd1b623e5e77a57159775185c7d3}{%
-           family={Kretzschmar},
-           familyi={K\bibinitperiod},
-           given={Mirjam\bibnamedelima E.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=3e74e28774ffb3065e8ed4921a6c23d5}{%
-           family={Gavrilets},
-           familyi={G\bibinitperiod},
-           given={Sergey},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press ({OUP})}%
-      }
-      \strng{namehash}{0b5bc8936a992195677ebe621d59cae2}
-      \strng{fullhash}{a0498981081256351d0877afb9116afe}
-      \strng{fullhashraw}{a0498981081256351d0877afb9116afe}
-      \strng{bibnamehash}{0b5bc8936a992195677ebe621d59cae2}
-      \strng{authorbibnamehash}{0b5bc8936a992195677ebe621d59cae2}
-      \strng{authornamehash}{0b5bc8936a992195677ebe621d59cae2}
-      \strng{authorfullhash}{a0498981081256351d0877afb9116afe}
-      \strng{authorfullhashraw}{a0498981081256351d0877afb9116afe}
-      \strng{editorbibnamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
-      \strng{editornamehash}{3e74e28774ffb3065e8ed4921a6c23d5}
-      \strng{editorfullhash}{3e74e28774ffb3065e8ed4921a6c23d5}
-      \strng{editorfullhashraw}{3e74e28774ffb3065e8ed4921a6c23d5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{{PNAS} Nexus}
-      \field{number}{5}
-      \field{title}{The effect of competition between health opinions on epidemic dynamics}
-      \field{volume}{1}
-      \field{year}{2022}
-      \verb{doi}
-      \verb https://doi.org/10.1093/pnasnexus/pgac260
-      \endverb
-      \keyw{health behavior,socio-epidemiological model,behavioral response,opinion dynamics,prophylactic behavior}
     \endentry
     \entry{Tanaka_2002}{article}{}{}
       \name{author}{3}{}{%
