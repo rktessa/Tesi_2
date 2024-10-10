@@ -1,7 +1,7 @@
 \part{Behavioral Disease Model}
-
+\label{part:the_model}
 \chapter{Epidemic and Behavioral model alone: a presentation}
-
+\label{ch:model_alone}
 
 
 To develop a multi-layer network combining an epidemiological layer with a behavioral one, we first study the dynamics of each layer separately, as presented here. 
@@ -24,6 +24,7 @@ Considering the effect of people behaviour on the evolution of a disease, it is 
 All'inizio il sirs si comporterà come un modello sir normal, perchè non ci saranno abbbastanza tempo trascorso perchè le persone possano reinfettarsi. Però dopo le persone posso no reinfettarsi e la loro opinione e comportamento diventerà importante. da spiegare meglio
 
 \section{Behavioural model}
+\label{sec:behavioral_model}
 The behavioural network alone is composed of three compartments.
 These are Compliant, $Co$, Careless $Ca$, Against $Ag$. 
 The differential equations describing the model evolution are \ref{eq:behavioural_eq}: 
@@ -222,6 +223,7 @@ The threshold effect is clearly visible also here. Looking at the Compliant and 
 
 
 \chapter{Models description and analysis}
+\label{ch:epi_behav_model}
 \section{Behavioral epidemic model}
 
 The model is composed of two layers coupled together: a disease layer, describing the evolution of an epidemic, and a behaviour layer describing the transition among different behaviours during the epidemic development.
@@ -358,7 +360,7 @@ The resulting $R_0$ find with this method is:
 \begin{figure}
 	\centering
 	\includegraphics[width=0.99\linewidth]{1_corpo/figure/r0/ro_epidemic_behavioural}
-	\caption[reproduction number of epidemic behaviour model.]{Basic reproduction number of the epidemic behaviour model.}
+	\caption[Reproduction number of epidemic behaviour model.]{Basic reproduction number of the epidemic behaviour model.}
 	\label{fig:roepidemicbehavioural}
 \end{figure}
 
@@ -391,13 +393,13 @@ The epidemic-behaviour reproduction number found using the formula and assuming 
 
 It is immediately noticed that the reproduction number is way below the threshold value of 1. According to the theorem presented in \cite{arino2007} there cannot be the spread of disease if the initial $R_0$ is under this value. A simulation of the system dynamic confirms this situation. Observing figure \ref{fig:infected00_epi_behav} can be seen that the number of infected tends to decrease and goes to zero. Then the majority of the population remains in the Susceptible compartment, splitting into compliant and heedless subgroups. This is due to the strongest attractivity of compliant behavior simulated in this scenario.  
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\subfloat[][\emph{susceptibles compartments}]
+	\subfloat[][\emph{Susceptibles compartments}]
 	{\includegraphics[width=.45\textwidth]{1_corpo/figure/r0/susceptible00_epi_behav}} \quad
-	\subfloat[][\emph{infected compartments}]
+	\subfloat[][\emph{Infected compartments}]
 	{\includegraphics[width=.45\textwidth]{1_corpo/figure/r0/infected00_epi_behav}} \\
-	\subfloat[][\emph{recovered compartment}]
+	\subfloat[][\emph{Recovered compartment}]
 	{\includegraphics[width=.45\textwidth]{1_corpo/figure/r0/recovered00_epi_behav}}
 	\caption[Epidemic behavioral model $R_0$]{Evolution of the behavioral epidemic model, with fixed parameters for the coefficients and an initial reproduction rate less than $1$. It is observed that there aren't conditions for an epidemic to spread.}
 	\label{fig:infected00_epi_behav}
@@ -407,7 +409,7 @@ It is immediately noticed that the reproduction number is way below the threshol
 
 A second test performed on the find $R_0^{epi-behav}$ wants to understand what are the parameters that influence more its value. The aim is to find which combination of coefficients can have a critical impact in the first phase of the disease and cause an overshoot of the threshold value. The value of the reproductive rate is then calculated varying the coefficients and the results are now presented in \ref{fig:r0_epi_behav_coef}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{$R_0$ varying the initial population value in susceptible compliant and susceptible against group. The more the population is against the higher the reproductive ratio.}]
 	{\includegraphics[width=.45\textwidth]{1_corpo/figure/r0/r0_epi_behav_SC_SA}} \quad

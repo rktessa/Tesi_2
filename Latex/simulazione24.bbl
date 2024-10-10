@@ -7231,6 +7231,43 @@
       \verb 10.1016/s0140-6736(24)00685-8
       \endverb
     \endentry
+    \entry{owid_historical_pandemics}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=72e39f6fbf1c6fa199e6a3650839c77d}{%
+           family={Dattani},
+           familyi={D\bibinitperiod},
+           given={Saloni},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{fullhash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{fullhashraw}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{bibnamehash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{authorbibnamehash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{authornamehash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{authorfullhash}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \strng{authorfullhashraw}{72e39f6fbf1c6fa199e6a3650839c77d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Our World in Data}
+      \field{note}{https://ourworldindata.org/historical-pandemics}
+      \field{title}{What were the death tolls from pandemics in history?}
+      \field{year}{2023}
+    \endentry
+    \entry{wiki_pandemics}{misc}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{List of epidemics and pandemics}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/List_of_epidemics_and_pandemics
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/List_of_epidemics_and_pandemics
+      \endverb
+    \endentry
     \entry{Yang_2020}{article}{}{}
       \name{author}{2}{}{%
         {{hash=777a394a188d28de8c61cd7c16525a48}{%
@@ -7255,8 +7292,8 @@
       \strng{authornamehash}{5639e2306f6b1ff5e9e75ee97f9342c5}
       \strng{authorfullhash}{5639e2306f6b1ff5e9e75ee97f9342c5}
       \strng{authorfullhashraw}{5639e2306f6b1ff5e9e75ee97f9342c5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0165-1781}
@@ -7292,8 +7329,8 @@
       \strng{authornamehash}{815fd1101dd6bf1917e905879fd00851}
       \strng{authorfullhash}{815fd1101dd6bf1917e905879fd00851}
       \strng{authorfullhashraw}{815fd1101dd6bf1917e905879fd00851}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Our World in Data}
@@ -7330,8 +7367,8 @@
       \strng{authornamehash}{a95a058914ba99afb66d331804d1e54f}
       \strng{authorfullhash}{a95a058914ba99afb66d331804d1e54f}
       \strng{authorfullhashraw}{a95a058914ba99afb66d331804d1e54f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Royal Society Open Science}
@@ -7343,6 +7380,104 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1098/rsos.202255
+      \endverb
+    \endentry
+    \entry{Hernandez_Vargas_2022}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=d7ec63687cee4a77769195ccdfa60786}{%
+           family={Hernandez-Vargas},
+           familyi={H\bibinithyphendelim V\bibinitperiod},
+           given={Esteban\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=da5c759a4f3c2d197a34625e2d73178a}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Alejandro\bibnamedelima H.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=dc1dff3fdb5030103fe1b5e49e0c6bc6}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Carolyn\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b10c749613158966a3f0f3d2ec99519c}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Xiaoqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d9b2c49d4125d388e8fc58e8cee85477}{%
+           family={Campana},
+           familyi={C\bibinitperiod},
+           given={Francesca\bibnamedelima Cala},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d32e38544884606b540a524e97669c9b}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{fullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \strng{fullhashraw}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \strng{bibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authorbibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authornamehash}{b06f45b7aeeba8ce61a51545eb509452}
+      \strng{authorfullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \strng{authorfullhashraw}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{2022 IEEE 61st Conference on Decision and Control (CDC), December 6-9, 2022, Cancun, Mexico}
+      \field{booktitle}{2022 IEEE 61st Conference on Decision and Control (CDC)}
+      \field{title}{Modelling and Control of Epidemics Across Scales}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1109/cdc51059.2022.9992380
+      \endverb
+      \keyw{Biological systems; Network analysis and control; Systems biology}
+    \endentry
+    \entry{Keeling_2005}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6ee28aa4f4453faac08243ef5af483c1}{%
+           family={Keeling},
+           familyi={K\bibinitperiod},
+           given={Matt\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=bbc83645de39b590627ab904ef26e205}{%
+           family={Eames},
+           familyi={E\bibinitperiod},
+           given={Ken\bibnamedelima T.D},
+           giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{fullhash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{fullhashraw}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{bibnamehash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{authorbibnamehash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{authornamehash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{authorfullhash}{a783d6aca1f760a9f6a78fce0f372f09}
+      \strng{authorfullhashraw}{a783d6aca1f760a9f6a78fce0f372f09}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1742-5662}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{month}{6}
+      \field{number}{4}
+      \field{title}{Networks and epidemic models}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{295\bibrangedash 307}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1098/rsif.2005.0051
       \endverb
     \endentry
     \entry{diekmann2000mathematical}{book}{}{}
@@ -7372,8 +7507,8 @@
       \strng{authornamehash}{43648b7e82614f8e3cd17bb9dea24227}
       \strng{authorfullhash}{43648b7e82614f8e3cd17bb9dea24227}
       \strng{authorfullhashraw}{43648b7e82614f8e3cd17bb9dea24227}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0471492418}
@@ -7413,8 +7548,8 @@
       \strng{authornamehash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
       \strng{authorfullhash}{07d1ded2b3fd9c8f7bcba8b7534778a0}
       \strng{authorfullhashraw}{07d1ded2b3fd9c8f7bcba8b7534778a0}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{40}
@@ -7441,8 +7576,8 @@
       \strng{authornamehash}{6a7cac31d3c402423d0235ff40a31912}
       \strng{authorfullhash}{6a7cac31d3c402423d0235ff40a31912}
       \strng{authorfullhashraw}{6a7cac31d3c402423d0235ff40a31912}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9783031094545}
@@ -7478,8 +7613,8 @@
       \strng{authornamehash}{d8c78b3950a10cdfc78d999df75dc3d3}
       \strng{authorfullhash}{d8c78b3950a10cdfc78d999df75dc3d3}
       \strng{authorfullhashraw}{d8c78b3950a10cdfc78d999df75dc3d3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1091-6490}
@@ -7760,8 +7895,8 @@
       \strng{authornamehash}{9f153fcf28757151a4ae20ac2e890c1f}
       \strng{authorfullhash}{9f153fcf28757151a4ae20ac2e890c1f}
       \strng{authorfullhashraw}{9f153fcf28757151a4ae20ac2e890c1f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1550-8382}
@@ -7795,8 +7930,8 @@
       \strng{authornamehash}{ada77985624667c8c96635b52dadb4fd}
       \strng{authorfullhash}{ada77985624667c8c96635b52dadb4fd}
       \strng{authorfullhashraw}{ada77985624667c8c96635b52dadb4fd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1537-5390}
@@ -7809,77 +7944,6 @@
       \range{pages}{24}
       \verb{doi}
       \verb 10.1086/226707
-      \endverb
-    \endentry
-    \entry{Bramson_2017}{article}{}{}
-      \name{author}{8}{}{%
-        {{hash=539112d248445693ec08e25aa47faa34}{%
-           family={Bramson},
-           familyi={B\bibinitperiod},
-           given={Aaron},
-           giveni={A\bibinitperiod}}}%
-        {{hash=ad70c5e35134aca46cbff28738ab030c}{%
-           family={Grim},
-           familyi={G\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=00977feace5ead5d310eea12a5221be2}{%
-           family={Singer},
-           familyi={S\bibinitperiod},
-           given={Daniel\bibnamedelima J.},
-           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=7c901bba9691bf74dd1a6d7556582553}{%
-           family={Berger},
-           familyi={B\bibinitperiod},
-           given={William\bibnamedelima J.},
-           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=496ae957f9e2779cc9b9089f6d380a70}{%
-           family={Sack},
-           familyi={S\bibinitperiod},
-           given={Graham},
-           giveni={G\bibinitperiod}}}%
-        {{hash=5d63efef15a65a63a5e269689fb62ec7}{%
-           family={Fisher},
-           familyi={F\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6ff30a337db8172c5def72bcee0c34bd}{%
-           family={Flocken},
-           familyi={F\bibinitperiod},
-           given={Carissa},
-           giveni={C\bibinitperiod}}}%
-        {{hash=f61f5e8a5d8497a809156579f5f5b700}{%
-           family={Holman},
-           familyi={H\bibinitperiod},
-           given={Bennett},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press (CUP)}%
-      }
-      \strng{namehash}{6470b755ec57254fd5891c1781a2aa05}
-      \strng{fullhash}{51a8067eed975d74167db345745213b3}
-      \strng{fullhashraw}{51a8067eed975d74167db345745213b3}
-      \strng{bibnamehash}{6470b755ec57254fd5891c1781a2aa05}
-      \strng{authorbibnamehash}{6470b755ec57254fd5891c1781a2aa05}
-      \strng{authornamehash}{6470b755ec57254fd5891c1781a2aa05}
-      \strng{authorfullhash}{51a8067eed975d74167db345745213b3}
-      \strng{authorfullhashraw}{51a8067eed975d74167db345745213b3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Polarization is a topic of intense interest among social scientists, but there is significant disagreement regarding the character of the phenomenon and little understanding of underlying mechanics. A first problem, we argue, is that polarization appears in the literature as not one concept but many. In the first part of the article, we distinguish nine phenomena that may be considered polarization, with suggestions of appropriate measures for each. In the second part of the article, we apply this analysis to evaluate the types of polarization generated by the three major families of computational models proposing specific mechanisms of opinion polarization.}
-      \field{issn}{1539-767X}
-      \field{journaltitle}{Philosophy of Science}
-      \field{number}{1}
-      \field{title}{Understanding Polarization: Meanings, Measures, and Model Evaluation}
-      \field{volume}{84}
-      \field{year}{2017}
-      \field{pages}{115\bibrangedash 159}
-      \range{pages}{45}
-      \verb{doi}
-      \verb 10.1086/688938
       \endverb
     \endentry
     \entry{kermack1927}{article}{}{}
@@ -7967,62 +8031,160 @@
       \verb https://books.google.it/books?id=HT0--xXBguQC&lpg=PA1&hl=it&pg=PA1#v=onepage&q&f=false
       \endverb
     \endentry
-    \entry{Hernandez_Vargas_2022}{inproceedings}{}{}
-      \name{author}{6}{}{%
-        {{hash=d7ec63687cee4a77769195ccdfa60786}{%
-           family={Hernandez-Vargas},
-           familyi={H\bibinithyphendelim V\bibinitperiod},
-           given={Esteban\bibnamedelima A.},
-           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=da5c759a4f3c2d197a34625e2d73178a}{%
-           family={Gonzalez},
-           familyi={G\bibinitperiod},
-           given={Alejandro\bibnamedelima H.},
-           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=dc1dff3fdb5030103fe1b5e49e0c6bc6}{%
-           family={Beck},
-           familyi={B\bibinitperiod},
-           given={Carolyn\bibnamedelima L.},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b10c749613158966a3f0f3d2ec99519c}{%
-           family={Bi},
-           familyi={B\bibinitperiod},
-           given={Xiaoqi},
-           giveni={X\bibinitperiod}}}%
-        {{hash=d9b2c49d4125d388e8fc58e8cee85477}{%
-           family={Campana},
-           familyi={C\bibinitperiod},
-           given={Francesca\bibnamedelima Cala},
-           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=d32e38544884606b540a524e97669c9b}{%
-           family={Giordano},
-           familyi={G\bibinitperiod},
-           given={Giulia},
-           giveni={G\bibinitperiod}}}%
+    \entry{Dehning_2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=a52f07003b89274cd62698143dc7e564}{%
+           family={Dehning},
+           familyi={D\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=aa22fd53bda5692a8b72821af1141c54}{%
+           family={Zierenberg},
+           familyi={Z\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=652b63803967090e20b8163cad88c553}{%
+           family={Spitzner},
+           familyi={S\bibinitperiod},
+           given={F.\bibnamedelimi Paul},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=b28cc7b4dfd261ce990d63e7e79adb36}{%
+           family={Wibral},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df614145226230c8e4cde38c9e8b0766}{%
+           family={Neto},
+           familyi={N\bibinitperiod},
+           given={Joao\bibnamedelima Pinheiro},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=34ef0b0ae7e47e8a9635fc4bca5f0834}{%
+           family={Wilczek},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fb278d39f81cd393535c4ef5bccd9fc5}{%
+           family={Priesemann},
+           familyi={P\bibinitperiod},
+           given={Viola},
+           giveni={V\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {IEEE}%
+        {American Association for the Advancement of Science (AAAS)}%
       }
-      \strng{namehash}{b06f45b7aeeba8ce61a51545eb509452}
-      \strng{fullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
-      \strng{fullhashraw}{a034daabd0774b4c1b4ff5c679d5fe49}
-      \strng{bibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
-      \strng{authorbibnamehash}{b06f45b7aeeba8ce61a51545eb509452}
-      \strng{authornamehash}{b06f45b7aeeba8ce61a51545eb509452}
-      \strng{authorfullhash}{a034daabd0774b4c1b4ff5c679d5fe49}
-      \strng{authorfullhashraw}{a034daabd0774b4c1b4ff5c679d5fe49}
+      \strng{namehash}{3a3f3ab1a63036d4c2eeae3be2373543}
+      \strng{fullhash}{5f5fc66e1711d96b623b9fd9b90b0866}
+      \strng{fullhashraw}{5f5fc66e1711d96b623b9fd9b90b0866}
+      \strng{bibnamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
+      \strng{authorbibnamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
+      \strng{authornamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
+      \strng{authorfullhash}{5f5fc66e1711d96b623b9fd9b90b0866}
+      \strng{authorfullhashraw}{5f5fc66e1711d96b623b9fd9b90b0866}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{2022 IEEE 61st Conference on Decision and Control (CDC), December 6-9, 2022, Cancun, Mexico}
-      \field{booktitle}{2022 IEEE 61st Conference on Decision and Control (CDC)}
-      \field{title}{Modelling and Control of Epidemics Across Scales}
-      \field{year}{2022}
+      \field{abstract}{Science 2020.369:eabb9789}
+      \field{issn}{1095-9203}
+      \field{journaltitle}{Science}
+      \field{number}{6500}
+      \field{title}{Inferring change points in the spread of COVID-19 reveals the effectiveness of interventions}
+      \field{volume}{369}
+      \field{year}{2020}
       \verb{doi}
-      \verb 10.1109/cdc51059.2022.9992380
+      \verb 10.1126/science.abb9789
       \endverb
-      \keyw{Biological systems; Network analysis and control; Systems biology}
+    \endentry
+    \entry{Proverbio_2021}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=7e1587ff0b2b9e9c48a8cfb6c53753a3}{%
+           family={Proverbio},
+           familyi={P\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6e36f688f078f1bbdb4909d3aa49176d}{%
+           family={Kemp},
+           familyi={K\bibinitperiod},
+           given={Françoise},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d27190787bd98ea56bbf9dce3a6db957}{%
+           family={Magni},
+           familyi={M\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a2ffe6a5404c79d146672d588bb32273}{%
+           family={Husch},
+           familyi={H\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=430245f7c52653badd6df3220b5871ef}{%
+           family={Aalto},
+           familyi={A\bibinitperiod},
+           given={Atte},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ed2f783842325ddebcc5be12e609408a}{%
+           family={Mombaerts},
+           familyi={M\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=25aa85be565201caadba153ea4c1b0bf}{%
+           family={Skupin},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c3eb8643ace043e450328774cba12bad}{%
+           family={Gonçalves},
+           familyi={G\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6f31c5d89490d37b7ddc11680f98caa4}{%
+           family={Ameijeiras-Alonso},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f15803860efce73df25c32aa1e1a015c}{%
+           family={Ley},
+           familyi={L\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=44327750232563d8a7f59b2d00248c85}{%
+           family={Tizzoni},
+           familyi={T\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science (PLoS)}%
+      }
+      \strng{namehash}{df5a6f66afdcbc340f03fc107cd46300}
+      \strng{fullhash}{9d669cb61a02eccf86421e0d82e78d0c}
+      \strng{fullhashraw}{9d669cb61a02eccf86421e0d82e78d0c}
+      \strng{bibnamehash}{df5a6f66afdcbc340f03fc107cd46300}
+      \strng{authorbibnamehash}{df5a6f66afdcbc340f03fc107cd46300}
+      \strng{authornamehash}{df5a6f66afdcbc340f03fc107cd46300}
+      \strng{authorfullhash}{9d669cb61a02eccf86421e0d82e78d0c}
+      \strng{authorfullhashraw}{9d669cb61a02eccf86421e0d82e78d0c}
+      \strng{editorbibnamehash}{44327750232563d8a7f59b2d00248c85}
+      \strng{editornamehash}{44327750232563d8a7f59b2d00248c85}
+      \strng{editorfullhash}{44327750232563d8a7f59b2d00248c85}
+      \strng{editorfullhashraw}{44327750232563d8a7f59b2d00248c85}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1932-6203}
+      \field{journaltitle}{PLOS ONE}
+      \field{number}{5}
+      \field{title}{Dynamical SPQEIR model assesses the effectiveness of non-pharmaceutical interventions against COVID-19 epidemic outbreaks}
+      \field{volume}{16}
+      \field{year}{2021}
+      \field{pages}{e0252019}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0252019
+      \endverb
     \endentry
     \entry{Hethcote_2000}{article}{}{}
       \name{author}{1}{}{%
@@ -8145,8 +8307,8 @@
       \strng{authornamehash}{e30f9f742e1aa8fc632996b31b6c8cf8}
       \strng{authorfullhash}{e30f9f742e1aa8fc632996b31b6c8cf8}
       \strng{authorfullhashraw}{e30f9f742e1aa8fc632996b31b6c8cf8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{General Mathematics Notes}
@@ -8191,8 +8353,8 @@
       \strng{authornamehash}{cde5b2d8d55207dc1c1dc5454d9ab996}
       \strng{authorfullhash}{a4b33dfc599bf7217073d8b77743cb3c}
       \strng{authorfullhashraw}{a4b33dfc599bf7217073d8b77743cb3c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nonlinear Analysis: Real World Applications, 58 (2021) 103220. doi:10.1016/j.nonrwa.2020.103220}
@@ -8412,8 +8574,8 @@
       \strng{authornamehash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
       \strng{authorfullhash}{4bf3b98e94373b42e6f6e6dfddaf4daa}
       \strng{authorfullhashraw}{4bf3b98e94373b42e6f6e6dfddaf4daa}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1095-3787}
@@ -8458,8 +8620,8 @@
       \strng{authornamehash}{d22e4a33a9757ee048b71c09419afff7}
       \strng{authorfullhash}{d22e4a33a9757ee048b71c09419afff7}
       \strng{authorfullhashraw}{d22e4a33a9757ee048b71c09419afff7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1558-2566}
@@ -8736,8 +8898,8 @@
       \strng{authornamehash}{1fb11de6a6440622054bb232e440301f}
       \strng{authorfullhash}{1fb11de6a6440622054bb232e440301f}
       \strng{authorfullhashraw}{1fb11de6a6440622054bb232e440301f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Modeling the Interplay Between Human Behavior and the Spread of Infectious Diseases}
@@ -8815,161 +8977,6 @@
       \range{pages}{6}
       \verb{doi}
       \verb 10.1038/s41591-020-0883-7
-      \endverb
-    \endentry
-    \entry{Dehning_2020}{article}{}{}
-      \name{author}{7}{}{%
-        {{hash=a52f07003b89274cd62698143dc7e564}{%
-           family={Dehning},
-           familyi={D\bibinitperiod},
-           given={Jonas},
-           giveni={J\bibinitperiod}}}%
-        {{hash=aa22fd53bda5692a8b72821af1141c54}{%
-           family={Zierenberg},
-           familyi={Z\bibinitperiod},
-           given={Johannes},
-           giveni={J\bibinitperiod}}}%
-        {{hash=652b63803967090e20b8163cad88c553}{%
-           family={Spitzner},
-           familyi={S\bibinitperiod},
-           given={F.\bibnamedelimi Paul},
-           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=b28cc7b4dfd261ce990d63e7e79adb36}{%
-           family={Wibral},
-           familyi={W\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=df614145226230c8e4cde38c9e8b0766}{%
-           family={Neto},
-           familyi={N\bibinitperiod},
-           given={Joao\bibnamedelima Pinheiro},
-           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=34ef0b0ae7e47e8a9635fc4bca5f0834}{%
-           family={Wilczek},
-           familyi={W\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fb278d39f81cd393535c4ef5bccd9fc5}{%
-           family={Priesemann},
-           familyi={P\bibinitperiod},
-           given={Viola},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science (AAAS)}%
-      }
-      \strng{namehash}{3a3f3ab1a63036d4c2eeae3be2373543}
-      \strng{fullhash}{5f5fc66e1711d96b623b9fd9b90b0866}
-      \strng{fullhashraw}{5f5fc66e1711d96b623b9fd9b90b0866}
-      \strng{bibnamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
-      \strng{authorbibnamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
-      \strng{authornamehash}{3a3f3ab1a63036d4c2eeae3be2373543}
-      \strng{authorfullhash}{5f5fc66e1711d96b623b9fd9b90b0866}
-      \strng{authorfullhashraw}{5f5fc66e1711d96b623b9fd9b90b0866}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Science 2020.369:eabb9789}
-      \field{issn}{1095-9203}
-      \field{journaltitle}{Science}
-      \field{number}{6500}
-      \field{title}{Inferring change points in the spread of COVID-19 reveals the effectiveness of interventions}
-      \field{volume}{369}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.1126/science.abb9789
-      \endverb
-    \endentry
-    \entry{Proverbio_2021}{article}{}{}
-      \name{author}{10}{}{%
-        {{hash=7e1587ff0b2b9e9c48a8cfb6c53753a3}{%
-           family={Proverbio},
-           familyi={P\bibinitperiod},
-           given={Daniele},
-           giveni={D\bibinitperiod}}}%
-        {{hash=6e36f688f078f1bbdb4909d3aa49176d}{%
-           family={Kemp},
-           familyi={K\bibinitperiod},
-           given={Françoise},
-           giveni={F\bibinitperiod}}}%
-        {{hash=d27190787bd98ea56bbf9dce3a6db957}{%
-           family={Magni},
-           familyi={M\bibinitperiod},
-           given={Stefano},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a2ffe6a5404c79d146672d588bb32273}{%
-           family={Husch},
-           familyi={H\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod}}}%
-        {{hash=430245f7c52653badd6df3220b5871ef}{%
-           family={Aalto},
-           familyi={A\bibinitperiod},
-           given={Atte},
-           giveni={A\bibinitperiod}}}%
-        {{hash=ed2f783842325ddebcc5be12e609408a}{%
-           family={Mombaerts},
-           familyi={M\bibinitperiod},
-           given={Laurent},
-           giveni={L\bibinitperiod}}}%
-        {{hash=25aa85be565201caadba153ea4c1b0bf}{%
-           family={Skupin},
-           familyi={S\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=c3eb8643ace043e450328774cba12bad}{%
-           family={Gonçalves},
-           familyi={G\bibinitperiod},
-           given={Jorge},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6f31c5d89490d37b7ddc11680f98caa4}{%
-           family={Ameijeiras-Alonso},
-           familyi={A\bibinithyphendelim A\bibinitperiod},
-           given={Jose},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f15803860efce73df25c32aa1e1a015c}{%
-           family={Ley},
-           familyi={L\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=44327750232563d8a7f59b2d00248c85}{%
-           family={Tizzoni},
-           familyi={T\bibinitperiod},
-           given={Michele},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Public Library of Science (PLoS)}%
-      }
-      \strng{namehash}{df5a6f66afdcbc340f03fc107cd46300}
-      \strng{fullhash}{9d669cb61a02eccf86421e0d82e78d0c}
-      \strng{fullhashraw}{9d669cb61a02eccf86421e0d82e78d0c}
-      \strng{bibnamehash}{df5a6f66afdcbc340f03fc107cd46300}
-      \strng{authorbibnamehash}{df5a6f66afdcbc340f03fc107cd46300}
-      \strng{authornamehash}{df5a6f66afdcbc340f03fc107cd46300}
-      \strng{authorfullhash}{9d669cb61a02eccf86421e0d82e78d0c}
-      \strng{authorfullhashraw}{9d669cb61a02eccf86421e0d82e78d0c}
-      \strng{editorbibnamehash}{44327750232563d8a7f59b2d00248c85}
-      \strng{editornamehash}{44327750232563d8a7f59b2d00248c85}
-      \strng{editorfullhash}{44327750232563d8a7f59b2d00248c85}
-      \strng{editorfullhashraw}{44327750232563d8a7f59b2d00248c85}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1932-6203}
-      \field{journaltitle}{PLOS ONE}
-      \field{number}{5}
-      \field{title}{Dynamical SPQEIR model assesses the effectiveness of non-pharmaceutical interventions against COVID-19 epidemic outbreaks}
-      \field{volume}{16}
-      \field{year}{2021}
-      \field{pages}{e0252019}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1371/journal.pone.0252019
       \endverb
     \endentry
     \entry{Funk_2010}{article}{}{}
@@ -9247,8 +9254,8 @@
       \strng{authornamehash}{91e4b4a982f102db3d281b4d5eee7db8}
       \strng{authorfullhash}{91e4b4a982f102db3d281b4d5eee7db8}
       \strng{authorfullhashraw}{91e4b4a982f102db3d281b4d5eee7db8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Science 2013.342:47-49}
@@ -9299,8 +9306,8 @@
       \strng{editornamehash}{932172cbce9830fa1763c426c7088452}
       \strng{editorfullhash}{932172cbce9830fa1763c426c7088452}
       \strng{editorfullhashraw}{932172cbce9830fa1763c426c7088452}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1553-7358}
@@ -9965,8 +9972,8 @@
       \strng{authornamehash}{7069b3cbeb66c0a44c6954f50543b32e}
       \strng{authorfullhash}{58eb3f4a2de7915822e67c5191b14e63}
       \strng{authorfullhashraw}{58eb3f4a2de7915822e67c5191b14e63}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematical Models and Methods in Applied Sciences}
@@ -10837,6 +10844,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{CITARE_DEVO_RITROVARE_LA_FONTE}
 \endrefsection
 \endinput
 
