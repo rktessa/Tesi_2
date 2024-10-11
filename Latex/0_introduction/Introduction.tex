@@ -244,7 +244,7 @@ When working on a model the importance of the uncertainty related to claims real
 There are several different typologies of mathematical models developed.
 A first classification can be done considering the method used to obtain them: mechanistic, empirical, phenomenological or conceptual models.
 The mechanistic model is based on assumptions about reality, or theoretical principles, modeled using a collection of one or more variables together with a self-contained set of rules. These models have an explanatory value on the reality they represent.
-Empirical models are realized by fitting a set of data. It is a powerful instrument, because data can be modeled quite well, but they lack the explanatory value of the mechanistic model.
+Empirical models are realized by fitting a set of data. They are a powerful instruments, because data can be modeled quite well, but they lack the explanatory value of the mechanistic models.
 A phenomenological model describes the empirical relationships between phenomena in a way that aligns with fundamental theory, but it is not directly derived from first principles. These models define the relationships between variables and provide insights into the phenomenon under study. They are particularly useful in cases where no exact analytical solution exists to explain a certain scientific phenomenon.
 Finally, with conceptual model, it is meant a verbal description of a real-world scenario. 
 
@@ -255,13 +255,13 @@ For the present work, a mechanistic/phenomenological model is the strategy used.
 	\item obtaining general insight about control strategies
 	\item realize predictions
 \end{itemize}
-Considering the mechanistic category several different types of models have been developed or are adapted to be used in epidemiology modeling. In this section, the principal typologies are now introduced. 
-
- There is then a focus, in \ref{subsec:SIR}, because it represents the mathematical base model of the multi-layer system implemented in the present work. It is important to introduce the logic underlying its structure, its main mechanisms, and the first important conclusion that can be derived from it because it is a useful introduction to the approach that will later be employed in the rest of the thesis.
+Considering the mechanistic category, several different types of models have been developed or are adapted to be used in epidemiology modeling. In this section, the principal typologies are now introduced. 
+Regarding mean field model also a focus dedicated to its basic theretical concepts is done in section \ref{subsec:SIR}, because it represents the mathematical base model of the multi-layer system implemented in the present work. 
+It is important to introduce the logic underlying its structure, its main mechanisms, and the first important conclusion that can be derived from it because it is a useful introduction to the approach that will later be employed in the rest of the thesis.
 
 \subsection{Mean field models}
 \label{subsec:mean_field}
- Mean field models, also known as compartmental models are the first developed and most studied type of mathematical model used in epidemiology \cite{kermack1927, brauer2012mathematical, Anderson_82, anderson1991infectious}.  This model assumes that the well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected (if in the model no distinction between symptomatic or asymptomatic is done), exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine its base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one.
+ Mean field models, also known as compartmental models, are the first developed and most studied type of mathematical model used in epidemiology \cite{kermack1927, brauer2012mathematical, Anderson_82, anderson1991infectious}.  This model assumes that a well-mixed population is divided into several subgroups. Each compartment is a different stage of the disease under consideration. Some possible states are susceptibles, asymptomatic (infected), symptomatic (infected), infected (if in the model no distinction between symptomatic or asymptomatic is done), exposed, vaccinated, quarantined, dead, recovered, and hospitalized. The classes considered in the realized model determine its base structure. The choice to include a certain compartment depends on the disease that is modeled and on the assumptions that are under analysis. Different models can be suitable to analyze the same disease but can be used with different aims. The difference is that a more complex model can emphasize some aspects or effects of the disease, that are not highlighted by a simpler one.
  
 For example, both a SIR \cite{Dehning_2020} and a SPQEIR \cite{Proverbio_2021} can be used to model COVID-19, but the second model considers explicitly quarantine, exposed and use of protections to avoid infection. Elements that cannot be observed or considered with a simpler model like a SIR.
   
@@ -285,8 +285,14 @@ The foundational model for studying epidemics mathematically is the SI model. In
 An extension of this is the SIR model, which adds a third compartment, Recovered $(R)$. This additional compartment represents individuals who have either gained immunity or have died, removing them from the cycle of infection. After spending a certain period in the infected state, individuals transition to the recovered state, making them no longer susceptible to the disease.
 
   Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
-The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. The total population size used in which the three comportments are divided is 
-Usually, the assumption that N remains stable is made. This is possible considering that the term epidemic identifies a disease with a duration much lower than the life of a person. Considering this assumption the number of deaths and births can be neglected. Alternatively, we can consider that the number of births, which is an influx in the S compartment is roughly equal to the number of deaths, which is an outflux. These statements imply $s(t) + i(t) + r(t)= 1$ and $\dot{s}+ \dot{i} + \dot{r}= 0$.
+The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
+
+The total population size deriving from the sum of the three comportments are defined with the letter $N$.
+
+
+
+
+Usually, the assumption that N remains stable is done. This is possible considering that the term epidemic identifies a disease with a duration much lower than the life of a person. Considering this assumption the number of deaths and births can be neglected. Alternatively, we can consider that the number of births, which can be modeled as an influx in the S compartment is roughly equal to the number of deaths, which is an outflux. These statements imply $s(t) + i(t) + r(t)= 1$ and $\dot{s}+ \dot{i} + \dot{r}= 0$.
 The disease reproduces horizontal incidence within the population. So, it is the connection with others that causes the infection diffusion. 
 $\beta$ is a coefficient that expresses the number of adequate contacts on average of a person per unit of time. The simplest way to explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The formula  $\beta \frac{I}{N} = \beta i$ is then the average number of contacts with infectives per unit time of one susceptible. Finally, the number of new cases per unit of time due to the $S = N s$  susceptibles is $\beta \frac{I}{N} S = \beta N i s$. This form of horizontal incidence is called the standard
 incidence. In this incidence, there is no dependence on population size \cite{Hethcote_2000}. This is because the contact of individuals daily is independent of the country dimension in which they live. 

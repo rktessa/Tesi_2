@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  10 OCT 2024 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  11 OCT 2024 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2488,7 +2488,7 @@ File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
 <use 0_introduction/images_introduction/sir_con_rt.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
-d on input line 352.
+d on input line 358.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 <0_introduction/images_introduction/sir_multipli_beta.pdf, id=502, 682.55pt x 4
 26.59375pt>
@@ -2496,7 +2496,7 @@ File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
 <use 0_introduction/images_introduction/sir_multipli_beta.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_multipli_beta.p
-df  used on input line 354.
+df  used on input line 360.
 (pdftex.def)             Requested size: 202.7993pt x 126.74884pt.
 
 
@@ -2508,14 +2508,14 @@ File: 0_introduction/images_introduction/agent_based.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/agent_based.png>
 Package pdftex.def Info: 0_introduction/images_introduction/agent_based.png  us
-ed on input line 385.
+ed on input line 391.
 (pdftex.def)             Requested size: 211.25116pt x 99.02419pt.
 
 
 [30]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 406.
+               Default added (so using `htb') on input line 412.
 
 <0_introduction/images_introduction/multi_layer.png, id=534, 470.35725pt x 393.
 8715pt>
@@ -2523,7 +2523,7 @@ File: 0_introduction/images_introduction/multi_layer.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/multi_layer.png>
 Package pdftex.def Info: 0_introduction/images_introduction/multi_layer.png  us
-ed on input line 408.
+ed on input line 414.
 (pdftex.def)             Requested size: 253.50397pt x 212.28476pt.
 
 
@@ -2544,7 +2544,7 @@ File: 0_introduction/images_review/metacritical_point_granell_2013.png Graphic
 file (type png)
 <use 0_introduction/images_review/metacritical_point_granell_2013.png>
 Package pdftex.def Info: 0_introduction/images_review/metacritical_point_granel
-l_2013.png  used on input line 481.
+l_2013.png  used on input line 487.
 (pdftex.def)             Requested size: 198.5766pt x 143.02211pt.
 <0_introduction/images_review/metacritical_point_granell_2014.png, id=611, 770.
 27776pt x 552.26324pt>
@@ -2552,7 +2552,7 @@ File: 0_introduction/images_review/metacritical_point_granell_2014.png Graphic
 file (type png)
 <use 0_introduction/images_review/metacritical_point_granell_2014.png>
 Package pdftex.def Info: 0_introduction/images_review/metacritical_point_granel
-l_2014.png  used on input line 483.
+l_2014.png  used on input line 489.
 (pdftex.def)             Requested size: 207.02844pt x 148.43048pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2566,7 +2566,7 @@ File: 0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png Gra
 phic file (type png)
 <use 0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png>
 Package pdftex.def Info: 0_introduction/images_review/peng_2021_bertozzi_couple
-d_structure.png  used on input line 494.
+d_structure.png  used on input line 500.
 (pdftex.def)             Requested size: 266.17851pt x 182.47542pt.
 <0_introduction/images_review/silva2019_transition_trees.png, id=638, 738.3585p
 t x 482.40225pt>
@@ -2574,7 +2574,7 @@ File: 0_introduction/images_review/silva2019_transition_trees.png Graphic file
 (type png)
 <use 0_introduction/images_review/silva2019_transition_trees.png>
 Package pdftex.def Info: 0_introduction/images_review/silva2019_transition_tree
-s.png  used on input line 496.
+s.png  used on input line 502.
 (pdftex.def)             Requested size: 253.50397pt x 165.62662pt.
 
 
@@ -2593,7 +2593,7 @@ File: 0_introduction/images_review/stable_unstable_equilibria_friejs.png Graphi
 c file (type png)
 <use 0_introduction/images_review/stable_unstable_equilibria_friejs.png>
 Package pdftex.def Info: 0_introduction/images_review/stable_unstable_equilibri
-a_friejs.png  used on input line 514.
+a_friejs.png  used on input line 520.
 (pdftex.def)             Requested size: 401.3759pt x 109.55592pt.
 <0_introduction/images_review/disease_behavior_interaction_wang2015.png, id=667
 , 487.8225pt x 298.716pt>
@@ -2601,7 +2601,7 @@ File: 0_introduction/images_review/disease_behavior_interaction_wang2015.png Gr
 aphic file (type png)
 <use 0_introduction/images_review/disease_behavior_interaction_wang2015.png>
 Package pdftex.def Info: 0_introduction/images_review/disease_behavior_interact
-ion_wang2015.png  used on input line 527.
+ion_wang2015.png  used on input line 533.
 (pdftex.def)             Requested size: 160.55293pt x 98.31221pt.
 <0_introduction/images_review/risk_forecast_auld.png, id=668, 815.4465pt x 499.
 8675pt>
@@ -2609,7 +2609,7 @@ File: 0_introduction/images_review/risk_forecast_auld.png Graphic file (type pn
 g)
 <use 0_introduction/images_review/risk_forecast_auld.png>
 Package pdftex.def Info: 0_introduction/images_review/risk_forecast_auld.png  u
-sed on input line 529.
+sed on input line 535.
 (pdftex.def)             Requested size: 245.05211pt x 150.2131pt.
 
 
@@ -2624,7 +2624,7 @@ File: 0_introduction/images_review/turker_city_recreated.png Graphic file (type
  png)
 <use 0_introduction/images_review/turker_city_recreated.png>
 Package pdftex.def Info: 0_introduction/images_review/turker_city_recreated.png
-  used on input line 549.
+  used on input line 555.
 (pdftex.def)             Requested size: 380.2495pt x 126.81866pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2640,7 +2640,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: 0_introduction/images_review/alvarez_opi_vac.png Graphic file (type png)
 <use 0_introduction/images_review/alvarez_opi_vac.png>
 Package pdftex.def Info: 0_introduction/images_review/alvarez_opi_vac.png  used
- on input line 566.
+ on input line 572.
 (pdftex.def)             Requested size: 338.00314pt x 153.63788pt.
 
 
@@ -2652,14 +2652,14 @@ Package pdftex.def Info: 0_introduction/images_review/alvarez_opi_vac.png  used
 File: 0_introduction/images_review/Tanaka_model.png Graphic file (type png)
 <use 0_introduction/images_review/Tanaka_model.png>
 Package pdftex.def Info: 0_introduction/images_review/Tanaka_model.png  used on
- input line 599.
+ input line 605.
 (pdftex.def)             Requested size: 147.87839pt x 129.78012pt.
 <0_introduction/images_review/zou_2022_SEIRVM.png, id=735, 1088.26575pt x 493.8
 45pt>
 File: 0_introduction/images_review/zou_2022_SEIRVM.png Graphic file (type png)
 <use 0_introduction/images_review/zou_2022_SEIRVM.png>
 Package pdftex.def Info: 0_introduction/images_review/zou_2022_SEIRVM.png  used
- on input line 601.
+ on input line 607.
 (pdftex.def)             Requested size: 253.50397pt x 115.0363pt.
 
 
@@ -3055,7 +3055,7 @@ KTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
 ic/lm/lmro9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/P
 rogram Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/lm/lmtt12.pfb>
-Output written on simulazione24.pdf (77 pages, 5034026 bytes).
+Output written on simulazione24.pdf (77 pages, 5034124 bytes).
 PDF statistics:
  1256 PDF objects out of 1440 (max. 8388607)
  263 named destinations out of 1000 (max. 500000)
