@@ -283,31 +283,52 @@ The most critical metric in these models is the "basic reproduction number" (oft
 The foundational model for studying epidemics mathematically is the SI model. In this model, the population is divided into two compartments: Susceptible $(S)$ and Infected $(I)$. Individuals transition from being susceptible to infected, but there is no recovery, meaning once infected, individuals remain infectious indefinitely.
 
 An extension of this is the SIR model, which adds a third compartment, Recovered $(R)$. This additional compartment represents individuals who have either gained immunity or have died, removing them from the cycle of infection. After spending a certain period in the infected state, individuals transition to the recovered state, making them no longer susceptible to the disease.
-
-  Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
+Here the population or density of individuals is divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
 The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
-The total population size, represented by $N$, is the sum of individuals in the three compartments (e.g., Susceptible, Infected, and Recovered). It is often assumed to remain constant throughout the epidemic. This assumption is based on the idea that epidemics typically last much shorter than the average human lifespan, so the effects of births and deaths are negligible.
 
-For longer-lasting epidemics, the model can still maintain a stable population by balancing the number of births (modeled as an influx into the Susceptible compartment) with the number of deaths (modeled as an outflux). This approach assumes that births and deaths occur at approximately the same rate, thus keeping the total population size stable over time. These statements imply $s(t) + i(t) + r(t)= 1$ and $\dot{s}+ \dot{i} + \dot{r}= 0$.
+The SIR model, which will be described in the following sections, is built upon several foundational assumptions that shape the mathematical framework. These guiding principles are introduced here and will be encountered throughout the model's developed in this thesis. Understanding how the model operates is crucial, as these assumptions are essential to the structure and behavior of the model itself.
+\subsubsection{Neglected demographic influence}
+The total population size, represented by the letter NN, is the sum of individuals in the three compartments (e.g., Susceptible, Infected, and Recovered). It is often assumed to remain constant during the course of an epidemic. This assumption is based on the idea that epidemics typically last much shorter than the average human lifespan, making the effects of births and deaths negligible.
+In more complex models, where demographic effects are considered, such as in models of longer-lasting epidemics, the population size can still be assumed constant by balancing the number of births (modeled as an influx into the Susceptible compartment) with the number of deaths (modeled as an outflux). This approach assumes that births and deaths occur at approximately the same rate, keeping the total population size stable over time. The result of this assumption implies that:
+\begin{itemize}
+	\item Population density compartments sum up to one.
+\end{itemize}
+\[s(t) + i(t) + r(t)= 1 \]
+\begin{itemize}
+	\item The sum of the derived functions w.r.t. time is equal to zero.
+\end{itemize}
+ \[\dot{s}(t)+ \dot{i}(t) + \dot{r}(t)= 0\]
+
+\subsubsection{Recover transition} 
+The first fundamental dynamic process of the model assumes that the infected compartment decreases in size independently of the model's history, with a rate of decrease proportional solely to the current number of infected individuals. This gives the following relation:
+\[\frac{d i}{dt} = - \gamma i, \qquad i(0) = i_0., \]
+which models a continuous process. Specifically, it assumes that individuals transition from the infectious state to the recovered state at a constant rate, denoted by $\gamma$. The physiological meaning of this parameter is that it represents the inverse of the infection's duration, meaning the average infection lasts $1/\gamma$ days. Thus, $\gamma$ is the recovery rate, reflecting the speed at which the population recovers from the disease.
+ 
 In this model the disease reproduces through horizontal incidence, and so the contagion is modeled as due to random contact that happens in a homogeneosuly mixed population.
-
-To comprehend how the dynamic
-$\beta$ is a coefficient that expresses the number of adequate contacts on average of a person per unit of time. The simplest way to explain the meaning of $\beta$ is to consider that not every contact between a susceptible and an infected person can generate a contagion. The formula  $\beta \frac{I}{N} = \beta i$ is then the average number of contacts with infectives per unit time of one susceptible. Finally, the number of new cases per unit of time due to the $S = N s$  susceptibles is $\beta \frac{I}{N} S = \beta N i s$. This form of horizontal incidence is called the standard
-incidence. In this incidence, there is no dependence on population size \cite{Hethcote_2000}. This is because the contact of individuals daily is independent of the country dimension in which they live. 
-
-The second transition process in the model is that individuals move from the infectious state to the recovered one at a rate $\gamma$. So the infection duration lasts an average time of $1/\gamma$ days. The $\gamma$ parameter represents the healing or recovery rate of the population. A mathematical interpretation of this term is that  
-corresponds to exponentially distributed waiting times in the $I$ compartments. The transfer rate $\gamma I$ corresponds to $P(t) = e^{\gamma t}$. It is the fraction of infected that are still in their class after time $t$ of entering it and with a mean waiting time of $\frac{1}{\gamma}$.
+\subsubsection{Person-to-person disease transmission}
+The model for this quantity is expressed in fractional terms, assuming a population composed of susceptible and infected individuals. Each infectious individual encounters a fraction cc of the population per day. If all encounters are equally likely, a fraction $s$ of these encounters will be with susceptibles. Therefore, each infectious individual has $c\cdot s$ encounters with susceptibles. The probability that an encounter leads to transmission is $p$, meaning the average number of transmissions per day is $p \cdot c \cdot s$. Considering the fraction of infected individuals, and combining $p$ and $c$ into a single parameter, the transmission rate becomes:
+\[\text{transmission rate} = \beta s i.\]
+Here, $\beta$ represents the transmission coefficient.
 
 
-%%
-In this initial model, the immunity acquired after recovering from the illness is lifelong. It is equivalent if after being sick a person recovers or dies because it is considered that it will not transmit the infection anymore.  This assumption can be modified and there are often diseases in which after a certain period individuals become again susceptible. Another initial simplification is the one of considers the coefficient $\beta$ and $\gamma$ constant. 
+\subsubsection{Immunity}
+In this initial model, once individuals recover from the disease, there are no further transitions. This can be due to two possible scenarios:
+\begin{itemize}
+	\item Lifelong immunity acquired after recovery.
+	\item Death of infected individuals, if demographics are considered.
+\end{itemize}
+Both cases assume that once the illness period ends, the disease can no longer be transmitted.
+If immunity acquired from an infection wanes after a certain period, individuals can become susceptible again, leading to an SIRS model.
 
-Although the SIR model is quite simple it can predict a very important aspect of an epidemic, the threshold value. This effect was the main novelty studied in the pioneering work of Kermack and McKendrick \cite{kermack1927}. They found that in a fully susceptible population if and only if R0 > 1 an infection can start diffusing. Thus the origin of the term "threshold value" in epidemiology. 
+\subsubsection{Threshold value}
+Although the SIR model is simple, it plays a fundamental role in predicting a key aspect of epidemics: the threshold value, a concept first introduced by Kermack and McKendrick in their pioneering work \cite{kermack1927}. They showed that in a fully susceptible population, an epidemic will only start if the basic reproduction number $R_0$ is greater than $1$, marking the birth of the term "threshold value" in epidemiology.
 
-The dynamic of this system has been extensively studied and analyzed during the years \cite{Breda_2012}, \cite{akinboro2014numerical}, \cite{Jard_n_Kojakhmetov_2021}, \cite{Ledder_2023}, \cite{Okabe_2020}, \cite{Prodanov_2022}, \cite{Xu_2014}, and \cite{Turkyilmazoglu_2021}. The threshold effect distinguishes between two scenarios. The first is when $R_0 <1 $. It is called "free disease equilibrium. 
-In a fully susceptible population, a disease with a $R_0$ less than one does not spread. The initial small number of infected tends to zero and at equilibrium the whole population has remained in the $S$ group. This state, as proved in \cite{Hernandez_Vargas_2022}, is globally asymptotically stable. The second case is when the threshold is larger than one. Here, the number of infected grows until a peak and then decreases to zero. Both this max value of infected and the final number of susceptible can be calculated knowing the system's initial condition ($s_0$ and $i_0$) and the value of $\beta$ and $\gamma$, as explained in \cite{Hethcote_2000}. 
-This second scenario analyzed with a simple SIR model permits us to immediately understand how a very aggressive infection can spread across a large part of a population. In this situation, if no countermeasures are taken in time, there can be severe consequences on the society, with social and economic damages. 
-
+Over the years, the dynamics of this system have been extensively studied and analyzed \cite{Breda_2012, akinboro2014numerical, Jard_n_Kojakhmetov_2021, Ledder_2023, Okabe_2020, Prodanov_2022, Xu_2014, Turkyilmazoglu_2021}. The threshold effect highlights two distinct scenarios:
+\begin{itemize}
+	\item \textbf{Free Disease Equilibrium $(R_0 < 1)$:} When $R_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and this state is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
+	\item \textbf{Epidemic spread $(R_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system's initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences.
+\end{itemize}
+	Thus, even with its simplicity, the SIR model provides critical insights into the potential severity of an epidemic and highlights the importance of timely interventions to prevent widespread harm.
 \subsubsection{Derivation of I evolution and SIR differential equations presentation}
 After having theoretically presented the model, it is now explained one method to derive the mathematical form of the infection compartment evolution. 
 The set of differential equations that  describe the dynamic of infection is the following:
