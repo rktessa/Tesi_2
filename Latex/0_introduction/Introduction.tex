@@ -199,7 +199,7 @@ Herd immunity is a phenomenon where a large portion of the population becomes im
 The infection fatality rate, IFR, is instead the percentage of people infected with the disease that are expected to die. The two quantities can have a similar value: if every person who contracts the disease and every death attributable to the disease is known and recorded, then the CFR will equal the IFR.
 The excess in mortality can be calculated by observing the difference between the total death rate (due to any reason) in a month per month in a comparison between a time period with an epidemic and one without. 
 
-\subsubsection{Reproduction number $R_0$} It is the fundamental measure of the infectiousness of a disease. It is the average number of secondary infections caused by one infected person in a fully susceptible population. If it is recalculated during the epidemic progression is called $R(t)$, a time-varying reproduction number. Finally exist also the effective reproduction number, that is obtained
+\subsubsection{Reproduction number $\mathcal{R}_0$} It is the fundamental measure of the infectiousness of a disease. It is the average number of secondary infections caused by one infected person in a fully susceptible population. If it is recalculated during the epidemic progression is called $\mathcal{R}(t)$, a time-varying reproduction number. Finally exist also the effective reproduction number, that is obtained
 rescaling the Reproduction number value with the true number of susceptible.
 
 \subsubsection{Incubation period and serial interval} The incubation is the time after exposure in which the infection develops in the host and ends when the infected start to show symptoms. The serial interval is instead the time that exists between two transmissions in a chain of infections. 
@@ -287,8 +287,8 @@ Here the population or density of individuals is divided into three groups: Susc
 The symbols used to indicate the density of each group are $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of participants in each one. 
 
 The SIR model, which will be described in the following sections, is built upon several foundational assumptions that shape the mathematical framework. These guiding principles are introduced here and will be encountered throughout the model's developed in this thesis. Understanding how the model operates is crucial, as these assumptions are essential to the structure and behavior of the model itself.
-\subsubsection{Neglected demographic influence}
-The total population size, represented by the letter NN, is the sum of individuals in the three compartments (e.g., Susceptible, Infected, and Recovered). It is often assumed to remain constant during the course of an epidemic. This assumption is based on the idea that epidemics typically last much shorter than the average human lifespan, making the effects of births and deaths negligible.
+\subsubsection{Population constancy}
+The total population size, represented by the letter $N$, is the sum of individuals in the three compartments (e.g., Susceptible, Infected, and Recovered). It is often assumed to remain constant during the course of an epidemic. This assumption is based on the idea that epidemics typically last much shorter than the average human lifespan, making the effects of births and deaths negligible.
 In more complex models, where demographic effects are considered, such as in models of longer-lasting epidemics, the population size can still be assumed constant by balancing the number of births (modeled as an influx into the Susceptible compartment) with the number of deaths (modeled as an outflux). This approach assumes that births and deaths occur at approximately the same rate, keeping the total population size stable over time. The result of this assumption implies that:
 \begin{itemize}
 	\item Population density compartments sum up to one.
@@ -306,53 +306,68 @@ which models a continuous process. Specifically, it assumes that individuals tra
  
 In this model the disease reproduces through horizontal incidence, and so the contagion is modeled as due to random contact that happens in a homogeneosuly mixed population.
 \subsubsection{Person-to-person disease transmission}
+\label{subsubsec:p2p_transmission}
 The model for this quantity is expressed in fractional terms, assuming a population composed of susceptible and infected individuals. Each infectious individual encounters a fraction cc of the population per day. If all encounters are equally likely, a fraction $s$ of these encounters will be with susceptibles. Therefore, each infectious individual has $c\cdot s$ encounters with susceptibles. The probability that an encounter leads to transmission is $p$, meaning the average number of transmissions per day is $p \cdot c \cdot s$. Considering the fraction of infected individuals $i$, and combining $p$ and $c$ into a single parameter $\beta$, the transmission rate becomes:
 \[\text{transmission rate} = \beta s i.\]
 Here, $\beta$ represents the transmission coefficient.
 
 
 \subsubsection{Immunity}
-In this initial model, once individuals recover from the disease, there are no further transitions. This can be due to two possible scenarios:
+In this initial model, once individuals recover from the disease, there are no further transitions. Two possible model scenarios can cause this:
 \begin{itemize}
-	\item Lifelong immunity acquired after recovery, R = recovered.
-	\item Death of infected individuals, \textcolor{red}{R = removed}.
+	\item Lifelong immunity acquired after recovery, ini this case the meaning of the compartments is $R =$ recovered.
+	\item Death of infected individuals, here the compartments can be intended as $R =$ removed.
 \end{itemize}
 Both cases assume that once the illness period ends, the disease can no longer be transmitted.
 If immunity acquired from an infection wanes after a certain period, individuals can become susceptible again, leading to an SIRS model.
 
 \subsubsection{Threshold value}
-Although the SIR model is simple, it plays a fundamental role in predicting a key aspect of epidemics: the threshold value, a concept first introduced by Kermack and McKendrick in their pioneering work \cite{kermack1927}. They showed that in a fully susceptible population, an epidemic will only start if the basic reproduction number $R_0$ is greater than $1$, marking the birth of the term "threshold value" in epidemiology.
+\label{subsub:threshold}
+Although the SIR model is simple, it plays a fundamental role in predicting a key aspect of epidemics: the threshold value, a concept first introduced by Kermack and McKendrick in their pioneering work \cite{kermack1927}. They showed that in a fully susceptible population, an epidemic will only start if the basic reproduction number $\mathcal{R}_0$ is greater than $1$, marking the birth of the term "threshold value" in epidemiology.
 
 Over the years, the dynamics of this system have been extensively studied and analyzed \cite{Breda_2012, akinboro2014numerical, Jard_n_Kojakhmetov_2021, Ledder_2023, Okabe_2020, Prodanov_2022, Xu_2014, Turkyilmazoglu_2021}. The threshold effect highlights two distinct scenarios:
 \begin{itemize}
-	\item \textbf{Free Disease Equilibrium $(R_0 < 1)$:} When $R_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and this state is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
-	\item \textbf{Epidemic spread $(R_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system's initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences.
+	\item \textbf{Free Disease Equilibrium $(\mathcal{R}_0 < 1)$:} When $\mathcal{R}_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and this state is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
+	\item \textbf{Epidemic spread $(\mathcal{R}_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system's initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences.
 \end{itemize}
 	Thus, even with its simplicity, the SIR model provides critical insights into the potential severity of an epidemic and highlights the importance of timely interventions to prevent widespread harm.
 	
 
-\subsubsection{The SIR mean field model equations}
-After having introduced the basic framework of the model, it is now presented the set of differential equations that describe the dynamic of infection:
+\subsubsection{The SIR mean-field model equations}
+After introducing the basic framework of the model, the set of differential equations that describe the rates of change in the system's state is presented. The equations, along with initial conditions, are necessary to fully define the model. The class sizes are expressed as fractions of the total, constant population.
+
+The model is then
 \begin{equation}
 	\begin{cases}
-		ds(t) / dt = -\beta s(t) i(t)\\
-		di(t) / dt =  \beta s(t) i(t) - \gamma i(t)\\
-		dr(t) / dt =  \gamma i(t)
+		ds(t) / dt = -\beta s(t) i(t), \;\qquad \qquad s(0) = s_0 >0;\\
+		di(t) / dt =  \beta s(t) i(t) - \gamma i(t), \qquad i(0) = i_0 > 0;\\
+		dr(t) / dt =  \gamma i(t), \qquad \; \, \;\quad \quad \qquad r(0) = r_0 = 0;
 	\end{cases}
 \end{equation}
+where
+\begin{equation}
+s_0 + i_0 + r_0 = 1.
+\end{equation}
 
-Observing how the system evolve
-DESCRIZIONE DEL COMPORTAMENTO, MENO MATEMATICA
-MA TENGO LE FIGURE E PRESENTO UN PO' IL COMPORTAMENTO
+Several works analyze this model and provide a detailed mathematical derivation of its solution \cite{CITA}. However, this is not the focus of the present work. Instead, we provide an overview of the main results and a summary of the dynamics that emerge from the model.
 
+\subsubsection{Model behavior}
 
-Consider now the initial state of the system. At the beginning of the disease, considering that there are few infected, the majority of the population is in the susceptible groups, so $s(0) \approx 1$. Furthermore, during the initial days of contagion diffusion, this quantity remains stable. Considering this approximation, we have 
+To present the evolution of the model, a simple numerical simulation is carried out. The removal rate is set to $\gamma = 0.1$, meaning the infection lasts, on average, 10 days. The transmission rate is $\beta = 0,5$. At the start of the simulation, the majority of the population is in the susceptible class, with only a small portion of individuals already infected.
 
-From the analytic solution of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic.  If the exponential argument has a positive sign it is observed an exponential increase in the number of infected. While, in the opposite case, infected people tend to zero. 
-The value $\frac{ \beta}{\gamma} S(0) = 1$ is defined as the epidemic threshold. In the initial phase of the epidemic the relation $\frac{ \beta}{\gamma} S(0) = \frac{ \beta}{\gamma} N $  holds. 
-This quantity, normalized, is called the basic reproductive rate, and indicated with the symbol $R_0$.
+The initial reproduction number is  $\mathcal{R}_0 = 5$, which is greater than 1. As discussed in Section \ref{subsub:threshold}, this indicates that the disease will evolve into an epidemic.
 
-It measures the intensity of the contagion or the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is satisfied after an increase in the number of Infected, there is a point at which $\frac { \beta}{\gamma} S(0)$ becomes less than one. It is when this happens that the peak of the $I(t)$ curve is reached. Then, the disease begins its falling phase. It is the natural behavior of an epidemic.
+The key features that emerge from the model simulation are:
+
+\begin{itemize}
+	\item \textbf{Slow initial phase:} The early stages of the epidemic are marked by a slow start, as seen in the first part of the curves in Figure \ref{fig:sir_example0}, a). The curves remain nearly flat because only a few individuals are initially infected, and it takes time for the infection to spread and reach a larger portion of the population.
+	\item \textbf{Exponential growth:} In the second stage, the number of infections increases exponentially.
+	\item \textbf{Peak infection:} Eventually, the number of infections reaches a peak.
+	\item \textbf{Residual susceptible population:} By the end of the epidemic, a portion of the population remains susceptible, though this amount depends on the model's parameters.
+\end{itemize}
+
+An additional detail emerging from the model, as analyzed in \cite{Okabe_2020} and visible in Figure \ref{fig:sir_example0}, is the evolution of the reproductive ratio over time. The reproductive ratio $\mathcal{R}(t) = \frac{\beta}{\gamma} \cdot s(t)$ is given by the formula. Initially, assuming $s(0)\approx 1$, we can simplify this to obtain the value of $\mathcal{R}_0$.However, as the susceptible fraction decreases exponentially alongside the growth in infections, the reproductive ratio also decreases, and the infection peak occurs when $\mathcal{R}(t)=1$.
+
 
 \begin{figure}[h]
 	\centering
@@ -360,93 +375,38 @@ It measures the intensity of the contagion or the number of secondary infections
 	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_con_rt}} \quad
 	\subfloat[][\emph{}]
 	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_multipli_beta}} \\
-	\caption[SIR dynamic example]{SIR system numerical solutions. Figure a) shows the evolution of compartments in the case of an epidemic. The violet dotted line represents the time-dependent $R_0(t)$. It can be seen that when this parameter is equal to $1$, the number of infected reaches its maximum value. In b) are presented different evolutions of the disease varying only the $\beta$ coefficient. The smaller its value the flattened and the more delayed the infectious curve is.}
-	\label{fig:sir_example}
+	\caption[SIR dynamic example]{SIR system numerical solutions. Figure a) shows the evolution of compartments in the case of an epidemic. The violet dotted line represents the time-dependent $\mathcal{R}_0(t)$. It can be seen that when this parameter is equal to $1$, the number of infected reaches its maximum value. In b) are presented different evolutions of the disease varying only the $\beta$ coefficient. The smaller its value the flattened and the more delayed the infectious curve is.}
+	\label{fig:sir_example0}
 \end{figure}
-Other two interesting quantities to consider when a new disease appears are the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. There is a large difference when a population suffers from an epidemic if this ends rapidly because a lot of people get sick or if this number can be controlled, and the infectious curve is flatter. A strategy to flatten the curve can reduce the contact between susceptibles, actuating social distancing or avoiding contact with infected, implementing quarantine measures. These are two simple examples of actions that reduce the value of $\beta$. Another countermeasure is represented by vaccination. Its immediate effect on the epidemic is to remove susceptibles people, so the disease can afflict only a small group and be quickly extinguished. 
+Two key metrics to consider during the emergence of a new disease are the rate of increase of infections and the final size of the remaining susceptible population by the end of the epidemic. The course an epidemic takes can vary dramatically depending on whether it spreads rapidly, overwhelming healthcare systems, or whether interventions succeed in "flattening the curve."
+The rate of infection growth depends on how quickly the disease spreads through the population. If an epidemic grows rapidly, a large number of people fall ill in a short period, potentially overwhelming healthcare resources.
+On the other hand, the final size of the susceptible population indicates how many individuals remain uninfected once the epidemic has run its course. This is influenced by factors such as herd immunity or interventions like vaccination.
+"Flattening the curve" refers to strategies aimed at slowing the spread of the disease, thereby reducing the peak number of infections and spreading cases over a longer period. This reduces the strain on healthcare systems without necessarily reducing the total number of infections.
+
+Some strategies for flattening the curve include:
+\begin{itemize}
+	\item Social distancing and quarantine to reduce contact between susceptible individuals and the infected. This decreases the transmission rate $\beta$.
+	\item Vaccination, which immediately reduces the number of susceptible individuals, thus preventing the disease from spreading widely.
+\end{itemize}
+While flattening the curve may not lower the total number of infections (i.e., the cumulative number may remain the same), it reduces the peak number of active cases at any given time, which is crucial for ensuring that healthcare systems are not overwhelmed.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%DISCARDED
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-\chapter{Da sistemare }
-\subsubsection{Derivation of I evolution and SIR differential equations presentation}
-After having theoretically presented the model, it is now explained one method to derive the mathematical form of the infection compartment evolution. 
-The set of differential equations that  describe the dynamic of infection is the following:
-\begin{equation}
-	\begin{cases}
-		dS(t) / dt = -\beta S(t) I(t)\\
-		dI(t) / dt = \beta S(t) I(t) - \gamma I(t)\\
-		dR(t) / dt =  \gamma I(t)
-	\end{cases}
-\end{equation}
-Here $X(t)$ is indicated as the population at time $t$ in the X compartment. Remember that the assumption of constant population size is also done, so $S(t)+I(t)+R(t) = N$ holds.
-
-The number of infected, with an interval  $\Delta t$, that in a base case can coincide with one day, is given by the equation:
-\begin{equation}
-	I(t+\Delta t) = I(t) + [\beta S(t)I(t)/N - \gamma I(t)]\Delta t
-\end{equation}
-
-If the value of N is large, the variables can be considered as continuous, and imposing a time interval close to zero it becomes:
-
-\begin{equation}
-	\frac{d I(t)}{dt} = \lim_{\Delta t \rightarrow  0} \frac{I(t+\Delta t)-I(t)}{\Delta t} = \beta S(t) I(t)- \gamma I(t)
-\end{equation}
-
-Consider now the initial state of the system. At the beginning of the disease, considering that there are few infected, the majority of the population is in the susceptible groups, so $S(0) \approx N$. Furthermore, during the initial days of contagion diffusion, this quantity remains stable. Considering this approximation, we have 
-\begin{equation}
-	\frac{d I(t)}{dt} = (\beta S(0)-\gamma)I(t),
-\end{equation} 
-which gives now a differential equation with only a variable, $I(t)$, that has a well-known solution:
-
-\begin{equation}
-	I(t) = I(0) \exp ^{(\beta S(0)- \gamma)t}
-	\label{eqn:sol_I}
-\end{equation}
-
-
-
-From the analytic solution of the infectious dynamic equation in \ref{eqn:sol_I}, we can see what happens at the beginning of an epidemic.  If the exponential argument has a positive sign it is observed an exponential increase in the number of infected. While, in the opposite case, infected people tend to zero. 
-The value $\frac{ \beta}{\gamma} S(0) = 1$ is defined as the epidemic threshold. In the initial phase of the epidemic the relation $\frac{ \beta}{\gamma} S(0) = \frac{ \beta}{\gamma} N $  holds. 
-This quantity, normalized, is called the basic reproductive rate, and indicated with the symbol $R_0$.
-
-It measures the intensity of the contagion or the number of secondary infections a sick person can generate. Analysing the equation of susceptibles, with this model we see that it is always decreasing. In the SIR model, if the condition to start the epidemic is satisfied after an increase in the number of Infected, there is a point at which $\frac { \beta}{\gamma} S(0)$ becomes less than one. It is when this happens that the peak of the $I(t)$ curve is reached. Then, the disease begins its falling phase. It is the natural behavior of an epidemic.
-
-\begin{figure}[h]
-	\centering
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_con_rt}} \quad
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_multipli_beta}} \\
-	\caption[SIR dynamic example]{SIR system numerical solutions. Figure a) shows the evolution of compartments in the case of an epidemic. The violet dotted line represents the time-dependent $R_0(t)$. It can be seen that when this parameter is equal to $1$, the number of infected reaches its maximum value. In b) are presented different evolutions of the disease varying only the $\beta$ coefficient. The smaller its value the flattened and the more delayed the infectious curve is.}
-	\label{fig:sir_example}
-\end{figure}
-Other two interesting quantities to consider when a new disease appears are the rate of increase of the infectious and the final size of remaining susceptible at the end of the epidemic. There is a large difference when a population suffers from an epidemic if this ends rapidly because a lot of people get sick or if this number can be controlled, and the infectious curve is flatter. A strategy to flatten the curve can reduce the contact between susceptibles, actuating social distancing or avoiding contact with infected, implementing quarantine measures. These are two simple examples of actions that reduce the value of $\beta$. Another countermeasure is represented by vaccination. Its immediate effect on the epidemic is to remove susceptibles people, so the disease can afflict only a small group and be quickly extinguished. 
-
+\subsection{Other modeling techniques}
+There are several ways to model an epidemic, and the main categories of these models are now introduced. Many of the articles that will be reviewed in the next chapter \ref{ch:literature_review} make use of one or more of these model types, so understanding their fundamental concepts is important.
 \subsubsection{Stochastic models} 	
-This is a group of models deriving by the mean-field, but using a different mathematical approach.
-In this typology, the transition from one state to another is determined using a function of probability.  Conceptually are derived using the same framework used with ODE models. They are useful when the disease to study has a lower number of infected or if there is a connection between the epidemic outcome and changes in individual dynamics. This is called demographic variability, and it concerns changes in transmission, births, recovery, or deaths within the population. Using stochastic models with Monte Carlo simulations can be useful to investigate epidemic models on networks \cite{Allen2017}. 
-The two most important types of models using this approach consider the time variable as continuous, $t \in [0, \infty) $and then the state variable is either discrete (Continuous-Time Markov-Chain) or continuous (Stochastic Differential Equations).
-Referring to the SIR model to make a simple example here the S and I compartments are modeled as random variables. The probability of individuals changing groups depends on infection and recovery, the possible events that can occur. It is called transition probability. 
-In a Markov chain approach the transition probability is discretized, and there is no dependence on the history of the epidemic to know how it will evolve at time $t + \Delta t$. It is necessary to know only the current state of the process at time $t$. 
-In the Stochastic differential equation, the random variables are continuous. 
+This group of models, which originate from the mean-field approach, utilizes a different mathematical framework. In these models, the transition between states is governed by probabilistic functions. Conceptually, they share the same foundation as ordinary differential equation (ODE) models but differ in application. These stochastic models are particularly useful when studying diseases with a lower number of infected individuals or when the epidemic's outcome is influenced by changes in individual dynamics, a phenomenon known as demographic variability. Demographic variability includes changes in transmission rates, birth rates, recovery rates, or mortality within the population.
+One approach to modeling such variability is through stochastic models paired with Monte Carlo simulations, especially when investigating epidemic dynamics on networks \cite{Allen2017}.
 
-\subsection{Networked models}
-\cite{Newman2002}, \cite{VanMieghem2009}, 
-The evolution of a disease is considered over complex and realistic networks. The focus of this type of model is to understand how the network structure influences the epidemic by observing parameters such as the rate of spread.
+\subsubsection{Networked models}
+In this class of models, disease dynamics are considered over complex and realistic networks, with a focus on understanding how the network structure impacts the epidemic's spread by analyzing parameters like the rate of infection. The model represents individuals as nodes in a graph, with edges illustrating interactions between them. Nodes can also represent subgroups, and the relationships between individuals or groups can be weighted, representing varying strengths of interactions \cite{Newman2002,VanMieghem2009}. The larger the number of nodes and the more accurately the connections reflect real-world interactions, the better the model is at reliably simulating the spread of the disease.
 
-In this framework, the nodes of the graph represent individuals (with all the properties that the modeler deems relevant for the study), while the edges represent interactions between people. Nodes can also represent subgroups of people, and using weights on edges makes it possible to characterize the strength of these interactions.
 
-Only if this class of model is highly capable of realistically reconstructing a real network can it be a reliable instrument, and achieving this requires very complex work.
-\subsection{Agent-based models}
+\subsubsection{Agent-based models}
+Agent-based models (ABMs) simulate the progression of a disease by focusing on the behavior and interaction of autonomous agents, which could be individuals or collective entities like organizations. This modeling approach is built on observing spontaneous interactions between individuals \cite{Tizzoni2014}, creating a dynamic system where each person acts according to certain rules. The goal is to understand how these individual behaviors influence the overall evolution of the system.
 
-VEDI E AGGIUNGI ANCHE \cite{Tizzoni2014}
+One key advantage of ABMs is that they provide an intuitive way to interpret epidemic modeling by focusing on individual perspectives, making the model's results easier to understand. Additionally, because agents represent individual behavior, ABMs can deliver highly detailed simulations and offer insights into specific countermeasures that might help mitigate the spread of a disease.
 
- INTEGRA: "An agent-based model (ABM) is a computational model for simulating the actions and interactions of autonomous agents (both individual or collective entities such as organizations or groups) in order to understand the behavior of a system and what governs its outcomes."
-
-Agent-based models are an alternative technique used to represent disease evolution. This approach is implemented based on the observation of spontaneous connections made by individuals. 
-An advantage of this type of model is that it offers a very intuitive approach to epidemic modeling. Using an individual perspective guarantees an immediate interpretation of the model. A precise agent-based model can provide a greater understanding of the illness under consideration and direct information about countermeasures to implement to stop or mitigate its spread. However, to be powerful and capable of performing good analyses and predictions, a lot of information must be integrated into the model. 
+However, ABMs require a large amount of detailed, reliable data to be effective, as their accuracy depends on the precision of the information integrated into the model. Collecting and incorporating this data can be a challenging task, which is a potential limitation of this modeling approach \cite{Hernandez_Vargas_2022}.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/agent_based}
@@ -454,22 +414,14 @@ An advantage of this type of model is that it offers a very intuitive approach t
 	\label{fig:agentbased}
 \end{figure}
 
-%%
 
-An example of a possible mathematical implementation of this class of models is now briefly presented. One possible technique to describe peer-to-peer contact in a graph structure is realized through a probabilistic framework. Here, assuming a total of $n$ agents in the model, spread processes can be described as a function of probability. Using Markov processes, each agent has a certain probability of transitioning from one state of the disease to another. To calculate the value of these probabilities, both the information derived from the network structure and parameters related to the disease, such as infectivity and recovery rates, are used. In this way, a stochastic evolution model of the processes is developed.
 
-Considering an SIS model described with a Markov process: it has a dimension of $2^n$, while implementing an SIRS model requires a dimension of $3^n$. Because the size of models developed in this manner becomes rapidly enormous, a mean-field approximation is employed. It is based on the assumptions of a network composed of a sufficiently large number of agents and on the independence of these nodes. With this technique, by taking expectations, the transition rates of individuals are approximated. Using these approximations, the boundary values of the agent's probability of infection can be determined at each time step \cite{Hernandez_Vargas_2022}.
-
-\subsection{Multilayer systems and networks} 
-
-AGGIUNGI ANCHE \cite{Wang_2019} \cite{Krickel_2023}
-
+\subsubsection{Multilayer systems and networks} 
 The complex dynamic of interactions existing in the real world, develops in multiple patterns, with complicated relationships. This connection can change over time, and using the theory of multilayer systems it can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships. 
-It is a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016} and can be helpful to manipulate complex systems like human relationships. Some interesting results obtained are the possibility that the onset of one disease can depend on the onset of the other one. There can be regimes in which the criticality of the two dynamics is interdependent and others in which the critical effect is only one-directional \cite{DeDomenico2016}. 
-One possible way to develop models with this structure is to imagine that each layer represents a different type of interaction. An epidemiological example is a layer in which the physical contact between people is simulated and another represents social structure, the network of relations that every person has. This instrument provides a natural representation of coupled structure and dynamical processes. It has been presented in multiple works in the past years, for example in CITA. 
+In a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016, Krickel_2023} and can be helpful to describe complex systems like human relationships. An interesting results obtained are the possibility that the onset of one disease can depend on the onset of the other one. There can be regimes in which the criticality of the two dynamics is interdependent and others in which the critical effect is only one-directional \cite{DeDomenico2016}. 
+One possible way to develop models with this structure is to imagine that each layer represents a different type of interaction. An epidemiological example is a layer in which the physical contact between people is simulated and another represents social structure, the network of relations that every person has. This instrument provides a natural representation of coupled structure and dynamical processes. It has been presented in multiple works in the past years, for example in \cite{Wang_2019}.
 The dynamic realized in multiple systems can be single or coupled. In the first, there is a top layer with its dynamic evolution running on top of a multilayer network. The coupled structure instead is the one in which the phenomena described in each layer evolve with the influence of what is happening in the other. 
-Multilayer networks have multiple dimensions of connectivity, called "aspects" and they have to be considered simultaneously. 
-They can also be considered with two different mathematical structures. 
+
 \begin{figure}[]
 	\centering
 	\includegraphics[width=0.6\linewidth]{0_introduction/images_introduction/multi_layer}
@@ -477,219 +429,4 @@ They can also be considered with two different mathematical structures.
 	\label{fig:multilayer}
 \end{figure}
 
-The first uses the same set of compartmental structure and mean-field models presented in the section before \ref{subsec:mean_field}. Here, from a mathematical point of view, there is no such difference in the manipulation and analysis of the system. The distinction relies on the meaning of the compartments and parameters created and on the dependence of the coefficients, which can be time and state-dependent.
-
-The second option considers an agent-based structure. Here, considering a graph structure, composed of nodes and links between them, it is possible to classify three types of edges:
-\begin{itemize}
-	\item intra-layer edges, the connection of nodes on the same layer.
-	\item inter-layer edges, the connection between a replica of the same node, but lying on a different layer of the structure;
-	\item inter-layer edges, but coupling nodes representing distinct entities. 
-\end{itemize}
-
- 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Review of epidemiological behavioural and opinion models in literature}
-\label{ch:literature_review}
-%NUOVO TESTO
-The scientific community's interest in epi-behavior models has existed for several years. Initially, as noted by \cite{Bauch_2012_overview}, the behavioral aspect of epidemiology was not given significant attention. Its development has been a gradual process, resulting from years of evolution in research.
-
-In fact, in the initial works \cite{kermack1927}, the focus of scientists was primarily on presenting the evolution of diseases. The resulting models did not account for the effect of behavior; the population was considered homogeneously mixed, leading to random contact between susceptibles and infectives \cite{Hernandez_Vargas_2022, Mata2021}. 
-It was only later, as epidemiological models proved to be effective and reliable in describing and predicting disease spread, that interest among policymakers grew. Tools capable of integrating real data with epidemiological models emerged, aiding decision-making on matters such as the duration of school closures or travel restrictions, as described in \cite{Bauch_2012_overview}.
-
-Furthermore, new categories of models have emerged, such as agent-based models, networked models, and multi-layer/multi-system models. Despite their differing approaches, they aim to integrate various population characteristics, for example contact structure, age distribution, and movement patterns, to address the limitations of the original homogeneity assumption \cite{brauer2012mathematical}.
-This focus on societal composition and behavior naturally stems from the desire to use modeling tools as a reference for decision-making in safety and health. 
-One possible approach is to incorporate changes in the structure of models that describe aspects of behavior or population composition.
-
-In these models, the behavior of the population is implicitly considered by integrating time-variable parameters that capture changes in societal behavior. This approach represents the classical modeling technique used in the formulation of epidemiological models. Examples of studies that uses this methodology for analyzing COVID-19 include \cite{Giordano_2020, Dehning_2020, Proverbio_2021}.
-
-Although models developed in this way have proven to be powerful tools for generating insights about disease dynamics and providing recommendations to policymakers, they fall short in their ability to accurately reconstruct how populations behave during an epidemic outbreak. The desire to explore this aspect and develop a framework capable of simultaneously simulating both behavior and disease diffusion—where each mutually influences the other—has driven the development of a specific research field dedicated to behavioral epidemics.
-
-But how can behavior be integrated into pre-existing epidemiological theory? To better address this question, we follow the classification proposed in \cite{Funk_2010}, which offers a possible subdivision of behavioral literature based on the different approaches that most articles focus on. Three major categories emerge:
-\begin{itemize}
-	\item The source of information used to make decisions;
-	\item The type of information used to make decisions;
-	\item The effect of behavioral change on the dynamic described by  the model. 
-\end{itemize}
-
-\section{Information's sources}
-When analyzing the source of information, there is a clear distinction between works \cite{Vogiatzis2010} that assume governments and populations base their decisions on precise data, such as the number of infected individuals (prevalence) \cite{Collinson2014, Tyson_2020}, and those that consider more informal sources, such as conversations between people, public opinion, or media \cite{Bulai2023, Sontag2022}. These media sources include both traditional outlets like television and newspapers, as well as newer platforms like social networks.
-This distinction highlights the diversity in how behavioral factors are integrated into models, reflecting the varying degrees of reliability and influence these sources have on decision-making processes during an epidemic.
-
-
-Regarding information quality and the negative effect of misinformation spreading within the population, an example is the fear of vaccination \cite{Kahan_2013}. Several works analyze its effects to on the spread of infection \cite{Bauch_2012_game, Epstein_2021}.
-An example of how this phenomenon can arise is the story of an article originally published by a prestigious source. Even though the thesis presented in this work was later proven wrong by the scientific community \cite{wakefield1998retracted}, the negative impact in terms of spreading fear about vaccines has persisted and, in many cases, has become deeply ingrained. In this specific case, it caused a decrease in herd immunity and a resurgence of measles \cite{Bauch_2012_overview}.
-
-\section{Classification of different types of information}
-After introducing the impact that information quality may have, another interesting aspect is related to the different types of information used in model development. Some articles focus on the effect of media on behavior \cite{Collinson2014, Misra_2011}, while others consider peer-to-peer conversations, information exchange, and beliefs among individuals \cite{Tyson_2020}. These are completely different approaches, even though they aim to achieve the same effect: simulating the evolution of people's opinions and behavior. Using media involves hypothesizing that the population is influenced by a few "central" information nodes, so the same news, data, or future predictions are shared with everyone. In contrast, models that use personal information exchanges can depict a scenario where many different ideas about the disease situation circulate simultaneously.
-Another concept used in models that simulate a sort of "collective consciousness" is referred to as "awareness" \cite{Funk2009}. To model how awareness spreads in the population, it is often treated like a disease \cite{Silva2019, Granell2013, Granell_2014, Kabir_2019, Zuo_2021, Wang_2019}. Although there are many differences between these two, the main idea is that theories and concepts about a certain topic can spread among people, which can be considered at a higher level as a unified opinion. For example, there may be many different personal positions on how to respond to a health emergency like COVID-19, but it is possible to abstract the various opinions and reconstruct what the majority of people, or macro-groups, ultimately feel. They may either be more cooperative and in favor of following guidelines issued by authorities, or more focused on their well-being and inclined to act independently.
-This process can be related to opinion formation studies, which aim to understand how people build their ideas \cite{Devia_2023, Devia2022} and also analyze the possible formation of opinion distributions, such as perfect consensus, consensus, polarization, clustering, or dissension.
-
-\section{How integrate behavior in epidemiology}
-While the type and source of information are crucial for understanding the basic framework and synthesizing key concepts of models that consider population behavior, the final criterion used to categorize works related to epidemiological behavior is how the influence of people's behavior on the model is integrated. This aspect is one of the most interesting and was a key focus of the literature reviewed for this thesis, as it plays a significant role in comparing and selecting relevant works for this research.
-
-There are various ways to describe behavior in response to an epidemic and integrate this aspect into epidemic models \cite{Wang_2019, Bedson2021, Wang_2015_review}.
-
-The first approach involves observing and simulating how connected individuals' states are linked to specific behaviors and how this influences the epidemic. This category includes agent-based models. Additionally, the reverse relationship, where disease spread alters individual behavior, has also been considered, as discussed in \cite{Granell_2014}.
-
-There is also a broad class of mean-field models that explicitly consider the effects of behavior. In these cases, time-varying or state-varying parameters are used, resulting in a non-linear system of equations where the parameters are not constant but change based on information such as disease prevalence. Refer to paragraph \ref{subsec:homogeneous} for further details on this topic.
-
-Another possibility involves modifying the structure or connections in the network used to simulate disease evolution \cite{Peng2021}. In network-based models, data extracted from social network structures \cite{Carballosa_2021} or small-world models \cite{Turker_2023} are often used to simulate connections between people more realistically.
-
-In the following paragraphs, several articles are presented using this classification to simplify their categorization. Each article is then discussed in more detail, highlighting its original contribution.
-
-\subsection{Individuals-based models}
-\label{subsec:individual_state}
-\subsubsection{Multiple networks simulated with Markovian process}
-The first presented work is done in \cite{Granell_2014}. Here, a multiplex model is implemented with two different connectivity layers: the physical layer, in which spreads the disease, and the virtual contacts layer, where awareness diffuses. The article then uses the Microscopic Markov Chain approach to simulate the interaction resulting from the coupling of the two layers. Interestingly, they observe the existence of a metacritical point for the onset of the epidemic, which depends on awareness dynamic and topology of the virtual network. There is, in fact, a parameter related to the ability to influence through communication and it is observed that it impacts the onset of the epidemic only when it exceeds a certain threshold.
-A subsequent work of the same authors \cite{Granell2013}, considers also the effect of a global communication agent. In this case, the metacritical point disappears. 
-\begin{figure}[h]
-	\centering
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.47\linewidth]{0_introduction/images_review/metacritical_point_granell_2013}} \quad
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.49\linewidth]{0_introduction/images_review/metacritical_point_granell_2014}} \\
-	\caption[Metacritical effect]{Effect of awareness communication on the onset of an epidemic. Pictures taken from \cite{Granell2013, Granell_2014}. In (a), the metacritical region is highlighted, showing that below a certain influence value $\lambda$, awareness has no significant impact on the epidemic dynamics. Conversely, in (b), the influence of a media parameter $m$, representing a global communication agent, ensures that the epidemic is always affected by the awareness layer.}
-	\label{fig:sir_example2}
-\end{figure}
-
-
-In the article by \cite{Sahneh2013}, there is a complete description of the stochastic process at the agent level, which is useful for understanding how agent interactions are modeled across different layers using a Markovian approach. Other works using this method include \cite{Silva2019, Frieswijk_2022, Peng2021, Zuo_2021}. Except for \cite{Frieswijk_2022}, a similar double-layer structure, composed of an SIR model coupled with a UAU process, is presented in the other articles. To simulate the evolution of the complex structure resulting from the coupling of the two models, they build transition trees for all possible state changes and their respective transition probabilities. An example of both can be seen in figure \ref{fig:sir_example3}.  
-
-\begin{figure}[h]
-	\centering
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.63\linewidth]{0_introduction/images_review/peng_2021_bertozzi_coupled_structure}} \quad
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.6\linewidth]{0_introduction/images_review/silva2019_transition_trees}} \\
-	\caption[Multiplex networks]{a) An example of a multiplex network structure resulting from the coupling of a SIR and a U-P/A-R model. b) The transition trees realized to describe the system of a SIR coupled  with a UAU model using a Markovian process. Pictures taken from articles \cite{Peng2021, Silva2019}.}
-	\label{fig:sir_example3}
-\end{figure}
-
-In \cite{Peng2021}, a slightly more complex situation is described, where two possible opinions—pro-physical distancing (P) and anti-physical distancing (A)—are considered. In contrast, \cite{Frieswijk_2022} studies a simpler structure, where a SIS model is coupled with either adopting or not adopting self-protective measures.
-
-Interesting results derived from these works include: 
-\begin{itemize} 
-	\item The observation of the influence of opinions on transmission speed and the final epidemic size \cite{Peng2021}. 
-	\item The effect of authoritative information, publicizing epidemic prevention processes, and encouraging reasonable behavior, such as isolating when infected \cite{Zuo_2021}. 
-	\item The importance of self-awareness as a mechanism to reduce disease prevalence \cite{Silva2019}. 
-\end{itemize}
-
-Finally, the experiments conducted in \cite{Frieswijk_2022} provide a stability analysis of the equilibria and explicitly calculate the epidemic threshold. Figure \ref{fig:stability_friesjiw} shows their simulations, which vary a parameter modeled as risk perception. They observe its role in the occurrence of periodic oscillations and identify a set of conditions that lead to global convergence to such a periodic solution. This is an important result, demonstrating that during an epidemic outbreak, there is a collective behavioral response, and it specifies under which conditions the situation evolves into a stable dynamic or not.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.95\linewidth]{0_introduction/images_review/stable_unstable_equilibria_friejs}
-	\caption[Stability analysis of epi-behavior model]{Simulations taken from the article \cite{Frieswijk_2022} That show of their model evolve for different values of the risk perception parameter. Stable equilibria, saddle points and unstable equilibria are marked with a black, black-white and white asterisk, respectively.}
-	\label{fig:stability_friesjiw}
-\end{figure}
-
-\subsubsection{Game theoretical models}
-In the probabilistic framework, another area involves the use of game theory principles. These are used to explore strategic interactions between individuals, where participants act to maximize their utility, potentially influencing the actions of others. The concept of Nash Equilibrium is also important in this context. It is defined as "a set of strategies such that no player has an incentive to unilaterally deviate from the present strategy" \cite{Wang_2015_review}. That is, the Nash Equilibrium leads individuals to adopt strategies consistent with their goal of maximizing their benefit or utility in a perfectly rational way, forming the best responses to one another.
-
-Many articles use this idea to model how populations adjust their behavior during an epidemic. One such example is  \cite{Auld_2003}, which focuses on the behavior of a population deciding between their sexual habits and the risk of HIV infection. The main result is derived by observing how population behavior changes as information about a possible vaccine spreads. Optimistic news lead to a decrease in the number of contacts, while pessimistic forecasts cause an increase in risky behavior, even at the same level of risk. A particularly interesting conclusion is that focusing public health messaging on dire forecasts may unintentionally lead to an increase in risky behavior.
-
-\begin{figure}[h]
-	\centering
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.38\linewidth]{0_introduction/images_review/disease_behavior_interaction_wang2015}} \quad
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.58\linewidth]{0_introduction/images_review/risk_forecast_auld}} \\
-	\caption[Game theory]{a) A representation of the feedback loop, taken from the article of \cite{Wang_2015}, representing the trade-off between: advantages related to avoid the disease and social cost of behave using precautions.  b) The effect on people's behavior due to optimistic or pessimistic forecasts is described in the illustration presented in \cite{Auld_2003}. The population tends to act more cautiously if there is hope that the situation will improve in the future.}
-	\label{fig:abm_game}
-\end{figure}
-
-A different focus is the one that the article  \cite{Gosak_2021_game} has. Here, the behavioral change related to contact rate and especially social distancing, in the context of a pandemic situation like COVID-19  is studied to understand the efficacy of policies for partial or full voluntarily contact reduction. They aim to realize more insight into the percentage of adoption from the population of social distancing policies because increasing the quality of these estimations matters in the planning of strategies to handle a pandemic from a government point of view.
-
-Another case study is \cite{Nunner2021}, which defines different utility functions to model the trade-off between social well-being from maintaining connections, the fatigue of doing so, and the potential physical harm those connections may cause. The main results outlined in \cite{Nunner2021} confirm that a higher number of connections between individuals leads to greater disease transmission, resulting in more infections and a shorter epidemic duration. It also highlights that "the higher the (perceived) risks of a disease, the lower the net benefit of a tie, the stronger the social distancing, and consequently the smaller the epidemic size."
-Using this co-evolutionary approach, a highly correlated dynamic between the two layers emerges: a feedback loop between the spread of infection and behavioral adaptation, with structural modifications in the network occurring in the simulated scenarios.
-The introduction of network-based modeling further develops this work and leads to several key findings. First, including the benefit of social connection creates multiple transmission routes for the disease. Second, a reduction in the final epidemic size only occurs when the indirect benefits are relatively low and the costs of maintaining ties are high. Finally, small changes in social behavior can have large impacts on the epidemic.
-In the next paragraph, other similar studies that incorporate network models will be discussed. However, before that, a final case where the game-theoretical approach is often applied will be presented: vaccination. Many models examine the decision-making process behind vaccination, highlighting the trade-off between the benefits of getting vaccinated and the risks associated with it.
-In terms of modeling, the link between behavior and epidemic spread in this case is that individuals who choose vaccination are removed from the susceptible group, with a percentage reflecting the vaccine's efficacy, thereby reducing the potential for disease transmission. In the study developed in \cite{Bauch_2012_game}, a feedback loop is established between disease prevalence and individual strategic vaccination behavior. Their model successfully fits vaccine coverage data from both the pertussis and MMR vaccine scares and can also predict future trends in disease prevalence and vaccine coverage. 
-Moreover, the article highlights the phenomenon for which the vaccine fear becomes more frequent as eradication goals for more vaccine-preventable diseases are approached.
-
-\subsubsection{Network based models}
-The inclusion of networks in the modeling process has gained popularity as a tool for scientists to enhance the accuracy of their models by simulating real-world connections between people. The main goal behind developing network-based models is to create a representation of society and then use it to simulate the spread of disease. A comprehensive example of this approach is presented in \cite{VanMieghem2009}, where a method is introduced to simulate scenarios such as quarantine or regional barriers that limit population movement. By adjusting network connections—reducing contacts between nodes or cutting ties between specific regions—these models effectively demonstrate the impact of interventions like lockdowns or travel restrictions on disease transmission. They also enable analysis of how containment measures affect the trajectory of an epidemic.
-Works such as \cite{Tizzoni2014} also fall into this category, utilizing urban mobility patterns as a proxy for modeling epidemics. Similarly, in \cite{Carballosa_2021}, social networks are used as a proxy for connections, hypothesizing that people's behavior in maintaining social contacts is analogous to how they might behave in the context of disease transmission.
-Another innovative approach involves the development of multilayer networks, such as in \cite{Turker_2023}, where the social structure of a town is recreated. Each layer represents a different environment—ranging from homes to workplaces, distinguishing between various job types, and even considering a layer for friendships. Each individual exists across multiple layers and interacts with different groups depending on their social environment. This model found that the layer associated with friendship poses the highest risk for outbreak development, due to closer interactions and lower security measures. Consequently, even a relatively low transmissibility rate ($\beta$) can lead to a significant epidemic with many susceptible individuals involved.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\linewidth]{0_introduction/images_review/turker_city_recreated}
-	\caption[Simulation of disease spreading within a city]{In the simulation presented in \cite{Turker_2023}, a city is modeled with people divided into several social groups. They found that the layer associated with friendships is where the disease outbreak occurs with the lowest value of the infectivity parameter, $\beta$.}
-	\label{fig:turkercityrecreated}
-\end{figure}
-
-
-
-\subsubsection{Threshold models}
-Another possible mechanism for modeling how individuals change their actions is by observing the behaviors and opinions of their neighbors \cite{Granovetter_1978, Krassa_1988}. A well-known theoretical tool for this context is the Watts threshold model \cite{Watts_2002}, which is foundational for studying such transitions.
-In \cite{Wang_2019}, various threshold models are discussed, including the Watts threshold, which is linear. In their model, each node is assigned a random threshold value based on a given distribution. The threshold represents the point at which a node changes its opinion when a certain number of its neighbors adopt a different behavior. The structure of the network is crucial for determining how opinions spread. They found that opinion propagation is most favorable in networks with low randomness and a regular structure. Additionally, they analyzed the effects of network clusters, noting that well-connected clusters can act as opinion hubs, reinforcing the spread of opinions.
-
-\subsubsection{Ad-hoc rule-based models}
-The last category of individual-based models focuses on individuals acting according to specific rules designed to simulate particular situations. A clear example of this is found in \cite{Alvarez_Zuzek_2017}, where disease propagation is modeled based on opinions for or against vaccination. The evolution of these opinions is determined by the interaction and exchange of ideas between agents and co-evolves alongside their health condition. A comprehensive set of rules is established to model all possible situations that lead to changes in both opinion and disease states. An example is visible in picture \ref{fig:alvarez_opi_vac}
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\linewidth]{0_introduction/images_review/alvarez_opi_vac}
-	\caption[Rules in opinion disease model]{The picture, taken from the article \cite{Alvarez_Zuzek_2017}, illustrates the mechanisms underlying the model's dynamics. The figures on the left depict opinion dynamics: when two nodes have opposing opinions, one adjusts its state to match the other's opinion with a probability $q(a)$. If both nodes share the same opinion, the opinion is reinforced with a probability $p(b)$. The figure on the right represents contagion dynamics: a susceptible individual $S$ (green) becomes infected (red) with a probability $\beta$ and recovers (blue) after a time $t_r$. A susceptible individual can also become vaccinated $V$ (grey) upon acquiring an opinion state of $+2$. However, they can still become infected with a probability $(1-\omega) \beta$, which causes their opinion to shift to $-2$. }
-	\label{fig:alvarez_opi_vac}
-\end{figure}
-
-A similar approach is developed in the article by \cite{teslya2022}, where an explicit mechanism is implemented to govern the competition between different health opinions. Individuals with a positive $+$ opinion may switch to the opposing $-$ opinion after interacting with others, following a switch rate function. By varying the parameters of this function, its behavior can become linear, saturating, or sigmoidal similar to established functions used to describe predator responses to prey population density.
-
-Finally, the article by \cite{Collinson2014} extends the SEIR model by incorporating the effect of mass media on disease spread, using a specific set of functions. These functions account for disease prevalence, recovery rate, and media impact. The goal is to conduct a sensitivity analysis on the parameters influencing the epidemic's peak magnitude, timing, and ending. 
-
-
-\subsection{Homogeneous population models}
-\label{subsec:homogeneous}
-This section presents the works that have most contributed to shaping the development of the thesis, the mean-field models. The assumption that the population is homogeneously mixed results in models capable of describing phenomena nationwide, which is difficult to achieve when modeling individual behavior.
-
-However, the effectiveness of this class of models relies heavily on the modeling principles applied. Models are powerful tools, but they represent the aspects the modeler chooses to emphasize. Therefore, selecting and integrating the most promising features is crucial for creating a useful instrument. By analyzing prior works, we gain insights into what has been previously explored and the outcomes achieved.
-The most interesting characteristics of various models are now presented, followed by an explanation of how they have contributed to the development of the model in this thesis.
-
-The article \cite{Tyson_2020} was one of the first studied for its insteresting modeling approach. It integrates two dynamics: the epidemic evolution influences the parameters governing people's behavior, and, conversely, the population's behavior affects the spread of the disease. This bidirectional interaction allows for a more realistic simulation of how behavioral changes and disease dynamics influence each other.
-A SIR model is associated with an opinion dynamic that occurs only within the $S$ compartment. This compartment is divided into four subgroups, representing different attitudes toward prophylactic behavior. In this way, more cautious individuals have a lower probability of becoming infected. The opinion dynamic focuses on the phenomenon of influence, modeled by a specific parameter, and on opinion amplification, a cognitive bias where confronting someone with the same belief strengthens that belief.
-The most interesting aspect of their work is the concept that opinion spreads through conversation, not through a utilitarian or contagion process like fear diffusion.
-
-A similar hypothesis of social learning is explored in the article \cite{Tanaka_2002}. In this model, both risky and cautious behaviors coexist in the population and can be transmitted. The model also incorporates the effects of clustering and the phenomenon of "cultural bias." This bias suggests that the risky trait is more likely to be adopted by cautious individuals than the reverse. Additionally, the authors introduce the concept of uncertainty regarding the infection causes, meaning that people are unsure of the best way to behave to avoid contracting the disease.
-
-
-In the article \cite{Bongarti2023}, compliance with the use of NPIs (Non-Pharmaceutical Interventions) is the central focus of the behavioral component of the model. In this case, non-compliance is modeled as a social contagion: the population is divided into two groups, compliant ($c$) and non-compliant ($nc$). Using the mass-action mixing property, compliant individuals become non-compliant, but there is no recovery once their status changes. The primary goal is to understand the interplay between the stringency of lockdown measures, non-compliant behavior, and the spread of the disease.
-
-
-Vaccine adoption and awareness diffusion are the main arguments developed in \cite{Zuo2022}. Awareness is present only in the Susceptible compartment, and there is a term, $M(t)$, that represents the accumulated density of awareness programs driven by various information sources. This term is influenced by several factors: awareness generated by neighboring individuals, the intensity of awareness programs in response to the prevalence of the disease, and a waning effect due to the decreasing quality or effectiveness of the information over time. Their complete model and the interplay between disease and behavior is shown in figure  \ref{fig:mean_models_1}. 
-An interesting aspect of this article is that the authors evaluate their model using data from the COVID-19 vaccination campaign in China. They observe how their model effectively reproduces the population behavior and government policies during different phases of the epidemic.
-
-\begin{figure}[h]
-	\centering
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.35\linewidth]{0_introduction/images_review/Tanaka_model}} \quad
-	\subfloat[][\emph{}]
-	{\includegraphics[width=0.6\linewidth]{0_introduction/images_review/zou_2022_SEIRVM}} \\
-	\caption[Mean field models literature review]{a) The model presented in \cite{Tanaka_2002} shows horizontal layers representing behavioral diffusion, while vertical layers represent disease spread. Behavior diffuses between both infected and susceptible individuals, but this is not depicted for visual clarity. b) The model developed in \cite{Zuo2022} incorporates behavior dynamics only in the susceptible ($S$) layer, influencing both contagion rates and the probability of vaccination. The $M$ compartment follows its own dynamics, observing the state of the disease and the distribution of public opinion, and it influences the diffusion of awareness.}
-	\label{fig:mean_models_1}
-\end{figure}
-
-An interesting article on the subject of behavior and vaccines is \cite{Epstein_2021}. In this model, an initially susceptible population can split into two opposing compartments, depending on what they fear more: the disease or vaccination. The model includes six compartments, with the fear dynamics occurring only in the susceptible ($S$) compartment.
-
-In this scenario, fear of vaccination can undermine outbreak control. Initially, people may get vaccinated, but they stop too early as their fears reverse. The study also conducts a sensitivity analysis on the contact rates for the two fears, showing that transmission speed significantly affects the model’s outcomes. The results range from multiple infection waves to complete disease extinction without an outbreak, depending on the conditions.
-
-\section{Analysis of the literature}
-To conclude this chapter on the literature review, an analysis of the models discussed is presented, with a focus on how they relate to the scope and aim of this thesis. This evaluation wants to explain the key insights gained from the literature and highlight also what are the differences and novelty introduced in this work.
-
-\subsection{Individual state models}
-Referring to the models presented in the previous section \ref{subsec:individual_state}, most face the challenge of developing complex simulations to model the evolution of disease and individual behavior, but struggle to scale these simulations to the nationwide level. In many cases, small groups of agents are used, such as the 50 nodes mentioned in \cite{Nunner2021}, and even in works where a larger number of nodes is implemented, the count is typically in the thousands \cite{Granell2013}, not in the millions, as would be necessary for national-scale modeling. To overcome this difficulty, some articles use mean-field approximations, considering the limit of an infinite population size and employing statistical approaches \cite{Frieswijk_2022}.
-
-Another critical issue these models face is the need for large amounts of data to accurately represent how populations behave during unusual situations like epidemic outbreaks. Without this data, it becomes difficult to draw precise conclusions from the models. While these models can still provide useful insights, their application for making precise, real-world predictions remains limited. They are better suited as scientific tools for exploring theoretical scenarios rather than for offering actionable advice on a larger scale. An article that demonstrates the volume of data required to test a model with real-world scenarios is \cite{Kemp_2021}. In this study, data from three different countries—Luxembourg, Austria, and Sweden—was collected, including information on total detected cases, hospitalized individuals, people in intensive care units (ICUs), and deaths. This comprehensive dataset was used to fit the model.
-
-In the case of behavioral-epidemic models, even fewer data were available until the recent COVID-19 pandemic. As explained in \cite{Gosak2021}, this lack of data was a significant challenge. However, they show how it was partially addressed by implementing models based on population behavior with respect to influence. Despite these improvements, the availability of data today is certainly better, offering more robust insights. 
-
-As they say: \textit{"The issue is that research has not yet provided empirical benchmarks for endogenous contact rates in disease scenarios, so it is unclear how such policies can be evaluated scientifically: ideally a policy is benchmarked against a set of counterfactuals given the disease, not compared with what was before the disease".}
-
-\subsection{Well-mixed population models}
-As stated earlier in paragraph \ref{subsec:homogeneous}, a major critique of developing complex mean-field models is that if they are not supported by consistent observation of the phenomena they aim to reproduce, their capacity to generate meaningful insights can be significantly limited. For this reason, proper empirical grounding is one of the main objectives pursued in this thesis work. The comparison of the model's emerging dynamics with real-world data is a reliable method to test the model's validity and evaluate its predictive capacity.
-Reading through works in this field, a common approach emerges for modeling systems that aim to incorporate two distinct dynamics, such as behavior and disease spread. Most of these models introduce additional compartments, which represent subgroups of homogeneously mixed individuals sharing common characteristics—typically, their disease state and course of action. The primary distinction lies in how modelers handle the flow between these compartments: while some works focus on the influence of behavior solely within the Susceptible layer \cite{Epstein_2021, Tyson_2020, Zuo2022}, others implement a full double-layer model \cite{Bongarti2023, Bulai2023, Tanaka_2002}. Another key difference is whether the change in behavior dynamics is unidirectional, as in \cite{Bongarti2023}, or bidirectional, as seen in \cite{Epstein_2021, Tyson_2020, Tanaka_2002, Zuo2022}, where individuals can adjust their actions in both directions.
-Notably, some of the most influential aspects drawn from the literature for this thesis include the "double fear" structure developed by \cite{Epstein_2021} and the awareness element that influences behavior change, modeled through an external node $M(t)$ in \cite{Zuo2022}. Additionally, this thesis seeks to implement a fully coupled double-layer model for behavior and epidemic spread, incorporating elements such as memory waning and fatigue, which combine with conversational mechanisms to create bidirectional flows in the behavioral model.
-Unlike \cite{Tanaka_2002}, which uses a simpler epidemic model, this work employs a more complex one to accurately reflect COVID-19 data. Furthermore, the models developed in \cite{Bulai2023} and \cite{Smaldino_2021} share structural similarities with this thesis. However, \cite{Bulai2023} assumes faster information diffusion than disease transmission, decoupling the two layers, while \cite{Smaldino_2021} focuses on homophily and polarization of compartments—factors not considered here due to data limitations.
-The following chapter will explain the development of the model, integrating the features and ideas here presented.
-

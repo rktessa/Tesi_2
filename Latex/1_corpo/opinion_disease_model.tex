@@ -4,7 +4,7 @@
 \label{ch:model_alone}
 
 
-To develop a multi-layer network combining an epidemiological layer with a behavioral one, we first study the dynamics of each layer separately, as presented here. 
+To develop a multi-layer system combining an epidemiological layer with a behavioral one, we first study the dynamics of each layer separately, as presented here. 
 
 In this section, we describe the developed SIRS epidemiological model, followed by the Careless, Compliant, Against behavioral model. A sensitivity analysis is also conducted. Understanding the underlying dynamics of each graph is crucial for better comprehending the dynamics emerging from the multi-layer structure.
 
@@ -25,44 +25,101 @@ All'inizio il sirs si comporterà come un modello sir normal, perchè non ci sar
 
 \section{Behavioural model}
 \label{sec:behavioral_model}
-The behavioural network alone is composed of three compartments.
-These are Compliant, $Co$, Careless $Ca$, Against $Ag$. 
-The differential equations describing the model evolution are \ref{eq:behavioural_eq}: 
+
+The development of the behavioral model builds on several works already presented in the literature. In particular, the following mechanisms are considered the most relevant:
+\begin{itemize}
+	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}.
+	\item Non-compliance viewed as a form of social contagion \cite{Bongarti2023}.
+	\item The unaware-aware-unaware opinion model class \cite{Zuo2022, Peng2021}.
+	\item The fatigue mechanism, where maintaining a certain behavior leads to a spontaneous loss of compliance \cite{Epstein_2021}.
+\end{itemize}
+
+To integrate all these aspects into a mean-field model, the first step is to define the compartments used to segment the population. The population is divided into three compartments: Heedless, Compliant, and Against, denoted respectively as H, C, and A. The meaning of each compartment is as follows:
+\begin{itemize}
+	\item[\textbf{$H$:}] Individuals who behave without much regard for guidelines and are careless about the risks associated with the infection.
+	\item[\textbf{$C$:}] Individuals who actively seek to avoid infection or spreading the virus by following guidelines and taking precautions.
+	\item[\textbf{$A$:}]Individuals who do not consider the infection a risk to their safety and do not use protection or modify their behavior during the epidemic. They disregard risk-mitigating guidelines and do not align with safer behaviors as the epidemic unfolds.
+\end{itemize}
+
+\subsubsection{Initial conditions}
+As an initial condition, the hypothesis is that, at the start of the simulation, most of the population is in the Heedless compartment. This assumption is based on the idea that when a new disease emerges, it is poorly understood, and the population has limited information about it. The hypothesis is that people in the Heedless compartment may be clueless about the risks of becoming infected. This lack of knowledge causes them to maintain their usual behavior, making them susceptible to infection. This assumption is also supported by data and literature \cite{Usher_2020}. As an example of this initial configuration, the case of COVID-19 in Italy is considered. In the early stages of its spread, when the disease was primarily affecting China, it was not viewed as a significant threat by much of the population in Western countries. It was perceived as a distant issue affecting a faraway nation. Therefore, when the epidemic reached Europe and Italy, both the population and government were caught off guard. There was an initial delay in the implementation of countermeasures, as well as in the dissemination of reliable information about the disease's progression to the general public.
+
+There are two opposing behavioral groups, which in the initial phase of the model comprise a small fraction of the population: Compliant and Against.
+
+The Compliant group actively seeks to reduce their chances of becoming infected. They practice self-protection measures like wearing face masks, sanitizing their hands, and voluntarily limiting their presence in public spaces to reduce contact with others.
+
+In contrast, the Against group consists of individuals who, for personal reasons—such as anti-scientific beliefs, low trust in policymakers, or other concerns—do not take action to minimize their chances of infection or the possibility of infecting others. This category encompasses phenomena such as: 
+\begin{itemize} 
+	\item vaccine denialism; 
+	\item misinformation spread; 
+	\item denial of the existence of the disease; 
+	\item distrust of doctors and government policies. 
+\end{itemize}
+
+The inclusion of the Against compartment stems from the fact that, especially in the early stages of a new disease outbreak, there is often a lack of reliable knowledge. As documented by \cite{McCormack_2020}, this can lead to the spread of false beliefs in the population. It has also been demonstrated \cite{owid-vaccine-skepticism} that misinformation, especially when associated with fear, can have lasting effects. A notable example is the belief that the measles, mumps, and rubella (MMR) vaccine can cause developmental disorders in children. Despite the fact that the original publication making this claim has been scientifically discredited \cite{wakefield1998retracted}, this idea remains popular and has contributed to a rise in vaccine skepticism \cite{owid-vaccine-skepticism}.
+
+\subsubsection{Social contagion dynamic}
+The evolution of the model is governed by two principal mechanisms: \begin{itemize} 
+	\item Heedless individuals transitioning to either Compliant or Against compartments. 
+	\item Compliant and Against individuals returning to the Heedless compartment. 
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.72\linewidth]{1_corpo/figure/behavior_model_figure}
+	\caption[Behavior model]{The figure represents the behavioral model developed, featuring three compartments: Heedless, Compliant, and Against, abbreviated as H, C, and A. The arrows indicate the inflows and outflows between these compartments.}
+	\label{fig:behaviormodelfigure}
+\end{figure}
+The first mechanism is driven by peer pressure: the size of each group and the level of "persuasion" are the parameters that govern this process. It is mathematically modeled similarly to person-to-person disease transmission, as seen in the SIR-like mean-field model described in section \ref{subsubsec:p2p_transmission}. However, the return to the Heedless compartment is modeled as a "spontaneous decay" process: individuals naturally leave the Compliant and Against compartments and return to Heedless, transitioning spontaneously depending on the level of "fatigue" associated with maintaining the behavior.
+
+To describe these transitions, different coefficients are introduced. The $k_1$ and $k_2$ are persuasion rates, while $\lambda_1$ and $\lambda_2$ represent fatigue rates. Their meanings are as follows: \begin{itemize} 
+	\item $k_1$: persuasion rate from Heedless to Compliant; 
+	\item $k_2$: persuasion rate from Heedless to Against; 
+	\item $\lambda_1$: rate of leaving the Compliant behavior due to fatigue; 
+	\item $\lambda_2$: rate of leaving the Against behavior due to fatigue. 
+\end{itemize}
+
+Finally, the resulting differential equations describing the model's dynamic are:
+\begin{equation}
+	\label{eq:behavioural_eq}
+	\begin{cases}
+		\dot{H} = -k_1 H C - k_2 H A + \lambda_1 C + \lambda_2 A \\
+		\dot{C} = k_1 H C -  \lambda_1 C \\
+		\dot{A} = k_2 H A -  \lambda_2 A\\
+	\end{cases}
+\end{equation}
+Another assumption made to describe the model is the principle of mass conservation, meaning that the relationship $h + C + A = 1$ holds. Additionally, the initial conditions described in the previous section are translated as follows:
 \begin{equation}
 	\begin{cases}
-		\dot{Ca} = -k_1 Ca Co - k_2 Ca Ag + \lambda_1 Co + \lambda_2 Ag \\
-		\dot{Co} = k_1 Ca Co -  \lambda_1 Co \\
-		\dot{Ag} = k_2 Ca Ag -  \lambda_2 Ag\\
+		H(0) = 1 - C_0 - A_0\\
+		C(0) = C_0 > 0\\
+		A(0) = A_0 > 0\\
 	\end{cases}
-	\label{eq:behavioural_eq}
 \end{equation}
-As initial condition the hypothesis is that at the start time of the simulation most of the population is in the Careless compartment. It is considered that if a new infection developed, it is not well known and so population have little information about it. The Careless compartment is composed by people that do not know about the risk associated with becoming infected, or that have not sufficient fear of the infection to modify their normal behaviour. 
-As an example of this possible initial configuration it is considered the covid-19 case in Italy. At the early stage of its development, when the disease was spreading in China it was not considered a menace for most of the population in western countries. It is seen as a disease involving a different and far state. So, when the epidemic arrives in Europe and Italy, both the population and the government did not expect it and there is an initial time delay before the countermeasures were activated and before reliable information about the evolution of the disease are available to the population. 
-There are then two opposite behavioural standings: Compliant and Against.
-In the Compliant set there are population worried about the disease and that want to reduce their possibilities of becoming infected. Conversely, the Against is formed by a group of individuals that have anti-scientific ideas about the disease. Here are summarised phenomena like:
-\begin{itemize}
-		\item vaccine denialism;
-		\item misinformation diffusion;
-		\item refusal about existence of the disease;
-		\item lack of trust on doctors and government policies.
-\end{itemize}
 
-%The idea of having the Against compartment is born, because specially in the early phase of a new disease diffusion, there is a lack of reliable knowledge. This documented CITA event can cause the spread of wrong beliefs in the population. It has also been demonstrated CITA that the effect of false information can eradicate, if associated with fears. The most famous example is the conviction about the possibility that vaccine against rosolioa eccettera can generate autism in child. Even if the original publication describing this effect has been scientifically disproved, this idea is still today the most popular and had caused a reduction in the percentage of vaccine population, the so-called “free rider problem”. CITA
-For the study of model evolution different coefficient values has been considered.  The rates studied in the models have the following meaning:
-\begin{itemize}
-	\item $k_1$ influence rate between Ca and Co;
-	\item $k_2$ influence rate between Ca and Ag;
-	\item $\lambda_1$ rate of leave compliant behaviour due to fatigue;
-	\item $\lambda_2$ rate of leave against behaviour due to fatigue.
-\end{itemize}
+\subsubsection{Behavior conversion number}
 
-The behaviour of the model is influenced by the value of each of this parameter. For example if the compliant have strong influence, the equilibrium of the model will be composed by most of the population with Compliant behaviour and an Against groups that tend to zero. On contrary, the opposite group composition will be the result. However, if the fatigue due to being Against is less than the one related with being Compliant the final equilibrium can be favourable w.r.t the Against group, even if the rate of $k_1 \ge k_2$.
-These effects can be explained looking at the equilibrium for time that goes to infinite. It is found that depends on comparison between the ratios that can be calculated with the formula: 
+To simplify the comprehension of the unerline dynamic of the system, facendo un analogia con quello che in epidemiologia viene chiamato "reproduction number",  è possibile trovare una relazione osservando le equazionni del sistema \ref{eq:behavioural_eq}, chthat will be called "behavior conversion rate". It is the result of the ratio between the persuasion rate and the fatigue decay rate. It can be expressed as a measure of transmission potential of the social contagion.
+It is found that depends on the comparison between the ratios that can be calculated with the formula: 
 \begin{equation}
-	R_i =\frac{ k_i }{\lambda_i}
+	\mathcal{B}_i =\frac{ k_i }{\lambda_i}
 	\label{eq:behave_rate}
 \end{equation}
-This expression is the reproductive ratio of each behaviour. The behaviour with the grater value has a dominant effect on the final stable value reached by the compartments.
+This expression represent how can be calculated the Behavioral conversion number related to possible course of action that can be adopted. So, with $\mathcal{B}_1$ we repreente the behavior conversion associated with compliant compartment, and with $\mathcal{B}_2$, the one related to against.
+
+
+The behaviour with the grater value has a dominant effect on the final stable value reached by the compartments.
+
+
+
+====================================================
+DA SPOSTARE DOPO PRESENTAZIONE COMPORTAMENTO MODELLO, FATTA OSSERVANDO LE SIMULAZIONI
+The behaviour of the model is influenced by the value of each of this parameter. For example if the compliant have strong influence, the equilibrium of the model will be composed by most of the population with Compliant behaviour and an Against groups that tend to zero. On contrary, the opposite group composition will be the result. However, if the fatigue due to being Against is less than the one related with being Compliant the final equilibrium can be favourable w.r.t the Against group, even if the rate of $k_1 \ge k_2$.
+These effects can be explained looking at the equilibrium for time that goes to infinite. 
+
+
+
+
+
 
 \subsubsection{Equilibrium and stability analysis}
 There are different final equilibrium value of the system depending on the values of the parameters. In particular, the four coefficients are combined, obtaining two reproduction rates $R_1,R_2$. 
@@ -226,8 +283,16 @@ The threshold effect is clearly visible also here. Looking at the Compliant and 
 \label{ch:epi_behav_model}
 \section{Behavioral epidemic model}
 
+ALTRI ASPETTI INSERITI WRT TO THE BASIC BEHAVIOR MODEL
+
+the waning of opinion, lack of interest, after the recovery \cite{Zuo2022,Kemp_2021} 
+
+the fact that even in the I or R compartments population manain an against or compliant behviors, not isolate this mechanism only in the S compartments, as done for example in \cite{Zuo2022} 
+
+the gloal agent effect is also add in this model wrt the behavior alone.
+
 The model is composed of two layers coupled together: a disease layer, describing the evolution of an epidemic, and a behaviour layer describing the transition among different behaviours during the epidemic development.
-The behavioral layer has three possible compartments: 
+The behavioral layer has three possible compartments, as seen in chapter \ref{sec:behavioral_model}: Heedles, Compliant, and Against.
 
 \begin{itemize}
 	\item[$H$:] Heedless, people careless of the risk associated to the infection;
@@ -236,6 +301,9 @@ The behavioral layer has three possible compartments:
 \end{itemize}
 
 This behaviour structure is coupled with a SIRS epidemic model, giving rise to the mutually exclusive compartments.
+
+SPIEGA CHE HAI SC SA SH, E POI SOLO IC IA ECC
+PERCHE TOGLI H DOPO S..
 
 \begin{itemize}
 	\item[$SH$:] Susceptible Heedless, the group where there is the majority of the population at the beginning of an epidemic. There is not much information about disease-associated risk and the people in this compartment have no fear of becoming infected and do not modify their behaviors.

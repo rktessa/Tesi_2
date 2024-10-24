@@ -12,8 +12,8 @@ clc;
 
 % Simulation parameters
 N = 1;
-gamma=1/8.9;
-beta=0.45;
+gamma=1/10;
+beta=0.5;
 R0 = beta/gamma
 time =300;
 dt=0.01; %un millesimo di secondo di dt
@@ -90,14 +90,14 @@ plot(taxis,xaxis3, 'linewidth',1.1 )
 plot(taxis,yaxis3, 'linewidth',1.1)
 plot(taxis,zaxis3, 'linewidth',1.1)
 xlabel("t[days]");
-ylabel("S[t], I[t], R[t]");
+ylabel("s[t], i[t], r[t]");
 yyaxis right
 plot(taxis,(beta/gamma).*xaxis3./N, 'linewidth',1.1)
 yline(1, "--")
 ylim([0 7])
-ylabel("R_0[t]");
+ylabel("R[t]");
 title("SIR MODEL")
-legend('S','I','R', 'R_0[t]', Orientation='horizontal', Location='southoutside')
+legend('s','i','i', 'R[t]', Orientation='horizontal', Location='southoutside')
 txt = {['\beta = ' num2str(beta)],['\gamma = ' num2str(gamma)]};
     text(220,2.9,txt)
 fontsize(20,"points")
@@ -133,9 +133,9 @@ plot(taxis,zaxis5, 'LineStyle', "--",'Color',[0.6350 0.0780 0.1840],'HandleVisib
 title("SIR MODEL")
 legend("AutoUpdate","off",  Orientation='horizontal', Location='southoutside')
 txt = {['\gamma = ' num2str(gamma)],['1/\gamma = ' num2str(1/gamma)]};
-text(230,0.25,txt)
+text(230,0.4,txt)
 xlabel("t[days]");
-ylabel("S[t], I[t], R[t]");
+ylabel("s[t], i[t], r[t]");
 fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
 set(gcf, 'PaperPosition', [0 0 24 15]);
