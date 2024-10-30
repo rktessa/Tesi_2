@@ -98,12 +98,12 @@ Another assumption made to describe the model is the principle of mass conservat
 
 \subsubsection{Behavior conversion number}
 
-o simplify the understanding of the system's underlying dynamics, an analogy can be drawn with the reproduction number in epidemic models. By examining the system equations \ref{eq:behavioural_eq}, a relationship can be identified. From both the second and third equations, we can isolate the two coefficients (specifically $k_1 , \lambda_1 $, and  $k_2 , \lambda_2 $ and derive a new parameter, termed the "Behavior Conversion Rate," $\mathcal{B}$. This rate is the result of the ratio between the persuasion rate and the fatigue decay rate, and can be viewed as a measure of the transmission potential of social contagion. The general formula to calculate it is::
+To simplify the understanding of the system's underlying dynamics, an analogy can be drawn with the reproduction number in epidemic models. By examining the system equations \ref{eq:behavioural_eq}, a relationship can be identified. From both the second and third equations, we can isolate the two coefficients (specifically $k_1 , \lambda_1 $, and  $k_2 , \lambda_2 $ and derive a new parameter, called "Behavior Conversion Rate", $\mathcal{B}$. This rate is the result of the ratio between the persuasion rate and the fatigue decay rate, and can be viewed as a measure of the transmission potential of social contagion. The general formula to calculate it is::
 \begin{equation}
-	\mathcal{B}_i =\frac{ k_i }{\lambda_i}
+	\mathcal{B}_i =\frac{ k_i }{\lambda_i}  \qquad \text{with } i = 1, \text{or } 2.
 	\label{eq:behave_rate}
 \end{equation}
-In the model presented here, $\mathcal{B}_1$represents the Behavior Conversion Rate associated with the Compliant compartment, while $\mathcal{B}_2$, corresponds to the Against compartment. The results of different numerical simulations will now be displayed to demonstrate how the relationship between these two values influences the evolution of social contagion.
+In the model presented here, $\mathcal{B}_1$ represents the Behavior Conversion Rate associated with the Compliant compartment, while $\mathcal{B}_2$, corresponds to the Against compartment. The results of different numerical simulations will now be displayed to demonstrate how the relationship between these two values influences the evolution of social contagion.
 
 \subsection{Model simulation}
 To represent different dynamics, four main cases are now presented. The coefficient values have been set appropriately to highlight different interesting situations in which the system can evolve. These cases represent the majority of possible scenarios:
@@ -141,11 +141,11 @@ Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenari
 \end{figure}
 
 \subsubsection{Equilibrium and stability analysis}
-To enhance understanding of the system, four cases were analyzed, and, where present, the stability of their equilibria was determined.
+To enhance understanding of the system, for the four cases presented before an analysis is performed, and, where present, the stability of their equilibria was determined.
 
 As observed, the system’s final equilibrium values vary according to parameter values. Specifically, the coefficients were combined to produce two Behavior conversion numbers, $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
-One way to identify and visualize the system’s equilibrium for a specific parameter set is through nullclines. These were calculated for each case, and the results are presented here. To simplify visualizing nullclines in a two-dimensional graph, the system can be reduced from three to two equations using the mass conservation assumption, yielding the following relationship: $1=H+C+A$ The first two equations are then rewritten, substituting the $A$ term, resulting in a two-equation system with two unknowns. By calculating the nullclines and varying the values of $\mathcal{B}_1$ and $\mathcal{B}_2$, we examine different scenarios. This reduction from the original system of three equations \ref{eq:behavioural_eq}  results in the following two-equation system: 
+One way to identify and visualize the system’s equilibrium for a specific parameter set is through nullclines. These were calculated for each case, and the results are presented here. To better visualize nullclines in a two-dimensional graph, the system can be reduced from three to two equations using the mass conservation assumption, yielding the following relationship: $1=H+C+A$ The first two equations are then rewritten, substituting the $A$ term, resulting in a two-equation system with two unknowns. By calculating the nullclines and varying the values of $\mathcal{B}_1$ and $\mathcal{B}_2$, we examine different scenarios. This reduction from the original system of three equations \ref{eq:behavioural_eq}  results in the following two-equation system: 
 \[
 \begin{cases}
 	\dot{H} = -k_1 H C - k_2 (1-H-C) H + \lambda_1 C + \lambda_2 (1-H-C)\\
@@ -153,92 +153,114 @@ One way to identify and visualize the system’s equilibrium for a specific para
 \end{cases}
 \]
 To simplify the readability and use a notation more familiar for plotting, the $H, C$ symbols have been substituted with respectively $x, y$. So equations become:
-\[
+\begin{equation}
+\label{eq:system_nullclines}
 \begin{cases}
 	\dot{x} = -k_1 y x - k_2 (1-y-x) x + \lambda_1 y + \lambda_2 (1-y-x)\\
 	\dot{y} = k_1 y x - \lambda_1 y
 \end{cases}
-\]
+\end{equation}
 The nullclines lines can be calculated imposing $\dot{x} = 0$ and $\dot{y} = 0$. Solving the system with this condition applied gives the following two equations. For the first nullcline, with $\dot{x} = 0$:
 
 \begin{equation}
  y = \frac{x(k_2 - k_2 x + \lambda_2)  \lambda_2}{x(k_2 - k_1)+ \lambda_1- \lambda_2}
 \end{equation}
 and for the second with $\dot{y} = 0$
-\[x = \frac{\lambda_i}{k_i} = 1/R_i \qquad \text{with } i = 1, \text{or } 2.
+\[x = \frac{\lambda_i}{k_i} = 1/\mathcal{B}_i \qquad \text{with } i = 1, \text{or } 2.
 \]
-The selection of the correct $\mathcal{B}_i$ to use for the secon nullcline depends on
-the comparison between the two reproductive ratio values. The larger value should be chosen, as it represents the behavior that will dominate at equilibrium, while the other behavior will tend toward zero.
+The selection of the correct $\mathcal{B}_i$ to use for the second nullcline depends on
+the comparison between the two reproductive ratio values. Seeing the result of the simulation, it is understood that the larger value should be chosen, as it represents the behavior that will dominate at equilibrium, while the other behavior will tend toward zero. Only in the case where the the $\mathcal{B}_1, \mathcal{B}_2 < 1$ these rule not holds, because the result of the secon nullcline found with the formula is out of the domain of existence (i.e $x > 1$, while the Compliant, $x$ are a value comprised between $[0,1]$.)
+The first nullcline existence condition can be calculated, imposing that the denominator must be not equal to zero. The result is
+\[ x \neq \frac{\lambda_2-\lambda_1}{k_2 - k_1} \]
+These value of $x$ is in the interval $[0,1]$ only if $\lambda_2>\lambda_1$ and $k_2 > k_1$, or $\lambda_2<\lambda_1$ and $k_2 < k_1$. The second nullcline instead, exist always iff $k_i \neq 0$.
 
-The following section presents four primary cases of the system’s evolution, with stability analyses conducted for the identified equilibria.
+
+Now the four primary cases of the system’s evolution, with stability analyses conducted for the identified equilibria are presented.
 %%%%%%%%%%%%%%%%%%
 
 \textbf{I case: }$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$. \\
 If both the "reproduction rates" have a value lower than one, the stable equilibrium is the one in which both Compliant and Against goes to zero. 
 
 From the nullcline plot, visible in the left figure \ref{fig:r1r2less1dyn}, it can be seen that there is not an intersection. The plot of the second nullcline result in a vertical line with a value grater than one. In this condition the only equilibrium is the one for which $H = 1$ and both $A$ and $C$ are equal to zero. 
-The equilibrium is asymptotically stable. 
+
+With the Routh-Hurwitz criteria the stability of this point is verified. To evaluate if the criteria is satisfied the Jacobian matrix of the system is calculated. Then the equilibrium is used to evaluate the trace and determinant of the system in this value. To see if the equilibrium satisfies Routh-Hurwitz condition it must holds:
+\begin{itemize}
+	\item trace(J) $< 0$
+	\item det(J) $> 0$
+\end{itemize}
+ 
+The Jacobian of the system of equation \ref{eq:system_nullclines} is
+\begin{equation}
+J = \begin{bmatrix}
+	-k_1 y -k_2 +k_2 y+2 k_2 x- \lambda_2 & -k_1 x + k_2 x + \lambda_1-\lambda_2 \\
+	k_1 y & k_1 x - \lambda_1
+\end{bmatrix}
+\end{equation}
+The trace of $J$ is
+\begin{equation}
+	trJ = -k_1 y -k_2 +k_2y + 2 k_2 x - \lambda_2 -\lambda_1 +k_1 x
+\end{equation}
+Its determinant is instead
+\begin{equation}
+	detJ = k_2 \lambda_1 + \lambda_1 \lambda_2 + 2 k_1 k_2 x^2 - k_1 k_2 x - k_1 \lambda_2 x - 2\cdot k_2 \lambda_1 x + k_1 \lambda_2 y - k_2 \lambda_1 y
+\end{equation}
+In this case the equilibrium point is all population Heedles, so $x = 1$, and $y = 0$. Calculating in this point the trace and determinant of the Jacobian, it is found $trJ(1,0) =-209/12000$, and $detJ = 121/2400000$. So, the equilibrium is locally asymptotically stable, because satisfies Routh-Hurwitz condition. 
 \begin{figure}[h]
 	\centering
-	\subfloat[][\emph{System  evolution.}]
-	{\includegraphics[width=0.47\linewidth]{1_corpo/figure/behavioural_equilibrium/r1r2less1_dyn}} \quad
-	\subfloat[][\emph{Nullclines plots.}]
-	{\includegraphics[width=0.47\linewidth]{1_corpo/figure/behavioural_equilibrium/r1r2less1_nullcline}} \\
-	\caption[Behavioural model third case]{Behavioural system dynamics and nullcline in the case of   with $R_1 < 1$ and $R_2 < 1$.}
+	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1}} \quad
+	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal}} \\
+	\caption[Nullclines first figure]{Nullclines plots of the first two situations analyzed.}
 	\label{fig:r1r2less1dyn}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \textbf{II case: } $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.\\
-This final situation is the most difficult to analyse. In fact, due to the equal value of the two influence processes, the final equilibrium of the compartments cannot be calculated using only the previous relations, but depends also on the initial condition. 
-The Careless compartment can be calculated using the same equation of previous cases, and the same value is found using both $Ca = \lambda_1/k_1$ and $Ca = \lambda_2/k_2$. As it can be seen from the system evolution and nullcline plots \ref{fig:r1r2equaldyn},at the equilibrium the Against and Compliant groups are formed by a subdivision of the $1 - Ca$ part. The initial condition have an influence on how this subdivision is composed. Using the Routh-Hurwitz criterium nothing can be said on this equilibrium because the determinant of the Jacobian have a null value.
+This second situation is the most difficult to analyse. In fact, due to the equal value of the two influence processes, the final equilibrium of the compartments cannot be calculated using only the previous relations, but depends also on the initial condition. 
+The Heedless compartment can be calculated using the same equation of previous cases, and the same value is found using both $x = \lambda_1/k_1$ and $x = \lambda_2/k_2$. So the final value of $x$ at equilibrium here is $\bar{x} = 0.12$. As it can be seen from the system evolution \ref{fig:model__behavior_sim_1},and nullcline plots \ref{fig:r1r2less1dyn}  ,at the equilibrium the Against and Compliant groups are formed by a subdivision of the $1 - \bar{x}$ part. The initial condition have an influence on how this subdivision is composed. Using the Routh-Hurwitz criterium nothing can be said on this equilibrium because the determinant of the Jacobian have a null value.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{III case:} $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$. \\
-In this first scenario, as visible in figure \ref{fig:r1greater1dyn}, the Against compartment tend to zero, so the equilibrium point can be calculated as $Ca = \lambda_1/k_1$ and $Co = 1 - \lambda_1/k_1 $. 
-The nullcline resulting plot is visible in \ref{fig:r1greater1nullcline}. 
+In this scenario, as visible in figure \ref{fig:nullcline_B1_mag_B2}, the Against compartment tend to zero, so the equilibrium point can be calculated as $\bar{x} = \lambda_1/k_1$ and $\bar{y} = 1 - \lambda_1/k_1 $. 
+The nullcline resulting plot is visible in \ref{fig:nullcline_B1_mag_B2}. 
 
-The equilibrium found as intersection of the two lines correspond to the one calculated with the numerical equation. With the Routh-Hurwitz criteria the stability of this point is verified. To evaluate if the criteria is satisfied the Jacobian matrix of the system is calculated. Then the equilibrium is used to evaluate the trace and determinant of the system in this value. To see if the equilibrium satisfies Routh-Hurwitz condition it must holds:
-\begin{itemize}
-	\item trace(J) $< 0$
-	\item det(J) $> 0$
-\end{itemize}
-Both condition holds and the solution is asymptotically stable and does not depends on the initial condition.
+The equilibrium found as intersection of the two lines correspond to the one calculated with the numerical equation. 
+Both condition holds: $trJ(\bar{x},\bar{y}) = -23/105$, and $detJ(\bar{x},\bar{y}) = 2/525$, so the solution is locally asymptotically stable and does not depends on the initial condition.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{III bis case:}
-The plots of the system evolution has an opposite behaviour w.r.t the first case. So here, is the Compliant compartment that tend to zero at equilibrium. 
+\textbf{III bis case: }$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.
+The evolution of the system has an opposite behaviour w.r.t the previous case. So here, is the Compliant compartment that tend to zero at equilibrium. 
 
-The equilibrium point can be calculated as $Ca = \lambda_2/k_2$ and $Co = 1 - \lambda_2/k_2$. 
-The nullcline resulting plot is visible in \ref{fig:r2greater1nullcline}. 
-
-The equilibrium is asymptotically stable. 
+The equilibrium point can be calculated as $\bar{x}= \lambda_2/k_2$ and $\bar{z} = 1 - \lambda_2/k_2$. 
+Also this equilibrium is locally asymptotically stable. 
 \begin{figure}[h]
 	\centering
-	\subfloat[][\emph{System  evolution.}]
-	{\includegraphics[width=0.47\linewidth]{1_corpo/figure/behavioural_equilibrium/r1equalr2_dyn}} \quad
-	\subfloat[][\emph{Nullclines plots.}]
-	{\includegraphics[width=0.47\linewidth]{1_corpo/figure/behavioural_equilibrium/r1equalr2_nullcline}} \\
-	\caption[Behavioural model fourth case]{Behavioural system dynamics and nullcline in the case of   $R_1 = R_2$.}
-	\label{fig:r1r2equaldyn}
+	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2}} \quad
+	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag}} \\
+	\caption[Nullclines second figure]{Nullclines plots of the second two situations analyzed.}
+	\label{fig:nullcline_B1_mag_B2}
 \end{figure}
 
 \textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
-
+In this situation, the equilibrium has the same value, of the III case, and also the stability condition are verified. However, the nullcline plot is very different. The vertical asymptote is clearly visible in the middle of the left panel in figure \ref{fig:nullcline_B1_mag_B2}. Also the vector field in the two cases are different, and as show in figure \ref{fig:model__behavior_sim_2}, the system initially evolve to a first equilibrium, corresponding to $\bar{x} = \lambda_2/k_2$, $y = 0$, and $\bar{z} = 1 - \lambda_2/k_2$, but this equilibrium not satisfies Routh-Hurwitz: calculating the value, it is in fact found $trJ > 0$, and $detJ= 0$.
 
 
 \subsubsection{Behavioural model experiment}
 To better comprehend all the possible scenarios that can emerge with the behavioural model a simulation is performed. Four vectors are defined, one for each parameter of the model. A different simulation for each combination of the coefficient is then roll out. In this case the value of the parameters is kept constant during each simulation.
 The range of variation of each parameter is the following:
 \begin{itemize}
-	\item $k_1$ between $0.1$ and $0.99$
-	\item $k_2$ between $0.1$ and $0.99$
-	\item $\lambda_1$ between $1/5$ and $1/30$ $d^{-1}$
-	\item $k_1$ between $1/5$ and $1/30$ $d^{-1}$
+	\item $B_1$ between $0.1$ and $10$
+	\item $B_2$ between $0.1$ and $10$
+	\item $\lambda_1$ between $1/2$ and $1/40$ $d^{-1}$
+	\item $k_1$ between $1/2$ and $1/40$ $d^{-1}$
 \end{itemize}
+It have been chosen these ranges because it is ipothesized that for the "fatigue" rate, a range between two and forty days can be realistic, this range has also been used in \cite{trova e cita world in data}. For the behavior conversion rate instead are chosen values that comprehend both a low and a high number of transition rates.  
 We observe the evolution of the dynamics of all the states, and to present a summary of the effects we collect for each simulation data such as the final value of the compartment, the max peak value and the corresponding time in which the peak occur. 
 Also here, for the sensitivity plots realization, the reproduction rates deriving from the combination of coefficients, equation \eqref{eq:behave_rate}, are used. 
 
-The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $R_1$ and $R_2$.
+The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $B_1$ and $B_2$.
 
 \begin{figure}[h]
 	\centering

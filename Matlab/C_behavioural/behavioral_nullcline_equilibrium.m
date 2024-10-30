@@ -54,8 +54,9 @@ fig = fig+1;
 figure(fig)
 hold on
 plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
-xline((lambda_1/k1), LineWidth= 1.3)
+xline((lambda_1/k1), LineWidth= 1.3, Color='green')
 quiver(y,y,u2,v2,'r')
+xline((lambda_2-lambda_1)/(k2-k1), '-',{'vertical', 'asymptote'})
 xlabel("H")
 ylabel("C")
 legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
@@ -103,8 +104,59 @@ time = 100;
 C_zero = 100;
 A_zero = 100;
 [taxisRK,HaxisRK,CaxisRK,AaxisRK,awareness] = obj.Behaviour_RK_ic(k1,k2,lambda_1,lambda_2,time,C_zero, A_zero);
+% Plot of the nullcline
+% Calculation of system vector field 
+u = zeros(length(y), length(y));
+v = zeros(length(y), length(y));
+for i = 1:numel(y)
+    for j = 1:numel(y)
+        u(i,j) = eq_H(y(i),y(j));
+        v(i,j) = eq_C(y(i),y(j));
+    end
+end
+u2 = u; u2 = transpose(u2);
+v2 = v; v2 = transpose(v2);
+% figure
+fig = fig+1;
+figure(fig)
+hold on
+plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
+xline((lambda_2/k2), LineWidth= 1.3, Color='green')
+quiver(y,y,u2,v2,'r')
+xline((lambda_2-lambda_1)/(k2-k1), '-',{'vertical', 'asymptote'})
+xlabel("H")
+ylabel("C")
+legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
+hold off
+xlim([0 1])
+ylim([0 1])
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+print(gcf,'-dpdf', ['nullcline_B1_B2_equal.pdf'])
 
 
+
+fig = fig+1;
+figure(fig)
+hold on
+plot(taxisRK,HaxisRK, 'linewidth',1.4 )
+plot(taxisRK,CaxisRK, 'linewidth',1.4 )
+plot(taxisRK,AaxisRK, 'linewidth',1.4 )
+xlabel("t[days]");
+ylabel("H[t], C[t], A[t]");
+ylim([0,1])
+legend('Heedless', 'Compliant', 'Against', Orientation='horizontal', Location='southoutside')
+txt = {['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+dim = [.91 .8 .1 .1];
+annotation('textbox',dim, ...
+    'String',txt,'EdgeColor','none')
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', ['behavior_B1_B2_less_1.pdf'])
 
 %% III CASE: B1 > 1 and B1 > B2
 % Simulation parameters
@@ -119,8 +171,58 @@ time = 200;
 C_zero = 100;
 A_zero = 100;
 [taxisRK,HaxisRK,CaxisRK,AaxisRK,awareness] = obj.Behaviour_RK_ic(k1,k2,lambda_1,lambda_2,time,C_zero, A_zero);
+% Calculation of system vector field 
+u = zeros(length(y), length(y));
+v = zeros(length(y), length(y));
+for i = 1:numel(y)
+    for j = 1:numel(y)
+        u(i,j) = eq_H(y(i),y(j));
+        v(i,j) = eq_C(y(i),y(j));
+    end
+end
+u2 = u; u2 = transpose(u2);
+v2 = v; v2 = transpose(v2);
+% figure
+fig = fig+1;
+figure(fig)
+hold on
+plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
+xline((lambda_1/k1), LineWidth= 1.3, Color='green')
+quiver(y,y,u2,v2,'r')
+xline((lambda_2-lambda_1)/(k2-k1), '-',{'vertical', 'asymptote'})
+xlabel("H")
+ylabel("C")
+legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
+hold off
+xlim([0 1])
+ylim([0 1])
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+print(gcf,'-dpdf', ['nullcline_B1_greater_B2.pdf'])
 
 
+
+fig = fig+1;
+figure(fig)
+hold on
+plot(taxisRK,HaxisRK, 'linewidth',1.4 )
+plot(taxisRK,CaxisRK, 'linewidth',1.4 )
+plot(taxisRK,AaxisRK, 'linewidth',1.4 )
+xlabel("t[days]");
+ylabel("H[t], C[t], A[t]");
+ylim([0,1])
+legend('Heedless', 'Compliant', 'Against', Orientation='horizontal', Location='southoutside')
+txt = {['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+dim = [.91 .8 .1 .1];
+annotation('textbox',dim, ...
+    'String',txt,'EdgeColor','none')
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', ['behavior_B1_B2_less_1.pdf'])
 %% IV CASE: B1 > 1 and B1 > B2
 % Simulation parameters
 B1 = 7;
@@ -134,7 +236,58 @@ time = 300;
 C_zero = 100;
 A_zero = 100;
 [taxisRK,HaxisRK,CaxisRK,AaxisRK,awareness] = obj.Behaviour_RK_ic(k1,k2,lambda_1,lambda_2,time,C_zero, A_zero);
+% Calculation of system vector field 
+u = zeros(length(y), length(y));
+v = zeros(length(y), length(y));
+for i = 1:numel(y)
+    for j = 1:numel(y)
+        u(i,j) = eq_H(y(i),y(j));
+        v(i,j) = eq_C(y(i),y(j));
+    end
+end
+u2 = u; u2 = transpose(u2);
+v2 = v; v2 = transpose(v2);
+% figure
+fig = fig+1;
+figure(fig)
+hold on
+plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
+xline((lambda_1/k1), LineWidth= 1.3, Color='green')
+quiver(y,y,u2,v2,'r')
+xline((lambda_2-lambda_1)/(k2-k1), '-',{'vertical', 'asymptote'})
+xlabel("H")
+ylabel("C")
+legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
+hold off
+xlim([0 1])
+ylim([0 1])
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+print(gcf,'-dpdf', ['nullcline_B1_greater_B2_lambda_2_big.pdf'])
 
+
+
+fig = fig+1;
+figure(fig)
+hold on
+plot(taxisRK,HaxisRK, 'linewidth',1.4 )
+plot(taxisRK,CaxisRK, 'linewidth',1.4 )
+plot(taxisRK,AaxisRK, 'linewidth',1.4 )
+xlabel("t[days]");
+ylabel("H[t], C[t], A[t]");
+ylim([0,1])
+legend('Heedless', 'Compliant', 'Against', Orientation='horizontal', Location='southoutside')
+txt = {['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+dim = [.91 .8 .1 .1];
+annotation('textbox',dim, ...
+    'String',txt,'EdgeColor','none')
+fontsize(20,"points")
+set(gcf, 'PaperUnits', 'centimeters');
+set(gcf, 'PaperPosition', [0 0 23 15]);
+set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', ['behavior_B1_B2_less_1.pdf'])
 %% Function section
 
 function y = x_nullcline(x, k1,k2,lambda_1, lambda_2)

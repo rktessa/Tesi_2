@@ -47,14 +47,14 @@ print(gcf,'-dpdf', ['behavior_B1_B2_less_1.pdf'])
 
 %% II CASE: B1 = B2 and greather than 1
 % Simulation parameters
-B1 = 10;
-B2 = 10;
-lambda_1 = 1/30; %fatigue to mantain C behaviour
-lambda_2 = 1/20; %fatigue to mantain A behaviour
+B1 = 8.5;
+B2 = 8.5;
+lambda_1 = 1/25; %fatigue to mantain C behaviour
+lambda_2 = 1/30; %fatigue to mantain A behaviour
 k1 = B1*lambda_1 ; %from H to C
 k2 = B2*lambda_2; %from H to A
-%
 time = 100;
+% Population initial condition
 C_zero = 100;
 A_zero = 100;
 [taxisRK,HaxisRK,CaxisRK,AaxisRK,awareness] = obj.Behaviour_RK_ic(k1,k2,lambda_1,lambda_2,time,C_zero, A_zero);

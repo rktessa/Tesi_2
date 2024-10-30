@@ -4,7 +4,7 @@ close all;
 addpath(genpath('..\'))
 
 %% Visualization of the multiple behaviour data
-   % load("data/multilpiAgainst.mat")
+    % load("multilpiAgainst.mat")
 % load("data/multilpiBehaviour.mat")
     % load("data/multilpiCareless.mat")
  % load("data/multilpiCompliant.mat")
@@ -30,12 +30,12 @@ lam2_vec = linspace(1/5, 1/30, 20);
 i = i+1;
 figure(i)
 t = tiledlayout(1,3);
-title(t,'Different simualation of behaviour model')
+title(t,'Different simulation of behaviour model')
     %1,1
     nexttile
     hold on
     l1 = 10; l2 = 8; l3 =10; l4 = 10;
-    for ii = 1:30
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
@@ -49,7 +49,7 @@ title(t,'Different simualation of behaviour model')
     nexttile
     hold on
     l1 = 10; l2 = 17; l3 =10; l4 = 10;
-    for ii = 1:30
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
@@ -61,8 +61,8 @@ title(t,'Different simualation of behaviour model')
      %1,3
     nexttile
     hold on
-    l1 = 10; l2 = 25; l3 =10; l4 = 10;
-    for ii = 1:30
+    l1 = 10; l2 = 20; l3 =10; l4 = 10;
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
@@ -83,7 +83,7 @@ title(t,'Different simualation of behaviour model')
     nexttile
     hold on
     l1 = 10; l2 = 9; l3 =15; l4 = 5; %high lam1, low lam2
-    for ii = 1:30
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
@@ -97,7 +97,7 @@ title(t,'Different simualation of behaviour model')
     nexttile
     hold on
     l1 = 10; l2 = 9; l3 =9; l4 = 11; %equal lambdas, high k2
-    for ii = 1:30
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
@@ -110,7 +110,7 @@ title(t,'Different simualation of behaviour model')
     nexttile
     hold on
     l1 = 10; l2 = 9; l3 =8; l4 = 18;%low lam1, high lam2
-    for ii = 1:30
+    for ii = 1:20
         aga = reshape(Against(ii,l2,l3,l4,:),1,d2,[]);
         txt =  "\k1-"+ num2str(ii)+ "= "+ num2str(k1_vec(ii)); 
         plot(aga, 'LineWidth',1.5 ,'DisplayName',txt)
