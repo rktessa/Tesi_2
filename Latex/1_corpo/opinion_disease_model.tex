@@ -4,24 +4,25 @@
 \label{ch:model_alone}
 
 
-To develop a multi-layer system combining an epidemiological layer with a behavioral one, we first study the dynamics of each layer separately, as presented here. 
-
-In this section, we describe the developed SIRS epidemiological model, followed by the Careless, Compliant, Against behavioral model. A sensitivity analysis is also conducted. Understanding the underlying dynamics of each graph is crucial for better comprehending the dynamics emerging from the multi-layer structure.
+To develop a multi-layer system that combines an epidemiological layer with a behavioral one, we first present the dynamics of each layer independently, as presented here. This section briefly introduces the SIRS model, focusing primarily on the reasons for its selection. Then, the Heedless, Compliant, Against behavioral model is introduced, simulated, and analyzed. Understanding the underlying dynamics of this model is crucial for gaining insights into the complex interactions that emerge within the multi-layer structure.
 
 
 \section{SIRS model}
 \label{sec:SIRS}
+To describe the epidemic evolution a  SIRS model is implemented. It is an extension of the most famous SIR. Its main addition is the possibility for individuals to become again susceptible after a certain period of time beyond the end of the infection. There are four main characteristic parameters in this model:
+\begin{itemize}
+	\item $\beta$ is the transmission rate parameter for person-to-person
+	contact.
+	\item $\gamma$ is the recovery rate.
+	\item  $\delta$ is the rate at which immunity recedes following recovery
+	\item  $\mathcal{R}(t)$ is the reprodutction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
+	
+\end{itemize}
+The choice of an SIR-like model is made because these models are well-known for their ability to describe diseases like COVID-19, and the literature provides numerous examples that use this model \cite{Dehning_2020, Li2022}. The SEIR model could also be a viable choice due to the relevance of the "Exposed" compartment, which effectively captures the disease progression for infections such as COVID-19. In these cases, an incubation period occurs after exposure before symptoms appear and the individual becomes contagious. However, this compartment was excluded because it has been shown \cite{Dehning_2020} that a simpler SIR model can still accurately represent the disease's dynamics. When comparing model simulations with real data, a delay can be incorporated to account for the lag between symptom onset, testing, and reporting. This delay reflects the time needed for symptoms to manifest, conduct testing, and report cases to relevant authorities.
 
-$\beta$ is the transmission rate parameter for person-to-person
-contact, $\gamma$ is the recovery rate, $\delta$ is the rate at which
-immunity recedes following recovery, and $R(t)$ is the recovered
-fraction of the population
+The model includes the possibility of reinfection, which is important when studying long-term scenarios. Considering the effect of individual behavior on disease progression, two critical phases are hypothesized to influence this evolution: the initial stages of the epidemic and the period following the first peak.
 
-To describe the epidemic evolution a  SIRS model is implemented. It is an extension of the most famous SIR. Its main addition is the possibility for individuals to become again susceptible after a certain period of time beyond the end of the infection. The choice of a SIR-like model is done because they are well-known as capable to describe disease like the COVID-19 CITA. From an epidemiological point of view, an "Exposed" compartment will be very suitable, to describe better the evolution of the disease. In fact, in this class of infections, after the contact with an infectious there is a certain period of incubation before the development of symptoms and contagiousness. Nevertheless this compartment was not insert in the model, because it was demonstred CITA, that also a more simple SIR can be able to model correctly the disease. In this case for realise a better fit of the real data a delay in the time scale of the system can be added in the model. This delay can be considered as an extra time to ... CITA E VEDI ARTICOLO.
-
-The possibility of become again susceptibles is added in the model, because it is considered an interesting feature in the study of a long range time scenario. 
-Considering the effect of people behaviour on the evolution of a disease, it is hypothesized that two keys moment of this influence can be the initial stages and after the first peak of epidimic. 
-All'inizio il sirs si comporterà come un modello sir normal, perchè non ci saranno abbbastanza tempo trascorso perchè le persone possano reinfettarsi. Però dopo le persone posso no reinfettarsi e la loro opinione e comportamento diventerà importante. da spiegare meglio
+In the initial stages, the SIRS model behaves similarly to a typical SIR model because reinfection is unlikely to occur in a short time frame. However, over time, as reinfections become possible, individual attitudes and behaviors will increasingly impact the disease's spread.
 
 \section{Behavioural model}
 \label{sec:behavioral_model}
@@ -127,7 +128,7 @@ In Figure \ref{fig:model__behavior_sim_1}, it is evident that when both Behavior
 	\caption[Behavioural model simulation first]{Behavioural system dynamics first two cases.}
 	\label{fig:model__behavior_sim_1}
 \end{figure}
-
+\label{subsec:model_behav}
 Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenarios. On the left, we observe the dynamics when one of the $\mathcal{B}$ values is greater than the other, and both $\lambda$ values are the same. It is straightforward to understand that this dynamic would also occur if, with the same values, the $\lambda$ of the dominant behavior were greater than the other, as a larger $\lambda$ would result in a higher $k$ (persuasion rate). The right panel, however, presents a particularly intriguing situation. Here, a lower $\lambda_1$ compared to $\lambda_2$, combined with $k_2 > k_1$, leads to an initial rapid spread of the Against group, even though $\mathcal{B}_2 < \mathcal{B}_1$! It is only after some time that the system evolves to the final equilibrium, which matches the left scenario's result, as the $\mathcal{B}$ values are the same in both simulations.
 
 \begin{figure}[h]
@@ -248,28 +249,26 @@ In this situation, the equilibrium has the same value, of the III case, and also
 
 
 \subsubsection{Behavioural model experiment}
-To better comprehend all the possible scenarios that can emerge with the behavioural model a simulation is performed. Four vectors are defined, one for each parameter of the model. A different simulation for each combination of the coefficient is then roll out. In this case the value of the parameters is kept constant during each simulation.
-The range of variation of each parameter is the following:
+To better understand all possible scenarios emerging from the behavioral model, a simulation is conducted. Four vectors are defined, one for each model parameter, and a separate simulation is performed for each parameter combination. During each simulation, the parameter values remain constant. The variation range for each parameter is as follows:
 \begin{itemize}
-	\item $B_1$ between $0.1$ and $10$
-	\item $B_2$ between $0.1$ and $10$
+	\item $k_1$ between $0.1$ and $0.99$
+	\item $k_2$ between $0.1$ and $0.99$
 	\item $\lambda_1$ between $1/2$ and $1/40$ $d^{-1}$
 	\item $k_1$ between $1/2$ and $1/40$ $d^{-1}$
 \end{itemize}
-It have been chosen these ranges because it is ipothesized that for the "fatigue" rate, a range between two and forty days can be realistic, this range has also been used in \cite{trova e cita world in data}. For the behavior conversion rate instead are chosen values that comprehend both a low and a high number of transition rates.  
-We observe the evolution of the dynamics of all the states, and to present a summary of the effects we collect for each simulation data such as the final value of the compartment, the max peak value and the corresponding time in which the peak occur. 
-Also here, for the sensitivity plots realization, the reproduction rates deriving from the combination of coefficients, equation \eqref{eq:behave_rate}, are used. 
+The resulting $\mathcal{B}_1, \mathcal{B}_2$ have a range spanning between $0.5$, and $29.7$.
+These ranges are chosen based on the assumption that the "fatigue" rate realistically spans between two and forty days, a range supported by prior research, such as the study in \cite{trova e cita world in data}. For the behavior conversion rate, both low and high values for transition rates are included. We observe the dynamics across all states, recording key metrics for each simulation, such as the final compartment values, peak values, and the time of peak occurrence. Additionally, for generating the sensitivity plots, the reproductive rates derived from the coefficient combinations in equation \eqref{eq:behave_rate} are applied. 
 
-The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $B_1$ and $B_2$.
+The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Final Compliant compartment}]
-	{\includegraphics[width=.47\textwidth]{1_corpo/figure/behavioural_equilibrium/final_compliant_sensitivity}} \quad
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map}} \quad
 	\subfloat[][\emph{Final Against compartment}]
-	{\includegraphics[width=.47\textwidth]{1_corpo/figure/behavioural_equilibrium/final_against_sensitivity}} \\
-	\subfloat[][\emph{Final Careless compartment}]
-	{\includegraphics[width=.47\textwidth]{1_corpo/figure/behavioural_equilibrium/final_careless_sensitivity}}
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map}} \\
+	\subfloat[][\emph{Final Heedless compartment}]
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map}}
 	\caption[Final Behavioural compartments]{The final value reached at equilibrium by every compartment in the behavioural model.}
 	\label{fig:subfig_sensitivity_behavioural}
 \end{figure}
@@ -281,35 +280,53 @@ Another figure in which this threshold effect can be observed is \ref{fig:subfig
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Final Compliant compartment}]
-	{\includegraphics[height=.45\textwidth]{1_corpo/figure/behavioural_equilibrium/final_compliant_r1}} \quad
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_compliant_B1}} \quad
 	\subfloat[][\emph{Final Against compartment}]
-	{\includegraphics[height=.45\textwidth]{1_corpo/figure/behavioural_equilibrium/final_against_r1}} \\
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_against_B1}} \\
 	\subfloat[][\emph{Final Careless compartment}]
-	{\includegraphics[height=.45\textwidth]{1_corpo/figure/behavioural_equilibrium/final_careless_r1}}
-	\caption[Final Behavioural compartments varying $R_1$]{The final value reached at equilibrium by every compartment in the behavioural model varying the $R_1$ coefficient w.r.t different $R_2$ values.}
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_heedless_B1}}
+	\caption[Final Behavioural compartments varying $B_1$]{The final value reached at equilibrium by every compartment in the behavioural model varying the $R_1$ coefficient w.r.t different $B_2$ values.}
 	\label{fig:subfig_sensitivity_behavioural_r1}
 \end{figure}
-The plots show how, for a fixed values of $\lambda_1$ and $k_2$, change the size at equilibrium of the system, varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, on the x-axis is plotted the $R_1$  coefficient, that can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $R_2$ situations are represented. 
+The plots show how, for a fixed values of $\lambda_1$ and $k_2$, change the size at equilibrium of the system, varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, on the x-axis is plotted the $\mathcal{B}_1$  coefficient, that can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $\mathcal{B}_2$ situations are represented. 
 
-The threshold effect is clearly visible also here. Looking at the Compliant and Against final values it can also be seen that after the $R_1$ reproductive coefficient is became dominant, the  increase is the final size observed in the Compliant plot is due to the decrease in the Careless compartment. 
+The threshold effect is clearly visible here as well. When examining the final values for the Compliant and Against compartments, it is evident that once the $\mathcal{B}_1$ reproductive coefficient becomes dominant, the increase in the final size observed in the Compliant compartment results from a decrease in the Careless compartment.
 
-%Provo a scrivere, ma si va tutto molto bene
-%L'inglese, come disse Daniele è da sistemare, però sono su una buona strada...
+Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures  \ref{fig:max_against}, and \ref{fig:max_against2}illustrate the maximum value reached by the Against compartment. In the left panel, varying $\lambda_1$ and $\lambda_2$, we note a difference between two simulations: in the first, where $k_1$ and $k_2$ have similar values, we see situations where, even if the $A$ compartment has a higher $k_2$ value, the Compliant group ultimately becomes dominant. This situation is visible in the top-left section of the heat map and in the Against plots, where cases appear in which $A$ reaches a peak but eventually stabilizes to zero at equilibrium.
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{Max Against compartment}]
+	{\includegraphics[width=.38\textwidth]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1}} \quad
+	\subfloat[][\emph{Against evolution in simulation}]
+	{\includegraphics[width=.58\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1}} \\
+	\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
+	\label{fig:max_against}
+\end{figure}
 
 
+The first case confirms the dynamics presented earlier in the model simulation in section \ref{subsec:model_behav}. This relationship between the departure rate associated with a certain behavior and the persuasion rate can lead to an initial phase where a behavior not dominant at equilibrium gains traction, reaches a peak, and then gradually declines. In some simulations, this diminishing phase can extend over a significant portion of the simulation time, as illustrated in Figure \ref{fig:model__behavior_sim_2}.
 
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{Max Against compartment}]
+	{\includegraphics[width=.38\textwidth]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2}} \quad
+	\subfloat[][\emph{Against evolution in simulation}]
+	{\includegraphics[width=.58\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2}} \\
+		\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
+	\label{fig:max_against2}
+\end{figure}
 
-\chapter{Models description and analysis}
+\chapter{Behavioral epidemic model}
 \label{ch:epi_behav_model}
-\section{Behavioral epidemic model}
+\section{Model description}
 
-ALTRI ASPETTI INSERITI WRT TO THE BASIC BEHAVIOR MODEL
+The newly developed model in this thesis, the Susceptible-Against-Heedless-Compliant-Infected-Recovered (SAHCIR) model, combines both epidemic and behavioral components, establishing an innovative approach to disease modeling. This model aims to bridge the epidemiological and social dynamics of an outbreak, integrating empirical observations to compare model outcomes with real-world data, as will be discussed in Chapter \ref{ch:data}. While some existing models combine these aspects, like the one presented in \cite{Bulai2023}, they often rely on predefined assumptions about specific behaviors rather than direct empirical validation.
 
-the waning of opinion, lack of interest, after the recovery \cite{Zuo2022,Kemp_2021} 
+The SAHCIR  model incorporates a variety of behavioral stances towards safety measures, reflecting both proactive (pro-precaution) and non-compliant (anti-precaution) attitudes. The model also recognizes that, particularly during an epidemic's initial phase, a significant portion of the population may not follow safety measures—not out of skepticism, but due to a lack of awareness about the severity of the outbreak. Additionally, the model allows for government intervention through parameters that influence the spontaneous transition rate from the "Against" to the "Compliant" group, mirroring real-world public health policies aimed at promoting preventive behaviors. 
 
-the fact that even in the I or R compartments population manain an against or compliant behviors, not isolate this mechanism only in the S compartments, as done for example in \cite{Zuo2022} 
+This model thus provides a more empirically grounded framework for understanding the interplay between public health dynamics and social behaviors, filling a gap in the literature by providing a model designed for direct confrontation with real-world data rather than solely hypothetical scenarios.
 
-the gloal agent effect is also add in this model wrt the behavior alone.
+%ALTRI ASPETTI INSERITI WRT TO THE BASIC BEHAVIOR MODELthe waning of opinion, lack of interest, after the recovery \cite{Zuo2022,Kemp_2021} The fact that even in the I or R compartments population mantain an against or compliant behviors, not isolate this mechanism only in the S compartments, as done for example in \cite{Zuo2022}. 
 
 The model is composed of two layers coupled together: a disease layer, describing the evolution of an epidemic, and a behaviour layer describing the transition among different behaviours during the epidemic development.
 The behavioral layer has three possible compartments, as seen in chapter \ref{sec:behavioral_model}: Heedles, Compliant, and Against.
@@ -320,16 +337,15 @@ The behavioral layer has three possible compartments, as seen in chapter \ref{se
 	\item[$A$:] Against, who not consider a new infection developing as a risk for its safety and not use protection or change its behaviour during the epidemic. 
 \end{itemize}
 
-This behaviour structure is coupled with a SIRS epidemic model, giving rise to the mutually exclusive compartments.
+n this model, behavioral dynamics are combined with a SIRS epidemic framework to create seven distinct, mutually exclusive compartments that capture both disease states and public responses. The Heedless behavior is confined to the first compartment, representing individuals who are susceptible to infection. This reflects the assumption that when a new disease emerges, individuals lack sufficient information to take precautionary actions. Consequently, they behave "normally," without adopting safety measures.
 
-SPIEGA CHE HAI SC SA SH, E POI SOLO IC IA ECC
-PERCHE TOGLI H DOPO S..
+As people transition through stages of infection and recovery, the model assumes they gain awareness of the disease's risks and recognize the importance of infection prevention. Thus, after infection or recovery, it is considered unrealistic for them to remain Heedless. Instead, individuals are divided into two categories: Compliant, those who adopt behaviors to minimize further spread, and Against, who are aware but do not actively prevent transmission, possibly due to personal beliefs or low-risk perception. 
 
 \begin{itemize}
 	\item[$SH$:] Susceptible Heedless, the group where there is the majority of the population at the beginning of an epidemic. There is not much information about disease-associated risk and the people in this compartment have no fear of becoming infected and do not modify their behaviors.
 	\item[$SC$:] Susceptible Compliant, is a group composed of those who want to avoid of becomes infected. People who use non-pharmaceutical interventions to limit the possibility of getting sick.
 	\item[$SA$:] Susceptible Against, the people that refuse the information spread by media or authority. They do not consider the threat represented by the disease and do not respect the safety rules or recommended behavior to avoid getting sick or infecting others. 
-	\item[$IC$:] Infected Compliant, people infected by the virus. In this group go both the $SC$ and $SH$ compartments because it is considered that even those who have a "neutral" opinion about the risk associated with the infection, change their minds when become infected. The principal behavior associated with this group is that it is respected the quarantine and so a certain part of the infected avoid contact while they are sick.
+	\item[$IC$:] Infected Compliant, people infected by the virus. In this group go both the $SC$ and $SH$ compartments because it is considered that even those who have a "neutral" opinion about the risk associated with the infection, change their minds when become infected. The principal behavior associated with this group is that safety measures such as quarantine are respected, and so a certain part of the infected avoid contact while they are sick.
 	\item[$IA$:] Infected Against, compartment composed by the against became sick. They do not respect self-isolation, and diffuse the disease. 
 	\item[$RC$:] Recovered Compliant, people that are healed from the infection. They cannot be infected, but contribute to raising awareness about the risk associated with the disease. 
 	\item[$RA$:] Recovered Against, the part of the recovered formed by against healed from the infection. The most radicalized can be in this group. They are protected by immunity from a disease in which they don't believe. 
@@ -338,13 +354,13 @@ PERCHE TOGLI H DOPO S..
 The resulting system is described by the following system of differential equations: 
 \begin{equation}
 	\begin{cases}
-		\dot{SH} = - \phi k_1 SH \cdot C - k_2 SH \cdot A + \lambda_1 SC + \lambda_2 SA + \delta(1-\phi_n)RC - \beta SH \cdot I\\
-		\dot{SC} = \phi k_1 SH \cdot C + \delta \phi_n RC - \lambda_1 SC - \beta \rho SC \cdot I  \\
+		\dot{SH} = - \psi k_1 SH \cdot C - k_2 SH \cdot A + \lambda_1 SC + \lambda_2 SA + \delta(1-\phi_n)RC - \beta SH \cdot I\\
+		\dot{SC} = \psi k_1 SH \cdot C + \delta \phi_n RC - \lambda_1 SC - \beta \rho SC \cdot I  \\
 		\dot{SA} = k_2 SH \cdot A - \lambda_2 SA - \beta SA \cdot I + \delta RA \\
-		\dot{IC} = \beta \rho SC \cdot I + \beta SH \cdot I + \phi k_3 IA \cdot C - \lambda_3 IC -  k_4 IC \cdot A + \lambda_4 IA - \gamma IC\\
-		 \dot{IA} = \beta SA \cdot I - \phi k_3 IA \cdot C + \lambda_3 IC + k_4 IC \cdot A - \lambda_4 IA - \gamma IA\\
-		 \dot{RC} = \gamma IC - k_6 RC \cdot A + \lambda_6 RA + \phi k_5 RA \cdot C - \lambda_5 RC - \delta RC\\
-		 \dot{RA} = \gamma IA + k_6 RC \cdot A - \lambda_6 RA - \phi k_5 RA \cdot C + \lambda_5 RC - \delta RA\\
+		\dot{IC} = \beta \rho SC \cdot I + \beta SH \cdot I + \psi k_3 IA \cdot C - \lambda_3 IC -  k_4 IC \cdot A + \lambda_4 IA - \gamma IC\\
+		 \dot{IA} = \beta SA \cdot I - \psi k_3 IA \cdot C + \lambda_3 IC + k_4 IC \cdot A - \lambda_4 IA - \gamma IA\\
+		 \dot{RC} = \gamma IC - k_6 RC \cdot A + \lambda_6 RA + \psi k_5 RA \cdot C - \lambda_5 RC - \delta RC\\
+		 \dot{RA} = \gamma IA + k_6 RC \cdot A - \lambda_6 RA - \psi k_5 RA \cdot C + \lambda_5 RC - \delta RA\\
 	\end{cases}
 	\label{eq:epi_behavioural_eq}
 \end{equation}
@@ -354,8 +370,8 @@ where
 	\item $A = SA + IA + RA$ is the total fraction of Against individuals.
 	\item $C = SC + IC + RC$  is the total fraction of Compliant individuals.
 	\item $I = \epsilon \cdot IC + IA$ is the fraction of infected people participating into the infection process.
-	\item $\phi$ is awareness, a parameter that accounts for the current state of the epidemic and influences the behavior persuasion between groups. It can be modeled in different ways. 
-	\item $\phi_n$ it is the awareness normalized, used to split the population while re entering in the susceptible class in the Heedless or Compliant group. 
+	\item $\psi$ is a parameter that represent an increased (if its value is larger than 1) incentive of transition to Compliant group. It can be regarded as an intervention from an external global agent.
+	\item $\phi_n$ it is the  a normalized parameter, used to split the population while re entering in the susceptible class in the Heedless or Compliant group. 
 	\item $\rho$ is the protection factor of Compliant people that reduces their risk of becoming infected.
 	\item $\beta$ is the infectivity rate associated with the disease.
 	\item $\gamma$ is the recovery rate.
@@ -387,7 +403,7 @@ To describe the evolution of the system the following notation using matrices is
 	\item $h(s, i, r)$ is also a function but used for the flow into and out of the recovered compartment because of natural immunity or vaccination.
 \end{itemize} 
 
-The resulting disease model is represented by the system:
+Following the abstraction described above, a generic disease model is represented by the system:
 
 \begin{equation}
 	\begin{cases}
@@ -406,7 +422,7 @@ R_0 = \beta'(s,i,r) b V^{-1} \Pi D s_0
 
 The disease-free equilibrium is defined as a locally stable equilibrium of the system in which there is no disease and in the sense that a solution starting close to $(s_0, 0, r_0)$ remains close to this state. 
 
-Considering the system dynamic presented in \eqref{eq:epi_behavioural_eq}, it can be rewritten in the matrix form expressed in  \eqref{eq:epi_ro_eq} as: 
+Considering the system dynamic presented in \eqref{eq:epi_behavioural_eq}, this can be rewritten in the matrix form expressed in  \eqref{eq:epi_ro_eq} as: 
 
 \begin{align*}
 \Pi & = 
@@ -445,14 +461,18 @@ i & =
 
 
 The resulting $R_0$ find with this method is: 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.99\linewidth]{1_corpo/figure/r0/ro_epidemic_behavioural}
-	\caption[Reproduction number of epidemic behaviour model.]{Basic reproduction number of the epidemic behaviour model.}
-	\label{fig:roepidemicbehavioural}
-\end{figure}
+\begin{equation}
+	\begin{split}
+	R_0 = \frac{\beta}{\gamma}[ & S A_0 (\frac{(\gamma + \lambda_3+A_0\, k_4)}{\sigma}+\frac{\epsilon (\lambda_4 + C_0\, k_3 \,\psi)}{\sigma}) + S H_0 (\frac{(\lambda_3+A_0\, k_4)}{\sigma}+\frac{ \epsilon (\gamma+\lambda_4 + C_0\, k_3 \,\psi)}{\sigma}) \\
+	& + S C_0\, \rho (\frac{( \lambda_3+A_0\, k_4)}{\sigma}+\frac{\beta \epsilon (\gamma+\lambda_4 + C_0\, k_3 \,\psi)}{\sigma})] \\
+	\text{where}\\
+	\sigma = &  \lambda_3 + \lambda_4 + \gamma + A_0 k_4 + C_0  k_3 \psi
+	\end{split}
+	\label{eq:roepidemicbehavioural}
+\end{equation}
 
 
+Now are presented different cases create to simulate possible different situation with the mode. The objective is to verify its evolution, with different sets of parameter, calculate the value of . 
 
 \subsubsection{$I$ case: $R_0$ first evaluation}
 
@@ -469,9 +489,9 @@ SC_0 & = 50/60e6 & SA_0 &= 50/60e6 & C &= A = SC_0 & SH_0 & = 1 - SC_0- SA_0\\
 
 With these coefficient values, considering separately the epidemic and behavioral layers the basic reproduction values are:
  \begin{align*}
- 	R_0^{SIR} &= \frac{\beta}{\gamma} = 1.1429 \\
- 	R_3^{behav} & = \frac{k_3}{\lambda_3} =  3.3566  \\
- 	R_4^{behav} & = \frac{k_4}{\lambda_4} = 1.6993 \\
+ 	R_0 &= \frac{\beta}{\gamma} = 1.1429 \\
+ 	B_3 & = \frac{k_3}{\lambda_3} =  3.3566  \\
+ 	B_4 & = \frac{k_4}{\lambda_4} = 1.6993 \\
  \end{align*}
    
 In this situation, an epidemic can spread, in fact $R_0^{SIR} >1$, and looking at the behavior of people the complaints, associated with $R_3^{behav}$, have a larger influence than the one of the "against" group.

@@ -77,11 +77,11 @@
 \contentsline {subsection}{\numberline {5.2.1}Model simulation}{55}{subsection.5.2.1}%
 \contentsline {subsubsection}{Equilibrium and stability analysis}{56}{section*.63}%
 \contentsline {subsubsection}{Behavioural model experiment}{59}{section*.66}%
-\contentsline {chapter}{\numberline {6}Models description and analysis}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Behavioral epidemic model}{63}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Basic reproduction number calculation}{65}{subsection.6.1.1}%
-\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{67}{section*.71}%
-\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{68}{section*.73}%
-\contentsline {part}{\EnsureStandardFontEncoding {III}\hspace {1em}Data analysis}{71}{part.3}%
-\contentsline {chapter}{\numberline {7}Data }{73}{chapter.7}%
-\contentsline {chapter}{Bibliography}{75}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Behavioral epidemic model}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Model description}{65}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Basic reproduction number calculation}{67}{subsection.6.1.1}%
+\contentsline {subsubsection}{$I$ case: $R_0$ first evaluation}{70}{section*.72}%
+\contentsline {subsubsection}{$II$ case: how parameters influence the $R_0$ value}{71}{section*.74}%
+\contentsline {part}{\EnsureStandardFontEncoding {III}\hspace {1em}Data analysis}{73}{part.3}%
+\contentsline {chapter}{\numberline {7}Data }{75}{chapter.7}%
+\contentsline {chapter}{Bibliography}{77}{chapter.7}%

@@ -10813,6 +10813,55 @@
       \endverb
       \keyw{Transmission dynamics,coupled contagion,homophily,outgroup aversion,social distancing}
     \endentry
+    \entry{Li2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0d36a6690c1ecc71addd182336c05c16}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xia},
+           giveni={X\bibinitperiod}}}%
+        {{hash=601d740175f4dcb922f0e42d2b46c9e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chuntian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2620b9afd37cca5b9b7354f67c036d4d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=401b6f15b3d34e4f5dbabbaf4e460eb0}{%
+           family={Bertozzi},
+           familyi={B\bibinitperiod},
+           given={Andrea\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Mathematical Sciences ({AIMS})}%
+      }
+      \strng{namehash}{d4b7c313dd6c6c11dc46e6bd9ee6e3b1}
+      \strng{fullhash}{1cb38dad432b80baf62a55094b2d1c92}
+      \strng{fullhashraw}{1cb38dad432b80baf62a55094b2d1c92}
+      \strng{bibnamehash}{d4b7c313dd6c6c11dc46e6bd9ee6e3b1}
+      \strng{authorbibnamehash}{d4b7c313dd6c6c11dc46e6bd9ee6e3b1}
+      \strng{authornamehash}{d4b7c313dd6c6c11dc46e6bd9ee6e3b1}
+      \strng{authorfullhash}{1cb38dad432b80baf62a55094b2d1c92}
+      \strng{authorfullhashraw}{1cb38dad432b80baf62a55094b2d1c92}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Networks and Heterogeneous Media}
+      \field{number}{3}
+      \field{title}{A martingale formulation for stochastic compartmental susceptible-infected-recovered ({SIR}) models to analyze finite size effects in {COVID}-19 case studies}
+      \field{volume}{17}
+      \field{year}{2022}
+      \field{pages}{311}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3934/nhm.2022009
+      \endverb
+    \endentry
     \entry{Usher_2020}{article}{}{}
       \name{author}{5}{}{%
         {{hash=7879f34f5921b9c02a117847a44bd585}{%
@@ -11020,6 +11069,7 @@
   \enddatalist
   \missing{CITA}
   \missing{CITARE_DEVO_RITROVARE_LA_FONTE}
+  \missing{trova e cita world in data}
 \endrefsection
 \endinput
 
