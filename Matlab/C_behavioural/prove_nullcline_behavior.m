@@ -1,37 +1,55 @@
 clc;
-clear all;
+%clear all;
 close all;
 %% Behavior model simulation for thesis
+% save('nullcline_data')
+%load('nullcline_data')
 % 24 Ottobre 2024
 addpath(genpath('..\'))
 obj = functionsContainer;
-x = linspace(0,1,1000);
+x = linspace(0,1,30);
 y = linspace(0,1,20);
 fig = 0;
 %% I CASE: B1 < 1 and B2 < 1
 %% II CASE: B1 = B2 and greather than 1
 %% III CASE: B1 > 1 and B1 > B2
 %% IV CASE: B1 > 1 and B1 > B2, lambda2 > lambda1
+%% V CASE: B1 < 1 B2 > 1
 % Simulation parameters
 
-caso = 3;
+caso = 5;
 
 [lambda_1,lambda_2,k1,k2, B1, B2, C_zero,A_zero, time,title, X,Y] = scenario(caso);
 [taxisRK,HaxisRK,CaxisRK,AaxisRK,awareness] = obj.Behaviour_RK_ic(k1,k2,lambda_1,lambda_2,time,C_zero, A_zero);
+
+syms  xa ya
+eq_y(xa,ya) = -k2 *xa^2+(k2*ya -k1*ya -k2 + lambda_2)*xa+ (lambda_1*ya-lambda_2*ya + lambda_2);
+
+eq_y(lambda_1/k1, ya)
+
 % Equilibrium
 syms H C A 
+% Reduced system
 eq_H(H,C) = -k1*H*C - k2*(1-H-C)*H + lambda_1*C + lambda_2 * (1-H-C);
 eq_C(H,C) = +k1*H*C - lambda_1*C;
+% FULL system of equation
+eq_H2(H,C,A) = -k1*H*C - k2*A*H + lambda_1*C + lambda_2 * A;
+eq_C2(H,C,A) = +k1*H*C - lambda_1*C;
+eq_A2(H,C,A) = +k2*H*A - lambda_2*A;
+
 % The Jacobian of this equation in this case is:
 Jac(H, C) = jacobian([eq_H, eq_C], [H, C])
 % Computing the Trace
 Trac(H,C) = trace(Jac(H,C))
 % Determinant
 d(H,C) = det(Jac)
+% X = lambda_1/k1; Y = 1-lambda_1;
 value1 = X;
-value2 = Y;
+value2 = Y
 trace_J = Trac(value1, value2)
 det_J =  d(value1, value2)
+
+% y = x_nullcline(, k1,k2,lambda_1, lambda_2)
 %% 
 
 % Plot of the nullcline
@@ -51,17 +69,42 @@ v2 = v; v2 = transpose(v2);
 fig = fig+1;
 figure(fig)
 hold on
-plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
-xline((lambda_1/k1), LineWidth= 1.3, Color='green')
-quiver(y,y,u2,v2,'r')
-xline((lambda_2-lambda_1)/(k2-k1),"--",{'vertical', 'asymptote'},'LineWidth', 3,Color='magenta')
+plot(x,x_nullcline(x,k1,k2,lambda_1,lambda_2), LineWidth=3)
+xline((lambda_1/k1), 'Color', [0.4660 0.6740 0.1880],LineWidth= 3)
+% xline((lambda_2/k2), 'Color', [0.4660 0.6740 0.1880],LineWidth= 3)
+yline(0, 'Color', [0.4660 0.6740 0.1880],LineWidth= 3)
+quiver(y,y,u2,v2,'r', LineWidth=2)
+plot(1,0, 'o', 'Color',[0.4940 0.1840 0.5560], 'LineWidth',5)
+plot(lambda_2/k2,0,"d", 'Color',[0.4940 0.1840 0.5560], 'LineWidth',5)
+plot(lambda_1/k1,1-lambda_1/k1,"o", 'Color',[0.4940 0.1840 0.5560], 'LineWidth',5)
+% xline((lambda_2-lambda_1)/(k2-k1),"--",{'vertical', 'asymptote'},'LineWidth', 3,Color='magenta')
 xlabel("x = Heedless")
 ylabel("y = Compliant")
-legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
-txt = {['1/B_1=' num2str(round(lambda_1/k1,2))], ['x\neq' num2str(round((lambda_2-lambda_1)/(k2-k1),2))]};    
+legend('x nullcline','', 'y nullcline', 'vector field','equilibrium pts', Orientation='horizontal', Location='southoutside')
+txt = {['1/B_1=' num2str(round(lambda_1/k1,3))], ['1/B_2=' num2str(round(lambda_2/k2,3))]};    
 dim = [.91 .8 .1 .1];
 annotation('textbox',dim, ...
     'String',txt,'EdgeColor','none')
+if lambda_1/k1 <1
+    txt2 = {'1/B_1'};
+    txtA = {'A'};
+    pos = [lambda_1/k1+0.1  0.6 0.1 0.1];
+    annotation('textbox',pos, ...
+        'String',txt2,'Color', [0.4660 0.6740 0.1880], 'EdgeColor', 'none', 'FontSize',15, 'Rotation',90)
+    posA = [lambda_1/k1+0.05  1-lambda_1/k1-0.1 0.1 0.1];
+    annotation('textbox',posA, ...
+        'String',txtA,'Color', [0.4940 0.1840 0.5560], 'EdgeColor', 'none', 'FontSize',15 )
+end
+if lambda_2/k2 <1
+    txtC = {'C'};
+    posC = [lambda_2/k2+0.1  0.2 0.1 0.1];
+    annotation('textbox',posC, ...
+        'String',txtC,'Color', [0.4940 0.1840 0.5560], 'EdgeColor', 'none', 'FontSize',15 ) 
+end
+txtB = {'B'};
+posB = [0.9  0.2 0.1 0.1];
+annotation('textbox',posB, ...
+    'String',txtB,'Color', [0.4940 0.1840 0.5560], 'EdgeColor', 'none', 'FontSize',15 ) 
 hold off
 xlim([0 1])
 ylim([0 1])
@@ -93,47 +136,7 @@ set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
 % print(gcf,'-dpdf', ['behavior_B1_B2_less_1.pdf'])
 
 
-% % Equation of system 2
-% syms H C A 
-% eq_C2(C,A) = k1*(1-C-A)*C - lambda_1*C;
-% eq_A2(C,A) = k2*(1-C-A)*A - lambda_2*A;
-% % Plot of the nullcline
-% % Calculation of system vector field 
-% u = zeros(length(y), length(y));
-% v = zeros(length(y), length(y));
-% for i = 1:numel(y)
-%     for j = 1:numel(y)
-%         u(i,j) = eq_C2(y(i),y(j));
-%         v(i,j) = eq_A2(y(i),y(j));
-%     end
-% end
-% u2 = u; u2 = transpose(u2);
-% v2 = v; v2 = transpose(v2);
 
-% % FIGURE 2 NULLCLINE
-% fig = fig+1;
-% figure(fig)
-% hold on
-% plot(x,y_nullcline2(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
-% plot(x,z_nullcline2(x,k1,k2,lambda_1,lambda_2), LineWidth=1.3)
-% quiver(y,y,u2,v2,'r')
-% xline((lambda_1/k1), LineWidth= 1.3, Color='green')
-% % xline((lambda_2-lambda_1)/(k2-k1),"--",{'vertical', 'asymptote'},Color='red')
-% xlabel("A")
-% ylabel("C")
-% legend('x nullcline', 'y nullcline', 'vector field', Orientation='horizontal', Location='southoutside')
-% % txt = {['1/B_1=' num2str(lambda_1/k1)], ['y\neq' num2str((lambda_2-lambda_1)/(k2-k1))]};    
-% % dim = [.91 .8 .1 .1];
-% % annotation('textbox',dim, ...
-% %     'String',txt,'EdgeColor','none')
-% hold off
-% xlim([0 1])
-% ylim([0 1])
-% fontsize(20,"points")
-% set(gcf, 'PaperUnits', 'centimeters');
-% set(gcf, 'PaperPosition', [0 0 24 23]);
-% set(gcf, 'PaperSize', [24 24]); % dimension on x axis and y axis resp.
-%  % print(gcf,'-dpdf', ['PROVA2nullcline_B1_B2_equal_1.pdf'])
 
 %% Function section
 
@@ -178,7 +181,7 @@ function [lambda_1,lambda_2,k1,k2, B1, B2, C_zero,A_zero, time,title,X,Y] = scen
             lambda_2 = 1/30; %fatigue to mantain A behaviour
             k1 = B1*lambda_1 ; %from H to C
             k2 = B2*lambda_2; %from H to A
-            time = 200;
+            time = 2000;
             % Population initial condition
             C_zero = 100;
             A_zero = 100;     
@@ -212,6 +215,20 @@ function [lambda_1,lambda_2,k1,k2, B1, B2, C_zero,A_zero, time,title,X,Y] = scen
         C_zero = 100;
         A_zero = 100;
         title = 'Pr_nullcline_B1_mag_B2_lambda2_mag.pdf';
+        X = 1/B1; Y = 1-X;
+    end
+     if caso == 5
+        B1 = 0.6;
+        B2 = 4;
+        lambda_1 = 1/20; %fatigue to mantain C behaviour
+        lambda_2 = 1/30; %fatigue to mantain A behaviour
+        k1 = B1*lambda_1 ; %from H to C
+        k2 = B2*lambda_2; %from H to A
+        %  Population initial condition
+        time = 2000;
+        C_zero = 20e6;
+        A_zero = 20e6;
+        title = 'Pr_nullcline_B1_less_B2.pdf';
         X = 1/B1; Y = 1-X;
     end
 

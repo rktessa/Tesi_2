@@ -7231,6 +7231,32 @@
       \verb 10.1016/s0140-6736(24)00685-8
       \endverb
     \endentry
+    \entry{eurostat}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=912d59cdf1d3f551fae21f6f0062258f}{%
+           family={Europe},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{fullhash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{fullhashraw}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{bibnamehash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{authorbibnamehash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{authornamehash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{authorfullhash}{912d59cdf1d3f551fae21f6f0062258f}
+      \strng{authorfullhashraw}{912d59cdf1d3f551fae21f6f0062258f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Causes of death statistics}
+      \verb{urlraw}
+      \verb https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Causes_of_death_statistics#Major_causes_of_death_in_the_EU_in_2021
+      \endverb
+      \verb{url}
+      \verb https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Causes_of_death_statistics#Major_causes_of_death_in_the_EU_in_2021
+      \endverb
+    \endentry
     \entry{owid_historical_pandemics}{article}{}{}
       \name{author}{1}{}{%
         {{hash=72e39f6fbf1c6fa199e6a3650839c77d}{%
@@ -8729,6 +8755,59 @@
       \verb 10.1371/journal.pcbi.1003716
       \endverb
     \endentry
+    \entry{Granell2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=327371d583df9de17b66667a7ea91f61}{%
+           family={Granell},
+           familyi={G\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society (APS)}%
+      }
+      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{fullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{bibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorbibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
+      \strng{authorfullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1079-7114}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{9}
+      \field{number}{12}
+      \field{title}{Dynamical Interplay between Awareness and Epidemic Spreading in Multiplex Networks}
+      \field{volume}{111}
+      \field{year}{2013}
+      \field{pages}{128701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/physrevlett.111.128701
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/sergio-gomez/Radalib
+      \endverb
+      \verb{url}
+      \verb https://github.com/sergio-gomez/Radalib
+      \endverb
+    \endentry
     \entry{Krickel_2023}{article}{}{}
       \name{author}{3}{}{%
         {{hash=ec7e62f30010fef5803a79102376c84f}{%
@@ -8817,8 +8896,8 @@
       \strng{authorfullhash}{f465c32ff79e5568735704cb0ba40428}
       \strng{authorfullhashraw}{f465c32ff79e5568735704cb0ba40428}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Physics Reports, 820 (2019) 1-51. doi:10.1016/j.physrep.2019.07.001}
@@ -8832,59 +8911,6 @@
       \verb 10.1016/j.physrep.2019.07.001
       \endverb
       \keyw{thus attracted much attention in many disciplines. In this review,we introduce recent Complex networks progress in the study of coevolution spreading dynamics,emphasizing the contributions Coevolution spreading from the perspectives of statistical mechanics and network science. The theoretical Critical phenomena methods,critical phenomena,phase transitions,interacting mechanisms,and effects of Biological contagions Social contagions network topology for four representative types of coevolution spreading mechanisms,in- Resource allocation cluding the coevolution of biological contagions,social contagions,epidemic–awareness,Awareness diffusion and epidemic–resources,are presented in detail,and the challenges in this field as well}
-    \endentry
-    \entry{Granell2013}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=327371d583df9de17b66667a7ea91f61}{%
-           family={Granell},
-           familyi={G\bibinitperiod},
-           given={Clara},
-           giveni={C\bibinitperiod}}}%
-        {{hash=c857454925fd025cd349bfaafb6b24a0}{%
-           family={Gómez},
-           familyi={G\bibinitperiod},
-           given={Sergio},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6a357114624f649b1b1dedd6e3c92cbd}{%
-           family={Arenas},
-           familyi={A\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society (APS)}%
-      }
-      \strng{namehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{fullhash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{fullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{bibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorbibnamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authornamehash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorfullhash}{8400d67e472f3db833c12864dc9ec8ba}
-      \strng{authorfullhashraw}{8400d67e472f3db833c12864dc9ec8ba}
-      \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1079-7114}
-      \field{journaltitle}{Physical Review Letters}
-      \field{month}{9}
-      \field{number}{12}
-      \field{title}{Dynamical Interplay between Awareness and Epidemic Spreading in Multiplex Networks}
-      \field{volume}{111}
-      \field{year}{2013}
-      \field{pages}{128701}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/physrevlett.111.128701
-      \endverb
-      \verb{urlraw}
-      \verb https://github.com/sergio-gomez/Radalib
-      \endverb
-      \verb{url}
-      \verb https://github.com/sergio-gomez/Radalib
-      \endverb
     \endentry
     \entry{Bauch_2012_overview}{inbook}{}{}
       \name{author}{3}{}{%
@@ -11009,6 +11035,57 @@
       \field{title}{Skepticism to vaccines and what to do about it}
       \field{year}{2019}
     \endentry
+    \entry{Kwasnicka_2016}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=13918621128c39b5fcf924bbeb13a06e}{%
+           family={Kwasnicka},
+           familyi={K\bibinitperiod},
+           given={Dominika},
+           giveni={D\bibinitperiod}}}%
+        {{hash=372750f93181944ccfc40c167cc95b21}{%
+           family={Dombrowski},
+           familyi={D\bibinitperiod},
+           given={Stephan\bibnamedelima U},
+           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=9077ad591ec2e0c7f1a4babe3e861ec8}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=552a8cbffdb67b92a5b3e1fd78defdd5}{%
+           family={Sniehotta},
+           familyi={S\bibinitperiod},
+           given={Falko},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{5183a6b64426eeac30ffe39b5ae59f6a}
+      \strng{fullhash}{78a39848a0f69f5d072063bcfda7b955}
+      \strng{fullhashraw}{78a39848a0f69f5d072063bcfda7b955}
+      \strng{bibnamehash}{5183a6b64426eeac30ffe39b5ae59f6a}
+      \strng{authorbibnamehash}{5183a6b64426eeac30ffe39b5ae59f6a}
+      \strng{authornamehash}{5183a6b64426eeac30ffe39b5ae59f6a}
+      \strng{authorfullhash}{78a39848a0f69f5d072063bcfda7b955}
+      \strng{authorfullhashraw}{78a39848a0f69f5d072063bcfda7b955}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1743-7202}
+      \field{journaltitle}{Health Psychology Review}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Theoretical explanations for maintenance of behaviour change: a systematic review of behaviour theories}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{277\bibrangedash 296}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1080/17437199.2016.1151372
+      \endverb
+    \endentry
     \entry{arino2007}{article}{}{}
       \name{author}{5}{}{%
         {{hash=3a3363b2e871745db048758aa5edf0ab}{%
@@ -11067,9 +11144,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{CITA}
-  \missing{CITARE_DEVO_RITROVARE_LA_FONTE}
-  \missing{trova e cita world in data}
 \endrefsection
 \endinput
 

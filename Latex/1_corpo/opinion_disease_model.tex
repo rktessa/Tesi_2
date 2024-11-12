@@ -1,5 +1,9 @@
 \part{Behavioral Disease Model}
 \label{part:the_model}
+\chapter{Model development and justification}
+
+
+
 \chapter{Epidemic and Behavioral model alone: a presentation}
 \label{ch:model_alone}
 
@@ -15,7 +19,7 @@ To describe the epidemic evolution a  SIRS model is implemented. It is an extens
 	contact.
 	\item $\gamma$ is the recovery rate.
 	\item  $\delta$ is the rate at which immunity recedes following recovery
-	\item  $\mathcal{R}(t)$ is the reprodutction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
+	\item  $\mathcal{R}(t)$ is the reproduction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
 	
 \end{itemize}
 The choice of an SIR-like model is made because these models are well-known for their ability to describe diseases like COVID-19, and the literature provides numerous examples that use this model \cite{Dehning_2020, Li2022}. The SEIR model could also be a viable choice due to the relevance of the "Exposed" compartment, which effectively captures the disease progression for infections such as COVID-19. In these cases, an incubation period occurs after exposure before symptoms appear and the individual becomes contagious. However, this compartment was excluded because it has been shown \cite{Dehning_2020} that a simpler SIR model can still accurately represent the disease's dynamics. When comparing model simulations with real data, a delay can be incorporated to account for the lag between symptom onset, testing, and reporting. This delay reflects the time needed for symptoms to manifest, conduct testing, and report cases to relevant authorities.
@@ -142,11 +146,17 @@ Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenari
 \end{figure}
 
 \subsubsection{Equilibrium and stability analysis}
-To enhance understanding of the system, for the four cases presented before an analysis is performed, and, where present, the stability of their equilibria was determined.
+To enhance understanding of the system, equilibria are searched and their stability is studied. As observed, the system’s final equilibrium values vary according to parameter values. Specifically, the coefficients were combined to produce two Behavior conversion numbers, $\mathcal{B}_1$ and $\mathcal{B}_2$. One way to identify and visualize the system’s equilibrium for a specific parameter set is through nullclines.
+The nullclines are used in an autonomous system of differential equations (DE)  to sketch the phase plane of such a system. In a system of two DEs: 
+  
+\begin{align}
+	\frac{dx}{dt} &= f(x,y) \\
+	\frac{dy}{dt} &= g(x,y)
+\end{align}
 
-As observed, the system’s final equilibrium values vary according to parameter values. Specifically, the coefficients were combined to produce two Behavior conversion numbers, $\mathcal{B}_1$ and $\mathcal{B}_2$.
+There are two types of nullclines: $x$-nullcline, and $y$-nullcline. The $x$-nullcline is a set of points in the phase plane so that $\frac{dx}{dt} =0$, and graphically can be represented as a set of vectors that go either straight up or down. Instead, the $y$-nullcline is a set of points in which the $\frac{dx}{dt} =0$. In these points the vectors are horizontal, going either to the left or to the right.
 
-One way to identify and visualize the system’s equilibrium for a specific parameter set is through nullclines. These were calculated for each case, and the results are presented here. To better visualize nullclines in a two-dimensional graph, the system can be reduced from three to two equations using the mass conservation assumption, yielding the following relationship: $1=H+C+A$ The first two equations are then rewritten, substituting the $A$ term, resulting in a two-equation system with two unknowns. By calculating the nullclines and varying the values of $\mathcal{B}_1$ and $\mathcal{B}_2$, we examine different scenarios. This reduction from the original system of three equations \ref{eq:behavioural_eq}  results in the following two-equation system: 
+The original three equations system, has been reduced, to two equation. These to better visualize nullclines in a two-dimensional graph, and it is possible using the mass conservation assumption, yielding the following relationship: $1=H+C+A$. The first two equations are then rewritten, substituting the $A$ term, resulting in a two-equation system with two unknowns. This reduction from the original system of three equations \ref{eq:behavioural_eq}  results in the following two-equation system:
 \[
 \begin{cases}
 	\dot{H} = -k_1 H C - k_2 (1-H-C) H + \lambda_1 C + \lambda_2 (1-H-C)\\
@@ -163,49 +173,97 @@ To simplify the readability and use a notation more familiar for plotting, the $
 \end{equation}
 The nullclines lines can be calculated imposing $\dot{x} = 0$ and $\dot{y} = 0$. Solving the system with this condition applied gives the following two equations. For the first nullcline, with $\dot{x} = 0$:
 
-\begin{equation}
- y = \frac{x(k_2 - k_2 x + \lambda_2)  \lambda_2}{x(k_2 - k_1)+ \lambda_1- \lambda_2}
+\begin{equation}\\
+\label{eq:x_nullcline}
+ y = \frac{x(k_2 - k_2 x + \lambda_2) - \lambda_2}{x(k_2 - k_1)+ \lambda_1- \lambda_2}
 \end{equation}
 and for the second with $\dot{y} = 0$
-\[x = \frac{\lambda_i}{k_i} = 1/\mathcal{B}_i \qquad \text{with } i = 1, \text{or } 2.
+\[x = \frac{\lambda_1}{k_1} = 1/\mathcal{B}_1 \quad \text{or } y = 0.
 \]
-The selection of the correct $\mathcal{B}_i$ to use for the second nullcline depends on
-the comparison between the two reproductive ratio values. Seeing the result of the simulation, it is understood that the larger value should be chosen, as it represents the behavior that will dominate at equilibrium, while the other behavior will tend toward zero. Only in the case where the the $\mathcal{B}_1, \mathcal{B}_2 < 1$ these rule not holds, because the result of the secon nullcline found with the formula is out of the domain of existence (i.e $x > 1$, while the Compliant, $x$ are a value comprised between $[0,1]$.)
+%The selection of the correct $\mathcal{B}_i$ to use for the second nullcline depends on the comparison between the two reproductive ratio values. Seeing the result of the simulation, it is understood that the larger value should be chosen, as it represents the behavior that will dominate at equilibrium, while the other behavior will tend toward zero. Only in the case where the $\mathcal{B}_1, \mathcal{B}_2 < 1$ this rule does not hold, because the result of the second nullcline found with the formula is out of the domain of existence (i.e $x > 1$, while the Compliant, $x$ is a value comprised between $[0,1]$.)
 The first nullcline existence condition can be calculated, imposing that the denominator must be not equal to zero. The result is
 \[ x \neq \frac{\lambda_2-\lambda_1}{k_2 - k_1} \]
-These value of $x$ is in the interval $[0,1]$ only if $\lambda_2>\lambda_1$ and $k_2 > k_1$, or $\lambda_2<\lambda_1$ and $k_2 < k_1$. The second nullcline instead, exist always iff $k_i \neq 0$.
+This value of $x$ is in the interval $[0,1]$ only if $\lambda_2>\lambda_1$ and $k_2 > k_1$, or $\lambda_2<\lambda_1$ and $k_2 < k_1$. The second nullcline instead, exists always if $k_1 \neq 0$.
 
-
-Now the four primary cases of the system’s evolution, with stability analyses conducted for the identified equilibria are presented.
-%%%%%%%%%%%%%%%%%%
-
-\textbf{I case: }$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$. \\
-If both the "reproduction rates" have a value lower than one, the stable equilibrium is the one in which both Compliant and Against goes to zero. 
-
-From the nullcline plot, visible in the left figure \ref{fig:r1r2less1dyn}, it can be seen that there is not an intersection. The plot of the second nullcline result in a vertical line with a value grater than one. In this condition the only equilibrium is the one for which $H = 1$ and both $A$ and $C$ are equal to zero. 
-
-With the Routh-Hurwitz criteria the stability of this point is verified. To evaluate if the criteria is satisfied the Jacobian matrix of the system is calculated. Then the equilibrium is used to evaluate the trace and determinant of the system in this value. To see if the equilibrium satisfies Routh-Hurwitz condition it must holds:
+\subsubsection{Equilibria of the system}
+From the results find for the $y$-nullcline, it is possible to calculate explicitly the equilibrium value,as the intersection point of the two nullclines, from the equation \ref{eq:x_nullcline}. In fact if $x =\frac{\lambda_1}{k_1}$, the value is $y = 1 -\frac{\lambda_1}{k_1}$.
+Instead if $y = 0$, two values are found: $x = 1$, and $x = \frac{\lambda_2}{k_2}$.
+The three equilibria points, indicated with the letters $A,B$, and $C$ are then:
 \begin{itemize}
-	\item trace(J) $< 0$
-	\item det(J) $> 0$
+	\item $A = (\frac{\lambda_1}{k_1}, 1-\frac{\lambda_1}{k_1})$
+	\item $B = (1, 0)$
+	\item $C = (\frac{\lambda_2}{k_2}, 0)$
 \end{itemize}
- 
-The Jacobian of the system of equation \ref{eq:system_nullclines} is
+
+\subsubsection{Equilibria stability analysis}
+To verify the local stability of the equilibrium points, the Routh-Hurwitz criterion is applied, requiring the Jacobian matrix of the system evaluated at each equilibrium. It is deemed locally stable if it meets the following conditions based on the Routh-Hurwitz criterion:
+\begin{itemize}
+	\item A negative trace of the Jacobian, tr($J$)$< 0$
+	\item A positive determinant of the Jacobian, det($J$) $> 0$
+\end{itemize}
+When these conditions are fulfilled, the equilibrium point satisfies the Routh-Hurwitz criterion, indicating local stability.
+The Jacobian of the system \ref{eq:system_nullclines} is
 \begin{equation}
-J = \begin{bmatrix}
-	-k_1 y -k_2 +k_2 y+2 k_2 x- \lambda_2 & -k_1 x + k_2 x + \lambda_1-\lambda_2 \\
-	k_1 y & k_1 x - \lambda_1
-\end{bmatrix}
+	J = \begin{bmatrix}
+		-k_1 y -k_2 +k_2 y+2 k_2 x- \lambda_2 & -k_1 x + k_2 x + \lambda_1-\lambda_2 \\
+		k_1 y & k_1 x - \lambda_1
+	\end{bmatrix}
 \end{equation}
 The trace of $J$ is
 \begin{equation}
-	trJ = -k_1 y -k_2 +k_2y + 2 k_2 x - \lambda_2 -\lambda_1 +k_1 x
+	\text{tr}J = -k_1 y -k_2 +k_2y + 2 k_2 x - \lambda_2 -\lambda_1 +k_1 x
 \end{equation}
 Its determinant is instead
 \begin{equation}
-	detJ = k_2 \lambda_1 + \lambda_1 \lambda_2 + 2 k_1 k_2 x^2 - k_1 k_2 x - k_1 \lambda_2 x - 2\cdot k_2 \lambda_1 x + k_1 \lambda_2 y - k_2 \lambda_1 y
+	\text{det}J = k_2 \lambda_1 + \lambda_1 \lambda_2 + 2 k_1 k_2 x^2 - k_1 k_2 x - k_1 \lambda_2 x - 2\cdot k_2 \lambda_1 x + k_1 \lambda_2 y - k_2 \lambda_1 y
 \end{equation}
-In this case the equilibrium point is all population Heedles, so $x = 1$, and $y = 0$. Calculating in this point the trace and determinant of the Jacobian, it is found $trJ(1,0) =-209/12000$, and $detJ = 121/2400000$. So, the equilibrium is locally asymptotically stable, because satisfies Routh-Hurwitz condition. 
+
+For each defined equilibrium point, an analysis is performed using the Routh-Hurwitz (R-H) criterion to deduce stability conditions expressed as relations between coefficients. This provides a simplified relation under which the system tends toward a specific equilibrium configuration. These relations are expressed in general as relationship between the coefficients $k_1, k_2$, and $\lambda_1, \lambda_2$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Stability of point $A$:} Considering the point $(\frac{\lambda_1}{k_1}, 1-\frac{\lambda_1}{k_1})$, the trace evaluated with this value is tr$J(A) = - k_1 - k_2 +k_2 \frac{\lambda_1}{k_1} - \lambda_2 + \lambda_1$. The criterium requires this value to be less than zero, and manipulating the terms it becomes: $-k_1 + \frac{\lambda_1}{k_1}( k_1 + k_2) - \lambda_2 < 0$. From this it is obtained the relation:
+\[\frac{\lambda_1}{k_1} < \frac{k_1 + \lambda_2}{k_1 + k_2} \]
+Instead, the determinant is det$J(A) = k_1 \lambda_1 - \lambda_1 \lambda_2$. Simplifying the $\lambda_2$ the relation $\lambda_1 < k_1$ is found, that can be inverted, meaning $\frac{k_1}{\lambda_1} = B_1 > 1$.
+Furthermore, both the conditions must hold to verify the local stability and this relation can be used also within the trace. Due to $\frac{\lambda_1}{k_1} < 1$, it can be assumed the relation on the trace holds certainly if $\frac{k_1 + \lambda_2}{k_1 + k_2} > 1$, and so $k_1 + \lambda_2 > k_1 + k_2$. From this last inequality the relation $\lambda_2 > k_2$ can be derived, from which $B_2 < 1$. However, if the initial assumption was that $ \frac{k_1 }{\lambda_1} > 1$, this results can be extendetd.
+In conclusion, point $A$ is certainly locally stable if $B_1 > 1$, and $B_2 < 1$.  
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Stability of point $B$:} The second equilibrium has coordinates $(1,0)$. Calculating the Jacobian determinant at this point yields the expression det$J(B)= - k_2 \lambda_1 + \lambda_1 \lambda_2 + k_1 k_2 - k_1 \lambda_2$. By grouping terms and analyzing the inequality necessary to satisfy the Routh-Hurwitz criterion, this simplifies to $k_1 (k_2 - \lambda_2) - \lambda_1(k_2 - \lambda_2) > 0$, which further reduces to $(k_1 - \lambda_1) (k_2 - \lambda_2) >0$.
+This inequality is met if both terms in the product are either positive or negative:
+\begin{itemize}
+	\item Case $I:$ $k_1 > \lambda_1$, and $k_2 > \lambda_2$
+	\item Case $II:$ $k_1 < \lambda_1$, and $k_2 < \lambda_2$
+\end{itemize}
+Evaluating the trace at this point, the result is tr$J(B) = k_2 - \lambda_2 - \lambda_1 + k_1 < 0 $. Rearranging terms gives the condition $k_1 + k_2 < \lambda_1 + \lambda_2$, which is true only under the Case $II$ identified above. 
+Thus, it can be concluded that equilibrium point $B$ is locally stable only if $\frac{k_1}{\lambda_1} <1$, and  $\frac{k_2}{\lambda_2} <1$, which correspond to $B1 < 1$, and $B_2 <1$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Stability of point $C$:} The coordinates of this point are $(0, \frac{\lambda_2}{k_2})$. The determinant at this value is given by det$J(C) = k_2 \lambda_1 - \lambda_1 \lambda_2 + k_1 \frac{\lambda_2^2}{k_2} - k_1 \lambda_2 > 0 $. Also here, rearranging terms simplifies the inequality to: $k_2 [\lambda_1 -\lambda_1 \frac{\lambda_2}{k_2} + k_1 \frac{\lambda_2^2}{k_2^2} - k_1 \frac{\lambda_2^2}{k_2}] >0$, $ k_2 [\lambda_1 ( 1 -  \frac{\lambda_2}{k_2}) - k_1 \frac{\lambda_2}{k_2} (1 - \frac{\lambda_2}{k_2})] >0$, which further reduces to:
+
+\[
+ k_2 [(\lambda_1 - k_1 \frac{\lambda_2}{k_2})(1 - \frac{\lambda_2}{k_2})] >0
+\]
+To satisfy the inequality bot terms must have the same sign,as in the previous point $B$:
+\begin{itemize}
+	\item Case $I:$ $\frac{k_2}{\lambda_2} > \frac{k_1}{\lambda_1} $, and $k_2 > \lambda_2$
+ 	\item Case $II:$ $\frac{k_2}{\lambda_2} < \frac{k_1}{\lambda_1} $, and $k_2 < \lambda_2$
+\end{itemize}
+The trace value instead corresponds to tr$J(C) = - k_2 + k_2 \frac{\lambda_2}{k_2} + k1 \frac{\lambda_2}{k_2} - \lambda_1 < 0$, leading to inequality 
+$ \frac{\lambda_2}{k_2} (k_1 + k_2) < k_2 + \lambda_1 $. It is found the relation:
+\[ \frac{\lambda_2}{k_2} < \frac{k_2 +\lambda_1}{k_1 + k_2}.\]
+By choosing Case I, we ensure the trace inequality is satisfied. If $k_2 > \lambda_2$, the ratio $\frac{\lambda_2}{k_2}$ is less than one. So, if the right part of inequality is larger than one, the trace condition holds. The expression rewrite in this way is $\frac{k_2 +\lambda_1}{k_1 + k_2} > 1$, $k_2 +\lambda_1 > k_1 + k_2 $, and finally $\lambda_1 > k_1$. But, if the initial assumption was that $ \frac{k_2 }{\lambda_2} > 1$, this results can be extended and concluding, point C is certainly stable if $B_2> B_1$, $B_2 > 1$.  
+ 
+\subsubsection{Equilibrium simulations}
+
+Based on the equilibrium analysis, we now understand how the model behaves with various parameter values. To confirm these results, nullcline plots for the four previously simulated cases are generated, and the different scenarios are examined. Fist, is important to describe what can be visualized in the nullcline plot. The blue curve is the expression found solvind the x-nullcline, and the almost vertical line in the plot correspond to the point of discontinuity of this expression, as discussed before. The green line is instead the y-nullcline, composed of a vertical and horizontal line, representing the two possible solutions. In purple are visualized the three equilibria points. If are stable they are marked with a diamond, will if unstable with a circle.  
+\\
+%%%%%%%%%%%%%%%%%%
+
+\textbf{I case: }$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$. \\
+If both the Conversion numbers are less than one, there is only one equilibrium in the phase plane, where both Compliant and Against tend toward zero.
+
+In the left figure \ref{fig:r1r2less1dyn}, the nullcline plot shows an intersection between the two nullclines only at the point $(1,0)$. Under this condition, the only equilibrium is at $H = 1$, with both $A$ and $C$ equal to zero. Using the notation from the system equation, this corresponds to $x = 1$ and $y = 0$. Calculating the trace and determinant of the Jacobian at this point yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, the equilibrium is locally asymptotically stable, as it satisfies the Routh-Hurwitz condition.
+
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}]
@@ -218,38 +276,49 @@ In this case the equilibrium point is all population Heedles, so $x = 1$, and $y
 %%%%%%%%%%%%%%%%%%
 
 \textbf{II case: } $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.\\
-This second situation is the most difficult to analyse. In fact, due to the equal value of the two influence processes, the final equilibrium of the compartments cannot be calculated using only the previous relations, but depends also on the initial condition. 
-The Heedless compartment can be calculated using the same equation of previous cases, and the same value is found using both $x = \lambda_1/k_1$ and $x = \lambda_2/k_2$. So the final value of $x$ at equilibrium here is $\bar{x} = 0.12$. As it can be seen from the system evolution \ref{fig:model__behavior_sim_1},and nullcline plots \ref{fig:r1r2less1dyn}  ,at the equilibrium the Against and Compliant groups are formed by a subdivision of the $1 - \bar{x}$ part. The initial condition have an influence on how this subdivision is composed. Using the Routh-Hurwitz criterium nothing can be said on this equilibrium because the determinant of the Jacobian have a null value.
+This second situation is the most complex to analyze. Due to the equal value of the two influence processes, the final equilibrium of the compartments cannot be determined solely by the previously established relations but also depends on the initial conditions.
+
+The Heedless compartment can still be determined using the equations from previous cases, and the same value is obtained for both $x = \lambda_1/k_1$ and $x = \lambda_2/k_2$. Thus, the final equilibrium values of $x$ is $\bar{x} = 0.12$. As it can be seen from the system evolution \ref{fig:model__behavior_sim_1}, and nullcline plots \ref{fig:r1r2less1dyn}, at the equilibrium the Against and Compliant groups are formed by a subdivision of the $1 - \bar{x}$ part. This division depends on the initial conditions of the model.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2}
+	\caption[Surface nullcline]{The nullcline functions represented as surfaces in a tridimensional space.}
+	\label{fig:surfacenullclineb1equalb2}
+\end{figure}
+Applying the Routh-Hurwitz criterion does not yield information on this equilibrium because the Jacobian determinant equals zero. An explanation for this is that, given the equilibrium alignment of points $A$ and $C$ and the equality of their conversion numbers,
+
+ the influxes and outfluxes between the Compliant and Against compartments balance. Consequently, the system's evolution is influenced by the initial numbers of Compliant and Against individuals, as once the system reaches the equilibrium value of Heedless, it remains in this configuration. Observing the 3D plot \ref{fig:surfacenullclineb1equalb2} of the complete system, with surfaces for $H$ and $C$, one can visualize a slope where an imaginary inertia-free ball would roll until it settles at the $1/B1 = 1/B2$  value.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{III case:} $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$. \\
-In this scenario, as visible in figure \ref{fig:nullcline_B1_mag_B2}, the Against compartment tend to zero, so the equilibrium point can be calculated as $\bar{x} = \lambda_1/k_1$ and $\bar{y} = 1 - \lambda_1/k_1 $. 
-The nullcline resulting plot is visible in \ref{fig:nullcline_B1_mag_B2}. 
 
-The equilibrium found as intersection of the two lines correspond to the one calculated with the numerical equation. 
-Both condition holds: $trJ(\bar{x},\bar{y}) = -23/105$, and $detJ(\bar{x},\bar{y}) = 2/525$, so the solution is locally asymptotically stable and does not depends on the initial condition.
+\textbf{III-a case:} $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$. \\
+In this scenario, as shown in Figure \ref{fig:nullcline_B1_mag_B2}, there is an intersection between the two nullclines, at the point $A$ . The equilibrium has coordinates equal to $x_A = \lambda_1/k_1$ and $y_A = 1 - \lambda_1/k_1 $, derived by solving the nullcline expressions as previously described. Both R-H conditions hold: $trJ(\bar{x},\bar{y}) = -23/105$, and $detJ(\bar{x},\bar{y}) = 2/525$, so the solution is locally asymptotically stable and does not depend on the initial conditions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textbf{III bis case: }$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.
-The evolution of the system has an opposite behaviour w.r.t the previous case. So here, is the Compliant compartment that tend to zero at equilibrium. 
-
-The equilibrium point can be calculated as $\bar{x}= \lambda_2/k_2$ and $\bar{z} = 1 - \lambda_2/k_2$. 
-Also this equilibrium is locally asymptotically stable. 
+\textbf{III-b case: }$\mathcal{B}_1<1 \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$.
+The system's evolution shows opposite behavior compared to the previous case, with the Compliant compartment tending to zero at equilibrium. The right panel of Figure \ref{fig:nullcline_B1_mag_B2}, shows two intersections in the phase plane at points $B$, and $C$. At both points, $y=0$, but only point $C$ is locally stable, as it satisfies the R-H conditions. The equilibrium point is calculated as $x_C= \lambda_2/k_2$ and $y_C = 0$.  
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2}} \quad
-	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
-	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag}} \\
+	\subfloat[][\emph{ $\mathcal{B}_1<1, \mathcal{B}_2 >1$ and $\mathcal{B}_2 >  \mathcal{B}_1$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2}} \\
 	\caption[Nullclines second figure]{Nullclines plots of the second two situations analyzed.}
 	\label{fig:nullcline_B1_mag_B2}
 \end{figure}
 
 \textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
-In this situation, the equilibrium has the same value, of the III case, and also the stability condition are verified. However, the nullcline plot is very different. The vertical asymptote is clearly visible in the middle of the left panel in figure \ref{fig:nullcline_B1_mag_B2}. Also the vector field in the two cases are different, and as show in figure \ref{fig:model__behavior_sim_2}, the system initially evolve to a first equilibrium, corresponding to $\bar{x} = \lambda_2/k_2$, $y = 0$, and $\bar{z} = 1 - \lambda_2/k_2$, but this equilibrium not satisfies Routh-Hurwitz: calculating the value, it is in fact found $trJ > 0$, and $detJ= 0$.
+In this situation, the equilibrium has the same value, of the III-a case, and also the stability condition are verified. However, the nullcline plot is very different, referring to figure \ref{fig:prnullclineb1_mag_b2_lambda}. The phase plane is much more complex: there are two lines and the discontinuity point for the x-nullcline (the blue line), and the trajectory of convergence to the point A, the only locally stable is more complex.  
 
+In fact, looking at the model simulation in picture \ref{fig:model__behavior_sim_2}, the system initially evolve to what seems as a first equilibrium, corresponding to $x_A = \lambda_2/k_2$, $y_A = 0$, but then, and it is confirmed by R-H, this equilibrium is unstable, and so the model continues its evolution after reaching the real locally stable configuration. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag}
+	\caption[Nullcline fourth case]{IV case of nullcline simulation. The A point is the locally stable one.}
+	\label{fig:prnullclineb1_mag_b2_lambda}
+\end{figure}
 
 \subsubsection{Behavioural model experiment}
-To better understand all possible scenarios emerging from the behavioral model, a simulation is conducted. Four vectors are defined, one for each model parameter, and a separate simulation is performed for each parameter combination. During each simulation, the parameter values remain constant. The variation range for each parameter is as follows:
+To better understand all possible scenarios emerging from the behavioral model, a bunch of simulations is conducted. Four vectors are defined, one for each model parameter, and a separate simulation is performed for each parameter combination. During each simulation, the parameter values remain constant. The variation range for each parameter is as follows:
 \begin{itemize}
 	\item $k_1$ between $0.1$ and $0.99$
 	\item $k_2$ between $0.1$ and $0.99$
@@ -257,8 +326,8 @@ To better understand all possible scenarios emerging from the behavioral model, 
 	\item $k_1$ between $1/2$ and $1/40$ $d^{-1}$
 \end{itemize}
 The resulting $\mathcal{B}_1, \mathcal{B}_2$ have a range spanning between $0.5$, and $29.7$.
-These ranges are chosen based on the assumption that the "fatigue" rate realistically spans between two and forty days, a range supported by prior research, such as the study in \cite{trova e cita world in data}. For the behavior conversion rate, both low and high values for transition rates are included. We observe the dynamics across all states, recording key metrics for each simulation, such as the final compartment values, peak values, and the time of peak occurrence. Additionally, for generating the sensitivity plots, the reproductive rates derived from the coefficient combinations in equation \eqref{eq:behave_rate} are applied. 
-
+These ranges are chosen based on the assumption that the "fatigue" rate realistically spans between two and forty days, a range supported by prior research, such as the study in \cite{Kwasnicka_2016}. For the behavior persuasion rate ($k_1$, $k_2$), both low and high values for transition rates are included. We observe the dynamics across all states, recording key metrics for each simulation, such as the final compartment values, peak values, and the time of peak occurrence. Additionally, for generating the sensitivity plots, the Conversion number derived from the coefficient combinations in equation \eqref{eq:behave_rate} are applied. 
+\subsubsection{Heat map Final Equilibrium states}
 The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the final value reached by various compartments, varying $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
 \begin{figure}[h]
@@ -273,7 +342,7 @@ The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the
 	\label{fig:subfig_sensitivity_behavioural}
 \end{figure}
 
-In these pictures is clearly visible the threshold effect observed in the stability analysis performed earlier. While one of the reproduction ratios becomes larger than the other, the system equilibrium is composed by the dominant group and a portion of Careless individuals.The greater is the ratio, the  smaller is the size at equilibrium of the Careless. 
+In these pictures is clearly visible the threshold effect observed in the stability analysis performed earlier. While one of the reproduction ratios becomes larger than the other, the system equilibrium is composed by the dominant group and a portion of Careless individuals.The greater is the ratio, the  smaller is the size at equilibrium of the Heedless. Considering the left panel in figure \ref{fig:subfig_sensitivity_behavioural}, if the heat map of Compliant is pass through vertically, clearly untill $B_1 > B_2$, at the equilibrium there are still compliant. Then, when $B_1 > B_2$, the compliant abruptly tend to zero. 
 
 Another figure in which this threshold effect can be observed is \ref{fig:subfig_sensitivity_behavioural_r1}.
 
@@ -292,13 +361,14 @@ The plots show how, for a fixed values of $\lambda_1$ and $k_2$, change the size
 
 The threshold effect is clearly visible here as well. When examining the final values for the Compliant and Against compartments, it is evident that once the $\mathcal{B}_1$ reproductive coefficient becomes dominant, the increase in the final size observed in the Compliant compartment results from a decrease in the Careless compartment.
 
-Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures  \ref{fig:max_against}, and \ref{fig:max_against2}illustrate the maximum value reached by the Against compartment. In the left panel, varying $\lambda_1$ and $\lambda_2$, we note a difference between two simulations: in the first, where $k_1$ and $k_2$ have similar values, we see situations where, even if the $A$ compartment has a higher $k_2$ value, the Compliant group ultimately becomes dominant. This situation is visible in the top-left section of the heat map and in the Against plots, where cases appear in which $A$ reaches a peak but eventually stabilizes to zero at equilibrium.
+\subsubsection{Heat map of max compartments value}
+Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures \ref{fig:max_against}, and \ref{fig:max_against2} illustrate the maximum value reached by the Against compartment. In the left panel, varying $\lambda_1$ and $\lambda_2$, we note a difference between two simulations: in the first, where $k_1$ and $k_2$ have similar values, we see situations where, even if the $A$ compartment has a higher $k_2$ value, the Compliant group ultimately becomes dominant. This situation is visible in the top-left section of the heat map and in the Against plots, where cases appear in which $A$ reaches a peak but eventually stabilizes to zero at equilibrium.
 \begin{figure}[h]
 	\centering
-	\subfloat[][\emph{Max Against compartment}]
-	{\includegraphics[width=.38\textwidth]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1}} \quad
-	\subfloat[][\emph{Against evolution in simulation}]
-	{\includegraphics[width=.58\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1}} \\
+	\subfloat[][\emph{Max Against compartment with $k_1 \sim k_2 $}]
+	{\includegraphics[width=.48\textwidth, valign= t]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1}} \quad
+	\subfloat[][\emph{Max Against compartment with $k_1 < k_2 $}]
+	{\includegraphics[width=.48\textwidth, valign= t]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2}} \\
 	\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
 	\label{fig:max_against}
 \end{figure}
@@ -308,10 +378,10 @@ The first case confirms the dynamics presented earlier in the model simulation i
 
 \begin{figure}[h]
 	\centering
-	\subfloat[][\emph{Max Against compartment}]
-	{\includegraphics[width=.38\textwidth]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2}} \quad
-	\subfloat[][\emph{Against evolution in simulation}]
-	{\includegraphics[width=.58\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2}} \\
+	\subfloat[][\emph{Against simulation with $k_1 \sim k_2$.}]
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1}} \quad
+	\subfloat[][\emph{Against simulation with $k_1< k_2$.}]
+	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2}} \\
 		\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
 	\label{fig:max_against2}
 \end{figure}
@@ -531,3 +601,104 @@ A second test performed on the find $R_0^{epi-behav}$ wants to understand what a
 
 
 The case shown in figure \ref{fig:r0_epi_behav_coef} is an example of how changes the reproductive rate value. The most interesting observation is that the value of awareness practically does not modify the $R_0^{epi-behav}$. Instead, it can be observed a threshold in the number of initial susceptible compliant for which the reproductive rate becomes smaller, depending on the efficacy of the protective behavior. If there are less than $5\%$ of the population in the compliant group, for any value of $\rho$ the reproductive rate does not change. 
+
+\section{Model simulation: four cases}
+\subsection{I case: $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$}
+First case: simulations and heat map.
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{Susceptibles.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_less_1}} \quad
+	\subfloat[][\emph{ Infected.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_less_1}} \\
+	\subfloat[][\emph{ Recovered.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1}} \\
+	\caption[Full model simulation figure first]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
+	\label{fig:sim_B1_B2_less_1}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{$\rho$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_rho_B1_B2_less_1}} \quad
+	\subfloat[][\emph{ $SA_0$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_SA0_B1_B2_less_1}}\\
+	\caption[Heat map full model first case]{Simulations of $E_0^s$ with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
+	\label{fig:Hmap_B1_B2_less_1}
+\end{figure}
+
+\subsection{II case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
+\begin{figure}[hbpt]
+	\centering
+	\subfloat[][\emph{Susceptibles.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal}} \quad
+	\subfloat[][\emph{ Infected.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_equal}} \\
+	\subfloat[][\emph{ Recovered.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal}} \\
+	\caption[Full model simulation figure first]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
+	\label{fig:sim_B1_equal_B2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{$\rho$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_rho_B1_B2_equal}} \quad
+	\subfloat[][\emph{ $SA_0$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_SA0_B1_B2_equal}}\\
+	\caption[Heat map full model first case]{Simulations of $E_0^s$ with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
+	\label{fig:Hmap_B1_B2_equal}
+\end{figure}
+
+
+
+\subsection{III bis case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$}
+
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{Susceptibles.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2}} \quad
+	\subfloat[][\emph{ Infected.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2}} \\
+	\subfloat[][\emph{ Recovered.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2}} \\
+	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}
+	\label{fig:sim_B2_less_B1}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{$\rho$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_rho_B1_mag_B2}} \quad
+	\subfloat[][\emph{ $SA_0$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_SA0_B1_mag_B2}}\\
+	\caption[Heat map full model first case]{Simulations of $E_0^s$ with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}
+	\label{fig:Hmap_B2_less_B1}
+\end{figure}
+
+
+
+\subsection{IV case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}
+
+
+\begin{figure}[hbpt]
+	\centering
+	\subfloat[][\emph{Susceptibles.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2_mag}} \quad
+	\subfloat[][\emph{ Infected.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lambda2_mag}} \\
+	\subfloat[][\emph{ Recovered.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_lambda2_mag}} \\
+	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
+	\label{fig:sim_B2_less_B1_lam2}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{$\rho$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_rho_B1_mag_B2_lambda2_mag}} \quad
+	\subfloat[][\emph{ $SA_0$ and $SC_0$ dependence.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/HMap_SC0_SA0_B1_mag_B2_lambda2_mag}}\\
+	\caption[Heat map full model first case]{Simulations of $E_0^s$ with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
+	\label{fig:Hmap_B2_less_B1_lam2}
+\end{figure}

@@ -22,31 +22,32 @@ gamma1 = 1/9; beta1 = 0.40;
 %% III CASE: B1 > 1 and B1 > B2
 %% IV CASE: B1 > 1 and B1 > B2, lambda2 > lambda1
 caso = 4;
-[lambda_3,lambda_4,k_3,k_4, B3, B4,title] = scenario(caso);
-fig = plot_cases_SC0_SA0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1,rho1, title);
-fig = plot_cases_rho_SC0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1, title);
+[lambda_3,lambda_4,k_3,k_4, B3, B4,title_1,title_2] = scenario(caso);
+fig = plot_cases_SC0_SA0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1,rho1, title_1);
+fig = plot_cases_rho_SC0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1, title_2);
 
 %% function section
 
-function [lambda_3,lambda_4,k3,k4, B3, B4,title] = scenario(caso)
+function [lambda_3,lambda_4,k3,k4, B3, B4,title_1,title_2] = scenario(caso)
     if caso == 1
-    B3 = 0.89;
-    B4 = 0.45;
-    lambda_3 = 1/30; %fatigue to mantain C behaviour
-    lambda_4 = 1/40; %fatigue to mantain A behaviour
-    k3 = B3*lambda_3 ; %from H to C
-    k4 = B4*lambda_4; %from H to A
-    title = 'HMap_SC0_SA0_B1_B2_less_1.pdf';
-    
+        B3 = 0.89;
+        B4 = 0.45;
+        lambda_3 = 1/30; %fatigue to mantain C behaviour
+        lambda_4 = 1/40; %fatigue to mantain A behaviour
+        k3 = B3*lambda_3 ; %from H to C
+        k4 = B4*lambda_4; %from H to A
+        title_1 = 'HMap_SC0_SA0_B1_B2_less_1.pdf';
+        title_2 = 'HMap_SC0_rho_B1_B2_less_1.pdf';
     end
     if caso == 2
-            B3 = 8.5;
-            B4 = 8.5;
-            lambda_3 = 1/25; %fatigue to mantain C behaviour
-            lambda_4 = 1/30; %fatigue to mantain A behaviour
-            k3 = B3*lambda_3 ; %from H to C
-            k4 = B4*lambda_4; %from H to A
-            title = 'HMap_SC0_SA0_B1_B2_equal.pdf';         
+        B3 = 8.5;
+        B4 = 8.5;
+        lambda_3 = 1/25; %fatigue to mantain C behaviour
+        lambda_4 = 1/30; %fatigue to mantain A behaviour
+        k3 = B3*lambda_3 ; %from H to C
+        k4 = B4*lambda_4; %from H to A
+        title_1 = 'HMap_SC0_SA0_B1_B2_equal.pdf';   
+        title_2 = 'HMap_SC0_rho_B1_B2_equal.pdf';  
     end
     if caso == 3
         B3 = 7;
@@ -55,8 +56,8 @@ function [lambda_3,lambda_4,k3,k4, B3, B4,title] = scenario(caso)
         lambda_4 = 1/30; %fatigue to mantain A behaviour
         k3 = B3*lambda_3 ; %from H to C
         k4 = B4*lambda_4; %from H to A
-        title = 'HMap_SC0_SA0_B1_mag_B2.pdf';
-    
+        title_1 = 'HMap_SC0_SA0_B1_mag_B2.pdf';
+        title_2 = 'HMap_SC0_rho_B1_mag_B2.pdf'; 
     end
     if caso == 4
         B3 = 7;
@@ -66,7 +67,8 @@ function [lambda_3,lambda_4,k3,k4, B3, B4,title] = scenario(caso)
         k3 = B3*lambda_3 ; %from H to C
         k4 = B4*lambda_4; %from H to A
         %  Population initial condition
-        title = 'HMap_SC0_SA0_B1_mag_B2_lambda2_mag.pdf';
+        title_1 = 'HMap_SC0_SA0_B1_mag_B2_lambda2_mag.pdf';
+        title_2 = 'HMap_SC0_rho_B1_mag_B2_lambda2_mag.pdf';
     end
 end
 
@@ -85,7 +87,7 @@ function fig = plot_cases_SC0_SA0(fig,epsilon1, k31, k41, lambda31, lambda41, be
     y0= [SC0; SH0; SA0];
     %% Definizione del R0
     R_0(psi2, rho, epsilon, k3, k_4, lambda3, lambda4, beta2, gamma2, A, C, SC0, SA0, SH0) = beta2 .* b * inv(V) * Pi * D * y0;
-    R_0_simplified(psi2, rho, epsilon, k3, k_4, lambda3, lambda4, beta2, gamma2, A, C, SC0, SA0, SH0) = beta2/gamma2 *R_0;
+    R_0_simplified(psi2, rho, epsilon, k3, k_4, lambda3, lambda4, beta2, gamma2, A, C, SC0, SA0, SH0) = gamma2/beta2 *R_0;
 
     % Multiple plots varying initial number of Compliant and Against, respectively the SC0 and SA0 variables. This change affect also the A and C groups. Several heatmaps are plotted using different awareness value.
     SC0i = linspace(50/60e6,30e6/60e6,10); %interval from 50 to 10 milion 
@@ -127,7 +129,7 @@ function fig = plot_cases_SC0_SA0(fig,epsilon1, k31, k41, lambda31, lambda41, be
     set(gcf, 'PaperUnits', 'centimeters');
     set(gcf, 'PaperPosition', [0 0 24 15]);
     set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
-    print(gcf,'-dsvg', titolo)
+    print(gcf,'-dpdf', titolo)
 end
 
 %% Varying SC0 e rho

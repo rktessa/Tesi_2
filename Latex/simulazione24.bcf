@@ -2379,7 +2379,7 @@
     <bcf:citekey order="2" intorder="1">Sahagun1965</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Anderson_82</bcf:citekey>
     <bcf:citekey order="4" intorder="1">Vollset_2024</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">CITARE_DEVO_RITROVARE_LA_FONTE</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">eurostat</bcf:citekey>
     <bcf:citekey order="6" intorder="1">Anderson_82</bcf:citekey>
     <bcf:citekey order="7" intorder="1">owid_historical_pandemics</bcf:citekey>
     <bcf:citekey order="7" intorder="2">wiki_pandemics</bcf:citekey>
@@ -2421,19 +2421,21 @@
     <bcf:citekey order="27" intorder="8">Turkyilmazoglu_2021</bcf:citekey>
     <bcf:citekey order="28" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
     <bcf:citekey order="29" intorder="1">Hethcote_2000</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">CITA</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">diekmann2000mathematical</bcf:citekey>
+    <bcf:citekey order="30" intorder="2">akinboro2014numerical</bcf:citekey>
+    <bcf:citekey order="30" intorder="3">Turkyilmazoglu_2021</bcf:citekey>
     <bcf:citekey order="31" intorder="1">Okabe_2020</bcf:citekey>
     <bcf:citekey order="32" intorder="1">Allen2017</bcf:citekey>
     <bcf:citekey order="33" intorder="1">Newman2002</bcf:citekey>
     <bcf:citekey order="33" intorder="2">VanMieghem2009</bcf:citekey>
     <bcf:citekey order="34" intorder="1">Tizzoni2014</bcf:citekey>
     <bcf:citekey order="35" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">DeDomenico2016</bcf:citekey>
-    <bcf:citekey order="36" intorder="2">Krickel_2023</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">DeDomenico2016</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">Wang_2019</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Granell2013</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Granell2013</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Granell2013</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Granell2013</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">DeDomenico2016</bcf:citekey>
+    <bcf:citekey order="38" intorder="2">Krickel_2023</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">DeDomenico2016</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Wang_2019</bcf:citekey>
     <bcf:citekey order="41" intorder="1">Bauch_2012_overview</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Hernandez_Vargas_2022</bcf:citekey>
     <bcf:citekey order="42" intorder="2">Mata2021</bcf:citekey>
@@ -2566,7 +2568,7 @@
     <bcf:citekey order="138" intorder="1">owid-vaccine-skepticism</bcf:citekey>
     <bcf:citekey order="139" intorder="1">wakefield1998retracted</bcf:citekey>
     <bcf:citekey order="140" intorder="1">owid-vaccine-skepticism</bcf:citekey>
-    <bcf:citekey order="141" intorder="1">trova e cita world in data</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Kwasnicka_2016</bcf:citekey>
     <bcf:citekey order="142" intorder="1">Bulai2023</bcf:citekey>
     <bcf:citekey order="143" intorder="1">arino2007</bcf:citekey>
     <bcf:citekey order="144" intorder="1">arino2007</bcf:citekey>

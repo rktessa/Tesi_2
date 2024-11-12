@@ -3,14 +3,15 @@ close all;
 % load("multipli_dati_behavior.mat")
  %load("multilpiAgainst.mat")
 addpath(genpath('..\'))
-% load("..\data/multilpiAgainst.mat")
-% load("..\data/multilpiBehaviour.mat")
+ % load("..\data/multilpiAgainst.mat")
+ % load("..\data/multilpiBehaviour.mat")
 fig = 0;
 k1_vec = linspace(0.1, 0.99,30);  d1 = length(k1_vec);
 k2_vec = linspace(0.1, 0.99,30);  d2 = length(k2_vec);
 lam1_vec = linspace(1/5, 1/30, 20);  d3 = length(lam1_vec);
 lam2_vec = linspace(1/5, 1/30, 20);  d4 = length(lam2_vec);
-%% Equilibrium plot of R1 and R2 first case
+
+%% MAX AGAINST PLOT DEPENDING ON LAMBDA_1 AND LAMBDA_2
 d1 = 11; d2 = 13;
 fig = fig+1;
 figure(fig)
@@ -49,6 +50,7 @@ txt3 ="k_1= "+ num2str(round(k1_vec(d1),2))+ ", k_2= "+ num2str(round(k2_vec(d2)
 title(txt3)
 xlabel('\lambda_1') 
 ylabel('\lambda_2')
+legend("","section line", Orientation="horizontal",Location="southoutside")
 ylim([lam1_vec(20) lam1_vec(1)])
 fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
@@ -77,10 +79,10 @@ title(txt3)
 xlabel('time') 
 ylabel("Against ") 
 hold off
-fontsize(13,"points")
+fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 23 16]);
-set(gcf, 'PaperSize', [24 16]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 24 20]);
+set(gcf, 'PaperSize', [24 20]); % dimension on x axis and y axis resp.
  print(gcf,titles,'-dpdf')
 %% Against dynamic second example
 fig = fig+1;
@@ -94,7 +96,7 @@ for i = 3:17
     aga = reshape(Against(d1,d2,d3,d4,:),1,2001,[]);
     zz = aga; %zz = transpose(zz);
   txt = "\lambda_2: "+ num2str(round(lam1_vec(d4),2))+" B_2: "+num2str(round(k2_vec(d2)/lam2_vec(d4),2));
-    plot(zz(1:400),'LineWidth',1.5 ,'DisplayName',txt)
+    plot(zz(1:100),'LineWidth',1.5 ,'DisplayName',txt)
 end
 legend show
 legend(Orientation='vertical', Location='eastoutside')
@@ -103,8 +105,8 @@ title(txt3)
 xlabel('time') 
 ylabel("Against ") 
 hold off
-fontsize(13,"points")
+fontsize(20,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 23 16]);
-set(gcf, 'PaperSize', [24 16]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 24 20]);
+set(gcf, 'PaperSize', [24 20]); % dimension on x axis and y axis resp.
 print(gcf,titles,'-dpdf')

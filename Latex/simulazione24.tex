@@ -13,7 +13,7 @@
     autoretitolo,
     greek,
     evenboxes,
-%    tipotesi,
+   tipotesi = frontespizio,
 ]{toptesi}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -25,18 +25,20 @@
 \usepackage{amsmath}            %% per la matematica estesa
 \usepackage{amssymb}
 \usepackage{lipsum}             %% Per scrivere testo fasullo in "latinorum"
-
+\usepackage{geometry}
 %%\usepackage{natbib}
 \usepackage{booktabs}           %% del Sistema Internazionale
 \usepackage{latexsym}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{longtable}
 \usepackage{wrapfig}
-
+\usepackage{array}
+\usepackage{floatrow}
+\usepackage[export]{adjustbox}% for move images baseline to vertical center of image
 %\usepackage{longtable}
 %\usepackage{setspace}
 %\usepackage[margin=3cm]{geometry}
@@ -73,106 +75,30 @@
 \newtheorem{osservazione}{Osservazione}% Standard LaTeX
 \addbibresource{bibi2.bib}
 
+% simboli e notazioni 
+\usepackage{nomencl}
+\makenomenclature
+
+%da caricare come ultimo pacchetto per evitare problemi
+\usepackage{glossaries}
+\makeglossaries
+\newglossaryentry{set}{name={set},description={a collection of objects}}
+\newglossaryentry{due}{name={second},description={second example}}
+\newglossaryentry{emptyset}{name={\ensuremath{\emptyset}},description={the empty set}}
+\longnewglossaryentry{fishage}{name={Fish Age}}{
+	A common name for the Devonian geologic period spanning from the end of the Silurian Period to the beginning of the Carboniferous Period.
+	
+	This age was known for its remarkable variety of fish species.
+}
+\newglossaryentry{elite}{name={{é}lite},description={select group or class}}
+
+
 \begin{document}
 \english
 %\onehalfspacing % Set line spacing to 1.5
 
+\input{inizio.tex}
 
-
-\ateneo{\textsc{University of Trento}}
-%\nomeateneo{Sede di Torre Elettra}
-	\nomeateneo{Industrial engineering department}
-	
-	\titolo{Understanding the effect of opinions and behaviours on the spread of infectious diseases}
-	%\sottotitolo{pensare ad un sottotilo}     
-	\CorsoDiLaureaIn{Mechatronics Engineer}
-
-\renewcommand*\IDlabel{\\\quad Student Id: }
-	
- \candidato{Riccardo Tessarin}[222819]
-
-	\relatore{Prof.~Giulia Giordano}
-	
-	\secondorelatore{Doct.~Daniele Proverbio}
-
-
-	\sedutadilaurea{\textsc{Academic year} 2023-2024}
-	\logosede[95 pt]{STN} %immagine del logo 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Per mettere 4 relatori con classica
-%\AdvisorName{Supervisors}% esempio per l'inglese
-%\direttore{prof. Albert Einstein}% per il dottorato
-%\coordinatore{prof. Albert Einstein}% per il dottorato
-%    \relatore{prof.~Albert Einstein}% per la laurea e/o il dottorato
-%    \secondorelatore{dipl.~ing.~Werner von Braun}
-%    \terzorelatore{\tabular[t]{@{}l}
-%    Mario Rossi\\[0.5ex]
-%    Piero Negri
-%    \endtabular}% per la laurea magistrale
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa senza opzione classica
-%    \AdvisorName{Relatore}
-%    \relatore{prof.~Giovanni Bianchi}
-%    \secondorelatore{\tabular{@{}l}%
-%    \bfseries Correlatori\\[0.5ex]
-%    ing.~Lucio Verdi\\[0.5ex]
-%    dott.~Mario Rossi\\[0.5ex]
-%    dott.~Piero Neri
-%    \endtabular}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Alternativa con 4 relatori senza
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% indicazione dei correlatori e senza
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% opzione classica
-%    \relatore{prof.~Giovanni Bianchi}
-%    \secondorelatore{ing.~Lucio Verdi}
-%    \terzorelatore{\tabular{@{}l}
-%    dott.~Mario Rossi\\[0.5ex]
-%    dott.~Piero Neri
-%    \endtabular}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Altro trucco per mettere il correlatore
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% senza usare l'opzione classica
-%\relatore{\tabular{@{}l@{}}
-%prof.\ Albert Enstein\\[1.5ex]
-%\textbf{Correlatore:}\\
-%dipl.~ing.~Werner von Braun
-%\endtabular}
-%%%%%%%%%%
-%
-%%%%%%%%%% Trucco per scrivere anche un quarto relatore
-%\terzorelatore{{\tabular{@{}l}dott.\ Neil Armstrong\\prof. Maria Rossi\endtabular}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% Change the strings if you want a title page and a
-%%%%%%% copyright page in another language
-%%%%%%% Comment just the \iflanguage statement and the
-%%%%%%% closing line of the language test if you want to
-%%%%%%% make a global change instead of a conditional one.
-%%%%%%% Comment the following indented lines if you don't
-%%%%%%% care about the title page in English
-\iflanguage{english}{%
-	\retrofrontespizio{This work is subject to the Creative Commons Licence}
-	\DottoratoIn{PhD Course in\space}
-	\CorsoDiLaureaIn{Master degree course in\space}
-	\NomeMonografia{Bachelor Degree Final Work}
-	\TesiDiLaurea{Master Degree Thesis}
-	\NomeDissertazione{PhD Dissertation}
-	\InName{in}
-	\CandidateName{Candidate}% or Candidate
-	\AdvisorName{Supervisors}% or Supervisor
-	\TutorName{Tutor}
-	\NomeTutoreAziendale{Internship Tutor}
-	\CycleName{cycle}
-	\NomePrimoTomo{First volume}
-	\NomeSecondoTomo{Second Volume}
-	\NomeTerzoTomo{Third Volume}
-	\NomeQuartoTomo{Fourth Volume}
-	\logosede{STN}% or comma separated list of logos
-}{}
-
-
-%\ifbool{classica}%
-
-  
-
-\frontespizio % sarebbe meglio usare l'ambiente
 
 
 \begin{dedica}
