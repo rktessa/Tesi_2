@@ -1,17 +1,25 @@
 \part{Behavioral Disease Model}
 \label{part:the_model}
 \chapter{Model development and justification}
-Because the main contribution of this thesis  work  is the presentation of a new multi-system model, the understanding of the reasons that have  lead to its development are important. 
-Otherwise the reader can question: "why don't use an already developed and analysed model?
-The main answer is that, studying the literature in preparation of the thesis, something missing is noted: the connection between empirical data and epidemiological model. Often a majority of other works relating social and epidemiological aspects read, are pure theoretical models, based on ad-hoc assumptions. Construct a framework based on empirical data related to individual behaviour is challenging \cite{cita24}: untill many years ago, precisely the Coronavirus pamdemic, data on this topic are scarce. The avialbility of research like the one realized by Meta during COVID-19 \cite{cita}, is a major source, both of inspiration and of data for this reason. It permits to explore different behavior related to how people react and deal with the necessity to live with the presence of an infective disease, and it furnish this precious information in a dynamical time series. Often what emerges from this data are non linear dynamic evolution of behavior, while \cite{cita20} many models are based on this technique, this feature is instead taken into account in this work. 
+Because the main contribution of this thesis work is the presentation of a new multi-system model, understanding the reasons that led to its development is crucial.
+Otherwise, the reader might question: "Why not use an already developed and analyzed model?"
+
+The primary answer lies in the observation made while studying the literature during the preparation of this thesis: the connection between empirical data and epidemiological models is often missing. Most works relating social and epidemiological aspects are purely theoretical models based on ad-hoc assumptions. Constructing a framework grounded in empirical data related to individual behavior is challenging \cite{cita24}. Until the Coronavirus pandemic, data on this topic were scarce.
+
+The availability of research such as the one conducted by Meta during COVID-19 \cite{cita} serves as both a major source of inspiration and data. This research allows exploration of different behaviors related to how people react to and manage the necessity of living with an infectious disease. It also provides this valuable information as a dynamic time series.
+
+Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models incorporate this technique \cite{cita20}, this work uniquely addresses this feature.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{1_corpo/figure/Fig2cut}
 	\caption[Mask wearing evolution]{The evolution of mask wearing behaviors.}
 	\label{fig:mask_wearing}
 \end{figure}
-The behavioral-epidemic mean-field models developed want then to interconnect these two features, developing its theoretical framework on empirical evidences, nor on proxy or opinion dataset extrapolate for example by social network, as done for example in \cite{cita2,33}. Not always people opinion correspond to actual behavior, and the fact that this correlation is not necessary and not direct, is another  concept that with the model is attempted to overcome.  
-Observing for example the evolution of mask wearing in different European countries, in figure \ref{fig:mask_wearing}. It is immediately visible how at a certain point, there is a net increase in the use of this self-protective device, almost similar to a step. This effect is due to the introduction of regulatory prescription by authorities, and the behavior follows closely the evolution of this stringency. Phenomenon like this, have been considered in the model development, using coefficient parameter, $\psi$ to model the effect of central intervention, and modify the basic persuasion rate of different behaviors. Others empirical evidence on the reasons that undergo the developing of the model can be find in the work \cite{daniele}.
+The behavioral-epidemic mean-field models developed aim to interconnect these two features, grounding their theoretical framework on empirical evidence rather than on proxy or opinion datasets extrapolated, for instance, from social networks, as done in \cite{cita2,33}. People's opinions do not always align with their actual behaviors, and the lack of a necessary and direct correlation between the two is another concept the model attempts to address.
+
+For example, consider the evolution of mask-wearing behavior in different European countries, as shown in figure \ref{fig:mask_wearing}. It is immediately evident that, at a certain point, there is a sharp increase in the use of this self-protective device, resembling a step function. This effect results from regulatory prescriptions introduced by authorities, with behavior closely following the evolution of these stringency measures.
+
+Phenomena like this have been incorporated into the model's development using a coefficient parameter, $\psi$, to represent the effect of centralized interventions and modify the basic persuasion rate of different behaviors. Additional empirical evidence supporting the development of the model can be found in \cite{daniele}.
 
 \begin{figure}[h]
 	\centering
@@ -21,8 +29,17 @@ Observing for example the evolution of mask wearing in different European countr
 \end{figure}
 
 
-To unveil the model, and initiate its description, first are presented and analysed in the next chapter the two layer that joint together form the entire model: a SIRS epdimemic model, with a Behavior model formed by three compartments: Compliant, Against and Heedless. 
-Thre full model is composed by seven compartments, because the heedless behavior is not considered while infected or recovered (because it is quite impossible, unless being completely asymptomatic, act as heedless when infected). The figure \ref{fig:modelbehavepidemic}, describes the population subdivision in a compact form. The infection can be transmitted between all three behaviors, but Compliant group are more cautions, and then a parameter $\rho$ model their reduce probability of being infected, while another $\epsilon$ take consideration of their compliance with self-isolation while infecting, reducing the number of infected compliant ($I_C$ in the model equation) in the mixing that cause new infections in epidemic layer. The behavior are "transmitted" trhough P2P influence, and also a fatigue parameter is considered, to model the drop-out rate due to "fatigue" to mantain a certain behavior. For the epidic model, the classical $\beta$, transmission rate, $\gamma$, recovery rate, and $\delta$, immunity waning rate coefficients are used. 
+Here’s a corrected version of your text with improved syntax and grammar while maintaining the original meaning:
+
+To introduce the model and begin its description, the next chapter first presents and analyzes the two layers that together form the complete model: a SIRS epidemic model and a behavioral model consisting of three compartments: Compliant, Against, and Heedless.
+
+The full model comprises seven compartments, as the heedless behavior is not considered while individuals are infected or recovered. This assumption stems from the reasoning that it is highly improbable—unless completely asymptomatic—for an individual to act heedlessly when infected. Figure \ref{fig:modelbehavepidemic} provides a compact representation of the population subdivision.
+
+Infection can be transmitted across all three behavioral groups, but the Compliant group is more cautious. A parameter, $\rho$, models their reduced probability of being infected, while another parameter, $\epsilon$, accounts for their compliance with self-isolation while infectious. This reduces the number of infected Compliant individuals ($I_C$ in the model equations) contributing to new infections in the epidemic layer.
+
+Behavior is "transmitted" through peer-to-peer influence ($k_i, i = \,1,...,6$), and a fatigue parameter ($\lambda_i$) is included to model the dropout rate caused by the difficulty of maintaining a certain behavior over time.
+
+For the epidemic model, classical coefficients are used: $\beta$ (transmission rate), $\gamma$ (recovery rate), and $\delta$ (immunity waning rate).
  
 
 
@@ -387,15 +404,12 @@ The threshold effect is clearly visible here as well. When examining the final v
 \subsubsection{Heat map of max compartments value}
 Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures \ref{fig:max_against}, and \ref{fig:max_against2} illustrate the maximum value reached by the Against compartment.
 Two situations are compared: in the first $k_1 \sim k_2$, while in the other the difference between the two parameter is higher. In the first situation, there are visible three possible situations:
-
 \begin{itemize}
 	\item $B_2 $ greather than $B_1$, and the max value correspond to the value at Equilibrium. It is the bottom right part of the picture.
 	\item $B_2 < B_1$, but $\lambda_2 > \lambda_1$. These cases are located on the diagonal threshold of the heat map, and are the situations in which there is first a peak of A, but then the C is the dominant group at equilibrium
 	\item $B_2 < B_1$ and also $\lambda_2 < \lambda_1$. Here there is no peak, and A tends always to zero, or to remain approximately zero, depending on the initial conditions.
 \end{itemize}
 These three phenomena are visible also in Figure \ref{fig:max_against2}, in the left panel. Both the right panels in the two figures need as a comparison, to highlight the situation in which, havin a larger persuasion rate, the A is always dominant on the other compartment. As a consequence the peak correspond always to the value at equilibrium, and in no case, the C compartment at equilibrium is different to zero. 
-
- 
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Max Against compartment with $k_1 \sim k_2 $}]
@@ -405,10 +419,7 @@ These three phenomena are visible also in Figure \ref{fig:max_against2}, in the 
 	\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
 	\label{fig:max_against}
 \end{figure}
-
-
 The first case confirms the dynamics presented earlier in the model simulation in section \ref{subsec:model_behav}. This relationship between the departure rate associated with a certain behavior and the persuasion rate can lead to an initial phase where a behavior not dominant at equilibrium gains traction, reaches a peak, and then gradually declines. In some simulations, this diminishing phase can extend over a significant portion of the simulation time, as illustrated in Figure \ref{fig:model__behavior_sim_2}. The red line, called "section line" in Figure \ref{fig:max_against}, represents the part of the heat map, with the same parameters values used in the simulation of the below figure \ref{fig:max_against2}.
-
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Against simulation with $k_1 \sim k_2$.}]
@@ -482,7 +493,7 @@ where
 	\item $\epsilon$ specifies the fraction of compliant infected that participate to the infection process.
 \end{itemize}
 
-\begin{figure}[tbph]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{1_corpo/figure/epi_behaviour_model_figure}
 	\caption[Epidemic behavior model]{Figure of the epidemic behavior model with its compartment and influxes and out-fluxes.}
@@ -629,12 +640,23 @@ Realize an analysis, as the one done in the previous chapter for the Behavior mo
 While developing this model, this assumption is not considered reliable. In fact, developing a model that want to use empirical data, this are collected on a daily basis, as the ones about epidemic evolution. For this reason it is considered that the time scales have the same duration.
 However, even if this time separation is used for hypothesis, the resulting analysis will produce the same result find with the Behavior model. 
 
-Then, without the possibility of done such analysis, it is important for enhance the understanding of the model, realize extensive experimentation with a series of simulations.
-The same four cases parameters, that have been already used in the previous chapter, are used in the behavior layer. For the epidemic layer instead the value is fixed at $R_0 = 3.6$, resulting from supposing a  recovery that last $9$ days, and a transmission rate similar at the one estimated to disease like COVID-19, at the beginning of its diffusion \cite{data_R0_covid}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{"1_corpo/figure/Valori DFE e E_0_cut"}
+	\caption[Table of DFE and $E_0$]{Table of DFE and $E_0$ for the various case then presented. The other compartments value is equal to zero.}
+	\label{fig:valori-dfe-e-e0cut}
+\end{figure}
 
+Then, without the possibility of done such analysis, it is important for enhance the understanding of the model, realize extensive experimentation with a series of simulations.
+The same four cases parameters, that have been already used in the previous chapter, are used in the behavior layer. For the epidemic layer instead the value is fixed at $R_0 = 3.6$, resulting from supposing a  recovery that last $9$ days, and a transmission rate similar at the one estimated to disease like COVID-19, at the beginning of its diffusion \cite{data_R0_covid}. An extra five case is also added, in which the magnitude of $B1, B2$ is opposite respect to case 4.
+To represent possibly the majority of the situations, the epidemiological framework is maintained constant, with the same value of $\beta, \gamma$, and $\delta$ for all the five situations. What is change are the intensity and relationship between conversion number. 
 
 \subsection{I case: $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$}
-The first case, is in reality very similar to the one presented, before, and visible in Figure \ref{fig:infected00_epi_behav}. Even in this case an equivalent value of $E_0 = 1.0382$, that is slightly larger than one is found. To appreciate more how the behavior layer evolves here, both the $SC_0$, and $SA_0$ are initialied as equal to the $20 \%$ of the population. Because both the Conversion number are less than one, the majority of the population tend to transition to the Heedleess compartment in this case
+ 
+In the first figure, the dynamics are dominated by the Heedless compartment: having both behaviors less than one causes neither to take over.
+To better appreciate how the behavior layer evolves in this case, both $S_{C_0}$ and $S_{A_0}$ are initialized as equal to $20\%$ of the population. Since both Conversion numbers are less than one, the majority of the population transitions to the Heedless compartment in this scenario. Consequently, the final equilibrium reached by the system is not disease-free: a small portion of the population remains infected.
+
+Examining the value of the epidemic reproduction number derived from the initial system of equations, only one DFE (Disease-Free Equilibrium) is found in this situation. It corresponds to the state $S_{C_0} = 0$, $S_{A_0} = 0$, and $S_{H_0} = 1$. In this DFE, the value of $E_0 = 1.0816$, which is greater than one. As expected, an epidemic is observed.
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
@@ -645,7 +667,7 @@ The first case, is in reality very similar to the one presented, before, and vis
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1}} \quad
 	\subfloat[][\emph{ Behavioral model.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_less_1}} \\
-	\caption[Full model simulation figure first]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
+	\caption[Full model simulation figure first]{I case: Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
 	\label{fig:sim_B1_B2_less_1}
 \end{figure}
 
@@ -654,7 +676,8 @@ The first case, is in reality very similar to the one presented, before, and vis
 
 
 \subsection{II case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
-\begin{figure}[hbpt]
+The second situation, present with social layer in wich $B_1 = B_2$, the interesting to observe thing is that, if as in the case represented in figure \ref{fig:sim_B1_equal_B2}, when the balance of the number is obtained with different coefficient values, the epidemic evolution is heavily influenced by the value relationship. The $k_1, k_2$ determine which behaviors becomes dominant, but also the $\lambda_1$, $\lambda_2$  impact how persistent is a certain behavior. In this case, the Compliant course of action is  more dominant, and slighty less sturdy. There is a small infection peak, but then the epidemic tend to zero.
+\begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal}} \quad
@@ -664,15 +687,16 @@ The first case, is in reality very similar to the one presented, before, and vis
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal}} \quad
 	\subfloat[][\emph{ Behavioral model.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_equal}} \\
-	\caption[Full model simulation figure first]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
+	\caption[Full model simulation figure second]{II case: Simulations with $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}
 	\label{fig:sim_B1_equal_B2}
 \end{figure}
 
 
 
 
-\subsection{III bis case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$}
-
+\subsection{III case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$}
+The situation in the third case is the most exptected: With a larger $B_1$, compliant is at equilibrium the largest group, while Against tend to zero. After a small peak the epidemic estinguish, and the disease free equilibrium reached is locally stable. It is very similar to the dynamic observed in the same case in the only-behavioral model. 
+In this point the $E_0$ calculated is less than one, and this confirms the stability of the state reach, according to the next generation matrix theory.
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
@@ -681,16 +705,16 @@ The first case, is in reality very similar to the one presented, before, and vis
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2}} \\
 	\subfloat[][\emph{ Recovered.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2}} \\
-	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}
+	\caption[Full model simulation figure third]{III case: Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}
 	\label{fig:sim_B2_less_B1}
 \end{figure}
 
 
 
 \subsection{IV case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}
+The fourth simulation highlights and describes how negative can be the effects of disinformation that spread rapidly.Even though the $B_2 < B_1$, the $k_2 >> k_1$, and so the Against behavior becomes initially very popular, with a heavy consequence on the number of infected that has a very high peak if compared to the one resulting in the previous third case. Then, as simulation continues evolving the Compliant group takes the advantage, population tends to become in the majority compliant, and the disease tend to zero. 
 
-
-\begin{figure}[hbpt]
+\begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2_mag}} \quad
@@ -698,14 +722,13 @@ The first case, is in reality very similar to the one presented, before, and vis
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lambda2_mag}} \\
 	\subfloat[][\emph{ Recovered.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_lambda2_mag}} \\
-	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
+	\caption[Full model simulation figure fourth]{IV case: Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
 	\label{fig:sim_B2_less_B1_lam2}
 \end{figure}
 
 
 \subsection{V case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 <  \mathcal{B}_2$}
-
-
+The final case is the worst for the epidemic diffusion, the majority of the population assume Against behavior, and this causes the epidemic to not be reduce by NPIs or self isolation, that is performed only by an increasingly decrescent portion of individuals. The resulting shape of the epidemic is very similar to the ones, caused by a SIRS only model.
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
@@ -717,7 +740,7 @@ The first case, is in reality very similar to the one presented, before, and vis
 	\quad
 	\subfloat[][\emph{Behavioral full.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1}} \\
-	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 <  \mathcal{B}_2$.}
+	\caption[Full model simulation figure fifth]{V case: Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 <  \mathcal{B}_2$.}
 	\label{fig:sim_B1_less_B2}
 \end{figure}
 
@@ -737,13 +760,13 @@ The first case, is in reality very similar to the one presented, before, and vis
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{Susceptibles.}]
-	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1_2}} \quad
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1}} \quad
 	\subfloat[][\emph{Infected.}]
-	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1_2}} \\
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1}} \\
 	\subfloat[][\emph{ Recovered.}]
-	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1_2}} \quad
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1}} \quad
 	\subfloat[][\emph{Behavioral full.}]
-	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1_2}} \\
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1}} \\
 	\caption[Full model simulation figure third]{Simulations with $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 < \mathcal{B}_2$.}
 	\label{fig:sim_B1_less_B2_2}
 \end{figure}

@@ -14,9 +14,9 @@ clc;
 % Simulation parameters
 N = 1;
 
-gamma=1/8.95;
-beta= gamma*2.38*N %Così dovrei avere R0 = 2 %initial value
-delta = 1/175; 
+beta = 0.40;
+gamma = 1/9;
+delta = 1/90;
 Ro = beta/gamma
 time =1500;
 dt=0.01; %un millesimo di secondo di dt
@@ -104,8 +104,8 @@ title("Evolution of Ro during the course of the epidemic")
 %% Runge Kutta second order solution of SIRS  with beta state varying     
 function [taxis,xaxis,yaxis, zaxis,beta_vec, i] = SIRS(a1,a2,p1,q11,N,beta,gamma, delta,time,dt,i)
     
-    x = N-200/60e6; % susceptible
-    y = 200/60e6;  % infected
+    x = N-100/60e6; % susceptible
+    y = 100/60e6;  % infected
     z = 0; % recovered
 
     t = 0;

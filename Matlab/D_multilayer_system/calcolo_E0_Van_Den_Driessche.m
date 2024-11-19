@@ -4,7 +4,7 @@ close all;
 fig = 0;
 %% CODE TO CALCULATE THE E_0 EXPLICITLY  16/11/2024
 % Define the scenario to simulate
-caso =4;
+caso =2;
 [lambda_1,lambda_2,k_1,k_2,time,title_fig, beta,gamma,delta,rho,epsilon,psi,SC0_init,SA0_init]=scenario(caso); 
 % Initialize other variables necessary
 k3=k_1; k4=k_2; k5 = k_1; k6 = k_2;
@@ -16,15 +16,18 @@ DFE = equilibri_DFE(psi,rho,epsilon, k_1, k_2, lambda_1, lambda_2, beta, gamma, 
 [xs_h, xs_c, xs_a, yi_c, yi_a, zr_c,zr_a, time_epi,s_c,s_a,i_c,i_a,r_c,r_a,s_h] = epi_behaviour(beta,gamma,delta,rho,psi,k_1,k_2,k3,k4,k5,k6,lambda_1,lambda_2,lambda_3,lambda_4,lambda_5,lambda_6,epsilon,phi_n,SC0_init,SA0_init,time);
 %%
 %Column DFE SC,SH,SA,RC,RA
-if caso == 1 || caso == 2 ||caso == 3 
-    SC_0 = DFE(1,1); SA_0 = DFE(1,3); SH_0 = DFE(1,2); RC_0 = DFE(1,4); RA_0 = DFE(1,5);
-     SC_0 = DFE(2,1); SA_0 = DFE(2,3); SH_0 = DFE(2,2); RC_0 = DFE(2,4); RA_0 = DFE(2,5);
-elseif  caso ==5|| caso == 4
-    SC_0 = abs(DFE(3,1)); SA_0 = abs(DFE(3,3)); SH_0 = abs(DFE(3,2)); RC_0 = abs(DFE(3,4)); RA_0 = abs(DFE(3,5)); 
-end
+IC_0 = 0; IA_0 = 0; 
 % From soluzioni extract the equilibria
-   IC_0 = 0; IA_0 = 0; 
-[E_0, R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta, gamma,psi, rho, epsilon, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta,RA_0,RC_0)
+    SC_0 = DFE(1,1); SA_0 = DFE(1,3); SH_0 = DFE(1,2); RC_0 = DFE(1,4); RA_0 = DFE(1,5);
+    [E_0(1), R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta, gamma,psi, rho, epsilon, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta,RA_0,RC_0);
+    SC_0 = DFE(2,1); SA_0 = DFE(2,3); SH_0 = DFE(2,2); RC_0 = DFE(2,4); RA_0 = DFE(2,5);
+    [E_0(2), R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta, gamma,psi, rho, epsilon, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta,RA_0,RC_0);
+    SC_0 = abs(DFE(3,1)); SA_0 = abs(DFE(3,3)); SH_0 = abs(DFE(3,2)); RC_0 = abs(DFE(3,4)); RA_0 = abs(DFE(3,5)); 
+    [E_0(3), R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta, gamma,psi, rho, epsilon, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta,RA_0,RC_0);
+    
+    E_0
+   
+
 % % fig = Heat_map(fig, beta, gamma,psi, rho, epsilon, k_1, k_2, SH0, SC0,SA0, IC0,IA0)
 
    
@@ -74,16 +77,16 @@ function [lambda_1,lambda_2,k1,k2,time,title_fig, beta,gamma,delta,rho,epsilon,p
         k1 = B1*lambda_1 ; %from H to C
         k2 = B2*lambda_2; %from H to A
         % Population initial condition
-        SC0 = 50/60e6;
-        SA0 = 50/60e6;
+        SC0 = 500/60e6;
+        SA0 = 500/60e6;
         time = 3000;
         title_fig = 'epi_behav_sim_B1_B2_less_1.pdf';
     end
     if caso == 2
             B1 = 8.5;
             B2 = 8.5;
-            lambda_1 = 1/25; %fatigue to mantain C behaviour
-            lambda_2 = 1/30; %fatigue to mantain A behaviour
+            lambda_1 = 1/100; %fatigue to mantain C behaviour
+            lambda_2 = 1/20; %fatigue to mantain A behaviour
             k1 = B1*lambda_1 ; %from H to C
             k2 = B2*lambda_2; %from H to A
             time = 1000;

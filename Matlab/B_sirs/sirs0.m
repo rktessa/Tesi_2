@@ -13,9 +13,9 @@ clc;
 % Simulation parameters
 N = 1;
 
-gamma=0.2679;
-beta= gamma*2*N; %Così dovrei avere R0 = 2
-delta = 1/205; 
+beta = 0.40;
+gamma = 1/9;
+delta = 1/90;
 Ro = beta/gamma
 time =1000;
 dt=0.01; %un millesimo di secondo di dt

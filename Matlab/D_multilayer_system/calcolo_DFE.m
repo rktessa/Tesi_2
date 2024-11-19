@@ -1,25 +1,24 @@
 clc;
 clear;
 close all;
-%% Set the scenario;
-caso =3;
+%% Set the scenario; first number scenario, second what F/V matrix compute
+caso =[2,2];
 %% Run the code to se R_0, B1, B2 and the three resulting E_0 values
-[lambda_1,lambda_2,k_1,k_2,time,title_fig, beta,gamma,delta_v,rho_v,epsilon_v,psi_v, SH0_val,SC0_val,SA0_val,IC0_val,IA0_val,RA0_val,RC0_val]=scenario(caso);
+[lambda_1,lambda_2,k_1,k_2,time,title_fig, beta,gamma,delta_v,rho_v,epsilon_v,psi_v, SH0_val,SC0_val,SA0_val,IC0_val,IA0_val,RA0_val,RC0_val]=scenario(caso(1));
 phi_n = 0.5;
 DFE = equilibri_FDE(psi_v,rho_v,epsilon_v, k_1, k_2, lambda_1, lambda_2, beta, gamma, delta_v,phi_n)
 
-E_0 = zeros(1,3);
-for i = 1:3
+E_0 = zeros(1,size(DFE,1));
+for i = 1:size(DFE,1)
     SC_0 = DFE(i,1); SA_0 = DFE(i,3); SH_0 = DFE(i,2); RC_0 = DFE(i,4); RA_0 = DFE(i,5); IC_0 =0; IA_0 = 0; RC_0 = 0; RA_0 = 0;
-    [E_0(i), R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta, gamma,psi_v, rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
+    [E_0(i), R_0, B_1, B_2,FV] = calcolo_E_0_Van(caso(2),beta, gamma,psi_v, rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
 end
 
-B_1
-B_2
-R_0
+% B_1
+% B_2
+% R_0
 E_0
-    %%
-
+%% Function Disease Free Equilibrium
 function FDE = equilibri_FDE(psi_v,rho_v,epsilon_v, k_1, k_2, lambda_1, lambda_2, beta, gamma, delta_v,phi_n_val)
     syms psi2 SC SA RA RC SH IC IA rho epsilon k1 k2 k3 k4 k5 k6 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 beta2 gamma2 SC0 SH0 SA0 RC0 RA0 delta phi_n
         
@@ -56,10 +55,8 @@ function FDE = equilibri_FDE(psi_v,rho_v,epsilon_v, k_1, k_2, lambda_1, lambda_2
         FDE = [double(sol.SC), double(sol.SH), double(sol.SA), double(sol.RC),  double(sol.RA)];
         % soluzioni(4,:)
 end
-    
-    
-    
-    %% Function "Scenari"
+  
+%% Function "Scenari"
 function [lambda_1,lambda_2,k1,k2,time,title_fig, beta,gamma,delta,rho,epsilon,psi, SH0,SC0,SA0,IC0,IA0,RA0,RC0] = scenario(caso)
     % Parameters equal in all situations
     beta = 0.40;
@@ -91,8 +88,8 @@ function [lambda_1,lambda_2,k1,k2,time,title_fig, beta,gamma,delta,rho,epsilon,p
     if caso == 2
             B1 = 8.5;
             B2 = 8.5;
-            lambda_1 = 1/25; %fatigue to mantain C behaviour
-            lambda_2 = 1/30; %fatigue to mantain A behaviour
+            lambda_1 = 1/40; %fatigue to mantain C behaviour
+            lambda_2 = 1/400; %fatigue to mantain A behaviour
             k1 = B1*lambda_1 ; %from H to C
             k2 = B2*lambda_2; %from H to A
             time = 1000;
@@ -161,14 +158,36 @@ function [lambda_1,lambda_2,k1,k2,time,title_fig, beta,gamma,delta,rho,epsilon,p
         title_fig = 'epi_behav_sim_B2_mag_B1.pdf';
     end
 end
-function [E_0, R_0, B_1, B_2,FV] = calcolo_E_0_Van(beta_v, gamma_v,psi_v, rho_v, epsilon_v, k3_v, k4_v,lam3_v, lam4_v, SH0, SC0,SA0, IC0,IA0,delta_v,RA0,RC0 )
+%% Function TNG
+function [E_0, R_0, B_1, B_2,FV] = calcolo_E_0_Van(caso, beta_v, gamma_v,psi_v, rho_v, epsilon_v, k3_v, k4_v,lam3_v, lam4_v, SH0, SC0,SA0, IC0,IA0,delta_v,RA0,RC0 )
     syms psi2 SC SA RA RC SH IC IA rho epsilon k1 k2 k3 k4 k5 k6 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 beta2 gamma2 
-    % Matrix F
-    F = [epsilon*beta2*(rho*SC+SH)+ psi2*k3*IA,   beta2*(rho*SC+SH)+psi2*k3*(SC+IC+RC)+lambda4;
-     beta2*epsilon*SA+ lambda3+k4*(SA+IA+RA), beta2*SA+ k4*IC];
-    % Matrix V
-    V = [lambda3+k4*(SA+IA+RA)+gamma2, k4*IC;
-    psi2*k3*IA, psi2*k3*(SC+IC+RC)+lambda4+gamma2];
+    
+    if caso == 1
+        % Matrix F
+        F = [epsilon*beta2*(rho*SC+SH)+ psi2*k3*IA,   beta2*(rho*SC+SH)+psi2*k3*(SC+IC+RC)+lambda4;
+         beta2*epsilon*SA+ lambda3+k4*(SA+IA+RA), beta2*SA+ k4*IC];
+        % Matrix V
+        V = [lambda3+k4*(SA+IA+RA)+gamma2, k4*IC;
+        psi2*k3*IA, psi2*k3*(SC+IC+RC)+lambda4+gamma2];
+    elseif caso == 2
+        % Matrix F
+        F = [epsilon*beta2*(rho*SC+SH)+ psi2*k3*IA,   beta2*(rho*SC+SH)+psi2*k3*(SC+IC+RC);
+         beta2*epsilon*SA+k4*(SA+IA+RA), beta2*SA+ k4*IC];
+        % Matrix V
+        V = [lambda3+k4*(SA+IA+RA)+gamma2, k4*IC-lambda4;
+        psi2*k3*IA-lambda3, psi2*k3*(SC+IC+RC)+lambda4+gamma2];
+    elseif caso == 3
+        % Matrix F
+        F = [epsilon*beta2*(rho*SC+SH),   beta2*(rho*SC+SH);
+             beta2*epsilon*SA ,            beta2*SA];
+        % Matrix V
+       V = [lambda3+k4*(SA+IA+RA)+gamma2-psi2*k3*IA, k4*IC-lambda4-psi2*k3*(SC+IC+RC);
+           +psi2*k3*IA-lambda3- k4*(SA+IA+RA),  psi2*k3*(SC+IC+RC)-k4*IC+lambda4+gamma2];
+       
+        % V = [lambda3+k4*(SA+IA+RA)+gamma2-psi2*k3*IA,  k4*IC-lambda4-psi2*k3*(SC+IC+RC);
+        %     +psi2*k3*IA-lambda3- k4*(SA+IA+RA),           psi2*k3*(SC+IC+RC)+lambda4+gamma2 -k4*IC]
+      
+    end
     % Substitute symbols with variables
     psi2 =psi_v;  rho=rho_v; epsilon=epsilon_v; 
     k3=k3_v; k4=k4_v; lambda3=lam3_v; lambda4=lam4_v; beta2=beta_v; gamma2=gamma_v;

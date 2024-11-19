@@ -83,16 +83,14 @@
 \contentsline {subsubsection}{Behavioural model experiment}{69}{section*.73}%
 \contentsline {subsubsection}{Heat map Final Equilibrium states}{69}{section*.74}%
 \contentsline {subsubsection}{Heat map of max compartments value}{70}{section*.77}%
-\contentsline {chapter}{\numberline {7}Behavioral epidemic model}{75}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Model description}{75}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Basic reproduction number calculation}{77}{subsection.7.1.1}%
-\contentsline {subsubsection}{$E_0$ first evaluation and example}{80}{section*.81}%
-\contentsline {section}{\numberline {7.2}Simulations: how parameters influence the $E_0$ value, and model evolution}{81}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{82}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$.}{82}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}III bis case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{82}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.2.4}%
+\contentsline {chapter}{\numberline {7}Behavioral epidemic model}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Model description}{73}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Basic reproduction number calculation}{75}{subsection.7.1.1}%
+\contentsline {subsubsection}{$E_0$ first evaluation and example}{78}{section*.81}%
+\contentsline {section}{\numberline {7.2}Simulations: how parameters influence the $E_0$ value, and model evolution}{79}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{80}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$.}{80}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{81}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{81}{subsection.7.2.4}%
 \contentsline {subsection}{\numberline {7.2.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{82}{subsection.7.2.5}%
-\contentsline {part}{\EnsureStandardFontEncoding {III}\hspace {1em}Data analysis}{89}{part.3}%
-\contentsline {chapter}{\numberline {8}Data }{91}{chapter.8}%
-\contentsline {chapter}{Bibliography}{93}{chapter.8}%
+\contentsline {chapter}{Bibliography}{87}{figure.caption.90}%
