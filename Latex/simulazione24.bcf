@@ -2555,24 +2555,32 @@
     <bcf:citekey order="127" intorder="1">Smaldino_2021</bcf:citekey>
     <bcf:citekey order="128" intorder="1">Bulai2023</bcf:citekey>
     <bcf:citekey order="129" intorder="1">Smaldino_2021</bcf:citekey>
-    <bcf:citekey order="130" intorder="1">Dehning_2020</bcf:citekey>
-    <bcf:citekey order="130" intorder="2">Li2022</bcf:citekey>
-    <bcf:citekey order="131" intorder="1">Dehning_2020</bcf:citekey>
-    <bcf:citekey order="132" intorder="1">Epstein_2021</bcf:citekey>
-    <bcf:citekey order="133" intorder="1">Bongarti2023</bcf:citekey>
-    <bcf:citekey order="134" intorder="1">Zuo2022</bcf:citekey>
-    <bcf:citekey order="134" intorder="2">Peng2021</bcf:citekey>
-    <bcf:citekey order="135" intorder="1">Epstein_2021</bcf:citekey>
-    <bcf:citekey order="136" intorder="1">Usher_2020</bcf:citekey>
-    <bcf:citekey order="137" intorder="1">McCormack_2020</bcf:citekey>
-    <bcf:citekey order="138" intorder="1">owid-vaccine-skepticism</bcf:citekey>
-    <bcf:citekey order="139" intorder="1">wakefield1998retracted</bcf:citekey>
-    <bcf:citekey order="140" intorder="1">owid-vaccine-skepticism</bcf:citekey>
-    <bcf:citekey order="141" intorder="1">Kwasnicka_2016</bcf:citekey>
-    <bcf:citekey order="142" intorder="1">Bulai2023</bcf:citekey>
-    <bcf:citekey order="143" intorder="1">arino2007</bcf:citekey>
-    <bcf:citekey order="144" intorder="1">arino2007</bcf:citekey>
-    <bcf:citekey order="145" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">cita24</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">cita</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">cita20</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">cita2</bcf:citekey>
+    <bcf:citekey order="133" intorder="2">33</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">daniele</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">Dehning_2020</bcf:citekey>
+    <bcf:citekey order="135" intorder="2">Li2022</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">Dehning_2020</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">Epstein_2021</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">Bongarti2023</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">Zuo2022</bcf:citekey>
+    <bcf:citekey order="139" intorder="2">Peng2021</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">Epstein_2021</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">Usher_2020</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">McCormack_2020</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">owid-vaccine-skepticism</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">wakefield1998retracted</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">owid-vaccine-skepticism</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">Kwasnicka_2016</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">Bulai2023</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">van_den_Driessche_2017</bcf:citekey>
+    <bcf:citekey order="149" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">arino2007</bcf:citekey>
+    <bcf:citekey order="151" intorder="1">Bulai2023</bcf:citekey>
+    <bcf:citekey order="152" intorder="1">data_R0_covid</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

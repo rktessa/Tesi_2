@@ -5,18 +5,20 @@ clc;
 clear;
 close all;
 %% Initialization
-syms psi SC SA SH IC IA rho epsilon k3 k4 lambda3 lambda4 beta gamma A C SC0 SA0 SH0 
+syms psi SH SA SH IC IA rho epsilon k3 k4 lambda3 lambda4 beta gamma A C SC0 SA0 SH0 
 fig = 0;
 % To calculate the R0 the following matrices are defined:
     Pi = [ rho, 1 0; 0, 0, 1];
     D =  [ 1, 0, 0; 0, 1, 0; 0, 0, 1];
-    y =  [ SC; SH; SA];
+    y =  [ SH; SH; SA];
     b =  [ epsilon, 1];
     x =  [ IC; IA];  
     V = [  k4*A + lambda3 + gamma, -psi*k3*C - lambda4; 
           -k4*A - lambda3, psi * k3*C + gamma + lambda4 ];
     y0= [SC0; SH0; SA0];
 
+    
+   
 
 %% Definizione del R0
 R_0(psi, rho, epsilon, k3, k4, lambda3, lambda4, beta, gamma, A, C, SC0, SA0, SH0) = beta .* b * inv(V) * Pi * D * y0;
@@ -60,7 +62,7 @@ end
 % filename = "R0_variandoSC_SA,.mat";
 % save(filename, "R0_initial_SC_and_SA", '-v7.3');
 % load("R0_variandoSC_SA,.mat")
-% Prossimi casi, plot funzione di awareness SC e C, SC,SA C e A  più egli altri coeeficienit, anche se solo roh e epsilon hannno un valore compartamentale. 
+% Prossimi casi, plot funzione di awareness SH e C, SH,SA C e A  più egli altri coeeficienit, anche se solo roh e epsilon hannno un valore compartamentale. 
 % Varying SC0 and SA0
 
 % SC0i = linspace(50/60e6,10e6/60e6); %interval from 50 to 10 milion 
@@ -79,7 +81,7 @@ zz = aga; zz = transpose(zz);
 surface(xx,yy,zz, 'edgecolor','none')
 colorbar;
 colormap default;
-txt3 = "R_0 function of initial SC and SA";
+txt3 = "R_0 function of initial SH and SA";
 title(txt3)
 xlabel('initial susceptible compliant') 
 ylabel('initial susceptible against') 
@@ -128,7 +130,7 @@ zz = aga; zz = transpose(zz);
 surface(xx,yy,zz, 'edgecolor','none')
 colorbar;
 colormap default;
-txt3 = "R_0 function of initial SC and efficacy of NPIs";
+txt3 = "R_0 function of initial SH and efficacy of NPIs";
 title(txt3)
 xlabel('initial susceptible compliant') 
 ylabel('\rho ') 

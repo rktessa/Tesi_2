@@ -11086,6 +11086,44 @@
       \verb 10.1080/17437199.2016.1151372
       \endverb
     \endentry
+    \entry{van_den_Driessche_2017}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=62a4fc5c2bcc9cf939ae2a91891deb0f}{%
+           family={Driessche},
+           familyi={D\bibinitperiod},
+           given={Pauline},
+           giveni={P\bibinitperiod},
+           prefix={van\bibnamedelima den},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{fullhash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{fullhashraw}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{bibnamehash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{authorbibnamehash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{authornamehash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{authorfullhash}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \strng{authorfullhashraw}{62a4fc5c2bcc9cf939ae2a91891deb0f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2468-0427}
+      \field{journaltitle}{Infectious Disease Modelling}
+      \field{month}{8}
+      \field{number}{3}
+      \field{title}{Reproduction numbers of infectious disease models}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{288\bibrangedash 303}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.idm.2017.06.002
+      \endverb
+    \endentry
     \entry{arino2007}{article}{}{}
       \name{author}{5}{}{%
         {{hash=3a3363b2e871745db048758aa5edf0ab}{%
@@ -11141,6 +11179,49 @@
       \range{pages}{17}
       \verb{doi}
       \verb 10.3934/mbe.2007.4.159
+      \endverb
+    \endentry
+    \entry{data_R0_covid}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=779c40342159a95e575efc71f7d36f0d}{%
+           family={F},
+           familyi={F\bibinitperiod},
+           given={Arroyo-Marioli},
+           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=c364c23767cc3b650277e3b0130a7718}{%
+           family={F},
+           familyi={F\bibinitperiod},
+           given={Bullano},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9071c6fc4fc67cf8641eecffdfccc0e7}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Kucinskas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5f62d251b1d6e215f632bfbca5f4cf1d}{%
+           family={C},
+           familyi={C\bibinitperiod},
+           given={Rondón-Moreno},
+           giveni={R\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{fullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{fullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{bibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authorbibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authornamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authorfullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{authorfullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimate of the effective reproduction rate (R) of COVID-19}
+      \verb{urlraw}
+      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
+      \endverb
+      \verb{url}
+      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
       \endverb
     \endentry
   \enddatalist

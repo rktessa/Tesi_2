@@ -21,7 +21,7 @@ gamma1 = 1/9; beta1 = 0.40;
 %% II CASE: B1 = B2 and greather than 1
 %% III CASE: B1 > 1 and B1 > B2
 %% IV CASE: B1 > 1 and B1 > B2, lambda2 > lambda1
-caso = 4;
+caso = 1;
 [lambda_3,lambda_4,k_3,k_4, B3, B4,title_1,title_2] = scenario(caso);
 fig = plot_cases_SC0_SA0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1,rho1, title_1);
 fig = plot_cases_rho_SC0(fig,epsilon1, k_3, k_4, lambda_3, lambda_4, beta1, gamma1, title_2);
