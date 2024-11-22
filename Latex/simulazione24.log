@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  19 NOV 2024 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  22 NOV 2024 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2649,7 +2649,14 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX Warning: Unused global option(s):
     [corpo=11pt,tipotesi=frontespizio].
 
-(simulazione24.aux)
+(simulazione24.aux
+
+LaTeX Warning: Label `fig:sim_B1_B2_less_equal' multiply defined.
+
+
+LaTeX Warning: Label `fig:sim_B1_B2_less_equal' multiply defined.
+
+)
 \openout1 = `simulazione24.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
@@ -2855,7 +2862,7 @@ Dictionary: glossaries-dictionary, Language: English
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<marchio_unitrento_colore_it_cut.png, id=165, 113.4639pt x 113.4639pt>
+<marchio_unitrento_colore_it_cut.png, id=169, 113.4639pt x 113.4639pt>
 File: marchio_unitrento_colore_it_cut.png Graphic file (type png)
 <use marchio_unitrento_colore_it_cut.png>
 Package pdftex.def Info: marchio_unitrento_colore_it_cut.png  used on input lin
@@ -2919,7 +2926,7 @@ LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 
 
 
-<logo_bn.png, id=167, 1027.84pt x 1027.84pt>
+<logo_bn.png, id=171, 1027.84pt x 1027.84pt>
 File: logo_bn.png Graphic file (type png)
 <use logo_bn.png>
 Package pdftex.def Info: logo_bn.png  used on input line 25.
@@ -2963,38 +2970,32 @@ t_cut.png>])
 
 
 
-[7{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/M
-iKTeX/fonts/enc/dvips/lm/lm-rm.enc}] (simulazione24.lof
-
-[8
-
-
-])
+[7{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTe
+X/fonts/enc/dvips/lm/lm-mathit.enc}] (simulazione24.lof)
 \tf@lof=\write13
 \openout13 = `simulazione24.lof'.
 
 
 
-[9] (0_introduction/Introduction.tex
+[8
 
-[10
+
+] (0_introduction/Introduction.tex
+
+[9
 
 
 
 
 ]
 
-[11
-
-]
-
-[12]
+[10]
 Chapter 1.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htb') on input line 8.
 
-<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=338, 77.08
+<0_introduction/images_introduction/FlorentineCodex_smallpox.jpg, id=327, 77.08
 8pt x 59.5023pt>
 File: 0_introduction/images_introduction/FlorentineCodex_smallpox.jpg Graphic f
 ile (type jpg)
@@ -3007,10 +3008,10 @@ Underfull \vbox (badness 1168) has occurred while \output is active []
 
 
 
-[13
+[11
 
  <./0_introduction/images_introduction/FlorentineCodex_smallpox.jpg>]
-<0_introduction/images_introduction/worst_epidemic.pdf, id=351, 682.55pt x 426.
+<0_introduction/images_introduction/worst_epidemic.pdf, id=339, 682.55pt x 426.
 59375pt>
 File: 0_introduction/images_introduction/worst_epidemic.pdf Graphic file (type 
 pdf)
@@ -3030,7 +3031,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--44
 
 
 
-[14 <./0_introduction/images_introduction/worst_epidemic.pdf>]
+[12 <./0_introduction/images_introduction/worst_epidemic.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 5.
 
@@ -3038,19 +3039,25 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[15{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+[13{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+[14]
+
+[15]
 
 [16]
-
-[17]
-
-[18
-
-]
 Chapter 2.
 
-LaTeX Warning: Reference `ch:data' on page 19 undefined on input line 113.
+LaTeX Warning: Reference `ch:data' on page 17 undefined on input line 119.
 
+
+
+[17
+
+]
+
+[18]
+Chapter 3.
 
 
 [19
@@ -3058,12 +3065,8 @@ LaTeX Warning: Reference `ch:data' on page 19 undefined on input line 113.
 ]
 
 [20]
-Chapter 3.
 
-
-[21
-
-]
+[21]
 
 [22]
 
@@ -3073,50 +3076,46 @@ Chapter 3.
 
 [25]
 
-[26]
-
-[27]
-
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htb') on input line 276.
+               Default added (so using `htb') on input line 282.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./0_introduction/images_introduction/SIRS_fi
 gure_compartmental.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
-<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=498, 782.
+<0_introduction/images_introduction/SIRS_figure_compartmental.pdf, id=487, 782.
 925pt x 542.025pt>
 File: 0_introduction/images_introduction/SIRS_figure_compartmental.pdf Graphic 
 file (type pdf)
 <use 0_introduction/images_introduction/SIRS_figure_compartmental.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/SIRS_figure_compart
-mental.pdf  used on input line 278.
+mental.pdf  used on input line 284.
 (pdftex.def)             Requested size: 271.86234pt x 188.2146pt.
 
 
+[26]
+
+[27 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
+
 [28]
 
-[29 <./0_introduction/images_introduction/SIRS_figure_compartmental.pdf>]
-
-[30]
-
-[31{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-<0_introduction/images_introduction/sir_con_rt.pdf, id=562, 682.55pt x 426.5937
+[29{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+<0_introduction/images_introduction/sir_con_rt.pdf, id=550, 682.55pt x 426.5937
 5pt>
 File: 0_introduction/images_introduction/sir_con_rt.pdf Graphic file (type pdf)
 
 <use 0_introduction/images_introduction/sir_con_rt.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_con_rt.pdf  use
-d on input line 378.
+d on input line 384.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
-<0_introduction/images_introduction/sir_multipli_beta.pdf, id=563, 682.55pt x 4
+<0_introduction/images_introduction/sir_multipli_beta.pdf, id=551, 682.55pt x 4
 26.59375pt>
 File: 0_introduction/images_introduction/sir_multipli_beta.pdf Graphic file (ty
 pe pdf)
 <use 0_introduction/images_introduction/sir_multipli_beta.pdf>
 Package pdftex.def Info: 0_introduction/images_introduction/sir_multipli_beta.p
-df  used on input line 380.
+df  used on input line 386.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
 
 
@@ -3124,45 +3123,47 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[32]
+[30]
 
-[33 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
+[31 <./0_introduction/images_introduction/sir_con_rt.pdf> <./0_introduction/ima
 ges_introduction/sir_multipli_beta.pdf>]
-<0_introduction/images_introduction/agent_based.png, id=590, 1156.32pt x 542.02
+<0_introduction/images_introduction/agent_based.png, id=579, 1156.32pt x 542.02
 5pt>
 File: 0_introduction/images_introduction/agent_based.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/agent_based.png>
 Package pdftex.def Info: 0_introduction/images_introduction/agent_based.png  us
-ed on input line 415.
+ed on input line 421.
 (pdftex.def)             Requested size: 209.12683pt x 98.02344pt.
-<0_introduction/images_introduction/multi_layer.png, id=591, 470.35725pt x 393.
+<0_introduction/images_introduction/multi_layer.png, id=580, 470.35725pt x 393.
 8715pt>
 File: 0_introduction/images_introduction/multi_layer.png Graphic file (type png
 )
 <use 0_introduction/images_introduction/multi_layer.png>
 Package pdftex.def Info: 0_introduction/images_introduction/multi_layer.png  us
-ed on input line 426.
-(pdftex.def)             Requested size: 250.95476pt x 210.15121pt.
+ed on input line 430.
+(pdftex.def)             Requested size: 209.12683pt x 175.119pt.
 
 
-[34 <./0_introduction/images_introduction/agent_based.png>])
+[32 <./0_introduction/images_introduction/agent_based.png>])
 (0_introduction/Literature_review.tex
 
-[35 <./0_introduction/images_introduction/multi_layer.png>]
+[33 <./0_introduction/images_introduction/multi_layer.png>]
 
-[36]
+[34
+
+]
 Chapter 4.
 
 
-[37
+[35
 
 ]
 
-[38]
+[36]
 
-[39]
-<0_introduction/images_review/metacritical_point_granell_2013.png, id=691, 404.
+[37]
+<0_introduction/images_review/metacritical_point_granell_2013.png, id=680, 404.
 712pt x 291.489pt>
 File: 0_introduction/images_review/metacritical_point_granell_2013.png Graphic 
 file (type png)
@@ -3170,7 +3171,7 @@ file (type png)
 Package pdftex.def Info: 0_introduction/images_review/metacritical_point_granel
 l_2013.png  used on input line 61.
 (pdftex.def)             Requested size: 196.57973pt x 141.58548pt.
-<0_introduction/images_review/metacritical_point_granell_2014.png, id=692, 770.
+<0_introduction/images_review/metacritical_point_granell_2014.png, id=681, 770.
 27776pt x 552.26324pt>
 File: 0_introduction/images_review/metacritical_point_granell_2014.png Graphic 
 file (type png)
@@ -3182,7 +3183,7 @@ l_2014.png  used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png, id=704,
+<0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png, id=693,
  744.98325pt x 510.708pt>
 File: 0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png Gra
 phic file (type png)
@@ -3190,7 +3191,7 @@ phic file (type png)
 Package pdftex.def Info: 0_introduction/images_review/peng_2021_bertozzi_couple
 d_structure.png  used on input line 74.
 (pdftex.def)             Requested size: 263.50185pt x 180.63632pt.
-<0_introduction/images_review/silva2019_transition_trees.png, id=705, 738.3585p
+<0_introduction/images_review/silva2019_transition_trees.png, id=694, 738.3585p
 t x 482.40225pt>
 File: 0_introduction/images_review/silva2019_transition_trees.png Graphic file 
 (type png)
@@ -3209,8 +3210,8 @@ cribed, where two pos-si-ble opinions^^Vpro-
 
 
 
-[40]
-<0_introduction/images_review/stable_unstable_equilibria_friejs.png, id=727, 12
+[38]
+<0_introduction/images_review/stable_unstable_equilibria_friejs.png, id=716, 12
 26.78325pt x 334.851pt>
 File: 0_introduction/images_review/stable_unstable_equilibria_friejs.png Graphi
 c file (type png)
@@ -3224,15 +3225,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[41 <./0_introduction/images_review/metacritical_point_granell_2013.png> <./0_i
+[39 <./0_introduction/images_review/metacritical_point_granell_2013.png> <./0_i
 ntroduction/images_review/metacritical_point_granell_2014.png>]
 Underfull \vbox (badness 2564) has occurred while \output is active []
 
 
 
-[42 <./0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png> <
+[40 <./0_introduction/images_review/peng_2021_bertozzi_coupled_structure.png> <
 ./0_introduction/images_review/silva2019_transition_trees.png>]
-<0_introduction/images_review/disease_behavior_interaction_wang2015.png, id=743
+<0_introduction/images_review/disease_behavior_interaction_wang2015.png, id=732
 , 487.8225pt x 298.716pt>
 File: 0_introduction/images_review/disease_behavior_interaction_wang2015.png Gr
 aphic file (type png)
@@ -3240,7 +3241,7 @@ aphic file (type png)
 Package pdftex.def Info: 0_introduction/images_review/disease_behavior_interact
 ion_wang2015.png  used on input line 107.
 (pdftex.def)             Requested size: 158.93843pt x 97.32312pt.
-<0_introduction/images_review/risk_forecast_auld.png, id=744, 815.4465pt x 499.
+<0_introduction/images_review/risk_forecast_auld.png, id=733, 815.4465pt x 499.
 8675pt>
 File: 0_introduction/images_review/risk_forecast_auld.png Graphic file (type pn
 g)
@@ -3250,10 +3251,10 @@ sed on input line 109.
 (pdftex.def)             Requested size: 242.58789pt x 148.70288pt.
 
 
-[43 <./0_introduction/images_review/stable_unstable_equilibria_friejs.png> <./0
+[41 <./0_introduction/images_review/stable_unstable_equilibria_friejs.png> <./0
 _introduction/images_review/disease_behavior_interaction_wang2015.png> <./0_int
 roduction/images_review/risk_forecast_auld.png>]
-<0_introduction/images_review/turker_city_recreated.png, id=764, 1108.74225pt x
+<0_introduction/images_review/turker_city_recreated.png, id=752, 1108.74225pt x
  369.7815pt>
 File: 0_introduction/images_review/turker_city_recreated.png Graphic file (type
  png)
@@ -3263,92 +3264,74 @@ Package pdftex.def Info: 0_introduction/images_review/turker_city_recreated.png
 (pdftex.def)             Requested size: 376.42575pt x 125.54347pt.
 
 
-[44]
+[42]
 Underfull \vbox (badness 3815) has occurred while \output is active []
 
 
 
-[45 <./0_introduction/images_review/turker_city_recreated.png>]
-<0_introduction/images_review/alvarez_opi_vac.png, id=786, 914.2155pt x 415.552
+[43 <./0_introduction/images_review/turker_city_recreated.png>]
+<0_introduction/images_review/alvarez_opi_vac.png, id=775, 914.2155pt x 415.552
 5pt>
 File: 0_introduction/images_review/alvarez_opi_vac.png Graphic file (type png)
 <use 0_introduction/images_review/alvarez_opi_vac.png>
 Package pdftex.def Info: 0_introduction/images_review/alvarez_opi_vac.png  used
- on input line 146.
+ on input line 144.
 (pdftex.def)             Requested size: 334.60422pt x 152.09706pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[46 <./0_introduction/images_review/alvarez_opi_vac.png>]
+[44 <./0_introduction/images_review/alvarez_opi_vac.png>]
 
-[47]
-<0_introduction/images_review/Tanaka_model.png, id=809, 511.9125pt x 449.2785pt
+[45]
+<0_introduction/images_review/Tanaka_model.png, id=798, 511.9125pt x 449.2785pt
 >
 File: 0_introduction/images_review/Tanaka_model.png Graphic file (type png)
 <use 0_introduction/images_review/Tanaka_model.png>
 Package pdftex.def Info: 0_introduction/images_review/Tanaka_model.png  used on
- input line 179.
+ input line 177.
 (pdftex.def)             Requested size: 146.39133pt x 128.47758pt.
-<0_introduction/images_review/zou_2022_SEIRVM.png, id=810, 1088.26575pt x 493.8
+<0_introduction/images_review/zou_2022_SEIRVM.png, id=799, 1088.26575pt x 493.8
 45pt>
 File: 0_introduction/images_review/zou_2022_SEIRVM.png Graphic file (type png)
 <use 0_introduction/images_review/zou_2022_SEIRVM.png>
 Package pdftex.def Info: 0_introduction/images_review/zou_2022_SEIRVM.png  used
- on input line 181.
+ on input line 179.
 (pdftex.def)             Requested size: 250.95476pt x 113.87584pt.
 
 
-[48 <./0_introduction/images_review/Tanaka_model.png> <./0_introduction/images_
+[46 <./0_introduction/images_review/Tanaka_model.png> <./0_introduction/images_
 review/zou_2022_SEIRVM.png>]
 
-[49]) (1_corpo/opinion_disease_model.tex
+[47]) (1_corpo/opinion_disease_model.tex
 
-[50]
+[48]
 
-[51
+[49
 
 ]
 
-[52]
+[50]
 Chapter 5.
-
-LaTeX Warning: Citation 'cita24' on page 53 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'cita' on page 53 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'cita20' on page 53 undefined on input line 11.
-
 
 
 pdfTeX warning: pdflatex.exe (file ./1_corpo/figure/Fig2cut.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<1_corpo/figure/Fig2cut.pdf, id=865, 515.52597pt x 168.3891pt>
+<1_corpo/figure/Fig2cut.pdf, id=857, 515.52597pt x 168.3891pt>
 File: 1_corpo/figure/Fig2cut.pdf Graphic file (type pdf)
 <use 1_corpo/figure/Fig2cut.pdf>
 Package pdftex.def Info: 1_corpo/figure/Fig2cut.pdf  used on input line 14.
 (pdftex.def)             Requested size: 334.60422pt x 109.29744pt.
 
-LaTeX Warning: Citation 'cita2' on page 53 undefined on input line 18.
-
-
-LaTeX Warning: Citation '33' on page 53 undefined on input line 18.
-
-
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
 
 
-[53
+[51
 
  <./1_corpo/figure/Fig2cut.pdf>]
-
-LaTeX Warning: Citation 'daniele' on page 54 undefined on input line 22.
-
-<1_corpo/figure/Model_behav_epidemic.png, id=878, 659.46375pt x 435.6275pt>
+<1_corpo/figure/Model_behav_epidemic.png, id=875, 659.46375pt x 435.6275pt>
 File: 1_corpo/figure/Model_behav_epidemic.png Graphic file (type png)
 <use 1_corpo/figure/Model_behav_epidemic.png>
 Package pdftex.def Info: 1_corpo/figure/Model_behav_epidemic.png  used on input
@@ -3356,288 +3339,277 @@ Package pdftex.def Info: 1_corpo/figure/Model_behav_epidemic.png  used on input
 (pdftex.def)             Requested size: 250.95476pt x 165.77281pt.
 
 
-[54 <./1_corpo/figure/Model_behav_epidemic.png>]
+[52 <./1_corpo/figure/Model_behav_epidemic.png>]
 
-[55]
+[53]
 
-[56
+[54
 
 ]
 Chapter 6.
 
 
-[57
+[55
 
 ]
+<1_corpo/figure/r0/sirs_figure.pdf, id=901, 711.65875pt x 426.59375pt>
+File: 1_corpo/figure/r0/sirs_figure.pdf Graphic file (type pdf)
+<use 1_corpo/figure/r0/sirs_figure.pdf>
+Package pdftex.def Info: 1_corpo/figure/r0/sirs_figure.pdf  used on input line 
+70.
+(pdftex.def)             Requested size: 250.95476pt x 150.42964pt.
 
-[58]
-<1_corpo/figure/behavior_model_figure.png, id=916, 935.8965pt x 267.399pt>
+
+[56 <./1_corpo/figure/r0/sirs_figure.pdf>]
+
+[57]
+<1_corpo/figure/behavior_model_figure.png, id=928, 935.8965pt x 267.399pt>
 File: 1_corpo/figure/behavior_model_figure.png Graphic file (type png)
 <use 1_corpo/figure/behavior_model_figure.png>
 Package pdftex.def Info: 1_corpo/figure/behavior_model_figure.png  used on inpu
-t line 113.
+t line 117.
 (pdftex.def)             Requested size: 301.14316pt x 86.03864pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[59]
-
-[60 <./1_corpo/figure/behavior_model_figure.png>]
-<1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf, id=935, 682.
+[58 <./1_corpo/figure/behavior_model_figure.png>]
+<1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf, id=939, 682.
 55pt x 426.59375pt>
 File: 1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf Graphic 
 file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_
-less_1.pdf  used on input line 169.
+less_1.pdf  used on input line 173.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
-LaTeX Font Info:    Calculating math sizes for size <10.03757> on input line 16
-9.
+LaTeX Font Info:    Calculating math sizes for size <10.03757> on input line 17
+3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.03757> on input line 169.
+(Font)              <10.03757> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.02626> on input line 169.
+(Font)              <7.02626> on input line 173.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.01878> on input line 169.
-<1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf, id=936, 682.5
+(Font)              <5.01878> on input line 173.
+<1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf, id=940, 682.5
 5pt x 426.59375pt>
 File: 1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf Graphic f
 ile (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/behavior_B1_equ
-al_B2.pdf  used on input line 171.
+al_B2.pdf  used on input line 175.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf, id=93
-8, 682.55pt x 426.59375pt>
+[59]
+<1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf, id=95
+0, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf G
 raphic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag
-_B2_k1_mag_k2.pdf  used on input line 181.
+_B2_k1_mag_k2.pdf  used on input line 185.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
-<1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf, id=93
-9, 682.55pt x 426.59375pt>
+<1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf, id=95
+1, 682.55pt x 426.59375pt>
 File: 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf G
 raphic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/behavior_B1_mag
-_B2_k2_mag_k1.pdf  used on input line 183.
+_B2_k2_mag_k1.pdf  used on input line 187.
 (pdftex.def)             Requested size: 200.75996pt x 125.47302pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \vbox (badness 5274) has occurred while \output is active []
 
-[61]
 
-[62 <./1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf> <./1_c
-orpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf> <./1_corpo/figure
-/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf> <./1_corpo/figure/be
-havioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf>]
+
+[60 <./1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1.pdf> <./1_c
+orpo/figure/behavioural_equilibrium/behavior_B1_equal_B2.pdf>]
+
+[61 <./1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2.pdf>
+ <./1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1.pdf>]
+
+[62]
 
 [63]
-
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 298--301
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
-
-
-[65]
-<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf, id=990, 
+<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf, id=996, 
 682.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf Grap
 hic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1
-_B2_less_1.pdf  used on input line 310.
+_B2_less_1.pdf  used on input line 314.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf, id=991, 6
+<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf, id=997, 6
 82.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf Graph
 ic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1
-_B2_equal.pdf  used on input line 312.
+_B2_equal.pdf  used on input line 316.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf, id=9
-94, 796.9775pt x 682.55pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf, id=1
+000, 796.9775pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf 
 Graphic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Surface_nullcli
-ne_B1_equal_B2.pdf  used on input line 324.
+ne_B1_equal_B2.pdf  used on input line 328.
 (pdftex.def)             Requested size: 292.77629pt x 250.73778pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[66 <./1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf> <.
-/1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf>]
-<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf, id=1011, 68
+[64]
+
+[65 <./1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1.pdf> <.
+/1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal.pdf> <./1_corp
+o/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf>]
+<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf, id=1043, 68
 2.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf Graphic
  file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1
-_mag_B2.pdf  used on input line 342.
+_mag_B2.pdf  used on input line 346.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf, id=1012, 6
+<1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf, id=1044, 6
 82.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf Graphi
 c file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1
-_less_B2.pdf  used on input line 344.
+_less_B2.pdf  used on input line 348.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag.pdf,
- id=1015, 682.55pt x 682.55pt>
+ id=1047, 682.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag
 .pdf Graphic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag.
 pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1
-_mag_B2_lambda2_mag.pdf  used on input line 355.
+_mag_B2_lambda2_mag.pdf  used on input line 359.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
 
 
-[67 <./1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2.pdf
->]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[68 <./1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf> <./1_
-corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf> <./1_corpo/fi
-gure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag.pdf>]
-<1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf, id=1063, 
+[66 <./1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2.pdf> <./1_
+corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2.pdf>]
+<1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf, id=1064, 
 682.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf Graph
 ic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Final_Compliant
-_heat_map.pdf  used on input line 376.
+_heat_map.pdf  used on input line 380.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf, id=1064, 68
+<1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf, id=1065, 68
 2.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf Graphic
  file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Final_Against_h
-eat_map.pdf  used on input line 378.
+eat_map.pdf  used on input line 382.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map.pdf, id=1065, 6
+<1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map.pdf, id=1066, 6
 82.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map.pdf Graphi
 c file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/Final_Heedless_
-heat_map.pdf  used on input line 380.
+heat_map.pdf  used on input line 384.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[67 <./1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_ma
+g.pdf>]
 
-<1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf, id=1068, 597.23
+[68 <./1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf> <./
+1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf> <./1_corpo/f
+igure/behavioural_equilibrium/Final_Heedless_heat_map.pdf>]
+<1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf, id=1150, 597.23
 125pt x 455.7025pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf Graphic fil
 e (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_compliant
-_B1.pdf  used on input line 392.
+_B1.pdf  used on input line 396.
 (pdftex.def)             Requested size: 200.75996pt x 153.18452pt.
-<1_corpo/figure/behavioural_equilibrium/final_against_B1.pdf, id=1069, 597.2312
+<1_corpo/figure/behavioural_equilibrium/final_against_B1.pdf, id=1151, 597.2312
 5pt x 455.7025pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_against_B1.pdf Graphic file 
 (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/final_against_B1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_against_B
-1.pdf  used on input line 394.
+1.pdf  used on input line 398.
 (pdftex.def)             Requested size: 200.75996pt x 153.18452pt.
-<1_corpo/figure/behavioural_equilibrium/final_heedless_B1.pdf, id=1070, 597.231
+<1_corpo/figure/behavioural_equilibrium/final_heedless_B1.pdf, id=1152, 597.231
 25pt x 455.7025pt>
 File: 1_corpo/figure/behavioural_equilibrium/final_heedless_B1.pdf Graphic file
  (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/final_heedless_B1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/final_heedless_
-B1.pdf  used on input line 396.
+B1.pdf  used on input line 400.
 (pdftex.def)             Requested size: 200.75996pt x 153.18452pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[69]
-Underfull \vbox (badness 2080) has occurred while \output is active []
-
-
-
-[70 <./1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map.pdf> <./
-1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map.pdf> <./1_corpo/f
-igure/behavioural_equilibrium/Final_Heedless_heat_map.pdf>]
-<1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf, id=1150, 68
+[69 <./1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf> <./1_corp
+o/figure/behavioural_equilibrium/final_against_B1.pdf> <./1_corpo/figure/behavi
+oural_equilibrium/final_heedless_B1.pdf>]
+<1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf, id=1169, 68
 2.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf Graphic
  file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/max_againste_he
-atmap_1.pdf  used on input line 416.
+atmap_1.pdf  used on input line 420.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf, id=1151, 68
+<1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf, id=1170, 68
 2.55pt x 682.55pt>
 File: 1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf Graphic
  file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/max_againste_he
-atmap_2.pdf  used on input line 418.
+atmap_2.pdf  used on input line 422.
 (pdftex.def)             Requested size: 200.75996pt x 200.75685pt.
-<1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1.pdf, id=1156, 
+<1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1.pdf, id=1175, 
 682.55pt x 569.12625pt>
 File: 1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1.pdf Graph
 ic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/against_evoluti
-on_vari_1.pdf  used on input line 426.
+on_vari_1.pdf  used on input line 430.
 (pdftex.def)             Requested size: 200.75996pt x 167.39578pt.
-<1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2.pdf, id=1157, 
+<1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2.pdf, id=1176, 
 682.55pt x 569.12625pt>
 File: 1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2.pdf Graph
 ic file (type pdf)
 <use 1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2.pdf>
 Package pdftex.def Info: 1_corpo/figure/behavioural_equilibrium/against_evoluti
-on_vari_2.pdf  used on input line 428.
+on_vari_2.pdf  used on input line 432.
 (pdftex.def)             Requested size: 200.75996pt x 167.39578pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[70 <./1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf> <./1_
+corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf>]
 
+[71 <./1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1.pdf> <./
+1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2.pdf>]
 
+[72
 
-[71 <./1_corpo/figure/behavioural_equilibrium/final_compliant_B1.pdf> <./1_corp
-o/figure/behavioural_equilibrium/final_against_B1.pdf> <./1_corpo/figure/behavi
-oural_equilibrium/final_heedless_B1.pdf>]
-
-[72 <./1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1.pdf> <./1_
-corpo/figure/behavioural_equilibrium/max_againste_heatmap_2.pdf> <./1_corpo/fig
-ure/behavioural_equilibrium/against_evolution_vari_1.pdf> <./1_corpo/figure/beh
-avioural_equilibrium/against_evolution_vari_2.pdf>]
+]
 Chapter 7.
 
-LaTeX Warning: Reference `ch:data' on page 73 undefined on input line 437.
+LaTeX Warning: Reference `ch:data' on page 73 undefined on input line 441.
 
 
 
@@ -3646,12 +3618,12 @@ LaTeX Warning: Reference `ch:data' on page 73 undefined on input line 437.
 ]
 
 [74]
-<1_corpo/figure/epi_behaviour_model_figure.png, id=1234, 298.11375pt x 370.986p
+<1_corpo/figure/epi_behaviour_model_figure.png, id=1249, 298.11375pt x 370.986p
 t>
 File: 1_corpo/figure/epi_behaviour_model_figure.png Graphic file (type png)
 <use 1_corpo/figure/epi_behaviour_model_figure.png>
 Package pdftex.def Info: 1_corpo/figure/epi_behaviour_model_figure.png  used on
- input line 498.
+ input line 502.
 (pdftex.def)             Requested size: 209.12683pt x 260.24883pt.
 
 
@@ -3660,7 +3632,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [75]
-Overfull \hbox (0.41313pt too wide) in paragraph at lines 513--514
+Overfull \hbox (0.41313pt too wide) in paragraph at lines 517--518
 []\T1/lmr/m/n/11 To de-scribe the evo-lu-tion of the sys-tem the fol-low-ing no
 -ta-tion us-ing ma-tri-ces is adopted: 
  []
@@ -3668,581 +3640,333 @@ Overfull \hbox (0.41313pt too wide) in paragraph at lines 513--514
 
 
 [76 <./1_corpo/figure/epi_behaviour_model_figure.png>]
-Overfull \hbox (21.95961pt too wide) detected at line 592
-[]
- []
-
-
 
 [77]
-<1_corpo/figure/r0/susceptible00_epi_behav.pdf, id=1263, 682.55pt x 426.59375pt
->
-File: 1_corpo/figure/r0/susceptible00_epi_behav.pdf Graphic file (type pdf)
-<use 1_corpo/figure/r0/susceptible00_epi_behav.pdf>
-Package pdftex.def Info: 1_corpo/figure/r0/susceptible00_epi_behav.pdf  used on
- input line 627.
-(pdftex.def)             Requested size: 188.21288pt x 117.62933pt.
-<1_corpo/figure/r0/infected00_epi_behav.pdf, id=1264, 682.55pt x 426.59375pt>
-File: 1_corpo/figure/r0/infected00_epi_behav.pdf Graphic file (type pdf)
-<use 1_corpo/figure/r0/infected00_epi_behav.pdf>
-Package pdftex.def Info: 1_corpo/figure/r0/infected00_epi_behav.pdf  used on in
-put line 629.
-(pdftex.def)             Requested size: 188.21288pt x 117.62933pt.
-<1_corpo/figure/r0/recovered00_epi_behav.pdf, id=1265, 682.55pt x 426.59375pt>
-File: 1_corpo/figure/r0/recovered00_epi_behav.pdf Graphic file (type pdf)
-<use 1_corpo/figure/r0/recovered00_epi_behav.pdf>
-Package pdftex.def Info: 1_corpo/figure/r0/recovered00_epi_behav.pdf  used on i
-nput line 631.
-(pdftex.def)             Requested size: 188.21288pt x 117.62933pt.
-LaTeX Font Info:    Calculating math sizes for size <15.84003> on input line 63
-6.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15.84003> on input line 636.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11.08797> on input line 636.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.92001> on input line 636.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <15.84003> not available
-(Font)              size <17.28> substituted on input line 636.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 636.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 636.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 636.
-
-
 
 [78]
 
-pdfTeX warning: pdflatex.exe (file ./1_corpo/figure/Valori DFE e E_0_cut.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<1_corpo/figure/Valori DFE e E_0_cut.pdf, id=1272, 346.65509pt x 203.80139pt>
-File: 1_corpo/figure/Valori DFE e E_0_cut.pdf Graphic file (type pdf)
-<use 1_corpo/figure/Valori DFE e E_0_cut.pdf>
-Package pdftex.def Info: 1_corpo/figure/Valori DFE e E_0_cut.pdf  used on input
- line 645.
-(pdftex.def)             Requested size: 250.95476pt x 147.5423pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-LaTeX Font Info:    Calculating math sizes for size <9.16678> on input line 653
-.
+pdfTeX warning: pdflatex.exe (file ./1_corpo/figure/Valori DFE e E_0_caso_3.pdf
+): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<1_corpo/figure/Valori DFE e E_0_caso_3.pdf, id=1286, 409.28911pt x 223.07341pt
+>
+File: 1_corpo/figure/Valori DFE e E_0_caso_3.pdf Graphic file (type pdf)
+<use 1_corpo/figure/Valori DFE e E_0_caso_3.pdf>
+Package pdftex.def Info: 1_corpo/figure/Valori DFE e E_0_caso_3.pdf  used on in
+put line 621.
+(pdftex.def)             Requested size: 250.95476pt x 136.77916pt.
+LaTeX Font Info:    Calculating math sizes for size <13.19997> on input line 62
+8.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.16678> on input line 653.
+(Font)              <13.19997> on input line 628.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.4167> on input line 653.
+(Font)              <9.23993> on input line 628.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.58339> on input line 653.
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.4167> not available
-(Font)              size <6> substituted on input line 653.
-
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <4.58339> not available
-(Font)              size <5> substituted on input line 653.
-
-[79 <./1_corpo/figure/r0/susceptible00_epi_behav.pdf> <./1_corpo/figure/r0/infe
-cted00_epi_behav.pdf> <./1_corpo/figure/r0/recovered00_epi_behav.pdf>]
-LaTeX Font Info:    Calculating math sizes for size <13.19997> on input line 65
-4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.19997> on input line 654.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.23993> on input line 654.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.59998> on input line 654.
-
+(Font)              <6.59998> on input line 628.
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <13.19997> not available
-(Font)              size <12> substituted on input line 654.
+(Font)              size <12> substituted on input line 628.
 
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <6.59998> not available
-(Font)              size <7> substituted on input line 654.
+(Font)              size <7> substituted on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
+(hyperref)                removing `math shift' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 654.
+(hyperref)                removing `subscript' on input line 628.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 654.
-
-<1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_less_1.pdf, id=12
-89, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_less_1.pdf G
-raphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_less_1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B1_B2_less_1.pdf  used on input line 663.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_less_1.pdf, id=1290,
- 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_less_1.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_less_1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1
-_B2_less_1.pdf  used on input line 665.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1.pdf, id=1291
-, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1.pdf Gra
-phic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-1_B2_less_1.pdf  used on input line 667.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_less_1.pdf, id=1292
-, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_less_1.pdf Gra
-phic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_less_1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B
-1_B2_less_1.pdf  used on input line 669.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(hyperref)                removing `math shift' on input line 628.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 678.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 678.
-
-<1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal.pdf, id=129
-4, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal.pdf Gr
+[79 <./1_corpo/figure/Valori DFE e E_0_caso_3.pdf>]
+<1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1.pdf, id=130
+0, 796.9775pt x 1138.2525pt>
+File: 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1.pdf Gr
 aphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B1_B2_equal.pdf  used on input line 683.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_equal.pdf, id=1295, 
-767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_equal.pdf Graph
+<use 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1.pdf>
+Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_
+B1_B2_less_1.pdf  used on input line 637.
+(pdftex.def)             Requested size: 200.75996pt x 286.7161pt.
+<1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_B2_equal.pdf, id=1301
+, 796.9775pt x 1138.2525pt>
+File: 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_B2_equal.pdf Gra
+phic file (type pdf)
+<use 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_B2_equal.pdf>
+Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_
+B1_B2_equal.pdf  used on input line 639.
+(pdftex.def)             Requested size: 200.75996pt x 286.7161pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 644.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
+
+
+LaTeX Warning: Reference `fig:sim_B1_equal_B2' on page 80 undefined on input li
+ne 645.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 646.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 646.
+
+
+Underfull \vbox (badness 1253) has occurred while \output is active []
+
+
+
+[80 <./1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1.pdf> 
+<./1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_B2_equal.pdf>]
+<1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2.pdf, id=1312, 
+796.9775pt x 1138.2525pt>
+File: 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2.pdf Graph
 ic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_equal.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1
-_B2_equal.pdf  used on input line 685.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal.pdf, id=1296,
- 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-1_B2_equal.pdf  used on input line 687.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_equal.pdf, id=1297,
- 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_equal.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_equal.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B
-1_B2_equal.pdf  used on input line 689.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2.pdf>
+Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_
+B1_mag_B2.pdf  used on input line 653.
+(pdftex.def)             Requested size: 200.75996pt x 286.7161pt.
+<1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_mag_B2_lambda2_mag.pd
+f, id=1313, 796.9775pt x 1138.2525pt>
+File: 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_mag_B2_lambda2_m
+ag.pdf Graphic file (type pdf)
+<use 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_mag_B2_lambda2_ma
+g.pdf>
+Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_
+B1_mag_B2_lambda2_mag.pdf  used on input line 655.
+(pdftex.def)             Requested size: 200.75996pt x 286.7161pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 697.
+(hyperref)                removing `subscript' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 697.
-
-<1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2.pdf, id=1298,
- 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B1_mag_B2.pdf  used on input line 703.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2.pdf, id=1299, 76
-7.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2.pdf Graphic
- file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1
-_mag_B2.pdf  used on input line 705.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2.pdf, id=1300, 7
-67.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2.pdf Graphi
-c file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-1_mag_B2.pdf  used on input line 707.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-
-[80 <./1_corpo/figure/Valori DFE e E_0_cut.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+(hyperref)                removing `math shift' on input line 661.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
+(hyperref)                removing `math shift' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
+(hyperref)                removing `subscript' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
+(hyperref)                removing `subscript' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
+(hyperref)                removing `math shift' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
+(hyperref)                removing `math shift' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
+(hyperref)                removing `subscript' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
+(hyperref)                removing `subscript' on input line 667.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
-
-<1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2_mag.p
-df, id=1314, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2_
-mag.pdf Graphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2_m
-ag.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B1_mag_B2_lambda2_mag.pdf  used on input line 720.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lambda2_mag.pdf,
- id=1315, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lambda2_mag
-.pdf Graphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lambda2_mag.
-pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1
-_mag_B2_lambda2_mag.pdf  used on input line 722.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_lambda2_mag.pdf
-, id=1316, 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_lambda2_ma
-g.pdf Graphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_lambda2_mag
-.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-1_mag_B2_lambda2_mag.pdf  used on input line 724.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 730.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 730.
-
-<1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf, id=1317,
- 767.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B2_mag_B1.pdf  used on input line 735.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf, id=1318, 76
-7.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf Graphic
- file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2
-_mag_B1.pdf  used on input line 737.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf, id=1319, 7
-67.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf Graphi
-c file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-2_mag_B1.pdf  used on input line 739.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-<1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf, id=1320, 7
-67.86874pt x 483.8075pt>
-File: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf Graphi
-c file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B
-2_mag_B1.pdf  used on input line 742.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-Underfull \vbox (badness 4595) has occurred while \output is active []
+(hyperref)                removing `math shift' on input line 667.
 
 
 
-[81 <./1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_less_1.pdf>
- <./1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_less_1.pdf> <./1_
-corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_less_1.pdf> <./1_corpo
-/figure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_less_1.pdf>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<1_corpo/figure/behav_epi_sim/E0_heatmap_1.pdf, id=1337, 739.76375pt x 455.7025
-pt>
-File: 1_corpo/figure/behav_epi_sim/E0_heatmap_1.pdf Graphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/E0_heatmap_1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E0_heatmap_1.pdf  used on
- input line 752.
-(pdftex.def)             Requested size: 200.75996pt x 123.66711pt.
-<1_corpo/figure/behav_epi_sim/E0_heatmap_2.pdf, id=1338, 739.76375pt x 455.7025
-pt>
-File: 1_corpo/figure/behav_epi_sim/E0_heatmap_2.pdf Graphic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/E0_heatmap_2.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E0_heatmap_2.pdf  used on
- input line 754.
-(pdftex.def)             Requested size: 200.75996pt x 123.66711pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf Grap
-hic file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim
-_B2_mag_B1.pdf  used on input line 763.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-File: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf Graphic
- file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2
-_mag_B1.pdf  used on input line 765.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-File: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf Graphi
-c file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B
-2_mag_B1.pdf  used on input line 767.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-File: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf Graphi
-c file (type pdf)
-<use 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf>
-Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/behavioralepi_behav_sim_B
-2_mag_B1.pdf  used on input line 769.
-(pdftex.def)             Requested size: 200.75996pt x 126.4883pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[81 <./1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2.pdf> <./
+1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_mag_B2_lambda2_mag.pdf
+>]
+<1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1.pdf, id=1324, 
+796.9775pt x 1138.2525pt>
+File: 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1.pdf Graph
+ic file (type pdf)
+<use 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1.pdf>
+Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_
+B2_mag_B1.pdf  used on input line 672.
+(pdftex.def)             Requested size: 209.12683pt x 298.6655pt.
 )
 
-[82 <./1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_B2_equal.pdf> 
-<./1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_B2_equal.pdf> <./1_co
-rpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_B2_equal.pdf> <./1_corpo/fi
-gure/behav_epi_sim/behavioralepi_behav_sim_B1_B2_equal.pdf>]
-
-[83 <./1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2.pdf> <.
-/1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2.pdf> <./1_corpo/
-figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2.pdf>]
-
-[84 <./1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B1_mag_B2_lambda2
-_mag.pdf> <./1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B1_mag_B2_lamb
-da2_mag.pdf> <./1_corpo/figure/behav_epi_sim/recovered_epi_behav_sim_B1_mag_B2_
-lambda2_mag.pdf>]
-
-[85 <./1_corpo/figure/behav_epi_sim/susceptible_epi_behav_sim_B2_mag_B1.pdf> <.
-/1_corpo/figure/behav_epi_sim/infected_epi_behav_sim_B2_mag_B1.pdf> <./1_corpo/
-figure/behav_epi_sim/recovered_epi_behav_sim_B2_mag_B1.pdf> <./1_corpo/figure/b
-ehav_epi_sim/behavioralepi_behav_sim_B2_mag_B1.pdf> <./1_corpo/figure/behav_epi
-_sim/E0_heatmap_1.pdf> <./1_corpo/figure/behav_epi_sim/E0_heatmap_2.pdf>]
-
-[86]
+[82 <./1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 69.
- (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
+
+(C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[87
+[83
 
 
 ]
@@ -4259,9 +3983,9 @@ ademy of Sci-ences \T1/lmr/m/n/11 113.46 (2016), pp. 12899^^U
 
 
 
-[88]
+[84]
 
-[89]
+[85]
 Overfull \hbox (3.17677pt too wide) in paragraph at lines 169--169
 []\T1/lmr/m/n/11 Clara Granell, Ser-gio Gómez, and Alex Are-nas. ^^P  Dy-nam-i-
 cal In-ter-play be-tween Aware-
@@ -4269,7 +3993,7 @@ cal In-ter-play be-tween Aware-
 
 
 
-[90]
+[86]
 Overfull \hbox (2.0391pt too wide) in paragraph at lines 169--169
 \T1/lmr/m/n/11 breaks^^Q. In: \T1/lmr/m/it/11 Pro-ceed-ings of the Na-tional Ac
 ademy of Sci-ences \T1/lmr/m/n/11 106.16 (2009), pp. 6872^^U
@@ -4277,7 +4001,7 @@ ademy of Sci-ences \T1/lmr/m/n/11 106.16 (2009), pp. 6872^^U
 
 
 
-[91]
+[87]
 Overfull \hbox (6.0825pt too wide) in paragraph at lines 169--169
 []\T1/lmr/m/n/11 Mark M. Tanaka, Jochen Kumm, and Mar-cus W. Feld-man. ^^P  Co-
 evo-lu-tion of Pathogens
@@ -4285,7 +4009,13 @@ evo-lu-tion of Pathogens
 
 
 
-[92]
+[88]
+Overfull \hbox (34.81352pt too wide) in paragraph at lines 169--169
+[]\T1/lmr/m/n/11 Daniele Prover-bio, Ric-cardo Tes-sarin, and Giu-lia Gior-dano
+. ^^P  Data in-formed epidemiological-
+ []
+
+
 Overfull \hbox (63.10127pt too wide) in paragraph at lines 169--169
 \T1/lmr/m/sc/11 url\T1/lmr/m/n/11 : [][]$\T1/lmtt/m/n/11 https : / / ourworldin
 data . org / explorers / covid ? country = USA~BRA~JPN~DEU~ITA~OWID _
@@ -4293,9 +4023,11 @@ data . org / explorers / covid ? country = USA~BRA~JPN~DEU~ITA~OWID _
 
 
 
-[93]
+[89]
 
-[94
+[90]
+
+[91
 
 ]
 
@@ -4311,7 +4043,7 @@ L3 programming layer <2024-08-30>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 1.43997pt have occurred.
+(Font)              up to 1.19997pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -4319,8 +4051,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `simulazione24.out' has not changed.
-(rerunfilecheck)             Checksum: 25633A6B92734492B22BA63DBBEFEAE5;8548.
+(rerunfilecheck)             Checksum: 3EEE9ECF739DD7894E703730B3E6DBE2;8381.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                simulazione24
@@ -4331,19 +4066,19 @@ Package logreq Info: Writing requests to 'simulazione24.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 50296 strings out of 473898
- 968474 string characters out of 5736294
- 2349636 words of memory out of 5000000
- 71972 multiletter control sequences out of 15000+600000
- 693655 words of font info for 149 fonts, out of 8000000 for 9000
+ 50113 strings out of 473898
+ 957634 string characters out of 5736294
+ 2354680 words of memory out of 5000000
+ 71792 multiletter control sequences out of 15000+600000
+ 669351 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,17n,135p,2349b,3968s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 138i,15n,135p,2349b,3929s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
 blic/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/l
-m/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Progra
+X/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/l
+m/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/t
 ype1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKT
@@ -4352,9 +4087,9 @@ m/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Prog
 ram Files/MiKTeX/fonts/type1/public/lm/lmro9.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy
 8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on simulazione24.pdf (94 pages, 7138928 bytes).
+Output written on simulazione24.pdf (91 pages, 6542985 bytes).
 PDF statistics:
- 1739 PDF objects out of 2073 (max. 8388607)
- 326 named destinations out of 1000 (max. 500000)
- 677 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1658 PDF objects out of 1728 (max. 8388607)
+ 325 named destinations out of 1000 (max. 500000)
+ 600 words of extra memory for PDF output out of 10000 (max. 10000000)
 

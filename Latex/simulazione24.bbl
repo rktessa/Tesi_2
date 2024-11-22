@@ -10839,6 +10839,267 @@
       \endverb
       \keyw{Transmission dynamics,coupled contagion,homophily,outgroup aversion,social distancing}
     \endentry
+    \entry{Astley_2021}{article}{}{}
+      \name{author}{15}{}{%
+        {{hash=2b1e45853974e9f6f32ccbb92f340caa}{%
+           family={Astley},
+           familyi={A\bibinitperiod},
+           given={Christina\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9880d6427d6ecb8b1af26a283581e5aa}{%
+           family={Tuli},
+           familyi={T\bibinitperiod},
+           given={Gaurav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=09e614b9fff165ae15637e4b9150ad7f}{%
+           family={Mc\bibnamedelima Cord},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Kimberly\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e17b81525f6010d86495f249b41822dd}{%
+           family={Cohn},
+           familyi={C\bibinitperiod},
+           given={Emily\bibnamedelima L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=f74a6f3885bda33836730e7e179e41fc}{%
+           family={Rader},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b75aa1361bc27a659f5ada909e5ce97f}{%
+           family={Varrelman},
+           familyi={V\bibinitperiod},
+           given={Tanner\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=58e10dcb1e1cb777c3e4555e7a088854}{%
+           family={Chiu},
+           familyi={C\bibinitperiod},
+           given={Samantha\bibnamedelima L.},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=721e288c0bfa38b4b288f743376a242d}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=5112b2ee1a37c15343328dfa1eb1b20f}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Kathleen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3228f5a31377bc7180ea9931ca6147ac}{%
+           family={Farag},
+           familyi={F\bibinitperiod},
+           given={Tamer\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=fe8e94c92a13a2056a54740c6083d33b}{%
+           family={Barkume},
+           familyi={B\bibinitperiod},
+           given={Kristina\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c873018fb508a86364607a00c763437d}{%
+           family={LaRocca},
+           familyi={L\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=664b4f0ba2c1803e12efb9ea39502fe8}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Katherine\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7c91aa8a97e2bf810febcf40b083a72b}{%
+           family={Kreuter},
+           familyi={K\bibinitperiod},
+           given={Frauke},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cf76b1851febce8405cbaa70d0958845}{%
+           family={Brownstein},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Proceedings of the National Academy of Sciences}%
+      }
+      \strng{namehash}{b19f58860bef0defe040c81fa2ac5232}
+      \strng{fullhash}{a0854604df9696f2baf436f82c5df84a}
+      \strng{fullhashraw}{a0854604df9696f2baf436f82c5df84a}
+      \strng{bibnamehash}{b19f58860bef0defe040c81fa2ac5232}
+      \strng{authorbibnamehash}{b19f58860bef0defe040c81fa2ac5232}
+      \strng{authornamehash}{b19f58860bef0defe040c81fa2ac5232}
+      \strng{authorfullhash}{a0854604df9696f2baf436f82c5df84a}
+      \strng{authorfullhashraw}{a0854604df9696f2baf436f82c5df84a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{month}{12}
+      \field{number}{51}
+      \field{title}{Global monitoring of the impact of the COVID-19 pandemic through online surveys sampled from the Facebook user base}
+      \field{volume}{118}
+      \field{year}{2021}
+      \field{pages}{e2111455118}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1073/pnas.2111455118
+      \endverb
+    \endentry
+    \entry{huys2010nonlinear}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=b94c3cb2750ea4f402ba05d3ec3101eb}{%
+           family={Huys},
+           familyi={H\bibinitperiod},
+           given={Raoul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1bef9f3404ed8cf94b1ceb23f3c467dc}{%
+           family={Jirsa},
+           familyi={J\bibinitperiod},
+           given={Viktor\bibnamedelima K},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{23b423fb563434347957b3fcb7316321}
+      \strng{fullhash}{23b423fb563434347957b3fcb7316321}
+      \strng{fullhashraw}{23b423fb563434347957b3fcb7316321}
+      \strng{bibnamehash}{23b423fb563434347957b3fcb7316321}
+      \strng{authorbibnamehash}{23b423fb563434347957b3fcb7316321}
+      \strng{authornamehash}{23b423fb563434347957b3fcb7316321}
+      \strng{authorfullhash}{23b423fb563434347957b3fcb7316321}
+      \strng{authorfullhashraw}{23b423fb563434347957b3fcb7316321}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nonlinear dynamics in human behavior}
+      \field{volume}{328}
+      \field{year}{2010}
+    \endentry
+    \entry{Anderson_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e8a4070f47356ebf747da5eda23eeddd}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Brian\bibnamedelimb D.\bibnamedelimi O.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=fdd309e27948d942046d633747cc419b}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Mengbin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{fullhash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{fullhashraw}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{bibnamehash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{authorbibnamehash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{authornamehash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{authorfullhash}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \strng{authorfullhashraw}{4e2ea798163c66f3542d50ed0c8ecaee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1751-8520}
+      \field{journaltitle}{International Journal of Automation and Computing}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Recent Advances in the Modelling and Analysis of Opinion Dynamics on Influence Networks}
+      \field{volume}{16}
+      \field{year}{2019}
+      \field{pages}{129\bibrangedash 149}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s11633-019-1169-8
+      \endverb
+    \endentry
+    \entry{Zino_2021}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=38d08d5531c5008acdd5d93232d0059b}{%
+           family={Zino},
+           familyi={Z\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b420cdd284fce534ac179e987a208563}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{fullhash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{fullhashraw}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{bibnamehash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{authorbibnamehash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{authornamehash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{authorfullhash}{395bf545b8fb5a2115c51be7147e1ca6}
+      \strng{authorfullhashraw}{395bf545b8fb5a2115c51be7147e1ca6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-0830}
+      \field{journaltitle}{IEEE Circuits and Systems Magazine}
+      \field{number}{4}
+      \field{title}{Analysis, Prediction, and Control of Epidemics: A Survey from Scalar to Dynamic Network Models}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{4\bibrangedash 23}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1109/mcas.2021.3118100
+      \endverb
+    \endentry
+    \entry{Proverbio_Tex_2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7e1587ff0b2b9e9c48a8cfb6c53753a3}{%
+           family={Proverbio},
+           familyi={P\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=91126de0a335cedd511508d81bf3acd8}{%
+           family={Tessarin},
+           familyi={T\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d32e38544884606b540a524e97669c9b}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{fullhash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{fullhashraw}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{bibnamehash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{authorbibnamehash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{authornamehash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{authorfullhash}{921f0edf309e55ca47eb49a926ef9743}
+      \strng{authorfullhashraw}{921f0edf309e55ca47eb49a926ef9743}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data informed epidemiological-behavioural modelling}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2410.10472
+      \endverb
+      \keyw{Physics and Society (physics.soc-ph),Quantitative Methods (q-bio.QM),FOS: Physical sciences,FOS: Physical sciences,FOS: Biological sciences,FOS: Biological sciences}
+    \endentry
     \entry{Li2022}{article}{}{}
       \name{author}{4}{}{%
         {{hash=0d36a6690c1ecc71addd182336c05c16}{%
@@ -10886,6 +11147,49 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.3934/nhm.2022009
+      \endverb
+    \endentry
+    \entry{data_R0_covid}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=779c40342159a95e575efc71f7d36f0d}{%
+           family={F},
+           familyi={F\bibinitperiod},
+           given={Arroyo-Marioli},
+           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=c364c23767cc3b650277e3b0130a7718}{%
+           family={F},
+           familyi={F\bibinitperiod},
+           given={Bullano},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9071c6fc4fc67cf8641eecffdfccc0e7}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Kucinskas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5f62d251b1d6e215f632bfbca5f4cf1d}{%
+           family={C},
+           familyi={C\bibinitperiod},
+           given={Rondón-Moreno},
+           giveni={R\bibinithyphendelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{fullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{fullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{bibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authorbibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authornamehash}{43ca7eb2ee6befe6f7dce4711b881596}
+      \strng{authorfullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \strng{authorfullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Estimate of the effective reproduction rate (R) of COVID-19}
+      \verb{urlraw}
+      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
+      \endverb
+      \verb{url}
+      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
       \endverb
     \endentry
     \entry{Usher_2020}{article}{}{}
@@ -11124,6 +11428,49 @@
       \verb 10.1016/j.idm.2017.06.002
       \endverb
     \endentry
+    \entry{van_den_Driessche_2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=97cbc2eec6ef3fc296efa5bd2f4fdb00}{%
+           family={Driessche},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           prefix={van\bibnamedelima den},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=fdbe068ea8f86281e3ec99ec31db1a69}{%
+           family={Watmough},
+           familyi={W\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{fullhash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{fullhashraw}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{bibnamehash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{authorbibnamehash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{authornamehash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{authorfullhash}{54fb27240a940a36f6101a72b8f79d2c}
+      \strng{authorfullhashraw}{54fb27240a940a36f6101a72b8f79d2c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0025-5564}
+      \field{journaltitle}{Mathematical Biosciences}
+      \field{month}{11}
+      \field{number}{1–2}
+      \field{title}{Reproduction numbers and sub-threshold endemic equilibria for compartmental models of disease transmission}
+      \field{volume}{180}
+      \field{year}{2002}
+      \field{pages}{29\bibrangedash 48}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/s0025-5564(02)00108-6
+      \endverb
+    \endentry
     \entry{arino2007}{article}{}{}
       \name{author}{5}{}{%
         {{hash=3a3363b2e871745db048758aa5edf0ab}{%
@@ -11179,49 +11526,6 @@
       \range{pages}{17}
       \verb{doi}
       \verb 10.3934/mbe.2007.4.159
-      \endverb
-    \endentry
-    \entry{data_R0_covid}{misc}{}{}
-      \name{author}{4}{}{%
-        {{hash=779c40342159a95e575efc71f7d36f0d}{%
-           family={F},
-           familyi={F\bibinitperiod},
-           given={Arroyo-Marioli},
-           giveni={A\bibinithyphendelim M\bibinitperiod}}}%
-        {{hash=c364c23767cc3b650277e3b0130a7718}{%
-           family={F},
-           familyi={F\bibinitperiod},
-           given={Bullano},
-           giveni={B\bibinitperiod}}}%
-        {{hash=9071c6fc4fc67cf8641eecffdfccc0e7}{%
-           family={S},
-           familyi={S\bibinitperiod},
-           given={Kucinskas},
-           giveni={K\bibinitperiod}}}%
-        {{hash=5f62d251b1d6e215f632bfbca5f4cf1d}{%
-           family={C},
-           familyi={C\bibinitperiod},
-           given={Rondón-Moreno},
-           giveni={R\bibinithyphendelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{43ca7eb2ee6befe6f7dce4711b881596}
-      \strng{fullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
-      \strng{fullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
-      \strng{bibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
-      \strng{authorbibnamehash}{43ca7eb2ee6befe6f7dce4711b881596}
-      \strng{authornamehash}{43ca7eb2ee6befe6f7dce4711b881596}
-      \strng{authorfullhash}{1986ff83fb58b2734dd77fe9a8b634c7}
-      \strng{authorfullhashraw}{1986ff83fb58b2734dd77fe9a8b634c7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Estimate of the effective reproduction rate (R) of COVID-19}
-      \verb{urlraw}
-      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
-      \endverb
-      \verb{url}
-      \verb https://ourworldindata.org/explorers/covid?country=USA~BRA~JPN~DEU~ITA~OWID_EU27~OWID_WRL&Metric=Reproduction+rate&Interval=Cumulative&Relative+to+population=true
       \endverb
     \endentry
   \enddatalist

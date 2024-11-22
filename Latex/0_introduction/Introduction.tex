@@ -65,19 +65,25 @@ Furthermore, by using multilayer networks or systems, more complex analyses can 
 \end{itemize}
 
 \section{Presentation of the work realized}
-The work presented in this thesis is part of the multi-system field of research. Its focus is on understanding the mutual influence between people's behavior and an epidemic. On one hand, it examines how the presence of an epidemic affects individuals' behavior; on the other hand, it explores how these behavioral changes impact the progression and dynamics of the epidemic itself. 
-For this reason a new model has been developed based on a study of existing multi-system models, and on empirical data that integrate epidemic and behavioral or opinion components.
+The work presented in this thesis is part of the multi-system field of research. Its focus lies in understanding the mutual influence between human behavior and an epidemic. On the one hand, it examines how the presence of an epidemic affects individuals' behavior; on the other hand, it explores how these behavioral changes influence the progression and dynamics of the epidemic itself.
 
-A framework is developed where a SIR-like disease model is coupled with a new behavioral model consisting of three compartments: Heedless, Against, and Compliant individuals. These distinctions are designed to represent different courses of action taken during a disease epidemic.
-"Heedless" individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or simply indifferent to the risks. These individuals continue with their regular routines, unaware of which actions might increase their likelihood of infection.
-The "Compliant" group consists of those who actively seek to avoid infection by adhering to health policies and precautions. On the other hand, the "Against" group includes skeptics who reject precautionary measures and refuse to follow established guidelines.
+For this reason, a new model has been developed, drawing from a study of existing multi-system models and empirical data that integrate both epidemic and behavioral or opinion components.
 
-In the model, the main mechanism used to change behavior among different social groups is peer pressure, but also the intervention of a central global actor is considered. The fatigue from belonging to a certain behavioral spectrum (either being compliant with the rules or against them) is also considered. An epidemiological model capable of tracking both the initial phase of an epidemic and successive waves of contagion is developed, including the possibility of reinfection.
+The framework involves coupling a SIR-like disease model with a new behavioral model consisting of three compartments: Heedless, Against, and Compliant individuals. These categories are designed to represent different courses of action taken during a disease epidemic.
+\begin{itemize}
+	\item Heedless individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or indifferent to the risks, continuing with regular routines that may increase their likelihood of infection.
+	\item Heedless individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or indifferent to the risks, continuing with regular routines that may increase their likelihood of infection.
+	\item The Compliant group consists of those who actively seek to avoid infection by adhering to health policies and precautions.
+	The Against group includes skeptics who reject precautionary measures and refuse to follow established guidelines.
+\end{itemize}
 
-A key aspect of this work is the verification of its predictions using empirical data. For a novel multi-system model like the one implemented, it is essential to compare its results with real-world data to understand if it can accurately capture and reconstruct dynamic patterns, thereby testing its validity.
+The model incorporates mechanisms to account for changes in behavior among social groups, primarily driven by peer pressure, but also considers the intervention of a central global actor. Additionally, it accounts for fatigue associated with adhering to a particular behavioral spectrum (either complying with or opposing rules). The epidemiological model developed can track both the initial phase of an epidemic and successive waves of contagion, including the possibility of reinfection.
 
-Moreover, a powerful feature of multi-system models is their ability to reveal phenomena that would not be apparent when examining the individual components in isolation. This approach allows for a more comprehensive understanding of complex interactions and dynamics. 
-Additionally, understanding which of these emerging mechanisms are most relevant in real-world contexts, rather than purely theoretical models, highlights the critical need to compare the developed model with empirical data, that can help to understand better the appearing dynamics. 
+A distinguishing aspect of this work is its reliance on empirical data. Unlike other studies that use ad-hoc assumptions or data from sources not directly related to behavior (such as opinions), this thesis leverages research conducted during the COVID-19 pandemic. This research provides insights into people's behavior, including opinions about the disease, trust or distrust in doctors or governments, and actions such as mask-wearing and handwashing.
+
+The model is designed with the validation of its predictions against empirical data in mind. For a novel multi-system model such as the one developed here, comparing its results with real-world data is essential to assess whether it can accurately capture and reconstruct dynamic patterns, thereby testing its validity.
+
+A powerful feature of multi-system models is their ability to reveal phenomena that would not be apparent when examining individual components in isolation. This comprehensive approach enables a deeper understanding of complex interactions and dynamics. Moreover, identifying which of these emerging mechanisms are most relevant in real-world contexts, rather than relying solely on theoretical models, underscores the critical importance of comparing the developed model with empirical data to better understand emerging dynamics.
 
 \textcolor{red}{Empirical data for this analysis was sourced from a research study conducted by Meta during the COVID-19 pandemic, focusing on people's opinions and behaviors.
 These data were then used to investigate the model's ability to reproduce what occurred during the pandemic, specifically examining if the model could accurately simulate real behavioral patterns recorded during the emergency.
@@ -110,7 +116,7 @@ Starting from these questions, the following objectives have been identified:
 The work consists of an introductory chapter \ref{ch:theo_back} where the main concepts of social science and epidemiology are presented. This chapter provides all the necessary information to understand the research. It includes a glossary \ref{subsec:glossary} of the most important terms and an overview of the mathematical tools used in epidemiology. Additionally, the different models implemented to simulate an epidemic are shown in section \ref{sec:models_categ}, with a focus on the properties of the mean fields model, which is the primary model used in the thesis. Furthermore, a historical background of the research field is provided to give a perspective on the principal milestones.
 In the \ref{ch:literature_review}th chapter, a review of the literature analyzed for the thesis is presented. The articles are categorized into different main topics: epidemiology theories, opinion models, behavior models, and multi-agent and multi-system models. This subdivision highlights the most interesting aspects of each work and identifies the elements that have been considered for inclusion in the thesis.
 The \ref{part:the_model} part of the thesis is composed of three main chapters. In chapter \ref{ch:model_alone}, the chosen epidemiological and behavioral models are simulated, and their characteristics are studied individually. Chapter \ref{ch:epi_behav_model} presents the model resulting from the integration of the two, which becomes a layer of a more complex multi-system model. The main features of this model are analyzed using analytical tools. The study is performed with theoretical values, sensitivity analysis, and the measurement of principal metrics, such as the reproduction rate, to provide a general description of the model and develop an understanding of it.
-In chapter \ref{ch:data}, the data analysis is presented. The data available from the Meta COVID-19 research are used to test and validate the model, assessing its ability to represent a real scenario. Finally, the last chapter contains the conclusions of the thesis.
+\textcolor{red}{In chapter \ref{ch:data}, the data analysis is presented. The data available from the Meta COVID-19 research are used to test and validate the model, assessing its ability to represent a real scenario.} Finally, the last chapter contains the conclusions of the thesis.
  
 
 % ! Ci sta inizialmente concentrarsi sulle epidemie, ma  devi intrudurre anche il secondo macro filone, quello delle opinioni. é uno spin off metodologico del primo, quindi gli stumenti matematici poi sono simili, ma va detta anche questa cosa. E poi sulle opinioni hai visto quante sfumature diverse esistono sul come considerarle e anche questo è da tenere in considerazione. 
@@ -272,7 +278,7 @@ In this class of models, the severity of infection is typically not considered; 
 
 The parameters that control these transitions are coefficients whose interpretation depends on the underlying assumptions of the model. Mathematically, these parameters determine the rate of flow between compartments.
 
-The most critical metric in these models is the "basic reproduction number" (often denoted as $R_0$), which represents the average number of secondary infections caused by one infected individual in a fully susceptible population. It is considered a fundamental threshold in epidemiology, indicating the potential severity of an outbreak \cite{Hernandez_Vargas_2022}. 
+The most critical metric in these models is the "Basic Reproduction number" (often denoted as $R_0$), which represents the average number of secondary infections caused by one infected individual in a fully susceptible population. It is considered a fundamental threshold in epidemiology, indicating the potential severity of an outbreak \cite{Hernandez_Vargas_2022}. 
 \begin{figure}[]
 	\centering
 	\includegraphics[width=0.65\linewidth]{0_introduction/images_introduction/SIRS_figure_compartmental}
@@ -417,13 +423,11 @@ However, ABMs require a large amount of detailed, reliable data to be effective,
 	\label{fig:agentbased}
 \end{figure}
 
-
-
 \subsubsection{Multilayer systems and networks} 
 The complex dynamic of interactions existing in the real world, develops in multiple patterns, with complicated relationships. This connection can change over time, and using the theory of multilayer systems it can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{0_introduction/images_introduction/multi_layer}
+	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/multi_layer}
 	\caption[Multi-layer network]{Representation of a multiplex structure. The figure is taken by the work of \cite{Granell2013} and shows the network implemented in their model. There is an awareness and an epidemic layer. In this case, the node connected with the interlayer connection represents the same individual.}
 	\label{fig:multilayer}
 \end{figure} 

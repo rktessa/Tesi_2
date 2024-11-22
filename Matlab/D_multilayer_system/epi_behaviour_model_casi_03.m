@@ -3,7 +3,7 @@ close all;
 clear;
 %% Epidemiological Behavioural model
 
-caso = ;
+caso = 1;
 
 [lambda_1,lambda_2,k1,k2, B1, B2, C_zero,A_zero, time,title_fig] = scenario(caso);
 
@@ -33,7 +33,11 @@ E_0
 
 %% Print the figures
 figure(1)
+tiledlayout(4,1);
+% Tile 1
+nexttile
 ax = gca;
+
 hold on
 box on
 plot(time_epi,xs_h, 'linewidth',2.3, 'Color',[0.6350 0.0780 0.1840] )
@@ -46,17 +50,20 @@ title("Susceptibles compartments")
 xlabel("t[days]");
 ylabel("SC[t], SH[t], SA[t]");
 txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
-dim = [.93 .85 .1 .1];
+dim = [.95 .85 .1 .1];
 annotation('textbox',dim, ...
     'String',txt,'EdgeColor','none')
 hold off
-fontsize(26,"points")
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 17]);
-set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', "susceptible_"+title_fig)
+% fontsize(26,"points")
+% set(gcf, 'PaperUnits', 'centimeters');
+% set(gcf, 'PaperPosition', [0 0 25 17]);
+% set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', "susceptible_"+title_fig)
 % Figure 2
-figure(2)
+% figure(2)
+% hold on
+% Tile 2
+nexttile
 hold on
 box on
 plot(time_epi,yi_c, 'linewidth',2.3, 'Color',[0 0.4470 0.7410])
@@ -66,19 +73,21 @@ legend('IC', 'IA','Total I', Orientation='horizontal', Location='southoutside')
 title("Infected compartments")
 xlabel("t[days]");
 ylabel("IC[t], IA[t]");
-txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
-dim = [.93 .85 .1 .1];
-annotation('textbox',dim, ...
-    'String',txt,'EdgeColor','none')
-hold off
-fontsize(26,"points")
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 17]);
-set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', "infected_"+title_fig)
+% txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+% dim = [.93 .85 .1 .1];
+% annotation('textbox',dim, ...
+%     'String',txt,'EdgeColor','none')
+% hold off
+% fontsize(26,"points")
+% set(gcf, 'PaperUnits', 'centimeters');
+% set(gcf, 'PaperPosition', [0 0 25 17]);
+% set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', "infected_"+title_fig)
 
-% Figure 3
-figure(3)
+% % Figure 3
+% figure(3)
+% Tile 3
+nexttile
 hold on
 box on
 plot(time_epi,zr_c, 'linewidth',2.3, 'Color',[0 0.4470 0.7410] )
@@ -88,18 +97,20 @@ legend('RC', 'RA','Total R', Orientation='horizontal', Location='southoutside')
 title("Recovered compartments")
 xlabel("t[days]");
 ylabel("RC[t], RA[t]");
-txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
-dim = [.93 .85 .1 .1];
-annotation('textbox',dim, ...
-    'String',txt,'EdgeColor','none')
+% txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+% dim = [.93 .85 .1 .1];
+% annotation('textbox',dim, ...
+%     'String',txt,'EdgeColor','none')
 hold off
-fontsize(26,"points")
-set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 17]);
-set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
-print(gcf,'-dpdf', "recovered_"+title_fig)
-% Figure 4
-figure(4)
+% fontsize(26,"points")
+% set(gcf, 'PaperUnits', 'centimeters');
+% set(gcf, 'PaperPosition', [0 0 25 17]);
+% set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
+% print(gcf,'-dpdf', "recovered_"+title_fig)
+% % Figure 4
+% figure(4)
+% Tile 4
+nexttile
 hold on
 box on
 plot(time_epi,xs_c+yi_c+zr_c, 'linewidth',2.3, 'Color',[0 0.4470 0.7410] )
@@ -109,15 +120,15 @@ legend('C', 'H','A', Orientation='horizontal', Location='southoutside')
 title('Behavioral dynamic')
 xlabel("t[days]");
 ylabel("C[t], A[t], H[t]");
-txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
-dim = [.93 .85 .1 .1];
-annotation('textbox',dim, ...
-    'String',txt,'EdgeColor','none')
+% txt = {['R_0=' num2str(R_i(1))],['B_1=' num2str(B1)], ['B_2=' num2str(B2)], ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['k_1=' num2str(round(k1,2))],['k_2=' num2str(round(k2,2))],['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))]};    
+% dim = [.93 .85 .1 .1];
+% annotation('textbox',dim, ...
+%     'String',txt,'EdgeColor','none')
 hold off
 fontsize(26,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 17]);
-set(gcf, 'PaperSize', [27 17]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 25 60]);
+set(gcf, 'PaperSize', [28 60]); % dimension on x axis and y axis resp.
 print(gcf,'-dpdf', "behavioral"+title_fig)
 %% Function section 
 function [x_sh, x_sc, x_sa, y_c, y_a, z_rc,z_ra, time_epi,s_c,s_a,i_c,i_a,r_c,r_a,s_h] = epi_behaviour(beta,gamma,delta,rho,psi,k1,k2,k3,k4,k5,k6,lambda1,lambda2,lambda3,lambda4,lambda5,lambda6,epsilon,omega,C_zero,A_zero, time)
