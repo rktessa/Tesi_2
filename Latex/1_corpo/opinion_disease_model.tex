@@ -351,6 +351,7 @@ The system's evolution shows opposite behavior compared to the previous case, wi
 \end{figure}
 
 \textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
+\label{par:behav_4_case}
 In this situation, the equilibrium has the same value, of the III-a case, and also the stability condition are verified. However, the nullcline plot is very different, referring to figure \ref{fig:prnullclineb1_mag_b2_lambda}. The phase plane is much more complex: there are two lines and the discontinuity point for the x-nullcline (the blue line), and the trajectory of convergence to the point A, the only locally stable is more complex.  
 
 In fact, looking at the model simulation in picture \ref{fig:model__behavior_sim_2}, the system initially evolve to what seems as a first equilibrium, corresponding to $x_A = \lambda_2/k_2$, $y_A = 0$, but then, and it is confirmed by R-H, this equilibrium is unstable, and so the model continues its evolution after reaching the real locally stable configuration. 
@@ -438,7 +439,7 @@ The first case confirms the dynamics presented earlier in the model simulation i
 \label{ch:epi_behav_model}
 \section{Model description}
 
-The newly developed model in this thesis, the Susceptible-Against-Heedless-Compliant-Infected-Recovered (SAHCIR) model, combines both epidemic and behavioral components, establishing an innovative approach to disease modeling. This model aims to bridge the epidemiological and social dynamics of an outbreak, integrating empirical observations to compare model outcomes with real-world data, as will be discussed in Chapter \ref{ch:data}. While some existing models combine these aspects, like the one presented in \cite{Bulai2023}, they often rely on predefined assumptions about specific behaviors rather than direct empirical validation.
+The newly developed model in this thesis, the Susceptible-Against-Heedless-Compliant-Infected-Recovered (SAHCIR) model, combines both epidemic and behavioral components, establishing an innovative approach to disease modeling. This model aims to bridge the epidemiological and social dynamics of an outbreak, integrating empirical observations to compare model outcomes with real-world data, as discussed in the article \cite{Proverbio_Tex_2024}. While some existing models combine these aspects, like the one presented in \cite{Bulai2023}, they often rely on predefined assumptions about specific behaviors rather than direct empirical validation.
 
 The SAHCIR  model incorporates a variety of behavioral stances towards safety measures, reflecting both proactive (pro-precaution) and non-compliant (anti-precaution) attitudes. The model also recognizes that, particularly during an epidemic's initial phase, a significant portion of the population may not follow safety measures—not out of skepticism, but due to a lack of awareness about the severity of the outbreak. Additionally, the model allows for government intervention through parameters that influence the spontaneous transition rate from the "Against" to the "Compliant" group, mirroring real-world public health policies aimed at promoting preventive behaviors. 
 
@@ -499,7 +500,7 @@ where
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{1_corpo/figure/epi_behaviour_model_figure}
+	\includegraphics[height=0.8\linewidth]{1_corpo/figure/model_SAHCIR}
 	\caption[Epidemic behavior model]{Figure of the epidemic behavior model with its compartment and influxes and out-fluxes.}
 	\label{fig:epibehaviourmodelfigure}
 \end{figure}
@@ -516,8 +517,8 @@ The two terms appearing in equation \ref{eq:next_gen1}, are $\mathcal{F}_i(x)$, 
 
 To describe the evolution of the system the following notation using matrices is adopted: 
 \begin{itemize}
-	\item $F = [\frac{d \mathcal{F}_i}{d x_j}(x_0)]$ with $i >= 1$, and $j <= m$.
-	\item $V = [\frac{d \mathcal{V}_i}{d x_j}(x_0)]$ with $i >= 1$, and $j <= m$.	
+	\item $F = [\frac{d \mathcal{F}_i}{d x_j}(x_0)]$ with $i \ge 1$, and $j \le m$.
+	\item $V = [\frac{d \mathcal{V}_i}{d x_j}(x_0)]$ with $i \ge 1$, and $j \le m$.	
 \end{itemize} 
 Notice how the matrices are both evaluated at the disease free equilibrium, where $x = x_0$, and have dimension $m x m$, with $m$ that are the number of infective compartments in the model. 
 Using the defined matrices, according to the articles \cite{van_den_Driessche_2002,van_den_Driessche_2017}, the Epidemic reproduction number $E_0$ for the model \eqref{eq:epi_behavioural_eq} at a disease free equilibrium $(s_0, 0, r_0)$ is given by:
@@ -545,18 +546,30 @@ V & =
 \label{eq:next_gen_matrices}
 \end{align}
 
-Once that the matrices composing the next generation matrix have been defined, to evaluate the system Epidemic reproduction number the DFE equilibrium points must be identified.
+Once the matrices composing the next-generation matrix are defined, the value of the epidemic reproduction number is calculated, resulting in:
+
+\begin{equation}
+	\begin{split}
+		E_0 = &\frac{\beta}{\gamma} \cdot \frac{num}{den} \\
+		num = &S_A(\gamma+\lambda_3+\epsilon \lambda_4)+ (S_H + \rho S_C)(\lambda_3+\epsilon \gamma+\epsilon \lambda_4) + ...\\
+		& (S_A + S_H + \rho S_C)[(I_A-\epsilon IC)(k_4 - \psi k_3)+k_4(R_A+S_A)+\psi \epsilon k_3 (R_C+S_C)]\\
+		den = &\lambda_3+\lambda_4+\gamma+k_4(A-I_C)+\psi k_3 (C-I_A)
+	\end{split}
+	\label{eq:epidemic_reproduction _number}
+\end{equation}
+
+To compute the value of $E_0$, the above expression must be evaluated at the DFE equilibria. Now it is determined how to compute them.
 
 \subsection{DFE calculation}
-To calculate the value of the DFE points of the system, consider the equations in system \ref{eq:epi_behavioural_eq}, referred to as $\dot{x_i} = f_i(x)$, with $i = 1,\dots,7$, corresponding to the seven different compartments that form the model.
+To calculate the value of the DFE points of the system, consider the equations in system \ref{eq:epi_behavioural_eq}, referring to them as $\dot{x_i} = f_i(x)$, with $i = 1,\dots,7$, corresponding to the seven different compartments that form the model.
 Disease-free equilibria are solutions of the system in which no infection is present, and the differential expressions are equal to zero. Imposing these conditions, along with mass conservation, leads to the following system to solve:
 \begin{align*}
 	\begin{cases} 
 		\dot{x_i} &= 0  \quad \quad   i = 1,...,7\\
 		x_j &= 0	\quad \quad	 j \ge 1, j <7	\\
-		\sum_{i = 1}^{7} x_i&= 1 \quad \quad i = 1,...,7 \\
+		\sum_{i = 1}^{7} \dot{x_i}&= 1 \quad \quad i = 1,...,7 \\
 	\end{cases}
-	\label{eq:epi_behavioural_eq}
+	\label{eq:epi_behavioural_eq2}
 \end{align*}
 
 Solving the system of equations simbolically using Matlab, three disease free equilibria are found:
@@ -573,12 +586,13 @@ Solving the system of equations simbolically using Matlab, three disease free eq
 	\hline
 \end{tabular}
 \end{center}
-For all equilibria, the values of $R_C$ and $R_A$ are equal to zero.
+For all equilibria, the corresponding values of $R_C$ and $R_A$ are equal to zero.
 
 \section{Model simulation}
-Performing an analysis similar to the one conducted for the behavior model alone is too complex, as it involves numerous equations and parameters. Even though models similar to the one presented here have been analyzed in other works, such as \cite{Bulai2023}, those analyses often rely on strong assumptions. A common hypothesis is the existence of different time scales between the epidemic and behavioral layers, enabling the simplification of the analysis. However, this assumption was deemed unreliable during the development of this model. Models intended to use empirical data, such as those related to epidemic evolution, typically rely on data collected on a daily basis. For this reason, it is assumed that the time scales of the epidemic and behavioral layers are of the same duration. Although adopting the time-separation hypothesis might simplify the analysis, it would essentially yield the same results found in the behavior model alone. Thus, without the ability to conduct such an analytical approach, extensive experimentation through simulations becomes crucial to enhance understanding of the model.
+Instead of now present an analytical analysis of the model, a set of numerical simulations to observe how the system reacts and evolve with different sets of parameters is performed.
+Performing an analysis similar to the one conducted for the behavior model alone is in fact too complex, as it involves numerous equations and parameters. Even though models similar to the one presented here have been analyzed in other works, such as \cite{Bulai2023}, those analyses often rely on strong assumptions. Alwaysi in \cite{Bulai2023} the hypothesis performed is the existence of different time scales between the epidemic and behavioral layers, enabling the simplification of the analysis. However, this assumption was deemed unreliable during the development of this model. Models intended to use empirical data, such as those related to epidemic evolution, typically rely on data collected on a daily basis. For this reason, it is assumed that the time scales of the epidemic and behavioral layers are of the same duration. Although adopting the time-separation hypothesis might simplify the analysis, it would essentially yield the same results found in the behavior model alone. Thus, without the ability to conduct such an analytical approach, extensive experimentation through simulations becomes crucial to enhance understanding of the model.
 
-A first evaluation of $E_0$ is performed to assess its capability to provide indications about the stability of the equilibria. As stated in \cite{van_den_Driessche_2002,van_den_Driessche_2017}, the DFE is locally asymptotically stable if $E_0 < 1$. Conversely, if $E_0 > 1$, a fully susceptible population, when perturbed by the introduction of infectious individuals, will progress toward an epidemic.
+A first evaluation of $E_0$ is performed to assess its capability to provide indications about the stability of the equilibrium. As stated in \cite{van_den_Driessche_2002,van_den_Driessche_2017}, the DFE is locally asymptotically stable if $E_0 < 1$. Conversely, if $E_0 > 1$, a fully susceptible population, when perturbed by the introduction of infectious individuals, will progress toward an epidemic.
 
 The same four cases of parameter configurations used in the previous chapter for the behavioral layer are employed here. For the epidemic layer, the value of $R_0$ is fixed at $3.6$, based on the assumption of an average recovery period lasting $9$ days and a transmission rate similar to that estimated for diseases like COVID-19 at the early stages of its spread \cite{data_R0_covid}. An additional fifth case is introduced, in which the magnitudes of $B_1$ and $B_2$ are inverted relative to those in case 4.
 
@@ -589,7 +603,7 @@ All computations are performed using the following fixed set of parameters.
 \beta &= 0.40  &\gamma &= 0.35 & \delta &= 1/9 &  \epsilon &= 0.15 &\\
 \epsilon &= 0.15 & \rho &= 0.65  &\psi &= 1 & \phi &= 0.5 &   \\	
 \end{align*}
-With these coefficient values, considering separately the epidemic and behavioral layers the basic epidemiological-only reproduction number is:
+With these coefficient values, considering separately the epidemic and behavioral layers the basic epidemiological-only reproduction number of the SIRS model is:
  \begin{equation*}
  	R_0= \frac{\beta}{\gamma+\delta} = 3.2727 
  \end{equation*}
@@ -614,23 +628,25 @@ The values of these coefficients change within the five simulations.
  \end{tabular}
 \end{center}
 Notice that the values of the variables $k_1$ and $k_2$ are derived using the expression $B_i = k_i/\lambda_i$, where $i = 1, 2$.
-The results of all the simulations and the corresponding value of $E_0$ calculated is resumed in the following table \ref{fig:valori-dfe-e-e0caso3}.
+The results of all simulations and the corresponding $E_0$ values are summarized in Table \ref{fig:valori-dfe-e-e0caso3}.
 
+It is immediately noticeable how the value of $E_0$ changes and is influenced by both the behavioral parameters and the initial conditions. The DFE equilibria found are used to define the initial distribution of the population across compartments.
+A notable trend is that the DFE type-$C$, where the population is divided into the Compliant and Susceptible compartments, is always globally asymptotically stable. In contrast, the type-$B$ equilibrium is always unstable, with $E_0>1$. A possible explanation for this observation lies in the effects of the parameters $\rho$ and $\epsilon$, which respectively reduce the likelihood of $S_C$ becoming infected and the ability of $I_C$ to infect others.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{"1_corpo/figure/Valori DFE e E_0_caso_3"}
 	\caption[$E_0$ simulation results]{The results of the simulations illustrate how $E_0$, the Epidemic Reproduction Number, varies across different possible scenarios.}
 	\label{fig:valori-dfe-e-e0caso3}
 \end{figure}
-It is immediately noticeable how the value of $E_0$ changes and is influenced by both the behavioral parameters and the initial conditions: the DFE equilibria found are used to define the initial distribution of the population across compartments.
-In the next paragraph, the plots of the most relevant simulations for each of the five cases defined with these parameters are shown. A perturbation of the initial conditions, derived from the use of the DFE, must be applied. Therefore, in the simulations conducted using the Runge-Kutta second-order method, the number of infected individuals at time zero is slightly greater than zero: $I_{C0} = I_{A0} = 10/60e6$.
+In the next paragraphs, the plots of the most relevant simulations for each of the five cases defined by these parameters are shown. A perturbation of the initial conditions, derived from the use of the DFE, must be applied. Therefore, in the simulations conducted using the Runge-Kutta second-order method, the number of infected individuals at time zero is slightly greater than zero: $I_{C0}= I_{A0} = 10/60e6$.
 
 \subsection{I case: $\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$}
- 
-In the first figure, the dynamics are dominated by the Heedless compartment: having both behaviors less than one causes neither to take over.
-To better appreciate how the behavior layer evolves in this case, both $S_{C_0}$ and $S_{A_0}$ are initialized as equal to $20\%$ of the population. Since both Conversion numbers are less than one, the majority of the population transitions to the Heedless compartment in this scenario. Consequently, the final equilibrium reached by the system is not disease-free: a small portion of the population remains infected.
+In the first case, while calculating the Disease-Free Equilibrium (DFE), only one solution is found. It corresponds to the state $S_{C_0} = 0$, $S_{A_0} = 0$, and $S_{H_0} = 1$. In this equilibrium, the value of $E_0 = 1.142$, which is greater than one. Therefore, as stated in the theorem presented in \cite{van_den_Driessche_2017}, the DFE is unstable, and a disease can evolve into an epidemic from this initial condition.
 
-Examining the value of the epidemic reproduction number derived from the initial system of equations, only one DFE (Disease-Free Equilibrium) is found in this situation. It corresponds to the state $S_{C_0} = 0$, $S_{A_0} = 0$, and $S_{H_0} = 1$. In this DFE, the value of $E_0 = 1.0816$, which is greater than one. As expected, an epidemic is observed.
+Observing the social layer, since both Conversion numbers $B_1$ and $B_2$ are less than one, the majority of the population remains in the Heedless compartment in this scenario. This facilitates disease propagation because only a small portion of individuals are in the Susceptible-Compliant ($S_C$) category, reducing their likelihood of infection, governed by the parameter product $\rho \beta$. Meanwhile, $S_A$ and $S_H$ share the same probability of contracting the disease, $\beta$.
+
+In the left panel of Figure \ref{fig:sim_B1_B2_less_equal}, it is evident that the dynamics are dominated by the Heedless compartment. Furthermore, an infection peak is observed, and the final equilibrium reached by the system is not disease-free: a relatively small portion of the population remains infected.
+
 \begin{figure}[h]
 	\centering
 	\subfloat[][\emph{I case.}]
@@ -641,11 +657,14 @@ Examining the value of the epidemic reproduction number derived from the initial
 	\label{fig:sim_B1_B2_less_equal}
 \end{figure}
 
-\subsection{II case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}
-The second situation, present with social layer in wich $B_1 = B_2$, the interesting to observe thing is that, if as in the case represented in figure \ref{fig:sim_B1_equal_B2}, when the balance of the number is obtained with different coefficient values, the epidemic evolution is heavily influenced by the value relationship. The $k_1, k_2$ determine which behaviors becomes dominant, but also the $\lambda_1$, $\lambda_2$  impact how persistent is a certain behavior. In this case, the Compliant course of action is  more dominant, and slighty less sturdy. There is a small infection peak, but then the epidemic tend to zero.
+\subsection{II case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}
+The second situation presented is the one in which both social layers have the same behavior conversion number,$B_1 = B_2$. As shown in the right panel of Figure \ref{fig:sim_B1_B2_less_equal}, it is interesting to observe that the epidemic evolution with this relation bewtten  $B_1$ and $B_2$ is heavily influenced by the initial compartment values. This property holds even when the balance of the Behavior reproduction number is achieved with different coefficient values. Recall that $k_1$ and $k_2$ determine which behavior becomes dominant, while $\lambda_1$ and $\lambda_2$ impact the persistence of a certain behavior. In this case, the Compliant course of action is more dominant and slightly less persistent. However, the starting Disease-Free Equilibrium (DFE) plays a critical role in shaping the model’s evolution. Using the type-C equilibrium, where the majority of the population is in the Compliant compartments, the population remains largely Compliant. Even when some infected individuals are introduced to perturb the disease-free state, the infection is almost instantly suppressed. The equilibrium DFE, with a value of $E_0 = 0.515$, confirms the global stability of the initial conditions.
+
+
 \subsection{III case: $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$}
-The situation in the third case is the most exptected: With a larger $B_1$, compliant is at equilibrium the largest group, while Against tend to zero. After a small peak the epidemic estinguish, and the disease free equilibrium reached is locally stable. It is very similar to the dynamic observed in the same case in the only-behavioral model. 
-In this point the $E_0$ calculated is less than one, and this confirms the stability of the state reach, according to the next generation matrix theory.
+The third scenario simulated, and visible in Figure \ref{fig:sim_B1_mag_B2}, explores the impact of compliance with rules and the adoption of self-precautions on the diffusion of an epidemic. Starting from the disease-free equilibrium type-$A$, where $S_{C0} = 1$ and all other compartments are equal to zero, the introduction of infected individuals triggers the spread of an infection. The value of $E_0 = 1.11$ indicates that the DFE is in fact unstable.
+
+Although the disease can reproduce in a fully susceptible population, the protection provided by compliant behavior significantly reduces its spread. With $B_1$ larger than $B_2$, compliant behavior quickly spreads throughout the population and persists longer than the infection's duration. As a result, the majority of the population transitions to the $S_C$ compartment, while $S_A$ tends toward zero. The epidemic fades after reaching a small peak and infecting only a minor fraction of the population.
 
 \begin{figure}[h]
 	\centering
@@ -659,13 +678,11 @@ In this point the $E_0$ calculated is less than one, and this confirms the stabi
 
 
 \subsection{IV case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}
-The fourth simulation highlights and describes how negative can be the effects of disinformation that spread rapidly.Even though the $B_2 < B_1$, the $k_2 >> k_1$, and so the Against behavior becomes initially very popular, with a heavy consequence on the number of infected that has a very high peak if compared to the one resulting in the previous third case. Then, as simulation continues evolving the Compliant group takes the advantage, population tends to become in the majority compliant, and the disease tend to zero. 
-
-
-
+The fourth simulation highlights and describes the negative effects of non-compliance behavior. Even though $B_2 < B_1$, the condition $k_2 >> k_1$ allows the Against behavior to initially spread more rapidly. As observed previously with the behavior model alone in paragraph \ref{par:behav_4_case}, this dynamic results in significant early non-compliance. The simulation begins in the DFE corresponding to type-B, where the majority of the population is in $S_A$. These initial conditions lead to a higher epidemic reproduction number, with $E_0 = 2.63$. Consequently, the number of infected individuals reaches a much higher peak compared to the third case.
+However, as the simulation progresses, the Compliant group gradually gains prevalence due to $B_1 > B_2$. The population tends to shift toward compliance, and after the peak, the disease diminishes toward zero.
 
 \subsection{V case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 <  \mathcal{B}_2$}
-The final case is the worst for the epidemic diffusion, the majority of the population assume Against behavior, and this causes the epidemic to not be reduce by NPIs or self isolation, that is performed only by an increasingly decrescent portion of individuals. The resulting shape of the epidemic is very similar to the ones, caused by a SIRS only model.
+The final case represents the worst scenario for epidemic diffusion. The majority of the population adopts the Against behavior, which prevents the epidemic from being mitigated by NPIs or self-isolation. These measures are only carried out by an increasingly smaller portion of individuals. As a result, the epidemic trajectory closely resembles that of an SIRS-only model. With $E_0 = 3.17$, the highest value among all the cases presented, the infection peak is large, and the disease does not disappear. Instead, the system reaches an endemic equilibrium.
 
 \begin{figure}[h]
 	\centering
@@ -674,3 +691,20 @@ The final case is the worst for the epidemic diffusion, the majority of the popu
 	\label{fig:sim_B1_less_B2}
 \end{figure}
 
+\subsection{Influence of the $\psi$ parameter}
+To model how government policies can influence the behavior of the population and create a distinction between spontaneous behavior and reactions to regulations, the parameter $\psi$ was introduced. It acts as a central mean-field intervention, modifying the coefficients $k_1$, $k_3$, and $k_5$.
+
+The value of $\psi$ is greater than one ($\psi > 1$) when the simulations consider enforced policies that individuals must follow, and equal to one ($\psi = 1$) when no such regulations are in place.
+
+In Figure \ref{fig:sim_psi}, the evolution of $S_C$ and the total number of infected individuals as $\psi$ varies is represented. It is evident that increasing the value of $\psi$ changes the timescale of compliance, causing $S_C$ to reach its maximum and stabilize more quickly, while also increasing the final number of $S_C$. Furthermore, it significantly reduces the peak value of infected individuals.
+
+This effect is most pronounced when comparing cases: with $\psi = 1$, the peak value of $I$ is around $2\%$, whereas in other cases, it drops to approximately $0.0007\%$.
+\begin{figure}[h]
+	\centering
+	\subfloat[][\emph{ $S_C$ compartment varying $\psi$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_psi}} \quad
+	\subfloat[][\emph{ $I_{tot}$ compartment varying $\psi$.}]
+	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_psi}} \\
+	\caption[Simulation varying $\psi$]{Simulations of the epidemic-behavioral model varying $\psi$ value.}
+	\label{fig:sim_psi}
+\end{figure}

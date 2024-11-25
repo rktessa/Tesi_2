@@ -3,7 +3,7 @@ clear;
 close all;
 fig = 0;
 %% Set the scenario; first number scenario, second what F/V matrix compute
-caso =[5,3];
+caso =[4,3];
 %% Run the code to se R_0, B1, B2 and the three resulting E_0 values
 [lambda_1,lambda_2,k_1,k_2,time,title_fig, beta,gamma,delta_v,rho_v,epsilon_v,psi_v,phi_n]=scenario(caso(1));
 
@@ -11,12 +11,16 @@ caso =[5,3];
 DFE = equilibri_FDE(psi_v,rho_v,epsilon_v, k_1, k_2, lambda_1, lambda_2, beta, gamma, delta_v,phi_n)
 % Compute the corresponding E_0
 E_0 = zeros(1,size(DFE,1));
+variables = struct();
 for i = 1:size(DFE,1)
     if ~any(DFE(i,:)<0) %solo se DFE è non negativo calcola E:0
+        varName = ['E_0_simb' num2str(i)]; % Create the variable name
+
         % Extract the initial conditions from the DFE
-        SC_0 = DFE(i,1); SA_0 = DFE(i,3); SH_0 = DFE(i,2); RC_0 = DFE(i,4); RA_0 = DFE(i,5); IC_0 =0; IA_0 = 0; RC_0 = 0; RA_0 = 0;
-        [E_0(i), R_0, B_1, B_2,FV] = calcolo_E_0_Van(caso(2),beta, gamma,psi_v, rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
-         fig = epi_behaviour(fig,beta,gamma,delta_v,rho_v,psi_v,k_1,k_2,k_1,k_2,k_1,k_2,lambda_1,lambda_2,lambda_1,lambda_2,lambda_1,lambda_2,epsilon_v,phi_n,SC_0,SA_0,SH_0, time, E_0(i),title_fig);
+        SC_0 = DFE(i,1); SA_0 = DFE(i,3); SH_0 = DFE(i,2); RC_0 = DFE(i,4); RA_0 = DFE(i,5); IC_0 =0; IA_0 = 0; 
+        [E_0(i), R_0, B_1, B_2,FV, E_0_simb] = calcolo_E_0_Van(caso(2),beta, gamma,psi_v, rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
+        variables.(varName) = E_0_simb;  % Store in the structure
+        fig = epi_behaviour(fig,beta,gamma,delta_v,rho_v,psi_v,k_1,k_2,k_1,k_2,k_1,k_2,lambda_1,lambda_2,lambda_1,lambda_2,lambda_1,lambda_2,epsilon_v,phi_n,SC_0,SA_0,SH_0, time, E_0(i),title_fig);
     end
 end
 % B_1
@@ -153,7 +157,7 @@ function [lambda_1,lambda_2,k1,k2,time,title_fig, beta,gamma,delta,rho,epsilon,p
     end
 end
 %% Function TNG Matrix
-function [E_0, R_0, B_1, B_2,FV] = calcolo_E_0_Van(caso, beta_v, gamma_v,psi_v, rho_v, epsilon_v, k3_v, k4_v,lam3_v, lam4_v, SH0, SC0,SA0, IC0,IA0,delta_v,RA0,RC0 )
+function [E_0, R_0, B_1, B_2,FV, E_0_symb] = calcolo_E_0_Van(caso, beta_v, gamma_v,psi_v, rho_v, epsilon_v, k3_v, k4_v,lam3_v, lam4_v, SH0, SC0,SA0, IC0,IA0,delta_v,RA0,RC0 )
     syms psi2 SC SA RA RC SH IC IA rho epsilon k1 k2 k3 k4 k5 k6 lambda1 lambda2 lambda3 lambda4 lambda5 lambda6 beta2 gamma2 
     
     if caso == 1
@@ -179,9 +183,11 @@ function [E_0, R_0, B_1, B_2,FV] = calcolo_E_0_Van(caso, beta_v, gamma_v,psi_v, 
            +psi2*k3*IA-lambda3- k4*(SA+IA+RA),  psi2*k3*(SC+IC+RC)-k4*IC+lambda4+gamma2];
        
         % V = [lambda3+k4*(SA+IA+RA)+gamma2-psi2*k3*IA,  k4*IC-lambda4-psi2*k3*(SC+IC+RC);
-        %     +psi2*k3*IA-lambda3- k4*(SA+IA+RA),           psi2*k3*(SC+IC+RC)+lambda4+gamma2 -k4*IC]
-      
+        %     +psi2*k3*IA-lambda3- k4*(SA+IA+RA),           psi2*k3*(SC+IC+RC)+lambda4+gamma2 -k4*IC] 
     end
+    %Compute symbolically
+    FV_sym = F/V;
+    E_0_symb = eig(FV_sym); 
     % Substitute symbols with variables
     psi2 =psi_v;  rho=rho_v; epsilon=epsilon_v; 
     k3=k3_v; k4=k4_v; lambda3=lam3_v; lambda4=lam4_v; beta2=beta_v; gamma2=gamma_v;

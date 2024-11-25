@@ -7,11 +7,12 @@ What has been one of the main dangers humanity has faced throughout its history?
 Looking at the past, the consequences of epidemics on the population were worse than today, mostly because of the lack of knowledge about medical science and the poor hygienic conditions. During the bubonic plague of the 14th century, for example, 25 million deaths were reported in Europe out of a population of 100 million. The pandemic also triggered social unrest: Jews were considered responsible for the illness spread and they began to be persecuted: there are several attacks and massacres to the Jewish communities in different European cities, like Toulon, Barcelona, Erfurt, Basel, Frankfurt, Strasbourg. The persecution mainly is related to belief that Jews were less affected by the disease, and that are responsible of the poisoning of wells.
 \begin{figure}[]
 	\centering
-	\includegraphics[width=0.4\linewidth]{0_introduction/images_introduction/FlorentineCodex_smallpox}
+	\includegraphics[width=0.43\linewidth]{0_introduction/images_introduction/FlorentineCodex_smallpox}
 	\caption[Smallpox on native Americans]{Representation of smallpox disease on the Mexican population in the $XIV$ century. Figure from the Florentine Codex \cite{Sahagun1965}. }
 	\label{fig:florentinecodexsmallpox}
 \end{figure}
-
+\\
+\newpage
 Another example is how during the course of the Americas' colonization, the diseases imported by the Europeans were one of the main causes of the genocide of the local population, largely contributing to their defeat against the Spanish conquistadores. In fact, diseases like smallpox and cholera were unknown in these countries and native Americans had no antibodies to contrast them. 
 Other important epidemics, famous for their consequences, were Spanish influenza, Smallpox, Typhus, HIV/AIDS, and the more recent COVID-19. 
 It is straightforward to notice the effect that diseases have on our lives.
@@ -23,7 +24,7 @@ The most plausible explanation for this future prediction is that improvements i
 However, despite rising life expectancy, epidemics continue to be one of the most significant threats to populations. In fact, there was a notable increase in the frequency and magnitude of reported epidemics during the 19th and 20th centuries \cite{Anderson_82}. This makes it essential to develop effective policies to control and mitigate their impact, requiring coordinated implementation by countries within the same macro-region.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.85\linewidth]{0_introduction/images_introduction/worst_epidemic}
+	\includegraphics[width=0.95\linewidth]{0_introduction/images_introduction/worst_epidemic}
 	\caption[Epidemic distribution in time]{A graphical representation of the epidemic distribution over the years and of their associated death toll. It is observable how there is an increment in the number of these event in the last three centuries. Data extracted from \cite{owid_historical_pandemics,wiki_pandemics}}
 	\label{fig:worstepidemic}
 \end{figure}
@@ -71,10 +72,10 @@ For this reason, a new model has been developed, drawing from a study of existin
 
 The framework involves coupling a SIR-like disease model with a new behavioral model consisting of three compartments: Heedless, Against, and Compliant individuals. These categories are designed to represent different courses of action taken during a disease epidemic.
 \begin{itemize}
-	\item Heedless individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or indifferent to the risks, continuing with regular routines that may increase their likelihood of infection.
-	\item Heedless individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or indifferent to the risks, continuing with regular routines that may increase their likelihood of infection.
+	\item The Heedless individuals represent the segment of the population that is either unaware of the disease’s spread, particularly in its early stages, or indifferent to the risks, continuing with regular routines that may increase their likelihood of infection.
+	\item The Against group includes skeptics who reject precautionary measures and refuse to follow established guidelines.
 	\item The Compliant group consists of those who actively seek to avoid infection by adhering to health policies and precautions.
-	The Against group includes skeptics who reject precautionary measures and refuse to follow established guidelines.
+
 \end{itemize}
 
 The model incorporates mechanisms to account for changes in behavior among social groups, primarily driven by peer pressure, but also considers the intervention of a central global actor. Additionally, it accounts for fatigue associated with adhering to a particular behavioral spectrum (either complying with or opposing rules). The epidemiological model developed can track both the initial phase of an epidemic and successive waves of contagion, including the possibility of reinfection.
@@ -85,11 +86,9 @@ The model is designed with the validation of its predictions against empirical d
 
 A powerful feature of multi-system models is their ability to reveal phenomena that would not be apparent when examining individual components in isolation. This comprehensive approach enables a deeper understanding of complex interactions and dynamics. Moreover, identifying which of these emerging mechanisms are most relevant in real-world contexts, rather than relying solely on theoretical models, underscores the critical importance of comparing the developed model with empirical data to better understand emerging dynamics.
 
-\textcolor{red}{Empirical data for this analysis was sourced from a research study conducted by Meta during the COVID-19 pandemic, focusing on people's opinions and behaviors.
-These data were then used to investigate the model's ability to reproduce what occurred during the pandemic, specifically examining if the model could accurately simulate real behavioral patterns recorded during the emergency.
-Additional aspects that were analyzed include whether peer pressure alone was sufficient to explain the observed trends in population behavior or if the influence of external global factors, such as laws implemented by governments during the pandemic, was necessary for the model to accurately reflect these trends.}
+%\textcolor{red}{Empirical data for this analysis was sourced from a research study conducted by Meta during the COVID-19 pandemic, focusing on people's opinions and behaviors.These data were then used to investigate the model's ability to reproduce what occurred during the pandemic, specifically examining if the model could accurately simulate real behavioral patterns recorded during the emergency.Additional aspects that were analyzed include whether peer pressure alone was sufficient to explain the observed trends in population behavior or if the influence of external global factors, such as laws implemented by governments during the pandemic, was necessary for the model to accurately reflect these trends.}
 %%% i risultati a lavoro finito
-\textcolor{red}{The main result achieved is that the model is functional and demonstrates reliability when compared with COVID-19 data. The study highlights the crucial importance of respecting quarantine measures and avoiding contact when infected, as these actions can significantly reduce the model's reproduction number, thereby limiting the spread of the disease. Altri risultati arriveranno concludendo la tesi.}
+%\textcolor{red}{The main result achieved is that the model is functional and demonstrates reliability when compared with COVID-19 data. The study highlights the crucial importance of respecting quarantine measures and avoiding contact when infected, as these actions can significantly reduce the model's reproduction number, thereby limiting the spread of the disease. Altri risultati arriveranno concludendo la tesi.}
 
 \chapter{Main objectives and summary of the contents}
 
@@ -111,12 +110,12 @@ Starting from these questions, the following objectives have been identified:
 	\item Create an original epidemic-behavioral multi-system model capable of tracking the development of a disease and representing behavior modification using a peer pressure mechanism within the same population.
 	\item Add a second control mechanism to the model, represented by government rules that can modify people's behavior in a centralized way.
 	\item Develop a comprehensive analysis of the epidemiological and behavioral model to understand its mechanisms and correctly interpret the mutual effects arising from the coupling of the social and health systems.
-	\item Conduct a study using available data on population behavior during the COVID-19 pandemic to verify if the developed model can accurately reconstruct events and how people reacted to them.
+	%\item Conduct a study using available data on population behavior during the COVID-19 pandemic to verify if the developed model can accurately reconstruct events and how people reacted to them.
 \end{itemize}
 The work consists of an introductory chapter \ref{ch:theo_back} where the main concepts of social science and epidemiology are presented. This chapter provides all the necessary information to understand the research. It includes a glossary \ref{subsec:glossary} of the most important terms and an overview of the mathematical tools used in epidemiology. Additionally, the different models implemented to simulate an epidemic are shown in section \ref{sec:models_categ}, with a focus on the properties of the mean fields model, which is the primary model used in the thesis. Furthermore, a historical background of the research field is provided to give a perspective on the principal milestones.
 In the \ref{ch:literature_review}th chapter, a review of the literature analyzed for the thesis is presented. The articles are categorized into different main topics: epidemiology theories, opinion models, behavior models, and multi-agent and multi-system models. This subdivision highlights the most interesting aspects of each work and identifies the elements that have been considered for inclusion in the thesis.
 The \ref{part:the_model} part of the thesis is composed of three main chapters. In chapter \ref{ch:model_alone}, the chosen epidemiological and behavioral models are simulated, and their characteristics are studied individually. Chapter \ref{ch:epi_behav_model} presents the model resulting from the integration of the two, which becomes a layer of a more complex multi-system model. The main features of this model are analyzed using analytical tools. The study is performed with theoretical values, sensitivity analysis, and the measurement of principal metrics, such as the reproduction rate, to provide a general description of the model and develop an understanding of it.
-\textcolor{red}{In chapter \ref{ch:data}, the data analysis is presented. The data available from the Meta COVID-19 research are used to test and validate the model, assessing its ability to represent a real scenario.} Finally, the last chapter contains the conclusions of the thesis.
+%\textcolor{red}{In chapter \ref{ch:data}, the data analysis is presented. The data available from the Meta COVID-19 research are used to test and validate the model, assessing its ability to represent a real scenario.} Finally, the last chapter contains the conclusions of the thesis.
  
 
 % ! Ci sta inizialmente concentrarsi sulle epidemie, ma  devi intrudurre anche il secondo macro filone, quello delle opinioni. é uno spin off metodologico del primo, quindi gli stumenti matematici poi sono simili, ma va detta anche questa cosa. E poi sulle opinioni hai visto quante sfumature diverse esistono sul come considerarle e anche questo è da tenere in considerazione. 
@@ -203,7 +202,7 @@ Instead, macroparasite may be described by those having no direct reproduction w
 \subsubsection{Reproduction number $\mathcal{R}_0$} It is the fundamental measure of the infectiousness of a disease. It is the average number of secondary infections caused by one infected person in a fully susceptible population. If it is recalculated during the epidemic progression is called $\mathcal{R}(t)$, a time-varying reproduction number. Finally exist also the effective reproduction number, that is obtained
 rescaling the Reproduction number value with the true number of susceptible.
 
-\subsubsection{Types of infectious diseases}An nnfectious disease is indicated as an illness resulting from the presence of a pathogenic microbial agent such as bacteria, viruses, parasites or other microorganism.
+\subsubsection{Types of infectious diseases}An infectious disease is indicated as an illness resulting from the presence of a pathogenic microbial agent such as bacteria, viruses, parasites or other microorganism.
 
 It is possible to distinguish between \textit{transmittable} and \textit{communicable} disease. A transmittable disease can be transmitted between persons through unnatural routes. A communicable disease is one is one that spreads from one person or animal to another or from a surface to a person.  
 

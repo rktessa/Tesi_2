@@ -86,11 +86,13 @@
 \contentsline {chapter}{\numberline {7}Behavioral epidemic model}{73}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Model description}{73}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{75}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{77}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{78}{subsection.7.2.1}%
 \contentsline {section}{\numberline {7.3}Model simulation}{78}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{79}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$.}{80}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{80}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{80}{subsection.7.3.2}%
 \contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{81}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{81}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.4}%
 \contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{82}{subsection.7.3.5}%
-\contentsline {chapter}{Bibliography}{83}{figure.caption.85}%
+\contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{83}{subsection.7.3.6}%
+\contentsline {chapter}{\numberline {8}Conclusions}{85}{chapter.8}%
+\contentsline {chapter}{Bibliography}{87}{chapter.8}%
