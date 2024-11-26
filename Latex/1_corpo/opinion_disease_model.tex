@@ -10,10 +10,10 @@ The primary answer lies in the observation made while studying the literature: t
 The availability of research such as the one conducted by Meta during COVID-19 \cite{Astley_2021} serves as both a major source of inspiration and data. This research allows exploration of different behaviors related to how people react to and manage the necessity of living with an infectious disease. It also provides this valuable information as a dynamic time series.
 
 Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models not incorporate this characteristic \cite{huys2010nonlinear}, this feature is here addressed.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{1_corpo/figure/Fig2cut}
-	\caption[Mask wearing evolution]{The evolution of mask wearing behaviors.}
+	\caption[Mask wearing evolution]{The evolution of mask wearing behaviors. Figure from \cite{Proverbio_Tex_2024}.}
 	\label{fig:mask_wearing}
 \end{figure}
 The behavioral-epidemic mean-field model developed aims to interconnect these two features, linking the theoretical framework with empirical evidence. Often, in other works, this connection is realized using proxy models that attempt to reconstruct agent behavior, spatial motion, or opinion datasets extrapolated, for instance, from social networks, as done in \cite{Anderson_2019,Zino_2021}. The problem with these approaches is that people's opinions do not always align with their actual behaviors, and the lack of a necessary and direct correlation between the two is another concept the model attempts to overcome.
@@ -22,15 +22,15 @@ For example, consider the evolution of mask-wearing behavior in different Europe
 
 Phenomena like this have been incorporated into the model's development using a coefficient parameter, $\psi$, to represent the effect of centralized interventions and modify the basic persuasion rate of different behaviors. Additional empirical evidence supporting the development of the model can be found in \cite{Proverbio_Tex_2024}. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{1_corpo/figure/Model_behav_epidemic}
 	\caption[Epi-behavior model]{Representation of the model with individuals divided into different behavioral categories, each of which can correspond to a specific disease state, except for the Heedless group, which is characterized solely by Susceptible individuals.}
 	\label{fig:modelbehavepidemic}
 \end{figure}
 
-To introduce the model and begin its description, the next chapter first presents and analyzes the two layers that together form the complete model: a SIRS epidemic model and a behavioral model consisting of three compartments: Compliant, Against, and Heedless.
-
+To introduce the model and begin its description, the next chapter first presents and analyzes the two layers that together form the complete model: a SIRS epidemic model and a behavioral model consisting of three compartments: Compliant, Against, and Heedless. Then, the full model is presented, described and analysed in Chapter \ref{ch:epi_behav_model}.
+Then the full model is presented, described and analysed. 
 The full model comprises seven compartments, as the heedless behavior is not considered while individuals are infected or recovered. This assumption stems from the reasoning that it is highly improbable for an individual to act heedlessly when infected (unless, potentially, when completely asymptomatic). Figure \ref{fig:modelbehavepidemic} provides a compact representation of the population subdivision.
 
 Infection can be transmitted across all three behavioral groups, but the Compliant group is more cautious. A parameter, $\rho$, models their reduced probability of being infected, while another parameter, $\epsilon$, accounts for their compliance with self-isolation while infectious. This reduces the number of infected Compliant individuals ($I_C$ in the model equations presented later) contributing to new infections in the epidemic layer.
@@ -54,7 +54,7 @@ To describe the epidemic evolution, a  SIRS model is implemented. It is an exten
 	contact.
 	\item $\gamma$ is the recovery rate.
 	\item  $\delta$ is the rate at which immunity recedes following recovery.
-	\item  $\mathcal{R}(t)$ is the reproduction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
+	\item  $\mathcal{R}_0$ is the reproduction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
 	
 \end{itemize}
 The choice of an SIR-like model is made because these models are well-known for their ability to describe diseases like COVID-19, and the literature provides numerous examples that use this model \cite{Dehning_2020, Li2022}. The SEIR model could also be a viable choice due to the relevance of the "Exposed" compartment, which effectively captures the disease progression for infections such as COVID-19. In these cases, an incubation period occurs after exposure before symptoms appear and the individual becomes contagious. However, this compartment was excluded because it has been shown \cite{Dehning_2020} that a simpler SIR model can still accurately represent the disease's dynamics. When comparing model simulations with real data, a delay can be incorporated to account for the lag between symptom onset, testing, and reporting. This delay reflects the time needed for symptoms to manifest, conduct testing, and report cases to relevant authorities.
@@ -63,10 +63,10 @@ The model includes the possibility of reinfection, which is important when study
 
 In the initial stages, the SIRS model behaves similarly to a typical SIR model because reinfection is unlikely to occur in a short time frame. However, over time, as reinfections become possible, individual attitudes and behaviors will increasingly impact the disease's spread.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\linewidth]{1_corpo/figure/r0/sirs_figure}
-	\caption[SIRS simulation]{Simulation of the SIRS model. The parameters of the model are chosen to resemble those of the initial stages of the COVID-19 pandemic \cite{data_R0_covid} and are the same as those used for simulations with the full epi-behavioral model.}
+	\caption[SIRS simulation]{Simulation of the SIRS model. The parameters of the model, which meaning is presented in section \ref{sec:sir_presentation}, are chosen to resemble those of the initial stages of the COVID-19 pandemic \cite{data_R0_covid} and are the same as those used for simulations with the full epi-behavioral model.}
 	\label{fig:sirsfigure}
 \end{figure}
 
@@ -77,7 +77,7 @@ The development of the behavioral model builds on several works already presente
 \begin{itemize}
 	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}.
 	\item Non-compliance viewed as a form of social contagion \cite{Bongarti2023}.
-	\item The unaware-aware-unaware opinion model class \cite{Zuo2022, Peng2021}.
+	\item The unaware-aware-unaware opinion model class \cite{Zuo2022, Peng2021}, for how the compartments are linked together and for the idea of social pressure between individuals.
 	\item The fatigue mechanism, where maintaining a certain behavior leads to a spontaneous loss of compliance \cite{Epstein_2021}.
 \end{itemize}
 
@@ -110,14 +110,13 @@ The evolution of the model is governed by two principal mechanisms: \begin{itemi
 	\item Heedless individuals transitioning to either Compliant or Against compartments. 
 	\item Compliant and Against individuals returning to the Heedless compartment. 
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.72\linewidth]{1_corpo/figure/behavior_model_figure}
 	\caption[Behavior model]{The figure represents the behavioral model developed, featuring three compartments: Heedless, Compliant, and Against, abbreviated as H, C, and A. The arrows indicate the inflows and outflows between these compartments.}
 	\label{fig:behaviormodelfigure}
 \end{figure}
-The first mechanism is driven by peer pressure: the size of each group and the level of "persuasion" are the parameters that govern this process. It is mathematically modeled similarly to person-to-person disease transmission, as seen in the SIR-like mean-field model described in section \ref{subsubsec:p2p_transmission}. Instead, the return to the Heedless compartment is modeled as a "spontaneous decay" process: individuals naturally leave the Compliant and Against compartments and return to Heedless, transitioning spontaneously depending on the level of "fatigue" associated with maintaining the behavior.
-
+The first mechanism is driven by peer pressure: the size of each group and the level of "persuasion" are the parameters that govern this process. It is mathematically modeled similarly to person-to-person disease transmission, as seen in the SIR-like mean-field model described in section \ref{subsubsec:p2p_transmission}. Instead, the return to the Heedless compartment is modeled as a "spontaneous decay" process: individuals naturally leave the Compliant and Against compartments and return to Heedless, transitioning spontaneously depending on the level of "fatigue" associated with maintaining the behavior.The flow between an intermediate compartment, represented by $H$, rather than a direct transition between $A$ and $C$ (and vice versa), is a modeling choice stemming from the idea that heedlessness can initially signify a lack of awareness about a new disease. Over time, it can represent the state of people after a period of coexistence with the disease, where the fatigue of maintaining compliance or resistance increases, or when indifference toward the disease grows.
 To describe these transitions, different coefficients are introduced. The $k_1$ and $k_2$ are persuasion rates, while $\lambda_1$ and $\lambda_2$ represent fatigue rates. Their meanings are as follows: \begin{itemize} 
 	\item $k_1$: persuasion rate from Heedless to Compliant; 
 	\item $k_2$: persuasion rate from Heedless to Against; 
@@ -165,16 +164,17 @@ To represent different dynamics, four main cases are now presented. The coeffici
 The values $k_1$, and $k_2$ are calculated from the formula of $\mathcal{B}_1$, and $\mathcal{B}_2$.
 
 In Figure \ref{fig:model__behavior_sim_1}, it is evident that when both Behavior conversion numbers are less than one, social contagion does not spread: even though, in this case, the Compliant and Against compartments together represent $60\%$ of the total population at the beginning of the simulation, they clearly tend to zero over time. In contrast, the right panel shows the case where the two $\mathcal{B}$ values are equal and greater than one. To emphasize the importance of the fatigue rate, it is shown that with a lower $\lambda_2$ value than $\lambda_1$, the Against compartment becomes dominant by the end of the simulation. 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1}} \quad
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2}} \\
-	\caption[Behavioural model simulation first]{Behavioural system dynamics first two cases.}
+	\caption[Behavioural model simulation first]{Behavioral system dynamics first two cases. In the left panel there is the }
 	\label{fig:model__behavior_sim_1}
 \end{figure}
 \label{subsec:model_behav}
+
 Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenarios. On the left, we observe the dynamics when one of the $\mathcal{B}$ values is greater than the other, and both $\lambda$ values are the same. It is straightforward to understand that this dynamic would also occur if, with the same values, the $\lambda$ of the dominant behavior were greater than the other, as a larger $\lambda$ would result in a higher $k$ (persuasion rate). The right panel, however, presents a particularly intriguing situation. Here, a lower $\lambda_1$ compared to $\lambda_2$, combined with $k_2 > k_1$, leads to an initial rapid spread of the Against group, even though $\mathcal{B}_2 < \mathcal{B}_1$! It is only after some time that the system evolves to the final equilibrium, which matches the left scenario's result, as the $\mathcal{B}$ values are the same in both simulations.
 
 \begin{figure}[h]
@@ -698,7 +698,7 @@ The value of $\psi$ is greater than one ($\psi > 1$) when the simulations consid
 In Figure \ref{fig:sim_psi}, the evolution of $S_C$ and the total number of infected individuals as $\psi$ varies is represented. It is evident that increasing the value of $\psi$ changes the timescale of compliance, causing $S_C$ to reach its maximum and stabilize more quickly, while also increasing the final number of $S_C$. Furthermore, it significantly reduces the peak value of infected individuals.
 
 This effect is most pronounced when comparing cases: with $\psi = 1$, the peak value of $I$ is around $2\%$, whereas in other cases, it drops to approximately $0.0007\%$.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{ $S_C$ compartment varying $\psi$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_psi}} \quad

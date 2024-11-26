@@ -40,59 +40,62 @@
 \contentsline {section}{\numberline {3.3}Epidemiological models categorization}{24}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Mean field models}{26}{subsection.3.3.1}%
 \contentsline {subsubsection}{SIR model}{26}{section*.30}%
-\contentsline {subsubsection}{Population constancy}{27}{section*.31}%
-\contentsline {subsubsection}{Recover transition}{28}{section*.32}%
-\contentsline {subsubsection}{Person-to-person disease transmission}{28}{section*.33}%
-\contentsline {subsubsection}{Immunity}{28}{section*.34}%
-\contentsline {subsubsection}{Threshold value}{29}{section*.35}%
-\contentsline {subsubsection}{The SIR mean-field model equations}{29}{section*.36}%
-\contentsline {subsubsection}{Model behavior}{30}{section*.37}%
-\contentsline {subsection}{\numberline {3.3.2}Other modeling techniques}{31}{subsection.3.3.2}%
-\contentsline {subsubsection}{Stochastic models}{31}{section*.39}%
-\contentsline {subsubsection}{Networked models}{32}{section*.40}%
-\contentsline {subsubsection}{Agent-based models}{32}{section*.41}%
-\contentsline {subsubsection}{Multilayer systems and networks}{33}{section*.43}%
-\contentsline {chapter}{\numberline {4}Review of epidemiological behavioural and opinion models in literature}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Information's sources}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Classification of different types of information}{37}{section.4.2}%
-\contentsline {section}{\numberline {4.3}How to integrate behavior in epidemiology}{37}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Individuals-based models}{38}{subsection.4.3.1}%
-\contentsline {subsubsection}{Multiple networks simulated with Markovian process}{38}{section*.45}%
-\contentsline {subsubsection}{Game theoretical models}{39}{section*.49}%
-\contentsline {subsubsection}{Network based models}{42}{section*.51}%
-\contentsline {subsubsection}{Threshold models}{43}{section*.53}%
-\contentsline {subsubsection}{Ad-hoc rule-based models}{44}{section*.54}%
-\contentsline {subsection}{\numberline {4.3.2}Homogeneous population models}{45}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Perspective review of the literature}{46}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Individual state models}{47}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Well-mixed population models}{47}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Final remarks}{48}{subsection.4.4.3}%
-\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral Disease Model}{49}{part.2}%
-\contentsline {chapter}{\numberline {5}Model development and justification}{51}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Epidemic and Behavioral model alone: a presentation}{55}{chapter.6}%
-\contentsline {section}{\numberline {6.1}SIRS model}{55}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Behavioural model}{56}{section.6.2}%
-\contentsline {subsubsection}{Initial conditions}{57}{section*.60}%
-\contentsline {subsubsection}{Social contagion dynamic}{58}{section*.61}%
-\contentsline {subsubsection}{Behavior conversion number}{59}{section*.63}%
-\contentsline {subsection}{\numberline {6.2.1}Model simulation}{59}{subsection.6.2.1}%
-\contentsline {subsubsection}{Equilibrium and stability analysis}{60}{section*.66}%
-\contentsline {subsubsection}{Equilibria of the system}{62}{section*.67}%
-\contentsline {subsubsection}{Equilibria stability analysis}{62}{section*.68}%
-\contentsline {subsubsection}{Equilibrium simulations}{64}{section*.69}%
-\contentsline {subsubsection}{Behavioural model experiment}{67}{section*.74}%
-\contentsline {subsubsection}{Heat map Final Equilibrium states}{68}{section*.75}%
-\contentsline {subsubsection}{Heat map of max compartments value}{70}{section*.78}%
-\contentsline {chapter}{\numberline {7}Behavioral epidemic model}{73}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Model description}{73}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{75}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{78}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Model simulation}{78}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{80}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{80}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{81}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{82}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{83}{subsection.7.3.6}%
-\contentsline {chapter}{\numberline {8}Conclusions}{85}{chapter.8}%
-\contentsline {chapter}{Bibliography}{87}{chapter.8}%
+\contentsline {subsubsection}{Mean-field approximation}{27}{section*.31}%
+\contentsline {subsubsection}{Homogeneus mixing}{27}{section*.32}%
+\contentsline {subsection}{\numberline {3.3.2}Average rates of changes}{28}{subsection.3.3.2}%
+\contentsline {subsubsection}{Population being constant}{28}{section*.33}%
+\contentsline {subsubsection}{Recover transition}{28}{section*.34}%
+\contentsline {subsubsection}{Person-to-person disease transmission}{29}{section*.35}%
+\contentsline {subsubsection}{Immunity}{29}{section*.36}%
+\contentsline {subsubsection}{Threshold value}{29}{section*.37}%
+\contentsline {subsubsection}{The SIR mean-field model equations}{30}{section*.38}%
+\contentsline {subsubsection}{Model behavior}{31}{section*.39}%
+\contentsline {subsection}{\numberline {3.3.3}Other modeling techniques}{33}{subsection.3.3.3}%
+\contentsline {subsubsection}{Stochastic models}{33}{section*.41}%
+\contentsline {subsubsection}{Networked models}{33}{section*.42}%
+\contentsline {subsubsection}{Agent-based models}{33}{section*.43}%
+\contentsline {subsubsection}{Multilayer systems and networks}{34}{section*.45}%
+\contentsline {chapter}{\numberline {4}Review of epidemiological behavioural and opinion models in literature}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Information's sources}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Classification of different types of information}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}How to integrate behavior in epidemiology}{39}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Individuals-based models}{40}{subsection.4.3.1}%
+\contentsline {subsubsection}{Multiple networks simulated with Markovian process}{40}{section*.47}%
+\contentsline {subsubsection}{Game theoretical models}{41}{section*.51}%
+\contentsline {subsubsection}{Network based models}{44}{section*.53}%
+\contentsline {subsubsection}{Threshold models}{45}{section*.55}%
+\contentsline {subsubsection}{Ad-hoc rule-based models}{46}{section*.56}%
+\contentsline {subsection}{\numberline {4.3.2}Homogeneous population models}{47}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Perspective review of the literature}{48}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Individual state models}{49}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Well-mixed population models}{49}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Final remarks}{50}{subsection.4.4.3}%
+\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral-Disease Model}{51}{part.2}%
+\contentsline {chapter}{\numberline {5}Model development and justification}{53}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Epidemic and Behavioral model alone: a presentation}{57}{chapter.6}%
+\contentsline {section}{\numberline {6.1}SIRS model}{57}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Behavioural model}{58}{section.6.2}%
+\contentsline {subsubsection}{Initial conditions}{59}{section*.62}%
+\contentsline {subsubsection}{Social contagion dynamic}{60}{section*.63}%
+\contentsline {subsubsection}{Behavior conversion number}{61}{section*.65}%
+\contentsline {subsection}{\numberline {6.2.1}Model simulation}{61}{subsection.6.2.1}%
+\contentsline {subsubsection}{Equilibrium and stability analysis}{62}{section*.68}%
+\contentsline {subsubsection}{Equilibria of the system}{64}{section*.69}%
+\contentsline {subsubsection}{Equilibria stability analysis}{64}{section*.70}%
+\contentsline {subsubsection}{Equilibrium simulations}{66}{section*.71}%
+\contentsline {subsubsection}{Behavioural model experiment}{69}{section*.76}%
+\contentsline {subsubsection}{Heat map Final Equilibrium states}{70}{section*.77}%
+\contentsline {subsubsection}{Heat map of max compartments value}{72}{section*.80}%
+\contentsline {chapter}{\numberline {7}Behavioral epidemic model}{75}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Model description}{75}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{77}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{80}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Model simulation}{80}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{82}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{83}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{84}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{84}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{85}{subsection.7.3.6}%
+\contentsline {chapter}{\numberline {8}Conclusions}{87}{chapter.8}%
+\contentsline {chapter}{Bibliography}{89}{chapter.8}%

@@ -295,9 +295,18 @@ The symbols used to indicate the density of each group are instead $s$, $i$, and
 The SIR model, which will be described in the following sections, is built upon several assumptions that shape the mathematical framework. These guiding principles are introduced in the following paragraphs. Furthermore, the main properties of the model will also be introduced. 
 
 \subsubsection{Mean-field approximation}
-The approximation that gives the name to this model class is based on 
-\subsubsection{Homogeneity} 
-
+The approximation that gives the name to this model class is based on a method that permits the analytical analysis of complex systems. With mean-field, individual-level interactions are averaged, focusing not on individual behavior but on the collective behavior of the population. Using this method, equations can be derived that describe disease evolution in terms of average rates rather than tracking individual agents.
+\subsubsection{Homogeneus mixing} 
+It is the assumption that all individuals in the population mix homogeneously, meaning that the probability of interacting with any individual is the same. It is a strong assumption because it implies ignoring any spatial or social structure.
+\subsection{Average rates of changes}
+\label{sec:sir_presentation}
+In the model, differential equations are used to represent the transition of individuals between different compartments. These transitions can depend on the state of the system but, in the simplest form, are based on average rates. The three rates used in the SIRS mean-field model are:
+\begin{itemize}
+	\item $\beta$: transmission rate;
+	\item $\gamma$: recovery rate;
+	\item $\delta$: waning immunity rate.
+\end{itemize}
+The flow of individuals in the system is shown in Figure \ref{fig:sirsfigurecompartmental}.
 
 \subsubsection{Population being constant}
 The total population size, represented by the letter $N$, is the sum of individuals in the three compartments (e.g., Susceptible, Infected, and Recovered). It is often assumed to remain constant during the course of an epidemic. This assumption is based on the idea that epidemics typically last much shorter than the average human lifespan, making the effects of births and deaths negligible.
@@ -312,35 +321,65 @@ In more complex models, where demographic effects are considered, such as in mod
  \[\dot{s}(t)+ \dot{i}(t) + \dot{r}(t)= 0\]
 
 \subsubsection{Recover transition} 
-The first fundamental dynamic process of the model assumes that the infected compartment decreases in size independently of the model's history, with a rate of decrease proportional solely to the current number of infected individuals. This gives the following relation:
+The first fundamental dynamic process of the model assumes that the infected compartment decreases in size, with a rate of decrease proportional solely to the current number of infected individuals. This gives the following relation:
 \[\frac{d i}{dt} = - \gamma i, \qquad i(0) = i_0, \]
 which models a continuous process. Specifically, it assumes that individuals transition from the infectious state to the recovered state at a constant rate, denoted by $\gamma$. The physiological meaning of this parameter is that it represents the inverse of the infection's duration, meaning that the average infection lasts $1/\gamma$ days. Thus, $\gamma$ is the recovery rate, reflecting the speed at which the population recovers from the disease.
  
-In this model the disease reproduces through horizontal incidence, and so the contagion is modeled as due to random contact that happens in a homogeneosuly mixed population.
+%In this model the disease reproduces through horizontal incidence, and so the contagion is modeled as due to random contact that happens in a homogeneosuly mixed population.
 \subsubsection{Person-to-person disease transmission}
 \label{subsubsec:p2p_transmission}
-The model for this quantity is expressed in fractional terms, assuming a population composed of susceptible and infected individuals. Each infectious individual encounters a fraction cc of the population per day. If all encounters are equally likely, a fraction $s$ of these encounters will be with susceptibles. Therefore, each infectious individual has $c\cdot s$ encounters with susceptibles. The probability that an encounter leads to transmission is $p$, meaning the average number of transmissions per day is $p \cdot c \cdot s$. Considering the fraction of infected individuals $i$, and combining $p$ and $c$ into a single parameter $\beta$, the transmission rate becomes:
+To model this quantity fractional terms are used, assuming a population composed of susceptible and infected individuals. Each infectious individual encounters a fraction $c$ of the population per day. If all encounters are equally likely, a fraction $s$ of these encounters will be with susceptibles. Therefore, each infectious individual has $c\cdot s$ encounters with susceptibles. The probability that an encounter leads to transmission is $p$, meaning the average number of transmissions per day is $p \cdot c \cdot s$. Considering the fraction of infected individuals $i$, and combining $p$ and $c$ into a single parameter $\beta$, the transmission rate becomes:
 \[\text{transmission rate} = \beta s i.\]
 Here, $\beta$ represents the transmission coefficient.
 
 
 \subsubsection{Immunity}
-In this initial model, once individuals recover from the disease, there are no further transitions. Two possible model scenarios can cause this:
+In SIR model, once individuals recover from the disease, there are no further transitions. Two possible model scenarios can cause this:
 \begin{itemize}
 	\item Lifelong immunity acquired after recovery, ini this case the meaning of the compartments is $R =$ recovered.
 	\item Death of infected individuals, here the compartments can be intended as $R =$ removed.
 \end{itemize}
 Both cases assume that, once the illness period ends, the disease can no longer be transmitted.
-If immunity acquired from an infection wanes after a certain period, individuals can become susceptible again, leading to an SIRS model.
+If immunity acquired from an infection wanes after a certain period, individuals can become susceptible again, leading to an SIRS model. The $\delta$ rate is used to express the outflow from the Recovered compartment, and it corresponds to the inverse of the average duration of immunity.
 
 \subsubsection{Threshold value}
 \label{subsub:threshold}
 Although the SIR model is simple, it plays a fundamental role in predicting a key aspect of epidemics: the threshold value, a concept first introduced by Kermack and McKendrick in their pioneering work \cite{kermack1927}. They showed that, in a fully susceptible population, an epidemic will only start if the basic reproduction number $\mathcal{R}_0$ is greater than $1$, marking the birth of the term "threshold value" in epidemiology.
+In the SIR model the reproduction number value is equal to the ratio between the transmission and recovery rate:
+\begin{equation}
+	\mathcal{R}_0 = \frac{\beta}{\gamma}. 
+	\label{eq_basic_reproduction_number}
+\end{equation}
 
 Over the years, the dynamics of this system have been extensively studied and analyzed \cite{Breda_2012, akinboro2014numerical, Jard_n_Kojakhmetov_2021, Ledder_2023, Okabe_2020, Prodanov_2022, Xu_2014, Turkyilmazoglu_2021}. The threshold effect highlights two distinct scenarios:
 \begin{itemize}
 	\item \textbf{Free Disease Equilibrium $(\mathcal{R}_0 < 1)$:} When $\mathcal{R}_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and this state is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
-	\item \textbf{Epidemic spread $(\mathcal{R}_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system's initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences.
+	\item \textbf{Epidemic spread $(\mathcal{R}_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system's initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. 
+	As reported in this work:
+	\begin{quotation}\small
+	Let $s_s(t),i_s(t)$ be a solution of the system 
+	\begin{equation}
+		\begin{split} 
+			ds/dt &= -\beta i s\\
+			di/dt &= \beta i s - \gamma i	
+		\end{split}
+	\end{equation}
+
+	with $s(0) = s_0 \ge 0$, and $i(0) \ge 0$. The mass conservation assumption holds so $r(t) = 1-s(t)-i(t)$. The triangle in the $si$ phase plane given by 
+	\[T ) {(s,i)|s \ge 0, i\ge 0, s+i \le 1 }\]
+	is positively invariant and unique solutions exist in $T$ for all positive time, so that the
+	model is mathematically and epidemiologically well posed.
+	If parameter $\sigma$ is defined as $\sigma=\beta/\gamma$ it holds that if $\sigma s_0 >1$, the $i(t)$ first increase up to a maximum value $i_{max} = i_0 + s_0 - 1/\sigma - [\log(s_\infty/s_0)]/\sigma $ and then decrease to zero as $t \rightarrow \infty$. The susceptible fraction $s(t)$ is a decreasing function and the limiting value $s_\infty$ is the
+	unique root in $(0, 1/\sigma)$ of the equation
+	\[
+	i_0 + s_0 -s_\infty - \log(s_\infty/s_0)/\sigma = 0. 
+	\]		
+	\end{quotation}
+	
+	This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences. A typical epidemic outbreak has an infective curve that first increases from an initial Io near zero, reaches a peak, and then
+	decreases toward zero as a function of time. The susceptible fraction $s(t)$ instead always
+	decreases, but the final susceptible fraction $s_\infty$ is positive. The epidemic dies out because, when the susceptible fraction $s(t)$ goes below $1/\sigma$, the replacement number $\sigma s(t)$ goes below 1.
+		
 \end{itemize}
 	Thus, even with its simplicity, the SIR model provides critical insights into the potential severity of an epidemic and highlights the importance of timely interventions to prevent widespread harm.
 	
@@ -351,7 +390,7 @@ After introducing the basic framework of the model, the set of differential equa
 The model is then
 \begin{equation}
 	\begin{cases}
-		ds(t) / dt = -\beta s(t) i(t), \;\qquad \qquad s(0) = s_0 >0;\\
+		ds(t) / dt = -\beta s(t) i(t), \;\qquad \qquad s(0) = s_0 \gg 0;\\
 		di(t) / dt =  \beta s(t) i(t) - \gamma i(t), \qquad i(0) = i_0 > 0;\\
 		dr(t) / dt =  \gamma i(t), \qquad \; \, \;\quad \quad \qquad r(0) = r_0 = 0;
 	\end{cases}
@@ -372,16 +411,16 @@ The initial reproduction number is  $\mathcal{R}_0 = 5$, which is greater than 1
 The key features that emerge from the model simulation are:
 
 \begin{itemize}
-	\item \textbf{Slow initial phase:} The early stages of the epidemic are marked by a slow start, as seen in the first part of the curves in Figure \ref{fig:sir_example0}, a). The curves remain nearly flat because only a few individuals are initially infected, and it takes time for the infection to spread and reach a larger portion of the population.
+	\item \textbf{Slow initial phase:} The early stages of the epidemic are marked by a slow start, as seen in the first part of the curves in Figure \ref{fig:sir_example0}a. The curves remain nearly flat because only a few individuals are initially infected, and it takes time for the infection to spread and reach a larger portion of the population.
 	\item \textbf{Exponential growth:} In the second stage, the number of infections increases exponentially.
 	\item \textbf{Peak infection:} Eventually, the number of infections reaches a peak.
 	\item \textbf{Residual susceptible population:} By the end of the epidemic, a portion of the population remains susceptible, though this amount depends on the model's parameters.
 \end{itemize}
 
-An additional detail emerging from the model, as analyzed in \cite{Okabe_2020} and visible in Figure \ref{fig:sir_example0}, is the evolution of the reproductive ratio over time. The reproductive ratio $\mathcal{R}(t) = \frac{\beta}{\gamma} \cdot s(t)$ is given by the formula. Initially, assuming $s(0)\approx 1$, we can simplify this to obtain the value of $\mathcal{R}_0$. However, as the susceptible fraction decreases exponentially alongside the growth in infections, the reproductive ratio also decreases, and the infection peak occurs when $\mathcal{R}(t)=1$.
+An additional detail emerging from the model, as analyzed in \cite{Okabe_2020} and visible in Figure \ref{fig:sir_example0}, is the evolution of the reproductive ratio over time. The reproductive ratio is given by the formula $\mathcal{R}(t) = \frac{\beta}{\gamma} \cdot s(t)$. Initially, assuming $s(0)\approx 1$, we can simplify this to obtain the value of $\mathcal{R}_0$. However, as the susceptible fraction decreases exponentially alongside the growth in infections, the reproductive ratio also decreases, and the infection peak occurs when $\mathcal{R}(t)=1$.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{}]
 	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_con_rt}} \quad
@@ -416,7 +455,7 @@ In this class of models, disease dynamics are considered over complex and realis
 \subsubsection{Agent-based models}
 Agent-based models (ABMs) simulate the progression of a disease by focusing on the behavior and interaction of autonomous agents, which could be individuals or collective entities like organizations. This modeling approach is built on observing spontaneous interactions between individuals \cite{Tizzoni2014}, creating a dynamic system where each person acts according to certain rules. The goal is to understand how these individual behaviors influence the overall evolution of the system.
 
-One key advantage of ABMs is that they provide an intuitive way to interpret epidemic modeling by focusing on individual perspectives, making the model's results easier to understand. Additionally, because agents embee individual behavior, ABMs can deliver highly detailed simulations and offer insights into specific countermeasures that might help mitigate the spread of a disease.
+One key advantage of ABMs is that they provide an intuitive way to interpret epidemic modeling by focusing on individual perspectives, making the model's results easier to understand. Additionally, because agents embed individual behavior, ABMs can deliver highly detailed simulations and offer insights into specific countermeasures that might help mitigate the spread of a disease.
 
 However, ABMs require a large amount of detailed, reliable data to be effective, as their accuracy depends on the precision of the information integrated into the model. Collecting and incorporating this data can be a challenging task, which is a potential limitation of this modeling approach \cite{Hernandez_Vargas_2022}.
 \begin{figure}
@@ -427,16 +466,16 @@ However, ABMs require a large amount of detailed, reliable data to be effective,
 \end{figure}
 
 \subsubsection{Multilayer systems and networks} 
-The complex dynamic of interactions existing in the real world, develops in multiple patterns, with complicated relationships. This connection can change over time, and using the theory of multilayer systems it can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships.
-\begin{figure}[h]
+The complex dynamic of interactions existing in the real world, develops in multiple patterns, with complicated relationships. These interactions can change over time, and using the theory of multilayer systems can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships.
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/multi_layer}
-	\caption[Multi-layer network]{Representation of a multiplex structure. The figure is taken by the work of \cite{Granell2013} and shows the network implemented in their model. There is an awareness and an epidemic layer. In this case, the node connected with the interlayer connection represents the same individual.}
+	\caption[Multi-layer network]{Representation of a multiplex structure. The figure is taken from the work of \cite{Granell2013} and shows the network implemented in their model. There are two layers coupled together: one representing awareness and the other the epidemic state. In this case, nodes connected by interlayer connections represent the same individual. Thus, the model describes people with two attributes: awareness of a disease and health state. The mechanisms of infection and becoming aware are distinct, but both attributes influence how an agent's state evolves. For example, if an agent is aware of the disease, they may act more cautiously, thereby reducing their probability of becoming infected.}
 	\label{fig:multilayer}
 \end{figure} 
 In a more recent development of the research, the traditional network theory was revisited, to create a framework that can include multiple networks, that evolve and influence each other \cite{DeDomenico2016, Krickel_2023} and can be helpful to describe complex systems like human relationships. An interesting result obtained is the possibility that the onset of one disease can depend on the onset of the other one. There can be regimes in which the criticality of the two dynamics is interdependent and others in which the critical effect is only one-directional \cite{DeDomenico2016}. 
-One possible way to develop models with this structure is to imagine that each layer represents a different type of interaction. An epidemiological example is a layer in which the physical contact between people is simulated and another represents social structure, the network of relations that every person has. This instrument provides a natural representation of coupled structure and dynamical processes. It has been presented in multiple works in the past years, for example in \cite{Wang_2019}. The dynamic realized in multiple systems can be single or coupled. In the first, there is a top layer with its dynamic evolution running on top of a multilayer network. The coupled structure instead is the one in which the phenomena described in each layer evolve with the influence of what is happening in the other. 
-
+One possible way to develop models with this structure is to imagine that each layer represents a different type of interaction. An epidemiological example is a model that considers, for each agent, both its physical contacts with others, where the disease can be transmitted, and its network of relations, representing the social dynamics in which everyone is involved. An example of this network is shown in Figure \ref{fig:multilayer}. This instrument provides a natural representation of coupled structure and dynamical processes. It has been presented in multiple works in the past years, for example in \cite{Wang_2019}. 
+Multiple systems can have either a single or coupled dynamic. In the case of a single dynamic, there is a top layer whose evolution occurs independently on top of a multilayer network. In contrast, a coupled structure describes phenomena in each layer evolving under the mutual influence of what is happening in the other layers.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
