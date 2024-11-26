@@ -1,21 +1,22 @@
-\part{Behavioral Disease Model}
+\part{Behavioral-Disease Model}
 \label{part:the_model}
 \chapter{Model development and justification}
+\label{ch:why_new}
 Because the main contribution of this thesis work is the presentation of a new multi-system model, understanding the reasons that led to its development is crucial.
 Otherwise, the reader might question: "Why not use an already developed and analyzed model?"
 
-The primary answer lies in the observation made while studying the literature: the connection between empirical data and epidemiological models is often missing. Most works relating social and epidemiological aspects are purely theoretical models based on ad-hoc assumptions. Probably because constructing a framework grounded in empirical data related to individual behavior is challenging \cite{Nunner2021}, and, until the Coronavirus pandemic, data on this topic were scarce.
+The primary answer lies in the observation made while studying the literature: the connection between empirical data and epidemiological models is often missing. Most works relating social and epidemiological aspects are purely theoretical models based on ad-hoc assumptions; probably, because constructing a framework grounded in empirical data related to individual behavior is challenging \cite{Nunner2021}, and, until the Coronavirus pandemic, data on this topic were scarce.
 
 The availability of research such as the one conducted by Meta during COVID-19 \cite{Astley_2021} serves as both a major source of inspiration and data. This research allows exploration of different behaviors related to how people react to and manage the necessity of living with an infectious disease. It also provides this valuable information as a dynamic time series.
 
-Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models not incorporate this characteristic \cite{huys2010nonlinear}, this feature is here addressed .
+Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models not incorporate this characteristic \cite{huys2010nonlinear}, this feature is here addressed.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{1_corpo/figure/Fig2cut}
 	\caption[Mask wearing evolution]{The evolution of mask wearing behaviors.}
 	\label{fig:mask_wearing}
 \end{figure}
-The behavioral-epidemic mean-field models developed aim to interconnect these two features, linking the theoretical framework with empirical evidence. Often, in other works, this connection is realized using proxy models that attempt to reconstruct agent behavior, spatial motion, or opinion datasets extrapolated, for instance, from social networks, as done in \cite{Anderson_2019,Zino_2021}. The problem with these approaches is that people's opinions do not always align with their actual behaviors, and the lack of a necessary and direct correlation between the two is another concept the model attempts to overcome.
+The behavioral-epidemic mean-field model developed aims to interconnect these two features, linking the theoretical framework with empirical evidence. Often, in other works, this connection is realized using proxy models that attempt to reconstruct agent behavior, spatial motion, or opinion datasets extrapolated, for instance, from social networks, as done in \cite{Anderson_2019,Zino_2021}. The problem with these approaches is that people's opinions do not always align with their actual behaviors, and the lack of a necessary and direct correlation between the two is another concept the model attempts to overcome.
 
 For example, consider the evolution of mask-wearing behavior in different European countries, as shown in figure \ref{fig:mask_wearing}. It is immediately evident that, at a certain point, there is a sharp increase in the use of this self-protective device, resembling a step function. This effect results from regulatory prescriptions introduced by authorities, with behavior closely following the evolution of these stringency measures.
 
@@ -30,32 +31,29 @@ Phenomena like this have been incorporated into the model's development using a 
 
 To introduce the model and begin its description, the next chapter first presents and analyzes the two layers that together form the complete model: a SIRS epidemic model and a behavioral model consisting of three compartments: Compliant, Against, and Heedless.
 
-The full model comprises seven compartments, as the heedless behavior is not considered while individuals are infected or recovered. This assumption stems from the reasoning that it is highly improbable—unless completely asymptomatic—for an individual to act heedlessly when infected. Figure \ref{fig:modelbehavepidemic} provides a compact representation of the population subdivision.
+The full model comprises seven compartments, as the heedless behavior is not considered while individuals are infected or recovered. This assumption stems from the reasoning that it is highly improbable for an individual to act heedlessly when infected (unless, potentially, when completely asymptomatic). Figure \ref{fig:modelbehavepidemic} provides a compact representation of the population subdivision.
 
-Infection can be transmitted across all three behavioral groups, but the Compliant group is more cautious. A parameter, $\rho$, models their reduced probability of being infected, while another parameter, $\epsilon$, accounts for their compliance with self-isolation while infectious. This reduces the number of infected Compliant individuals ($I_C$ in the model equations) contributing to new infections in the epidemic layer.
+Infection can be transmitted across all three behavioral groups, but the Compliant group is more cautious. A parameter, $\rho$, models their reduced probability of being infected, while another parameter, $\epsilon$, accounts for their compliance with self-isolation while infectious. This reduces the number of infected Compliant individuals ($I_C$ in the model equations presented later) contributing to new infections in the epidemic layer.
 
-Behavior is "transmitted" through peer-to-peer influence ($k_i, i = \,1,...,6$), and a fatigue parameter ($\lambda_i$) is included to model the dropout rate caused by the difficulty of maintaining a certain behavior over time.
+Behavior is "transmitted" through peer-to-peer influence ($k_i, i = \,1,...,6$), and fatigue parameters ($\lambda_i$) are included to model the dropout rate caused by the difficulty of maintaining a certain behavior over time.
 
 For the epidemic model, classical coefficients are used: $\beta$ (transmission rate), $\gamma$ (recovery rate), and $\delta$ (immunity waning rate).
  
 
-
-
 \chapter{Epidemic and Behavioral model alone: a presentation}
 \label{ch:model_alone}
 
-
-To develop a multi-layer system that combines an epidemiological layer with a behavioral one, we first present the dynamics of each layer independently, as presented here. This section briefly introduces the SIRS model, focusing primarily on the reasons for its selection. Then, the Heedless, Compliant, Against behavioral model is introduced, simulated, and analyzed. Understanding the underlying dynamics of this model is crucial for gaining insights into the complex interactions that emerge within the multi-layer structure.
+To develop a multi-layer system that combines an epidemiological layer with a behavioral one, we first present the dynamics of each layer independently. This section briefly introduces the SIRS model, focusing primarily on the reasons for its selection. Then, the Heedless, Compliant, Against behavioral model is introduced, simulated, and analyzed. Understanding the underlying dynamics of this model is crucial for gaining insights into the complex interactions that emerge within the multi-layer structure.
 
 
 \section{SIRS model}
 \label{sec:SIRS}
-To describe the epidemic evolution a  SIRS model is implemented. It is an extension of the most famous SIR. Its main addition is the possibility for individuals to become again susceptible after a certain period of time beyond the end of the infection. There are four main characteristic parameters in this model:
+To describe the epidemic evolution, a  SIRS model is implemented. It is an extension of the most famous SIR (see discussion above). Its main addition is the possibility for individuals to become again susceptible after a certain period of time beyond the end of the infection. There are four main characteristic parameters in this model:
 \begin{itemize}
 	\item $\beta$ is the transmission rate parameter for person-to-person
 	contact.
 	\item $\gamma$ is the recovery rate.
-	\item  $\delta$ is the rate at which immunity recedes following recovery
+	\item  $\delta$ is the rate at which immunity recedes following recovery.
 	\item  $\mathcal{R}(t)$ is the reproduction number, derived as in the $SIR$ model as the ratio between the $\beta$, and $\gamma$ coefficients.
 	
 \end{itemize}
@@ -91,9 +89,9 @@ To integrate all these aspects into a mean-field model, the first step is to def
 \end{itemize}
 
 \subsubsection{Initial conditions}
-As an initial condition, the hypothesis is that, at the start of the simulation, most of the population is in the Heedless compartment. This assumption is based on the idea that when a new disease emerges, it is poorly understood, and the population has limited information about it. The hypothesis is that people in the Heedless compartment may be clueless about the risks of becoming infected. This lack of knowledge causes them to maintain their usual behavior, making them susceptible to infection. This assumption is also supported by data and literature \cite{Usher_2020}. As an example of this initial configuration, the case of COVID-19 in Italy is considered. In the early stages of its spread, when the disease was primarily affecting China, it was not viewed as a significant threat by much of the population in Western countries. It was perceived as a distant issue affecting a faraway nation. Therefore, when the epidemic reached Europe and Italy, both the population and government were caught off guard. There was an initial delay in the implementation of countermeasures, as well as in the dissemination of reliable information about the disease's progression to the general public.
+As an initial condition, the hypothesis is that, at the start of the dynamics, most of the population is in the Heedless compartment. This assumption is based on the idea that when a new disease emerges, it is poorly understood, and the population has limited information about it. The hypothesis is that people in the Heedless compartment may be clueless about the risks of becoming infected. This lack of knowledge causes them to maintain their usual behavior, making them susceptible to infection. This assumption is also supported by data and literature \cite{Usher_2020}. As an example of this initial configuration, the case of COVID-19 in Italy is considered. In the early stages of its spread, when the disease was primarily affecting China, it was not viewed as a significant threat by much of the population in Western countries. It was perceived as a distant issue affecting a faraway nation. Therefore, when the epidemic reached Europe and Italy, both the population and government were caught off guard. There was an initial delay in the implementation of countermeasures, as well as in the dissemination of reliable information about the disease's progression to the general public.
 
-There are two opposing behavioral groups, which in the initial phase of the model comprise a small fraction of the population: Compliant and Against.
+Then, there are two opposing behavioral groups, which in the initial phase of the model comprise a small fraction of the population: Compliant and Against.
 
 The Compliant group actively seeks to reduce their chances of becoming infected. They practice self-protection measures like wearing face masks, sanitizing their hands, and voluntarily limiting their presence in public spaces to reduce contact with others.
 
@@ -147,7 +145,7 @@ Another assumption made to describe the model is the principle of mass conservat
 
 \subsubsection{Behavior conversion number}
 
-To simplify the understanding of the system's underlying dynamics, an analogy can be drawn with the reproduction number in epidemic models. By examining the system equations \ref{eq:behavioural_eq}, a relationship can be identified. From both the second and third equations, we can isolate the two coefficients (specifically $k_1 , \lambda_1 $, and  $k_2 , \lambda_2 $ and derive a new parameter, called "Behavior Conversion Rate", $\mathcal{B}$. This rate is the result of the ratio between the persuasion rate and the fatigue decay rate, and can be viewed as a measure of the transmission potential of social contagion. The general formula to calculate it is::
+To simplify the understanding of the system's underlying dynamics, an analogy can be drawn with the reproduction number in epidemic models. By examining the system equations \ref{eq:behavioural_eq}, a relationship can be identified. From both the second and third equations, we can isolate the two coefficients (specifically $k_1 , \lambda_1 $, and  $k_2 , \lambda_2 $ ) and derive a new parameter, called "Behavior Conversion Rate", $\mathcal{B}$. This rate is the result of the ratio between the persuasion rate and the fatigue decay rate, and can be viewed as a measure of the transmission potential of social contagion. The general formula to calculate it is::
 \begin{equation}
 	\mathcal{B}_i =\frac{ k_i }{\lambda_i}  \qquad \text{with } i = 1, \text{or } 2.
 	\label{eq:behave_rate}
@@ -230,7 +228,7 @@ The first nullcline existence condition can be calculated, imposing that the den
 This value of $x$ is in the interval $[0,1]$ only if $\lambda_2>\lambda_1$ and $k_2 > k_1$, or $\lambda_2<\lambda_1$ and $k_2 < k_1$. The second nullcline instead, exists always if $k_1 \neq 0$.
 
 \subsubsection{Equilibria of the system}
-From the results find for the $y$-nullcline, it is possible to calculate explicitly the equilibrium value,as the intersection point of the two nullclines, from the equation \ref{eq:x_nullcline}. In fact if $x =\frac{\lambda_1}{k_1}$, the value is $y = 1 -\frac{\lambda_1}{k_1}$.
+From the results find for the $y$-nullcline, it is possible to calculate explicitly the equilibrium value, as the intersection point of the two nullclines, from the equation \ref{eq:x_nullcline}. In fact if $x =\frac{\lambda_1}{k_1}$, the value is $y = 1 -\frac{\lambda_1}{k_1}$.
 Instead if $y = 0$, two values are found: $x = 1$, and $x = \frac{\lambda_2}{k_2}$.
 The three equilibria points, indicated with the letters $A,B$, and $C$ are then:
 \begin{itemize}
@@ -268,7 +266,7 @@ For each defined equilibrium point, an analysis is performed using the Routh-Hur
 \textbf{Stability of point $A$:} Considering the point $(\frac{\lambda_1}{k_1}, 1-\frac{\lambda_1}{k_1})$, the trace evaluated with this value is tr$J(A) = - k_1 - k_2 +k_2 \frac{\lambda_1}{k_1} - \lambda_2 + \lambda_1$. The criterium requires this value to be less than zero, and manipulating the terms it becomes: $-k_1 + \frac{\lambda_1}{k_1}( k_1 + k_2) - \lambda_2 < 0$. From this it is obtained the relation:
 \[\frac{\lambda_1}{k_1} < \frac{k_1 + \lambda_2}{k_1 + k_2} \]
 Instead, the determinant is det$J(A) = k_1 \lambda_1 - \lambda_1 \lambda_2$. Simplifying the $\lambda_2$ the relation $\lambda_1 < k_1$ is found, that can be inverted, meaning $\frac{k_1}{\lambda_1} = B_1 > 1$.
-Furthermore, both the conditions must hold to verify the local stability and this relation can be used also within the trace. Due to $\frac{\lambda_1}{k_1} < 1$, it can be assumed the relation on the trace holds certainly if $\frac{k_1 + \lambda_2}{k_1 + k_2} > 1$, and so $k_1 + \lambda_2 > k_1 + k_2$. From this last inequality the relation $\lambda_2 > k_2$ can be derived, from which $B_2 < 1$. However, if the initial assumption was that $ \frac{k_1 }{\lambda_1} > 1$, this results can be extendetd.
+Furthermore, both the conditions must hold to verify the local stability and this relation can be used also within the trace. Due to $\frac{\lambda_1}{k_1} < 1$, it can be assumed the relation on the trace holds certainly if $\frac{k_1 + \lambda_2}{k_1 + k_2} > 1$, and so $k_1 + \lambda_2 > k_1 + k_2$. From this last inequality the relation $\lambda_2 > k_2$ can be derived, from which $B_2 < 1$. However, if the initial assumption was that $ \frac{k_1 }{\lambda_1} > 1$, this results can be extended.
 In conclusion, point $A$ is certainly locally stable if $B_1 > 1$, and $B_2 < 1$.  
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -287,7 +285,7 @@ Thus, it can be concluded that equilibrium point $B$ is locally stable only if $
 \[
  k_2 [(\lambda_1 - k_1 \frac{\lambda_2}{k_2})(1 - \frac{\lambda_2}{k_2})] >0
 \]
-To satisfy the inequality bot terms must have the same sign,as in the previous point $B$:
+To satisfy the inequality both terms must have the same sign, as in the previous point $B$:
 \begin{itemize}
 	\item Case $I:$ $\frac{k_2}{\lambda_2} > \frac{k_1}{\lambda_1} $, and $k_2 > \lambda_2$
  	\item Case $II:$ $\frac{k_2}{\lambda_2} < \frac{k_1}{\lambda_1} $, and $k_2 < \lambda_2$
@@ -295,11 +293,11 @@ To satisfy the inequality bot terms must have the same sign,as in the previous p
 The trace value instead corresponds to tr$J(C) = - k_2 + k_2 \frac{\lambda_2}{k_2} + k1 \frac{\lambda_2}{k_2} - \lambda_1 < 0$, leading to inequality 
 $ \frac{\lambda_2}{k_2} (k_1 + k_2) < k_2 + \lambda_1 $. It is found the relation:
 \[ \frac{\lambda_2}{k_2} < \frac{k_2 +\lambda_1}{k_1 + k_2}.\]
-By choosing Case I, we ensure the trace inequality is satisfied. If $k_2 > \lambda_2$, the ratio $\frac{\lambda_2}{k_2}$ is less than one. So, if the right part of inequality is larger than one, the trace condition holds. The expression rewrite in this way is $\frac{k_2 +\lambda_1}{k_1 + k_2} > 1$, $k_2 +\lambda_1 > k_1 + k_2 $, and finally $\lambda_1 > k_1$. But, if the initial assumption was that $ \frac{k_2 }{\lambda_2} > 1$, this results can be extended and concluding, point C is certainly stable if $B_2> B_1$, $B_2 > 1$.  
+By choosing Case I, we ensure the trace inequality is satisfied. If $k_2 > \lambda_2$, the ratio $\frac{\lambda_2}{k_2}$ is less than one. So, if the right part of inequality is larger than one, the trace condition holds. The expression rewritten in this way is $\frac{k_2 +\lambda_1}{k_1 + k_2} > 1$, $k_2 +\lambda_1 > k_1 + k_2 $, and finally $\lambda_1 > k_1$. But, if the initial assumption was that $ \frac{k_2 }{\lambda_2} > 1$, this results can be extended and concluding, point C is certainly stable if $B_2> B_1$, $B_2 > 1$.  
  
 \subsubsection{Equilibrium simulations}
 
-Based on the equilibrium analysis, we now understand how the model behaves with various parameter values. To confirm these results, nullcline plots for the four previously simulated cases are generated, and the different scenarios are examined. Fist, is important to describe what can be visualized in the nullcline plot. The blue curve is the expression found solvind the x-nullcline, and the almost vertical line in the plot correspond to the point of discontinuity of this expression, as discussed before. The green line is instead the y-nullcline, composed of a vertical and horizontal line, representing the two possible solutions. In purple are visualized the three equilibria points. If are stable they are marked with a diamond, will if unstable with a circle.  
+Based on the equilibrium analysis, we now understand how the model behaves with various parameter values. To confirm these results, nullcline plots for the four previously simulated cases are generated, and the different scenarios are examined. Fist, is important to describe what can be visualized in the nullcline plot. The blue curve is the expression found solving the x-nullcline, and the almost vertical line in the plot correspond to the point of discontinuity of this expression, as discussed before. The green line is instead the y-nullcline, composed of a vertical and horizontal line, representing the two possible solutions. In purple are visualized the three equilibria points. If stable, they are marked with a diamond, will if unstable with a circle.  
 \\
 %%%%%%%%%%%%%%%%%%
 
@@ -338,6 +336,7 @@ Applying the Routh-Hurwitz criterion does not yield information on this equilibr
 \textbf{III-a case:} $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$. \\
 In this scenario, as shown in Figure \ref{fig:nullcline_B1_mag_B2}, there is an intersection between the two nullclines, at the point $A$ . The equilibrium has coordinates equal to $x_A = \lambda_1/k_1$ and $y_A = 1 - \lambda_1/k_1 $, derived by solving the nullcline expressions as previously described. Both R-H conditions hold: $trJ(\bar{x},\bar{y}) = -23/105$, and $detJ(\bar{x},\bar{y}) = 2/525$, so the solution is locally asymptotically stable and does not depend on the initial conditions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \textbf{III-b case: }$\mathcal{B}_1<1 \mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$.
 The system's evolution shows opposite behavior compared to the previous case, with the Compliant compartment tending to zero at equilibrium. The right panel of Figure \ref{fig:nullcline_B1_mag_B2}, shows two intersections in the phase plane at points $B$, and $C$. At both points, $y=0$, but only point $C$ is locally stable, as it satisfies the R-H conditions. The equilibrium point is calculated as $x_C= \lambda_2/k_2$ and $y_C = 0$.  
 \begin{figure}[h]
@@ -352,9 +351,9 @@ The system's evolution shows opposite behavior compared to the previous case, wi
 
 \textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
 \label{par:behav_4_case}
-In this situation, the equilibrium has the same value, of the III-a case, and also the stability condition are verified. However, the nullcline plot is very different, referring to figure \ref{fig:prnullclineb1_mag_b2_lambda}. The phase plane is much more complex: there are two lines and the discontinuity point for the x-nullcline (the blue line), and the trajectory of convergence to the point A, the only locally stable is more complex.  
+In this situation, the equilibrium has the same value, of the III-a case, and also the stability condition are verified. However, the nullcline plot is very different, referring to Figure \ref{fig:prnullclineb1_mag_b2_lambda}. The phase plane is much more complex: there are two lines and the discontinuity point for the x-nullcline (the blue line), and the trajectory of convergence to the point A, the only locally stable is more complex.  
 
-In fact, looking at the model simulation in picture \ref{fig:model__behavior_sim_2}, the system initially evolve to what seems as a first equilibrium, corresponding to $x_A = \lambda_2/k_2$, $y_A = 0$, but then, and it is confirmed by R-H, this equilibrium is unstable, and so the model continues its evolution after reaching the real locally stable configuration. 
+In fact, looking at the model simulation in Figure \ref{fig:model__behavior_sim_2}, the system initially evolves to what seems as a first equilibrium, corresponding to $x_A = \lambda_2/k_2$, $y_A = 0$, but then, and it is confirmed by R-H, this equilibrium is unstable, and so the model continues its evolution after reaching the real locally stable configuration. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag}
@@ -363,7 +362,7 @@ In fact, looking at the model simulation in picture \ref{fig:model__behavior_sim
 \end{figure}
 
 \subsubsection{Behavioural model experiment}
-To better understand all possible scenarios emerging from the behavioral model, a bunch of simulations is conducted. Four vectors are defined, one for each model parameter, and a separate simulation is performed for each parameter combination. During each simulation, the parameter values remain constant. The variation range for each parameter is as follows:
+To better understand all possible scenarios emerging from the behavioral model, a set of simulations is conducted. Four vectors are defined, one for each model parameter, and a separate simulation is performed for each parameter combination. During each simulation, the parameter values remain constant. The variation range for each parameter is as follows:
 \begin{itemize}
 	\item $k_1$ between $0.1$ and $0.99$
 	\item $k_2$ between $0.1$ and $0.99$
@@ -387,7 +386,7 @@ The first plots \ref{fig:subfig_sensitivity_behavioural} are heat maps about the
 	\label{fig:subfig_sensitivity_behavioural}
 \end{figure}
 
-In these pictures is clearly visible the threshold effect observed in the stability analysis performed earlier. While one of the reproduction ratios becomes larger than the other, the system equilibrium is composed by the dominant group and a portion of Careless individuals.The greater is the ratio, the  smaller is the size at equilibrium of the Heedless. Considering the left panel in figure \ref{fig:subfig_sensitivity_behavioural}, if the heat map of Compliant is pass through vertically, clearly untill $B_1 > B_2$, at the equilibrium there are still compliant. Then, when $B_1 > B_2$, the compliant abruptly tend to zero. 
+In these pictures is clearly visible the threshold effect observed in the stability analysis performed earlier. While one of the reproduction ratios becomes larger than the other, the system equilibrium is composed by the dominant group and a portion of Careless individuals. The greater is the ratio, the  smaller is the size at equilibrium of the Heedless. Considering the left panel in figure \ref{fig:subfig_sensitivity_behavioural}, if the heat map of Compliant is pass through vertically, clearly until $B_1 > B_2$, at the equilibrium there are still compliant. Then, when $B_1 > B_2$, the compliant abruptly tend to zero. 
 
 Another figure in which this threshold effect can be observed is \ref{fig:subfig_sensitivity_behavioural_r1}.
 
@@ -402,7 +401,7 @@ Another figure in which this threshold effect can be observed is \ref{fig:subfig
 	\caption[Final Behavioural compartments varying $B_1$]{The final value reached at equilibrium by every compartment in the behavioural model varying the $R_1$ coefficient w.r.t different $B_2$ values.}
 	\label{fig:subfig_sensitivity_behavioural_r1}
 \end{figure}
-The plots show how, for a fixed values of $\lambda_1$ and $k_2$, change the size at equilibrium of the system, varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, on the x-axis is plotted the $\mathcal{B}_1$  coefficient, that can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $\mathcal{B}_2$ situations are represented. 
+The plots show how, for a fixed values of $\lambda_1$ and $k_2$, the size at equilibrium of the system changes, varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, on the x-axis is plotted the $\mathcal{B}_1$  coefficient, that can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $\mathcal{B}_2$ situations are represented. 
 
 The threshold effect is clearly visible here as well. When examining the final values for the Compliant and Against compartments, it is evident that once the $\mathcal{B}_1$ reproductive coefficient becomes dominant, the increase in the final size observed in the Compliant compartment results from a decrease in the Careless compartment.
 
@@ -410,7 +409,7 @@ The threshold effect is clearly visible here as well. When examining the final v
 Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures \ref{fig:max_against}, and \ref{fig:max_against2} illustrate the maximum value reached by the Against compartment.
 Two situations are compared: in the first $k_1 \sim k_2$, while in the other the difference between the two parameter is higher. In the first situation, there are visible three possible situations:
 \begin{itemize}
-	\item $B_2 $ greather than $B_1$, and the max value correspond to the value at Equilibrium. It is the bottom right part of the picture.
+	\item $B_2 $ greater than $B_1$, and the max value correspond to the value at Equilibrium. It is the bottom right part of the picture.
 	\item $B_2 < B_1$, but $\lambda_2 > \lambda_1$. These cases are located on the diagonal threshold of the heat map, and are the situations in which there is first a peak of A, but then the C is the dominant group at equilibrium
 	\item $B_2 < B_1$ and also $\lambda_2 < \lambda_1$. Here there is no peak, and A tends always to zero, or to remain approximately zero, depending on the initial conditions.
 \end{itemize}
