@@ -170,7 +170,7 @@ In Figure \ref{fig:model__behavior_sim_1}, it is evident that when both Behavior
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1}} \quad
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2}} \\
-	\caption[Behavioural model simulation first]{Behavioral system dynamics first two cases. In the left panel there is the }
+	\caption[Behavioural model simulation first]{Behavioral system dynamics first two cases. In the left panel there is the case in which both $B_1$, $B_2$ are less than one. The system tend to an equilibrium in which all individual tend to $H$ compartment. In the right panel, instead the case in which the conversion number are equal, but because $k_1 > k_2$ the Compliant compartment becomes greater than the Against one.}
 	\label{fig:model__behavior_sim_1}
 \end{figure}
 \label{subsec:model_behav}
@@ -183,7 +183,7 @@ Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenari
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2}} \quad
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1}} \\
-		\caption[Behavioural model simulation second]{Behavioural system dynamics second two cases.}
+		\caption[Behavioural model simulation second]{Behavioral system dynamics: the second two cases. In the left panel, the scenario depicts Compliant becoming the dominant group, while Against gradually tends toward zero. In the right panel, with the same value for the conversion number but a higher persuasion rate for Against compared to Compliant, the system converges to the same equilibrium as in the left figure. However, it first goes through a phase where the Against group becomes dominant.}
 	\label{fig:model__behavior_sim_2}
 \end{figure}
 
@@ -196,9 +196,10 @@ The nullclines are used in an autonomous system of differential equations (DE)  
 	\frac{dy}{dt} &= g(x,y)
 \end{align}
 
-There are two types of nullclines: $x$-nullcline, and $y$-nullcline. The $x$-nullcline is a set of points in the phase plane so that $\frac{dx}{dt} =0$, and graphically can be represented as a set of vectors that go either straight up or down. Instead, the $y$-nullcline is a set of points in which the $\frac{dx}{dt} =0$. In these points the vectors are horizontal, going either to the left or to the right.
+There are two types of nullclines: $x$-nullcline, and $y$-nullcline. The $x$-nullcline is a set of points in the phase plane so that $\frac{dx}{dt} =0$, and graphically can be represented as a set of vectors that go either straight up or down. Instead, the $y$-nullcline is a set of points in which $\frac{dy}{dt} =0$. In these points the vectors are horizontal, going either to the left or to the right.
 
-The original three equations system, has been reduced, to two equation. These to better visualize nullclines in a two-dimensional graph, and it is possible using the mass conservation assumption, yielding the following relationship: $1=H+C+A$. The first two equations are then rewritten, substituting the $A$ term, resulting in a two-equation system with two unknowns. This reduction from the original system of three equations \ref{eq:behavioural_eq}  results in the following two-equation system:
+The original system of three equations, \ref{eq:behavioural_eq}, has been reduced to a system of two equations. This transformation allows the visualization of nullclines in a two-dimensional graph, known as a phase-plane plot. The dimensional reduction is achieved using the mass conservation assumption, which is based on the relationship $1 = H + C + A$. By substituting the $A$ term into the first two equations, the system is rewritten as a two-equation system with two unknowns. The resulting reduced system is as follows:
+
 \[
 \begin{cases}
 	\dot{H} = -k_1 H C - k_2 (1-H-C) H + \lambda_1 C + \lambda_2 (1-H-C)\\
