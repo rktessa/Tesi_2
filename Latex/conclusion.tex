@@ -1,13 +1,32 @@
 \chapter{Conclusions}
 
-The work conducted during this thesis has led to the development of a novel epi-behavioral model that couples an SIRS model with a behavioral mean-field model. Both opinion and behavioral modeling have been studied, and the most significant contributions in this field from recent years have been presented to provide a comprehensive perspective on how social dynamics can be integrated into disease progression models.
+The work conducted during this thesis has led to the development of a novel epidemiological-behavioral model that couples an SIRS model with a behavioral mean-field model. Both opinion and behavioral modeling have been studied, and the most significant contributions in this field from recent years have been presented to provide a comprehensive perspective on how social dynamics can be integrated into disease progression models.
 
 The main contributions of this study are summarized as follows:
 \begin{itemize}
 	
-\item \textbf{Behavioral-Epidemic Interactions:} The work highlights the complex dynamics that emerge when a disease interacts with human behavior. A behavioral model synthesizing three possible behavioral states during the onset and progression of an epidemic is implemented. From its coupling with the disease model, the role of social dynamics in shaping epidemic outcomes becomes apparent.
+\item \textbf{Behavioral-Epidemic Interactions:} The work highlights the complex dynamics that emerge when a disease interacts with human behavior. A behavioral model with three possible behavioral states during the onset and progression of an epidemic is implemented. From its coupling with the disease model, the role of social dynamics in shaping epidemic outcomes becomes apparent.
 
-\item \textbf{Insights from Simulations:} Through analyses of individual model components and subsequent simulations, key parameters such as the Epidemic Reproduction Number ($E_0$) were identified. The evolution of $E_0$ and its effectiveness as an indicator to predict whether an epidemic will evolve were explored. Furthermore, the model demonstrates various dynamics: while compliance diffusion can mitigate the epidemic's impact, the spread of misinformation, which alters individual behavior, can lead to more severe outcomes. The interplay of behavioral parameters, in particular, creates intriguing influences on epidemic evolution, which are explained in this work.
+\item \textbf{Insights from Simulations:} Through analyses of individual model components and subsequent simulations, key parameters such as the Epidemic Reproduction Number ($E_0$) were identified. The evolution of $E_0$ and its effectiveness as an indicator to predict whether an epidemic will evolve were explored. Furthermore, the model demonstrates various dynamics: while compliance diffusion can mitigate the epidemic impact, the spread of misinformation, which alters individual behavior, can lead to more severe outcomes. The interplay of behavioral parameters, in particular, creates intriguing influences on epidemic evolution, which are explained in this work.
 
 \item \textbf{Framework Flexibility:} Developed with empirical data in mind, the resulting model is a versatile tool that can be adapted to different scenarios and reflects a wide range of behavioral and epidemiological dynamics.
 \end{itemize}
+
+\section{Limitations}
+The proposed multi-system epidemiological-behavioral model is based on certain assumptions that may pose limitations. For instance, the homogeneous mixing assumption assumes that individuals interact with equal probability with anyone in the population. Incorporating features like clustering or homophily—the tendency of individuals to associate with those who are similar to themselves—could add depth and realism to the model.
+
+Another limitation is the presence of the Heedless compartment only in the Susceptible layer. This restriction can limit the model's accuracy for the infected and recovered compartments since all individuals in $S_H$ transition to $I_C$. Exploring alternative subdivisions of $S_H$ could address this issue, but it would require a thorough and detailed analysis to ensure consistency and reliability.
+
+
+
+\section{Future perspective}
+
+Possible improvements and refinements include:
+\begin{itemize}
+	\item Conducting an analysis based on empirical data to evaluate the model's ability to replicate real behavioral patterns observed during the COVID-19 pandemic.
+	\item Developing a more complex $\psi$ parameter that incorporates information about the disease state (such as incidence or prevalence) or accounts for aspects like the economic costs associated with the disease, to better model the stringency of policies implemented by governments.
+	\item Extending the simulations by exploring different values for the behavior transmission rates, $k_i$, and fatigue to maintain a behavior, $\lambda_i$ terms.\\
+\end{itemize}
+
+
+\noindent To conclude, the present work is significant because it introduces a novel multi-system model that effectively integrates epidemiological and behavioral dynamics, providing insights into how individual and collective behaviors influence the spread of diseases. The model's flexibility allows it to adapt to various scenarios, offering a valuable framework for understanding complex interactions between disease transmission and human behavior. Moreover, the potential to incorporate empirical data and compute the parameters value in this way add interesting future possible developments for the model.

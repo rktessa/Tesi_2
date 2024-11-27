@@ -83,19 +83,21 @@
 \contentsline {subsubsection}{Equilibria of the system}{64}{section*.69}%
 \contentsline {subsubsection}{Equilibria stability analysis}{64}{section*.70}%
 \contentsline {subsubsection}{Equilibrium simulations}{66}{section*.71}%
-\contentsline {subsubsection}{Behavioural model experiment}{69}{section*.76}%
+\contentsline {subsubsection}{Behavioural model experiment}{68}{section*.76}%
 \contentsline {subsubsection}{Heat map Final Equilibrium states}{70}{section*.77}%
-\contentsline {subsubsection}{Heat map of max compartments value}{72}{section*.80}%
-\contentsline {chapter}{\numberline {7}Behavioral epidemic model}{75}{chapter.7}%
+\contentsline {subsubsection}{Heat map of max compartments value}{70}{section*.80}%
+\contentsline {chapter}{\numberline {7}Behavioral-epidemic model}{75}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Model description}{75}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{77}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{80}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Model simulation}{80}{section.7.3}%
+\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{79}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Model simulations}{80}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{82}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.2}%
 \contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{83}{subsection.7.3.3}%
 \contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{84}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{84}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{85}{subsection.7.3.5}%
 \contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{85}{subsection.7.3.6}%
-\contentsline {chapter}{\numberline {8}Conclusions}{87}{chapter.8}%
-\contentsline {chapter}{Bibliography}{89}{chapter.8}%
+\contentsline {chapter}{\numberline {8}Conclusions}{89}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Limitations}{89}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Future perspective}{90}{section.8.2}%
+\contentsline {chapter}{Bibliography}{91}{section.8.2}%

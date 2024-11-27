@@ -1,7 +1,7 @@
 clc;
 clear;
 close all;
-fig = 0; fig2 = 2;
+fig = 0; fig2 = 1;
 %% Set the scenario; first number scenario, second what F/V matrix compute
 caso =[0,3];
 %% Run the code to se R_0, B1, B2 and the three resulting E_0 values
@@ -38,8 +38,8 @@ annotation('textbox',dim, ...
 hold off
 fontsize(26,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 23]);
-set(gcf, 'PaperSize', [28 23]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 26 23]);
+set(gcf, 'PaperSize', [30 23]); % dimension on x axis and y axis resp.
  print(gcf,'-dpdf', "E_0_model_"+fig+title_fig)
 
     % Tile 2
@@ -48,7 +48,7 @@ fig = fig+2;
 figure(fig)
 hold on
 box on
-for i = 1: 1
+for i = 2:d1 
     [E_0, R_0, B1, B2,FV, E_0_simb] = calcolo_E_0_Van(caso(2),beta, gamma,psi_vec(i), rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
     [fig2,x_sh, x_sc, x_sa,y_c, y_a,z_rc,z_ra,time_epi] = epi_behaviour(fig2,beta,gamma,delta_v,rho_v,psi_vec(i),k_1,k_2,k_1,k_2,k_1,k_2,lambda_1,lambda_2,lambda_1,lambda_2,lambda_1,lambda_2,epsilon_v,phi_n,SC_0,SA_0,SH_0, time, E_0_vec(i),title_fig);
     txt = "\psi ="+num2str(psi_vec(i)); 
@@ -69,8 +69,8 @@ annotation('textbox',dim, ...
 hold off
 fontsize(26,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 25 23]);
-set(gcf, 'PaperSize', [28 23]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 35 23]);
+set(gcf, 'PaperSize', [40 23]); % dimension on x axis and y axis resp.
  print(gcf,'-dpdf', "E_0_model_"+fig+title_fig)
 
 
