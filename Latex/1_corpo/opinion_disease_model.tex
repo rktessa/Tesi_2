@@ -57,7 +57,16 @@ To describe the epidemic evolution, a  SIRS model is implemented. It is an exten
 	\item  $\mathcal{R}_0$ is the reproduction number, similar conceptually to the one presented in SIR model, but function of $\beta, \gamma$, and also $\delta$. 
 \end{itemize}
 A SIR-like model is chosen because of its ability to describe diseases like COVID-19; the literature provides numerous examples that use this model \cite{Dehning_2020, Li2022}. The SEIR model could also be a viable choice due to the relevance of the "Exposed" compartment, which effectively captures the disease progression for infections such as COVID-19. In these cases, an incubation period occurs after exposure before symptoms appear and the individual becomes contagious. However, this compartment was excluded because it has been shown \cite{Dehning_2020} that a simpler SIR model can still accurately represent the disease dynamics. When comparing model simulations with real data, a delay can be incorporated to account for the lag between symptom onset, testing, and reporting. This delay reflects the time needed for symptoms to manifest, conduct testing, and report cases to relevant authorities.
-
+The differential system of equations describing the model are
+\begin{equation}
+	\label{eq:SIRS_eq}
+	\begin{cases}
+		\frac{ds}{dt} = -\beta s i + \delta r \\
+		\frac{di}{dt} = \beta s i -  \gamma i \\
+		\frac{dr}{dt}= \gamma i -  \delta r\\
+	\end{cases}
+\end{equation}
+with $s(0) = s_0 \ge 0$, $i(0) \ge 0$ and $r(0) = 0$. The mass conservation assumption holds so $s(t)+i(t)+r(t) =1$.
 The model includes the possibility of reinfection, which is important when studying long-term scenarios. Considering the effect of individual behavior on disease progression, two critical phases are hypothesized to influence this evolution: the initial stages of the epidemic and the period following the first peak.
 
 In the initial stages, the SIRS model behaves similarly to a typical SIR model, because reinfection is unlikely to occur in a short time frame. However, over time, as reinfections become possible, individual attitudes and behaviors increasingly impact the disease spread.
@@ -74,9 +83,10 @@ In the initial stages, the SIRS model behaves similarly to a typical SIR model, 
 
 The development of the behavioral model builds on several works already presented in the literature. In particular, the following mechanisms are considered to be the most relevant:
 \begin{itemize}
-	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}.
+	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}. The implementation is inspired by the Unaware-Aware-Unaware opinion model class \cite{Zuo2022, Peng2021}, refer to Section \ref{subsec:individual_state} and \ref{subsec:multisystem_models}, for how the compartments are linked together and for the idea of social pressure between individuals.
+	
 	\item Non-compliance viewed as a form of social contagion \cite{Bongarti2023}.
-	\item The unaware-aware-unaware opinion model class \cite{Zuo2022, Peng2021}, for how the compartments are linked together and for the idea of social pressure between individuals.
+	 
 	\item The fatigue mechanism, due to which maintaining a certain behavior for long leads to a spontaneous loss of compliance \cite{Epstein_2021}.
 \end{itemize}
 
@@ -162,7 +172,8 @@ To represent different dynamics, four main cases are now presented. The coeffici
 
 The values $k_1$ and $k_2$ can be calculated from the formula of $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
-Figure \ref{fig:model__behavior_sim_1}a shows that, when both Behavior conversion numbers are less than one, social contagion does not spread: even though, in this case, the Compliant and Against compartments together represent $60\%$ of the total population at the beginning of the simulation, they clearly tend to zero over time. In contrast, Figure \ref{fig:model__behavior_sim_1}b shows the case where the two $\mathcal{B}$ values are equal and greater than one. To emphasize the importance of the relations between fatigue and persuasion rate, it is shown that even if the conversion number are equal, a case in which $k_2$  is lower than $k_1$, causes the Compliant compartment to becomes the majority group by the end of the simulation. Here the Against not tend to zero, but the flow between Compliant and Against compartments through the Heedless one appear to be stable at a certain value in which non of the compartments is zero. 
+Figure \ref{fig:model__behavior_sim_1}a shows that, when both Behavior conversion numbers are less than one, social contagion does not spread: even though, in this case, the Compliant and Against compartments together represent $60\%$ of the total population at the beginning of the simulation, they clearly tend to zero over time. In contrast, Figure \ref{fig:model__behavior_sim_1}b shows the case where the two $\mathcal{B}$ values are equal and greater than one. To emphasize the importance of the relations between fatigue and persuasion rate, it is shown that, even if the conversion numbers are equal, (i.e. $k_2$  is lower than $k_1$=), the Compliant compartment becomes the majority group by the end of the simulation. Here the Against do not tend to zero, but there is a rather stable flow between the Compliant and Against compartments, through the Heedles state, such that
+none of the compartments becomes empty.
 
 \begin{figure}[ht]
 	\centering
@@ -170,12 +181,12 @@ Figure \ref{fig:model__behavior_sim_1}a shows that, when both Behavior conversio
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_B2_less_1}} \quad
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_equal_B2}} \\
-	\caption[Behavioural model simulation first]{Behavioral system dynamics first two cases. In the left panel there is the case in which both $B_1$, $B_2$ are less than one. The system tend to an equilibrium in which all individual tend to $H$ compartment. In the right panel, instead the case in which the conversion number are equal, but because $k_1 > k_2$ the Compliant compartment becomes greater than the Against one.}
+	\caption[Behavioural model simulation first]{Behavioral system dynamics first two cases (I and II). In the left panel there is the case in which both $\mathcal{B}_1$,$\mathcal{B}_2$ are less than one. The system tends to an equilibrium in which all individuals tends to the $H$ state. In the right panel, instead the case in which the conversion number are equal, but because $k_1 > k_2$ the Compliant variable becomes greater than the Against one.}
 	\label{fig:model__behavior_sim_1}
 \end{figure}
 \label{subsec:model_behav}
 
-Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenarios. On the left, we observe the dynamics when one of the $\mathcal{B}$ values is greater than the other, and both $\lambda$ values are the same: the compartment with the largest B becomes dominant. It is straightforward to understand that this dynamic would also occur if, with the same values of $\mathcal{B}$, the $\lambda$ of the dominant behavior were greater than the other, as a larger $\lambda$ would be compensated by  a higher $k$ (persuasion rate). The right panel, however, presents a particularly intriguing situation. Here, $\lambda_1$ < $\lambda_2$, combined with $k_2 > k_1$, leads to an initial rapid spread of the Against group, even though $\mathcal{B}_2 < \mathcal{B}_1$! It is only after some time that the system evolves to the final equilibrium, which is the same as in the left scenario, as the $\mathcal{B}$ values are the same in both simulations.
+Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenarios. On the left, we observe the dynamics when one of the $\mathcal{B}$ values is greater than the other, and both $\lambda$ values are the same: the variable with the largest $\mathcal{B}$ becomes dominant. It is straightforward to understand that this dynamic would also occur if, with the same values of $\mathcal{B}$, the $\lambda$ of the dominant behavior were greater than the other, as a larger $\lambda$ would be compensated by  a higher $k$ (persuasion rate). The right panel, however, presents a particularly intriguing situation. Here, $\lambda_1$ < $\lambda_2$, combined with $k_2 > k_1$, leads to an initial rapid spread of the Against group, even though $\mathcal{B}_2 < \mathcal{B}_1$! It is only after some time that the system evolves to the final equilibrium, which is the same as in the left scenario, as the $\mathcal{B}$ values are the same in both simulations.
 
 \begin{figure}[h]
 	\centering
@@ -183,7 +194,7 @@ Figure \ref{fig:model__behavior_sim_2} illustrates two other interesting scenari
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k1_mag_k2}} \quad
 	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/behavior_B1_mag_B2_k2_mag_k1}} \\
-		\caption[Behavioral model simulation second]{Behavioral system dynamics: the second two cases. In the left panel, the scenario depicts Compliant becoming the dominant group, while Against gradually tends toward zero. In the right panel, with the same value for the conversion number but a higher persuasion rate for Against compared to Compliant, the system converges to the same equilibrium as in the left figure. However, it first goes through a phase where the Against group becomes dominant.}
+		\caption[Behavioral model simulation second]{Behavioral system dynamics: the second two cases (III and IV). In the left panel, the scenario depicts Compliant becoming the dominant group, while Against gradually tends toward zero. In the right panel, with the same value for the conversion number but a higher persuasion rate for Against compared to Compliant, the system converges to the same equilibrium as in the left figure. However, it first goes through a phase where the Against group becomes dominant.}
 	\label{fig:model__behavior_sim_2}
 \end{figure}
 
@@ -204,7 +215,7 @@ The original system of three equations, \eqref{eq:behavioural_eq}, has been redu
 	\dot{C} = k_1 H C - \lambda_1 C
 \end{cases}
 \]
-To simplify the readability and use a notation more familiar for plotting,  $H, C$ have been substituted with respectively $x, y$. So the equations become:
+To simplify the readability and use a notation more familiar for plotting,  $H, C$ have been substituted with respectively $x, y$. So, the equations become:
 \begin{equation}
 \label{eq:system_nullclines}
 \begin{cases}
@@ -263,10 +274,16 @@ For each equilibrium point, stability conditions can be expressed as relationshi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent\textbf{Stability of equilibrium $Eq_1$=$(\frac{\lambda_1}{k_1}, 1-\frac{\lambda_1}{k_1})$.} The trace tr$(J(Eq_1)) = - k_1 + \frac{\lambda_1}{k_1}(k_1+k_2) - \lambda_2$ is  less than zero, if $-k_1 + \frac{\lambda_1}{k_1}( k_1 + k_2) - \lambda_2 < 0$. From this we obtained the relation:
 \[\frac{\lambda_1}{k_1} < \frac{k_1 + \lambda_2}{k_1 + k_2} \]
-Instead, the determinant is det$(J(Eq_1)) = k_1 \lambda_2 - \lambda_1 \lambda_2 -k_2 \lambda_1 + k_2 \frac{\lambda_1^2}{k_1}$. The determinant is greater than zero if $k_1^2 \lambda_2+ k_2 \lambda_1^2 - k_1 k_2 \lambda_1 -k_1 \lambda_1 \lambda_2 > 0$. Then, $k_1 \lambda_2(k_1 -\lambda_1) - k_2 \lambda_1 (k_1 - \lambda_1) > 0$, and so $(k_1 - \lambda_1)(k_1 \lambda_2 - k_2) > 0$. The condition is satisfied when both the factors are greater or less than zero. The expressions $\mathcal{B}_1 > 1$ and $\mathcal{B}_1 > \mathcal{B}_2$ satisfy the determinant condition.
-These are compatible with the condition of the trace.
-Due to $\mathcal{B}_1 > 1$, is it true that $\frac{\lambda_1}{k_1} < 1$, and so the trace is negative if $\frac{k_1 + \lambda_2}{k_1 + k_2} > 1$. We find $k_1 + \lambda_2 > k_1 + k_2$ that becomes  $\lambda_2 > k_2$, from which $\mathcal{B}_2 < 1$. This condition is already satisfied by the two find for the determinant. %However, if the initial assumption was that $ \frac{k_1 }{\lambda_1} > 1$, this results can be extended.
-In conclusion, equilibrium $Eq_1$ is certainly locally stable if $\mathcal{B}_1 > 1$, and $\mathcal{B}_1 > \mathcal{B}_2$.\\ 
+Instead, the determinant is det$(J(Eq_1)) = k_1 \lambda_2 - \lambda_1 \lambda_2 -k_2 \lambda_1 + k_2 \frac{\lambda_1^2}{k_1}$. The determinant is greater than zero if
+ \[ k_1^2 \lambda_2+ k_2 \lambda_1^2 - k_1 k_2 \lambda_1 -k_1 \lambda_1 \lambda_2 > 0.\]
+  Then, $k_1 \lambda_2(k_1 -\lambda_1) - k_2 \lambda_1 (k_1 - \lambda_1) > 0$, and so $(k_1 - \lambda_1)(k_1 \lambda_2 - k_2 \lambda_1) > 0$. The condition is satisfied when both factors are greater or less than zero. Considering both factors negative results in a condition $\mathcal{B}_1 < 1$, which has no biological meaning because the equilibrium resulting from this condition would have a negative value.
+
+The conditions $\mathcal{B}_1 > 1$ and $\mathcal{B}_1 > \mathcal{B}_2$ satisfy the determinant condition, but are also compatible with the the trace condition.
+To understand why, let us consider $\mathcal{B}_1 > 1$, which implies $\frac{\lambda_1}{k_1} < 1$. This ensure that the trace wil be negative if the following inequality holds:
+\[\frac{k_1 + \lambda_2}{k_1 + k_2} > 1.\] 
+Simplifying this expression gives $k_1 + \lambda_2 > k_1 + k_2$, which reduces further to  $\lambda_2 > k_2$. This directly implies $\mathcal{B}_2 < 1$. Thus, the trace condition is automatically satisfied by the two conditions already imposed by the determinant, making it redundant.
+In conclusion, equilibrium $Eq_1$ is locally stable if $\mathcal{B}_1 > 1$, and $\mathcal{B}_1 > \mathcal{B}_2$.
+\\ 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent\textbf{Stability of equilibrium $Eq_2=(1,0)$.} Calculating the Jacobian determinant at this point yields the expression det$(J(Eq_2))= - k_2 \lambda_1 + \lambda_1 \lambda_2 + k_1 k_2 - k_1 \lambda_2$. By grouping terms and analyzing the inequality necessary to satisfy the Routh-Hurwitz criterion, this simplifies to $k_1 (k_2 - \lambda_2) - \lambda_1(k_2 - \lambda_2) > 0$, which further reduces to $(k_1 - \lambda_1) (k_2 - \lambda_2) >0$.
@@ -282,17 +299,34 @@ Thus, it can be concluded that equilibrium point $B$ is locally stable only if $
 \noindent\textbf{Stability of equilibrium $Eq_3=(\frac{\lambda_2}{k_2},0)$.} The determinant at this point is given by det$(J(Eq_3)) = k_2 \lambda_1 - \lambda_1 \lambda_2 + k_1 \frac{\lambda_2^2}{k_2} - k_1 \lambda_2 > 0 $. Also here, rearranging terms simplifies the inequality to: $k_2 [\lambda_1 -\lambda_1 \frac{\lambda_2}{k_2} + k_1 \frac{\lambda_2^2}{k_2^2} - k_1 \frac{\lambda_2^2}{k_2}] >0$, $ k_2 [\lambda_1 ( 1 -  \frac{\lambda_2}{k_2}) - k_1 \frac{\lambda_2}{k_2} (1 - \frac{\lambda_2}{k_2})] >0$, which further reduces to:
 
 \[
- k_2 [(\lambda_1 - k_1 \frac{\lambda_2}{k_2})(1 - \frac{\lambda_2}{k_2})] >0
+ k_2 \left[\left(\lambda_1 - k_1 \frac{\lambda_2}{k_2}\right)\left(1 - \frac{\lambda_2}{k_2}\right)\right] >0
 \]
-To satisfy the inequality both terms must have the same sign, as in the previous point $Eq_2$:
+To satisfy the inequality both terms inside the parentisi must have the same sign, as in the previous point $Eq_2$:
 \begin{itemize}
 	\item Case $I:$ $\frac{k_2}{\lambda_2} > \frac{k_1}{\lambda_1} $, and $k_2 > \lambda_2$
  	\item Case $II:$ $\frac{k_2}{\lambda_2} < \frac{k_1}{\lambda_1} $, and $k_2 < \lambda_2$
 \end{itemize}
-The trace value instead corresponds to tr$(J(Eq_3)) = - k_2 + k_2 \frac{\lambda_2}{k_2} + k_1 \frac{\lambda_2}{k_2} - \lambda_1 < 0$, leading to inequality 
-$ \frac{\lambda_2}{k_2} (k_1 + k_2) < k_2 + \lambda_1 $ and hence:
-\[ \frac{\lambda_2}{k_2} < \frac{k_2 +\lambda_1}{k_1 + k_2}.\]
-By choosing Case I, we can ensure that the trace inequality is satisfied. If $k_2 > \lambda_2$, the ratio $\frac{\lambda_2}{k_2}$ is less than one. So, if the right part of inequality is larger than one, the trace condition holds: $\frac{k_2 +\lambda_1}{k_1 + k_2} > 1$, $k_2 +\lambda_1 > k_1 + k_2 $, and finally $\lambda_1 > k_1$. $Eq_3$ is certainly stable if $\mathcal{B}_2> \mathcal{B}_1$, $\mathcal{B}_2 > 1$.  
+
+The trace value is given by:
+\[
+\text{tr}(J(Eq_3)) = -k_2 + k_2 \frac{\lambda_2}{k_2} + k_1 \frac{\lambda_2}{k_2} - \lambda_1 < 0,
+\]
+leading to the inequality:
+\[
+\frac{\lambda_2}{k_2} (k_1 + k_2) < k_2 + \lambda_1,
+\]
+which simplifies to:
+\[
+\frac{\lambda_2}{k_2} < \frac{k_2 + \lambda_1}{k_1 + k_2}.
+\]
+
+Only by choosing Case I, we ensure that the trace inequality is satisfied. If \(k_2 > \lambda_2\), the ratio \(\frac{\lambda_2}{k_2}\) is less than one. Thus, if the right-hand side of the inequality is larger than one, the trace condition holds. Specifically:
+\[
+\frac{k_2 + \lambda_1}{k_1 + k_2} > 1 \implies k_2 + \lambda_1 > k_1 + k_2 \implies \lambda_1 > k_1.
+\]
+
+While the trace condition is satisfied when \(\mathcal{B}_1 < 1\), it is redundant, analogous to the trace condition found for equilibrium \(Eq_1\). Therefore, it can be concluded that equilibrium \(Eq_3\) is stable if \(\mathcal{B}_2 > \mathcal{B}_1\) and \(\mathcal{B}_2 > 1\).
+
  
 \subsection{Equilibrium simulations}
 
@@ -324,15 +358,15 @@ If both the Conversion numbers are less than one, there is only one equilibrium 
 In the Figure \ref{fig:r1r2less1dyn}a, the nullcline plot shows an intersection between the two nullclines only at the point $(1,0)$. Under this condition, the only equilibrium is at $H = 1$, with both $A$ and $C$ equal to zero. Using the notation from the system equation \eqref{eq:system_nullclines}, this corresponds to $x = 1$ and $y = 0$. Calculating the trace and determinant of the Jacobian at this point and with parameters value
 
 
-yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, the equilibrium is locally asymptotically stable, as it satisfies the Routh-Hurwitz condition.
+yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, the equilibrium is locally asymptotically stable, as it satisfies the Routh-Hurwitz condition.\\
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$.}]
+	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$. Point B, corresponding to $Eq_2$ is the stable equilibrium}]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_less_1}} \quad
-	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}]
+	\subfloat[][\emph{$\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 =  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$.} There is not a stable equilibrium in this case.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_B2_equal}} \\
-	\caption[Nullclines first figure]{Nullclines plots of the first two situations analyzed.}
+	\caption[Nullclines first figure]{Nullclines plots of the first two situations analyzed: In (a) the case in which both $\mathcal{B}_1, \mathcal{B}_21$ are less than one. (b) is the phase plane representation when $\mathcal{B}_1 = \mathcal{B}_2 <1$.  }
 	\label{fig:r1r2less1dyn}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -341,14 +375,15 @@ yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, t
 This second situation is the most complex to analyze. Due to the equal value of the two influence processes, the asymptotic value of the state variables cannot be determined solely by the previously established relations but also depends on the initial conditions.
 
 The Heedless density at the equilibrium can still be determined as previously discussed, and the same value is obtained for both $x = \lambda_1/k_1$ and $x = \lambda_2/k_2$. Thus, the final equilibrium value of $x$ is $\bar{x} = 0.12$.
-Also the equilibrium $(1,0)$ is possible, but is certainly unstable with the parameters value considered in this case. As it can be seen from the system evolution \eqref{fig:model__behavior_sim_1}, and nullcline plots \eqref{fig:r1r2less1dyn}, at the equilibrium $\bar{x}$, the Against and Compliant  sums up to $1 - \bar{x}$ part. The ratio between $A$ and $C$ depends on the initial conditions.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2}
-	\caption[Surface nullcline]{The nullcline functions represented as surfaces in a tridimensional space.}
-	\label{fig:surfacenullclineb1equalb2}
-\end{figure}
-Applying the Routh-Hurwitz criterion does not yield information on this equilibrium because the Jacobian determinant equals zero. An explanation for this is that, given the equilibrium alignment of points $A$ and $C$ and the equality of their conversion numbers, the influxes and outfluxes between the Compliant and Against compartments balance. Consequently, the system evolution is influenced by the initial numbers of Compliant and Against individuals, and once the system reaches the equilibrium value of Heedless, it remains in this configuration. Observing the 3D plot in Figure \ref{fig:surfacenullclineb1equalb2} of the complete system, with surfaces for $H$ and $C$, one can visualize a slope where an imaginary inertia-free ball would roll until it settles at the $1/\mathcal{B}_1 = 1/\mathcal{B}_2$  value.\\
+Also the equilibrium $(1,0)$ is possible, but is certainly unstable with the parameter value considered in this case. As it can be seen from the system evolution in Figure \ref{fig:model__behavior_sim_1}, and nullcline plots of Figure \ref{fig:r1r2less1dyn}, at the equilibrium $\bar{x}$, the Against and Compliant  sums up to $ y + z = 1 - \bar{x}$ part, where $y$ represent Compliant and $z$ Against. The ratio between $A$ and $C$ depends on the initial conditions.
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{1_corpo/figure/behavioural_equilibrium/Surface_nullcline_B1_equal_B2}
+%	\caption[Surface nullcline]{The nullcline functions represented as surfaces in a tridimensional space.}
+%	\label{fig:surfacenullclineb1equalb2}
+%\end{figure}
+Applying the Routh-Hurwitz criterion does not yield information on this equilibrium because the Jacobian determinant equals zero. An explanation for this is that, given the equilibrium alignment of points $A$ and $C$ and the equality of their conversion numbers, the influxes and outfluxes between the Compliant and Against compartments balance. Consequently, the system evolution is influenced by the initial numbers of Compliant and Against individuals, and once the system reaches the equilibrium value of Heedless, it remains in this configuration. \\
+%Observing the 3D plot in Figure \ref{fig:surfacenullclineb1equalb2} of the complete system, with surfaces for $H$ and $C$, one can visualize a slope where an imaginary inertia-free ball would roll until it settles at the $1/\mathcal{B}_1 = 1/\mathcal{B}_2$  value.\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -357,28 +392,31 @@ In this scenario, as shown in Figure \ref{fig:nullcline_B1_mag_B2}, there is an 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.}]
+	\subfloat[][\emph{ $\mathcal{B}_1, \mathcal{B}_2 >1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 = \lambda_2$.} The point A, ($Eq_1$) is the stable equilibrium.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2}} \quad
-	\subfloat[][\emph{ $\mathcal{B}_1<1, \mathcal{B}_2 >1$ and $\mathcal{B}_2 >  \mathcal{B}_1$.}]
+	\subfloat[][\emph{ $\mathcal{B}_1<1, \mathcal{B}_2 >1$ and $\mathcal{B}_2 >  \mathcal{B}_1$.} Point C, corresponding to $Eq_3$ is the stable equilibirum.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_less_B2}} \\
-	\caption[Nullclines second figure]{Nullclines plots of the second two situations analyzed.}
+	\caption[Nullclines second figure]{Nullclines plots of the third and fifth cases: in (a) $\mathcal{B}_1 >  \mathcal{B}_2$ and the phase plane arrows point to A equilibrium. In (b), where $\mathcal{B}_1 <  \mathcal{B}_2$, the stable equilibrium is in point B, where there is no Compliant.}
 	\label{fig:nullcline_B1_mag_B2}
 \end{figure}
 
-\noindent\textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
-\label{par:behav_4_case}
-In this situation, the equilibrium has the same value, as in III case, and also the stability condition are verified. However, the nullcline plot is very different as shown in Figure \ref{fig:prnullclineb1_mag_b2_lambda}. 
-In fact, looking at the model simulation in Figure \ref{fig:model__behavior_sim_2}, the system initially evolves to what seems as a first equilibrium, corresponding to $x_{Eq_3} = \lambda_2/k_2$, $y_{Eq_3} = 0$, but then, and it is confirmed by Routh-Hurwitz criterion, this equilibrium is unstable, and so the model continues its evolution until it reaches the locally stable equilibrium. 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.48\linewidth]{1_corpo/figure/behavioural_equilibrium/Pr_nullcline_B1_mag_B2_lambda2_mag}
 	\caption[Nullcline fourth case]{IV case of nullcline simulation. A point (corresponding to $Eq_1)$ is the locally stable equilibrium.}
 	\label{fig:prnullclineb1_mag_b2_lambda}
 \end{figure}
-\noindent\textbf{V case: }$\mathcal{B}_1 < 1$ $\mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$.
-The system's evolution shows opposite behavior compared to the third case, with the Compliant density tending to zero at equilibrium. The right panel of Figure \ref{fig:nullcline_B1_mag_B2}, shows two intersections in the phase plane at points $Eq_2$ and $Eq_3$. At both points, $y=0$, but only point $Eq_3$ is locally stable, as it satisfies the Routh-Hurwitz conditions. The equilibrium point is calculated as $x_{E_q3}= \lambda_2/k_2$ and $y_{E_q3} = 0$. 
+
+\noindent\textbf{IV case: } $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$. \\
+\label{par:behav_4_case}
+In this situation, the equilibrium has the same value, as in III case, and also the stability condition are verified. However, the nullcline plot is very different as shown in Figure \ref{fig:prnullclineb1_mag_b2_lambda}. 
+In fact, looking at the model simulation in Figure \ref{fig:model__behavior_sim_2}, the system initially evolves to what seems as a first equilibrium, corresponding to $x_{Eq_3} = \lambda_2/k_2$, $y_{Eq_3} = 0$. However, this equilibrium is unstable (as verified with the Routh-Hurwitz criterion),and so the model continues its evolution until it reaches the locally stable equilibrium.\\ 
+
+
+\noindent\textbf{V case: $\mathcal{B}_1 < 1$ $\mathcal{B}_2 >1$, $\mathcal{B}_1 <  \mathcal{B}_2$.}\\
+The system's evolution shows opposite behavior compared to the third case, with the Compliant, tending to zero at equilibrium. The right panel of Figure \ref{fig:nullcline_B1_mag_B2}, shows two intersections in the phase plane at points $Eq_2$ and $Eq_3$. At both points, $y=0$, but only point $Eq_3$ is locally stable, as it satisfies the Routh-Hurwitz conditions. The equilibrium point is calculated as $x_{E_q3}= \lambda_2/k_2$ and $y_{E_q3} = 0$. 
 
 
 \subsection{Behavioural model: numerical experiments}
@@ -394,9 +432,9 @@ The resulting $\mathcal{B}_1, \mathcal{B}_2$ have a range spanning between $0.5$
 These ranges are chosen based on the assumption that the "fatigue" rate realistically spans between two and forty days, a range supported by prior research, such as the study in \cite{Kwasnicka_2016}. For the behavior persuasion rate ($k_1$, $k_2$), both low and high values for transition rates are included. We observe the dynamics across all states, recording key metrics for each simulation, such as the final compartment values, peak values, and the time of peak occurrence. Additionally, for generating the sensitivity plots, the Conversion number derived from the coefficient combinations in equation \eqref{eq:behave_rate} are applied. 
 
 \subsubsection{Heat map: asymptotic state values}
-Figure \ref{fig:subfig_sensitivity_behavioural} shows heat maps of the final value reached by the various compartments, for varying $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
-\begin{figure}[h]
+
+\begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{ Compliant }]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Compliant_heat_map}} \quad
@@ -404,55 +442,76 @@ Figure \ref{fig:subfig_sensitivity_behavioural} shows heat maps of the final val
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Against_heat_map}} \\
 	\subfloat[][\emph{ Heedless }]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/Final_Heedless_heat_map}}
-	\caption[Final Behavioural compartments]{The asymptotic value reached at the equilibrium by the variables in the behavioral model.}
+	\caption[Final Behavioural variables]{The asymptotic value reached at the equilibrium by the variables in the behavioral model.}
 	\label{fig:subfig_sensitivity_behavioural}
 \end{figure}
+Figure \ref{fig:subfig_sensitivity_behavioural} shows heat maps of the final value reached by the various variables, for varying $\mathcal{B}_1$ and $\mathcal{B}_2$.
+The threshold effect observed in the stability analysis performed earlier is clearly visible. While one of the reproduction ratios becomes larger than the other, the population is composed of the dominant group from either $C$ and $A$ and plus a number of Heedless individuals. The larger are $\mathcal{B}_1$ and $\mathcal{B}_2$, and the more distant from 1 is their ratio, the  smaller is the equilibrium fraction of the Heedless. Considering Figure \ref{fig:subfig_sensitivity_behavioural}a, until $\mathcal{B}_1 > \mathcal{B}_2$ Compliant behavior is dominant. Then, in the area of the heat map where the conversion number $\mathcal{B}_1, \,\mathcal{B}_2$ are similar (which correspond to the diagonal clearly visible) the two groups have similar density. Finally, when $\mathcal{B}_1$ becomes smaller than $\mathcal{B}_2$, the Compliant abruptly tend to zero. This threshold effect can also be observed in Figure \ref{fig:subfig_sensitivity_behavioural_r1}.
 
-The threshold effect observed in the stability analysis performed earlier is clearly visible. While one of the reproduction ratios becomes larger than the other, the population is composed of the dominant group between $C$ and $A$ and a number of Heedless individuals. The larger are $\mathcal{B}_1$ and $\mathcal{B}_2$, and the more distant from 1 is their ratio, the  smaller is the equilibrium fraction of the Heedless. Considering the left panel in figure \ref{fig:subfig_sensitivity_behavioural}, if the heat map of Compliant is pass through vertically, clearly until $B_1 > B_2$, at the equilibrium there are still compliant. Then, when $B_1 > B_2$, the compliant abruptly tend to zero. 
-
-Another figure in which this threshold effect can be observed is \ref{fig:subfig_sensitivity_behavioural_r1}.
-
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
-	\subfloat[][\emph{Final Compliant compartment}]
+	\subfloat[][\emph{ Compliant }]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_compliant_B1}} \quad
-	\subfloat[][\emph{Final Against compartment}]
+	\subfloat[][\emph{ Against }]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_against_B1}} \\
-	\subfloat[][\emph{Final Careless compartment}]
+	\subfloat[][\emph{ Heedless }]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/final_heedless_B1}}
-	\caption[Final Behavioural compartments varying $B_1$]{The final value reached at equilibrium by every compartment in the behavioural model varying the $R_1$ coefficient w.r.t different $B_2$ values.}
+	\caption[Final Behavioural variables varying $\mathcal{B}_1$]{The asymptotic value reached at the equilibrium by every variable in the behavioural model as a function of $\mathcal{B}_1$ for different $\mathcal{B}_2$ values.}
 	\label{fig:subfig_sensitivity_behavioural_r1}
 \end{figure}
-The plots show how, for a fixed values of $\lambda_1$ and $k_2$, the size at equilibrium of the system changes, varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, on the x-axis is plotted the $\mathcal{B}_1$  coefficient, that can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $\mathcal{B}_2$ situations are represented. 
+The plots show how, for a fixed values of $\lambda_1$,$\lambda_2$ and $k_2$, the equilibrium value of the variables changes when varying the $k_1$ coefficient. To highlight the threshold effect due to the comparison of reproduction rates, the x-axis reports $\mathcal{B}_1$, which can be calculated knowing the value of  $\lambda_1$ and $k_1$. For the same reason, different $\mathcal{B}_2$ are considered. 
 
-The threshold effect is clearly visible here as well. When examining the final values for the Compliant and Against compartments, it is evident that once the $\mathcal{B}_1$ reproductive coefficient becomes dominant, the increase in the final size observed in the Compliant compartment results from a decrease in the Careless compartment.
+The threshold effect is clearly visible here as well. When examining the final values for the Compliant and Against variables, it is evident that once the $\mathcal{B}_1$ reproductive coefficient becomes dominant, the increase in the final size observed in the Compliant variable results from a decrease in the Against variable.
 
-\subsubsection{Heat map of max compartments value}
-Additionally, the peak values reached by the Compliant and Against compartments are observed. Figures \ref{fig:max_against}, and \ref{fig:max_against2} illustrate the maximum value reached by the Against compartment.
-Two situations are compared: in the first $k_1 \sim k_2$, while in the other the difference between the two parameter is higher. In the first situation, there are visible three possible situations:
+\subsubsection{Heat map of peak values}
+We consider the peak values reached by the Compliant and Against variables. Figure \ref{fig:max_against} illustrates the maximum value reached by the Against variable. Instead, Figure \ref{fig:max_against2} shows the evolution of Against, in different simulations where $k_1, k_2, \lambda_1$ are kept constant, and different $\lambda_2$ are considered.
+In both Figures, two situations are compared: in the first, $k_1 \sim k_2$, while in the other the difference between the two parameters is higher. Figure \ref{fig:max_against} shows three possible situations:
+
 \begin{itemize}
-	\item $B_2 $ greater than $B_1$, and the max value correspond to the value at Equilibrium. It is the bottom right part of the picture.
-	\item $B_2 < B_1$, but $\lambda_2 > \lambda_1$. These cases are located on the diagonal threshold of the heat map, and are the situations in which there is first a peak of A, but then the C is the dominant group at equilibrium
-	\item $B_2 < B_1$ and also $\lambda_2 < \lambda_1$. Here there is no peak, and A tends always to zero, or to remain approximately zero, depending on the initial conditions.
+	\item $\mathcal{B}_2 > \mathcal{B}_1$, and the maximum value corresponds to the value at the Equilibrium. It is the bottom right part of the picture.
+	\item $\mathcal{B}_2 < \mathcal{B}_1$, but $\lambda_2 > \lambda_1$. These cases are located on the diagonal threshold of the heat map, and are the situations in which there is first a peak of $A$, but then $C$ is the dominant group at the equilibrium.
+	\item $\mathcal{B}_2 < \mathcal{B}_1$ and also $\lambda_2 < \lambda_1$. Here there is no peak, and $A$ tends always to zero, or remain approximately zero, depending on the initial conditions. It is the top left part of pictures. 
 \end{itemize}
-These three phenomena are visible also in Figure \ref{fig:max_against2}, in the left panel. Both the right panels in the two figures need as a comparison, to highlight the situation in which, havin a larger persuasion rate, the A is always dominant on the other compartment. As a consequence the peak correspond always to the value at equilibrium, and in no case, the C compartment at equilibrium is different to zero. 
-\begin{figure}[h]
+
+In Figure \ref{fig:max_against}a, \(k_1 \sim k_2\), and the heatmap clearly shows the threshold effect when \(\mathcal{B}_1\) becomes larger than \(\mathcal{B}_2\). The transition of the peak value is not as abrupt as the one shown in Figure \ref{fig:subfig_sensitivity_behavioural}, as it reflects scenarios where there is a peak of \(A\) before reaching the asymptotic value.
+These scenarios are similar to those presented in Case IV of the simulation discussed earlier in Section \ref{par:behav_4_case}.
+ Figure \ref{fig:max_against2}a illustrates examples of scenarios that follows this change in the dynamics: depending on the considered value of \(\lambda_2\), the evolution of \(A\) varies. In certain scenarios, \(A\) becomes dominant, while in others, it shows a peak and then tends toward zero.
+
+
+Figures \ref{fig:max_against}b, \ref{fig:max_against2}b represent the situation with $k_2 \gg k_1$. Here the Against is always dominant for every combination of $\lambda_1, \lambda_2$.
+The red vertical line, called "section line" in Figure \ref{fig:max_against}, represents the part of the heat map, with the same parameters values used in the simulation in Figure \ref{fig:max_against2}.
+
+\begin{figure}
 	\centering
-	\subfloat[][\emph{Max Against compartment with $k_1 \sim k_2 $}]
+	\subfloat[][Maximum value of the Against variable with $k_1 \sim k_2 $]
 	{\includegraphics[width=.48\textwidth, valign= t]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_1}} \quad
-	\subfloat[][\emph{Max Against compartment with $k_1 < k_2 $}]
+	\subfloat[][Maximum value of the Against variable with $k_1 < k_2 $]
 	{\includegraphics[width=.48\textwidth, valign= t]{1_corpo/figure/behavioural_equilibrium/max_againste_heatmap_2}} \\
-	\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
+	\caption[Maximum Against]{ The peak value of Against variable varying the $\lambda_1, \lambda_2$.}
 	\label{fig:max_against}
 \end{figure}
-The first case confirms the dynamics presented earlier in the model simulation in section \ref{subsec:model_behav}. This relationship between the departure rate associated with a certain behavior and the persuasion rate can lead to an initial phase where a behavior not dominant at equilibrium gains traction, reaches a peak, and then gradually declines. In some simulations, this diminishing phase can extend over a significant portion of the simulation time, as illustrated in Figure \ref{fig:model__behavior_sim_2}. The red line, called "section line" in Figure \ref{fig:max_against}, represents the part of the heat map, with the same parameters values used in the simulation of the below figure \ref{fig:max_against2}.
-\begin{figure}[h]
+
+\begin{figure}
 	\centering
-	\subfloat[][\emph{Against simulation with $k_1 \sim k_2$.}]
+	\subfloat[][Against simulation, with $k_1 \sim k_2$.]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_1}} \quad
-	\subfloat[][\emph{Against simulation with $k_1< k_2$.}]
+	\subfloat[][Against simulation, with $k_2 \gg k_1$.]
 	{\includegraphics[width=.48\textwidth]{1_corpo/figure/behavioural_equilibrium/against_evolution_vari_2}} \\
-		\caption[Max against first case]{a) The max value of Against varying the $\lambda_1, \lambda_2$. b) The evolution of several Against compartment dynamic, fixing $k_1, \lambda_1$, and $k_2$ and varying only the $\lambda_2$.}
+		\caption[Max against first case]{The evolution of the Against variable, fixing $k_1, \lambda_1$, and $k_2$ and varying only  $\lambda_2$.}
 	\label{fig:max_against2}
 \end{figure}
 
+\subsubsection{Conclusions}
+
+
+In this chapter, we have introduced the SIRS model and conducted an in-depth study of the behavioral model. We have outlined the modeling choices underlying its design and analyzed the system's possible evolutions both analytically and through simulations. 
+
+The key findings from the behavioral model analysis are as follows:  
+\begin{itemize}
+	\item For a behavior to spread within the population, its transmission rate, \( k_i \), must exceed the fatigue associated with maintaining it, \( \lambda_i \), where \( i = 1, 2 \). This condition translates into requiring the reproduction conversion number to be greater than one, \( \mathcal{B}_i > 1 \).  
+	\item When two opposing behaviors coexist in the same system, if both have \( \mathcal{B}_i > 1 \), the behavior with the higher \( \mathcal{B}_i \) value becomes dominant asymptotically, while the other behavior diminishes to negligible levels.  
+	\item If the two behaviors have the same \( \mathcal{B}_i \) value, the initial proportions of Compliant and Against individuals in the population determine the final distribution, as the influxes and outfluxes between the compartments tend to balance each other.  
+	\item A behavior may have a lower reproduction conversion number, \( \mathcal{B}_i \), than the other, yet exhibit a higher \( k_i \) and \( \lambda_i \). For example, consider the case where \( k_1 = 0.1 \), \( \lambda_1 = 0.01 \), and \( k_2 = 0.3 \), \( \lambda_2 = 0.15 \). The corresponding conversion numbers are \( \mathcal{B}_1 = \frac{k_1}{\lambda_1} = 10 \) and \( \mathcal{B}_2 = 2 \). In this scenario, the system does not immediately converge to the behavior associated with \( \mathcal{B}_1 \). Instead, due to the higher transmission rate \( k_2 \), behavior 2 initially spreads at the expense of behavior 1. Over time, however, behavior 2's high fatigue cost (\( \lambda_2 \)) leads individuals to abandon it in favor of behavior 1, which is less attractive but also much less hard to sustain. This situation can be interpreted as a transitory popular trend, where a rapidly adopted behavior eventually gives way to a more stable alternative.  
+\end{itemize}  
+
+The insights gained here form the foundational toolkit required to accurately interpret the results arising from coupling the SIRS model with the behavioral model. In the next chapter (\ref{ch:epi_behav_model}), we present the design and the results of this coupling.

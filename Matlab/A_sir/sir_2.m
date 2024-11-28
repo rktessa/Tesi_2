@@ -86,13 +86,13 @@ figure(i)
 box on
 hold on
 % yyaxis left
-plot(taxis,xaxis3, 'linewidth',1.1 )
-plot(taxis,yaxis3, 'linewidth',1.1)
-plot(taxis,zaxis3, 'linewidth',1.1)
+plot(taxis,xaxis3, 'linewidth',2 )
+plot(taxis,yaxis3, 'linewidth',2)
+plot(taxis,zaxis3, 'linewidth',2)
 xlabel("t[days]");
 ylabel("s[t], i[t], r[t]");
 yyaxis right
-plot(taxis,(beta/gamma).*xaxis3./N, 'linewidth',1.1)
+plot(taxis,(beta/gamma).*xaxis3./N, 'linewidth',2)
 yline(1, "--")
 ylim([0 7])
 ylabel("R[t]");
@@ -100,46 +100,56 @@ title("SIR MODEL")
 legend('s','i','i', 'R[t]', Orientation='horizontal', Location='southoutside')
 txt = {['\beta = ' num2str(beta)],['\gamma = ' num2str(gamma)]};
     text(220,2.9,txt)
-fontsize(20,"points")
+fontsize(30,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 24 15]);
-set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 24 20]);
+set(gcf, 'PaperSize', [24 20]); % dimension on x axis and y axis resp.
 print(gcf,'-dpdf', ['sir_con_rt.pdf'])
 
+les3= -3.*ones(1,length(xaxis));
 
 i = i+1;
 figure(i)
 box on
 hold on
-plot(taxis,xaxis,'.','Color', [0 0.4470 0.7410],'HandleVisibility','off' )
-plot(taxis,yaxis, 'linewidth',1.1,'Color', [0 0.4470 0.7410],'DisplayName','\beta = 0.45' )
-plot(taxis,zaxis, 'LineStyle', "--",'Color', [0 0.4470 0.7410],'HandleVisibility','off')
+%0
+plot(taxis,les3,':','DisplayName','s','Color','k','linewidth',2)
+plot(taxis,les3,'DisplayName','i' ,	'Color','k', 'linewidth',2)
+plot(taxis,les3,'--','DisplayName','r',	'Color','k','linewidth',2)
+%1
+plot(taxis,xaxis,':','Color', [0 0.4470 0.7410],'linewidth',3,'HandleVisibility','off' )
+plot(taxis,yaxis, 'linewidth',2,'Color', [0 0.4470 0.7410],'DisplayName','\beta = 0.45' )
+plot(taxis,zaxis, 'LineStyle', "--",'Color', [0 0.4470 0.7410],'linewidth',3,'HandleVisibility','off')
 %2
-plot(taxis,xaxis2,'.','Color', [0.8500 0.3250 0.0980],'HandleVisibility','off')
-plot(taxis,yaxis2, 'linewidth',1.1,'Color', [0.8500 0.3250 0.0980],'DisplayName','\beta = 0.35')
-plot(taxis,zaxis2, 'LineStyle', "--",'Color', [0.8500 0.3250 0.0980],'HandleVisibility','off')
+plot(taxis,xaxis2,':','Color', [0.8500 0.3250 0.0980],'linewidth',3,'HandleVisibility','off')
+plot(taxis,yaxis2, 'linewidth',2,'Color', [0.8500 0.3250 0.0980],'DisplayName','\beta = 0.35')
+plot(taxis,zaxis2, 'LineStyle', "--",'Color', [0.8500 0.3250 0.0980],'linewidth',3,'HandleVisibility','off')
 %3
-plot(taxis,xaxis3,'.','Color', [0.4940 0.1840 0.5560],'HandleVisibility','off')
-plot(taxis,yaxis3, 'linewidth',1.1,'Color', [0.4940 0.1840 0.5560],'DisplayName','\beta = 0.3')
-plot(taxis,zaxis3, 'LineStyle', "--",'Color', [0.4940 0.1840 0.5560],'HandleVisibility','off')
+plot(taxis,xaxis3,':','Color', [0.4940 0.1840 0.5560],'linewidth',3,'HandleVisibility','off')
+plot(taxis,yaxis3, 'linewidth',2,'Color', [0.4940 0.1840 0.5560],'DisplayName','\beta = 0.3')
+plot(taxis,zaxis3, 'LineStyle', "--",'Color', [0.4940 0.1840 0.5560],'linewidth',3,'HandleVisibility','off')
 %4
-plot(taxis,xaxis4,'.','Color', [0.4660 0.6740 0.1880],'HandleVisibility','off')
-plot(taxis,yaxis4, 'linewidth',1.1,'Color', [0.4660 0.6740 0.1880],'DisplayName','\beta = 0.25')
-plot(taxis,zaxis4, 'LineStyle', "--",'Color',[0.4660 0.6740 0.1880],'HandleVisibility','off')
+plot(taxis,xaxis4,':','Color', [0.4660 0.6740 0.1880],'linewidth',3,'HandleVisibility','off')
+plot(taxis,yaxis4, 'linewidth',2,'Color', [0.4660 0.6740 0.1880],'DisplayName','\beta = 0.25')
+plot(taxis,zaxis4, 'LineStyle', "--",'Color',[0.4660 0.6740 0.1880],'linewidth',3,'HandleVisibility','off')
 %5
-plot(taxis,xaxis5,'.','Color', [0.6350 0.0780 0.1840],'HandleVisibility','off')
-plot(taxis,yaxis5, 'linewidth',1.1,'Color', [0.6350 0.0780 0.1840],'DisplayName','\beta = 0.19')
-plot(taxis,zaxis5, 'LineStyle', "--",'Color',[0.6350 0.0780 0.1840],'HandleVisibility','off')
+plot(taxis,xaxis5,':','Color', [0.6350 0.0780 0.1840],'linewidth',3,'HandleVisibility','off')
+plot(taxis,yaxis5, 'linewidth',2,'Color', [0.6350 0.0780 0.1840],'DisplayName','\beta = 0.19')
+plot(taxis,zaxis5, 'LineStyle', "--",'Color',[0.6350 0.0780 0.1840],'linewidth',3,'HandleVisibility','off')
 title("SIR MODEL")
-legend("AutoUpdate","off",  Orientation='horizontal', Location='southoutside')
+legend("AutoUpdate","off",  Orientation='horizontal', Location='southoutside',NumColumns = 4)
 txt = {['\gamma = ' num2str(gamma)],['1/\gamma = ' num2str(1/gamma)]};
-text(230,0.4,txt)
+ylim([0 1]);
+% text(230,0.4,txt)
+dim = [.95 .85 .1 .1];
+annotation('textbox',dim, ...
+    'String',txt,'EdgeColor','none')
 xlabel("t[days]");
 ylabel("s[t], i[t], r[t]");
-fontsize(20,"points")
+fontsize(30,"points")
 set(gcf, 'PaperUnits', 'centimeters');
-set(gcf, 'PaperPosition', [0 0 24 15]);
-set(gcf, 'PaperSize', [24 15]); % dimension on x axis and y axis resp.
+set(gcf, 'PaperPosition', [0 0 29 25]);
+set(gcf, 'PaperSize', [33 25]); % dimension on x axis and y axis resp.
  print(gcf,'-dpdf', ['sir_multipli_beta.pdf'])
 
 %% Runge Kutta second order solution of SIR      

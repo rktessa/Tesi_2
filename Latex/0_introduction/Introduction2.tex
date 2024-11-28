@@ -7,11 +7,12 @@ In this chapter, we present the main objectives of the thesis and describe its s
 	\item How can population behaviors be effectively included in epidemiological models? What are the characteristics that must be considered?
 	\item Can individual behavior influence the evolution of an epidemic?
 	\item Can an outbreak be stopped just  by relying on the natural subdivision of the population into compliant and non-compliant groups regarding safety measures, or is the intervention of a central "controller" necessary to enforce new behavior rules?
+	%\item The quantity and quality of information available to the population can make a difference in how people deal with difficult situations?
 %	\item Is it useful for the model to create a quantity that express awareness of the society about the disease state? 
 \end{itemize}
 %About the last question, consciousness or awareness is a parameter considered useful to gain insight into society's reaction to the disease. Furthermore, there can be differences in behavior when the same conditions occur at different times, such as at the beginning of an outbreak versus several months later. For this reason, it is imagined a parameter that can change its value according to such dynamic and then it is tested how effectively is in the model. 
 
-The quantity and quality of information available to the population can make a difference in how people deal with difficult situations.
+
 
 Starting from these questions, the following objectives have been identified:
 \begin{itemize}
@@ -22,12 +23,18 @@ Starting from these questions, the following objectives have been identified:
 \end{itemize}
 The thesis is structured as follows. The introductory Chapter \ref{ch:theo_back} presents the main concepts of social science and epidemiology and provides all the necessary information to understand the presented research, including a glossary of the most important terms and an overview of the mathematical tools used in epidemiology. Additionally,  different models implemented to simulate an epidemic are shown in Section \ref{sec:models_categ}, with a focus on the properties of mean fields model, used in the thesis. Furthermore, a historical background of the research field is provided to give a perspective on the principal milestones.
 
-Chapter \ref{ch:literature_review} offers a review of the literature analyzed for the thesis. The articles are categorized into different main topics: epidemiology theories, opinion models, behavior models, and multi-agent and multi-system models. This subdivision highlights the most interesting aspects of each work and identifies the elements that have been considered for inclusion in the thesis.
+Chapter \ref{ch:literature_review} offers a review of the literature analyzed for the thesis. The articles are categorized into different main topics: epidemiology theories, opinion models, behavior models, and multi-agent and multi-system models. This subdivision highlights the most interesting aspects of each work and identifies the elements that have been considered for inclusion in the thesis.\\
 
-The second part of the thesis is composed of four main chapters. In chapter \ref{ch:why_new} the reasons that led to the development of a new model are presented.
-In Chapter \ref{ch:model_alone}, the developed epidemiological and behavioral models are simulated. The SIRS epidemic model is presented, and its features are described. Conversely, the behavioral model developed for the thesis is introduced, the assumptions made for its dynamics are explained, and a set of simulations and analyses is performed. This analysis is conducted to gain a clear understanding of how the hypothesized social dynamics can evolve and to develop initial insights crucial for understanding the behavior of the fully coupled final model.
+
+\noindent The second part of the thesis is composed of four main chapters.
+
+In Chapter \ref{ch:why_new} the reasons that led to the development of a new model are presented.
+
+In Chapter \ref{ch:model_alone}, the developed epidemiological and behavioral models are simulated. The SIRS epidemic model is introduced, and its main features are described. The behavioral model developed for the thesis is also introduced, the assumptions made for its dynamics are explained, and a set of simulations and analyses is performed. This analysis is conducted to gain a clear understanding of how the hypothesized social dynamics can evolve and to develop initial insights to better understand the behavior of the fully coupled final model.
+
 Chapter \ref{ch:epi_behav_model} presents the model resulting from the integration of the two layers, forming part of a more complex multi-system model. The implementation of this coupling is explained, detailing how the mutual influence between the two components operates. The main features of this model are analyzed using both simulations and insights gained from calculating the epidemic reproduction number. In fact, the threshold effect, which explains whether a disease-free equilibrium can evolve into an epidemic, is determined, and its value is calculated under varying model scenarios.
-Finally the last chapter contains the conclusions of the thesis. 
+
+Finally, the last chapter \ref{ch:conclusions} contains the conclusions of the thesis. 
 \chapter{Theoretical background}
 \label{ch:theo_back}
 \section{Epidemiological theory: foundations}
@@ -50,7 +57,7 @@ Subsequently, the most commonly used mathematical tools are introduced, includin
 
 The research field regarding the development of techniques to understand how epidemics can evolve over time has a history dating back to the 20th century. The first important discovery in this field must be attributed to the scientists that found the mechanism used by diseases to spread. 
 A first innovative work was the one by John Snow, who during an epidemic of Cholera in London in 1854 successfully determined the source of the infection, even without knowing its etiological agent. Further advances in the microbiological research were due to Pasteur and Koch. They found the etiological agent of disease, enabling the possibility to treat and prevent people from being infected. Then, Hamer's work in 1906 added a first major theoretical contribution. He formulated a theory about the correlation between the course of an epidemic and the interaction, or contact ratio, between susceptible and infectious individuals. It was the so called “mass action” principle. The number of contacts between these two groups determines the spread rate of the disease. 
-This law, originally written in discrete time, was then updated in 1908 by Ross, who wrote it  in continuous time. For the first time the problem could be studied using a clearly, well defined mathematical theory. Then the contributions of Kermack and McKendrick in 1927 added another fundamental principle to the modern epidemiology. They formulated a threshold theory explaining which conditions can generate the development of an epidemic. Their theorem states that a certain value -called reproduction number- must be exceed, depending on the proportion of susceptible and infectious individual. Monitoring this value allows us to understand if the number of infections will increase, until a peak is reached, or if the epidemic is in a descendent phase \cite{Mata2021, Anderson_82}. 
+This law, originally written in discrete time, was then updated in 1908 by Ross, who wrote it  in continuous time. For the first time the problem could be studied using a clearly, well defined mathematical theory. Then the contributions of Kermack and McKendrick in 1927 added another fundamental principle to the modern epidemiology. They formulated a threshold theory explaining which conditions can generate the development of an epidemic. Their theorem states that a certain value -- called reproduction number -- must be exceed, depending on the proportion of susceptible and infectious individual. Monitoring this value allows us to understand if the number of infections will increase, until a peak is reached, or if the epidemic is in a descendent phase \cite{Mata2021, Anderson_82}. 
 Their contribution based on the mass action principle represents the fundation for the mean field model theory, presented and analyzed in Section \ref{subsec:SIR}. 
 
 
@@ -60,7 +67,7 @@ For a better comprehension of the subject analyzed in the present work, a list o
 
 \subsubsection{CFR, IFR and mortality excess} The case fatality rate, CFR, is the ratio between the number of deaths due to a specific disease and the total number of confirmed positive cases detected by testing. 
 The infection fatality rate, IFR, is instead the percentage of people infected with the disease that are expected to die. The two quantities can have a similar value: if every person who contracts the disease and every death attributable to the disease is known and recorded, then the CFR will equal the IFR.
-The excess in mortality can be calculated by observing the difference between the total death rate (due to any reason) before and during an epidemic and one without. 
+The excess in mortality can be calculated by observing the difference between the total death rate (due to any reason) before and during an epidemic. 
 
 
 \subsubsection{Disease transmission} A disease can spread in different ways: 
@@ -70,7 +77,7 @@ The excess in mortality can be calculated by observing the difference between th
 		\item Food or water borne: ingesting contaminated food or water. 
 		\item Vector born: the contagion is mediated by infected animals.
 	\end{itemize}
-	Furthermore, when the spread is within the same generation the transmission is called horizontal, while vertical transmission is the one between different generations, from parents to children. 
+	Furthermore, when the spread is within the same generation, the transmission is called horizontal, while vertical transmission is the one between different generations, from parents to children. 
 	Zoonosis is the phenomenon in which a disease that starts in an animal species mutates and infects humans. The opposite can also happen and it is called inverse-zoonosis. 
 
 \subsubsection{Endemic disease} It is a disease that lasts for a long time and requires consideration of its impact on population renewal and in the number of susceptible individuals.
@@ -78,7 +85,7 @@ The excess in mortality can be calculated by observing the difference between th
 \subsubsection{Epidemic disease} An increase in disease prevalence typically manifests as a rapid outbreak. This type of illness is confined to a limited geographical region, unlike a pandemic that affects a much larger area.
 
 \subsubsection{Immunity and herd immunity}
-Immunity refers to the protection from a disease gained after contracting it (or after the vaccination). This immunity can be lifelong or diminish over time. When a person is immune, re-exposure to the virus does not result in infection, or there is only a reduced chance of being infected, known as partial immunity.
+Immunity refers to the protection from a disease gained after contracting it (or after vaccination). This immunity can be lifelong or diminish over time. When a person is immune, re-exposure to the virus does not result in infection, or there is only a reduced chance of being infected, known as partial immunity.
 
 Herd immunity is a phenomenon where a large portion of the population becomes immune, either through vaccination or surviving the disease. This majority limits the spread of the illness, indirectly protecting those who are not immune by slowing or halting disease transmission.
 
@@ -129,7 +136,7 @@ To establish a framework suitable for developing and understanding behavioral mo
 
 \subsubsection{Group decision-making} It is a phenomenon at the intersection of psychology, management, biology, and applied mathematics studying how people in groups interact, exchange information, and realize decisions. The decision made by the group is no longer attributable to any single individual but to the whole group. 
 
-\subsubsection{Homophily} The tendency to bond and associate preferentially with similar others. 
+\subsubsection{Homophily} The tendency to bond and associate preferentially with others that are similar. 
 
 \subsubsection{Information} The term "information" is commonly understood as "knowledge communicated." However, given its crucial role in modern society, there is considerable debate about its various meanings \cite{Capurro_2003}. Today’s world is often described as an "information society," where the advancement of information technology has impacted nearly every aspect of life.
 
@@ -186,7 +193,7 @@ For example, both a SIR (Susceptible- Infectious-Recovered) \cite{Dehning_2020} 
   
 In mean-field class of models, the primary focus is to describe the spread of the disease rather than its biological impact on the health of each infected individual. The transitions between compartments (such as Susceptible, Infected, and Recovered) are governed by differential equations. The parameters that control these transitions are coefficients whose interpretation depends on the underlying assumptions of the model. For example the $\gamma$ parameter is usually interpreted as the inverse of the time an individual spend in the infectious compartment. Mathematically, these parameters determine the rate of flow between compartments. 
 
-The most critical metric in this model category is the "Basic Reproduction Number" (often denoted as $R_0$), which represents the average number of secondary infections caused by a single infected individual in a fully susceptible population. It is a fundamental threshold in epidemiology, indicating the potential severity of an outbreak \cite{Hernandez_Vargas_2022}. By observing the value of $R_0$, it is possible to immediately determine whether a newly developed disease can spread within the susceptible population and cause an outbreak leading to an epidemic.
+The most critical metric in this model category is the "Basic Reproduction Number" (often denoted as $\mathcal{R}_0$), which represents the average number of secondary infections caused by a single infected individual in a fully susceptible population. It is a fundamental threshold in epidemiology, indicating the potential severity of an outbreak \cite{Hernandez_Vargas_2022}. By observing the value of $\mathcal{R}_0$, it is possible to immediately determine whether a newly developed disease can spread within the susceptible population and cause an outbreak leading to an epidemic. In fact, if $\mathcal{R}_0 > 1$, the disease can generate an epidemic, whereas if $\mathcal{R}_0 < 1$, the disease dies out.
 \begin{figure}[]
 	\centering
 	\includegraphics[width=0.65\linewidth]{0_introduction/images_introduction/SIRS_figure_compartmental}
@@ -197,19 +204,17 @@ The most critical metric in this model category is the "Basic Reproduction Numbe
 
 \subsubsection{SIR model}
 \label{subsec:SIR}
-The foundational model for studying epidemics mathematically is the SI model. In this model, the population is divided into two compartments: Susceptible $(S)$ and Infected $(I)$. Individuals transition from being susceptible to infected, but there is no recovery, meaning once infected, individuals remain infectious indefinitely.
-
-T SIR model adds a third compartment, Recovered or Removed $(R)$. This additional compartment represents individuals who have either gained immunity or have died, and are thus removed them from the cycle of infection. After spending a certain period in the infected state, individuals transition to the recovered state, making them no longer susceptible to the disease.
-Now to begin introduce the SIR model structure, first its compartments subdivision is presented. The population or density of individuals is sub-divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
-The symbols used to indicate the fractions of population in each group are instead $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of individuals in each one. 
+The foundational model for studying epidemics mathematically is the SI model. In this model, the population is divided into two compartments: Susceptible $(S)$ and Infected $(I)$. Individuals transition from being susceptible to infected, but there is no recovery, meaning that individuals can remain infectious indefinitely. Alternatively, in the SIS model class, once individuals are healed, they become again susceptible, so no immunity is acquired.
+The SIR model adds a third compartment, Recovered or Removed $(R)$. This additional compartment represents individuals who have either gained immunity or have died, and are thus removed them from the cycle of infection. After spending a certain period in the infected state, individuals transition to the recovered state, making them no longer susceptible to the disease, so in the SIR model the population or density of individuals is sub-divided into three groups: Susceptible, Infectious, and Recovered. At time $t$ the three groups are identified with the symbols: $S(t)$, $I(t)$, and $R(t)$. 
+The symbols used to indicate the fractions of population in each group are instead $s$, $i$, and $r$, while the capital letters are used to specify both the name of the groups or the absolute number of individuals in each one. Like for the SI model, waning of immunity can be captured also in the SIR model, turning it into a SIRS by introducing an additional parameter driving the transition from R to S (see Figure \ref{fig:sirsfigurecompartmental}).
 
 The SIR model, which will be described in the following sections, is built upon several assumptions that shape the mathematical framework. These guiding principles are introduced in the following paragraphs. Furthermore, the main properties of the model will also be introduced. 
 
 \subsubsection{Mean-field approximation}
 The approximation that gives the name to this model class is based on a method that permits the analytical analysis of complex systems. With mean-field, individual-level interactions are averaged, focusing not on individual behavior but on the collective behavior of the population. Using this method, equations can be derived that describe disease evolution in terms of average rates rather than tracking individual agents.
 \subsubsection{Homogeneus mixing} 
-It is the assumption that all individuals in the population mix homogeneously, meaning that the probability of interacting with any individual is the same. It is a strong assumption because it implies ignoring any spatial or social structure.
-\subsection{Average rates of changes}
+It is the assumption that all individuals in the population mix homogeneously, meaning that the probability of interacting with any individual is the same. It is a strong assumption because it implies ignoring any spatial or social heterogeneity.
+\subsubsection{Average rates of changes}
 \label{sec:sir_presentation}
 In the model, differential equations are used to represent the transition of individuals between different compartments. These transitions can depend on the state of the system but, in the simplest form, are based on average rates. The three rates used in the SIRS mean-field model are:
 \begin{itemize}
@@ -264,7 +269,7 @@ In the SIR model the reproduction number value is equal to the ratio between the
 
 Over the years, the dynamics of this system have been extensively studied and analyzed \cite{Breda_2012, akinboro2014numerical, Jard_n_Kojakhmetov_2021, Ledder_2023, Okabe_2020, Prodanov_2022, Xu_2014, Turkyilmazoglu_2021}. The threshold effect highlights two distinct scenarios:
 \begin{itemize}
-	\item \textbf{Free Disease Equilibrium $(\mathcal{R}_0 < 1)$:} When $\mathcal{R}_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and the Disease Free Equilibrium is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
+	\item \textbf{Disease-Free Equilibrium $(\mathcal{R}_0 < 1)$:} When $\mathcal{R}_0$ is less than one, the disease does not spread within the population. Although infected individuals make contact with susceptibles, the rate of disease transmission is slower than the recovery rate. Mathematically, this means $\beta / \gamma < 1$, or $\beta < \gamma$, where $\beta$ represents the transmission rate and $\gamma$ the recovery rate. Consequently, the healing process is faster than the spread of infection, and the number of infected individuals quickly drops to zero. The majority of the population remains susceptible, and the Disease Free Equilibrium is globally asymptotically stable, as demonstrated by \cite{Hernandez_Vargas_2022}.
 	\item \textbf{Epidemic spread $(\mathcal{R}_0 > 1)$:}     When the threshold is greater than one, the number of infected individuals grows until it reaches a peak and then declines toward zero. The peak number of infected people, as well as the final number of susceptibles, can be calculated using the system initial conditions and the values of $\beta$ and $\gamma$, as described by \cite{Hethcote_2000}. 
 	As reported in this work:
 	\begin{quotation}\small
@@ -277,19 +282,17 @@ Over the years, the dynamics of this system have been extensively studied and an
 	\end{equation}
 
 	with $s(0) = s_0 \ge 0$, and $i(0) \ge 0$. The mass conservation assumption holds so $r(t) = 1-s(t)-i(t)$. The triangle in the $si$ phase plane given by 
-	\[T ) {(s,i)|s \ge 0, i\ge 0, s+i \le 1 }\]
+	\[T = \{(s,i)|s \ge 0, i\ge 0, s+i \le 1 \}\]
 	is positively invariant and unique solutions exist in $T$ for all positive time, so that the
 	model is mathematically and epidemiologically well posed.
-	If parameter $\sigma$ is defined as $\sigma=\beta/\gamma$ it holds that if $\sigma s_0 >1$, the $i(t)$ first increase up to a maximum value $i_{max} = i_0 + s_0 - 1/\sigma - [\log(s_\infty/s_0)]/\sigma $ and then decrease to zero as $t \rightarrow \infty$. The susceptible fraction $s(t)$ is a decreasing function and the limiting value $s_\infty$ is the
-	unique root in $(0, 1/\sigma)$ of the equation
+	If parameter $\mathcal{R}_0$ is defined as $\mathcal{R}_0=\beta/\gamma$ it holds that if $\mathcal{R}_0 s_0 >1$, the $i(t)$ first increase up to a maximum value $i_{max} = i_0 + s_0 - 1/\mathcal{R}_0 - [\log(s_\infty/s_0)]/\mathcal{R}_0 $ and then decrease to zero as $t \rightarrow \infty$. The susceptible fraction $s(t)$ is a decreasing function and the limiting value $s_\infty$ is the
+	unique root in $(0, 1/\mathcal{R}_0)$ of the equation
 	\[
-	i_0 + s_0 -s_\infty - \log(s_\infty/s_0)/\sigma = 0. 
+	i_0 + s_0 -s_\infty - \log(s_\infty/s_0)/\mathcal{R}_0 = 0. 
 	\]		
 	\end{quotation}
 	
-	This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences. A typical epidemic outbreak has an infective curve that first increases from an initial Io near zero, reaches a peak, and then
-	decreases toward zero as a function of time. The susceptible fraction $s(t)$ instead always
-	decreases, but the final susceptible fraction $s_\infty$ is positive. The epidemic dies out because, when the susceptible fraction $s(t)$ goes below $1/\sigma$, the replacement number $\sigma s(t)$ goes below 1.
+	This scenario illustrates how a highly aggressive infection can spread widely within a population. If no countermeasures are taken, it can lead to significant social and economic consequences. A typical epidemic outbreak has an infective curve that first increases from an initial $i_0$ near zero, reaches a peak, and then decreases toward zero as a function of time. The susceptible fraction $s(t)$ instead always decreases, but the final susceptible fraction $s_\infty$ is positive. The epidemic dies out because, when the susceptible fraction $s(t)$ goes below $1/\mathcal{R}_0$, the effective reproduction number $\mathcal{R}_0 s(t)$ goes below 1.
 		
 \end{itemize}
 	Thus, even with its simplicity, the SIR model provides critical insights into the potential severity of an epidemic and highlights the importance of timely interventions to prevent widespread harm.
@@ -317,7 +320,7 @@ Several works analyze this model and provide a detailed mathematical derivation 
 
 To present the evolution of the model, a simple numerical simulation is carried out. The removal rate is set to $\gamma = 0.1$, meaning the infection lasts, on average, 10 days. The transmission rate is $\beta = 0.5$. At the start of the simulation, the majority of the population is in the susceptible class, with only a small portion of individuals already infected.
 
-The initial reproduction number is  $\mathcal{R}_0 = 5$, which is greater than 1. As discussed in Section \ref{subsub:threshold}, this indicates that the disease will evolve into an epidemic.
+The initial reproduction number is  $\mathcal{R}_0 = \frac{\beta}{\gamma} =  5$, which is greater than 1. As discussed in Section \ref{subsub:threshold}, this indicates that the disease will evolve into an epidemic.
 
 The key features that emerge from the model simulation are:
 
@@ -334,9 +337,9 @@ An additional detail emerging from the model, as analyzed in \cite{Okabe_2020} a
 \begin{figure}[ht]
 	\centering
 	\subfloat[][\emph{}]
-	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_con_rt}} \quad
+	{\includegraphics[width=0.47\linewidth]{0_introduction/images_introduction/sir_con_rt}} 
 	\subfloat[][\emph{}]
-	{\includegraphics[width=0.48\linewidth]{0_introduction/images_introduction/sir_multipli_beta}} \\
+	{\includegraphics[width=0.52\linewidth]{0_introduction/images_introduction/sir_multipli_beta}} \\
 	\caption[SIR dynamic example]{SIR system: numerical solutions. Panel a) shows the evolution of the model variables in the case of an epidemic. The violet line represents the time-dependent $\mathcal{R}_0(t)$. When this parameter is equal to $1$, the number of infected reaches its maximum value. Panel b) presents different evolutions of the disease obtained by varying only the $\beta$ coefficient. The smaller its value, the more flat and delayed the infectes curve is.}
 	\label{fig:sir_example0}
 \end{figure}
@@ -357,7 +360,7 @@ While flattening the curve may not lower the total number of infections (i.e., t
 There are several other ways to model an epidemic, and the main types of models are now introduced. Many of the articles that will be reviewed in Chapter \ref{ch:literature_review} make use of one or more of these model types.
 \subsubsection{Stochastic models} 	
 This group of models, which originate from the mean-field approach, utilizes a different mathematical framework. In these models, the transition between states is governed by stochastic functions. Conceptually, they share the same foundation as ordinary differential equation (ODE) models but differ in application. These stochastic models are particularly useful when studying diseases with a lower number of infected individuals or when the epidemic outcome is influenced by changes in individual dynamics, a phenomenon known as demographic variability. Demographic variability includes changes in transmission rates, birth rates, recovery rates, or mortality within the population.
-AN approach to model such variability is through stochastic models paired with Monte Carlo simulations \cite{Allen2017}.
+An approach to model such variability is through stochastic models paired with Monte Carlo simulations \cite{Allen2017}.
 
 \subsubsection{Networked models}
 In this class of models, disease dynamics are considered over complex and realistic networks, with a focus on understanding how the network structure impacts the epidemic spread by analyzing parameters such as the rate of infection. The model represents individuals as nodes in a graph, with edges illustrating interactions between them. Nodes can also represent subgroups, and the relationships between individuals or groups can be weighted, representing varying strengths of interactions \cite{Newman2002,VanMieghem2009}. The larger the number of nodes and the more accurately the connections reflect real-world interactions, the better the model is at faithfully reproducing the spread of the disease.
@@ -372,21 +375,24 @@ However, ABMs require a large amount of detailed, reliable data to be effective,
 \begin{figure}
 	\centering
 	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/agent_based}
-	\caption[Agent based network representation]{Agent based network representation.}
+	\caption[Agent-based network representation]{Agent-based network representation.}
 	\label{fig:agentbased}
 \end{figure}
 
-\subsubsection{Multilayer systems and networks: multi-system models} 
+\subsubsection{Multilayer systems and networks: multi-system models}
+\label{subsec:multisystem_models} 
 The complex dynamic of interactions existing in the real world, evolves in multiple patterns, with complicated relationships, that can change over time. Using the theory of multilayer systems can improve the comprehension of such complexity. Additional information can be added to the model, for example, different types of interactions, like physical contact or information sharing, time dependency coefficients, or reliance between different parameters in nature, creating cause-effect relationships.
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{0_introduction/images_introduction/multi_layer}
-	\caption[Multi-layer network]{Representation of a multilayer structure. The figure is taken from \cite{Granell2013} and shows a network implemented in their model. There are two layers coupled together: one representing awareness and the other the epidemic state. In this case, nodes connected by interlayer connections represent the same individual. Thus, the model describes people with two attributes: awareness of a disease and health state. The mechanisms of infection and becoming aware are distinct, but both attributes influence how an agent's state evolves. For example, if an agent is aware of the disease, they may act more cautiously, thereby reducing their probability of becoming infected.}
+	\caption[Multi-layer network]{Representation of a multilayer structure. The figure is taken from \cite{Granell2013} and shows a network implemented with two coupled layers: one representing awareness and the other the epidemic state. Nodes connected by interlayer connections represent the same individual. The model thus describes people with two attributes: awareness of a disease and health state. The mechanisms of infection and becoming aware are distinct, but both influence the evolution of an agent's state. For instance, if an agent is aware of the disease, they may act more cautiously, reducing their probability of becoming infected.}
 	\label{fig:multilayer}
 \end{figure} 
+
 Recent research developments revisits the traditional network theory to create a framework including multiple networks, that evolve and influence each other \cite{DeDomenico2016, Krickel_2023} and can be helpful to describe complex systems like human relationships. For instance, the onset of one disease may depend on the onset of another. There can be regimes in which the criticality of the two dynamics is interdependent and others in which the critical effect is only one-directional \cite{DeDomenico2016}. 
 One possible way to develop models with this structure is to imagine that each layer represents a different type of interaction. For instance a model that considers, for each agent, both its physical contacts with others, where the disease can be transmitted, and its network of relations, representing the social dynamics in which everyone is involved. An example of this network is shown in Figure \ref{fig:multilayer}. This instrument provides a natural representation of coupled structure and dynamical processes. It has been used in multiple works in the past years, for example in \cite{Wang_2019}. 
-Multiple systems can have either a single or coupled dynamic. In the case of a single dynamic, there is a top layer whose evolution occurs independently on top of a multilayer network. In contrast, a coupled structure describes phenomena in each layer evolving under the mutual influence of what is happening in the other layers.
+Multiple systems have a coupled dynamic and, with their structure, describe phenomena in each layer that evolve under the mutual influence of events occurring in other layers.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

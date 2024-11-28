@@ -15,7 +15,7 @@ The behavioral layer has three possible compartments, as seen in Chapter \ref{se
 
 \begin{itemize}
 	\item[$H$:] Heedless, people careless of the risk associated with the infection;
-	\item[$C$:] Compliant, people that want to avoid to becoming infected or infecting others
+	\item[$C$:] Compliant, people that want to avoid becoming infected or infecting others
 	\item[$A$:] Against, people who not see the epidemic as a risk and do not use protections or change their behaviour during the epidemic. 
 \end{itemize}
 
@@ -31,7 +31,7 @@ Overall, we can recognize the following compartments:
 	\item[$I_C$:] Infected Compliant, people infected by the virus. This group receives infections coming from both $S_C$ and $S_H$ compartments, because it is considered that even those who have a "neutral" opinion about the risk associated with the infection change their minds when they become infected. The main behavior associated with this group is that safety measures such as quarantine are respected,which limits disease spread.
 	\item[$I_A$:] Infected Against, compartment composed of the Against Susceptibles who became sick. They do not respect self-isolation, and spread the disease. 
 	\item[$R_C$:] Recovered Compliant, compliant people that are healed from the infection and contribute to raising awareness about the risk associated with the disease. 
-	\item[$R_A$:] Recovered Against, the part of the recovered formed by against healed from the infection. The most radicalized can be in this group. They are protected by immunity from a disease in which they do not believe of needing protection. 
+	\item[$R_A$:] Recovered Against, against people that are healed from the infection. The most radicalized can be in this group. They are protected by immunity from a disease from which they do not believe of needing protection. 
 \end{itemize}
 
 The resulting system is described by the following system of differential equations: 
@@ -72,7 +72,7 @@ where
 \section{Basic reproduction number calculation}
 The first analysis that can be performed on the Behavioral Disease model is to compute its basic reproduction number. It is defined as the spectral radius of the next-generation matrix. Using the method outlined in \cite{van_den_Driessche_2017} and now briefly described, this quantity is calculated. To distinguish between this value, that is related to the whole model, and is thus influenced by both the social and epidemic layer, and the classic epidemic only Reproduction number, described in Section \ref{subsub:threshold}, we denote this quantity with the symbol $E_0$. It is the "Epidemic reproduction number". 
 Consider $x = (x_1,x_2,...,x_n)^T$ a vector describing the number of individuals in each compartment. The compartments of infected are $m$, and the relation $m < n$ holds. 
-Assume that the system has a disease free equilibrium (DFE), denoted as $x_0$: $x_0$ exist and is stable in the absence of the disease, so when the infected compartments have value equal to zero. Furthermore in the DFE the linearized equations for $x_1,x_2,...,x_m$ decouple from the other equations. Thanks to these assumptions it is possible to write the $m$ infected equations in the form:
+Assume that the system has a disease free equilibrium (DFE), denoted as $x_0$: $x_0$ exist and is stable in the absence of the disease, so when the infected compartments have value equal to zero. Furthermore, in the DFE, the linearized equations for $x_1,x_2,...,x_m$ decouple from the other equations. Thanks to these assumptions, it is possible to write the $m$ infected equations in the form:
 \begin{equation}
 \label{eq:next_gen1}
 \frac{dx_i}{dt} = \mathcal{F}_i(x) - \mathcal{V}_i(x), \text{ for } i =1,2,...m
@@ -81,8 +81,8 @@ The two terms appearing in equation \eqref{eq:next_gen1}, are $\mathcal{F}_i(x)$
 
 To describe the evolution of the system, the following matrix notations is adopted: 
 \begin{itemize}
-	\item $F = [\frac{d \mathcal{F}_i}{d x_j}(x_0)]$ with $1 \le i$, and $j \le m$.
-	\item $V = [\frac{d \mathcal{V}_i}{d x_j}(x_0)]$ with $1 \le i$, and $j \le m$.	
+	\item $F = [\frac{d \mathcal{F}_i}{d x_j}(x_0)]$ with $1 \le i$, $j \le m$.
+	\item $V = [\frac{d \mathcal{V}_i}{d x_j}(x_0)]$ with $1 \le i$, $j \le m$.	
 \end{itemize} 
 The matrices are both evaluated at the disease free equilibrium, where $x = x_0$, and have dimension $m \times m$, with $m$ being the number of infected compartments in the model. 
 Using the defined matrices, according to \cite{van_den_Driessche_2002,van_den_Driessche_2017}, the Epidemic reproduction number $E_0$ for the model \eqref{eq:epi_behavioural_eq} at a disease free equilibrium, where all infected densities are zero, is given by:
@@ -91,9 +91,9 @@ E_0 = spec(FV^{-1})
 \label{eq:R_0_eqn}
 \end{equation}
 The disease-free equilibrium is defined as a locally stable equilibrium of the system in which there is no disease.
-The matrix $FV^{-1}$ is called next generation matrix, while $spec(M)$ is the spectral radius of a matrix M. To understand the entries of the matrix, consider perturbing a population at the DFE by introducing one infected individual in compartment $k$.
+The matrix $FV^{-1}$ is called next generation matrix, while $spec(M)$ is the spectral radius of a matrix M.
 
-The $(j,k)$ entry of $V^{-1}$ is the average time that the individual spends in the compartment $j$. Instead, the $(i,j)$ entry of $F$ is the  rate at which infected in compartment $j$ produce new infections in $i$. In $F$ only individuals that become infected for the first time must be inserted, while other influxes in the $i$th compartment, must be considered in the $V$ matrix. Finally the entry $(i,k)$  in $FV^{-1}$ is the expected number of new infections in  $i$ produced by the infected individual originally introduced in $k$.
+To understand the entries of the matrix, consider perturbing a population at the DFE by introducing one infected individual in compartment $k$.The $(j,k)$ entry of $V^{-1}$ is the average time that the individual spends in the compartment $j$. Instead, the $(i,j)$ entry of $F$ is the  rate at which infected in compartment $j$ produce new infections in $i$. In $F$ only individuals that become infected for the first time must be inserted, while other influxes in the $i$-th compartment, must be considered in the $V$ matrix. Finally the entry $(i,k)$  in $FV^{-1}$ is the expected number of new infections in  $i$ produced by the infected individual originally introduced in $k$.
 
 Considering the system dynamics presented in \eqref{eq:epi_behavioural_eq}, matrices $F$ and $V$ are
 
@@ -137,7 +137,7 @@ Disease-free equilibria are solutions of the system in which no infection is pre
 	\label{eq:epi_behavioural_eq2}
 \end{align*}
 
-Solving the system of equations simbolically using Matlab, three disease free equilibria are found:
+Solving the system of equations simbolically using Matlab, three disease free equilibria are found which yield the corresponding $E_0$ after inserting their values in equation \eqref{eq:epidemic_reproduction _number}:
 
 \begin{center}
 \begin{tabular}{|>{\centering\arraybackslash}m{1.2cm}|c|c|c|c|}
@@ -201,7 +201,7 @@ The values of these coefficients change across the five cases.
 The values of the variables $k_1$ and $k_2$ are derived using the expression $\mathcal{B}_i = k_i/\lambda_i$, where $i = 1, 2$.
 The results of all simulations and the corresponding $E_0$ values are summarized in Table \ref{fig:valori-dfe-e-e0caso3}.
 
-It is immediately noticeable how the value of $E_0$ changes and is influenced by both the behavioral parameters and the considered DFE.  The initial distribution of the population across compartments is chose by perturbing the computed DFE, through the insertion of some infected. The DFE type-$C$, where the population is divided between the Compliant and Heedless Susceptible compartments, is always locally asymptotically stable. In contrast, the type-$B$ equilibrium is always unstable, with $E_0>1$. A possible explanation for this observation lies in the effects of the parameters $\rho$ and $\epsilon$, which respectively reduce the likelihood of $S_C$ becoming infected and the ability of $I_C$ to infect others.
+It is immediately noticeable how the value of $E_0$ changes and is influenced by both the behavioral parameters and the considered DFE.  The initial distribution of the population across compartments is chosen by perturbing the computed DFE, through the insertion of some infected. The DFE type-$C$, where the population is divided between the Compliant and Heedless Susceptible compartments, is always locally asymptotically stable. In contrast, the type-$B$ equilibrium is always unstable, with $E_0>1$. A possible explanation for this observation lies in the effects of the parameters $\rho$ and $\epsilon$, which respectively reduce the likelihood of $S_C$ becoming infected and the ability of $I_C$ to infect others.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{"1_corpo/figure/Valori DFE e E_0_caso_3"}
@@ -219,9 +219,9 @@ In the left panel of Figure \ref{fig:sim_B1_B2_less_equal}, it is evident that t
 
 \begin{figure}[h]
 	\centering
-	\subfloat[][Case I: Both $\mathcal{B}_1$ and $\mathcal{B}_2$ are less than one. None of the possible behaviors become dominant.]
+	\subfloat[][I case: Both $\mathcal{B}_1$ and $\mathcal{B}_2$ are less than one. None of the possible behaviors become dominant.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1}} \quad
-	\subfloat[][Case II: $\mathcal{B}_1$ is equal to $\mathcal{B}_2$. Starting from a type-C DFE, we have an $E_0$ that confirms the local asymptotic stability of the equilibrium. No epidemic develops in the system, as shown in the simulation.]
+	\subfloat[][II case: $\mathcal{B}_1$ is equal to $\mathcal{B}_2$. Starting from a type-C DFE, we have an $E_0$ that confirms the local asymptotic stability of the equilibrium. No epidemic develops in the system, as shown in the simulation.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_B2_equal}} \\
 	\caption[Full model simulation figure first]{Cases I and II of the simulations performed. In the left panel, there is an epidemic outbreak leading to an endemic equilibrium, while in the right panel, the disease dies out, and the population remains in the Susceptible compartment at equilibrium.}
 	\label{fig:sim_B1_B2_less_equal}
@@ -238,14 +238,13 @@ Although the disease can spread in a fully susceptible population, the protectio
 
 \begin{figure}[h]
 	\centering
-	\subfloat[][\emph{III case.}]
+	\subfloat[][III case: $\mathcal{B}_1 >\mathcal{B}_2$, the Compliant behavior becomes dominant. This dominance significantly mitigates the effects of the epidemic, both in terms of the number of infected individuals and the duration of the outbreak.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2}} \quad
-	\subfloat[][\emph{ IV case.}]
+	\subfloat[][IV case: $\mathcal{B}_1 >\mathcal{B}_2$, starting from a type-B Disease-Free Equilibrium (DFE), and with \( k_2, \lambda_2 \) larger than \( k_1, \lambda_1 \), a high peak in infections occurs. This is due to the initial phase, during which the Against group constitutes the majority, allowing the disease to spread freely.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_2epi_behav_sim_B1_mag_B2_lambda2_mag}} \\
-	\caption[Full model simulation figure second]{III and IV cases.}
+	\caption[Full model simulation figure second]{In Case III, illustrated in panel (a), there is a small epidemic outbreak, which is eventually contained as the disease tends to disappear. This outcome occurs due to the high proportion of the population that becomes compliant, thereby significantly reducing the spread of the infection.In Case IV, shown in panel (b), we observe a scenario in which an outbreak occurs, and the disease rapidly spreads within a population predominantly composed of individuals who are Against. This lack of compliance exacerbates the diffusion of the infection.}
 	\label{fig:sim_B1_mag_B2}
 \end{figure}
-
 
 \subsection{IV case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 < \lambda_2$}
 The fourth case highlights and describes the negative effects of non-compliant behavior. Even though $\mathcal{B}_2 <\mathcal{B}_1$, the condition $k_2 \gg k_1$ allows the Against behavior to initially spread more rapidly. As observed previously with the behavior model alone in Section \ref{par:behav_4_case}, this dynamic results in significant early non-compliance. The simulation begins close to the DFE corresponding to type-B, where the majority of the population is in $S_A$. These initial conditions lead to a higher epidemic reproduction number, with $E_0 = 2.63$. Consequently, the number of infected individuals reaches a much higher peak compared to the third case.
@@ -257,9 +256,17 @@ The final case represents the worst scenario for epidemic spread. The majority o
 \begin{figure}[h]
 	\centering
 	{\includegraphics[width=0.5\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1}} 
-	\caption[Full model simulation figure third]{V case.}
+	\caption[Full model simulation figure third]{V case: where \( \mathcal{B}_1 < \mathcal{B}_2 \), the simulation starts from a type-B Disease-Free Equilibrium (DFE). The Against group is dominant from the beginning, allowing the disease to spread almost freely. This results in several peaks of infection, and, at equilibrium, the disease becomes endemic within the population.}
 	\label{fig:sim_B1_less_B2}
 \end{figure}
+
+
+
+
+
+
+
+
 
 \subsection{Influence of the $\psi$ parameter}
 To model how government policies can influence the behavior of the population and create a distinction between spontaneous behavior and reactions to regulations, the parameter $\psi$ was introduced. It acts as a central mean-field intervention, multiplying the coefficients $k_1$, $k_3$, and $k_5$.
@@ -278,6 +285,7 @@ This effect is very pronounced when comparing cases: with $\psi = 1$, the peak v
 	\caption[Simulation varying $\psi$]{Simulations of the epidemic-behavioral model with varying parameter $\psi$. In the first figure, the changes in the $S_C$ curve are shown. The maximum is reached more quickly when $\psi > 1$. In the second figure, the corresponding $I = I_C + I_A$ curves are presented. The small panel represents the case with $\psi = 1$. For $\psi > 1$, the infection peak becomes significantly smaller.}
 	\label{fig:sim_psi}
 \end{figure}
-\\
-\\
-Overall, the implemented multi-system model demonstrates its ability to adapt effectively to a variety of scenarios. Specifically, it captures both situations: one where Compliant behavior significantly mitigates the disease's impact, and the opposite scenario, where the dominant presence of the Against group triggers a disease outbreak. These outcomes arise under the same disease parameter values, $\beta, \gamma, \delta$. The estimated value of $E_0$ proves to be a valuable indicator of the stability of the system DFE. 
+
+
+\subsubsection{Discussion}
+Overall, the implemented multi-system model demonstrates its ability to adapt effectively to a variety of scenarios. Specifically, it captures both situations: one where Compliant behavior significantly mitigates the disease's impact, and the opposite scenario, where the dominant presence of the Against group triggers a disease outbreak. These outcomes arise under the same disease parameter values, $\beta, \gamma, \delta$. The estimated value of $E_0$ proves to be a valuable indicator of the stability of the system's Disease-Free Equilibrium (DFE). On the other hand, the parameter $\psi$ has a significant impact on the evolution of the epidemic. This parameter can be particularly useful in scenarios where the reproduction conversion number for the compliant group is close to one (but still greater than one), as it can accelerate the population's transition toward compliance.
