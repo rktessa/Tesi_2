@@ -61,7 +61,7 @@
 \contentsline {section}{\numberline {4.3}How to integrate behavior in epidemiology}{39}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Individuals-based models}{40}{subsection.4.3.1}%
 \contentsline {subsubsection}{Multiple networks simulated with Markovian process}{40}{section*.48}%
-\contentsline {subsubsection}{Game theoretical models}{41}{section*.52}%
+\contentsline {subsubsection}{Game theoretical models}{42}{section*.52}%
 \contentsline {subsubsection}{Network based models}{44}{section*.54}%
 \contentsline {subsubsection}{Threshold models}{45}{section*.56}%
 \contentsline {subsubsection}{Ad-hoc rule-based models}{46}{section*.57}%
@@ -70,36 +70,36 @@
 \contentsline {subsection}{\numberline {4.4.1}Individual state models}{49}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Well-mixed population models}{49}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Final remarks}{50}{subsection.4.4.3}%
-\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral-Disease Model}{51}{part.2}%
+\contentsline {part}{\EnsureStandardFontEncoding {II}\hspace {1em}Behavioral-Epidemiological Model}{51}{part.2}%
 \contentsline {chapter}{\numberline {5}Model development and justification}{53}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Epidemic model and Behavioral model alone}{57}{chapter.6}%
-\contentsline {section}{\numberline {6.1}SIRS model}{57}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Behavioural model}{58}{section.6.2}%
-\contentsline {subsubsection}{Initial conditions}{59}{section*.63}%
-\contentsline {subsubsection}{Social contagion dynamic}{60}{section*.64}%
-\contentsline {subsubsection}{Behavior conversion number}{61}{section*.66}%
-\contentsline {subsection}{\numberline {6.2.1}Model simulation}{62}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Equilibrium and stability analysis}{63}{subsection.6.2.2}%
-\contentsline {subsubsection}{Equilibria of the system}{64}{section*.69}%
-\contentsline {subsubsection}{Equilibria stability analysis}{65}{section*.70}%
-\contentsline {subsection}{\numberline {6.2.3}Equilibrium simulations}{67}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Behavioural model: numerical experiments}{70}{subsection.6.2.4}%
-\contentsline {subsubsection}{Heat map: asymptotic state values}{70}{section*.74}%
-\contentsline {subsubsection}{Heat map of peak values}{72}{section*.77}%
-\contentsline {subsubsection}{Conclusions}{73}{section*.80}%
-\contentsline {chapter}{\numberline {7}Behavioral-epidemic model}{75}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Model description}{75}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{77}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{79}{subsection.7.2.1}%
-\contentsline {section}{\numberline {7.3}Model simulations}{80}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{82}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{83}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{84}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{85}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{85}{subsection.7.3.6}%
-\contentsline {subsubsection}{Discussion}{85}{section*.87}%
-\contentsline {chapter}{\numberline {8}Conclusions}{89}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Limitations}{89}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Future perspective}{90}{section.8.2}%
-\contentsline {chapter}{Bibliography}{91}{section.8.2}%
+\contentsline {chapter}{\numberline {6}Epidemic model and Behavioral model alone}{55}{chapter.6}%
+\contentsline {section}{\numberline {6.1}SIRS model}{55}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Behavioural model}{56}{section.6.2}%
+\contentsline {subsubsection}{Initial conditions}{57}{section*.62}%
+\contentsline {subsubsection}{Social contagion dynamic}{58}{section*.63}%
+\contentsline {subsubsection}{Behavior conversion number}{59}{section*.65}%
+\contentsline {subsection}{\numberline {6.2.1}Model simulation}{60}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Equilibrium and stability analysis}{61}{subsection.6.2.2}%
+\contentsline {subsubsection}{Equilibria of the system}{62}{section*.68}%
+\contentsline {subsubsection}{Equilibria stability analysis}{63}{section*.69}%
+\contentsline {subsection}{\numberline {6.2.3}Equilibrium simulations}{64}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Behavioural model: numerical experiments}{66}{subsection.6.2.4}%
+\contentsline {subsubsection}{Heat map: asymptotic state values}{68}{section*.73}%
+\contentsline {subsubsection}{Heat map of peak values}{68}{section*.76}%
+\contentsline {subsubsection}{Conclusions}{71}{section*.79}%
+\contentsline {chapter}{\numberline {7}Behavioral-epidemic model}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Model description}{73}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Basic reproduction number calculation}{75}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}DFE calculation}{77}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}Model simulations}{78}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}I case: $\mathcal {B}_1, \mathcal {B}_2 <1$, $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 > \lambda _2$}{80}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}II case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 = \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{80}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}III case: $\mathcal {B}_1, \mathcal {B}_2 >1$, $\mathcal {B}_1 < \mathcal {B}_2$, and $\lambda _1 = \lambda _2$}{81}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}IV case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 > \mathcal {B}_2$, and $\lambda _1 < \lambda _2$}{82}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}V case: $\mathcal {B}_1, \mathcal {B}_2 >1$ and $\mathcal {B}_1 < \mathcal {B}_2$}{83}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Influence of the $\psi $ parameter}{83}{subsection.7.3.6}%
+\contentsline {subsubsection}{Discussion}{83}{section*.86}%
+\contentsline {chapter}{\numberline {8}Conclusions}{87}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Limitations}{87}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Future perspective}{88}{section.8.2}%
+\contentsline {chapter}{Bibliography}{89}{section.8.2}%

@@ -1,4 +1,4 @@
-\part{Behavioral-Disease Model}
+\part{Behavioral-Epidemiological Model}
 \label{part:the_model}
 \chapter{Model development and justification}
 \label{ch:why_new}
@@ -7,31 +7,35 @@ Otherwise, the reader might question: "Why not use an already developed and anal
 
 The primary answer lies in the observation made while studying the literature: the connection between empirical data and epidemiological models is often missing. Most works relating social and epidemiological aspects are purely theoretical models based on ad-hoc assumptions; probably, because constructing a framework grounded in empirical data related to individual behavior is challenging \cite{Nunner2021}, and, until the COVID-19 pandemic, data on this topic were scarce.
 
-The availability of research such as the one conducted by Meta during the COVID-19 pandemic \cite{Astley_2021} serves as a major source of inspiration and data. This research allows exploration of different behaviors related to how people react to and manage the necessity of living with an infectious disease. It also provides this valuable information as a dynamic time series.
-
-Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models do not incorporate this characteristic \cite{huys2010nonlinear}, this feature is here addressed.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{1_corpo/figure/Fig2cut}
 	\caption[Mask wearing evolution]{The evolution of mask wearing behaviors during the COVID-19 pandemic. Figure from \cite{Proverbio_Tex_2024}.}
 	\label{fig:mask_wearing}
 \end{figure}
+
+The availability of research such as the one conducted by Meta during the COVID-19 pandemic \cite{Astley_2021} serves as a major source of inspiration and data. This research allows exploration of different behaviors related to how people react to and manage the necessity of living with an infectious disease. It also provides this valuable information as a dynamic time series.
+
+Often, what emerges from this data is the non-linear dynamic evolution of behavior. While many models do not incorporate this characteristic \cite{huys2010nonlinear}, this feature is here addressed.
+
+
+
 The behavioral-epidemic mean-field model we developed aims to interconnect these two features, linking the theoretical framework with empirical evidence. Often, in other works, this connection is realized using proxy models that attempt to reconstruct agent behavior, spatial motion, or opinion datasets extrapolated, for instance, from social networks, as done in \cite{Anderson_2019,Zino_2021}. The problem with these approaches is that people's opinions do not always align with their actual behaviors, and the lack of a necessary and direct correlation between the two is another concept the model attempts to overcome.
 
 For example, consider the evolution of mask-wearing behavior in different European countries during the COVID-19 pandemic, as shown in Figure \ref{fig:mask_wearing}. It is immediately evident that, at a certain point, there is a sharp increase in the use of this self-protective device, resembling a step function. This effect results from regulatory prescriptions introduced by authorities, and behaviors closely follow the evolution of these stringency measures.
 
 Such phenomena have been incorporated into the model development using a coefficient parameter, $\psi$, to represent the effect of centralized interventions and modify the basic persuasion rate of different behaviors. Additional empirical evidence supporting the development of the model can be found in \cite{Proverbio_Tex_2024}. 
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.6\linewidth]{1_corpo/figure/Model_behav_epidemic}
-	\caption[Epi-behavior model]{Representation of the model with individuals divided into different behavioral categories, each of which can correspond to a specific disease state, except for the Heedless group, which is characterized solely by Susceptible individuals.}
-	\label{fig:modelbehavepidemic}
-\end{figure}
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=0.6\linewidth]{1_corpo/figure/Model_behav_epidemic}
+%	\caption[Epi-behavior model]{Representation of the model with individuals divided into different behavioral categories, each of which can correspond to a specific disease state, except for the Heedless group, which is characterized solely by Susceptible individuals. The split of individual in the diagram is }
+%	\label{fig:modelbehavepidemic}
+%\end{figure}
 
 To introduce the model and begin its description, the next chapter first presents and analyzes the two layers that together form the complete model: a SIRS epidemic model and a behavioral model consisting of three compartments: Compliant, Against, and Heedless. Then, the full model is presented, described and analysed in Chapter \ref{ch:epi_behav_model}.
 Then the full model is presented, described and analysed. 
-The full model comprises seven compartments, as the heedless behavior is not possible for individuals that are infected or recovered. This assumption stems from the reasoning that it is highly improbable for an individual to act heedlessly when infected (unless, potentially, when completely asymptomatic). Figure \ref{fig:modelbehavepidemic} provides a compact representation of the population subdivision.
+The full model comprises seven compartments, as the heedless behavior is not possible for individuals that are infected or recovered. This assumption stems from the reasoning that it is highly improbable for an individual to act heedlessly when infected (unless, potentially, when completely asymptomatic).
 
 Infection can be transmitted across all three behavioral groups, but the Compliant group is more cautious. A parameter, $\rho$, models their reduced probability of being infected, while another parameter, $\epsilon$, accounts for their compliance with self-isolation while infectious. This reduces the number of infected Compliant individuals ($I_C$ in the model equations that will be presented in the next chapter \ref{ch:epi_behav_model}) contributing to new infections in the epidemic layer.
 
@@ -66,7 +70,7 @@ The differential system of equations describing the model are
 		\frac{dr}{dt}= \gamma i -  \delta r\\
 	\end{cases}
 \end{equation}
-with $s(0) = s_0 \ge 0$, $i(0) \ge 0$ and $r(0) = 0$. The mass conservation assumption holds so $s(t)+i(t)+r(t) =1$.
+with $s(0) = s_0 > 0$, $i(0) \ge 0$ and $r(0) = 0$. The mass conservation assumption holds so $s(t)+i(t)+r(t) =1$.
 The model includes the possibility of reinfection, which is important when studying long-term scenarios. Considering the effect of individual behavior on disease progression, two critical phases are hypothesized to influence this evolution: the initial stages of the epidemic and the period following the first peak.
 
 In the initial stages, the SIRS model behaves similarly to a typical SIR model, because reinfection is unlikely to occur in a short time frame. However, over time, as reinfections become possible, individual attitudes and behaviors increasingly impact the disease spread.
@@ -83,7 +87,7 @@ In the initial stages, the SIRS model behaves similarly to a typical SIR model, 
 
 The development of the behavioral model builds on several works already presented in the literature. In particular, the following mechanisms are considered to be the most relevant:
 \begin{itemize}
-	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}. The implementation is inspired by the Unaware-Aware-Unaware opinion model class \cite{Zuo2022, Peng2021}, refer to Section \ref{subsec:individual_state} and \ref{subsec:multisystem_models}, for how the compartments are linked together and for the idea of social pressure between individuals.
+	\item The competition between two opposing behaviors/opinions, driven by peer pressure \cite{Epstein_2021}. The implementation is inspired by the Unaware-Aware-Unaware opinion model class \cite{Zuo2022, Peng2021} (refer to Section \ref{subsec:individual_state} and \ref{subsec:multisystem_models}), for how the compartments are linked together and for the idea of social pressure between individuals.
 	
 	\item Non-compliance viewed as a form of social contagion \cite{Bongarti2023}.
 	 
@@ -142,7 +146,7 @@ The resulting differential equations describing the model dynamic are:
 		\dot{A} = k_2 H A -  \lambda_2 A\\
 	\end{cases}
 \end{equation}
-We assume population mass conservation, meaning that the relationship $H + C + A = 1$ holds. Additionally, the initial conditions described in the previous section are translated as follows:
+We assume population conservation, meaning that the relationship $H + C + A = 1$ holds. Additionally, the initial conditions described in the previous section are translated as follows:
 \begin{equation}
 	\begin{cases}
 		H(0) = 1 - C_0 - A_0\\
@@ -172,7 +176,7 @@ To represent different dynamics, four main cases are now presented. The coeffici
 
 The values $k_1$ and $k_2$ can be calculated from the formula of $\mathcal{B}_1$ and $\mathcal{B}_2$.
 
-Figure \ref{fig:model__behavior_sim_1}a shows that, when both Behavior conversion numbers are less than one, social contagion does not spread: even though, in this case, the Compliant and Against compartments together represent $60\%$ of the total population at the beginning of the simulation, they clearly tend to zero over time. In contrast, Figure \ref{fig:model__behavior_sim_1}b shows the case where the two $\mathcal{B}$ values are equal and greater than one. To emphasize the importance of the relations between fatigue and persuasion rate, it is shown that, even if the conversion numbers are equal, (i.e. $k_2$  is lower than $k_1$=), the Compliant compartment becomes the majority group by the end of the simulation. Here the Against do not tend to zero, but there is a rather stable flow between the Compliant and Against compartments, through the Heedles state, such that
+Figure \ref{fig:model__behavior_sim_1}a shows that, when both Behavior conversion numbers are less than one, social contagion does not spread: even though, in this case, the Compliant and Against compartments together represent $60\%$ of the total population at the beginning of the simulation, they clearly tend to zero over time. In contrast, Figure \ref{fig:model__behavior_sim_1}b shows the case where the two $\mathcal{B}$ values are equal and greater than one. To emphasize the importance of the relations between fatigue and persuasion rate, it is shown that, even if the conversion numbers are equal, (i.e. $k_2$  is lower than $k_1$), the Compliant compartment becomes the majority group by the end of the simulation. Here the Against do not tend to zero, but there is a rather constant flow between the Compliant and Against compartments, through the Heedles state, such that
 none of the compartments becomes empty.
 
 \begin{figure}[ht]
@@ -274,14 +278,15 @@ For each equilibrium point, stability conditions can be expressed as relationshi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent\textbf{Stability of equilibrium $Eq_1$=$(\frac{\lambda_1}{k_1}, 1-\frac{\lambda_1}{k_1})$.} The trace tr$(J(Eq_1)) = - k_1 + \frac{\lambda_1}{k_1}(k_1+k_2) - \lambda_2$ is  less than zero, if $-k_1 + \frac{\lambda_1}{k_1}( k_1 + k_2) - \lambda_2 < 0$. From this we obtained the relation:
 \[\frac{\lambda_1}{k_1} < \frac{k_1 + \lambda_2}{k_1 + k_2} \]
-Instead, the determinant is det$(J(Eq_1)) = k_1 \lambda_2 - \lambda_1 \lambda_2 -k_2 \lambda_1 + k_2 \frac{\lambda_1^2}{k_1}$. The determinant is greater than zero if
+Some algebraic manipulations allow us to rewrite this inequality as $k_1 (k_1 - \lambda_1) > \lambda_1 k_2 - k_1 \lambda_2$. Instead, the determinant is det$(J(Eq_1)) = k_1 \lambda_2 - \lambda_1 \lambda_2 -k_2 \lambda_1 + k_2 \frac{\lambda_1^2}{k_1}$. The determinant is greater than zero if
  \[ k_1^2 \lambda_2+ k_2 \lambda_1^2 - k_1 k_2 \lambda_1 -k_1 \lambda_1 \lambda_2 > 0.\]
-  Then, $k_1 \lambda_2(k_1 -\lambda_1) - k_2 \lambda_1 (k_1 - \lambda_1) > 0$, and so $(k_1 - \lambda_1)(k_1 \lambda_2 - k_2 \lambda_1) > 0$. The condition is satisfied when both factors are greater or less than zero. Considering both factors negative results in a condition $\mathcal{B}_1 < 1$, which has no biological meaning because the equilibrium resulting from this condition would have a negative value.
-
-The conditions $\mathcal{B}_1 > 1$ and $\mathcal{B}_1 > \mathcal{B}_2$ satisfy the determinant condition, but are also compatible with the the trace condition.
-To understand why, let us consider $\mathcal{B}_1 > 1$, which implies $\frac{\lambda_1}{k_1} < 1$. This ensure that the trace wil be negative if the following inequality holds:
-\[\frac{k_1 + \lambda_2}{k_1 + k_2} > 1.\] 
-Simplifying this expression gives $k_1 + \lambda_2 > k_1 + k_2$, which reduces further to  $\lambda_2 > k_2$. This directly implies $\mathcal{B}_2 < 1$. Thus, the trace condition is automatically satisfied by the two conditions already imposed by the determinant, making it redundant.
+  Namely, $k_1 \lambda_2(k_1 -\lambda_1) - k_2 \lambda_1 (k_1 - \lambda_1) > 0$, or equivalently $(k_1 - \lambda_1)(k_1 \lambda_2 - k_2 \lambda_1) > 0$. However, when both factors are negative, the condition on the trace cannot be verified; in fact, the expression \( k_1(k_1 - \lambda_1) > k_2 \lambda_1 - k_1 \lambda_2 \), would require a negative term to be greater than a positive one, which is never possible. Conversely, both factors being positive is equivalent to the two conditions $\mathcal{B}_1 > 1$ and $\mathcal{B}_1 > \mathcal{B}_2$ These two conditions satisfy both the inequality for the determinant and the
+  inequality for the trace.
+  
+  
+  
+%To understand why, let us consider $\mathcal{B}_1 > 1$, which implies $\frac{\lambda_1}{k_1} < 1$. This ensure that the trace wil be negative if the following inequality holds:
+%\[\frac{k_1 + \lambda_2}{k_1 + k_2} > 1.\] Simplifying this expression gives $k_1 + \lambda_2 > k_1 + k_2$, which reduces further to  $\lambda_2 > k_2$. This directly implies $\mathcal{B}_2 < 1$. Thus, the trace condition is automatically satisfied by the two conditions already imposed by the determinant, making it redundant.
 In conclusion, equilibrium $Eq_1$ is locally stable if $\mathcal{B}_1 > 1$, and $\mathcal{B}_1 > \mathcal{B}_2$.
 \\ 
  
@@ -301,7 +306,7 @@ Thus, it can be concluded that equilibrium point $B$ is locally stable only if $
 \[
  k_2 \left[\left(\lambda_1 - k_1 \frac{\lambda_2}{k_2}\right)\left(1 - \frac{\lambda_2}{k_2}\right)\right] >0
 \]
-To satisfy the inequality both terms inside the parentisi must have the same sign, as in the previous point $Eq_2$:
+To satisfy the inequality both terms inside the parenthesis must have the same sign, as in the previous point $Eq_2$:
 \begin{itemize}
 	\item Case $I:$ $\frac{k_2}{\lambda_2} > \frac{k_1}{\lambda_1} $, and $k_2 > \lambda_2$
  	\item Case $II:$ $\frac{k_2}{\lambda_2} < \frac{k_1}{\lambda_1} $, and $k_2 < \lambda_2$
@@ -320,12 +325,14 @@ which simplifies to:
 \frac{\lambda_2}{k_2} < \frac{k_2 + \lambda_1}{k_1 + k_2}.
 \]
 
-Only by choosing Case I, we ensure that the trace inequality is satisfied. If \(k_2 > \lambda_2\), the ratio \(\frac{\lambda_2}{k_2}\) is less than one. Thus, if the right-hand side of the inequality is larger than one, the trace condition holds. Specifically:
-\[
-\frac{k_2 + \lambda_1}{k_1 + k_2} > 1 \implies k_2 + \lambda_1 > k_1 + k_2 \implies \lambda_1 > k_1.
-\]
+Only by choosing Case I, we ensure that the trace inequality is satisfied, otherwise we obtain a condition impossible to verify such as in the $Eq_1$ case.
+% If \(k_2 > \lambda_2\), the ratio \(\frac{\lambda_2}{k_2}\) is less than one. Thus, if the right-hand side of the inequality is larger than one, the trace condition holds. Specifically:
+%\[
+%\frac{k_2 + \lambda_1}{k_1 + k_2} > 1 \implies k_2 + %\lambda_1 > k_1 + k_2 \implies \lambda_1 > k_1.
+%\]
 
-While the trace condition is satisfied when \(\mathcal{B}_1 < 1\), it is redundant, analogous to the trace condition found for equilibrium \(Eq_1\). Therefore, it can be concluded that equilibrium \(Eq_3\) is stable if \(\mathcal{B}_2 > \mathcal{B}_1\) and \(\mathcal{B}_2 > 1\).
+%While the trace condition is satisfied when \(\mathcal{B}_1 < 1\), it is redundant, analogous to the trace condition found for equilibrium \(Eq_1\). 
+Therefore, it can be concluded that equilibrium \(Eq_3\) is stable if \(\mathcal{B}_2 > \mathcal{B}_1\) and \(\mathcal{B}_2 > 1\).
 
  
 \subsection{Equilibrium simulations}
@@ -355,10 +362,7 @@ Variables $k_1$ and $k_2$ are derived using the expression $\mathcal{B}_i = k_i/
 \noindent\textbf{I case: }$\mathcal{B}_1, \mathcal{B}_2 <1$, $\mathcal{B}_1 >  \mathcal{B}_2$, and $\lambda_1 > \lambda_2$. \\
 If both the Conversion numbers are less than one, there is only one equilibrium in the phase plane, where both Compliant and Against are zero.
 
-In the Figure \ref{fig:r1r2less1dyn}a, the nullcline plot shows an intersection between the two nullclines only at the point $(1,0)$. Under this condition, the only equilibrium is at $H = 1$, with both $A$ and $C$ equal to zero. Using the notation from the system equation \eqref{eq:system_nullclines}, this corresponds to $x = 1$ and $y = 0$. Calculating the trace and determinant of the Jacobian at this point and with parameters value
-
-
-yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, the equilibrium is locally asymptotically stable, as it satisfies the Routh-Hurwitz condition.\\
+In the Figure \ref{fig:r1r2less1dyn}a, the nullcline plot shows an intersection between the two nullclines only at the point $(1,0)$. Under this condition, the only equilibrium is at $H = 1$, with both $A$ and $C$ equal to zero. Using the notation from the system equation \eqref{eq:system_nullclines}, this corresponds to $x = 1$ and $y = 0$. Calculating the trace and determinant of the Jacobian at this point yields tr$J(1,0) = -\frac{209}{12000}$ and det$J = \frac{121}{2400000}$. Thus, the equilibrium is locally asymptotically stable, as it satisfies the Routh-Hurwitz condition.\\
 
 \begin{figure}[ht]
 	\centering
@@ -508,7 +512,7 @@ In this chapter, we have introduced the SIRS model and conducted an in-depth stu
 
 The key findings from the behavioral model analysis are as follows:  
 \begin{itemize}
-	\item For a behavior to spread within the population, its transmission rate, \( k_i \), must exceed the fatigue associated with maintaining it, \( \lambda_i \), where \( i = 1, 2 \). This condition translates into requiring the reproduction conversion number to be greater than one, \( \mathcal{B}_i > 1 \).  
+	\item For a behavior to spread within the population, its transmission rates, \( k_i \), must exceed the fatigue associated with maintaining it, \( \lambda_i \), (with \( i = 1, 2 \)). This condition translates into requiring the reproduction conversion number to be greater than one, \( \mathcal{B}_i > 1 \).  
 	\item When two opposing behaviors coexist in the same system, if both have \( \mathcal{B}_i > 1 \), the behavior with the higher \( \mathcal{B}_i \) value becomes dominant asymptotically, while the other behavior diminishes to negligible levels.  
 	\item If the two behaviors have the same \( \mathcal{B}_i \) value, the initial proportions of Compliant and Against individuals in the population determine the final distribution, as the influxes and outfluxes between the compartments tend to balance each other.  
 	\item A behavior may have a lower reproduction conversion number, \( \mathcal{B}_i \), than the other, yet exhibit a higher \( k_i \) and \( \lambda_i \). For example, consider the case where \( k_1 = 0.1 \), \( \lambda_1 = 0.01 \), and \( k_2 = 0.3 \), \( \lambda_2 = 0.15 \). The corresponding conversion numbers are \( \mathcal{B}_1 = \frac{k_1}{\lambda_1} = 10 \) and \( \mathcal{B}_2 = 2 \). In this scenario, the system does not immediately converge to the behavior associated with \( \mathcal{B}_1 \). Instead, due to the higher transmission rate \( k_2 \), behavior 2 initially spreads at the expense of behavior 1. Over time, however, behavior 2's high fatigue cost (\( \lambda_2 \)) leads individuals to abandon it in favor of behavior 1, which is less attractive but also much less hard to sustain. This situation can be interpreted as a transitory popular trend, where a rapidly adopted behavior eventually gives way to a more stable alternative.  

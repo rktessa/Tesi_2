@@ -2,7 +2,7 @@
 \label{ch:epi_behav_model}
 \section{Model description}
 
-The newly developed model in this thesis, the Susceptible-Against-Heedless-Compliant-Infected-Recovered (SAHCIR) model, combines both epidemic and behavioral components, establishing an innovative approach to disease modeling. This model aims to bridge the epidemiological and social dynamics of an outbreak, integrating empirical observations to compare model outcomes with real-world data, as discussed in the article \cite{Proverbio_Tex_2024}. While some existing models combine these aspects, such as the one presented in \cite{Bulai2023}, they often rely on predefined assumptions about specific behaviors rather than direct empirical validation.
+The newly developed model in this thesis, the Susceptible-Against-Heedless-Compliant-Infected-Recovered (SAHCIR) model, combines both epidemic and behavioral components, establishing an innovative approach to disease modeling. This model aims to bridge the epidemiological and social dynamics of an outbreak, integrating empirical observations to compare model outcomes with real-world data, as discussed in the article \cite{Proverbio_Tex_2024}. While some existing models combine these aspects, such as the one presented in \cite{Bulai2023}, they often rely on predefined assumptions about specific behaviors rather than direct empirical basis.
 
 The SAHCIR  model incorporates a variety of behavioral stances towards safety measures, reflecting both proactive (pro-precaution) and non-compliant (anti-precaution) attitudes. The model also recognizes that, particularly during an epidemic's initial phase, a significant portion of the population may not follow safety measures—not out of skepticism, but due to a lack of awareness about the severity of the outbreak. Additionally, the model allows for government intervention through parameters that influence the spontaneous transition rate from the "Against" to the "Compliant" group, mirroring real-world public health policies aimed at promoting preventive behaviors. 
 
@@ -81,8 +81,8 @@ The two terms appearing in equation \eqref{eq:next_gen1}, are $\mathcal{F}_i(x)$
 
 To describe the evolution of the system, the following matrix notations is adopted: 
 \begin{itemize}
-	\item $F = [\frac{d \mathcal{F}_i}{d x_j}(x_0)]$ with $1 \le i$, $j \le m$.
-	\item $V = [\frac{d \mathcal{V}_i}{d x_j}(x_0)]$ with $1 \le i$, $j \le m$.	
+	\item $F = \left[\frac{d \mathcal{F}_i}{d x_j}\left(x_0\right)\right]$ with $1 \le i$, $j \le m$.
+	\item $V = \left[\frac{d \mathcal{V}_i}{d x_j}\left(x_0\right)\right]$ with $1 \le i$, $j \le m$.	
 \end{itemize} 
 The matrices are both evaluated at the disease free equilibrium, where $x = x_0$, and have dimension $m \times m$, with $m$ being the number of infected compartments in the model. 
 Using the defined matrices, according to \cite{van_den_Driessche_2002,van_den_Driessche_2017}, the Epidemic reproduction number $E_0$ for the model \eqref{eq:epi_behavioural_eq} at a disease free equilibrium, where all infected densities are zero, is given by:
@@ -93,11 +93,11 @@ E_0 = spec(FV^{-1})
 The disease-free equilibrium is defined as a locally stable equilibrium of the system in which there is no disease.
 The matrix $FV^{-1}$ is called next generation matrix, while $spec(M)$ is the spectral radius of a matrix M.
 
-To understand the entries of the matrix, consider perturbing a population at the DFE by introducing one infected individual in compartment $k$.The $(j,k)$ entry of $V^{-1}$ is the average time that the individual spends in the compartment $j$. Instead, the $(i,j)$ entry of $F$ is the  rate at which infected in compartment $j$ produce new infections in $i$. In $F$ only individuals that become infected for the first time must be inserted, while other influxes in the $i$-th compartment, must be considered in the $V$ matrix. Finally the entry $(i,k)$  in $FV^{-1}$ is the expected number of new infections in  $i$ produced by the infected individual originally introduced in $k$.
+To understand the entries of the matrix, consider perturbing a population at the DFE by introducing one infected individual in compartment $k$. The $(j,k)$ entry of $V^{-1}$ is the average time that the individual spends in the compartment $j$. Instead, the $(i,j)$ entry of $F$ is the  rate at which infected in compartment $j$ produce new infections in $i$. In $F$ only individuals that become infected for the first time must be inserted, while other influxes in the $i$-th compartment, must be considered in the $V$ matrix. Finally the entry $(i,k)$  in $FV^{-1}$ is the expected number of new infections in  $i$ produced by the infected individual originally introduced in $k$.
 
 Considering the system dynamics presented in \eqref{eq:epi_behavioural_eq}, matrices $F$ and $V$ are
 
-\begin{align}
+\begin{align*}
 F & = 
 \begin{bmatrix}
 	\beta \epsilon(\rho S_C + S_H) \quad & \beta(\rho S_C + S_H) \\
@@ -109,7 +109,7 @@ V & =
 	\psi k_3 I_A - \lambda_3 - k_4 (S_A + I_A + R_A) \quad & \psi k_3 (S_C + I_C + R_C) - k_4 I_C + \lambda_4 + \gamma
 \end{bmatrix}
 \label{eq:next_gen_matrices}
-\end{align}
+\end{align*}
 
 Once the matrices composing the next-generation matrix are defined, the value of the epidemic reproduction number is calculated, resulting in:
 
@@ -217,7 +217,7 @@ Observing the behavior layer, since both Conversion numbers $\mathcal{B}_1$ and 
 
 In the left panel of Figure \ref{fig:sim_B1_B2_less_equal}, it is evident that the dynamics are dominated by the Heedless compartment. Furthermore, an infection peak is observed, and the final equilibrium reached by the system is not disease-free: a relatively small portion of the population remains infected.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][I case: Both $\mathcal{B}_1$ and $\mathcal{B}_2$ are less than one. None of the possible behaviors become dominant.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_B2_less_1}} \quad
@@ -236,7 +236,7 @@ Figure \ref{fig:sim_B1_mag_B2}, explores the impact of compliance with rules and
 
 Although the disease can spread in a fully susceptible population, the protection provided by compliant behavior significantly reduces its spread. With $\mathcal{B}_1$ larger than $\mathcal{B}_2$, compliant behavior quickly spreads throughout the population and persists longer than the infection duration. As a result, the majority of the population transitions to the $S_C$ compartment, while $S_A$ tends toward zero. The epidemic fades after reaching a small peak and infecting only a minor fraction of the population.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\subfloat[][III case: $\mathcal{B}_1 >\mathcal{B}_2$, the Compliant behavior becomes dominant. This dominance significantly mitigates the effects of the epidemic, both in terms of the number of infected individuals and the duration of the outbreak.]
 	{\includegraphics[width=0.48\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_B1_mag_B2}} \quad
@@ -253,7 +253,7 @@ However, as the simulation progresses, the Compliant group gradually gains preva
 \subsection{V case:  $\mathcal{B}_1, \mathcal{B}_2 >1$ and $\mathcal{B}_1 <  \mathcal{B}_2$}
 The final case represents the worst scenario for epidemic spread. The majority of the population adopts the Against behavior, which prevents the epidemic from being mitigated by NPIs or self-isolation. These measures are only adopted by an increasingly smaller portion of individuals. As a result, the epidemic trajectory closely resembles that of an SIRS-only model. With $E_0 = 3.17$, the highest value among all the cases presented, the infection peak is large, and the disease does not disappear. Instead, the system reaches an endemic equilibrium.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	{\includegraphics[width=0.5\linewidth]{1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_B2_mag_B1}} 
 	\caption[Full model simulation figure third]{V case: where \( \mathcal{B}_1 < \mathcal{B}_2 \), the simulation starts from a type-B Disease-Free Equilibrium (DFE). The Against group is dominant from the beginning, allowing the disease to spread almost freely. This results in several peaks of infection, and, at equilibrium, the disease becomes endemic within the population.}

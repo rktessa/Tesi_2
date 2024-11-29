@@ -1,26 +1,26 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'simulazione24.blg'
-[126] biber-MSWIN64:340> INFO - === 
-[174] Biber.pm:420> INFO - Reading 'simulazione24.bcf'
-[350] Biber.pm:994> INFO - Found 94 citekeys in bib section 0
-[366] Biber.pm:4463> INFO - Processing section 0
-[378] Biber.pm:4654> INFO - Looking for bibtex file 'bibi2.bib' for section 0
-[451] bibtex.pm:1713> INFO - LaTeX decoding ...
-[664] bibtex.pm:1519> INFO - Found BibTeX data source 'bibi2.bib'
-[2687] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2687] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2687] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'it-IT'
-[2687] Biber.pm:4289> INFO - No sort tailoring available for locale 'it-IT'
-[2812] bbl.pm:676> INFO - Writing 'simulazione24.bbl' with encoding 'UTF-8'
-[9427] bbl.pm:779> INFO - Output to simulazione24.bbl
-[9427] Biber.pm:131> WARN - Duplicate entry key: 'diekmann2000mathematical' in file 'bibi2.bib', skipping ...
-[9427] Biber.pm:131> WARN - legacy month field 'jul' in entry 'Okabe_2020' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Xu_2014' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Turkyilmazoglu_2021' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'apr' in entry 'Giordano_2020' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Kabir_2019' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'jun' in entry 'Bedson2021' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'jan' in entry 'Carballosa_2021' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Gosak_2021_game' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:131> WARN - legacy month field 'apr' in entry 'Gosak2021' is not an integer - this will probably not sort properly.
-[9427] Biber.pm:133> INFO - WARNINGS: 10
+[141] biber-MSWIN64:340> INFO - === 
+[190] Biber.pm:420> INFO - Reading 'simulazione24.bcf'
+[367] Biber.pm:994> INFO - Found 94 citekeys in bib section 0
+[383] Biber.pm:4463> INFO - Processing section 0
+[397] Biber.pm:4654> INFO - Looking for bibtex file 'bibi2.bib' for section 0
+[465] bibtex.pm:1713> INFO - LaTeX decoding ...
+[680] bibtex.pm:1519> INFO - Found BibTeX data source 'bibi2.bib'
+[2694] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2694] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2694] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[2694] Biber.pm:4289> INFO - No sort tailoring available for locale 'it-IT'
+[2817] bbl.pm:676> INFO - Writing 'simulazione24.bbl' with encoding 'UTF-8'
+[9470] bbl.pm:779> INFO - Output to simulazione24.bbl
+[9470] Biber.pm:131> WARN - Duplicate entry key: 'diekmann2000mathematical' in file 'bibi2.bib', skipping ...
+[9470] Biber.pm:131> WARN - legacy month field 'jul' in entry 'Okabe_2020' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'dec' in entry 'Xu_2014' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'aug' in entry 'Turkyilmazoglu_2021' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'apr' in entry 'Giordano_2020' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Kabir_2019' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'jun' in entry 'Bedson2021' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'jan' in entry 'Carballosa_2021' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'feb' in entry 'Gosak_2021_game' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:131> WARN - legacy month field 'apr' in entry 'Gosak2021' is not an integer - this will probably not sort properly.
+[9470] Biber.pm:133> INFO - WARNINGS: 10
