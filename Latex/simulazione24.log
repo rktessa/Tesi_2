@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  28 NOV 2024 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.17)  10 DEC 2024 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2794,6 +2794,7 @@ t_cut.png>])
 
 [3
 
+
 ]
 
 [4
@@ -3819,20 +3820,20 @@ e (type pdf)
 <use 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_psi.pdf>
 Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_1epi_behav_sim_
 psi.pdf  used on input line 282.
-(pdftex.def)             Requested size: 250.95476pt x 192.4904pt.
+(pdftex.def)             Requested size: 292.77629pt x 224.57545pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./1_corpo/figure/behav_epi_sim/E_0_model_3ep
 i_behav_sim_psi.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
-<1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_psi.pdf, id=1403, 1046.4
-6967pt x 645.61201pt>
+<1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_psi.pdf, id=1403, 1138.2
+525pt x 654.28442pt>
 File: 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_psi.pdf Graphic fil
 e (type pdf)
 <use 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_psi.pdf>
 Package pdftex.def Info: 1_corpo/figure/behav_epi_sim/E_0_model_3epi_behav_sim_
 psi.pdf  used on input line 284.
-(pdftex.def)             Requested size: 284.40942pt x 175.46031pt.
+(pdftex.def)             Requested size: 313.69025pt x 180.31314pt.
 ) (conclusion.tex
 
 [83]
@@ -3865,7 +3866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
 [88]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-53.
+54.
  (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -3874,13 +3875,13 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 ]
-Overfull \hbox (0.37514pt too wide) in paragraph at lines 153--153
+Overfull \hbox (0.37514pt too wide) in paragraph at lines 154--154
 []\T1/lmr/m/n/11 Fred Brauer, Car-los Castillo-Chavez, and Car-los Castillo-Cha
 vez. \T1/lmr/m/it/11 Math-e-mat-i-cal mod-
  []
 
 
-Overfull \hbox (8.92064pt too wide) in paragraph at lines 153--153
+Overfull \hbox (8.92064pt too wide) in paragraph at lines 154--154
 \T1/lmr/m/n/11 demics^^Q. In: \T1/lmr/m/it/11 Pro-ceed-ings of the Na-tional Ac
 ademy of Sci-ences \T1/lmr/m/n/11 113.46 (2016), pp. 12899^^U
  []
@@ -3890,7 +3891,7 @@ ademy of Sci-ences \T1/lmr/m/n/11 113.46 (2016), pp. 12899^^U
 [90]
 
 [91]
-Overfull \hbox (3.17677pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.17677pt too wide) in paragraph at lines 154--154
 []\T1/lmr/m/n/11 Clara Granell, Ser-gio Gómez, and Alex Are-nas. ^^P  Dy-nam-i-
 cal In-ter-play be-tween Aware-
  []
@@ -3898,7 +3899,7 @@ cal In-ter-play be-tween Aware-
 
 
 [92]
-Overfull \hbox (2.0391pt too wide) in paragraph at lines 153--153
+Overfull \hbox (2.0391pt too wide) in paragraph at lines 154--154
 \T1/lmr/m/n/11 breaks^^Q. In: \T1/lmr/m/it/11 Pro-ceed-ings of the Na-tional Ac
 ademy of Sci-ences \T1/lmr/m/n/11 106.16 (2009), pp. 6872^^U
  []
@@ -3906,7 +3907,7 @@ ademy of Sci-ences \T1/lmr/m/n/11 106.16 (2009), pp. 6872^^U
 
 
 [93]
-Overfull \hbox (6.0825pt too wide) in paragraph at lines 153--153
+Overfull \hbox (6.0825pt too wide) in paragraph at lines 154--154
 []\T1/lmr/m/n/11 Mark M. Tanaka, Jochen Kumm, and Mar-cus W. Feld-man. ^^P  Co-
 evo-lu-tion of Pathogens
  []
@@ -3914,22 +3915,27 @@ evo-lu-tion of Pathogens
 
 
 [94]
-Overfull \hbox (34.81352pt too wide) in paragraph at lines 153--153
+Overfull \hbox (34.81352pt too wide) in paragraph at lines 154--154
 []\T1/lmr/m/n/11 Daniele Prover-bio, Ric-cardo Tes-sarin, and Giu-lia Gior-dano
 . ^^P  Data in-formed epidemiological-
  []
 
 
-Overfull \hbox (63.10127pt too wide) in paragraph at lines 153--153
+Overfull \hbox (63.10127pt too wide) in paragraph at lines 154--154
 \T1/lmr/m/sc/11 url\T1/lmr/m/n/11 : [][]$\T1/lmtt/m/n/11 https : / / ourworldin
 data . org / explorers / covid ? country = USA~BRA~JPN~DEU~ITA~OWID _
  []
 
 
 
-[95]
+[95] (acknowledgements.tex
 
 [96]
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+)
 
 [97
 
@@ -3953,10 +3959,10 @@ Package logreq Info: Writing requests to 'simulazione24.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44291 strings out of 473898
- 842232 string characters out of 5736294
- 2214024 words of memory out of 5000000
- 66040 multiletter control sequences out of 15000+600000
+ 44297 strings out of 473898
+ 842411 string characters out of 5736294
+ 2214045 words of memory out of 5000000
+ 66044 multiletter control sequences out of 15000+600000
  669351 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  138i,15n,135p,1476b,3927s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3976,9 +3982,9 @@ am Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts
 0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program File
 s/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/lm/lmtt12.pfb>
-Output written on simulazione24.pdf (97 pages, 7052202 bytes).
+Output written on simulazione24.pdf (97 pages, 7130371 bytes).
 PDF statistics:
- 1783 PDF objects out of 2073 (max. 8388607)
+ 1784 PDF objects out of 2073 (max. 8388607)
  342 named destinations out of 1000 (max. 500000)
  656 words of extra memory for PDF output out of 10000 (max. 10000000)
 

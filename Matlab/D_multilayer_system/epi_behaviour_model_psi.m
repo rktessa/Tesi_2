@@ -13,7 +13,7 @@ E_0_vec = zeros(d1); B1_vec = zeros(d1);R0_vec = zeros(d1);
 fig = fig+1;
     figure(fig)
 for i = 1: d1
-     [E_0, R_0, B1, B2,FV, E_0_simb] = calcolo_E_0_Van(caso(2),beta, gamma,psi_vec(i), rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
+     [E_0_vec(i), R0_vec(i), B1_vec(i), B2,FV, E_0_simb] = calcolo_E_0_Van(caso(2),beta, gamma,psi_vec(i), rho_v, epsilon_v, k_1, k_2,lambda_1, lambda_2, SH_0, SC_0,SA_0, IC_0,IA_0,delta_v,RA_0,RC_0);
     [fig2,x_sh, x_sc, x_sa,y_c, y_a,z_rc,z_ra,time_epi] = epi_behaviour(fig2,beta,gamma,delta_v,rho_v,psi_vec(i),k_1,k_2,k_1,k_2,k_1,k_2,lambda_1,lambda_2,lambda_1,lambda_2,lambda_1,lambda_2,epsilon_v,phi_n,SC_0,SA_0,SH_0, time, E_0_vec(i),title_fig);
     
     % Tile 1
@@ -28,7 +28,7 @@ for i = 1: d1
     ylabel("SC[t]");
 end 
 legend(Location="southoutside", Orientation="horizontal") 
-txt = {['E_0=' num2str(E_0_vec(1),3)],['R_0=' num2str(R_0,3)],['B_1=' num2str(B1)], ['B_2=' num2str(B2)],...
+txt = {['E_0=' num2str(E_0_vec(1),3)],['R_0=' num2str(R0_vec(1),3)],['B_1=' num2str(B1_vec(1))], ['B_2=' num2str(B2)],...
     ['\beta=' num2str(round(beta,2))],['\gamma=' num2str(round(gamma,2))],['\delta=' num2str(round(delta_v,2))],['k_1=' num2str(round(k_1,2))],['k_2=' num2str(round(k_2,2))],...
     ['\lambda_1=' num2str(round(lambda_1,2))],['\lambda_2=' num2str(round(lambda_2,2))],...
     ['S_{C0}=' num2str(SC_0,3)], ['S_{H0}=' num2str(SH_0,3)], ['S_{A0}=' num2str(SA_0,3)]};    

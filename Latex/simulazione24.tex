@@ -100,11 +100,11 @@
 
 \input{inizio.tex}
 
-
+\paginavuota
 
 \begin{dedica}
 	To my source of inspiration, Montgomery Scott
-	
+	\label{sec:inizio}
 \end{dedica}
 \paginavuota
 \sommario 
@@ -125,7 +125,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Qui Inizia il corpo dell'elaborato vero e proprio
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\mainmatter]
+\mainmatter
 
 
 \input{./0_introduction/Introduction.tex}
@@ -134,6 +134,7 @@
 \input{./1_corpo/opinion_disease_model.tex}
 \input{./1_corpo/behavior_disease2.tex}
 \input{conclusion.tex}
+
 
 %\input{./6Acknowledgements/acknowledgements.tex}
 
@@ -151,11 +152,9 @@
 %% non serve più usando biblatex
 
 \printbibliography[heading=bibintoc]
+\input{acknowledgements.tex}
 
-\chapter*{Acknowledgements}
-\thispagestyle{empty}
 
-So long, and thanks for all the fish.
 
 
 

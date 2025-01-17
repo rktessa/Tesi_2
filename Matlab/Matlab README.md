@@ -28,3 +28,6 @@
 - the command: 
     addpath('../Matlab')
     solve the problem
+
+## Update 12.12
+- In the Multilayer system folder there are all the code to reproduce the calculations and pictures realized in the thesis.
